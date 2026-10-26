@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-4499",
+  "year": 2022,
+  "team": 4499,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 4499,
+    "robot": "Highlanders 2022",
+    "primary": [
+      "https://youtu.be/U0vM488i2Lg"
+    ],
+    "architecture": "Compact elevator climb combined with a fixed-heading hooded shooter.",
+    "subsystems": {
+      "drivetrain": "Exact drive hardware not established; robot-centric camera-guided mode is documented.",
+      "intake": "Wide pneumatic four-bar with compliant polycarbonate and replaceable parts.",
+      "transfer": "Second feeder lowered from approximately 14 to 12 inches; center bump retained from a dual-intake proposal that was not built.",
+      "scoring": "Fixed-heading adjustable hood; backspin roller added before first regional.",
+      "endgame": "Single compact elevator, pivot and passive spring hooks; NavX compensation addresses hook position through swinging.",
+      "controls": "Two beam breaks, Limelight and rear camera; robot-centric pickup mode aids driving behind the hub."
+    },
+    "versions": [
+      "Feeder height revised; dual collector remained a proposal.",
+      "Back roller predates first regional; IRI interview is postseason."
+    ],
+    "analysis": "The useful transferable idea is controlling geometry throughout the path and climb. An abandoned concept can leave features on the finished robot; it should not be recorded as a fielded capability.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-4499",
+    "team_name": "The Highlanders",
+    "epa_rank": 29,
+    "epa": 49.85,
+    "epa_pre_champs": 38.56,
+    "epa_breakdown": {
+      "total_points": 49.85,
+      "auto_points": 9.04,
+      "teleop_points": 30.27,
+      "endgame_points": 10.54,
+      "cargo_rp": 0.6388,
+      "hangar_rp": 0.3916,
+      "tiebreaker_points": 49.85,
+      "auto_taxi_points": 1.93,
+      "auto_cargo_lower": 0.06,
+      "auto_cargo_upper": 1.75,
+      "teleop_cargo_lower": 0.16,
+      "teleop_cargo_upper": 15.06,
+      "rp_1": 0.6388,
+      "rp_2": 0.3916
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "fa166eee478dec5a"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-4499",
+      "year": 2022,
+      "team": 4499,
+      "epa_rank": 29,
+      "status": "candidate_unavailable_nonrobot_or_unverified",
+      "search": {
+        "query": "\"4499\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 5,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4499\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [
+        {
+          "id": "65b77175e6ea0c4072",
+          "url": "https://www.highlandersfrc.com/Documents/EngineeringBinder/2022/TechnicalBinder.pdf",
+          "error": "HTTPError: HTTP Error 404: Not Found",
+          "discovery": "Targeted web search; identity must be verified in PDF",
+          "status": "access_failed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-4499"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-4499",
+      "title": "Collapsible acquisition and lowered transport preserve packaging",
+      "start_seconds": 79,
+      "end_seconds": 445,
+      "construction": "A wide compliant four-bar feeds a lowered second stage and a fixed-heading adjustable-hood launcher. The compact climb replaces an earlier size-constrained concept. A central transport feature remains from a dual-intake idea that was not built.",
+      "team_stated_reason": "The team explicitly wants the collector to collapse in wall contact, especially behind the hub where visibility is poor; climb packaging motivated the alternate arrangement.",
+      "engineering_analysis": "A visible legacy feature is not proof of a fielded subsystem. Collector compliance must work with the pneumatic state and hard stops, while a lower transport path can alter compression and dead zones.",
+      "recommended_validation": "Test blind-side contact, full-path flow and climb/shooter clearance; retain the unbuilt dual-intake status.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-4499",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/U0vM488i2Lg",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 445,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "U0vM488i2Lg",
+          "sha256": "3d730470a8605070cc172c2ea23400fd0a609e3f09f09ddb2fff82d5d5742b1e",
+          "caption_segments": 315,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-4499:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-4499",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-4499"
+      ],
+      "source_urls": [
+        "https://youtu.be/U0vM488i2Lg"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-4499",
+      "title": "2022-4499 · Collapsible acquisition and lowered transport preserve packaging",
+      "year": 2022,
+      "robot_id": "2022-4499",
+      "kind": "focused_technical_study",
+      "body": "# 2022-4499: Collapsible acquisition and lowered transport preserve packaging\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA wide compliant four-bar feeds a lowered second stage and a fixed-heading adjustable-hood launcher. The compact climb replaces an earlier size-constrained concept. A central transport feature remains from a dual-intake idea that was not built.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly wants the collector to collapse in wall contact, especially behind the hub where visibility is poor; climb packaging motivated the alternate arrangement.\n\n## Engineering interpretation — analyst inference\n\nA visible legacy feature is not proof of a fielded subsystem. Collector compliance must work with the pneumatic state and hard stops, while a lower transport path can alter compression and dead zones.\n\n## Proposed validation — not performed\n\nTest blind-side contact, full-path flow and climb/shooter clearance; retain the unbuilt dual-intake status.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/U0vM488i2Lg](https://youtu.be/U0vM488i2Lg)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/U0vM488i2Lg"
+      ],
+      "path": "docs/research_continuation/2022-4499.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-4499",
+    "year": 2022,
+    "team": 4499,
+    "epa_rank": 29,
+    "status": "candidate_unavailable_nonrobot_or_unverified",
+    "search": {
+      "query": "\"4499\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 5,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4499\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [
+      {
+        "id": "65b77175e6ea0c4072",
+        "url": "https://www.highlandersfrc.com/Documents/EngineeringBinder/2022/TechnicalBinder.pdf",
+        "error": "HTTPError: HTTP Error 404: Not Found",
+        "discovery": "Targeted web search; identity must be verified in PDF",
+        "status": "access_failed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-4499:construction",
+    "study6-2022-4499:team_stated_reason",
+    "study6-2022-4499:engineering_analysis",
+    "study6-2022-4499:recommended_validation",
+    "study6-2022-4499:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

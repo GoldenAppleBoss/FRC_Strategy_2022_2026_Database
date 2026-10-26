@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-125",
+  "year": 2026,
+  "team": 125,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 125,
+    "robot": "Neutrons 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=Kzn_t-LsDB8"
+    ],
+    "architecture": "Trapezoidal chassis built around enlarged coaxial DYE Rotor-family feeder and central turret.",
+    "subsystems": {
+      "drivetrain": "Front stock/rear custom-shaped X2S modules accommodate dish geometry; plate sides maximize rotor diameter.",
+      "intake": "Dual roller reduced to one to remove jams; compliant wheels replaced by continuous drum before Worlds.",
+      "transfer": "Eleven-position dish, coaxial independent hook/roller drive and doubled vertical roller sets clear central dead zone.",
+      "scoring": "Approximately 425-degree turret; third X44 added to main shooter for long passes/corner shots. Powered upper roller and compact ducking hood.",
+      "endgame": "Endgame installation not established in reviewed interview.",
+      "controls": "Shared robot-desire controls for auto/teleop; velocity/time-of-flight aiming, hub-state timing and configurable partner-compatible auto routes."
+    },
+    "versions": [
+      "Intake simplification and Worlds drum roller.",
+      "Two-to-three shooter-motor revision accompanied revised trajectory strategy."
+    ],
+    "analysis": "The team explicitly traces the mechanism to its 2017 lineage, but the 2026 dish, coaxial drive, frame and singulation changes are substantial. The architecture chooses heading-independent scoring and adaptable roles over peak multi-lane output.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-125",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516273/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/5/d/c5d2618f8c5d4ed7435d59bf1cc34ed9f309e915_2_666x500.jpeg",
+        "post": 1,
+        "date": "2026-03-13T04:45:31.314Z",
+        "author": "Brandon_Holley",
+        "context_tags": [],
+        "caption": "2026 team 125 — source image from post 1 (2026-03-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "facfd4572308d8afa6.jpg",
+        "id": "7759c77c7cf835163a",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/facfd4572308d8afa6.jpg"
+      },
+      {
+        "robot_id": "2026-125",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516273/3",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/8/f/a/8fa7874563372cd38a2263c93b28b5d221b68404.jpeg",
+        "post": 3,
+        "date": "2026-03-13T05:07:46.477Z",
+        "author": "Andrew_L",
+        "context_tags": [
+          "rotor"
+        ],
+        "caption": "2026 team 125 — source image from post 3 (2026-03-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "daa29f2c82ac1e22e8.jpg",
+        "id": "8d175e0fcf073bed24",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/daa29f2c82ac1e22e8.jpg"
+      },
+      {
+        "robot_id": "2026-125",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516273/13",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/a/9/3/a9317f0998d7b68a6161524b9151c5b63751786c_2_494x500.jpeg",
+        "post": 13,
+        "date": "2026-03-13T17:26:10.685Z",
+        "author": "Logandelaar",
+        "context_tags": [
+          "hopper",
+          "rotor"
+        ],
+        "caption": "2026 team 125 — source image from post 13 (2026-03-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "bda2486b09ca673758.jpg",
+        "id": "5ff70bb3c3c0e346c1",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/bda2486b09ca673758.jpg"
+      }
+    ],
+    "source_post_count": 4,
+    "cad_code_links": [],
+    "id": "2026-125",
+    "team_name": "NUTRONs",
+    "epa_rank": 10,
+    "epa": 283.42,
+    "epa_pre_champs": 284.91,
+    "epa_breakdown": {
+      "total_points": 283.42,
+      "auto_points": 54.15,
+      "teleop_points": 162.39,
+      "endgame_points": 66.88,
+      "energized_rp": 0.744,
+      "supercharged_rp": 0.7239,
+      "traversal_rp": -0.34341,
+      "tiebreaker_points": 283.42,
+      "auto_fuel": 54.3,
+      "auto_tower": -0.15,
+      "transition_fuel": 21.96,
+      "first_shift_fuel": 70.54,
+      "second_shift_fuel": 69.89,
+      "endgame_fuel": 66.9,
+      "endgame_tower": -0.03,
+      "rp_1": 0.744,
+      "rp_2": 0.7239,
+      "rp_3": -0.34341,
+      "teleop_fuel": 229.29,
+      "total_fuel": 283.59000000000003,
+      "total_tower": -0.18
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "45ac05ccf10b4660"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "spindexer / DYE",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-125",
+      "year": 2026,
+      "team": 125,
+      "epa_rank": 10,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"125\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 25,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"125\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-125"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-125",
+      "title": "Dish packaging and shooting independence require a coordinated robot",
+      "start_seconds": 258,
+      "end_seconds": 730,
+      "construction": "The interview describes an eleven-position dish, front and rear vertical roller sets to clear its center, approximately 425 degrees of turret freedom, a 3-inch main shooter wheel, a 1-inch upper roller and additional feed wheels. A third X44 was added for difficult passes and corner shots. Intake and drivetrain packaging are shaped around the large dish.",
+      "team_stated_reason": "The team identifies moving shots, shooting under defense and simultaneous acquisition as reasons to retain the turret architecture. The doubled vertical rollers address fuel left in the dish center; the extra shooter motor addresses range/power demand.",
+      "engineering_analysis": "A centrally packaged turret is a whole-robot commitment. The dish determines where modules, structure and storage can sit, and its useful capacity depends on clearing the central dead region rather than nominal perimeter volume. Turret range is only useful if localization, target selection, hood travel and cable management support it. The FMS-aware timing offset is a flight-time decision: fuel released before activation must arrive while scoring is valid. That offset is not a transferable constant without checking release-to-arrival time and the applicable game timing.",
+      "recommended_validation": "Compare central residual fuel, sustained rate and moving-shot accuracy at different turret angles. Validate the hub-state lead time against measured flight time; verify cable/swept-volume clearance over the claimed angular range.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-125",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=Kzn_t-LsDB8",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 258,
+        "end_seconds": 730,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "Kzn_t-LsDB8",
+          "sha256": "374e2c18d176fa704a959ea6d76fc6e7913b8b174f9ba29c31cd0a25d2cb9a67",
+          "caption_segments": 444,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-125:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-125",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-125"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=Kzn_t-LsDB8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-125",
+      "title": "2026-125 · Dish packaging and shooting independence require a coordinated robot",
+      "year": 2026,
+      "robot_id": "2026-125",
+      "kind": "focused_technical_study",
+      "body": "# 2026-125: Dish packaging and shooting independence require a coordinated robot\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview describes an eleven-position dish, front and rear vertical roller sets to clear its center, approximately 425 degrees of turret freedom, a 3-inch main shooter wheel, a 1-inch upper roller and additional feed wheels. A third X44 was added for difficult passes and corner shots. Intake and drivetrain packaging are shaped around the large dish.\n\n## Team-stated reasoning or boundary\n\nThe team identifies moving shots, shooting under defense and simultaneous acquisition as reasons to retain the turret architecture. The doubled vertical rollers address fuel left in the dish center; the extra shooter motor addresses range/power demand.\n\n## Engineering interpretation — analyst inference\n\nA centrally packaged turret is a whole-robot commitment. The dish determines where modules, structure and storage can sit, and its useful capacity depends on clearing the central dead region rather than nominal perimeter volume. Turret range is only useful if localization, target selection, hood travel and cable management support it. The FMS-aware timing offset is a flight-time decision: fuel released before activation must arrive while scoring is valid. That offset is not a transferable constant without checking release-to-arrival time and the applicable game timing.\n\n## Proposed validation — not performed\n\nCompare central residual fuel, sustained rate and moving-shot accuracy at different turret angles. Validate the hub-state lead time against measured flight time; verify cable/swept-volume clearance over the claimed angular range.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=Kzn_t-LsDB8](https://www.youtube.com/watch?v=Kzn_t-LsDB8)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=Kzn_t-LsDB8"
+      ],
+      "path": "docs/research_continuation/2026-125.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-125",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516273/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/5/d/c5d2618f8c5d4ed7435d59bf1cc34ed9f309e915_2_666x500.jpeg",
+      "post": 1,
+      "date": "2026-03-13T04:45:31.314Z",
+      "author": "Brandon_Holley",
+      "context_tags": [],
+      "caption": "2026 team 125 — source image from post 1 (2026-03-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "facfd4572308d8afa6.jpg",
+      "id": "7759c77c7cf835163a",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/facfd4572308d8afa6.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 69300,
+      "sha256": "39e2d219a826d1962b08ea6d55d5f07acd00b57561d9ed5fd07538fd19ec5c82",
+      "path_base": "corpus_root",
+      "reader_asset_id": "7759c77c7cf835163a",
+      "reader_url": "index.html#image=7759c77c7cf835163a",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-125",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516273/3",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/8/f/a/8fa7874563372cd38a2263c93b28b5d221b68404.jpeg",
+      "post": 3,
+      "date": "2026-03-13T05:07:46.477Z",
+      "author": "Andrew_L",
+      "context_tags": [
+        "rotor"
+      ],
+      "caption": "2026 team 125 — source image from post 3 (2026-03-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "daa29f2c82ac1e22e8.jpg",
+      "id": "8d175e0fcf073bed24",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/daa29f2c82ac1e22e8.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 665,
+      "height_px": 427,
+      "bytes": 79337,
+      "sha256": "fcd0672e29cc2fc4282b8833e81510d7c8d9408360ba97baf4ba41b9dcfb497d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8d175e0fcf073bed24",
+      "reader_url": "index.html#image=8d175e0fcf073bed24",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-125",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516273/13",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/a/9/3/a9317f0998d7b68a6161524b9151c5b63751786c_2_494x500.jpeg",
+      "post": 13,
+      "date": "2026-03-13T17:26:10.685Z",
+      "author": "Logandelaar",
+      "context_tags": [
+        "hopper",
+        "rotor"
+      ],
+      "caption": "2026 team 125 — source image from post 13 (2026-03-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "bda2486b09ca673758.jpg",
+      "id": "5ff70bb3c3c0e346c1",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/bda2486b09ca673758.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 494,
+      "height_px": 500,
+      "bytes": 40793,
+      "sha256": "d2c4fd5e0b36eb34f80769d85bfb7c69be5ae6b3f3798032daed28b6dd326eca",
+      "path_base": "corpus_root",
+      "reader_asset_id": "5ff70bb3c3c0e346c1",
+      "reader_url": "index.html#image=5ff70bb3c3c0e346c1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-125",
+    "year": 2026,
+    "team": 125,
+    "epa_rank": 10,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"125\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 25,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"125\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-125:construction",
+    "study6-2026-125:team_stated_reason",
+    "study6-2026-125:engineering_analysis",
+    "study6-2026-125:recommended_validation",
+    "study6-2026-125:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

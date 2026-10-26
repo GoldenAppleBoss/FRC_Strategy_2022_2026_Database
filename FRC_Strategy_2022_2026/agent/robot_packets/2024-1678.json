@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-1678",
+  "year": 2024,
+  "team": 1678,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 1678,
+    "robot": "Epsilon",
+    "primary": [
+      "https://youtu.be/wmNuuUsm9GY"
+    ],
+    "architecture": "Over-bumper collector, selectable note paths, low shooting pivot and elevator for amp/trap.",
+    "subsystems": {
+      "drivetrain": "Swerve; package balances wide acquisition with alternate scoring paths.",
+      "intake": "Full-width deployed intake, with replaceable side assemblies and printed funnel blocks.",
+      "transfer": "Two beam breaks track the note; staging leaves the choice between shooter and amp path open.",
+      "scoring": "Pivoted flywheel shooter; elevated alternate path handles amp/trap notes.",
+      "endgame": "Elevator presents the trap note; full hanger details need separate verification.",
+      "controls": "Two cameras/two Orange Pis, odometry-error fusion, shooting-on-move autonomous and missed-note fallback."
+    },
+    "versions": [
+      "Quick five-note alpha; unsuccessful three-pivot beta; final simpler architecture. After first event, bent intake plates led to compliant polycarbonate/5052 construction."
+    ],
+    "analysis": "Late binding of the scoring destination reduces coordination failures when a partner changes plans. The rebuild history also shows why early autonomous success does not validate every later architectural addition.",
+    "limits": [
+      "Configuration description is tied to the cited interview; not a claim that every unreported shop revision is known."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/449823/61",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/c/6c6e2082afe808e79b3e63604b8b57cb80a8f148_2_305x250.png",
+        "post": 61,
+        "date": "2024-01-13T09:59:21.037Z",
+        "author": "GenericUsername",
+        "context_tags": [
+          "intake",
+          "shooter"
+        ],
+        "caption": "2024 team 1678 — source image from post 61 (2024-01-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "2e1444b5a937511856.jpg",
+        "id": "2f3ea7d77c2a3b30ad",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2e1444b5a937511856.jpg"
+      }
+    ],
+    "source_post_count": 15,
+    "cad_code_links": [],
+    "id": "2024-1678",
+    "team_name": "Citrus Circuits",
+    "epa_rank": 1,
+    "epa": 58.05,
+    "epa_pre_champs": 58.47,
+    "epa_breakdown": {
+      "total_points": 58.05,
+      "auto_points": 18.26,
+      "teleop_points": 32.55,
+      "endgame_points": 7.24,
+      "melody_rp": 0.881,
+      "ensemble_rp": 0.6798,
+      "tiebreaker_points": 0.21,
+      "auto_leave_points": 1.61,
+      "auto_note_points": 16.65,
+      "teleop_note_points": 32.55,
+      "speaker_points": 45.6,
+      "amplified_notes": 6.02,
+      "endgame_park_points": 0.1,
+      "endgame_on_stage_points": 3.33,
+      "endgame_harmony_points": -0.17,
+      "endgame_trap_points": 3.64,
+      "endgame_spotlight_points": 0.34,
+      "rp_1": 0.881,
+      "rp_2": 0.6798,
+      "total_note_points": 49.199999999999996
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "cb5b58a6d6fe068b"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-1678",
+      "year": 2024,
+      "team": 1678,
+      "epa_rank": 1,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1678\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 13,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1678\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-1678"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-1678",
+      "title": "Staging before selecting a scorer preserves tactical optionality",
+      "start_seconds": 81,
+      "end_seconds": 370,
+      "construction": "The collector changed from relatively rigid plates to more flexible material after early bending, with replaceable side assemblies. Two beam breaks track staging before the robot chooses the main shooter or elevated amp/trap path. The team describes an early simple robot, a problematic multi-arm beta and the final architecture.",
+      "team_stated_reason": "The team connects flexible plates to surviving contact and says the intermediate architecture did not work well. Retaining a staged note before selecting its destination is an explicit feature of the final flow.",
+      "engineering_analysis": "The branch point in a transfer path is a strategic decision. Delaying the destination choice lets the alliance respond to amplification, traffic or a blocked route without reacquiring the piece. The cost is an extra controlled state that must keep the note centered and releasable. Historical version labels should not collapse the failed beta into the final competition mechanism.",
+      "recommended_validation": "Test repeated stage-and-wait cycles, destination changes after acquisition and jam recovery at the branch. Evaluate repair time for a damaged collector side as well as pickup speed.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-1678",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/wmNuuUsm9GY",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 81,
+        "end_seconds": 370,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "wmNuuUsm9GY",
+          "sha256": "89e6f640fa38acb24dc65e4f91ea3221dbaeec4aa15aa54eea73eca1b4669f58",
+          "caption_segments": 385,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-1678:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-1678"
+      ],
+      "source_urls": [
+        "https://youtu.be/wmNuuUsm9GY"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-1678",
+      "title": "2024-1678 · Staging before selecting a scorer preserves tactical optionality",
+      "year": 2024,
+      "robot_id": "2024-1678",
+      "kind": "focused_technical_study",
+      "body": "# 2024-1678: Staging before selecting a scorer preserves tactical optionality\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe collector changed from relatively rigid plates to more flexible material after early bending, with replaceable side assemblies. Two beam breaks track staging before the robot chooses the main shooter or elevated amp/trap path. The team describes an early simple robot, a problematic multi-arm beta and the final architecture.\n\n## Team-stated reasoning or boundary\n\nThe team connects flexible plates to surviving contact and says the intermediate architecture did not work well. Retaining a staged note before selecting its destination is an explicit feature of the final flow.\n\n## Engineering interpretation — analyst inference\n\nThe branch point in a transfer path is a strategic decision. Delaying the destination choice lets the alliance respond to amplification, traffic or a blocked route without reacquiring the piece. The cost is an extra controlled state that must keep the note centered and releasable. Historical version labels should not collapse the failed beta into the final competition mechanism.\n\n## Proposed validation — not performed\n\nTest repeated stage-and-wait cycles, destination changes after acquisition and jam recovery at the branch. Evaluate repair time for a damaged collector side as well as pickup speed.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/wmNuuUsm9GY](https://youtu.be/wmNuuUsm9GY)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/wmNuuUsm9GY"
+      ],
+      "path": "docs/research_continuation/2024-1678.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/449823/61",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/c/6c6e2082afe808e79b3e63604b8b57cb80a8f148_2_305x250.png",
+      "post": 61,
+      "date": "2024-01-13T09:59:21.037Z",
+      "author": "GenericUsername",
+      "context_tags": [
+        "intake",
+        "shooter"
+      ],
+      "caption": "2024 team 1678 — source image from post 61 (2024-01-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "2e1444b5a937511856.jpg",
+      "id": "2f3ea7d77c2a3b30ad",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2e1444b5a937511856.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 305,
+      "height_px": 250,
+      "bytes": 10442,
+      "sha256": "2e864b0d4f915151671402346e78165be21e74ffb8408f6fea56e9f1aaff13a3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "2f3ea7d77c2a3b30ad",
+      "reader_url": "index.html#image=2f3ea7d77c2a3b30ad",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-1678",
+    "year": 2024,
+    "team": 1678,
+    "epa_rank": 1,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1678\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 13,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1678\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-1678:construction",
+    "study6-2024-1678:team_stated_reason",
+    "study6-2024-1678:engineering_analysis",
+    "study6-2024-1678:recommended_validation",
+    "study6-2024-1678:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

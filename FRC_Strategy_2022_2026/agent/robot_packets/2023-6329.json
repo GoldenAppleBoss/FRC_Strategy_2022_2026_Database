@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-6329",
+  "year": 2023,
+  "team": 6329,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 6329,
+    "robot": "Shock",
+    "primary": [
+      "https://youtu.be/uLgGPEvMAqA",
+      "https://www.chiefdelphi.com/t/428274"
+    ],
+    "architecture": "Tipping two-stage cascading elevator with a motorized wrist and Everybot-derived dual-piece end effector.",
+    "subsystems": {
+      "intake": "Separate roller contact regions for cones and cubes; retaining netting helps contain cubes.",
+      "transfer": "End effector acquires and scores directly.",
+      "scoring": "Tilting elevator plus wrist supplies the required reach and orientation.",
+      "drivetrain": "Falcon-powered SDS MK4i modules; team switched from an initial NEO implementation after control difficulties.",
+      "endgame": "Specific charge-station mechanism/sequence is not described in the retrieved interview.",
+      "controls": "Cone/cube mode selects coordinated elevator and wrist presets; driver can hold cardinal-direction heading snaps."
+    },
+    "versions": [
+      "Initial NEO swerve configuration changed to Falcons.",
+      "Complete intermediate mechanism revision history is not established."
+    ],
+    "analysis": "Study as a comparatively economical way to obtain reach and orientation with an elevator that tilts as a unit. Its 2024 successor Dial is a different robot and must not be merged into this record.",
+    "limits": [
+      "Endgame implementation not yet verified.",
+      "Some discovery lists incorrectly mix the 2024 Dial release into 2023; that source is excluded from this dossier."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 2,
+    "cad_code_links": [],
+    "id": "2023-6329",
+    "team_name": "The Bucks' Wrath",
+    "epa_rank": 4,
+    "epa": 77.31,
+    "epa_pre_champs": 66.06,
+    "epa_breakdown": {
+      "total_points": 77.31,
+      "auto_points": 17.4,
+      "teleop_points": 46.12,
+      "endgame_points": 10.3,
+      "links_rp": 0.76,
+      "activation_rp": 0.4994,
+      "tiebreaker_points": 73.81,
+      "auto_charge_station_points": 6.71,
+      "auto_pieces": 1.83,
+      "teleop_grid_points": 32.06,
+      "bottom_pieces": 2.08,
+      "middle_pieces": 2.5,
+      "top_pieces": 5.5,
+      "cube_points": 13.79,
+      "cone_points": 27.21,
+      "links": 3.51,
+      "endgame_charge_station_points": 10.3,
+      "rp_1": 0.76,
+      "rp_2": 0.4994
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "52ca0f8cbac086d0",
+      "22fb8214429553b8"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-6329",
+      "year": 2023,
+      "team": 6329,
+      "epa_rank": 4,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"6329\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 12,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"6329\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-6329"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-6329",
+      "title": "Two piece modes coordinate a tilted elevator and motorized wrist",
+      "start_seconds": 108,
+      "end_seconds": 250,
+      "construction": "An Everybot-inspired gripper changes wheel orientation and adds retaining netting for cubes. A tilted elevator and wrist acquire and place directly; software coordinates mode-specific heights, wrist angles and roller directions.",
+      "team_stated_reason": "The source identifies containment and shared piece handling as the gripper’s purpose. Color cues indicate the selected mode; they are not themselves a vision classification result.",
+      "engineering_analysis": "A shared effector needs different states for different pieces. Confusing selected cone/cube mode with sensed possession can produce the wrong approach or release even if every motor reaches its setpoint.",
+      "recommended_validation": "Test mode disagreement, partial pickup and retention during tilt/wrist movement.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-6329",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/uLgGPEvMAqA",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/428274"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 108,
+        "end_seconds": 250,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "uLgGPEvMAqA",
+          "sha256": "9befa0778ad22c503ef3eb2309ce90ea6ad5430e5dc1d6ce27e27dc752414538",
+          "caption_segments": 161,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-6329:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-6329",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-6329"
+      ],
+      "source_urls": [
+        "https://youtu.be/uLgGPEvMAqA"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-6329",
+      "title": "2023-6329 · Two piece modes coordinate a tilted elevator and motorized wrist",
+      "year": 2023,
+      "robot_id": "2023-6329",
+      "kind": "focused_technical_study",
+      "body": "# 2023-6329: Two piece modes coordinate a tilted elevator and motorized wrist\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nAn Everybot-inspired gripper changes wheel orientation and adds retaining netting for cubes. A tilted elevator and wrist acquire and place directly; software coordinates mode-specific heights, wrist angles and roller directions.\n\n## Team-stated reasoning or boundary\n\nThe source identifies containment and shared piece handling as the gripper’s purpose. Color cues indicate the selected mode; they are not themselves a vision classification result.\n\n## Engineering interpretation — analyst inference\n\nA shared effector needs different states for different pieces. Confusing selected cone/cube mode with sensed possession can produce the wrong approach or release even if every motor reaches its setpoint.\n\n## Proposed validation — not performed\n\nTest mode disagreement, partial pickup and retention during tilt/wrist movement.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/uLgGPEvMAqA](https://youtu.be/uLgGPEvMAqA)\n- [https://www.chiefdelphi.com/t/428274](https://www.chiefdelphi.com/t/428274)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/uLgGPEvMAqA",
+        "https://www.chiefdelphi.com/t/428274"
+      ],
+      "path": "docs/research_continuation/2023-6329.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-6329",
+    "year": 2023,
+    "team": 6329,
+    "epa_rank": 4,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"6329\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 12,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"6329\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-6329:construction",
+    "study6-2023-6329:team_stated_reason",
+    "study6-2023-6329:engineering_analysis",
+    "study6-2023-6329:recommended_validation",
+    "study6-2023-6329:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

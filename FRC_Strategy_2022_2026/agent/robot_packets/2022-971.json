@@ -1,0 +1,1271 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-971",
+  "year": 2022,
+  "team": 971,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 971,
+    "robot": "Buckets",
+    "primary": [
+      "https://youtu.be/znrVtVZgQwY",
+      "https://www.chiefdelphi.com/t/406063",
+      "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing"
+    ],
+    "architecture": "Dual intake differential-drive robot with turreted carbon-fiber catapult and controlled handoff.",
+    "subsystems": {
+      "drivetrain": "Differential drive; dual intake plus turret reduces turning required for acquisition.",
+      "intake": "Front and rear vacuum-wheel/omni collectors center cargo.",
+      "transfer": "Three-degree-of-freedom flipper linkage driven by one motor retains cargo until catapult release.",
+      "scoring": "Molded carbon-fiber throwing arm; model-predictive control targets release angle and speed.",
+      "endgame": "Latching mid climb plus spring-extended high-bar mechanism; retrieved configuration climbs high, not traversal.",
+      "controls": "Five-millisecond catapult optimization, custom vision lighting and sensor-controlled oscillating storage."
+    },
+    "versions": [
+      "Collector wheel/material prototypes preceded final package. Turret carries multiple assemblies and requires collision-aware intake positions."
+    ],
+    "analysis": "This is a critical counterexample to flywheel/swerve monoculture. Deliberate release control and a secure handoff make a catapult viable, while a limited climb avoids consuming the entire design budget.",
+    "limits": [
+      "Only published/reviewed configurations are established; further intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2022-971: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## 971 2022: a deliberate West Coast drive simplicity choice\n\nVersion: 971 2022 catapult robot. [PDF p3](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=3) · [PDF p5](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5)\n\n**Published construction:** Six Colson-wheel West Coast drive; two dual-Falcon gearboxes; 8:70 gearbox tooth ratio.\n\n**Team-stated reason or evidence boundary:** Robustness, low maintenance and short-distance acceleration.\n\n**Engineering analysis — original inference:** A differential drive sacrifices direct sideways motion while reducing the number of independent drive and steering mechanisms. That trade can fit a robot whose turret provides aiming independence and whose collectors support acquisition from opposite sides. Wheel choice affects maintenance and turning losses as well as traction. The team’s post-COVID experience constraint is part of this architecture decision: the most sophisticated available module is not automatically the strongest choice when integration and practice capacity differ. Preserve the resource assumption rather than presenting a universal drivetrain ranking.\n\n**Proposed validation — not a completed test:** Measure short-cycle path time, turning current and defended maneuverability using the actual collector and turret operating policy.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: center and guide cargo rather than only gripping harder\n\nVersion: 971 2022 catapult robot. [PDF p6](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6)\n\n**Published construction:** Flex-wheel prototype became mecanum-centered pickup with compliant chain/arm geometry and extra upper guides.\n\n**Team-stated reason or evidence boundary:** Use known intake behavior and improve transfer support.\n\n**Engineering analysis — original inference:** The pickup must establish both ownership and a useful lateral position for the catapult transfer. Mecanum contact supplies centering while the compliant arm accommodates shape and pressure variation. Additional upper rollers address the transition after the initial capture, where a ball can lose support or arrive at the receiver at an uncontrolled height. The lesson is to diagnose the entire handoff path: improving the first roller’s grip cannot solve a downstream gap that lets cargo escape.\n\n**Proposed validation — not a completed test:** Track the ball center through acquisition and transfer with several inflation states; test off-center pickup at realistic driving speed.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: flippy arms combine retention and release\n\nVersion: 971 2022 catapult robot. [PDF p8](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8)\n\n**Published construction:** Spring-loaded paired transfer arms; one-way-bearing action opens them when rollers reverse.\n\n**Team-stated reason or evidence boundary:** Hold cargo in the catapult, then release it for firing.\n\n**Engineering analysis — original inference:** The transfer mechanism serves as a timed constraint on the projectile. It must hold the cargo through turret alignment but stop exerting an unwanted force at release. Coupling reversal to opening reduces an actuator but creates a mechanical timing relationship that software must understand. Spring force and ball compression affect both retention and release delay. If the catapult controller assumes the ball is free before the arms actually clear, a perfectly tracked motor trajectory can still produce a poor shot.\n\n**Proposed validation — not a completed test:** Measure arm clearance and ball release timing relative to motor command, over cargo pressure and spring-wear variation.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: a controlled catapult instead of a flywheel\n\nVersion: 971 2022 catapult robot. [PDF p9](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9) · [PDF p13](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=13)\n\n**Published construction:** Light carbon catapult, two Falcons, 7:99 tooth ratio and model-predictive launch control.\n\n**Team-stated reason or evidence boundary:** Team prototypes favored tolerance to cargo pressure and surface-friction variation.\n\n**Engineering analysis — original inference:** A motor-driven catapult sets the projectile’s velocity through the motion of a supporting arm rather than relying primarily on slip against a high-speed wheel. That can reduce one source of friction sensitivity while introducing trajectory tracking, release timing and structural stiffness requirements. A lighter arm spends less energy accelerating itself and leaves more actuator authority for the cargo. The controller needs the correct state at release, not merely a final position, because angle and velocity together determine the shot. This is a specific tested alternative, not a claim that catapults universally beat flywheels.\n\n**Proposed validation — not a completed test:** Measure release angle and velocity across inflation and surface variation, compare with the flywheel prototype under equal conditions, and test mis-timed retention release.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: turret structure must also react climbing loads\n\nVersion: 971 2022 catapult robot. [PDF p7](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7) · [PDF p10](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10)\n\n**Published construction:** Turret carries catapult and climber; paired bearing support; climber revisions progress toward a spring-extended high-bar package.\n\n**Team-stated reason or evidence boundary:** Support firing and hanging loads with compact packaging.\n\n**Engineering analysis — original inference:** A bearing sized only for smooth aiming may be inadequate once the suspended robot applies an overturning moment through the turret. Two support locations can define a load path for that moment while maintaining axis alignment. Shared structure saves space but couples the climber’s strength requirements to the shooter’s pointing stiffness. The documented objective changed from a mid-rung solution toward higher reach, so do not infer traversal capability from a general “climber” label. Each pictured prototype also needs its own competition-use evidence.\n\n**Proposed validation — not a completed test:** Check bearing and mount loads through firing and hanging, verify output-axis alignment afterward, and establish the dated competed climb configuration.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | 8:70 tooth pair; four Falcons | [Source p5](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5) |\n| Turret | 102.4:1; 6.5-in-ID X-contact plus 1-in bearing | [Source p7](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7) |\n| Flippy arms | 7:88 gearbox pair; 32:22 roller pair; 0.75-in cargo compression | [Source p8](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8) |\n| Catapult | 7:99 tooth pair; two Falcons | [Source p9](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9) |\n| Current climber | 1:36 source notation; chain/cable; high-bar spring extension | [Source p10](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "id": "binder-786e3d5aabeae7d675-p5-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 5,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p5-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5",
+        "caption": "2022-971 · 971 2022 catapult robot · West Coast drive · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "West Coast drive",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          36.64960479736328,
+          218.78445434570312,
+          575.3502197265625,
+          437.3680419921875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 5
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p6-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p6-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6",
+        "caption": "2022-971 · 971 2022 catapult robot · Intake iterations · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake iterations",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          331.2557067871094,
+          240.24588012695312,
+          565.054931640625,
+          317.0628356933594
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p6-2",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 6,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p6-2.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6",
+        "caption": "2022-971 · 971 2022 catapult robot · Intake iterations · PDF page 6, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake iterations",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          130.59713745117188,
+          203.1456298828125,
+          210.9421844482422,
+          354.1612854003906
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p6-3",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 6,
+        "figure_number": 3,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p6-3.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6",
+        "caption": "2022-971 · 971 2022 catapult robot · Intake iterations · PDF page 6, extracted detail 3. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake iterations",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          185.2283477783203,
+          604.0904541015625,
+          426.77166748046875,
+          788.1947631835938
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p7-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p7-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7",
+        "caption": "2022-971 · 971 2022 catapult robot · Turret and cable management · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Turret and cable management",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          100.74211883544922,
+          169.35476684570312,
+          511.25799560546875,
+          466.7099914550781
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p8-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p8-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8",
+        "caption": "2022-971 · 971 2022 catapult robot · Flippy-arm transfer · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Flippy-arm transfer",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          13.157480239868164,
+          121.99856567382812,
+          612.0,
+          563.0040893554688
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p9-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p9-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9",
+        "caption": "2022-971 · 971 2022 catapult robot · Catapult and flywheel prototypes · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Catapult and flywheel prototypes",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          86.23211669921875,
+          599.3778076171875,
+          752.1476440429688
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p10-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p10-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+        "caption": "2022-971 · 971 2022 catapult robot · Climber iterations · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Climber iterations",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          365.9980163574219,
+          199.39886474609375,
+          534.9192504882812,
+          357.9075622558594
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p10-2",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 10,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p10-2.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+        "caption": "2022-971 · 971 2022 catapult robot · Climber iterations · PDF page 10, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Climber iterations",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          44.74212646484375,
+          196.19528198242188,
+          296.7952880859375,
+          516.66650390625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p10-3",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 10,
+        "figure_number": 3,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p10-3.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+        "caption": "2022-971 · 971 2022 catapult robot · Climber iterations · PDF page 10, extracted detail 3. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Climber iterations",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          365.9980163574219,
+          471.23382568359375,
+          553.287353515625,
+          792.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p11-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p11-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=11",
+        "caption": "2022-971 · 971 2022 catapult robot · Custom electronics · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Custom electronics",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          180.166259765625,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-786e3d5aabeae7d675-p12-1",
+        "robot_id": "2022-971",
+        "kind": "binder_figure",
+        "binder_id": "786e3d5aabeae7d675",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-786e3d5aabeae7d675-p12-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=12",
+        "caption": "2022-971 · 971 2022 catapult robot · Vision processing · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Vision processing",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          22.611221313476562,
+          356.9260559082031,
+          612.0,
+          769.0537109375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      }
+    ],
+    "source_post_count": 9,
+    "cad_code_links": [
+      {
+        "robot_id": "2022-971",
+        "discovery_post": "2022-971-406063-42",
+        "url": "https://github.com/frc971/971-Robot-Code/blob/master/y2022/control_loops/superstructure/catapult/mpc.tex",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "eda3fbdcdff0c7b4aa"
+      },
+      {
+        "robot_id": "2022-971",
+        "discovery_post": "2022-971-406063-42",
+        "url": "https://github.com/frc971/971-Robot-Code/blob/master/y2022/control_loops/superstructure/catapult/catapult.cc#L249-L259",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6bf1ec58b53166f833"
+      }
+    ],
+    "id": "2022-971",
+    "team_name": "Spartan Robotics",
+    "epa_rank": 16,
+    "epa": 52.73,
+    "epa_pre_champs": 45.37,
+    "epa_breakdown": {
+      "total_points": 52.73,
+      "auto_points": 16.05,
+      "teleop_points": 28.16,
+      "endgame_points": 8.52,
+      "cargo_rp": 0.6018,
+      "hangar_rp": 0.5085,
+      "tiebreaker_points": 52.73,
+      "auto_taxi_points": 2.16,
+      "auto_cargo_lower": 0.03,
+      "auto_cargo_upper": 3.46,
+      "teleop_cargo_lower": -0.31,
+      "teleop_cargo_upper": 14.24,
+      "rp_1": 0.6018,
+      "rp_2": 0.5085
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "00caedc29f992d8f",
+      "ef6ef8ecb8fbebc0"
+    ],
+    "tags": [
+      "climb",
+      "turret",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-786e3d5aabeae7d675-32",
+      "tech-786e3d5aabeae7d675-33",
+      "tech-786e3d5aabeae7d675-34",
+      "tech-786e3d5aabeae7d675-35",
+      "tech-786e3d5aabeae7d675-36"
+    ],
+    "binder_source_ids": [
+      "786e3d5aabeae7d675"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-971",
+      "year": 2022,
+      "team": 971,
+      "epa_rank": 16,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"971\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 2,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "786e3d5aabeae7d675"
+      ],
+      "technical_note_ids": [
+        "tech-786e3d5aabeae7d675-32",
+        "tech-786e3d5aabeae7d675-33",
+        "tech-786e3d5aabeae7d675-34",
+        "tech-786e3d5aabeae7d675-35",
+        "tech-786e3d5aabeae7d675-36"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "0aaa78b7a9578fe01a",
+          "url": "https://docs.lynkrobotics.org/technicalBinders/971/971-TB-2022.pdf",
+          "error": "HTTPError: HTTP Error 404: Not Found",
+          "discovery": "Targeted web search; identity must be verified in PDF",
+          "status": "access_failed"
+        },
+        {
+          "id": "786e3d5aabeae7d675",
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+          "error": null,
+          "discovery": "https://docs.lynkrobotics.org/technicalBinders/",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "786e3d5aabeae7d675",
+      "subsystem": "drivetrain",
+      "title": "971 2022: a deliberate West Coast drive simplicity choice",
+      "pdf_pages": [
+        3,
+        5
+      ],
+      "construction": "Six Colson-wheel West Coast drive; two dual-Falcon gearboxes; 8:70 gearbox tooth ratio.",
+      "team_stated_reason": "Robustness, low maintenance and short-distance acceleration.",
+      "engineering_analysis": "A differential drive sacrifices direct sideways motion while reducing the number of independent drive and steering mechanisms. That trade can fit a robot whose turret provides aiming independence and whose collectors support acquisition from opposite sides. Wheel choice affects maintenance and turning losses as well as traction. The team’s post-COVID experience constraint is part of this architecture decision: the most sophisticated available module is not automatically the strongest choice when integration and practice capacity differ. Preserve the resource assumption rather than presenting a universal drivetrain ranking.",
+      "recommended_validation": "Measure short-cycle path time, turning current and defended maneuverability using the actual collector and turret operating policy.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-786e3d5aabeae7d675-32",
+      "robot_id": "2022-971",
+      "year": 2022,
+      "version_label": "971 2022 catapult robot",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 3,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=3"
+        },
+        {
+          "pdf_page": 5,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5"
+        }
+      ],
+      "image_ids": [
+        "binder-786e3d5aabeae7d675-p5-1"
+      ]
+    },
+    {
+      "binder_id": "786e3d5aabeae7d675",
+      "subsystem": "intake",
+      "title": "971 2022: center and guide cargo rather than only gripping harder",
+      "pdf_pages": [
+        6
+      ],
+      "construction": "Flex-wheel prototype became mecanum-centered pickup with compliant chain/arm geometry and extra upper guides.",
+      "team_stated_reason": "Use known intake behavior and improve transfer support.",
+      "engineering_analysis": "The pickup must establish both ownership and a useful lateral position for the catapult transfer. Mecanum contact supplies centering while the compliant arm accommodates shape and pressure variation. Additional upper rollers address the transition after the initial capture, where a ball can lose support or arrive at the receiver at an uncontrolled height. The lesson is to diagnose the entire handoff path: improving the first roller’s grip cannot solve a downstream gap that lets cargo escape.",
+      "recommended_validation": "Track the ball center through acquisition and transfer with several inflation states; test off-center pickup at realistic driving speed.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-786e3d5aabeae7d675-33",
+      "robot_id": "2022-971",
+      "year": 2022,
+      "version_label": "971 2022 catapult robot",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 6,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6"
+        }
+      ],
+      "image_ids": [
+        "binder-786e3d5aabeae7d675-p6-1",
+        "binder-786e3d5aabeae7d675-p6-2",
+        "binder-786e3d5aabeae7d675-p6-3"
+      ]
+    },
+    {
+      "binder_id": "786e3d5aabeae7d675",
+      "subsystem": "transfer",
+      "title": "971 2022: flippy arms combine retention and release",
+      "pdf_pages": [
+        8
+      ],
+      "construction": "Spring-loaded paired transfer arms; one-way-bearing action opens them when rollers reverse.",
+      "team_stated_reason": "Hold cargo in the catapult, then release it for firing.",
+      "engineering_analysis": "The transfer mechanism serves as a timed constraint on the projectile. It must hold the cargo through turret alignment but stop exerting an unwanted force at release. Coupling reversal to opening reduces an actuator but creates a mechanical timing relationship that software must understand. Spring force and ball compression affect both retention and release delay. If the catapult controller assumes the ball is free before the arms actually clear, a perfectly tracked motor trajectory can still produce a poor shot.",
+      "recommended_validation": "Measure arm clearance and ball release timing relative to motor command, over cargo pressure and spring-wear variation.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-786e3d5aabeae7d675-34",
+      "robot_id": "2022-971",
+      "year": 2022,
+      "version_label": "971 2022 catapult robot",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8"
+        }
+      ],
+      "image_ids": [
+        "binder-786e3d5aabeae7d675-p8-1"
+      ]
+    },
+    {
+      "binder_id": "786e3d5aabeae7d675",
+      "subsystem": "scoring",
+      "title": "971 2022: a controlled catapult instead of a flywheel",
+      "pdf_pages": [
+        9,
+        13
+      ],
+      "construction": "Light carbon catapult, two Falcons, 7:99 tooth ratio and model-predictive launch control.",
+      "team_stated_reason": "Team prototypes favored tolerance to cargo pressure and surface-friction variation.",
+      "engineering_analysis": "A motor-driven catapult sets the projectile’s velocity through the motion of a supporting arm rather than relying primarily on slip against a high-speed wheel. That can reduce one source of friction sensitivity while introducing trajectory tracking, release timing and structural stiffness requirements. A lighter arm spends less energy accelerating itself and leaves more actuator authority for the cargo. The controller needs the correct state at release, not merely a final position, because angle and velocity together determine the shot. This is a specific tested alternative, not a claim that catapults universally beat flywheels.",
+      "recommended_validation": "Measure release angle and velocity across inflation and surface variation, compare with the flywheel prototype under equal conditions, and test mis-timed retention release.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-786e3d5aabeae7d675-35",
+      "robot_id": "2022-971",
+      "year": 2022,
+      "version_label": "971 2022 catapult robot",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 9,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-786e3d5aabeae7d675-p9-1"
+      ]
+    },
+    {
+      "binder_id": "786e3d5aabeae7d675",
+      "subsystem": "endgame",
+      "title": "971 2022: turret structure must also react climbing loads",
+      "pdf_pages": [
+        7,
+        10
+      ],
+      "construction": "Turret carries catapult and climber; paired bearing support; climber revisions progress toward a spring-extended high-bar package.",
+      "team_stated_reason": "Support firing and hanging loads with compact packaging.",
+      "engineering_analysis": "A bearing sized only for smooth aiming may be inadequate once the suspended robot applies an overturning moment through the turret. Two support locations can define a load path for that moment while maintaining axis alignment. Shared structure saves space but couples the climber’s strength requirements to the shooter’s pointing stiffness. The documented objective changed from a mid-rung solution toward higher reach, so do not infer traversal capability from a general “climber” label. Each pictured prototype also needs its own competition-use evidence.",
+      "recommended_validation": "Check bearing and mount loads through firing and hanging, verify output-axis alignment afterward, and establish the dated competed climb configuration.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-786e3d5aabeae7d675-36",
+      "robot_id": "2022-971",
+      "year": 2022,
+      "version_label": "971 2022 catapult robot",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7"
+        },
+        {
+          "pdf_page": 10,
+          "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-786e3d5aabeae7d675-p7-1",
+        "binder-786e3d5aabeae7d675-p10-1",
+        "binder-786e3d5aabeae7d675-p10-2",
+        "binder-786e3d5aabeae7d675-p10-3"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-786e3d5aabeae7d675-1",
+      "binder_id": "786e3d5aabeae7d675",
+      "robot_id": "2022-971",
+      "pdf_page": 5,
+      "component": "Drive",
+      "published_parameters": "8:70 tooth pair; four Falcons",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-786e3d5aabeae7d675-2",
+      "binder_id": "786e3d5aabeae7d675",
+      "robot_id": "2022-971",
+      "pdf_page": 7,
+      "component": "Turret",
+      "published_parameters": "102.4:1; 6.5-in-ID X-contact plus 1-in bearing",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-786e3d5aabeae7d675-3",
+      "binder_id": "786e3d5aabeae7d675",
+      "robot_id": "2022-971",
+      "pdf_page": 8,
+      "component": "Flippy arms",
+      "published_parameters": "7:88 gearbox pair; 32:22 roller pair; 0.75-in cargo compression",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-786e3d5aabeae7d675-4",
+      "binder_id": "786e3d5aabeae7d675",
+      "robot_id": "2022-971",
+      "pdf_page": 9,
+      "component": "Catapult",
+      "published_parameters": "7:99 tooth pair; two Falcons",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-786e3d5aabeae7d675-5",
+      "binder_id": "786e3d5aabeae7d675",
+      "robot_id": "2022-971",
+      "pdf_page": 10,
+      "component": "Current climber",
+      "published_parameters": "1:36 source notation; chain/cable; high-bar spring extension",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "786e3d5aabeae7d675",
+      "robot_id": "2022-971",
+      "title": "2022-971 971 2022 catapult robot technical publication",
+      "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+      "format": "pdf",
+      "pages": 13,
+      "sha256": "3e333cf25789afec7ec0d8f661806407f81dd023558cc419564055c5fd8219a8",
+      "bytes": 4838284,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "figure_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://docs.lynkrobotics.org/technicalBinders/",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2022-971:publication-version:1",
+      "label": "971 2022 catapult robot",
+      "robot_id": "2022-971",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-786e3d5aabeae7d675-32",
+        "tech-786e3d5aabeae7d675-33",
+        "tech-786e3d5aabeae7d675-34",
+        "tech-786e3d5aabeae7d675-35",
+        "tech-786e3d5aabeae7d675-36"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2022-971",
+      "title": "2022-971: technical construction and mechanism reasoning",
+      "year": 2022,
+      "robot_id": "2022-971",
+      "kind": "robot_technical_review",
+      "body": "# 2022-971: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## 971 2022: a deliberate West Coast drive simplicity choice\n\nVersion: 971 2022 catapult robot. [PDF p3](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=3) · [PDF p5](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5)\n\n**Published construction:** Six Colson-wheel West Coast drive; two dual-Falcon gearboxes; 8:70 gearbox tooth ratio.\n\n**Team-stated reason or evidence boundary:** Robustness, low maintenance and short-distance acceleration.\n\n**Engineering analysis — original inference:** A differential drive sacrifices direct sideways motion while reducing the number of independent drive and steering mechanisms. That trade can fit a robot whose turret provides aiming independence and whose collectors support acquisition from opposite sides. Wheel choice affects maintenance and turning losses as well as traction. The team’s post-COVID experience constraint is part of this architecture decision: the most sophisticated available module is not automatically the strongest choice when integration and practice capacity differ. Preserve the resource assumption rather than presenting a universal drivetrain ranking.\n\n**Proposed validation — not a completed test:** Measure short-cycle path time, turning current and defended maneuverability using the actual collector and turret operating policy.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: center and guide cargo rather than only gripping harder\n\nVersion: 971 2022 catapult robot. [PDF p6](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6)\n\n**Published construction:** Flex-wheel prototype became mecanum-centered pickup with compliant chain/arm geometry and extra upper guides.\n\n**Team-stated reason or evidence boundary:** Use known intake behavior and improve transfer support.\n\n**Engineering analysis — original inference:** The pickup must establish both ownership and a useful lateral position for the catapult transfer. Mecanum contact supplies centering while the compliant arm accommodates shape and pressure variation. Additional upper rollers address the transition after the initial capture, where a ball can lose support or arrive at the receiver at an uncontrolled height. The lesson is to diagnose the entire handoff path: improving the first roller’s grip cannot solve a downstream gap that lets cargo escape.\n\n**Proposed validation — not a completed test:** Track the ball center through acquisition and transfer with several inflation states; test off-center pickup at realistic driving speed.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: flippy arms combine retention and release\n\nVersion: 971 2022 catapult robot. [PDF p8](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8)\n\n**Published construction:** Spring-loaded paired transfer arms; one-way-bearing action opens them when rollers reverse.\n\n**Team-stated reason or evidence boundary:** Hold cargo in the catapult, then release it for firing.\n\n**Engineering analysis — original inference:** The transfer mechanism serves as a timed constraint on the projectile. It must hold the cargo through turret alignment but stop exerting an unwanted force at release. Coupling reversal to opening reduces an actuator but creates a mechanical timing relationship that software must understand. Spring force and ball compression affect both retention and release delay. If the catapult controller assumes the ball is free before the arms actually clear, a perfectly tracked motor trajectory can still produce a poor shot.\n\n**Proposed validation — not a completed test:** Measure arm clearance and ball release timing relative to motor command, over cargo pressure and spring-wear variation.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: a controlled catapult instead of a flywheel\n\nVersion: 971 2022 catapult robot. [PDF p9](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9) · [PDF p13](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=13)\n\n**Published construction:** Light carbon catapult, two Falcons, 7:99 tooth ratio and model-predictive launch control.\n\n**Team-stated reason or evidence boundary:** Team prototypes favored tolerance to cargo pressure and surface-friction variation.\n\n**Engineering analysis — original inference:** A motor-driven catapult sets the projectile’s velocity through the motion of a supporting arm rather than relying primarily on slip against a high-speed wheel. That can reduce one source of friction sensitivity while introducing trajectory tracking, release timing and structural stiffness requirements. A lighter arm spends less energy accelerating itself and leaves more actuator authority for the cargo. The controller needs the correct state at release, not merely a final position, because angle and velocity together determine the shot. This is a specific tested alternative, not a claim that catapults universally beat flywheels.\n\n**Proposed validation — not a completed test:** Measure release angle and velocity across inflation and surface variation, compare with the flywheel prototype under equal conditions, and test mis-timed retention release.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 971 2022: turret structure must also react climbing loads\n\nVersion: 971 2022 catapult robot. [PDF p7](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7) · [PDF p10](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10)\n\n**Published construction:** Turret carries catapult and climber; paired bearing support; climber revisions progress toward a spring-extended high-bar package.\n\n**Team-stated reason or evidence boundary:** Support firing and hanging loads with compact packaging.\n\n**Engineering analysis — original inference:** A bearing sized only for smooth aiming may be inadequate once the suspended robot applies an overturning moment through the turret. Two support locations can define a load path for that moment while maintaining axis alignment. Shared structure saves space but couples the climber’s strength requirements to the shooter’s pointing stiffness. The documented objective changed from a mid-rung solution toward higher reach, so do not infer traversal capability from a general “climber” label. Each pictured prototype also needs its own competition-use evidence.\n\n**Proposed validation — not a completed test:** Check bearing and mount loads through firing and hanging, verify output-axis alignment afterward, and establish the dated competed climb configuration.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | 8:70 tooth pair; four Falcons | [Source p5](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5) |\n| Turret | 102.4:1; 6.5-in-ID X-contact plus 1-in bearing | [Source p7](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7) |\n| Flippy arms | 7:88 gearbox pair; 32:22 roller pair; 0.75-in cargo compression | [Source p8](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8) |\n| Catapult | 7:99 tooth pair; two Falcons | [Source p9](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9) |\n| Current climber | 1:36 source notation; chain/cable; high-bar spring extension | [Source p10](https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing"
+      ],
+      "path": "docs/technical/2022-971.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "binder-786e3d5aabeae7d675-p5-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 5,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p5-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=5",
+      "caption": "2022-971 · 971 2022 catapult robot · West Coast drive · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "West Coast drive",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        36.64960479736328,
+        218.78445434570312,
+        575.3502197265625,
+        437.3680419921875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 5,
+      "media_type": "image/jpeg",
+      "width_px": 1240,
+      "height_px": 503,
+      "bytes": 168901,
+      "sha256": "cf70e51997b9ed4ed4284d31ddddd61044b0da49451777ce0685573ec5d682e2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p5-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p5-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p6-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p6-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6",
+      "caption": "2022-971 · 971 2022 catapult robot · Intake iterations · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake iterations",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        331.2557067871094,
+        240.24588012695312,
+        565.054931640625,
+        317.0628356933594
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 539,
+      "height_px": 178,
+      "bytes": 24292,
+      "sha256": "28c4d9a84ba763668f1c35880d6d26a8f5f8d9f826303403e1e1887cc1052cf0",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p6-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p6-2",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 6,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p6-2.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6",
+      "caption": "2022-971 · 971 2022 catapult robot · Intake iterations · PDF page 6, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake iterations",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        130.59713745117188,
+        203.1456298828125,
+        210.9421844482422,
+        354.1612854003906
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 186,
+      "height_px": 348,
+      "bytes": 21988,
+      "sha256": "8f023263942a50653afc2f32321aef1e161f3c311eae3a087e39603225cf90f6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p6-2",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p6-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p6-3",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 6,
+      "figure_number": 3,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p6-3.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=6",
+      "caption": "2022-971 · 971 2022 catapult robot · Intake iterations · PDF page 6, extracted detail 3. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake iterations",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        185.2283477783203,
+        604.0904541015625,
+        426.77166748046875,
+        788.1947631835938
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 556,
+      "height_px": 424,
+      "bytes": 32670,
+      "sha256": "d18666a1c94cb35ffd48f4529538bf9d9237a00dbc48c52fc2285d2c331882ee",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p6-3",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p6-3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p7-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p7-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=7",
+      "caption": "2022-971 · 971 2022 catapult robot · Turret and cable management · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Turret and cable management",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        100.74211883544922,
+        169.35476684570312,
+        511.25799560546875,
+        466.7099914550781
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 945,
+      "height_px": 685,
+      "bytes": 49263,
+      "sha256": "e9d5ea93ace31ba4d842e4dc4289659a0ba3ad9a5ee854ed2322f3323d926f9c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p7-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p8-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p8-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=8",
+      "caption": "2022-971 · 971 2022 catapult robot · Flippy-arm transfer · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Flippy-arm transfer",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        13.157480239868164,
+        121.99856567382812,
+        612.0,
+        563.0040893554688
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1378,
+      "height_px": 1015,
+      "bytes": 244305,
+      "sha256": "d4d002e158a773bd5d9d11d92ce0fdf8538946667889907349c18ebd0fb426fc",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p8-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p9-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p9-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=9",
+      "caption": "2022-971 · 971 2022 catapult robot · Catapult and flywheel prototypes · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Catapult and flywheel prototypes",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        86.23211669921875,
+        599.3778076171875,
+        752.1476440429688
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1261,
+      "height_px": 1401,
+      "bytes": 286843,
+      "sha256": "6ed347f88cf8b333ba2677acd10f9d7865a876c271b3b77c5489477e989f2877",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p9-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p10-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p10-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+      "caption": "2022-971 · 971 2022 catapult robot · Climber iterations · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Climber iterations",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        365.9980163574219,
+        199.39886474609375,
+        534.9192504882812,
+        357.9075622558594
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 390,
+      "height_px": 366,
+      "bytes": 13878,
+      "sha256": "8247c8c0e897f75d8f6f99e3cb60561a8d653c03e413dd5c3bd7d699da8cbd26",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p10-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p10-2",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 10,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p10-2.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+      "caption": "2022-971 · 971 2022 catapult robot · Climber iterations · PDF page 10, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Climber iterations",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        44.74212646484375,
+        196.19528198242188,
+        296.7952880859375,
+        516.66650390625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 581,
+      "height_px": 738,
+      "bytes": 68595,
+      "sha256": "7d53db925093c5d8d56bb0dee0da02e1bcd6833afdd977d9331ddc4ccc10d0e3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p10-2",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p10-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p10-3",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 10,
+      "figure_number": 3,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p10-3.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=10",
+      "caption": "2022-971 · 971 2022 catapult robot · Climber iterations · PDF page 10, extracted detail 3. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Climber iterations",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        365.9980163574219,
+        471.23382568359375,
+        553.287353515625,
+        792.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 432,
+      "height_px": 739,
+      "bytes": 63040,
+      "sha256": "6db7c135c958612134e567dd0b8425cd7e398bbfa51dce205253d56f38329e01",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p10-3",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p10-3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p11-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p11-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=11",
+      "caption": "2022-971 · 971 2022 catapult robot · Custom electronics · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Custom electronics",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        180.166259765625,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 1400,
+      "height_px": 1400,
+      "bytes": 441405,
+      "sha256": "db1ddb0de392e5f9315eb395580eb50183c6abac64218710f89d8a71439eeddf",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p11-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-786e3d5aabeae7d675-p12-1",
+      "robot_id": "2022-971",
+      "kind": "binder_figure",
+      "binder_id": "786e3d5aabeae7d675",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-786e3d5aabeae7d675-p12-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing#page=12",
+      "caption": "2022-971 · 971 2022 catapult robot · Vision processing · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Vision processing",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        22.611221313476562,
+        356.9260559082031,
+        612.0,
+        769.0537109375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 1356,
+      "height_px": 949,
+      "bytes": 133500,
+      "sha256": "f939287234d51f32a9fb71fb43005ff40e36525d7c4a098f4467c089f374776f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-786e3d5aabeae7d675-p12-1",
+      "reader_url": "index.html#image=binder-786e3d5aabeae7d675-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-971",
+    "year": 2022,
+    "team": 971,
+    "epa_rank": 16,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"971\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 2,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "786e3d5aabeae7d675"
+    ],
+    "technical_note_ids": [
+      "tech-786e3d5aabeae7d675-32",
+      "tech-786e3d5aabeae7d675-33",
+      "tech-786e3d5aabeae7d675-34",
+      "tech-786e3d5aabeae7d675-35",
+      "tech-786e3d5aabeae7d675-36"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "0aaa78b7a9578fe01a",
+        "url": "https://docs.lynkrobotics.org/technicalBinders/971/971-TB-2022.pdf",
+        "error": "HTTPError: HTTP Error 404: Not Found",
+        "discovery": "Targeted web search; identity must be verified in PDF",
+        "status": "access_failed"
+      },
+      {
+        "id": "786e3d5aabeae7d675",
+        "url": "https://drive.google.com/file/d/1RrrDPh5zAsCcHDBvC_XfE8EIunZshhFn/view?usp=sharing",
+        "error": null,
+        "discovery": "https://docs.lynkrobotics.org/technicalBinders/",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-786e3d5aabeae7d675-32:construction",
+    "tech-786e3d5aabeae7d675-32:team_stated_reason",
+    "tech-786e3d5aabeae7d675-32:engineering_analysis",
+    "tech-786e3d5aabeae7d675-32:recommended_validation",
+    "tech-786e3d5aabeae7d675-32:limitations",
+    "tech-786e3d5aabeae7d675-33:construction",
+    "tech-786e3d5aabeae7d675-33:team_stated_reason",
+    "tech-786e3d5aabeae7d675-33:engineering_analysis",
+    "tech-786e3d5aabeae7d675-33:recommended_validation",
+    "tech-786e3d5aabeae7d675-33:limitations",
+    "tech-786e3d5aabeae7d675-34:construction",
+    "tech-786e3d5aabeae7d675-34:team_stated_reason",
+    "tech-786e3d5aabeae7d675-34:engineering_analysis",
+    "tech-786e3d5aabeae7d675-34:recommended_validation",
+    "tech-786e3d5aabeae7d675-34:limitations",
+    "tech-786e3d5aabeae7d675-35:construction",
+    "tech-786e3d5aabeae7d675-35:team_stated_reason",
+    "tech-786e3d5aabeae7d675-35:engineering_analysis",
+    "tech-786e3d5aabeae7d675-35:recommended_validation",
+    "tech-786e3d5aabeae7d675-35:limitations",
+    "tech-786e3d5aabeae7d675-36:construction",
+    "tech-786e3d5aabeae7d675-36:team_stated_reason",
+    "tech-786e3d5aabeae7d675-36:engineering_analysis",
+    "tech-786e3d5aabeae7d675-36:recommended_validation",
+    "tech-786e3d5aabeae7d675-36:limitations",
+    "param-786e3d5aabeae7d675-1",
+    "param-786e3d5aabeae7d675-2",
+    "param-786e3d5aabeae7d675-3",
+    "param-786e3d5aabeae7d675-4",
+    "param-786e3d5aabeae7d675-5"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

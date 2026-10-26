@@ -1,0 +1,936 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-254",
+  "year": 2024,
+  "team": 254,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 254,
+    "robot": "Vortex",
+    "primary": [
+      "https://youtu.be/IykJdvD_h7k",
+      "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf"
+    ],
+    "architecture": "Turreted speaker scorer with horizontal note spindexer and separate elevator amp/trap path.",
+    "subsystems": {
+      "drivetrain": "Lower-geared Kraken swerve and deeper frame rails; electronics packaged around turret service space.",
+      "intake": "Under-bumper rollers, mecanum centering and spring-loaded one-way routing ramp.",
+      "transfer": "Pizza-box chamber deforms the note horizontally; powered spindexer feeds the turret from varying chassis headings.",
+      "scoring": "Turret has roughly 720-degree travel; redesigned multi-roller launcher adds inertia without oversized heavy wheels.",
+      "endgame": "Winched telescopic hooks plus elevator, stage-reaction wheels and pulsed trap feed.",
+      "controls": "Speaker, amp, loading and passing modes coordinate routing, aiming and readiness."
+    },
+    "versions": [
+      "Major shooter redesign between Sacramento and East Bay: added motor/rollers, straighter note path and separate inertia disks."
+    ],
+    "analysis": "Turret value depends on acquisition-to-shooter routing and repeatable note deformation. It also enables cleanup and passing roles; simple shot accuracy alone does not describe the architecture's advantage.",
+    "limits": [
+      "Only source-established configurations and changes are described; intermediate revisions may remain unresolved."
+    ],
+    "deep_context": "# 2024-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## VORTEX: centered under-bumper acquisition\n\nVersion: VORTEX. [PDF p11](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=11)\n\n**Published construction:** Mecanum front contact, kicker rollers and angled powered funneling wheels.\n\n**Team-stated reason or evidence boundary:** Accept side approaches and center notes without jamming.\n\n**Engineering analysis — original inference:** A note arriving sideways or off-center should be translated toward the feeder before the shooter demands a repeatable entry state. Mecanum and angled contacts can supply that transverse velocity, but excess lateral force can fold or wedge the note. A stiff bumper and intake mount preserve the intended compression under defense. The correct performance measure includes successful ownership from the edge of the mouth, not only straight-on pickup at the center.\n\n**Proposed validation — not a completed test:** Map pickup across the mouth with deformed notes, oblique approaches and bumper impacts; observe the first region where motion stops.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: annular feed removes the intake-indexing heading constraint\n\nVersion: VORTEX. [PDF p12](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12) · [PDF p13](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13)\n\n**Published construction:** Two-direction annular feeder supplies a turret without returning it to the intake; 720° cable system.\n\n**Team-stated reason or evidence boundary:** Maintain goal tracking during acquisition and feeding.\n\n**Engineering analysis — original inference:** The architectural benefit is not merely a large turret angle. Many turreted designs must rotate to an intake alignment before receiving a note, losing continuous tracking. An annular feed trades that delay for a larger guided path whose friction, seams and direction switching must be managed. Choosing the shorter route can reduce feed time, while a reversal must preserve piece state. The cable system makes the aiming envelope physically usable; without reliable wire guidance, the extra angular range is only a CAD possibility.\n\n**Proposed validation — not a completed test:** Feed at multiple turret headings including through a direction change; test note wear, guide friction and cable-chain operation near both limits.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: revised shooter separates feed and launch contacts\n\nVersion: VORTEX. [PDF p14](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14)\n\n**Published construction:** Second-revision quad-wheel shooter; staged feed rollers; asymmetrical wheels; sector-gear hood.\n\n**Team-stated reason or evidence boundary:** Controlled note entry and spin for a flatter useful trajectory.\n\n**Engineering analysis — original inference:** The note’s flexible ring makes its entry orientation and deformation important to launch repeatability. A dedicated first stage can establish the approach before the high-speed wheels impart the final velocity and spin. Asymmetric contact can bias spin, but the resulting flight still needs empirical validation over wear and range. Hood backlash is an angular error that becomes more consequential at some distances than others. The revision label matters: a final shooter image must not silently stand in for an earlier competition version.\n\n**Proposed validation — not a completed test:** Measure entry deformation and shot dispersion with several note conditions; compare hood approaches from both directions and both feed routes.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: amplifier is a second routing destination\n\nVersion: VORTEX. [PDF p15](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15)\n\n**Published construction:** Roller carriage on an elevator routes notes to amp/trap and accepts human-player feed.\n\n**Team-stated reason or evidence boundary:** Support multiple scoring and shuttling roles.\n\n**Engineering analysis — original inference:** The amplifier is not just a final scoring roller. It adds a branch to the note-routing state machine and a distinct human-player acquisition path. Shared use can justify the mechanism’s mass if those roles are valuable in the alliance plan, but creates more transitions and collision states. Passive trap-reaction wheels supply a structural contact during climbing, tying its geometry to the endgame sequence. The agent should explain those dependencies before recommending the package to a team that only needs one of its functions.\n\n**Proposed validation — not a completed test:** Test every routing transition and interrupted sequence; verify that the trap reaction contact does not dislodge the stored note.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: rapid rope climb establishes trap height\n\nVersion: VORTEX. [PDF p16](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16)\n\n**Published construction:** Sprung hook arms and a low-mounted rope winch pull the robot to trap height.\n\n**Team-stated reason or evidence boundary:** Lift quickly while enabling the amplifier to reach the trap.\n\n**Engineering analysis — original inference:** The climb’s lift distance is determined by the scorer’s required geometry, not just the minimum suspension score. Gas springs can deploy the hooks while the winch retracts them under load. A rope path needs secure anchors, consistent winding and sufficient clearance as the robot swings. If retention relies on drivetrain or motor braking behavior, that exact power-off state should be validated rather than assumed. The trap sequence must preserve the reaction contact and note orientation throughout the lift.\n\n**Proposed validation — not a completed test:** Test acquisition, lift, trap alignment and disable as one sequence with several chain heights and swing angles.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 27×27-in frame; L3; 18 ft/s | [Source p10](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=10) |\n| Turret | 14:52 then 10:125 tooth pairs; 720° range | [Source p12](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12) |\n| Feeder | 15:18 then 15:15 belt pairs; two Krakens | [Source p13](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13) |\n| Shooter | 10°–50° release; 32:18 launch pulleys | [Source p14](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14) |\n| Amplifier | 17-in travel; reported <1 s | [Source p15](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15) |\n| Climber | 11:40 then 14:42 gear pairs; reported ~1 s | [Source p16](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p10-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p10-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=10",
+        "caption": "2024-254 · VORTEX · Drivebase · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          72.5,
+          144.5,
+          540.5,
+          417.3896484375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p11-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p11-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=11",
+        "caption": "2024-254 · VORTEX · Under-bumper intake · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Under-bumper intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          89.5,
+          125.5,
+          520.7838134765625,
+          431.5
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p12-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p12-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12",
+        "caption": "2024-254 · VORTEX · Turret and BIGUS · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Turret and BIGUS",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          53.5,
+          132.49560546875,
+          557.5,
+          395.4999694824219
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      },
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p13-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p13-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13",
+        "caption": "2024-254 · VORTEX · Annular feeder · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Annular feeder",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          71.5,
+          143.5,
+          533.35693359375,
+          384.53778076171875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p14-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 14,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p14-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14",
+        "caption": "2024-254 · VORTEX · Revised shooter · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Revised shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          143.20965576171875,
+          126.0,
+          469.370361328125,
+          450.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 14
+      },
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p15-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p15-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15",
+        "caption": "2024-254 · VORTEX · Amplifier · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Amplifier",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          310.0,
+          130.0,
+          590.0,
+          725.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      },
+      {
+        "id": "binder-a2221ee1dc5a83c0f2-p16-1",
+        "robot_id": "2024-254",
+        "kind": "binder_figure",
+        "binder_id": "a2221ee1dc5a83c0f2",
+        "pdf_page": 16,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-a2221ee1dc5a83c0f2-p16-1.jpg",
+        "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16",
+        "caption": "2024-254 · VORTEX · Climber · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Climber",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          71.5,
+          141.388671875,
+          539.5,
+          335.47589111328125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 16
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2024-254",
+    "team_name": "The Cheesy Poofs",
+    "epa_rank": 9,
+    "epa": 51.71,
+    "epa_pre_champs": 58.73,
+    "epa_breakdown": {
+      "total_points": 51.71,
+      "auto_points": 15.94,
+      "teleop_points": 29.48,
+      "endgame_points": 6.28,
+      "melody_rp": 0.6158,
+      "ensemble_rp": 0.6093,
+      "tiebreaker_points": 0.14,
+      "auto_leave_points": 2.02,
+      "auto_note_points": 13.93,
+      "teleop_note_points": 29.48,
+      "speaker_points": 39.79,
+      "amplified_notes": 5.19,
+      "endgame_park_points": 0.03,
+      "endgame_on_stage_points": 3.15,
+      "endgame_harmony_points": -0.1,
+      "endgame_trap_points": 3.1,
+      "endgame_spotlight_points": 0.1,
+      "rp_1": 0.6158,
+      "rp_2": 0.6093,
+      "total_note_points": 43.41
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "d91e04b2ebb90c5b"
+    ],
+    "tags": [
+      "elevator",
+      "spindexer / DYE",
+      "telescoping arm",
+      "turret",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-a2221ee1dc5a83c0f2-94",
+      "tech-a2221ee1dc5a83c0f2-95",
+      "tech-a2221ee1dc5a83c0f2-96",
+      "tech-a2221ee1dc5a83c0f2-97",
+      "tech-a2221ee1dc5a83c0f2-98"
+    ],
+    "binder_source_ids": [
+      "a2221ee1dc5a83c0f2"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-254",
+      "year": 2024,
+      "team": 254,
+      "epa_rank": 9,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"254\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 12,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "a2221ee1dc5a83c0f2"
+      ],
+      "technical_note_ids": [
+        "tech-a2221ee1dc5a83c0f2-94",
+        "tech-a2221ee1dc5a83c0f2-95",
+        "tech-a2221ee1dc5a83c0f2-96",
+        "tech-a2221ee1dc5a83c0f2-97",
+        "tech-a2221ee1dc5a83c0f2-98"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "a2221ee1dc5a83c0f2",
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+          "error": null,
+          "discovery": "Targeted web search; identity pending PDF inspection",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "subsystem": "intake",
+      "title": "VORTEX: centered under-bumper acquisition",
+      "pdf_pages": [
+        11
+      ],
+      "construction": "Mecanum front contact, kicker rollers and angled powered funneling wheels.",
+      "team_stated_reason": "Accept side approaches and center notes without jamming.",
+      "engineering_analysis": "A note arriving sideways or off-center should be translated toward the feeder before the shooter demands a repeatable entry state. Mecanum and angled contacts can supply that transverse velocity, but excess lateral force can fold or wedge the note. A stiff bumper and intake mount preserve the intended compression under defense. The correct performance measure includes successful ownership from the edge of the mouth, not only straight-on pickup at the center.",
+      "recommended_validation": "Map pickup across the mouth with deformed notes, oblique approaches and bumper impacts; observe the first region where motion stops.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-a2221ee1dc5a83c0f2-94",
+      "robot_id": "2024-254",
+      "year": 2024,
+      "version_label": "VORTEX",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 11,
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=11"
+        }
+      ],
+      "image_ids": [
+        "binder-a2221ee1dc5a83c0f2-p11-1"
+      ]
+    },
+    {
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "subsystem": "transfer",
+      "title": "VORTEX: annular feed removes the intake-indexing heading constraint",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "construction": "Two-direction annular feeder supplies a turret without returning it to the intake; 720° cable system.",
+      "team_stated_reason": "Maintain goal tracking during acquisition and feeding.",
+      "engineering_analysis": "The architectural benefit is not merely a large turret angle. Many turreted designs must rotate to an intake alignment before receiving a note, losing continuous tracking. An annular feed trades that delay for a larger guided path whose friction, seams and direction switching must be managed. Choosing the shorter route can reduce feed time, while a reversal must preserve piece state. The cable system makes the aiming envelope physically usable; without reliable wire guidance, the extra angular range is only a CAD possibility.",
+      "recommended_validation": "Feed at multiple turret headings including through a direction change; test note wear, guide friction and cable-chain operation near both limits.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-a2221ee1dc5a83c0f2-95",
+      "robot_id": "2024-254",
+      "year": 2024,
+      "version_label": "VORTEX",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-a2221ee1dc5a83c0f2-p12-1",
+        "binder-a2221ee1dc5a83c0f2-p13-1"
+      ]
+    },
+    {
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "subsystem": "scoring",
+      "title": "VORTEX: revised shooter separates feed and launch contacts",
+      "pdf_pages": [
+        14
+      ],
+      "construction": "Second-revision quad-wheel shooter; staged feed rollers; asymmetrical wheels; sector-gear hood.",
+      "team_stated_reason": "Controlled note entry and spin for a flatter useful trajectory.",
+      "engineering_analysis": "The note’s flexible ring makes its entry orientation and deformation important to launch repeatability. A dedicated first stage can establish the approach before the high-speed wheels impart the final velocity and spin. Asymmetric contact can bias spin, but the resulting flight still needs empirical validation over wear and range. Hood backlash is an angular error that becomes more consequential at some distances than others. The revision label matters: a final shooter image must not silently stand in for an earlier competition version.",
+      "recommended_validation": "Measure entry deformation and shot dispersion with several note conditions; compare hood approaches from both directions and both feed routes.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-a2221ee1dc5a83c0f2-96",
+      "robot_id": "2024-254",
+      "year": 2024,
+      "version_label": "VORTEX",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 14,
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14"
+        }
+      ],
+      "image_ids": [
+        "binder-a2221ee1dc5a83c0f2-p14-1"
+      ]
+    },
+    {
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "subsystem": "scoring",
+      "title": "VORTEX: amplifier is a second routing destination",
+      "pdf_pages": [
+        15
+      ],
+      "construction": "Roller carriage on an elevator routes notes to amp/trap and accepts human-player feed.",
+      "team_stated_reason": "Support multiple scoring and shuttling roles.",
+      "engineering_analysis": "The amplifier is not just a final scoring roller. It adds a branch to the note-routing state machine and a distinct human-player acquisition path. Shared use can justify the mechanism’s mass if those roles are valuable in the alliance plan, but creates more transitions and collision states. Passive trap-reaction wheels supply a structural contact during climbing, tying its geometry to the endgame sequence. The agent should explain those dependencies before recommending the package to a team that only needs one of its functions.",
+      "recommended_validation": "Test every routing transition and interrupted sequence; verify that the trap reaction contact does not dislodge the stored note.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-a2221ee1dc5a83c0f2-97",
+      "robot_id": "2024-254",
+      "year": 2024,
+      "version_label": "VORTEX",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15"
+        }
+      ],
+      "image_ids": [
+        "binder-a2221ee1dc5a83c0f2-p15-1"
+      ]
+    },
+    {
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "subsystem": "endgame",
+      "title": "VORTEX: rapid rope climb establishes trap height",
+      "pdf_pages": [
+        16
+      ],
+      "construction": "Sprung hook arms and a low-mounted rope winch pull the robot to trap height.",
+      "team_stated_reason": "Lift quickly while enabling the amplifier to reach the trap.",
+      "engineering_analysis": "The climb’s lift distance is determined by the scorer’s required geometry, not just the minimum suspension score. Gas springs can deploy the hooks while the winch retracts them under load. A rope path needs secure anchors, consistent winding and sufficient clearance as the robot swings. If retention relies on drivetrain or motor braking behavior, that exact power-off state should be validated rather than assumed. The trap sequence must preserve the reaction contact and note orientation throughout the lift.",
+      "recommended_validation": "Test acquisition, lift, trap alignment and disable as one sequence with several chain heights and swing angles.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-a2221ee1dc5a83c0f2-98",
+      "robot_id": "2024-254",
+      "year": 2024,
+      "version_label": "VORTEX",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 16,
+          "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16"
+        }
+      ],
+      "image_ids": [
+        "binder-a2221ee1dc5a83c0f2-p16-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-a2221ee1dc5a83c0f2-1",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "pdf_page": 10,
+      "component": "Base",
+      "published_parameters": "27×27-in frame; L3; 18 ft/s",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-a2221ee1dc5a83c0f2-2",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "pdf_page": 12,
+      "component": "Turret",
+      "published_parameters": "14:52 then 10:125 tooth pairs; 720° range",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-a2221ee1dc5a83c0f2-3",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "pdf_page": 13,
+      "component": "Feeder",
+      "published_parameters": "15:18 then 15:15 belt pairs; two Krakens",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-a2221ee1dc5a83c0f2-4",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "pdf_page": 14,
+      "component": "Shooter",
+      "published_parameters": "10°–50° release; 32:18 launch pulleys",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-a2221ee1dc5a83c0f2-5",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "pdf_page": 15,
+      "component": "Amplifier",
+      "published_parameters": "17-in travel; reported <1 s",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-a2221ee1dc5a83c0f2-6",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "pdf_page": 16,
+      "component": "Climber",
+      "published_parameters": "11:40 then 14:42 gear pairs; reported ~1 s",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "a2221ee1dc5a83c0f2",
+      "robot_id": "2024-254",
+      "title": "2024-254 VORTEX technical publication",
+      "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+      "format": "pdf",
+      "pages": 22,
+      "sha256": "25fcc563703258b5c2ad0dd4ea169df86564555318043e755bf126fc3b6fb631",
+      "bytes": 1737869,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "figure_pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Targeted web search; identity pending PDF inspection",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2024-254:publication-version:1",
+      "label": "VORTEX",
+      "robot_id": "2024-254",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-a2221ee1dc5a83c0f2-94",
+        "tech-a2221ee1dc5a83c0f2-95",
+        "tech-a2221ee1dc5a83c0f2-96",
+        "tech-a2221ee1dc5a83c0f2-97",
+        "tech-a2221ee1dc5a83c0f2-98"
+      ],
+      "source_urls": [
+        "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2024-254",
+      "title": "2024-254: technical construction and mechanism reasoning",
+      "year": 2024,
+      "robot_id": "2024-254",
+      "kind": "robot_technical_review",
+      "body": "# 2024-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## VORTEX: centered under-bumper acquisition\n\nVersion: VORTEX. [PDF p11](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=11)\n\n**Published construction:** Mecanum front contact, kicker rollers and angled powered funneling wheels.\n\n**Team-stated reason or evidence boundary:** Accept side approaches and center notes without jamming.\n\n**Engineering analysis — original inference:** A note arriving sideways or off-center should be translated toward the feeder before the shooter demands a repeatable entry state. Mecanum and angled contacts can supply that transverse velocity, but excess lateral force can fold or wedge the note. A stiff bumper and intake mount preserve the intended compression under defense. The correct performance measure includes successful ownership from the edge of the mouth, not only straight-on pickup at the center.\n\n**Proposed validation — not a completed test:** Map pickup across the mouth with deformed notes, oblique approaches and bumper impacts; observe the first region where motion stops.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: annular feed removes the intake-indexing heading constraint\n\nVersion: VORTEX. [PDF p12](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12) · [PDF p13](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13)\n\n**Published construction:** Two-direction annular feeder supplies a turret without returning it to the intake; 720° cable system.\n\n**Team-stated reason or evidence boundary:** Maintain goal tracking during acquisition and feeding.\n\n**Engineering analysis — original inference:** The architectural benefit is not merely a large turret angle. Many turreted designs must rotate to an intake alignment before receiving a note, losing continuous tracking. An annular feed trades that delay for a larger guided path whose friction, seams and direction switching must be managed. Choosing the shorter route can reduce feed time, while a reversal must preserve piece state. The cable system makes the aiming envelope physically usable; without reliable wire guidance, the extra angular range is only a CAD possibility.\n\n**Proposed validation — not a completed test:** Feed at multiple turret headings including through a direction change; test note wear, guide friction and cable-chain operation near both limits.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: revised shooter separates feed and launch contacts\n\nVersion: VORTEX. [PDF p14](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14)\n\n**Published construction:** Second-revision quad-wheel shooter; staged feed rollers; asymmetrical wheels; sector-gear hood.\n\n**Team-stated reason or evidence boundary:** Controlled note entry and spin for a flatter useful trajectory.\n\n**Engineering analysis — original inference:** The note’s flexible ring makes its entry orientation and deformation important to launch repeatability. A dedicated first stage can establish the approach before the high-speed wheels impart the final velocity and spin. Asymmetric contact can bias spin, but the resulting flight still needs empirical validation over wear and range. Hood backlash is an angular error that becomes more consequential at some distances than others. The revision label matters: a final shooter image must not silently stand in for an earlier competition version.\n\n**Proposed validation — not a completed test:** Measure entry deformation and shot dispersion with several note conditions; compare hood approaches from both directions and both feed routes.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: amplifier is a second routing destination\n\nVersion: VORTEX. [PDF p15](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15)\n\n**Published construction:** Roller carriage on an elevator routes notes to amp/trap and accepts human-player feed.\n\n**Team-stated reason or evidence boundary:** Support multiple scoring and shuttling roles.\n\n**Engineering analysis — original inference:** The amplifier is not just a final scoring roller. It adds a branch to the note-routing state machine and a distinct human-player acquisition path. Shared use can justify the mechanism’s mass if those roles are valuable in the alliance plan, but creates more transitions and collision states. Passive trap-reaction wheels supply a structural contact during climbing, tying its geometry to the endgame sequence. The agent should explain those dependencies before recommending the package to a team that only needs one of its functions.\n\n**Proposed validation — not a completed test:** Test every routing transition and interrupted sequence; verify that the trap reaction contact does not dislodge the stored note.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## VORTEX: rapid rope climb establishes trap height\n\nVersion: VORTEX. [PDF p16](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16)\n\n**Published construction:** Sprung hook arms and a low-mounted rope winch pull the robot to trap height.\n\n**Team-stated reason or evidence boundary:** Lift quickly while enabling the amplifier to reach the trap.\n\n**Engineering analysis — original inference:** The climb’s lift distance is determined by the scorer’s required geometry, not just the minimum suspension score. Gas springs can deploy the hooks while the winch retracts them under load. A rope path needs secure anchors, consistent winding and sufficient clearance as the robot swings. If retention relies on drivetrain or motor braking behavior, that exact power-off state should be validated rather than assumed. The trap sequence must preserve the reaction contact and note orientation throughout the lift.\n\n**Proposed validation — not a completed test:** Test acquisition, lift, trap alignment and disable as one sequence with several chain heights and swing angles.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 27×27-in frame; L3; 18 ft/s | [Source p10](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=10) |\n| Turret | 14:52 then 10:125 tooth pairs; 720° range | [Source p12](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12) |\n| Feeder | 15:18 then 15:15 belt pairs; two Krakens | [Source p13](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13) |\n| Shooter | 10°–50° release; 32:18 launch pulleys | [Source p14](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14) |\n| Amplifier | 17-in travel; reported <1 s | [Source p15](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15) |\n| Climber | 11:40 then 14:42 gear pairs; reported ~1 s | [Source p16](https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf"
+      ],
+      "path": "docs/technical/2024-254.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p10-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p10-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=10",
+      "caption": "2024-254 · VORTEX · Drivebase · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        72.5,
+        144.5,
+        540.5,
+        417.3896484375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 1078,
+      "height_px": 628,
+      "bytes": 91857,
+      "sha256": "abe48795a1a05158098af8b842320a2558b2fadebd86c200e3d11ebd2d241347",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p10-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p11-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p11-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=11",
+      "caption": "2024-254 · VORTEX · Under-bumper intake · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Under-bumper intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        89.5,
+        125.5,
+        520.7838134765625,
+        431.5
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 993,
+      "height_px": 705,
+      "bytes": 82013,
+      "sha256": "ff8aed02798bbabcdc73922c6ad797fb186a3ffb7d46934c03e9484d84d26798",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p11-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p12-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p12-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=12",
+      "caption": "2024-254 · VORTEX · Turret and BIGUS · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Turret and BIGUS",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        53.5,
+        132.49560546875,
+        557.5,
+        395.4999694824219
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 1160,
+      "height_px": 606,
+      "bytes": 80376,
+      "sha256": "15c6229f4125a13ef6b8f66d88a00465a1da4fe342ef4d05c49963b1511b9227",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p12-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p13-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p13-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=13",
+      "caption": "2024-254 · VORTEX · Annular feeder · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Annular feeder",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        71.5,
+        143.5,
+        533.35693359375,
+        384.53778076171875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1063,
+      "height_px": 555,
+      "bytes": 53184,
+      "sha256": "a890f89947f030522c14e9ee94ed16f040056256fbafb00cef00d5e31d71a1e9",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p13-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p14-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 14,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p14-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=14",
+      "caption": "2024-254 · VORTEX · Revised shooter · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Revised shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        143.20965576171875,
+        126.0,
+        469.370361328125,
+        450.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 14,
+      "media_type": "image/jpeg",
+      "width_px": 751,
+      "height_px": 746,
+      "bytes": 88089,
+      "sha256": "a57e2425381d42db3a560968b1c7de892a14b3d45a34e5a5a95f89cb2c7ad184",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p14-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p14-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p15-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p15-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=15",
+      "caption": "2024-254 · VORTEX · Amplifier · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Amplifier",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        310.0,
+        130.0,
+        590.0,
+        725.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 644,
+      "height_px": 1369,
+      "bytes": 97745,
+      "sha256": "a7a75cedceef057e5a0a0c5edde3bda7c31a00cdae7adbbfc17653b94f7ccca2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p15-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-a2221ee1dc5a83c0f2-p16-1",
+      "robot_id": "2024-254",
+      "kind": "binder_figure",
+      "binder_id": "a2221ee1dc5a83c0f2",
+      "pdf_page": 16,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-a2221ee1dc5a83c0f2-p16-1.jpg",
+      "source_url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf#page=16",
+      "caption": "2024-254 · VORTEX · Climber · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Climber",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        71.5,
+        141.388671875,
+        539.5,
+        335.47589111328125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 16,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 447,
+      "bytes": 38499,
+      "sha256": "291f92d7e850f741817dcef498ee425e446af56d172325c6ea98ac6da14f4b2a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-a2221ee1dc5a83c0f2-p16-1",
+      "reader_url": "index.html#image=binder-a2221ee1dc5a83c0f2-p16-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-254",
+    "year": 2024,
+    "team": 254,
+    "epa_rank": 9,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"254\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 12,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "a2221ee1dc5a83c0f2"
+    ],
+    "technical_note_ids": [
+      "tech-a2221ee1dc5a83c0f2-94",
+      "tech-a2221ee1dc5a83c0f2-95",
+      "tech-a2221ee1dc5a83c0f2-96",
+      "tech-a2221ee1dc5a83c0f2-97",
+      "tech-a2221ee1dc5a83c0f2-98"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "a2221ee1dc5a83c0f2",
+        "url": "https://media.team254.com/2024/10/8f2607a0-2024-Tech-Binder.pdf",
+        "error": null,
+        "discovery": "Targeted web search; identity pending PDF inspection",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-a2221ee1dc5a83c0f2-94:construction",
+    "tech-a2221ee1dc5a83c0f2-94:team_stated_reason",
+    "tech-a2221ee1dc5a83c0f2-94:engineering_analysis",
+    "tech-a2221ee1dc5a83c0f2-94:recommended_validation",
+    "tech-a2221ee1dc5a83c0f2-94:limitations",
+    "tech-a2221ee1dc5a83c0f2-95:construction",
+    "tech-a2221ee1dc5a83c0f2-95:team_stated_reason",
+    "tech-a2221ee1dc5a83c0f2-95:engineering_analysis",
+    "tech-a2221ee1dc5a83c0f2-95:recommended_validation",
+    "tech-a2221ee1dc5a83c0f2-95:limitations",
+    "tech-a2221ee1dc5a83c0f2-96:construction",
+    "tech-a2221ee1dc5a83c0f2-96:team_stated_reason",
+    "tech-a2221ee1dc5a83c0f2-96:engineering_analysis",
+    "tech-a2221ee1dc5a83c0f2-96:recommended_validation",
+    "tech-a2221ee1dc5a83c0f2-96:limitations",
+    "tech-a2221ee1dc5a83c0f2-97:construction",
+    "tech-a2221ee1dc5a83c0f2-97:team_stated_reason",
+    "tech-a2221ee1dc5a83c0f2-97:engineering_analysis",
+    "tech-a2221ee1dc5a83c0f2-97:recommended_validation",
+    "tech-a2221ee1dc5a83c0f2-97:limitations",
+    "tech-a2221ee1dc5a83c0f2-98:construction",
+    "tech-a2221ee1dc5a83c0f2-98:team_stated_reason",
+    "tech-a2221ee1dc5a83c0f2-98:engineering_analysis",
+    "tech-a2221ee1dc5a83c0f2-98:recommended_validation",
+    "tech-a2221ee1dc5a83c0f2-98:limitations",
+    "param-a2221ee1dc5a83c0f2-1",
+    "param-a2221ee1dc5a83c0f2-2",
+    "param-a2221ee1dc5a83c0f2-3",
+    "param-a2221ee1dc5a83c0f2-4",
+    "param-a2221ee1dc5a83c0f2-5",
+    "param-a2221ee1dc5a83c0f2-6"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

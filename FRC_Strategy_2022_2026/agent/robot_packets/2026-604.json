@@ -1,0 +1,662 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-604",
+  "year": 2026,
+  "team": 604,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 604,
+    "robot": "Toploader",
+    "primary": [
+      "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+    ],
+    "architecture": "A rotating capture mechanism scoops fuel from a circular plywood bucket. Rotation and up-feed have separate motors; side rollers use omni wheels. Successive fuel pushes through a corrugated-plastic tube shaped by printed ends. The bucket separates into two sections for service. A 27-inch square frame preserves circular bucket area without custom swerves or chamfered corners. Internal bars protect battery and module compartments; rear bumper mounts integrate armor for serializer protection.",
+    "subsystems": {
+      "drivetrain": "A 27-inch square frame preserves circular bucket area without custom swerves or chamfered corners. Internal bars protect battery and module compartments; rear bumper mounts integrate armor for serializer protection.",
+      "intake": "Each intake arm uses an X44 deploy motor. Protected motors belt-drive compliant dead-axle polycarbonate rollers with silicone tubing and TPU pulley plugs. TPU belt supports retain the belts during deflection. A one-time kicker deploy uses surgical tubing and flexible plugs/string. Intake deployment extends a sliding hopper; surgical tubing retracts it. Two laminated layers of corrugated plastic provide stiffness. Slots are reinforced with 0.090-inch polycarbonate sandwiched between sheets; panels use tape and adhesive for replacement.",
+      "transfer": "A rotating capture mechanism scoops fuel from a circular plywood bucket. Rotation and up-feed have separate motors; side rollers use omni wheels. Successive fuel pushes through a corrugated-plastic tube shaped by printed ends. The bucket separates into two sections for service.",
+      "scoring": "The turret is supported from above and packaged to reduce swept volume. Its sliding bearing stacks polycarbonate and aluminum plates; printed PETG spacers set clearance empirically and grease reduces friction.",
+      "endgame": "Unresolved in reviewed sources; do not infer absence.",
+      "controls": "Scoring requires launch velocity, launch angle and turret yaw within tolerance plus a recent image with at least two tags. The serializer pauses when readiness fails. PhotonVision MultiTag selects camera poses using hub/total tag visibility and rejects old or ambiguous poses. The team describes timestamping partner paths, targeting leftover fuel after the trench race, using reusable path partials and adjustable pauses without redeployment. A Pac-Man routine is identified at NorCal DCMP playoff match 1."
+    },
+    "versions": [
+      "Toploader DPC serializer",
+      "Toploader chassis",
+      "Toploader inset turret",
+      "Toploader independently deployed arms",
+      "Toploader linked sliding hopper",
+      "Toploader readiness and localization",
+      "Toploader partner-aware bump autonomous"
+    ],
+    "analysis": "Feed interruption is an intentional interface between aiming and serialization, not automatically a jam. A high mechanical BPS ceiling is useful only while readiness remains true. Logging the reason for each gating interruption would distinguish vision starvation, aim error and actual feed trouble. The release does not demonstrate those duty fractions or an electrical diagnosis of every stop. Architectural limitations can become planning inputs instead of being hidden by an ideal autonomous animation. Preserve the team’s distinction between pre-Champs crossing rules and later rules, and between experiments and actually used routines. A clever path is not proof every prototype routine competed. The release does not establish a tower mechanism; absence from the selected technical sections remains unknown, not certified absence.",
+    "limits": [
+      "Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.",
+      "Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification."
+    ],
+    "deep_context": "# 2026-604 — Quixilver: Toploader\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## Toploader DPC serializer · transfer\n\n### Published construction or code\n\nA rotating capture mechanism scoops fuel from a circular plywood bucket. Rotation and up-feed have separate motors; side rollers use omni wheels. Successive fuel pushes through a corrugated-plastic tube shaped by printed ends. The bucket separates into two sections for service.\n\n### Stated rationale and boundaries\n\nThe team identified serialization as the limiting process and designed the robot around it. Independent drives allow software adjustment of rotation versus up-feed.\n\n### Engineering interpretation\n\nThe capture point moves to available fuel rather than relying solely on gravity bringing fuel to a stationary throat. Independent feed authority can help tune pile interaction and column delivery separately, but the release does not establish a universal motor-ratio setting. Bucket geometry, turret support and electronics access are part of the same flow system. Prototype rates of about 15 BPS single-stream and 23 BPS full-width are comparison claims, not sustained match scoring rates.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader chassis · drivetrain\n\n### Published construction or code\n\nA 27-inch square frame preserves circular bucket area without custom swerves or chamfered corners. Internal bars protect battery and module compartments; rear bumper mounts integrate armor for serializer protection.\n\n### Stated rationale and boundaries\n\nMaximize the serializer’s available area with manufacturable hardware and protect internal mechanisms.\n\n### Engineering interpretation\n\nThis is an explicit packaging choice. It sacrifices some geometric freedom to keep the central circular feed volume useful with standard drive components. Frame perimeter, usable interior area and turret swept volume must be compared together. The team separately describes bump-only autonomous constraints; no unreviewed trench state or chassis specification should be inferred.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader inset turret · scoring\n\n### Published construction or code\n\nThe turret is supported from above and packaged to reduce swept volume. Its sliding bearing stacks polycarbonate and aluminum plates; printed PETG spacers set clearance empirically and grease reduces friction.\n\n### Stated rationale and boundaries\n\nMoving scoring and feeding were judged worth a lower single-stream ceiling; small swept volume preserves hopper capacity and flow.\n\n### Engineering interpretation\n\nA turret changes more than aiming. Its supports and swept envelope can obstruct fuel entering the serializer, so a nominal capacity comparison that ignores the moving assembly is incomplete. This release supports a manufacturable impact-tolerant bearing concept, not exact dimensions, a universal bearing preload or independently verified shot accuracy. The team’s rate trade is tied to its intended moving role.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader independently deployed arms · intake\n\n### Published construction or code\n\nEach intake arm uses an X44 deploy motor. Protected motors belt-drive compliant dead-axle polycarbonate rollers with silicone tubing and TPU pulley plugs. TPU belt supports retain the belts during deflection. A one-time kicker deploy uses surgical tubing and flexible plugs/string.\n\n### Stated rationale and boundaries\n\nThe team explicitly connects independent deployment to eliminating the mechanically linked 2024 chain failure. Polycarbonate was preferred over SRPP to avoid permanent deformation changing belt centers.\n\n### Engineering interpretation\n\nCompliance must preserve transmission function, not just prevent fracture. A flexible arm changes belt geometry under load; supporting the belt during that motion is an integral part of the architecture. The team reports that TPU replaced brittle PETG roller plugs, with 100% infill and four-wall printing, and that wear still requires replacement every one or two events. Repairable consumables are not maintenance-free hardware.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader linked sliding hopper · intake\n\n### Published construction or code\n\nIntake deployment extends a sliding hopper; surgical tubing retracts it. Two laminated layers of corrugated plastic provide stiffness. Slots are reinforced with 0.090-inch polycarbonate sandwiched between sheets; panels use tape and adhesive for replacement.\n\n### Stated rationale and boundaries\n\nThe publication emphasizes low mass, robust sliding and easy manufacture/repair with limited router access.\n\n### Engineering interpretation\n\nThis is a specific example of an intake–storage interface, useful to 1833’s morph chart. Linking deployment reduces independent actuation but also links faults and operating states. Slot reinforcement addresses local bearing and deformation loads that a generic corrugated-plastic wall description misses. Capacity, deflection and passage access should be measured in each loaded state; no unverified hopper capacity is assigned here.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader readiness and localization · controls\n\n### Published construction or code\n\nScoring requires launch velocity, launch angle and turret yaw within tolerance plus a recent image with at least two tags. The serializer pauses when readiness fails. PhotonVision MultiTag selects camera poses using hub/total tag visibility and rejects old or ambiguous poses.\n\n### Stated rationale and boundaries\n\nSingle-driver operation reduces communication overhead; automated gating is intended to release fuel only from useful launch states.\n\n### Engineering interpretation\n\nFeed interruption is an intentional interface between aiming and serialization, not automatically a jam. A high mechanical BPS ceiling is useful only while readiness remains true. Logging the reason for each gating interruption would distinguish vision starvation, aim error and actual feed trouble. The release does not demonstrate those duty fractions or an electrical diagnosis of every stop.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader partner-aware bump autonomous · controls\n\n### Published construction or code\n\nThe team describes timestamping partner paths, targeting leftover fuel after the trench race, using reusable path partials and adjustable pauses without redeployment. A Pac-Man routine is identified at NorCal DCMP playoff match 1.\n\n### Stated rationale and boundaries\n\nA bump-only robot was expected to reach midfield later; route selection was built around shorter partners rather than competing for the same initial race.\n\n### Engineering interpretation\n\nArchitectural limitations can become planning inputs instead of being hidden by an ideal autonomous animation. Preserve the team’s distinction between pre-Champs crossing rules and later rules, and between experiments and actually used routines. A clever path is not proof every prototype routine competed. The release does not establish a tower mechanism; absence from the selected technical sections remains unknown, not certified absence.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n\n\n## Recovered original source images · 2026-10-26\n\nThe earlier direct-download failures are resolved. These are unchanged originals from the team release; the labels below are editorial retrieval aids. Inspect the full view before borrowing packaging ideas. Exact dimensions, hidden construction and match performance require independent source evidence.\n\n### Serializer / central upfeed\n\n![2026-604 · Whole-robot CAD view with ghosted front components exposing the circular bucket, central upfeed tube and upper turret support. The original is retained without cropping.](../../images/604_2026_serializer.png)\n\n2026-604 · Whole-robot CAD view with ghosted front components exposing the circular bucket, central upfeed tube and upper turret support. The original is retained without cropping.\n\n[Team release](https://www.chiefdelphi.com/t/524289/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/4X/3/9/3/3934b6a0324e210c03b36434e8a9cd8fd395af3d.png) · Image ID `604-source-2026-serializer`.\n\n### Intake / deployment packaging\n\n![2026-604 · Whole-robot CAD view with front intake arms and drivetrain packaging visible through ghosted components. This is a packaging reference, not a complete roller or belt specification.](../../images/604_2026_intake.png)\n\n2026-604 · Whole-robot CAD view with front intake arms and drivetrain packaging visible through ghosted components. This is a packaging reference, not a complete roller or belt specification.\n\n[Team release](https://www.chiefdelphi.com/t/524289/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/4X/9/2/f/92fe26de6c188bd4483bbb8ce437dcdebddf71e7.png) · Image ID `604-source-2026-intake`.\n\n### Hopper / sliding wall packaging\n\n![2026-604 · Whole-robot CAD view showing front wall, hopper and slot packaging. It does not establish every sliding interface, capacity or material thickness by itself.](../../images/604_2026_hopper.png)\n\n2026-604 · Whole-robot CAD view showing front wall, hopper and slot packaging. It does not establish every sliding interface, capacity or material thickness by itself.\n\n[Team release](https://www.chiefdelphi.com/t/524289/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/4X/a/7/7/a77423f55dc711b1fdffd9e4368a12865950ae67.png) · Image ID `604-source-2026-hopper`.\n\n",
+    "images": [
+      {
+        "id": "604-source-2026-serializer",
+        "robot_id": "2026-604",
+        "kind": "team_release_original",
+        "path": "images/604_2026_serializer.png",
+        "source_url": "https://www.chiefdelphi.com/t/524289/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/3/9/3/3934b6a0324e210c03b36434e8a9cd8fd395af3d.png",
+        "caption": "2026-604 · Whole-robot CAD view with ghosted front components exposing the circular bucket, central upfeed tube and upper turret support. The original is retained without cropping.",
+        "publisher_label": "Serializer / central upfeed",
+        "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+        "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+        "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+        "whole_robot_photo": false,
+        "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+        "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+        "downloaded_on": "2026-10-26",
+        "download_method": "Normal browser navigation to the original image URL and browser media download",
+        "sha256": "7eda142c38c16284a905dd2a7849ec4d59291d7a745264d1d69b79e8610808dc"
+      },
+      {
+        "id": "604-source-2026-intake",
+        "robot_id": "2026-604",
+        "kind": "team_release_original",
+        "path": "images/604_2026_intake.png",
+        "source_url": "https://www.chiefdelphi.com/t/524289/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/9/2/f/92fe26de6c188bd4483bbb8ce437dcdebddf71e7.png",
+        "caption": "2026-604 · Whole-robot CAD view with front intake arms and drivetrain packaging visible through ghosted components. This is a packaging reference, not a complete roller or belt specification.",
+        "publisher_label": "Intake / deployment packaging",
+        "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+        "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+        "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+        "whole_robot_photo": false,
+        "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+        "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+        "downloaded_on": "2026-10-26",
+        "download_method": "Normal browser navigation to the original image URL and browser media download",
+        "sha256": "4ed761e0504a12a3279c8bf9f1189c22594b27ed4062d489cccc1311d4ac430c"
+      },
+      {
+        "id": "604-source-2026-hopper",
+        "robot_id": "2026-604",
+        "kind": "team_release_original",
+        "path": "images/604_2026_hopper.png",
+        "source_url": "https://www.chiefdelphi.com/t/524289/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/a/7/7/a77423f55dc711b1fdffd9e4368a12865950ae67.png",
+        "caption": "2026-604 · Whole-robot CAD view showing front wall, hopper and slot packaging. It does not establish every sliding interface, capacity or material thickness by itself.",
+        "publisher_label": "Hopper / sliding wall packaging",
+        "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+        "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+        "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+        "whole_robot_photo": false,
+        "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+        "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+        "downloaded_on": "2026-10-26",
+        "download_method": "Normal browser navigation to the original image URL and browser media download",
+        "sha256": "873a357a8f6b6635f3f44ba98635ec5d6d166f8194a6ef7e2450729de984a1ee"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2026-604",
+    "team_name": "Quixilver",
+    "epa_rank": 46,
+    "epa": 222.47,
+    "epa_pre_champs": 202.58,
+    "epa_breakdown": {
+      "total_points": 222.47,
+      "auto_points": 43.32,
+      "teleop_points": 123.63,
+      "endgame_points": 55.51,
+      "energized_rp": 0.6457,
+      "supercharged_rp": 0.4311,
+      "traversal_rp": -0.34186,
+      "tiebreaker_points": 222.47,
+      "auto_fuel": 42.56,
+      "auto_tower": 0.76,
+      "transition_fuel": 5.38,
+      "first_shift_fuel": 63.62,
+      "second_shift_fuel": 54.63,
+      "endgame_fuel": 55.42,
+      "endgame_tower": 0.1,
+      "rp_1": 0.6457,
+      "rp_2": 0.4311,
+      "rp_3": -0.34186,
+      "teleop_fuel": 179.05,
+      "total_fuel": 221.61,
+      "total_tower": 0.86
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Version-specific primary-source study; not exhaustive per-event certification",
+    "strict_acceptance": "provisional; unresolved geometry and version details explicitly retained",
+    "source_ids": [
+      "604-source-2026"
+    ],
+    "tags": [
+      "user-requested supplemental reference"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-604",
+      "year": 2026,
+      "team": 604,
+      "epa_rank": 46,
+      "status": "primary_source_review_no_verified_binder",
+      "search": {
+        "query": "604 2026 technical release",
+        "review_date": "2026-10-26"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "604-source-2026"
+      ],
+      "technical_note_ids": [
+        "604-expansion-2026-1",
+        "604-expansion-2026-2",
+        "604-expansion-2026-3",
+        "604-expansion-2026-4",
+        "604-expansion-2026-5",
+        "604-expansion-2026-6",
+        "604-expansion-2026-7"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Primary technical release/code reviewed; no standalone binder certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "604-expansion-2026-1",
+      "604-expansion-2026-2",
+      "604-expansion-2026-3",
+      "604-expansion-2026-4",
+      "604-expansion-2026-5",
+      "604-expansion-2026-6",
+      "604-expansion-2026-7"
+    ],
+    "selection_scope": "User-requested supplemental reference outside original 25/year cohort; original selections preserved."
+  },
+  "technical_notes": [
+    {
+      "id": "604-expansion-2026-1",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "transfer",
+      "title": "Toploader DPC serializer · transfer",
+      "version_label": "Toploader DPC serializer",
+      "construction": "A rotating capture mechanism scoops fuel from a circular plywood bucket. Rotation and up-feed have separate motors; side rollers use omni wheels. Successive fuel pushes through a corrugated-plastic tube shaped by printed ends. The bucket separates into two sections for service.",
+      "team_stated_reason": "The team identified serialization as the limiting process and designed the robot around it. Independent drives allow software adjustment of rotation versus up-feed.",
+      "engineering_analysis": "The capture point moves to available fuel rather than relying solely on gravity bringing fuel to a stationary throat. Independent feed authority can help tune pile interaction and column delivery separately, but the release does not establish a universal motor-ratio setting. Bucket geometry, turret support and electronics access are part of the same flow system. Prototype rates of about 15 BPS single-stream and 23 BPS full-width are comparison claims, not sustained match scoring rates.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2026-serializer"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2026-2",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "drivetrain",
+      "title": "Toploader chassis · drivetrain",
+      "version_label": "Toploader chassis",
+      "construction": "A 27-inch square frame preserves circular bucket area without custom swerves or chamfered corners. Internal bars protect battery and module compartments; rear bumper mounts integrate armor for serializer protection.",
+      "team_stated_reason": "Maximize the serializer’s available area with manufacturable hardware and protect internal mechanisms.",
+      "engineering_analysis": "This is an explicit packaging choice. It sacrifices some geometric freedom to keep the central circular feed volume useful with standard drive components. Frame perimeter, usable interior area and turret swept volume must be compared together. The team separately describes bump-only autonomous constraints; no unreviewed trench state or chassis specification should be inferred.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2026-serializer"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2026-3",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "scoring",
+      "title": "Toploader inset turret · scoring",
+      "version_label": "Toploader inset turret",
+      "construction": "The turret is supported from above and packaged to reduce swept volume. Its sliding bearing stacks polycarbonate and aluminum plates; printed PETG spacers set clearance empirically and grease reduces friction.",
+      "team_stated_reason": "Moving scoring and feeding were judged worth a lower single-stream ceiling; small swept volume preserves hopper capacity and flow.",
+      "engineering_analysis": "A turret changes more than aiming. Its supports and swept envelope can obstruct fuel entering the serializer, so a nominal capacity comparison that ignores the moving assembly is incomplete. This release supports a manufacturable impact-tolerant bearing concept, not exact dimensions, a universal bearing preload or independently verified shot accuracy. The team’s rate trade is tied to its intended moving role.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2026-serializer"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2026-4",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "intake",
+      "title": "Toploader independently deployed arms · intake",
+      "version_label": "Toploader independently deployed arms",
+      "construction": "Each intake arm uses an X44 deploy motor. Protected motors belt-drive compliant dead-axle polycarbonate rollers with silicone tubing and TPU pulley plugs. TPU belt supports retain the belts during deflection. A one-time kicker deploy uses surgical tubing and flexible plugs/string.",
+      "team_stated_reason": "The team explicitly connects independent deployment to eliminating the mechanically linked 2024 chain failure. Polycarbonate was preferred over SRPP to avoid permanent deformation changing belt centers.",
+      "engineering_analysis": "Compliance must preserve transmission function, not just prevent fracture. A flexible arm changes belt geometry under load; supporting the belt during that motion is an integral part of the architecture. The team reports that TPU replaced brittle PETG roller plugs, with 100% infill and four-wall printing, and that wear still requires replacement every one or two events. Repairable consumables are not maintenance-free hardware.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2026-intake"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2026-5",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "intake",
+      "title": "Toploader linked sliding hopper · intake",
+      "version_label": "Toploader linked sliding hopper",
+      "construction": "Intake deployment extends a sliding hopper; surgical tubing retracts it. Two laminated layers of corrugated plastic provide stiffness. Slots are reinforced with 0.090-inch polycarbonate sandwiched between sheets; panels use tape and adhesive for replacement.",
+      "team_stated_reason": "The publication emphasizes low mass, robust sliding and easy manufacture/repair with limited router access.",
+      "engineering_analysis": "This is a specific example of an intake–storage interface, useful to 1833’s morph chart. Linking deployment reduces independent actuation but also links faults and operating states. Slot reinforcement addresses local bearing and deformation loads that a generic corrugated-plastic wall description misses. Capacity, deflection and passage access should be measured in each loaded state; no unverified hopper capacity is assigned here.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2026-hopper"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2026-6",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "controls",
+      "title": "Toploader readiness and localization · controls",
+      "version_label": "Toploader readiness and localization",
+      "construction": "Scoring requires launch velocity, launch angle and turret yaw within tolerance plus a recent image with at least two tags. The serializer pauses when readiness fails. PhotonVision MultiTag selects camera poses using hub/total tag visibility and rejects old or ambiguous poses.",
+      "team_stated_reason": "Single-driver operation reduces communication overhead; automated gating is intended to release fuel only from useful launch states.",
+      "engineering_analysis": "Feed interruption is an intentional interface between aiming and serialization, not automatically a jam. A high mechanical BPS ceiling is useful only while readiness remains true. Logging the reason for each gating interruption would distinguish vision starvation, aim error and actual feed trouble. The release does not demonstrate those duty fractions or an electrical diagnosis of every stop.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2026-7",
+      "robot_id": "2026-604",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "controls",
+      "title": "Toploader partner-aware bump autonomous · controls",
+      "version_label": "Toploader partner-aware bump autonomous",
+      "construction": "The team describes timestamping partner paths, targeting leftover fuel after the trench race, using reusable path partials and adjustable pauses without redeployment. A Pac-Man routine is identified at NorCal DCMP playoff match 1.",
+      "team_stated_reason": "A bump-only robot was expected to reach midfield later; route selection was built around shorter partners rather than competing for the same initial race.",
+      "engineering_analysis": "Architectural limitations can become planning inputs instead of being hidden by an ideal autonomous animation. Preserve the team’s distinction between pre-Champs crossing rules and later rules, and between experiments and actually used routines. A clever path is not proof every prototype routine competed. The release does not establish a tower mechanism; absence from the selected technical sections remains unknown, not certified absence.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-604:publication-version:1",
+      "label": "Toploader DPC serializer",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-1"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-604:publication-version:2",
+      "label": "Toploader chassis",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-604:publication-version:3",
+      "label": "Toploader inset turret",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-3"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-604:publication-version:4",
+      "label": "Toploader independently deployed arms",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-4"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-604:publication-version:5",
+      "label": "Toploader linked sliding hopper",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-5"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-604:publication-version:6",
+      "label": "Toploader readiness and localization",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-6"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-604:publication-version:7",
+      "label": "Toploader partner-aware bump autonomous",
+      "robot_id": "2026-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2026-7"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "2026-604-primary-study",
+      "title": "2026-604 primary-source mechanisms and strategic context",
+      "year": 2026,
+      "robot_id": "2026-604",
+      "kind": "robot_deep_note",
+      "body": "# 2026-604 — Quixilver: Toploader\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## Toploader DPC serializer · transfer\n\n### Published construction or code\n\nA rotating capture mechanism scoops fuel from a circular plywood bucket. Rotation and up-feed have separate motors; side rollers use omni wheels. Successive fuel pushes through a corrugated-plastic tube shaped by printed ends. The bucket separates into two sections for service.\n\n### Stated rationale and boundaries\n\nThe team identified serialization as the limiting process and designed the robot around it. Independent drives allow software adjustment of rotation versus up-feed.\n\n### Engineering interpretation\n\nThe capture point moves to available fuel rather than relying solely on gravity bringing fuel to a stationary throat. Independent feed authority can help tune pile interaction and column delivery separately, but the release does not establish a universal motor-ratio setting. Bucket geometry, turret support and electronics access are part of the same flow system. Prototype rates of about 15 BPS single-stream and 23 BPS full-width are comparison claims, not sustained match scoring rates.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader chassis · drivetrain\n\n### Published construction or code\n\nA 27-inch square frame preserves circular bucket area without custom swerves or chamfered corners. Internal bars protect battery and module compartments; rear bumper mounts integrate armor for serializer protection.\n\n### Stated rationale and boundaries\n\nMaximize the serializer’s available area with manufacturable hardware and protect internal mechanisms.\n\n### Engineering interpretation\n\nThis is an explicit packaging choice. It sacrifices some geometric freedom to keep the central circular feed volume useful with standard drive components. Frame perimeter, usable interior area and turret swept volume must be compared together. The team separately describes bump-only autonomous constraints; no unreviewed trench state or chassis specification should be inferred.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader inset turret · scoring\n\n### Published construction or code\n\nThe turret is supported from above and packaged to reduce swept volume. Its sliding bearing stacks polycarbonate and aluminum plates; printed PETG spacers set clearance empirically and grease reduces friction.\n\n### Stated rationale and boundaries\n\nMoving scoring and feeding were judged worth a lower single-stream ceiling; small swept volume preserves hopper capacity and flow.\n\n### Engineering interpretation\n\nA turret changes more than aiming. Its supports and swept envelope can obstruct fuel entering the serializer, so a nominal capacity comparison that ignores the moving assembly is incomplete. This release supports a manufacturable impact-tolerant bearing concept, not exact dimensions, a universal bearing preload or independently verified shot accuracy. The team’s rate trade is tied to its intended moving role.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader independently deployed arms · intake\n\n### Published construction or code\n\nEach intake arm uses an X44 deploy motor. Protected motors belt-drive compliant dead-axle polycarbonate rollers with silicone tubing and TPU pulley plugs. TPU belt supports retain the belts during deflection. A one-time kicker deploy uses surgical tubing and flexible plugs/string.\n\n### Stated rationale and boundaries\n\nThe team explicitly connects independent deployment to eliminating the mechanically linked 2024 chain failure. Polycarbonate was preferred over SRPP to avoid permanent deformation changing belt centers.\n\n### Engineering interpretation\n\nCompliance must preserve transmission function, not just prevent fracture. A flexible arm changes belt geometry under load; supporting the belt during that motion is an integral part of the architecture. The team reports that TPU replaced brittle PETG roller plugs, with 100% infill and four-wall printing, and that wear still requires replacement every one or two events. Repairable consumables are not maintenance-free hardware.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader linked sliding hopper · intake\n\n### Published construction or code\n\nIntake deployment extends a sliding hopper; surgical tubing retracts it. Two laminated layers of corrugated plastic provide stiffness. Slots are reinforced with 0.090-inch polycarbonate sandwiched between sheets; panels use tape and adhesive for replacement.\n\n### Stated rationale and boundaries\n\nThe publication emphasizes low mass, robust sliding and easy manufacture/repair with limited router access.\n\n### Engineering interpretation\n\nThis is a specific example of an intake–storage interface, useful to 1833’s morph chart. Linking deployment reduces independent actuation but also links faults and operating states. Slot reinforcement addresses local bearing and deformation loads that a generic corrugated-plastic wall description misses. Capacity, deflection and passage access should be measured in each loaded state; no unverified hopper capacity is assigned here.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader readiness and localization · controls\n\n### Published construction or code\n\nScoring requires launch velocity, launch angle and turret yaw within tolerance plus a recent image with at least two tags. The serializer pauses when readiness fails. PhotonVision MultiTag selects camera poses using hub/total tag visibility and rejects old or ambiguous poses.\n\n### Stated rationale and boundaries\n\nSingle-driver operation reduces communication overhead; automated gating is intended to release fuel only from useful launch states.\n\n### Engineering interpretation\n\nFeed interruption is an intentional interface between aiming and serialization, not automatically a jam. A high mechanical BPS ceiling is useful only while readiness remains true. Logging the reason for each gating interruption would distinguish vision starvation, aim error and actual feed trouble. The release does not demonstrate those duty fractions or an electrical diagnosis of every stop.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Toploader partner-aware bump autonomous · controls\n\n### Published construction or code\n\nThe team describes timestamping partner paths, targeting leftover fuel after the trench race, using reusable path partials and adjustable pauses without redeployment. A Pac-Man routine is identified at NorCal DCMP playoff match 1.\n\n### Stated rationale and boundaries\n\nA bump-only robot was expected to reach midfield later; route selection was built around shorter partners rather than competing for the same initial race.\n\n### Engineering interpretation\n\nArchitectural limitations can become planning inputs instead of being hidden by an ideal autonomous animation. Preserve the team’s distinction between pre-Champs crossing rules and later rules, and between experiments and actually used routines. A clever path is not proof every prototype routine competed. The release does not establish a tower mechanism; absence from the selected technical sections remains unknown, not certified absence.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n\n\n## Recovered original source images · 2026-10-26\n\nThe earlier direct-download failures are resolved. These are unchanged originals from the team release; the labels below are editorial retrieval aids. Inspect the full view before borrowing packaging ideas. Exact dimensions, hidden construction and match performance require independent source evidence.\n\n### Serializer / central upfeed\n\n![2026-604 · Whole-robot CAD view with ghosted front components exposing the circular bucket, central upfeed tube and upper turret support. The original is retained without cropping.](../../images/604_2026_serializer.png)\n\n2026-604 · Whole-robot CAD view with ghosted front components exposing the circular bucket, central upfeed tube and upper turret support. The original is retained without cropping.\n\n[Team release](https://www.chiefdelphi.com/t/524289/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/4X/3/9/3/3934b6a0324e210c03b36434e8a9cd8fd395af3d.png) · Image ID `604-source-2026-serializer`.\n\n### Intake / deployment packaging\n\n![2026-604 · Whole-robot CAD view with front intake arms and drivetrain packaging visible through ghosted components. This is a packaging reference, not a complete roller or belt specification.](../../images/604_2026_intake.png)\n\n2026-604 · Whole-robot CAD view with front intake arms and drivetrain packaging visible through ghosted components. This is a packaging reference, not a complete roller or belt specification.\n\n[Team release](https://www.chiefdelphi.com/t/524289/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/4X/9/2/f/92fe26de6c188bd4483bbb8ce437dcdebddf71e7.png) · Image ID `604-source-2026-intake`.\n\n### Hopper / sliding wall packaging\n\n![2026-604 · Whole-robot CAD view showing front wall, hopper and slot packaging. It does not establish every sliding interface, capacity or material thickness by itself.](../../images/604_2026_hopper.png)\n\n2026-604 · Whole-robot CAD view showing front wall, hopper and slot packaging. It does not establish every sliding interface, capacity or material thickness by itself.\n\n[Team release](https://www.chiefdelphi.com/t/524289/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/4X/a/7/7/a77423f55dc711b1fdffd9e4368a12865950ae67.png) · Image ID `604-source-2026-hopper`.\n\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2026-robot-cad-and-code-release/524289"
+      ],
+      "path": "docs/context/2026-604-primary-study.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "604-source-2026-serializer",
+      "robot_id": "2026-604",
+      "kind": "team_release_original",
+      "path": "images/604_2026_serializer.png",
+      "source_url": "https://www.chiefdelphi.com/t/524289/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/3/9/3/3934b6a0324e210c03b36434e8a9cd8fd395af3d.png",
+      "caption": "2026-604 · Whole-robot CAD view with ghosted front components exposing the circular bucket, central upfeed tube and upper turret support. The original is retained without cropping.",
+      "publisher_label": "Serializer / central upfeed",
+      "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+      "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+      "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+      "whole_robot_photo": false,
+      "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+      "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+      "downloaded_on": "2026-10-26",
+      "download_method": "Normal browser navigation to the original image URL and browser media download",
+      "sha256": "7eda142c38c16284a905dd2a7849ec4d59291d7a745264d1d69b79e8610808dc",
+      "media_type": "image/png",
+      "width_px": 2048,
+      "height_px": 1448,
+      "bytes": 1479105,
+      "path_base": "corpus_root",
+      "reader_asset_id": "604-source-2026-serializer",
+      "reader_url": "index.html#image=604-source-2026-serializer",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "604-source-2026-intake",
+      "robot_id": "2026-604",
+      "kind": "team_release_original",
+      "path": "images/604_2026_intake.png",
+      "source_url": "https://www.chiefdelphi.com/t/524289/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/9/2/f/92fe26de6c188bd4483bbb8ce437dcdebddf71e7.png",
+      "caption": "2026-604 · Whole-robot CAD view with front intake arms and drivetrain packaging visible through ghosted components. This is a packaging reference, not a complete roller or belt specification.",
+      "publisher_label": "Intake / deployment packaging",
+      "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+      "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+      "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+      "whole_robot_photo": false,
+      "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+      "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+      "downloaded_on": "2026-10-26",
+      "download_method": "Normal browser navigation to the original image URL and browser media download",
+      "sha256": "4ed761e0504a12a3279c8bf9f1189c22594b27ed4062d489cccc1311d4ac430c",
+      "media_type": "image/png",
+      "width_px": 2048,
+      "height_px": 1448,
+      "bytes": 1420498,
+      "path_base": "corpus_root",
+      "reader_asset_id": "604-source-2026-intake",
+      "reader_url": "index.html#image=604-source-2026-intake",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "604-source-2026-hopper",
+      "robot_id": "2026-604",
+      "kind": "team_release_original",
+      "path": "images/604_2026_hopper.png",
+      "source_url": "https://www.chiefdelphi.com/t/524289/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/a/7/7/a77423f55dc711b1fdffd9e4368a12865950ae67.png",
+      "caption": "2026-604 · Whole-robot CAD view showing front wall, hopper and slot packaging. It does not establish every sliding interface, capacity or material thickness by itself.",
+      "publisher_label": "Hopper / sliding wall packaging",
+      "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+      "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+      "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+      "whole_robot_photo": false,
+      "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+      "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+      "downloaded_on": "2026-10-26",
+      "download_method": "Normal browser navigation to the original image URL and browser media download",
+      "sha256": "873a357a8f6b6635f3f44ba98635ec5d6d166f8194a6ef7e2450729de984a1ee",
+      "media_type": "image/png",
+      "width_px": 2048,
+      "height_px": 1448,
+      "bytes": 1194345,
+      "path_base": "corpus_root",
+      "reader_asset_id": "604-source-2026-hopper",
+      "reader_url": "index.html#image=604-source-2026-hopper",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-604",
+    "year": 2026,
+    "team": 604,
+    "epa_rank": 46,
+    "status": "primary_source_review_no_verified_binder",
+    "search": {
+      "query": "604 2026 technical release",
+      "review_date": "2026-10-26"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "604-source-2026"
+    ],
+    "technical_note_ids": [
+      "604-expansion-2026-1",
+      "604-expansion-2026-2",
+      "604-expansion-2026-3",
+      "604-expansion-2026-4",
+      "604-expansion-2026-5",
+      "604-expansion-2026-6",
+      "604-expansion-2026-7"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Primary technical release/code reviewed; no standalone binder certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "604-expansion-2026-1:construction",
+    "604-expansion-2026-1:team_stated_reason",
+    "604-expansion-2026-1:engineering_analysis",
+    "604-expansion-2026-1:recommended_validation",
+    "604-expansion-2026-1:limitations",
+    "604-expansion-2026-2:construction",
+    "604-expansion-2026-2:team_stated_reason",
+    "604-expansion-2026-2:engineering_analysis",
+    "604-expansion-2026-2:recommended_validation",
+    "604-expansion-2026-2:limitations",
+    "604-expansion-2026-3:construction",
+    "604-expansion-2026-3:team_stated_reason",
+    "604-expansion-2026-3:engineering_analysis",
+    "604-expansion-2026-3:recommended_validation",
+    "604-expansion-2026-3:limitations",
+    "604-expansion-2026-4:construction",
+    "604-expansion-2026-4:team_stated_reason",
+    "604-expansion-2026-4:engineering_analysis",
+    "604-expansion-2026-4:recommended_validation",
+    "604-expansion-2026-4:limitations",
+    "604-expansion-2026-5:construction",
+    "604-expansion-2026-5:team_stated_reason",
+    "604-expansion-2026-5:engineering_analysis",
+    "604-expansion-2026-5:recommended_validation",
+    "604-expansion-2026-5:limitations",
+    "604-expansion-2026-6:construction",
+    "604-expansion-2026-6:team_stated_reason",
+    "604-expansion-2026-6:engineering_analysis",
+    "604-expansion-2026-6:recommended_validation",
+    "604-expansion-2026-6:limitations",
+    "604-expansion-2026-7:construction",
+    "604-expansion-2026-7:team_stated_reason",
+    "604-expansion-2026-7:engineering_analysis",
+    "604-expansion-2026-7:recommended_validation",
+    "604-expansion-2026-7:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-1690",
+  "year": 2026,
+  "team": 1690,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 1690,
+    "robot": "Orbit 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=n5HWLSWU4eg"
+    ],
+    "architecture": "Trench turret with narrow swept envelope, live-bottom singulation and deliberately low drivetrain load.",
+    "subsystems": {
+      "drivetrain": "29.5×24.5-inch base; custom narrow-tread modules replaced by MK5s after defense practice exposed poor resistance to pushing.",
+      "intake": "Impact-compliant rack/gear deploy; dynamic ramp replaced by a kicker deployed once to avoid trapping fuel.",
+      "transfer": "Eleven floor rollers, independently powered vertical belts and vertical anti-jam roller feed active C-shaped uptake. Ratios iterated to control congestion.",
+      "scoring": "Compact offset ball path within turret bearing reduces outer sweep; connected back rollers target low spin. Custom narrow cable chain permits reported 640-degree travel.",
+      "endgame": "Original L3 abandoned for mass/complexity; compact threaded-rod L1 substituted.",
+      "controls": "Turret-mounted camera plus backup Limelights; velocity-compensated aiming. Worlds was first official competition of this configuration according to interview."
+    },
+    "versions": [
+      "Drive-module swap followed physical defense testing.",
+      "Multiple feed ratios and manufacturing revisions preceded Worlds; L3-to-L1 is a distinct capability reduction."
+    ],
+    "analysis": "Turret rotation range is a packaging outcome. Offsetting the ball path, compact wiring and low motors reserve hopper volume and permit defense-resistant aiming; transferring only its shooter wheel dimensions would lose that system-level benefit.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-1690",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/520673/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/2/d/42daf89145a908830dc3e70f928485cf4a15d36e_2_690x338.jpeg",
+        "post": 1,
+        "date": "2026-05-12T12:19:37.068Z",
+        "author": "HarelKor",
+        "context_tags": [],
+        "caption": "2026 team 1690 — source image from post 1 (2026-05-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "6e647e6894f7ae3677.jpg",
+        "id": "8c18de669af28ed671",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/6e647e6894f7ae3677.jpg"
+      },
+      {
+        "robot_id": "2026-1690",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/520673/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/8/b/d8b0fa54a4cf90170e3468c58aa985ce0f046fa0_2_690x437.jpeg",
+        "post": 2,
+        "date": "2026-05-12T13:24:45.836Z",
+        "author": "DavidMasin",
+        "context_tags": [
+          "intake",
+          "shooter"
+        ],
+        "caption": "2026 team 1690 — source image from post 2 (2026-05-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "fe0388be4b6537c4ca.jpg",
+        "id": "8e79856fd3a21d557b",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/fe0388be4b6537c4ca.jpg"
+      }
+    ],
+    "source_post_count": 71,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-1690",
+        "discovery_post": "2026-1690-520673-1",
+        "url": "https://orbit1690.onshape.com/documents/d09a47dbfc1b125f63a78ac7/w/d71d2275472653904f9b717a/e/03166dd8363262636c9f6b66?configuration=List_vaYWRXCz26a9mL%3DFloating&renderMode=0&uiState=6a0300881d9a2a1f825ea5a8",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4969f3faf1c745e3c9"
+      },
+      {
+        "robot_id": "2026-1690",
+        "discovery_post": "2026-1690-520673-1",
+        "url": "https://drive.google.com/drive/folders/12x8BS28Hf7YlxVM24ocRf43Jw6wtTlyj?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5ce875f483e2e575b0"
+      }
+    ],
+    "id": "2026-1690",
+    "team_name": "Orbit",
+    "epa_rank": 5,
+    "epa": 302.54,
+    "epa_pre_champs": 200.99,
+    "epa_breakdown": {
+      "total_points": 302.54,
+      "auto_points": 72.13,
+      "teleop_points": 164.59,
+      "endgame_points": 65.82,
+      "energized_rp": 0.6268,
+      "supercharged_rp": 0.3194,
+      "traversal_rp": -0.33583,
+      "tiebreaker_points": 302.54,
+      "auto_fuel": 71.71,
+      "auto_tower": 0.42,
+      "transition_fuel": 26.41,
+      "first_shift_fuel": 74.86,
+      "second_shift_fuel": 63.32,
+      "endgame_fuel": 65.33,
+      "endgame_tower": 0.49,
+      "rp_1": 0.6268,
+      "rp_2": 0.3194,
+      "rp_3": -0.33583,
+      "teleop_fuel": 229.92000000000002,
+      "total_fuel": 301.63,
+      "total_tower": 0.9099999999999999
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "35c873ce8049aac2"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-1690",
+      "year": 2026,
+      "team": 1690,
+      "epa_rank": 5,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1690\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 26,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1690\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-1690"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-1690",
+      "title": "Precondition fuel before a compact turret, then manage defended stability",
+      "start_seconds": 367,
+      "end_seconds": 1140,
+      "construction": "The interview describes eleven active carbon/silicone floor rollers powered by an X60 through a stated 2:1 reduction, with 3-mm-pitch GT2 inter-roller belts. A later acceleration stage is described as delivering approximately 8 m/s with near-zero incoming spin. Compact turret packaging shares shafts and places hood-drive hardware to limit diameter. A defended shooting mode cancels shooting on the move.",
+      "team_stated_reason": "The team explicitly cites efficiency at small pulley radii for its belt choice and compactness for the turret transmission layout. Its defended mode is explained as planting the robot to resist being pushed and emptying more accurately.",
+      "engineering_analysis": "Preconditioning is a useful way to separate high-volume transport from precision release. A turret receiving fuel with controlled velocity and spin needs to add less correction, but it inherits errors in every upstream roller and transfer gap. The reported 8 m/s is an internal-stage claim, not a measured final trajectory specification or match-average rate. A planted mode also shows why turret capability does not require moving continuously: the best control mode depends on contact conditions. A future implementation must budget traction and battery demand for both upstream acceleration and chassis resistance.",
+      "recommended_validation": "Measure entrance velocity/spin distribution, current at each stage, and accuracy under controlled lateral contact. Compare planted and moving modes with the same fuel condition and load rather than ranking them from an undefended demo.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-1690",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=n5HWLSWU4eg",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 367,
+        "end_seconds": 1140,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "n5HWLSWU4eg",
+          "sha256": "be92918ee8d4762cb82d876841c103139811d80ca4b87a8bf73103627182ddf4",
+          "caption_segments": 728,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-1690:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-1690",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-1690"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=n5HWLSWU4eg"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-1690",
+      "title": "2026-1690 · Precondition fuel before a compact turret, then manage defended stability",
+      "year": 2026,
+      "robot_id": "2026-1690",
+      "kind": "focused_technical_study",
+      "body": "# 2026-1690: Precondition fuel before a compact turret, then manage defended stability\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview describes eleven active carbon/silicone floor rollers powered by an X60 through a stated 2:1 reduction, with 3-mm-pitch GT2 inter-roller belts. A later acceleration stage is described as delivering approximately 8 m/s with near-zero incoming spin. Compact turret packaging shares shafts and places hood-drive hardware to limit diameter. A defended shooting mode cancels shooting on the move.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly cites efficiency at small pulley radii for its belt choice and compactness for the turret transmission layout. Its defended mode is explained as planting the robot to resist being pushed and emptying more accurately.\n\n## Engineering interpretation — analyst inference\n\nPreconditioning is a useful way to separate high-volume transport from precision release. A turret receiving fuel with controlled velocity and spin needs to add less correction, but it inherits errors in every upstream roller and transfer gap. The reported 8 m/s is an internal-stage claim, not a measured final trajectory specification or match-average rate. A planted mode also shows why turret capability does not require moving continuously: the best control mode depends on contact conditions. A future implementation must budget traction and battery demand for both upstream acceleration and chassis resistance.\n\n## Proposed validation — not performed\n\nMeasure entrance velocity/spin distribution, current at each stage, and accuracy under controlled lateral contact. Compare planted and moving modes with the same fuel condition and load rather than ranking them from an undefended demo.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=n5HWLSWU4eg](https://www.youtube.com/watch?v=n5HWLSWU4eg)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=n5HWLSWU4eg"
+      ],
+      "path": "docs/research_continuation/2026-1690.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-1690",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/520673/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/2/d/42daf89145a908830dc3e70f928485cf4a15d36e_2_690x338.jpeg",
+      "post": 1,
+      "date": "2026-05-12T12:19:37.068Z",
+      "author": "HarelKor",
+      "context_tags": [],
+      "caption": "2026 team 1690 — source image from post 1 (2026-05-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "6e647e6894f7ae3677.jpg",
+      "id": "8c18de669af28ed671",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/6e647e6894f7ae3677.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 338,
+      "bytes": 43939,
+      "sha256": "4f6b70ab27339f6ea44ceed43b961bc6c1907cc4e0b929547ccf64c3c37d7205",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8c18de669af28ed671",
+      "reader_url": "index.html#image=8c18de669af28ed671",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1690",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/520673/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/8/b/d8b0fa54a4cf90170e3468c58aa985ce0f046fa0_2_690x437.jpeg",
+      "post": 2,
+      "date": "2026-05-12T13:24:45.836Z",
+      "author": "DavidMasin",
+      "context_tags": [
+        "intake",
+        "shooter"
+      ],
+      "caption": "2026 team 1690 — source image from post 2 (2026-05-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "fe0388be4b6537c4ca.jpg",
+      "id": "8e79856fd3a21d557b",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/fe0388be4b6537c4ca.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 437,
+      "bytes": 37711,
+      "sha256": "3d3232d1cfb78fde0497355a2bfa4280802ad55d72dea2cc49261d71f244d91a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8e79856fd3a21d557b",
+      "reader_url": "index.html#image=8e79856fd3a21d557b",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-1690",
+    "year": 2026,
+    "team": 1690,
+    "epa_rank": 5,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1690\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 26,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1690\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-1690:construction",
+    "study6-2026-1690:team_stated_reason",
+    "study6-2026-1690:engineering_analysis",
+    "study6-2026-1690:recommended_validation",
+    "study6-2026-1690:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

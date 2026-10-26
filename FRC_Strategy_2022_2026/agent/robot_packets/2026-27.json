@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-27",
+  "year": 2026,
+  "team": 27,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 27,
+    "robot": "Team RUSH 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=p9H80uFyuu8"
+    ],
+    "architecture": "Three-wide retrofitted drum with staged preacceleration and passively linked hopper.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification unresolved here.",
+      "intake": "Two-X44 main roller, passive upper carbon roller and internal guide tubes; easy replacement prioritized for collision face.",
+      "transfer": "Two-motor polycarbonate roller floor accelerates toward shooter; previously powered upper roller made passive after causing jams.",
+      "scoring": "Steel 3-inch drum, four X60s and driven hood rollers; variable compression permits compact fit in preexisting robot. Adjustable hood and carbon structure.",
+      "endgame": "Endgame architecture not established by reviewed interview.",
+      "controls": "Beam break detects fuel flow so driver can leave after emptying; profiled agitation and fused Limelight estimates."
+    },
+    "versions": [
+      "Shooter was a retrofit, not original architecture.",
+      "Powered-to-passive roller change improved flow; full original shooter specification remains unresolved."
+    ],
+    "analysis": "More driven contact is not automatically better. A passive anti-bridge roller can outperform a powered one that forces fuel into congestion. Preserve acceleration and spacing through the path while measuring jams and complete emptying time.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2026-27",
+    "team_name": "Team RUSH",
+    "epa_rank": 7,
+    "epa": 295.14,
+    "epa_pre_champs": 332.17,
+    "epa_breakdown": {
+      "total_points": 295.14,
+      "auto_points": 73.95,
+      "teleop_points": 154.57,
+      "endgame_points": 66.62,
+      "energized_rp": 0.7885,
+      "supercharged_rp": 0.927,
+      "traversal_rp": -0.34344,
+      "tiebreaker_points": 295.14,
+      "auto_fuel": 74.22,
+      "auto_tower": -0.28,
+      "transition_fuel": 25.21,
+      "first_shift_fuel": 66.76,
+      "second_shift_fuel": 62.61,
+      "endgame_fuel": 66.29,
+      "endgame_tower": 0.33,
+      "rp_1": 0.7885,
+      "rp_2": 0.927,
+      "rp_3": -0.34344,
+      "teleop_fuel": 220.87,
+      "total_fuel": 295.09000000000003,
+      "total_tower": 0.04999999999999999
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "574721eac33478cc"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-27",
+      "year": 2026,
+      "team": 27,
+      "epa_rank": 7,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"27\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 25,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"27\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-27"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-27",
+      "title": "Preacceleration, passive restraint and retrofit compression",
+      "start_seconds": 108,
+      "end_seconds": 397,
+      "construction": "The interview describes a two-X44 intake at 2.5:1, passive carbon upper roller, roller-floor transmission described as 17:19, and a 3-inch steel drum driven by four X60s with powered hood rollers. A previously powered upper feed roller was made passive after jamming. Drum-region compression is reported as 3/8 inch and final roller compression as 1/2 inch.",
+      "team_stated_reason": "The team explicitly connects the stepped compression to fitting a replacement shooter in the existing robot, and the passive roller change to avoiding fuel being driven downward into jams. Collector repair access is deliberate because it receives impacts.",
+      "engineering_analysis": "The important reference is the sequence of contacts, not simply four launcher motors. Upstream acceleration reduces the velocity increment demanded of the drum, while the passive restraint prevents one contact from injecting fuel into an already occupied region. More powered surfaces can therefore lower useful flow. A retrofit also fixes the available path length and elevation; its compression distribution cannot safely be transplanted without the same incoming velocity and support geometry. Separately, the agitation priority hierarchy means collector deployment and automatic shooting agitation are competing commands rather than independent subsystems.",
+      "recommended_validation": "Measure hopper-to-exit rate and current with the upper restraint passive versus driven, at several fill levels. Check worn fuel and simultaneous agitation. Preserve the source ratio order until driver/driven orientation is verified.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-27",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=p9H80uFyuu8",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 108,
+        "end_seconds": 397,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "p9H80uFyuu8",
+          "sha256": "1b7ef835a2abb029522ba58ca0781cb88846a98b3c0d1c4dba9cb33713b6b34a",
+          "caption_segments": 357,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-27:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-27",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-27"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=p9H80uFyuu8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-27",
+      "title": "2026-27 · Preacceleration, passive restraint and retrofit compression",
+      "year": 2026,
+      "robot_id": "2026-27",
+      "kind": "focused_technical_study",
+      "body": "# 2026-27: Preacceleration, passive restraint and retrofit compression\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview describes a two-X44 intake at 2.5:1, passive carbon upper roller, roller-floor transmission described as 17:19, and a 3-inch steel drum driven by four X60s with powered hood rollers. A previously powered upper feed roller was made passive after jamming. Drum-region compression is reported as 3/8 inch and final roller compression as 1/2 inch.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly connects the stepped compression to fitting a replacement shooter in the existing robot, and the passive roller change to avoiding fuel being driven downward into jams. Collector repair access is deliberate because it receives impacts.\n\n## Engineering interpretation — analyst inference\n\nThe important reference is the sequence of contacts, not simply four launcher motors. Upstream acceleration reduces the velocity increment demanded of the drum, while the passive restraint prevents one contact from injecting fuel into an already occupied region. More powered surfaces can therefore lower useful flow. A retrofit also fixes the available path length and elevation; its compression distribution cannot safely be transplanted without the same incoming velocity and support geometry. Separately, the agitation priority hierarchy means collector deployment and automatic shooting agitation are competing commands rather than independent subsystems.\n\n## Proposed validation — not performed\n\nMeasure hopper-to-exit rate and current with the upper restraint passive versus driven, at several fill levels. Check worn fuel and simultaneous agitation. Preserve the source ratio order until driver/driven orientation is verified.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=p9H80uFyuu8](https://www.youtube.com/watch?v=p9H80uFyuu8)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=p9H80uFyuu8"
+      ],
+      "path": "docs/research_continuation/2026-27.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2026-27",
+    "year": 2026,
+    "team": 27,
+    "epa_rank": 7,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"27\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 25,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"27\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-27:construction",
+    "study6-2026-27:team_stated_reason",
+    "study6-2026-27:engineering_analysis",
+    "study6-2026-27:recommended_validation",
+    "study6-2026-27:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

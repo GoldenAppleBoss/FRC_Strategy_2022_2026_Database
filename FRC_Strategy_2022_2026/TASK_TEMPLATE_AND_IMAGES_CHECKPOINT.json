@@ -1,0 +1,11 @@
+{
+  "edition": "2026-10-26 604 recovered originals and required 1833 task sheet",
+  "recovered_original_images": 4,
+  "all_images": 508,
+  "single_sheet_template": "team1833/1833_Task_List_Template.xlsx",
+  "required_protocol": "docs/TASK_LIST_PROTOCOL.md",
+  "task_schema": "team1833/task_template_schema.json",
+  "source_attachments_byte_preserved": true,
+  "validation": "Original-byte identity, every gallery image decoded, four 604 full-size dialogs, no broken Markdown links, one-sheet structure, representative formula edits and restoration, dropdowns, normalized SQL parity",
+  "scope": "Image recovery and task workflow integration; no new mechanism performance testing, video review or exhaustive version certification claimed."
+}

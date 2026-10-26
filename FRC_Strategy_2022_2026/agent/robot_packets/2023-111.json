@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-111",
+  "year": 2023,
+  "team": 111,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 111,
+    "robot": "WildStang 2023",
+    "primary": [
+      "https://youtu.be/iKxRiTgii4k"
+    ],
+    "architecture": "Open-top elevator with symmetric roller gripper and arm access on both sides.",
+    "subsystems": {
+      "drivetrain": "REV MAXSwerve; wiring and controller placement support quick module replacement.",
+      "intake": "Vertically symmetric gripper acquires cubes and upright/tipped cones from either robot face.",
+      "transfer": "Direct end-effector acquisition.",
+      "scoring": "Continuous lift; synchronized sides, guide rails and adjustable structural stays control binding and parallelism.",
+      "endgame": "Charge-station mechanism not described in this interview.",
+      "controls": "Piece mode selects gripper/lift presets and human-player LEDs; driver determines timing while operator selects level."
+    },
+    "versions": [
+      "Guide rails and steel stays added for stiffness. Magnets supplement constant-force springs to retain the lower stage only at the bottom."
+    ],
+    "analysis": "Passive sequencing features can fix a repeatability problem without imposing a sustained motor load. Separate this team's mechanism from Team 112, which shares the interview but uses a different robot.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 122,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-132",
+        "url": "https://cad.onshape.com/documents/5ae68917e8b44208b1678234/w/287d82b951af3794d3b1c016/e/bf79886b638c39653e8df947",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "636b620a87652c915e"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-1",
+        "url": "https://cad.onshape.com/documents/d0b3a559d91e05a7fe6bb436/w/f0b68b0211c03d00f3ed33d7/e/f153169c67239a036facbd6d",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "24718c5cf615621572"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-1",
+        "url": "https://cad.onshape.com/documents/c43db6e984f676f6476181cf/w/26788cd6bb030d33b148a9cd/e/e3d7326ee6359b5583ecaf5e",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2ab87f88850bf8e61b"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-10",
+        "url": "https://cad.onshape.com/documents/3969471095df924bad241f81/w/42f02d1579e8bcd9c0435d48/e/4c11f9e69a8076d759f4f95e?renderMode=0&uiState=63ab3fbf5d6009010c68d848",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e3e9622588eba5a0d1"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-11",
+        "url": "https://cad.onshape.com/documents/8173a6e12bd6c013468a7014/w/b507e2fb387cacede9a96e3c/e/5f134927edd2f5dee00258fe",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f1fe94b90cbcf679bf"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-12",
+        "url": "https://github.com/wildstang/2022_111_robot_software",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "130e19af4ea694dcb3"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-12",
+        "url": "https://github.com/wildstang/2022_112_robot_software",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f383250523f8c68d10"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-12",
+        "url": "https://github.com/Team319/BobTrajectory",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "69bc280e5442c1e0b5"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-44",
+        "url": "https://github.com/wildstang/robot_framework",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8122d2e08a85204ea4"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-13",
+        "url": "https://github.com/wildstang",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "62281a47cf669097fe"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-49",
+        "url": "https://cad.onshape.com/documents/3969471095df924bad241f81/w/42f02d1579e8bcd9c0435d48/e/30e679d867ecc3d59a6b2793?configuration=List_S5TzR4RdcHrDlN%3DNo_Expansion&renderMode=0&uiState=63c0d627566eb00869aa76ac",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f67c04ede16de920f3"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-109",
+        "url": "https://github.com/wildstang/WildRank/wiki/Whats-New",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4e46e2954c102829c6"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-109",
+        "url": "https://github.com/wildstang/WildRank/wiki/Running",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "0b8d62e422d97c6f15"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-290",
+        "url": "https://github.com/wildstang/2023_111_robot_software",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e34cea76f5bfd56710"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-293",
+        "url": "https://github.com/wildstang/2023_112_robot_software/tree/main",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b462c66c9c34795f53"
+      },
+      {
+        "robot_id": "2023-111",
+        "discovery_post": "2023-111-420243-293",
+        "url": "https://github.com/wildstang/2023_112_robot_software/blob/main/src/main/java/org/wildstang/year2023/subsystems/arm/Arm.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b1f34848a40b9c8821"
+      }
+    ],
+    "id": "2023-111",
+    "team_name": "WildStang",
+    "epa_rank": 17,
+    "epa": 70.79,
+    "epa_pre_champs": 69.62,
+    "epa_breakdown": {
+      "total_points": 70.79,
+      "auto_points": 18.86,
+      "teleop_points": 41.42,
+      "endgame_points": 9.35,
+      "links_rp": 0.591,
+      "activation_rp": 0.5333,
+      "tiebreaker_points": 69.63,
+      "auto_charge_station_points": 7.55,
+      "auto_pieces": 2.12,
+      "teleop_grid_points": 27.82,
+      "bottom_pieces": 1.24,
+      "middle_pieces": 3.71,
+      "top_pieces": 4.68,
+      "cube_points": 14.07,
+      "cone_points": 25.09,
+      "links": 2.95,
+      "endgame_charge_station_points": 9.35,
+      "rp_1": 0.591,
+      "rp_2": 0.5333
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "3ad2657da8342716"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-111",
+      "year": 2023,
+      "team": 111,
+      "epa_rank": 17,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"111\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 6,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"111\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-111"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-111",
+      "title": "Symmetric acquisition and sufficient release clearance are different requirements",
+      "start_seconds": 116,
+      "end_seconds": 625,
+      "construction": "A vertically symmetric gripper acquires cubes and upright/tipped cones from either robot face. A continuous lift uses synchronized sides, guides and adjustable structural stays. The interview reports redesigning the claw to open farther because cubes remained trapped after the release command.",
+      "team_stated_reason": "The team explicitly ties gripper symmetry to the arm working on both sides. The larger opening responds to failed cube release rather than poor initial acquisition.",
+      "engineering_analysis": "A mechanism that holds both pieces well can still release one poorly. Compliant foam and tapered cones create different contact/retention conditions, so acquisition success is not a substitute for a release test. Through-robot arm travel also makes lift parallelism and cable clearance part of both scoring directions.",
+      "recommended_validation": "Measure release delay and remaining contact for worn cubes, test cone orientation extremes, and check lift binding after frame contact.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-111",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/iKxRiTgii4k",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 116,
+        "end_seconds": 625,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "iKxRiTgii4k",
+          "sha256": "7b7cb2d70a4f14e19a6adba31e4d44ac9f71bc222778e0f8b06fa4f1898116e0",
+          "caption_segments": 473,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-111:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-111",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-111"
+      ],
+      "source_urls": [
+        "https://youtu.be/iKxRiTgii4k"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-111",
+      "title": "2023-111 · Symmetric acquisition and sufficient release clearance are different requirements",
+      "year": 2023,
+      "robot_id": "2023-111",
+      "kind": "focused_technical_study",
+      "body": "# 2023-111: Symmetric acquisition and sufficient release clearance are different requirements\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA vertically symmetric gripper acquires cubes and upright/tipped cones from either robot face. A continuous lift uses synchronized sides, guides and adjustable structural stays. The interview reports redesigning the claw to open farther because cubes remained trapped after the release command.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly ties gripper symmetry to the arm working on both sides. The larger opening responds to failed cube release rather than poor initial acquisition.\n\n## Engineering interpretation — analyst inference\n\nA mechanism that holds both pieces well can still release one poorly. Compliant foam and tapered cones create different contact/retention conditions, so acquisition success is not a substitute for a release test. Through-robot arm travel also makes lift parallelism and cable clearance part of both scoring directions.\n\n## Proposed validation — not performed\n\nMeasure release delay and remaining contact for worn cubes, test cone orientation extremes, and check lift binding after frame contact.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/iKxRiTgii4k](https://youtu.be/iKxRiTgii4k)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/iKxRiTgii4k"
+      ],
+      "path": "docs/research_continuation/2023-111.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-111",
+    "year": 2023,
+    "team": 111,
+    "epa_rank": 17,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"111\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 6,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"111\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-111:construction",
+    "study6-2023-111:team_stated_reason",
+    "study6-2023-111:engineering_analysis",
+    "study6-2023-111:recommended_validation",
+    "study6-2023-111:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

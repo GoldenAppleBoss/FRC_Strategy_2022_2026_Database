@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-1577",
+  "year": 2022,
+  "team": 1577,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 1577,
+    "robot": "Oasis",
+    "primary": [
+      "https://youtu.be/WrTNg9g2tJ4"
+    ],
+    "architecture": "Belt dribbler pickup, separate rejection path and adjustable-hood shooter.",
+    "subsystems": {
+      "drivetrain": "Swerve platform.",
+      "intake": "Broad flat-belt/polycord dribbler; early edge-vectoring idea removed after simultaneous-ball jams.",
+      "transfer": "Color-controlled wheel redirects opponents' cargo out the rear; conveyor lifts accepted cargo.",
+      "scoring": "Adjustable interleaving hood arcs, main wheel and back rollers target stable low-spin flight.",
+      "endgame": "Two telescopic arms and static supporting hooks; switches and motor resistance advance the climb sequence.",
+      "controls": "Vision-derived range/angle, color sensing and stage-dependent climb logic."
+    },
+    "versions": [
+      "Edge pickup geometry simplified. Team describes improved shooting through successive Israeli events; intermediate dimensions not fully enumerated."
+    ],
+    "analysis": "Collection of two balls at once is not automatically useful if the singulator cannot separate them. Their early simplification protects throughput farther downstream.",
+    "limits": [
+      "Reported performance and prototype history are attributed to the source; not every intermediate revision is recoverable."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-1577",
+    "team_name": "Steampunk",
+    "epa_rank": 8,
+    "epa": 57.41,
+    "epa_pre_champs": 58.66,
+    "epa_breakdown": {
+      "total_points": 57.41,
+      "auto_points": 13.51,
+      "teleop_points": 31.37,
+      "endgame_points": 12.53,
+      "cargo_rp": 0.7314,
+      "hangar_rp": 0.4989,
+      "tiebreaker_points": 57.41,
+      "auto_taxi_points": 2.02,
+      "auto_cargo_lower": -0.08,
+      "auto_cargo_upper": 2.91,
+      "teleop_cargo_lower": -0.15,
+      "teleop_cargo_upper": 15.76,
+      "rp_1": 0.7314,
+      "rp_2": 0.4989
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "32958d3a8bce5912"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-1577",
+      "year": 2022,
+      "team": 1577,
+      "epa_rank": 8,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1577\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 2,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1577\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-1577"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-1577",
+      "title": "Broad pickup and controlled low-spin release require local jam relief",
+      "start_seconds": 81,
+      "end_seconds": 695,
+      "construction": "A broad flat-belt/polycord collector feeds color-based rear rejection and a conveyor. Early edge-vectoring features were removed after simultaneous-ball jams. Adjustable hood arcs and powered back contacts manage release spin; climb sequencing uses contact/current cues.",
+      "team_stated_reason": "The retained source ties collector simplification to two-ball reliability rather than minimum part count for its own sake.",
+      "engineering_analysis": "A wide acquisition face can deliver multiple pieces into a narrower region, so pair tests are more informative than isolated pickup speed. Current-based climb transition detection needs a threshold robust to friction and battery state.",
+      "recommended_validation": "Test adjacent cargo, wrong-color ordering and climb sensor false positives; do not assume lower spin is always optimal without trajectory data.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-1577",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/WrTNg9g2tJ4",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 81,
+        "end_seconds": 695,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "WrTNg9g2tJ4",
+          "sha256": "8ccc786f47aeabea5845cf6783e7518e89496d4eff6067b9cda60890a579843c",
+          "caption_segments": 360,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-1577:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-1577",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-1577"
+      ],
+      "source_urls": [
+        "https://youtu.be/WrTNg9g2tJ4"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-1577",
+      "title": "2022-1577 · Broad pickup and controlled low-spin release require local jam relief",
+      "year": 2022,
+      "robot_id": "2022-1577",
+      "kind": "focused_technical_study",
+      "body": "# 2022-1577: Broad pickup and controlled low-spin release require local jam relief\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA broad flat-belt/polycord collector feeds color-based rear rejection and a conveyor. Early edge-vectoring features were removed after simultaneous-ball jams. Adjustable hood arcs and powered back contacts manage release spin; climb sequencing uses contact/current cues.\n\n## Team-stated reasoning or boundary\n\nThe retained source ties collector simplification to two-ball reliability rather than minimum part count for its own sake.\n\n## Engineering interpretation — analyst inference\n\nA wide acquisition face can deliver multiple pieces into a narrower region, so pair tests are more informative than isolated pickup speed. Current-based climb transition detection needs a threshold robust to friction and battery state.\n\n## Proposed validation — not performed\n\nTest adjacent cargo, wrong-color ordering and climb sensor false positives; do not assume lower spin is always optimal without trajectory data.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/WrTNg9g2tJ4](https://youtu.be/WrTNg9g2tJ4)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/WrTNg9g2tJ4"
+      ],
+      "path": "docs/research_continuation/2022-1577.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-1577",
+    "year": 2022,
+    "team": 1577,
+    "epa_rank": 8,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1577\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 2,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1577\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-1577:construction",
+    "study6-2022-1577:team_stated_reason",
+    "study6-2022-1577:engineering_analysis",
+    "study6-2022-1577:recommended_validation",
+    "study6-2022-1577:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

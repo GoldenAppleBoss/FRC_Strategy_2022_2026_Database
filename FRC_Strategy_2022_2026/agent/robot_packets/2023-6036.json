@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-6036",
+  "year": 2023,
+  "team": 6036,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 6036,
+    "robot": "Dum-E",
+    "primary": [
+      "https://youtu.be/eQnNk1OwPT0",
+      "https://www.chiefdelphi.com/t/436345"
+    ],
+    "architecture": "Pass-through two-joint arm, direct station gripper and later full-width cube floor intake.",
+    "subsystems": {
+      "intake": "Wide cube collector with compliant centering guides. Floor cone acquisition deliberately omitted in favor of reliable double-substation cycles.",
+      "transfer": "Floor cube intake hands to the arm; duct-taped compliant strap guides replaced stiffer materials that trapped or damaged cubes.",
+      "scoring": "Both arm-joint transmissions mounted low; gripper roller drive counterbalances the distal joint.",
+      "drivetrain": "Swerve integrated with autonomous placement.",
+      "endgame": "Charge-station method is not covered by the retrieved walkthrough.",
+      "controls": "Two AprilTag cameras and a 27-node selector automate community placement; pre-match dashboard checks module configuration and running software threads."
+    },
+    "versions": [
+      "Cube floor intake added after early competition/testing.",
+      "Guide materials iterated from rigid shaft and other compliant candidates to the final strap arrangement."
+    ],
+    "analysis": "A useful explicit omission: floor cones were rejected because alignment cost and defense exposure outweighed their expected benefit for this team's cycles. This is strategic simplification with a stated operational basis.",
+    "limits": [
+      "Endgame details and full configuration chronology remain incomplete."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-6036",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/436345/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/7/d7d4955cafece293b5cbcc97202dccc713e18130_2_517x291.jpeg",
+        "post": 1,
+        "date": "2023-04-30T22:44:05.910Z",
+        "author": "Rohit_Seshadri",
+        "context_tags": [],
+        "caption": "2023 team 6036 — source image from post 1 (2023-04-30). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "9d9fc3936784ea6def.jpg",
+        "id": "d9830b72f467aff4ce",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/9d9fc3936784ea6def.jpg"
+      },
+      {
+        "robot_id": "2023-6036",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/436345/9",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/5/2/526afa6e7fa4f3a15e6e76b0655355392131beb3.png",
+        "post": 9,
+        "date": "2023-06-12T03:35:32.049Z",
+        "author": "Cbrosch0",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2023 team 6036 — source image from post 9 (2023-06-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7790c216b21c6f8966.jpg",
+        "id": "0de7d1897de412c904",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7790c216b21c6f8966.jpg"
+      },
+      {
+        "robot_id": "2023-6036",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/436345/13",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/8/9/894fe5b045f78efe13927c902ec6660b94a4e81c.png",
+        "post": 13,
+        "date": "2023-11-16T18:15:30.587Z",
+        "author": "Rohit_Seshadri",
+        "context_tags": [
+          "arm",
+          "intake"
+        ],
+        "caption": "2023 team 6036 — source image from post 13 (2023-11-16). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "530fc2b483cafdcdd5.jpg",
+        "id": "16e2014084881a682a",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/530fc2b483cafdcdd5.jpg"
+      }
+    ],
+    "source_post_count": 7,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-6036",
+        "discovery_post": "2023-6036-436345-1",
+        "url": "https://drive.google.com/file/d/1NGKDbl50dAI0oS8JyQaHTgHGxmoA06Pc/view?usp=share_link",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6caaee1d9c82daf236"
+      },
+      {
+        "robot_id": "2023-6036",
+        "discovery_post": "2023-6036-436345-11",
+        "url": "https://grabcad.com/library/6036-dum-e-2023-competition-robot-1",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4c8ec5ad908fdb9a11"
+      }
+    ],
+    "id": "2023-6036",
+    "team_name": "Peninsula Robotics",
+    "epa_rank": 10,
+    "epa": 73.68,
+    "epa_pre_champs": 70.1,
+    "epa_breakdown": {
+      "total_points": 73.68,
+      "auto_points": 16.51,
+      "teleop_points": 46.3,
+      "endgame_points": 7.77,
+      "links_rp": 0.8066,
+      "activation_rp": 0.3592,
+      "tiebreaker_points": 70.58,
+      "auto_charge_station_points": 5.1,
+      "auto_pieces": 2.16,
+      "teleop_grid_points": 31.69,
+      "bottom_pieces": 2.22,
+      "middle_pieces": 2.94,
+      "top_pieces": 5.35,
+      "cube_points": 18.01,
+      "cone_points": 24.15,
+      "links": 3.54,
+      "endgame_charge_station_points": 7.77,
+      "rp_1": 0.8066,
+      "rp_2": 0.3592
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "a4584e38c2152edc",
+      "2a2942fa2481427b"
+    ],
+    "tags": [
+      "defense / durability",
+      "pass-through",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-6036",
+      "year": 2023,
+      "team": 6036,
+      "epa_rank": 10,
+      "status": "candidate_unavailable_nonrobot_or_unverified",
+      "search": {
+        "query": "\"6036\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 12,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"6036\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [
+        {
+          "id": "6d92990f43b77a7211",
+          "url": "https://drive.google.com/file/d/1NGKDbl50dAI0oS8JyQaHTgHGxmoA06Pc/view?usp=share_link",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/436345/1",
+          "status": "unavailable_or_not_pdf"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-6036"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-6036",
+      "title": "Deliberately omitted floor cones preserve a reliable preferred cycle",
+      "start_seconds": 75,
+      "end_seconds": 330,
+      "construction": "A double-jointed arm keeps both joint transmissions low. A wide cube collector uses compliant guides; cones are acquired at the double station rather than through a floor-cone mechanism. Collector material iterations address trapped or damaged cubes.",
+      "team_stated_reason": "The team chooses arm freedom to permit software iteration and targets rapid pickup-to-setpoint motion. The retained account explicitly omits floor cones in favor of reliable station work.",
+      "engineering_analysis": "Missing a task can be a deliberate architectural trade. That trade depends on station access under defense and the cost of a failed floor recovery, not a blanket claim that floor cones lack value.",
+      "recommended_validation": "Measure defended station cycles, cube handoff damage and arm settle time; provide a recovery plan when station access is blocked.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-6036",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/eQnNk1OwPT0",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/436345"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 330,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "eQnNk1OwPT0",
+          "sha256": "caa74332863f28fa3157dd82a85fad671ff67c6db08d59da1d235da0ea497195",
+          "caption_segments": 306,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-6036:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-6036",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-6036"
+      ],
+      "source_urls": [
+        "https://youtu.be/eQnNk1OwPT0"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-6036",
+      "title": "2023-6036 · Deliberately omitted floor cones preserve a reliable preferred cycle",
+      "year": 2023,
+      "robot_id": "2023-6036",
+      "kind": "focused_technical_study",
+      "body": "# 2023-6036: Deliberately omitted floor cones preserve a reliable preferred cycle\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA double-jointed arm keeps both joint transmissions low. A wide cube collector uses compliant guides; cones are acquired at the double station rather than through a floor-cone mechanism. Collector material iterations address trapped or damaged cubes.\n\n## Team-stated reasoning or boundary\n\nThe team chooses arm freedom to permit software iteration and targets rapid pickup-to-setpoint motion. The retained account explicitly omits floor cones in favor of reliable station work.\n\n## Engineering interpretation — analyst inference\n\nMissing a task can be a deliberate architectural trade. That trade depends on station access under defense and the cost of a failed floor recovery, not a blanket claim that floor cones lack value.\n\n## Proposed validation — not performed\n\nMeasure defended station cycles, cube handoff damage and arm settle time; provide a recovery plan when station access is blocked.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/eQnNk1OwPT0](https://youtu.be/eQnNk1OwPT0)\n- [https://www.chiefdelphi.com/t/436345](https://www.chiefdelphi.com/t/436345)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/eQnNk1OwPT0",
+        "https://www.chiefdelphi.com/t/436345"
+      ],
+      "path": "docs/research_continuation/2023-6036.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-6036",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/436345/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/7/d7d4955cafece293b5cbcc97202dccc713e18130_2_517x291.jpeg",
+      "post": 1,
+      "date": "2023-04-30T22:44:05.910Z",
+      "author": "Rohit_Seshadri",
+      "context_tags": [],
+      "caption": "2023 team 6036 — source image from post 1 (2023-04-30). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "9d9fc3936784ea6def.jpg",
+      "id": "d9830b72f467aff4ce",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/9d9fc3936784ea6def.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 291,
+      "bytes": 18531,
+      "sha256": "ca4821fa2678a1d32388575a4b418a006c9b4d576417e4448445d0e057a035b7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "d9830b72f467aff4ce",
+      "reader_url": "index.html#image=d9830b72f467aff4ce",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-6036",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/436345/9",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/5/2/526afa6e7fa4f3a15e6e76b0655355392131beb3.png",
+      "post": 9,
+      "date": "2023-06-12T03:35:32.049Z",
+      "author": "Cbrosch0",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2023 team 6036 — source image from post 9 (2023-06-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7790c216b21c6f8966.jpg",
+      "id": "0de7d1897de412c904",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7790c216b21c6f8966.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 739,
+      "height_px": 447,
+      "bytes": 39751,
+      "sha256": "41556927ad28e08ee4e3b11b942abdb386c9c7d2e17da3860d8b40566cc4386d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "0de7d1897de412c904",
+      "reader_url": "index.html#image=0de7d1897de412c904",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-6036",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/436345/13",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/8/9/894fe5b045f78efe13927c902ec6660b94a4e81c.png",
+      "post": 13,
+      "date": "2023-11-16T18:15:30.587Z",
+      "author": "Rohit_Seshadri",
+      "context_tags": [
+        "arm",
+        "intake"
+      ],
+      "caption": "2023 team 6036 — source image from post 13 (2023-11-16). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "530fc2b483cafdcdd5.jpg",
+      "id": "16e2014084881a682a",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/530fc2b483cafdcdd5.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 529,
+      "height_px": 529,
+      "bytes": 55050,
+      "sha256": "5f11b78799009ec77fca892e285f67fa37e0431883e2ef0c2f54440df42f9de5",
+      "path_base": "corpus_root",
+      "reader_asset_id": "16e2014084881a682a",
+      "reader_url": "index.html#image=16e2014084881a682a",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-6036",
+    "year": 2023,
+    "team": 6036,
+    "epa_rank": 10,
+    "status": "candidate_unavailable_nonrobot_or_unverified",
+    "search": {
+      "query": "\"6036\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 12,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"6036\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [
+      {
+        "id": "6d92990f43b77a7211",
+        "url": "https://drive.google.com/file/d/1NGKDbl50dAI0oS8JyQaHTgHGxmoA06Pc/view?usp=share_link",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/436345/1",
+        "status": "unavailable_or_not_pdf"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-6036:construction",
+    "study6-2023-6036:team_stated_reason",
+    "study6-2023-6036:engineering_analysis",
+    "study6-2023-6036:recommended_validation",
+    "study6-2023-6036:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

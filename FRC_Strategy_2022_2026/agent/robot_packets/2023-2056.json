@@ -1,0 +1,1020 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-2056",
+  "year": 2023,
+  "team": 2056,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 2056,
+    "robot": "UPPERCUT",
+    "primary": [
+      "https://youtu.be/IfX5bYZahtg",
+      "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+      "https://www.chiefdelphi.com/t/437553"
+    ],
+    "architecture": "Counterbalanced articulated arm and compact dual-piece gripper on swerve.",
+    "subsystems": {
+      "intake": "Pneumatic gripper with powered upper roller; cube limit switch and cone beam break.",
+      "transfer": "Direct acquisition by the end effector avoids a separate floor-to-gripper transfer.",
+      "scoring": "Low-mounted reduction and chain-driven arm; gas springs reduce the load on the pivot motors.",
+      "drivetrain": "Team's first competition swerve season; custom control and protected modules. Team reports improved odometry repeatability from Phoenix Pro time synchronization.",
+      "endgame": "Charge-station balancing; a dedicated endgame mechanism is not established by the interview.",
+      "controls": "LEDs indicate game-piece selection, faults and autonomous selection."
+    },
+    "versions": [
+      "Early cone dropping led to gears linking the gripper arms.",
+      "Added guides prevent intake rollers catching on swerve-module edges.",
+      "Practice-robot pivot tube deformation prompted reinforcement plates."
+    ],
+    "analysis": "Useful precedent for reducing handoff complexity while investing in grip retention, mechanical stiffness and repeatable positioning. The arm is only one part of the repeatability story.",
+    "limits": [
+      "Detailed balance implementation needs corroboration.",
+      "Version dates not fully established."
+    ],
+    "deep_context": "# 2023-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OPR 2023: low-backlash articulated arm\n\nVersion: 2023 articulated arm. [PDF p9](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9) · [PDF p11](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11) · [PDF p13](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13)\n\n**Published construction:** Two driven joints, dead axles, bronze bushings and gas-shock shoulder counterbalance.\n\n**Team-stated reason or evidence boundary:** Fast repeatable motion with motor-side position sensing.\n\n**Engineering analysis — original inference:** An articulated arm can reach floor, station and grid positions without a tall lift, but the endpoint error combines both joint errors. A small shoulder angle error becomes a larger tip error as the arm extends. Reducing backlash at shafts, gears and chains supports motor-side sensing only if elastic deformation remains acceptable. Gas shocks reduce gravitational torque over part of the motion but produce a changing torque with angle. A bronze bushing can be appropriate for high load and limited rotation, while friction and wear must be included in control tuning.\n\n**Proposed validation — not a completed test:** Measure tip repeatability approaching the same pose from both directions, under load and after chain wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2023: piece-specific active contacts\n\nVersion: 2023 articulated arm. [PDF p15](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=15) · [PDF p16](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16)\n\n**Published construction:** Pneumatic top roller for cubes, synchronized side rollers for cones and piece-specific sensors.\n\n**Team-stated reason or evidence boundary:** Center and hold both pieces while limiting damage.\n\n**Engineering analysis — original inference:** The top roller and side pinch solve different shapes rather than forcing both through one fixed gap. Timing the side mechanism prevents one arm closing first and pushing the cone away. A sensor that reliably detects a cube may not see a cone in the same position, which explains why sensing belongs in the physical design. The control should stop or change the roller command after capture to avoid damaging the soft piece. Compliance reduces impact severity but must not let the frame spread enough to lose the intended contact geometry.\n\n**Proposed validation — not a completed test:** Test skewed cone entry, cube retention during traversal and sensor-triggered transitions with worn or deformed pieces.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2023: base mass supports arm motion\n\nVersion: 2023 articulated arm. [PDF p5](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=5) · [PDF p7](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=7)\n\n**Published construction:** Low Mk4i base; rear steel ballast and solid bellypan; rigid tower and dead-axle shoulder support.\n\n**Team-stated reason or evidence boundary:** Stable traversal and a stiff arm reference.\n\n**Engineering analysis — original inference:** A lightweight arm does not eliminate its overturning moment. Low ballast and a broad support polygon can permit more aggressive joint motion, while adding driving load and stopping energy. Tower deflection appears as arm error even when both joint encoders are exact. The base, tower and arm should therefore be tested as one structure. The appropriate ballast location depends on the arm’s range and battery placement rather than a generic preference for more robot weight.\n\n**Proposed validation — not a completed test:** Measure wheel unloading and tool-tip motion during combined driving and arm transitions over cable track and platform edges.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | Mk4i L2; 15 ft/s | [Source p5](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=5) |\n| Arm | 2×50-lbf shoulder gas shocks | [Source p9](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9) |\n| Shoulder | 133:1 overall; #35 final chain | [Source p11](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11) |\n| Elbow | 138:1 overall | [Source p13](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13) |\n| Intake | quarter-inch polycarbonate; pneumatic piece-specific contacts | [Source p16](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2023-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/437553/10",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/a/c/acaa010d86ec1ede961d42a19d0e99b8242385c5_2_517x370.png",
+        "post": 10,
+        "date": "2023-05-25T17:12:23.703Z",
+        "author": "Khalsa",
+        "context_tags": [
+          "pivot"
+        ],
+        "caption": "2023 team 2056 — source image from post 10 (2023-05-25). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "35d77934e974a77595.jpg",
+        "id": "fe626692f79971217f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/35d77934e974a77595.jpg"
+      },
+      {
+        "robot_id": "2023-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/437553/50",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/7/7/5/7753b115a08a20b48a96bcd3e863678186dfe0a6_2_593x500.png",
+        "post": 50,
+        "date": "2025-10-03T18:54:38.425Z",
+        "author": "Khalsa",
+        "context_tags": [
+          "arm",
+          "pivot"
+        ],
+        "caption": "2023 team 2056 — source image from post 50 (2025-10-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "0a27f5efb222560422.jpg",
+        "id": "bbe941412e5ed9aed4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/0a27f5efb222560422.jpg"
+      },
+      {
+        "robot_id": "2023-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/435578/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/a/8a7fa6c66bbb86b2c72db838b99bac0610ada649_2_500x500.jpeg",
+        "post": 1,
+        "date": "2023-04-23T20:25:20.124Z",
+        "author": "Tyler_Olds",
+        "context_tags": [],
+        "caption": "2023 team 2056 — source image from post 1 (2023-04-23). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "ce3ed2f4fabcfa7479.jpg",
+        "id": "7c83ea51d023e730ee",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/ce3ed2f4fabcfa7479.jpg"
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p4-1",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 4,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p4-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=4",
+        "caption": "2023-2056 · 2023 articulated arm · Drivebase · PDF page 4, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          723.0499877929688
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 4
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p7-1",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p7-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=7",
+        "caption": "2023-2056 · 2023 articulated arm · Tower · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Tower",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          325.0,
+          175.0,
+          590.0,
+          705.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p9-1",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p9-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9",
+        "caption": "2023-2056 · 2023 articulated arm · Arm · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Arm",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          25.0,
+          235.0,
+          305.0,
+          705.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p11-1",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p11-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11",
+        "caption": "2023-2056 · 2023 articulated arm · Shoulder gearbox · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Shoulder gearbox",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          350.0,
+          105.0,
+          590.0,
+          695.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p13-1",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p13-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13",
+        "caption": "2023-2056 · 2023 articulated arm · Elbow gearbox · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Elbow gearbox",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          350.0,
+          110.0,
+          590.0,
+          535.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p13-2",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 13,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p13-2.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13",
+        "caption": "2023-2056 · 2023 articulated arm · Elbow gearbox · PDF page 13, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Elbow gearbox",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          35.0,
+          570.0,
+          590.0,
+          705.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-6aaa544e036a9d5234-p16-1",
+        "robot_id": "2023-2056",
+        "kind": "binder_figure",
+        "binder_id": "6aaa544e036a9d5234",
+        "pdf_page": 16,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6aaa544e036a9d5234-p16-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16",
+        "caption": "2023-2056 · 2023 articulated arm · Intake · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          25.0,
+          485.0,
+          590.0,
+          715.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 16
+      }
+    ],
+    "source_post_count": 19,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-2056",
+        "discovery_post": "2023-2056-437553-29",
+        "url": "https://cad.onshape.com/documents/6751825a3d4ad839c7e8d45e/w/72d56c81f3f17b36b895a3fd/e/49a0d5458a9d55ff93eb5abf?renderMode=0&uiState=6539a981fbbe314d3958b1a9",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "072249be125818cd1a"
+      }
+    ],
+    "id": "2023-2056",
+    "team_name": "OP Robotics",
+    "epa_rank": 2,
+    "epa": 83.67,
+    "epa_pre_champs": 84.5,
+    "epa_breakdown": {
+      "total_points": 83.67,
+      "auto_points": 19.3,
+      "teleop_points": 52.92,
+      "endgame_points": 8.14,
+      "links_rp": 0.9113,
+      "activation_rp": 0.5889,
+      "tiebreaker_points": 80.36,
+      "auto_charge_station_points": 6.51,
+      "auto_pieces": 2.72,
+      "teleop_grid_points": 36.27,
+      "bottom_pieces": 2.61,
+      "middle_pieces": 3.4,
+      "top_pieces": 5.81,
+      "cube_points": 14.71,
+      "cone_points": 32.5,
+      "links": 3.99,
+      "endgame_charge_station_points": 8.14,
+      "rp_1": 0.9113,
+      "rp_2": 0.5889
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "c7d275d3150ae1ee",
+      "6aaa544e036a9d52",
+      "31b43edeff500794"
+    ],
+    "tags": [
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-6aaa544e036a9d5234-87",
+      "tech-6aaa544e036a9d5234-88",
+      "tech-6aaa544e036a9d5234-89"
+    ],
+    "binder_source_ids": [
+      "6aaa544e036a9d5234"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-2056",
+      "year": 2023,
+      "team": 2056,
+      "epa_rank": 2,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"2056\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 9,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "6aaa544e036a9d5234"
+      ],
+      "technical_note_ids": [
+        "tech-6aaa544e036a9d5234-87",
+        "tech-6aaa544e036a9d5234-88",
+        "tech-6aaa544e036a9d5234-89"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "6aaa544e036a9d5234",
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+          "error": null,
+          "discovery": "Existing primary bundle",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "6aaa544e036a9d5234",
+      "subsystem": "positioning",
+      "title": "OPR 2023: low-backlash articulated arm",
+      "pdf_pages": [
+        9,
+        11,
+        13
+      ],
+      "construction": "Two driven joints, dead axles, bronze bushings and gas-shock shoulder counterbalance.",
+      "team_stated_reason": "Fast repeatable motion with motor-side position sensing.",
+      "engineering_analysis": "An articulated arm can reach floor, station and grid positions without a tall lift, but the endpoint error combines both joint errors. A small shoulder angle error becomes a larger tip error as the arm extends. Reducing backlash at shafts, gears and chains supports motor-side sensing only if elastic deformation remains acceptable. Gas shocks reduce gravitational torque over part of the motion but produce a changing torque with angle. A bronze bushing can be appropriate for high load and limited rotation, while friction and wear must be included in control tuning.",
+      "recommended_validation": "Measure tip repeatability approaching the same pose from both directions, under load and after chain wear.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6aaa544e036a9d5234-87",
+      "robot_id": "2023-2056",
+      "year": 2023,
+      "version_label": "2023 articulated arm",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 9,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-6aaa544e036a9d5234-p9-1",
+        "binder-6aaa544e036a9d5234-p11-1",
+        "binder-6aaa544e036a9d5234-p13-1",
+        "binder-6aaa544e036a9d5234-p13-2"
+      ]
+    },
+    {
+      "binder_id": "6aaa544e036a9d5234",
+      "subsystem": "intake",
+      "title": "OPR 2023: piece-specific active contacts",
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "construction": "Pneumatic top roller for cubes, synchronized side rollers for cones and piece-specific sensors.",
+      "team_stated_reason": "Center and hold both pieces while limiting damage.",
+      "engineering_analysis": "The top roller and side pinch solve different shapes rather than forcing both through one fixed gap. Timing the side mechanism prevents one arm closing first and pushing the cone away. A sensor that reliably detects a cube may not see a cone in the same position, which explains why sensing belongs in the physical design. The control should stop or change the roller command after capture to avoid damaging the soft piece. Compliance reduces impact severity but must not let the frame spread enough to lose the intended contact geometry.",
+      "recommended_validation": "Test skewed cone entry, cube retention during traversal and sensor-triggered transitions with worn or deformed pieces.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6aaa544e036a9d5234-88",
+      "robot_id": "2023-2056",
+      "year": 2023,
+      "version_label": "2023 articulated arm",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=15"
+        },
+        {
+          "pdf_page": 16,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16"
+        }
+      ],
+      "image_ids": [
+        "binder-6aaa544e036a9d5234-p16-1"
+      ]
+    },
+    {
+      "binder_id": "6aaa544e036a9d5234",
+      "subsystem": "drivetrain",
+      "title": "OPR 2023: base mass supports arm motion",
+      "pdf_pages": [
+        5,
+        7
+      ],
+      "construction": "Low Mk4i base; rear steel ballast and solid bellypan; rigid tower and dead-axle shoulder support.",
+      "team_stated_reason": "Stable traversal and a stiff arm reference.",
+      "engineering_analysis": "A lightweight arm does not eliminate its overturning moment. Low ballast and a broad support polygon can permit more aggressive joint motion, while adding driving load and stopping energy. Tower deflection appears as arm error even when both joint encoders are exact. The base, tower and arm should therefore be tested as one structure. The appropriate ballast location depends on the arm’s range and battery placement rather than a generic preference for more robot weight.",
+      "recommended_validation": "Measure wheel unloading and tool-tip motion during combined driving and arm transitions over cable track and platform edges.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6aaa544e036a9d5234-89",
+      "robot_id": "2023-2056",
+      "year": 2023,
+      "version_label": "2023 articulated arm",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 5,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=5"
+        },
+        {
+          "pdf_page": 7,
+          "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=7"
+        }
+      ],
+      "image_ids": [
+        "binder-6aaa544e036a9d5234-p7-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-6aaa544e036a9d5234-1",
+      "binder_id": "6aaa544e036a9d5234",
+      "robot_id": "2023-2056",
+      "pdf_page": 5,
+      "component": "Drive",
+      "published_parameters": "Mk4i L2; 15 ft/s",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=5",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6aaa544e036a9d5234-2",
+      "binder_id": "6aaa544e036a9d5234",
+      "robot_id": "2023-2056",
+      "pdf_page": 9,
+      "component": "Arm",
+      "published_parameters": "2×50-lbf shoulder gas shocks",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6aaa544e036a9d5234-3",
+      "binder_id": "6aaa544e036a9d5234",
+      "robot_id": "2023-2056",
+      "pdf_page": 11,
+      "component": "Shoulder",
+      "published_parameters": "133:1 overall; #35 final chain",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6aaa544e036a9d5234-4",
+      "binder_id": "6aaa544e036a9d5234",
+      "robot_id": "2023-2056",
+      "pdf_page": 13,
+      "component": "Elbow",
+      "published_parameters": "138:1 overall",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6aaa544e036a9d5234-5",
+      "binder_id": "6aaa544e036a9d5234",
+      "robot_id": "2023-2056",
+      "pdf_page": 16,
+      "component": "Intake",
+      "published_parameters": "quarter-inch polycarbonate; pneumatic piece-specific contacts",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "6aaa544e036a9d5234",
+      "robot_id": "2023-2056",
+      "title": "2023-2056 2023 articulated arm technical publication",
+      "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+      "format": "pdf",
+      "pages": 27,
+      "sha256": "0cbec96df7416b598adf46ebfde2895a40f2a03f25ab48a3573876a5efc54590",
+      "bytes": 11745537,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        16
+      ],
+      "figure_pages": [
+        4,
+        7,
+        9,
+        11,
+        13,
+        16
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Existing primary bundle",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2023-2056:publication-version:1",
+      "label": "2023 articulated arm",
+      "robot_id": "2023-2056",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-6aaa544e036a9d5234-87",
+        "tech-6aaa544e036a9d5234-88",
+        "tech-6aaa544e036a9d5234-89"
+      ],
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2023-2056",
+      "title": "2023-2056: technical construction and mechanism reasoning",
+      "year": 2023,
+      "robot_id": "2023-2056",
+      "kind": "robot_technical_review",
+      "body": "# 2023-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OPR 2023: low-backlash articulated arm\n\nVersion: 2023 articulated arm. [PDF p9](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9) · [PDF p11](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11) · [PDF p13](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13)\n\n**Published construction:** Two driven joints, dead axles, bronze bushings and gas-shock shoulder counterbalance.\n\n**Team-stated reason or evidence boundary:** Fast repeatable motion with motor-side position sensing.\n\n**Engineering analysis — original inference:** An articulated arm can reach floor, station and grid positions without a tall lift, but the endpoint error combines both joint errors. A small shoulder angle error becomes a larger tip error as the arm extends. Reducing backlash at shafts, gears and chains supports motor-side sensing only if elastic deformation remains acceptable. Gas shocks reduce gravitational torque over part of the motion but produce a changing torque with angle. A bronze bushing can be appropriate for high load and limited rotation, while friction and wear must be included in control tuning.\n\n**Proposed validation — not a completed test:** Measure tip repeatability approaching the same pose from both directions, under load and after chain wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2023: piece-specific active contacts\n\nVersion: 2023 articulated arm. [PDF p15](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=15) · [PDF p16](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16)\n\n**Published construction:** Pneumatic top roller for cubes, synchronized side rollers for cones and piece-specific sensors.\n\n**Team-stated reason or evidence boundary:** Center and hold both pieces while limiting damage.\n\n**Engineering analysis — original inference:** The top roller and side pinch solve different shapes rather than forcing both through one fixed gap. Timing the side mechanism prevents one arm closing first and pushing the cone away. A sensor that reliably detects a cube may not see a cone in the same position, which explains why sensing belongs in the physical design. The control should stop or change the roller command after capture to avoid damaging the soft piece. Compliance reduces impact severity but must not let the frame spread enough to lose the intended contact geometry.\n\n**Proposed validation — not a completed test:** Test skewed cone entry, cube retention during traversal and sensor-triggered transitions with worn or deformed pieces.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2023: base mass supports arm motion\n\nVersion: 2023 articulated arm. [PDF p5](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=5) · [PDF p7](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=7)\n\n**Published construction:** Low Mk4i base; rear steel ballast and solid bellypan; rigid tower and dead-axle shoulder support.\n\n**Team-stated reason or evidence boundary:** Stable traversal and a stiff arm reference.\n\n**Engineering analysis — original inference:** A lightweight arm does not eliminate its overturning moment. Low ballast and a broad support polygon can permit more aggressive joint motion, while adding driving load and stopping energy. Tower deflection appears as arm error even when both joint encoders are exact. The base, tower and arm should therefore be tested as one structure. The appropriate ballast location depends on the arm’s range and battery placement rather than a generic preference for more robot weight.\n\n**Proposed validation — not a completed test:** Measure wheel unloading and tool-tip motion during combined driving and arm transitions over cable track and platform edges.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | Mk4i L2; 15 ft/s | [Source p5](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=5) |\n| Arm | 2×50-lbf shoulder gas shocks | [Source p9](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9) |\n| Shoulder | 133:1 overall; #35 final chain | [Source p11](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11) |\n| Elbow | 138:1 overall | [Source p13](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13) |\n| Intake | quarter-inch polycarbonate; pneumatic piece-specific contacts | [Source p16](https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf"
+      ],
+      "path": "docs/technical/2023-2056.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/437553/10",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/a/c/acaa010d86ec1ede961d42a19d0e99b8242385c5_2_517x370.png",
+      "post": 10,
+      "date": "2023-05-25T17:12:23.703Z",
+      "author": "Khalsa",
+      "context_tags": [
+        "pivot"
+      ],
+      "caption": "2023 team 2056 — source image from post 10 (2023-05-25). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "35d77934e974a77595.jpg",
+      "id": "fe626692f79971217f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/35d77934e974a77595.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 370,
+      "bytes": 45117,
+      "sha256": "40a487782d7974b58f1d1c1793d513428313a6b69d1bf3c49bd06feed90cb13c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "fe626692f79971217f",
+      "reader_url": "index.html#image=fe626692f79971217f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/437553/50",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/7/7/5/7753b115a08a20b48a96bcd3e863678186dfe0a6_2_593x500.png",
+      "post": 50,
+      "date": "2025-10-03T18:54:38.425Z",
+      "author": "Khalsa",
+      "context_tags": [
+        "arm",
+        "pivot"
+      ],
+      "caption": "2023 team 2056 — source image from post 50 (2025-10-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "0a27f5efb222560422.jpg",
+      "id": "bbe941412e5ed9aed4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/0a27f5efb222560422.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 593,
+      "height_px": 500,
+      "bytes": 61991,
+      "sha256": "3bd7abf8fbf8d1f6d51c8dfb70c4c2f9a4b1582f75bd6bac24b75ecabaaa7388",
+      "path_base": "corpus_root",
+      "reader_asset_id": "bbe941412e5ed9aed4",
+      "reader_url": "index.html#image=bbe941412e5ed9aed4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/435578/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/a/8a7fa6c66bbb86b2c72db838b99bac0610ada649_2_500x500.jpeg",
+      "post": 1,
+      "date": "2023-04-23T20:25:20.124Z",
+      "author": "Tyler_Olds",
+      "context_tags": [],
+      "caption": "2023 team 2056 — source image from post 1 (2023-04-23). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "ce3ed2f4fabcfa7479.jpg",
+      "id": "7c83ea51d023e730ee",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/ce3ed2f4fabcfa7479.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 500,
+      "height_px": 500,
+      "bytes": 65199,
+      "sha256": "9c9c41841f3c42bfd7b6644ac7892b7f69dfa8f2b0b63a53687d15cdaf31f090",
+      "path_base": "corpus_root",
+      "reader_asset_id": "7c83ea51d023e730ee",
+      "reader_url": "index.html#image=7c83ea51d023e730ee",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p4-1",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 4,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p4-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=4",
+      "caption": "2023-2056 · 2023 articulated arm · Drivebase · PDF page 4, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        723.0499877929688
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 4,
+      "media_type": "image/jpeg",
+      "width_px": 1185,
+      "height_px": 1400,
+      "bytes": 396894,
+      "sha256": "981524cd518bf08bbef9109bdf33a226a381884f86d9e33809a0fc86760dc289",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p4-1",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p4-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p7-1",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p7-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=7",
+      "caption": "2023-2056 · 2023 articulated arm · Tower · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Tower",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        325.0,
+        175.0,
+        590.0,
+        705.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 610,
+      "height_px": 1220,
+      "bytes": 50212,
+      "sha256": "b07a4db0527f91dd11a67897bd3c85473e7a417f69dd6576df0ba92d604e4062",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p7-1",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p9-1",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p9-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=9",
+      "caption": "2023-2056 · 2023 articulated arm · Arm · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Arm",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        25.0,
+        235.0,
+        305.0,
+        705.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 645,
+      "height_px": 1082,
+      "bytes": 108076,
+      "sha256": "a75fbd0643e9c1040a1d6c0ca71f42bbd4d325bc57892aa74da0177cabe6462f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p9-1",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p11-1",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p11-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=11",
+      "caption": "2023-2056 · 2023 articulated arm · Shoulder gearbox · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Shoulder gearbox",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        350.0,
+        105.0,
+        590.0,
+        695.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 552,
+      "height_px": 1358,
+      "bytes": 101859,
+      "sha256": "d7a550725854894fa9a5806f4a8b9fb46131d752eefc3860a9216c7c1a413df6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p11-1",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p13-1",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p13-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13",
+      "caption": "2023-2056 · 2023 articulated arm · Elbow gearbox · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Elbow gearbox",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        350.0,
+        110.0,
+        590.0,
+        535.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 552,
+      "height_px": 978,
+      "bytes": 77890,
+      "sha256": "b099af0592bcb84256b3dfabad2f3626e0a30cc119ff4c738845715e5681fea3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p13-1",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p13-2",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 13,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p13-2.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=13",
+      "caption": "2023-2056 · 2023 articulated arm · Elbow gearbox · PDF page 13, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Elbow gearbox",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        35.0,
+        570.0,
+        590.0,
+        705.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 311,
+      "bytes": 54756,
+      "sha256": "b449088df57a05eb79f984562a5c2ec9d561418fdb35781c3b81e581f6e083c5",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p13-2",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p13-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6aaa544e036a9d5234-p16-1",
+      "robot_id": "2023-2056",
+      "kind": "binder_figure",
+      "binder_id": "6aaa544e036a9d5234",
+      "pdf_page": 16,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6aaa544e036a9d5234-p16-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf#page=16",
+      "caption": "2023-2056 · 2023 articulated arm · Intake · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        25.0,
+        485.0,
+        590.0,
+        715.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 16,
+      "media_type": "image/jpeg",
+      "width_px": 1300,
+      "height_px": 530,
+      "bytes": 92202,
+      "sha256": "f919d9201a29ec267966c11888f8377c578155e574883a1ac90b604ffa8c074b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6aaa544e036a9d5234-p16-1",
+      "reader_url": "index.html#image=binder-6aaa544e036a9d5234-p16-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-2056",
+    "year": 2023,
+    "team": 2056,
+    "epa_rank": 2,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"2056\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 9,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "6aaa544e036a9d5234"
+    ],
+    "technical_note_ids": [
+      "tech-6aaa544e036a9d5234-87",
+      "tech-6aaa544e036a9d5234-88",
+      "tech-6aaa544e036a9d5234-89"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "6aaa544e036a9d5234",
+        "url": "https://2056.ca/wp-content/uploads/2023/05/2023_Tech_Binder_OPR2056.pdf",
+        "error": null,
+        "discovery": "Existing primary bundle",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-6aaa544e036a9d5234-87:construction",
+    "tech-6aaa544e036a9d5234-87:team_stated_reason",
+    "tech-6aaa544e036a9d5234-87:engineering_analysis",
+    "tech-6aaa544e036a9d5234-87:recommended_validation",
+    "tech-6aaa544e036a9d5234-87:limitations",
+    "tech-6aaa544e036a9d5234-88:construction",
+    "tech-6aaa544e036a9d5234-88:team_stated_reason",
+    "tech-6aaa544e036a9d5234-88:engineering_analysis",
+    "tech-6aaa544e036a9d5234-88:recommended_validation",
+    "tech-6aaa544e036a9d5234-88:limitations",
+    "tech-6aaa544e036a9d5234-89:construction",
+    "tech-6aaa544e036a9d5234-89:team_stated_reason",
+    "tech-6aaa544e036a9d5234-89:engineering_analysis",
+    "tech-6aaa544e036a9d5234-89:recommended_validation",
+    "tech-6aaa544e036a9d5234-89:limitations",
+    "param-6aaa544e036a9d5234-1",
+    "param-6aaa544e036a9d5234-2",
+    "param-6aaa544e036a9d5234-3",
+    "param-6aaa544e036a9d5234-4",
+    "param-6aaa544e036a9d5234-5"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

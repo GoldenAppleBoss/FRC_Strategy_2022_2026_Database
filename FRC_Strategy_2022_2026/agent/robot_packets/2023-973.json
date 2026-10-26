@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-973",
+  "year": 2023,
+  "team": 973,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 973,
+    "robot": "Greybots 2023",
+    "primary": [
+      "https://youtu.be/89oDWctl8AI"
+    ],
+    "architecture": "Angled COTS-derived elevator, compact roller gripper and modular swerve.",
+    "subsystems": {
+      "drivetrain": "First regular-season swerve after offseason validation; accessible connectors and covers speed module replacement.",
+      "intake": "Everybot-derived upper cone/lower cube contact geometry.",
+      "transfer": "Direct acquisition; an unnecessary third roller was removed.",
+      "scoring": "Modified WCP GreyT elevator narrowed below the standard recommended carriage width; two Falcons drive it.",
+      "endgame": "Not explained in retrieved interview.",
+      "controls": "Current-based sequencing and presets assist acquisition; drivers retain final placement control."
+    },
+    "versions": [
+      "Initial opposing-side gripper concept replaced. Powered third roller removed after testing showed it was unnecessary."
+    ],
+    "analysis": "This is a useful example of adapting a COTS elevator to manufacturing capability while retaining deliberate service access. It also distinguishes preset assistance from full automatic field-position scoring.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 1,
+    "cad_code_links": [],
+    "id": "2023-973",
+    "team_name": "Greybots",
+    "epa_rank": 30,
+    "epa": 67.64,
+    "epa_pre_champs": 57.74,
+    "epa_breakdown": {
+      "total_points": 67.64,
+      "auto_points": 15.45,
+      "teleop_points": 42.65,
+      "endgame_points": 8.36,
+      "links_rp": 0.6077,
+      "activation_rp": 0.4863,
+      "tiebreaker_points": 66.46,
+      "auto_charge_station_points": 7.76,
+      "auto_pieces": 1.67,
+      "teleop_grid_points": 28.21,
+      "bottom_pieces": 2.89,
+      "middle_pieces": 2.65,
+      "top_pieces": 3.63,
+      "cube_points": 14.2,
+      "cone_points": 19.37,
+      "links": 3.12,
+      "endgame_charge_station_points": 8.36,
+      "rp_1": 0.6077,
+      "rp_2": 0.4863
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "6cb66ba23a22c6fa"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-973",
+      "year": 2023,
+      "team": 973,
+      "epa_rank": 30,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"973\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 7,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"973\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-973"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-973",
+      "title": "Commercial structure and deletion of an unnecessary roller reduce development work",
+      "start_seconds": 108,
+      "end_seconds": 215,
+      "construction": "The robot adapts a WCP GreyT elevator with two Falcons and a narrower configuration. The gripper evolves from side-grabbing concepts toward Everybot-style upper cone/lower cube contacts; an extra powered roller is removed after tests showed it was unnecessary.",
+      "team_stated_reason": "The team explicitly identifies commercial elevator parts as compatible with its manufacturing resources and describes the third roller as large and awkward without sufficient benefit. Swerve adoption was preceded by offseason work.",
+      "engineering_analysis": "The useful reference is a tested simplification, not a claim that commercial hardware requires no engineering. Narrowing a standard structure changes bearing loads, stiffness and packaging. Removing a contact is justified when the remaining contacts retain acquisition and release tolerance across real piece conditions.",
+      "recommended_validation": "Test the narrowed elevator for racking, validate pickup after collector deletion with worn pieces, and include offseason drive-training time in any comparison.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-973",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/89oDWctl8AI",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 108,
+        "end_seconds": 215,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "89oDWctl8AI",
+          "sha256": "492dda7b270fd8126aa8a0cf8c68ec61f8779144e507fa3237bbe46e94245d72",
+          "caption_segments": 214,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-973:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-973",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-973"
+      ],
+      "source_urls": [
+        "https://youtu.be/89oDWctl8AI"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-973",
+      "title": "2023-973 · Commercial structure and deletion of an unnecessary roller reduce development work",
+      "year": 2023,
+      "robot_id": "2023-973",
+      "kind": "focused_technical_study",
+      "body": "# 2023-973: Commercial structure and deletion of an unnecessary roller reduce development work\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe robot adapts a WCP GreyT elevator with two Falcons and a narrower configuration. The gripper evolves from side-grabbing concepts toward Everybot-style upper cone/lower cube contacts; an extra powered roller is removed after tests showed it was unnecessary.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly identifies commercial elevator parts as compatible with its manufacturing resources and describes the third roller as large and awkward without sufficient benefit. Swerve adoption was preceded by offseason work.\n\n## Engineering interpretation — analyst inference\n\nThe useful reference is a tested simplification, not a claim that commercial hardware requires no engineering. Narrowing a standard structure changes bearing loads, stiffness and packaging. Removing a contact is justified when the remaining contacts retain acquisition and release tolerance across real piece conditions.\n\n## Proposed validation — not performed\n\nTest the narrowed elevator for racking, validate pickup after collector deletion with worn pieces, and include offseason drive-training time in any comparison.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/89oDWctl8AI](https://youtu.be/89oDWctl8AI)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/89oDWctl8AI"
+      ],
+      "path": "docs/research_continuation/2023-973.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-973",
+    "year": 2023,
+    "team": 973,
+    "epa_rank": 30,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"973\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 7,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"973\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-973:construction",
+    "study6-2023-973:team_stated_reason",
+    "study6-2023-973:engineering_analysis",
+    "study6-2023-973:recommended_validation",
+    "study6-2023-973:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

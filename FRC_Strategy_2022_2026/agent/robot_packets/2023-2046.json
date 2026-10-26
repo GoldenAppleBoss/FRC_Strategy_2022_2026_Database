@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-2046",
+  "year": 2023,
+  "team": 2046,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 2046,
+    "robot": "Bear Metal 2023",
+    "primary": [
+      "https://youtu.be/2NLt-NnRgAo",
+      "https://www.chiefdelphi.com/t/431180"
+    ],
+    "architecture": "Low-mass two-joint arm with compact roller claw and specialized side-entry station climb.",
+    "subsystems": {
+      "intake": "Three-roller claw for cones and cubes; collect pose rests against a rigid bumper support for repeatability.",
+      "transfer": "Direct claw acquisition, contained within the frame in the collect pose.",
+      "scoring": "Shoulder and elbow transmissions kept near the floor; team reports an approximately 17-pound arm assembly.",
+      "drivetrain": "REV MAXSwerve selected in part for ground clearance and packaging needed by the climb.",
+      "endgame": "Independent powered paws lift the front; underside belts move the robot up the station edge; arm motion completes the sequence.",
+      "controls": "Automated climb sequence and coordinated arm setpoints."
+    },
+    "versions": [
+      "Third competition claw, approximately seventh prototype at filming.",
+      "Proposed changes to improve climb repairability were future plans, not established implementations."
+    ],
+    "analysis": "Study the whole climb/drivetrain package. Copying the paws without the wheel clearance, underside traction and arm motion would omit the mechanism's enabling constraints.",
+    "limits": [
+      "Interview is from the second event; later configurations require separate audit."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 1,
+    "cad_code_links": [],
+    "id": "2023-2046",
+    "team_name": "Bear Metal",
+    "epa_rank": 8,
+    "epa": 74.78,
+    "epa_pre_champs": 66.7,
+    "epa_breakdown": {
+      "total_points": 74.78,
+      "auto_points": 18.29,
+      "teleop_points": 42.81,
+      "endgame_points": 10.37,
+      "links_rp": 0.8645,
+      "activation_rp": 0.5148,
+      "tiebreaker_points": 71.47,
+      "auto_charge_station_points": 5.97,
+      "auto_pieces": 2.28,
+      "teleop_grid_points": 29.38,
+      "bottom_pieces": 2.47,
+      "middle_pieces": 1.98,
+      "top_pieces": 5.62,
+      "cube_points": 16.88,
+      "cone_points": 24.39,
+      "links": 3.35,
+      "endgame_charge_station_points": 10.37,
+      "rp_1": 0.8645,
+      "rp_2": 0.5148
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "0f0176ddcdbea682",
+      "0c5ea729080f882e"
+    ],
+    "tags": [
+      "climb",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-2046",
+      "year": 2023,
+      "team": 2046,
+      "epa_rank": 8,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2046\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 9,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2046\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-2046"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-2046",
+      "title": "Low arm mass and repeatable collect stops support a large reach envelope",
+      "start_seconds": 79,
+      "end_seconds": 550,
+      "construction": "A lightweight shoulder/elbow arm with low transmissions carries a three-roller claw. The collect pose bears against a rigid bumper support and stays contained. The team reports an approximately 17-pound arm assembly; module selection also considered ground clearance and packaging.",
+      "team_stated_reason": "The source explicitly emphasizes reducing mass given the required outward/upward reach and credits Citrus-style claw ideas while making the implementation smaller and lighter. Cube compression is chosen to retain rather than damage the piece.",
+      "engineering_analysis": "A mechanical collect stop can define acquisition geometry more repeatably than a high-gain servo alone, provided the bumper/support does not move unpredictably. Reducing distal mass improves torque demand and balance, but must preserve stiffness at maximum reach. Ground-clearance decisions also affect charge-station behavior and any intended special climbing approach.",
+      "recommended_validation": "Measure deflection at full reach, test pickup after bumper displacement, and verify retention across both piece types and abrupt chassis motion.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-2046",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/2NLt-NnRgAo",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/431180"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 550,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "2NLt-NnRgAo",
+          "sha256": "db3613cdf5f46c2486528ce3998e519ec38b0c839235747f5add28446f26b79f",
+          "caption_segments": 332,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-2046:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-2046",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-2046"
+      ],
+      "source_urls": [
+        "https://youtu.be/2NLt-NnRgAo"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-2046",
+      "title": "2023-2046 · Low arm mass and repeatable collect stops support a large reach envelope",
+      "year": 2023,
+      "robot_id": "2023-2046",
+      "kind": "focused_technical_study",
+      "body": "# 2023-2046: Low arm mass and repeatable collect stops support a large reach envelope\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA lightweight shoulder/elbow arm with low transmissions carries a three-roller claw. The collect pose bears against a rigid bumper support and stays contained. The team reports an approximately 17-pound arm assembly; module selection also considered ground clearance and packaging.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly emphasizes reducing mass given the required outward/upward reach and credits Citrus-style claw ideas while making the implementation smaller and lighter. Cube compression is chosen to retain rather than damage the piece.\n\n## Engineering interpretation — analyst inference\n\nA mechanical collect stop can define acquisition geometry more repeatably than a high-gain servo alone, provided the bumper/support does not move unpredictably. Reducing distal mass improves torque demand and balance, but must preserve stiffness at maximum reach. Ground-clearance decisions also affect charge-station behavior and any intended special climbing approach.\n\n## Proposed validation — not performed\n\nMeasure deflection at full reach, test pickup after bumper displacement, and verify retention across both piece types and abrupt chassis motion.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/2NLt-NnRgAo](https://youtu.be/2NLt-NnRgAo)\n- [https://www.chiefdelphi.com/t/431180](https://www.chiefdelphi.com/t/431180)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/2NLt-NnRgAo",
+        "https://www.chiefdelphi.com/t/431180"
+      ],
+      "path": "docs/research_continuation/2023-2046.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-2046",
+    "year": 2023,
+    "team": 2046,
+    "epa_rank": 8,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2046\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 9,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2046\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-2046:construction",
+    "study6-2023-2046:team_stated_reason",
+    "study6-2023-2046:engineering_analysis",
+    "study6-2023-2046:recommended_validation",
+    "study6-2023-2046:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,37 @@
+CATALOG = {
+ 'fea3938f462d86d32d': ('2025-118','FIREFLY', {11:'Chassis and wheel hubs',12:'Lift and remoted carriage drives',13:'Algae pickup',14:'Coral orientation intake',15:'Internal-grip end effector',16:'Powered cage intake and climb',17:'Custom cycloidal gearbox'}),
+ 'c3e9d55e9042421508': ('2024-3467','NOCTURNE at Granite State', {5:'Drivebase',6:'Arm and tower',7:'Joint drive',8:'Shooter',9:'Staging and support structure',10:'Under-bumper intake'}),
+ '786e3d5aabeae7d675': ('2022-971','971 2022 catapult robot', {5:'West Coast drive',6:'Intake iterations',7:'Turret and cable management',8:'Flippy-arm transfer',9:'Catapult and flywheel prototypes',10:'Climber iterations',11:'Custom electronics',12:'Vision processing'}),
+ 'f93f8ab32955ff8090': ('2022-254','SIDEWAYS', {13:'Drivebase',14:'Dual four-bar intakes',15:'Serializer',16:'Turret',17:'Shooter',18:'Elevator and reaction arm',19:'Traversal stinger'}),
+ '1b0b189d42a421199e': ('2023-254','BREAKDOWN', {11:'Drivebase',12:'Elevator',13:'Laterator',14:'Intake prototypes',15:'Roller claw',16:'Linear floor intake',17:'Balance forks'}),
+ '6aaa544e036a9d5234': ('2023-2056','2023 articulated arm', {4:'Drivebase',7:'Tower',9:'Arm',11:'Shoulder gearbox',13:'Elbow gearbox',16:'Intake'}),
+ 'ba2298a5d1686ccd7a': ('2023-118','ECHO', {6:'Chassis',7:'Telescoping arm',8:'Dustpan intake',9:'Balance forks',10:'End effector',11:'Preload catapult',12:'Vacuum swiper'}),
+ 'a2221ee1dc5a83c0f2': ('2024-254','VORTEX', {10:'Drivebase',11:'Under-bumper intake',12:'Turret and BIGUS',13:'Annular feeder',14:'Revised shooter',15:'Amplifier',16:'Climber'}),
+ 'fd6ffec203a0f28f66': ('2024-2056','2024 pivoting shooter', {5:'Drivebase',6:'Intake swerve modifications',9:'Intake',10:'Frame and tower',12:'Shoulder gearbox',15:'Shooter',17:'Pneumatic climber'}),
+ '3b948aa1f27320cf6d': ('2024-5940','ROTI', {6:'Drivebase',7:'Under-bumper intake',8:'Elevator',9:'Climb handoff',10:'Shooter pivot',11:'Shooter'}),
+ '53aa4619f3f5cdb626': ('2024-368','Team Kika Mana 2024', {1:'Robot technical sheet'}),
+ 'ffe1c28c7bdb167b96': ('2025-254','UNDERTOW', {12:'Drivebase',13:'Ground intake',14:'Coral indexer',15:'Station funnel',16:'Elevator',17:'Cage climber',18:'Coral wrist and Flying V',19:'Algae roller'}),
+ '6054858ce2266dbdc2': ('2025-1323','AURELIA', {4:'Chassis',5:'Mixed swerve modules',6:'Shoulder and A-frame',7:'Shared-axis intake drives',8:'Algae intake and L1 guide',9:'Coral ground intake',10:'Four-stage elevator',11:'Carriage',12:'Differential wrist',13:'Dual-piece end effector',14:'Shared-joint climber'}),
+ 'b99a49d2db2fb68f4f': ('2025-341','MISS DAISY XXIII', {15:'Chassis',19:'Claw-style intake prototypes',20:'OTB intake prototypes',22:'Ground intake',23:'Intake durability revisions',24:'Intake jam revisions',27:'Roller claw revisions',28:'Roller claw',30:'Claw grip revisions',34:'Elevator spooling',36:'Elevator',37:'Elevator stiffness revisions',39:'Shoulder lantern gear',40:'Wrist',42:'Removed algae intake',45:'Climber'}),
+ 'cb12c402d721aad7df': ('2025-2056','2025 REEFSCAPE robot', {6:'Drivebase',8:'Ground intake',10:'Straightenator',12:'Coral cradle',14:'Gripper arm',16:'Elevator',18:'Cage climber'}),
+ 'c8be42e3972c8859d8': ('2025-2910','SPECTRE', {5:'Drivebase versions',6:'Pivot gearboxes',7:'Shared-arm climber',8:'Intake and wrist',9:'Telescoping arm'}),
+ '3dfd18a3f5f1ef7749': ('2025-4946','2025 robot', {5:'Drivetrain',6:'Climber iterations',7:'Ground intake iterations',8:'Intake and conveyor',9:'Conveyor and tray iterations',10:'Gripper iterations',12:'Camera mount iterations',22:'Slip ring'}),
+ 'dd729524010212768b': ('2025-5940','2025 robot', {4:'Drivebase',5:'Ground intake and L1 bar',6:'Coral indexer',7:'Elevator',8:'Elevator pivot',9:'End effector',10:'Cage climber'}),
+ '75601cba410631181a': ('2026-2910','BLITZ original', {7:'Original chassis',8:'Original dual four-bar intakes',9:'Original serpentine and shooter'}),
+ '6d8168bcbb62d71a38': ('2026-2910','RE-BLITZ rebuild', {4:'Rebuild priority matrix',7:'Rebuild changes',8:'Rebuild chassis',9:'Slapdown intake',10:'Four-wide drum and powered floor',11:'Expanding hopper'}),
+ '86ae539d8a57982e4c': ('2026-2056','DESPERATE MEASURES rebuild', {7:'Drivebase',9:'Linear intake',11:'Powered hopper',13:'Singulator',15:'Turret shooter',24:'DESPERATE TIMES original architecture'}),
+ '9edf90221b2e646336': ('2026-2046','BEARRICADE Mk.II', {22:'Collector iterations',23:'Collector',24:'Hopper iterations',25:'Expanding hopper',26:'Indexer iterations',27:'Roller indexer',28:'Superstructure iterations',29:'Superstructure',30:'Shooter iterations and later concept',31:'Drum shooter',32:'Deleted climber'}),
+ 'df1392177a72d1aa1e': ('2026-1987','CYCLONE', {8:'Drivebase',9:'Linear intake',10:'DYE-inspired rotor',11:'Turret and floating hood'}),
+ '1e35160c2e3b44126d': ('2026-3467','2026 dual shooter', {7:'Drivebase',9:'Linear intake',11:'Two-stream indexer',13:'Dual launchers',15:'Camera towers'}),
+ '7a7e0a4611c12ba4f1': ('2026-6800','DOWNPOUR original turret', {10:'Original chassis',11:'Original linear intake',12:'Original hopper',13:'Original serpentine',14:'Original feeder',15:'Original turret',16:'Proposed original climber'}),
+ 'bae3039bd0aeeccdcb': ('2026-6800','DOWNPOUR DCMP drum', {3:'DCMP chassis changes',4:'DCMP intake',5:'DCMP hopper',6:'DCMP indexer',7:'DCMP drum shooter',8:'DCMP climber'}),
+}
+
+NON_ROBOT = {'62f331f692b7b120aa': '604 OpenPit furniture manual, not a robot binder', '246cc8a2c25098ce50': '1706 pit furniture writeup, not a robot mechanism binder'}
+SUPPLEMENTS = {
+ 'aaa9e7d335f738d3b6': '2024-5940 repair guide',
+ '766e7eec32688900a4': '2025-341 build timeline',
+ '426792a94e6ce25de5': '2025-341 CAD views',
+ 'ae2275e4f3d82a3215': '2025-341 Championship strategy presentation',
+ 'de6cdc753a2899027c': 'Duplicate copy of 2025-2910 tech brief',
+}

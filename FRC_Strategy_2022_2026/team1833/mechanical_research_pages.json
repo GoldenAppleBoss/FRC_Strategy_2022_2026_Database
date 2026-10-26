@@ -1,0 +1,54 @@
+[
+  {
+    "page": 1,
+    "text": "Requirements (Which of the Goals does this Complete?):  \n \nCollect FUEL in AUTON from GROUND \nCollect FUEL in Teleop from Ground \n \nConcepts: \n-​\n“The grabby Arm” \n-​\nPros: it looks fun \n-​\nCons:one at a time \n-​\nSingle Roller Bumper Gap Intake Ex.\n \nCitrus Circuits Season Recap 2017\n-​\nPros:  \n-​\nSIMPLE \n-​\nCons:  \n-​\nMax 2.9 Balls Wide, 17.5in (Assuming Square Robot) \n-​\nGets Hit Easily  \n-​\nMultiroller Bumper Gap Intake Ex.\n \nTeam 118 Robonauts 2017\n-​\nPros: \n-​\nCons: \n-​\n Max 2.9 Balls Wide, 17.5in (Assuming Square Robot) \n-​\nGets Hit Easily \n-​\nSlapdown Multiroller (Directly Under the Storage/Hopper) Ex 254. 2017 \n-​\nPros: WIDE intake, 25-27 in (4.5ish balls wide) \n-​\nCan be made to feed balls straight up (into an extended Hopper) \n-​\nCan be linked to an extending hopper system \n-​\nCons:  \n-​\nComplex Compared to Other Options \n-​\nWeight \n-​\n“The Wall” Slapdown?- Ex. 1690 2020 \n-​\nPros: WIDE intake, 25-27 in (4.5ish balls wide) \n-​\nCons: \n-​\n“The Wall” 4 bar - Ex. 1678 2020 \n-​\nPros: WIDE intake, 25-27 in (4.5ish balls wide) \n-​\nCons: “I’m a delicate Flower” \n \nPrototyping: \n \nCompression? \nIntake Wheel Material? \n \nExamples: \n2024 604 \nSomething Beefy \n \n"
+  },
+  {
+    "page": 2,
+    "text": " \nHOOPER EXTENSION  \n​\nNo extension \nPassive Extension \nIndipendent Extension \nLinked Intake + Hopper Extension \nHooper = Intake \n​\nRack and pinion  \n \n \n \n \n"
+  },
+  {
+    "page": 3,
+    "text": " \nRequirements (Which of the Goals does this Complete?):  \n●​ Ferrying from neutral zone \n●​ Scoring into hub \n●​ Holding pieces  \n●​ Scoring as much fuel as possible as quick as possible (shorten cycle times) \n \n \nConcepts:  \n●​ Fuel hopper; Similar to 1678 and 254 2017, open top that can also take from rollers on \nthe base \n○​ Pros: \n■​ Lots of storage, could store a good bit of fuel, (Likely upwards of 40-50 \nfuel, (thanks Adi RI3D concept holding around 50 fuel ))  \n■​ Decently simple, like would rank this at a middle/medium difficulty \n■​ Works really well with outpost/human player station intaking due to open \ntop, just pour as many as possible in and start shooting when at hub (and \nits active) \n■​ Fastest net cycle time (longer to fill, more to score) \n○​ Cons:  \n■​ Takes up a lot of room on robot \n■​ Possible jams (more likely than other options) \n■​ A lot of belts/rollers to function \n■​ If it expands past the frame perimeter its going to get hit \n■​ Could cause issues going under trenches, have to keep it shorter or find a \nway to fold \n●​ Spindexer; 1690 2020 \n○​ Pros: \n■​ Less chance of jams (slots for fuel) \n■​ Efficient \n○​ Cons: \n■​ Limited fuel storage max 5 fuel \n■​ Takes up decent bit of space  \n■​ Complex \n■​ Requires additional pathing/almost a second mini indexer to get to \nshooter (tower) \n●​ “S- curve” Indexer; 2910 2021 \n○​ Pros: \n■​ Takes up smaller space  \n■​ Unlikely to jam, fuel follows a rigid path \n■​ Pretty simple \n○​ Cons: \n■​ Less fuel storage, 3 fuel max (maybe 4 but it would be difficult and the \ncurve would be have to be pretty harsh (and tall)) \n●​ Multi roller indexer (Vertical and horizontal); 4414 2021 \n"
+  },
+  {
+    "page": 4,
+    "text": " \n○​ Pros:  \n■​ Significantly less space taken up on robot \n■​ Really simple \n○​ Cons: \n■​ Little to no storage for fuel, max 1-2 fuel (likely 1) \n■​ Medium jam possibility (2nd most likely to jam) \n■​ Slow cycle times (due to limited fuel) \n \n●​ Combo spindexer and hopper; 1986 2017 \n \n1986 Team Titanium 2017 Robot Reveal\n○​ Pros: \n■​ Lots of storage space (roughly equal to just the spindexer idea, maybe -1 \nor 2 fuel) \n■​ Not more complicated than the ideas individually, just basically a \nspindexer with hopper walls \n■​ Works with both ground intake and outpost intake from top \n■​ Cuts the amount of rollers/belts needed for just the hopper (replaces that \nwith the spindexer portion) \n■​ Fast net cycle time (long reload but more ammo) \n■​ (seems) very efficient  \n○​ Cons: \n■​ Still takes up a lot of room on robot \n■​ Still needs booster/ mini indexer to go to the shooter \n■​ Jams would be questionable???? (Taking most likely to jam and least \nlikely to jam and putting them together so im unsure) \n■​ Expansion would still be a concern  \n \n \n \nExamples: \n \nIdeas for morph chart: \n●​ Open ended hopper (best option) \n●​ Spindexer \n●​ Spindexer hopper combo \n●​ “C/S-Curve” powered control path \n●​ Power tower (L shaped path) \n●​ Dual lane open hopper (just add a divider) \n"
+  },
+  {
+    "page": 5,
+    "text": " \n \n-​\nElectrical possibility (254 2017, consider how hopper walls will affect the \naccess to electronics if mounted to drivetrain) \n-​\nRequirements \n-​\nMake sure electrical has EASY access  \n-​\nSome sort of protection for the electronics, no way fuel can \nenter \n-​\nOptimizes space  \n-​\nNo way of short circuits \n-​\nIndexer cannot fall onto electronics \n-​\nEasily mountable to drivetrain \n-​\nNot too difficult to play tetris with \n-​\nCompatibility with intake \n-​\nEasy to replace parts on both ends (electrical and \nmechanical) \n-​\nSomething to hold the hopper back (so it doesn't fall) \n-​\nGears do not cause wires to be severed or damaged  \n-​\nTug test proof \n-​\nMotor space \n-​\nWires not squished \n-​\nProper wire length \n-​\nNo interference with RSL \n \n"
+  },
+  {
+    "page": 6,
+    "text": " \n-​\nOptions \n-​\n254 2017 \n-​\nDetachable bellypan (bellypan sandwich)  \n-​\n \n"
+  },
+  {
+    "page": 7,
+    "text": " \nRequirements (Which of the Goals does this Complete?):  \n \nScoring in HUB when active \nScoring in AUTON \nScoring in TELEOP when HUB is Active \nAligning to shoot into the HUB \nAlign to ferry from NEUTRAL ZONE \nFerrying from NEUTRAL ZONE \n \nShooting Numbers \nTargets: \n-​\nHeight: 72in \n-​\nAngle : >33.690068deg(From horizontal) \n-​\nCorner Shot Into Hub Distance (along the ground): 238.758576895in \n-​\nRight Up Against the Hub Cenetered : 23.4999995in \n-​\nFar Neutral Ferry : 519.689023in (Fartherst point in neutral to Fartherst Point in Alliance \nZone \n \nShot Type \nHorisontal \nDistance \nTarget Height \nAngle \nExit Velocity \nCorner Shot Into \nHub  \n238.758576895i\nn \n72in \n>35degrees \n28.09ft/s \nRight Up Against \nthe Hub \nCenetered \n23.4999995 \n72in \n>35 \n20.17ft/s \nFar Ferry \n519.689023in \n0 \nAny (clears a \n30in obstacle up \nagainst the \nbumpers, \ndefending robot) \n36.7ft/s \nw \n \n"
+  },
+  {
+    "page": 8,
+    "text": " \n \n \n \n \nConcepts: \nDual Shooter - 1678 2017 \nTriple Shooter - Never done before, 148 2017 prototype \nExamples: \n \nIdeas: \n \n"
+  },
+  {
+    "page": 9,
+    "text": " \nRequirements (Which of the Goals does this Complete?):  \n \nL1 Climb \nClimb besides somebody \nClimb above somebody \n \nConcepts: \n●​ Vertical 2022 style climb 1678 (but 1 arm) \n○​ Pros \n■​ Existing Designs to base off of \n■​ Passive Grab \n■​ Pivotable (needed for multistage) \n○​ Cons \n■​ Pivoting needed (adds complexity potentially) \n■​ Needs to pop out at end of match or even beginning (l1 auton) \n■​  \n●​ “Grab and yank”(???) climb Ex. 254 2013  \n○​\n \n○​ Pros \n■​ Fast \n■​ Already done \n■​ Can be stowed \n○​ Cons \n■​ Needs room on robot \n■​ Lots of rung real estate \n■​ Added complexity two arms and two pivots \n■​ Robot would get in its own way(fatal) \n●​ Simple L1 climb Ex. 610 2013 \n○​ Pros \n■​ low complexity \n■​ Easy to implement \n■​ Less bot real estate \n■​ Fast \n○​ Cons \n■​ Only l1 \n■​ Rung realestate \n●​ Climb centered on UPRIGHT \n○​ Pros \n"
+  },
+  {
+    "page": 10,
+    "text": " \n■​ No swing \n■​ Consistent \n■​ Compatible with previous ideas \n■​ Low run real estate \n○​ Cons \n■​ Pivot complexity \n■​ Precise alignment \n■​ No reference (maybe i just dk ball) \n■​ Robot has to go under the bar   //  no it doesnt \n●​ “Fork climber” \n○​ Pros \n■​ easy \n■​ Fast \n■​ Low rung real estate \n○​ Cons \n■​ L1 only \n■​ Alignment \n​\n​\n \n​\n​\n​\n \nExamples:  https://www.youtube.com/watch?v=eYPNndagILM \n \nhttps://www.youtube.com/shorts/MVogy7rAPpU \n \n \n \n \n \nIdeas: \n \n"
+  },
+  {
+    "page": 11,
+    "text": " \nRequirements (Which of the Goals does this Complete?):  \n \nDrive in Teleop \nDrive In Auton \nDrive over bump \n*Fit all subsystems on it \n \nConcepts: \n \nExamples: \n \nIdeas: \n​\n​\n​\nBumper clearance sketch :  \n●​ 1.5” bumper to ground clearance \n●​ 1.438” BOB (bottom of bot) to ground clearance \n●​ 2.95” center of swerve wheel to edge of chassis \n●​ 3” wide bumpers \n●​ 4.5” tall bumpers \n●​ 27.5” L x W robot \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+  },
+  {
+    "page": 12,
+    "text": " \n \n \n \n"
+  },
+  {
+    "page": 13,
+    "text": " \n \n \n"
+  }
+]

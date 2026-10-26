@@ -1,0 +1,97 @@
+{
+  "validation_date": "2026-10-25",
+  "edition": "Integrated technical studies and expanded video analysis",
+  "status": "passed",
+  "reports": {
+    "AGENT_VALIDATION.json": {
+      "status": "passed",
+      "checks": 15244,
+      "counts": {
+        "robot_packets": 125,
+        "retrieval_units": 4418,
+        "claims": 1256,
+        "images": 504,
+        "technical_notes": 227,
+        "published_parameters": 121,
+        "robot_years_with_technical_reviews": 125
+      },
+      "local_markdown_references": 612,
+      "broken_local_references": [],
+      "scope": "Navigation, byte identity, metadata/packet preservation, CLI filtering and SQLite integrity; not new source review or model reasoning evaluation."
+    },
+    "READER_VALIDATION.json": {
+      "checks": 26,
+      "status": "passed",
+      "all_robot_details": 125,
+      "all_binder_audits": 125,
+      "browser_layout": false
+    },
+    "BROWSER_VALIDATION.json": {
+      "status": "passed",
+      "browser": "Chromium 153 headless via Playwright",
+      "offline": true,
+      "images": 504,
+      "broken": [],
+      "robots": 125,
+      "notes": 227,
+      "expanded": 33,
+      "sections": 105,
+      "source_accounts_and_analyst_sections_rendered": true,
+      "quiz_prompts_rendered": true,
+      "focused_technical_study_rendered": true,
+      "original_image_viewer_works": true,
+      "mobile_overflow": false,
+      "page_errors": []
+    },
+    "REBUILD_VALIDATION.json": {
+      "status": "passed",
+      "equal_tables": 24,
+      "differences": [],
+      "row_counts": {
+        "binder_sources": 29,
+        "cad_code_links": 375,
+        "metadata": 56,
+        "team_events": 4021,
+        "season_epa": 17330,
+        "events": 75,
+        "seasons": 5,
+        "einstein_reviews": 80,
+        "technical_parameters": 121,
+        "sources": 4259,
+        "technical_mechanisms": 227,
+        "context_documents": 171,
+        "robot_sources": 513,
+        "subsystems": 750,
+        "versions": 207,
+        "source_posts": 3499,
+        "binder_audit": 125,
+        "robot_dossiers": 125,
+        "mechanism_images": 504,
+        "matches": 7995,
+        "tower_summary_2026": 8,
+        "benchmarks": 58,
+        "selection_audit": 154,
+        "video_reviews": 44
+      }
+    },
+    "RESEARCH6_VALIDATION.json": {
+      "status": "passed",
+      "focused_studies": 98,
+      "distinct_robot_years_with_notes": 125,
+      "technical_publication_robot_years": 27,
+      "video_sections_checked": 105,
+      "quiz_prompts": 100,
+      "out_of_range_timestamps": [],
+      "pending_videos": 11,
+      "new_transcripts_obtained": 0,
+      "visual_video_reviews": 0,
+      "typed_video_and_technical_search": "passed"
+    }
+  },
+  "limitations": [
+    "98 studies are focused source/synopsis analyses, not new binder or exhaustive-version certifications.",
+    "33 expanded video studies revisit selected passages over inherited full-caption reviews; 11 pending videos remain unreviewed.",
+    "No new visual interview/match watching or independent mechanism tests.",
+    "Authored quiz prompts are not a measured model evaluation."
+  ]
+}

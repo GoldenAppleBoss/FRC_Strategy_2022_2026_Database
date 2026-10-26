@@ -1,0 +1,1424 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-2910",
+  "year": 2026,
+  "team": 2910,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 2910,
+    "robot": "Blitz → rebuild",
+    "primary": [
+      "https://www.youtube.com/watch?v=tKCFKqK_sXs",
+      "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+      "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing"
+    ],
+    "architecture": "Original hopperless dual-four-bar passing robot rebuilt as RE-BLITZ: single-pivot slapdown, expanding hopper, powered wide floor and four-wide drum.",
+    "subsystems": {
+      "drivetrain": "Original BLITZ: Mk5n R2. RE-BLITZ: Mk5n R1 with X60 drive and X44 steer on a 27.5×27-inch low chassis; the two briefs identify the configuration change.",
+      "intake": "Original BLITZ used two mirrored four-bar intakes. RE-BLITZ explicitly replaced the four-bar with a strengthened slapdown, larger deployment chain, split service plates and powered lower roller. These are distinct versions.",
+      "transfer": "Original serpentine, minimal-hopper passing path was replaced by a large hopper, inclined powered floor and wider feed path. The rebuild brief reports >30 fuel/s and a 34 maximum as team measurements, not match averages.",
+      "scoring": "Wide drum derived with explicit 254/Citrus inspiration; reported 55-ball hopper plus additional preloaded path storage.",
+      "endgame": "Endgame installation not established by reviewed interview.",
+      "controls": "Finite-state-machine controls and minimal driver actions; separate hopper/path sensors coordinate loading."
+    },
+    "versions": [
+      "Original BLITZ: dual four-bar collectors, minimal storage and a passing-centered serpentine path. Original technical brief pages 5, 8–9.",
+      "RE-BLITZ: three-week rebuild between week-3 and week-6 events; slapdown, expanding hopper, powered floor and four-wide drum. Rebuild brief pages 3, 7–11.",
+      "Original Blitz: two four-bars, serpentine path, drum, no hopper; failed week-2 performance targets.",
+      "Post-week-2 engineering review triggered complete new robot.",
+      "Preloading adds usable storage without enlarging hopper."
+    ],
+    "analysis": "The original strategic idea—field as storage—was not sufficient when execution failed. The rebuild preserves the scoring objective while changing acquisition, storage and feed geometry; it demonstrates why architecture assumptions need tested cycle and supply models.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2026-2910: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## Original BLITZ: two mirrored four-bar collectors\n\nVersion: BLITZ original. [PDF p5](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=5) · [PDF p8](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8)\n\n**Published construction:** Dual four-bars; X44 deployment at 79.37:1; separate X60 roller drives.\n\n**Team-stated reason or evidence boundary:** Collect sideways while passing; collapse under impacts.\n\n**Engineering analysis — original inference:** This is a coupled routing decision. Collecting on either side allows the chassis to translate across a fuel pile while its fixed shooter points toward the destination. That can recover some of the directional independence normally purchased with a turret. A four-bar can also move backward under a frontal impact, but only if the linkage, motor controller, chain and hard stops permit that motion. More joints create more wear locations, and both collectors consume the space that another architecture could use for a hopper. The second intake should therefore be evaluated by additional useful fuel delivered, rather than the visual symmetry of the mechanism.\n\n**Proposed validation — not a completed test:** Compare opposite-side sweep paths against turning a single-intake robot, including one damaged linkage and time to replace it.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Original BLITZ: serpentine inventory and passing\n\nVersion: BLITZ original. [PDF p5](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=5) · [PDF p9](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9)\n\n**Published construction:** Serpentine conveyor, two X60 feeder motors, three X60 shooter motors; variable hood.\n\n**Team-stated reason or evidence boundary:** Use the alliance zone as storage for a passing-centered role.\n\n**Engineering analysis — original inference:** The low-storage concept treats the field as an external buffer. Its success requires the alliance to recover that buffered fuel at the right time and place. Passing capacity and scoring capacity are different services even when the same launcher performs both. A continuous serpentine can constrain fuel well but adds contact length, curved transitions and friction; a well-controlled ball path may still be unable to supply enough mass flow. This original brief must be read alongside the later rebuild account: a design rationale is evidence of a hypothesis, not evidence that the hypothesis met the team’s competitive targets.\n\n**Proposed validation — not a completed test:** Measure fuel moved to a recoverable location, residual path inventory, and scoring available after the passer returns; vary partner collection quality.\n\n**Limits:** The brief describes a 25-fuel/s feed capability; the later account reports inadequate overall performance. Do not treat that number as an independently demonstrated match average.\n\n## RE-BLITZ: strengthened slapdown\n\nVersion: RE-BLITZ rebuild. [PDF p7](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7) · [PDF p9](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9)\n\n**Published construction:** Four-bar replaced by slapdown; 0.6-inch plates; #35 deployment chain; powered bottom roller.\n\n**Team-stated reason or evidence boundary:** Strength, service access and reliable full-speed acquisition.\n\n**Engineering analysis — original inference:** A single pivot simplifies the force path: an exposed roller loads its arms, pivot and hard stop without several moving links sharing the impact. That does not make it automatically more impact tolerant. The stronger arm and larger deployment chain need a corresponding chassis attachment and a stop that can react a collision without loading the gearbox teeth. Powering the lower contact also matters at the bumper transition: fuel can otherwise be caught between a moving upper roller and a stationary surface while the robot continues advancing. Plate stiffness and ball transport are separate improvements and should be tested separately.\n\n**Proposed validation — not a completed test:** Test a wall hit and an oblique corner hit, then remeasure roller alignment and deployment current; test full-speed pickup of worn fuel.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: preserve width through the floor and tower\n\nVersion: RE-BLITZ rebuild. [PDF p7](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7) · [PDF p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10)\n\n**Published construction:** Ten inclined floor rollers; four-X60 feeder; Teflon backing; enlarged four-wide path.\n\n**Team-stated reason or evidence boundary:** Remove restrictions between hopper and launcher.\n\n**Engineering analysis — original inference:** Adding a fourth release lane helps only if four lanes remain supplied. A floor feeding a narrow or irregular throat produces alternating bursts and starvation even when the drum has ample power. Inclination and backing determine the normal force and the direction in which fuel escapes when multiple balls arrive together. Low-friction backing reduces the energy lost to sliding while powered rollers maintain forward contact. An open path also needs a controlled final approach: a ball entering the launch contact at a variable velocity or height changes compression and the exit state. Diagnose the last few balls separately from the first dense volley.\n\n**Proposed validation — not a completed test:** Log feeder current, wheel speed and scored output through a full hopper; repeat with 5, 15 and 30 fuel and with deliberate asymmetric loading.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: drum, hood rollers and flywheel recovery\n\nVersion: RE-BLITZ rebuild. [PDF p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10)\n\n**Published construction:** Four-inch drum, 1.5-inch hood rollers, overdriven flywheel; team reports >30 fuel/s and a 34 maximum.\n\n**Team-stated reason or evidence boundary:** High discharge rate with manageable shooter recovery.\n\n**Engineering analysis — original inference:** A drum’s useful contact surface is a distributed launch interface. If fuel encounters different compression along its width, the nominally identical lanes can launch at different speeds. Flywheel energy can cover short impulses while the motors replace average energy, but a dense volley still requires sufficient sustained electrical power. Surface condition, ball wear and hood contact determine how much of the wheel’s speed becomes translation versus spin. The reported rate is valuable as a team result; it does not establish accuracy, defended performance, battery condition or an all-match average. Copy the geometry only with a plan to characterize those conditions.\n\n**Proposed validation — not a completed test:** Measure per-lane velocity and accuracy before and after a long volley; log loaded battery voltage and recovery between successive shots.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: expansion actuated by the intake\n\nVersion: RE-BLITZ rebuild. [PDF p7](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7) · [PDF p11](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=11)\n\n**Published construction:** Intake-driven hopper expansion; smooth internal sheet-metal joints; deployed one-way catchers.\n\n**Team-stated reason or evidence boundary:** Store useful inventory and feed it back toward the shooter.\n\n**Engineering analysis — original inference:** The expanding walls and intake form one mechanism state machine. A wall that expands independently without managing its overlap can create a ledge, trap fuel, or fight the intake during retraction. Smooth fasteners reduce snagging, while the deployed catches react loads that should not be carried continuously by the intake motor. A large hopper helps separate acquisition from discharge, giving the driver freedom to reposition. That freedom disappears if the final fuel cannot leave without a specific intake movement. The recommendation should therefore specify both the retained capacity and the emptying sequence.\n\n**Proposed validation — not a completed test:** Interrupt deployment halfway with a full hopper; test reverse motion, ball trapping at panel overlaps, trench travel and final-fuel evacuation.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: mechanism readiness and fallback operation\n\nVersion: RE-BLITZ rebuild. [PDF p12](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=12) · [PDF p13](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=13)\n\n**Published construction:** Shot gates, vision-based targeting, CANrange preload sensing and fixed-position manual fallbacks.\n\n**Team-stated reason or evidence boundary:** Coordinate feeding with the actual launch state.\n\n**Engineering analysis — original inference:** A high mechanical ceiling can be lost to premature feed. The feeder must distinguish an intentional firing pause from a jam, an empty hopper and a shooter that has not recovered. Readiness should use measured values with hysteresis rather than one noisy threshold. Manual known-position shots preserve a useful degraded mode when localization fails, but require practiced driver cues and a stable mechanical zero. A mechanism database needs this control contract because an intake, indexer and drum borrowed from different robots may otherwise disagree about who owns the next ball.\n\n**Proposed validation — not a completed test:** Disable one camera, introduce an empty-hopper sensor error and force a heading correction mid-volley; check the operator can recover predictably.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | Mk5n R2; X60 drive; X44 steer | [Source p7](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=7) |\n| Intake | 79.37:1 deploy; mirrored four-bars | [Source p8](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8) |\n| Shooter | three X60 launch motors; one X44 hood | [Source p9](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9) |\n| Drive | 27.5×27-in frame; Mk5n R1 | [Source p8](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=8) |\n| Intake | 40:1 deploy; #35 chain; 2-in and 1.25-in rollers | [Source p9](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9) |\n| Floor | 15° inclination; ten 1.25-in rollers; four-X60 feeder | [Source p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10) |\n| Shooter | 4-in drum; 1.5-in hood rollers; 6.7:1 flywheel overdrive source description | [Source p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2026-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521705/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/a/3/8/a381d4698fcc264f7bf9b9dca2f7fb35d2751692_2_690x460.jpeg",
+        "post": 1,
+        "date": "2026-06-07T20:23:33.154Z",
+        "author": "Kylie_Liu",
+        "context_tags": [],
+        "caption": "2026 team 2910 — source image from post 1 (2026-06-07). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "788e2a5f788b35c913.jpg",
+        "id": "a5ece5e207aaba9c31",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/788e2a5f788b35c913.jpg"
+      },
+      {
+        "robot_id": "2026-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521705/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/1/3/c13c6cf472605e20d3208b3293176a15fd2e4f75_2_690x459.jpeg",
+        "post": 1,
+        "date": "2026-06-07T20:23:33.154Z",
+        "author": "Kylie_Liu",
+        "context_tags": [],
+        "caption": "2026 team 2910 — source image from post 1 (2026-06-07). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "06e82455f5dc90de0a.jpg",
+        "id": "e3d8c6b6ad196d2e44",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/06e82455f5dc90de0a.jpg"
+      },
+      {
+        "robot_id": "2026-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521705/7",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/e/3/4/e34e3400c4ae12b967b405604b18e4b037864d35_2_690x301.jpeg",
+        "post": 7,
+        "date": "2026-06-08T04:14:24.802Z",
+        "author": "EthanAdler",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2026 team 2910 — source image from post 7 (2026-06-08). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "92db7ef87ce96fadc9.jpg",
+        "id": "89e1f9ba33f8a6ec4c",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/92db7ef87ce96fadc9.jpg"
+      },
+      {
+        "robot_id": "2026-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516325/91",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/f/7/5/f7555188375c5717a42822705b01ea521247445a_2_517x353.jpeg",
+        "post": 91,
+        "date": "2026-05-11T23:53:22.641Z",
+        "author": "Nuttyman54",
+        "context_tags": [
+          "hopper",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2026 team 2910 — source image from post 91 (2026-05-11). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f9525153d8a85a0ffd.jpg",
+        "id": "4bd5eff22a4184631f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f9525153d8a85a0ffd.jpg"
+      },
+      {
+        "id": "binder-75601cba410631181a-p7-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "75601cba410631181a",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-75601cba410631181a-p7-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=7",
+        "caption": "2026-2910 · BLITZ original · Original chassis · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Original chassis",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          154.14678955078125,
+          541.5,
+          456.189453125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-75601cba410631181a-p8-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "75601cba410631181a",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-75601cba410631181a-p8-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8",
+        "caption": "2026-2910 · BLITZ original · Original dual four-bar intakes · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Original dual four-bar intakes",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          156.94503784179688,
+          541.5,
+          451.59326171875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-75601cba410631181a-p9-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "75601cba410631181a",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-75601cba410631181a-p9-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9",
+        "caption": "2026-2910 · BLITZ original · Original serpentine and shooter · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Original serpentine and shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          163.5,
+          202.47755432128906,
+          448.4999694824219,
+          422.9775390625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-6d8168bcbb62d71a38-p8-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "6d8168bcbb62d71a38",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6d8168bcbb62d71a38-p8-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=8",
+        "caption": "2026-2910 · RE-BLITZ rebuild · Rebuild chassis · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Rebuild chassis",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          180.189453125,
+          541.4999389648438,
+          465.189453125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-6d8168bcbb62d71a38-p9-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "6d8168bcbb62d71a38",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6d8168bcbb62d71a38-p9-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9",
+        "caption": "2026-2910 · RE-BLITZ rebuild · Slapdown intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Slapdown intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          67.5,
+          172.42919921875,
+          535.5,
+          442.4775390625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-6d8168bcbb62d71a38-p10-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "6d8168bcbb62d71a38",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6d8168bcbb62d71a38-p10-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10",
+        "caption": "2026-2910 · RE-BLITZ rebuild · Four-wide drum and powered floor · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Four-wide drum and powered floor",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          172.5,
+          322.95556640625,
+          440.25,
+          565.20556640625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-6d8168bcbb62d71a38-p11-1",
+        "robot_id": "2026-2910",
+        "kind": "binder_figure",
+        "binder_id": "6d8168bcbb62d71a38",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-6d8168bcbb62d71a38-p11-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=11",
+        "caption": "2026-2910 · RE-BLITZ rebuild · Expanding hopper · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Expanding hopper",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          99.0,
+          163.05569458007812,
+          508.5000305175781,
+          490.80316162109375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      }
+    ],
+    "source_post_count": 154,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-1",
+        "url": "https://2910.onshape.com/documents/dfb391aac173a4555d00a5b5/w/3dc64f602735252892b0e47b/e/6c654da4eb6b1710fb0900bd?configuration=List_gTJHVM5EzW0JZB%3DMax_Hood_Angle&renderMode=0&uiState=6a23004ccae613be8b3519ec",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "dac8b7a933907fb2e5"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-1",
+        "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "fd3d5decb37bc8b5a7"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-1",
+        "url": "https://2910.onshape.com/documents/28894ad47d9c63a665e2a36b/w/078272beb4618ea6cffc78e0/e/aea9a72f86f273a5a9484208?configuration=default&renderMode=0&uiState=6a22ffe07389e39f66605a90",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7ef37698eca764ec86"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-1",
+        "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "56a0ded17628f09d24"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-101",
+        "url": "https://drive.google.com/file/d/10zgjIj0WNtZyoMbUKI2KySqo1podTuge/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d884a0690f7bcb3ff7"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-101",
+        "url": "https://drive.google.com/file/d/1dqSYwnNyXs1U7f6C7iOLHUaaWuKdJRH5/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "392c7ab9e60602edd7"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-101",
+        "url": "https://drive.google.com/file/d/1KH_6wB0SgL5D8vWG8cX3lu-wCb5kVW9L/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "616811f66b4b61e5ad"
+      },
+      {
+        "robot_id": "2026-2910",
+        "discovery_post": "2026-2910-521705-101",
+        "url": "https://drive.google.com/file/d/1gJf8J252WFaKSsS9uvjkPQyoTIqS0B9D/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b607b44704c2b0dd8f"
+      }
+    ],
+    "id": "2026-2910",
+    "team_name": "Jack in the Bot",
+    "epa_rank": 12,
+    "epa": 281.69,
+    "epa_pre_champs": 210.62,
+    "epa_breakdown": {
+      "total_points": 281.69,
+      "auto_points": 49.06,
+      "teleop_points": 152.52,
+      "endgame_points": 80.12,
+      "energized_rp": 0.6152,
+      "supercharged_rp": 0.5747,
+      "traversal_rp": -0.3416,
+      "tiebreaker_points": 281.69,
+      "auto_fuel": 49.42,
+      "auto_tower": -0.36,
+      "transition_fuel": 19.55,
+      "first_shift_fuel": 59.88,
+      "second_shift_fuel": 73.09,
+      "endgame_fuel": 80.1,
+      "endgame_tower": 0.01,
+      "rp_1": 0.6152,
+      "rp_2": 0.5747,
+      "rp_3": -0.3416,
+      "teleop_fuel": 232.62,
+      "total_fuel": 282.03999999999996,
+      "total_tower": -0.35
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "80f9e379d0cc043b"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "four-bar",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-75601cba410631181a-1",
+      "tech-75601cba410631181a-2",
+      "tech-6d8168bcbb62d71a38-3",
+      "tech-6d8168bcbb62d71a38-4",
+      "tech-6d8168bcbb62d71a38-5",
+      "tech-6d8168bcbb62d71a38-6",
+      "tech-6d8168bcbb62d71a38-7"
+    ],
+    "binder_source_ids": [
+      "75601cba410631181a",
+      "6d8168bcbb62d71a38"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "team": 2910,
+      "epa_rank": 12,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"2910\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 28,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "75601cba410631181a",
+        "6d8168bcbb62d71a38"
+      ],
+      "technical_note_ids": [
+        "tech-75601cba410631181a-1",
+        "tech-75601cba410631181a-2",
+        "tech-6d8168bcbb62d71a38-3",
+        "tech-6d8168bcbb62d71a38-4",
+        "tech-6d8168bcbb62d71a38-5",
+        "tech-6d8168bcbb62d71a38-6",
+        "tech-6d8168bcbb62d71a38-7"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "6d8168bcbb62d71a38",
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/521705/1",
+          "status": "technical_sections_reviewed"
+        },
+        {
+          "id": "75601cba410631181a",
+          "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/521705/1",
+          "status": "technical_sections_reviewed"
+        },
+        {
+          "id": "33a3ea0421e429bc2e",
+          "url": "https://drive.google.com/file/d/10zgjIj0WNtZyoMbUKI2KySqo1podTuge/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/521705/101",
+          "status": "unavailable_or_not_pdf"
+        },
+        {
+          "id": "c9dff8afc1582d1ad2",
+          "url": "https://drive.google.com/file/d/1dqSYwnNyXs1U7f6C7iOLHUaaWuKdJRH5/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/521705/101",
+          "status": "unavailable_or_not_pdf"
+        },
+        {
+          "id": "a65454cf2fc73f66cf",
+          "url": "https://drive.google.com/file/d/1KH_6wB0SgL5D8vWG8cX3lu-wCb5kVW9L/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/521705/101",
+          "status": "unavailable_or_not_pdf"
+        },
+        {
+          "id": "de3286a49d947ead35",
+          "url": "https://drive.google.com/file/d/1gJf8J252WFaKSsS9uvjkPQyoTIqS0B9D/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/521705/101",
+          "status": "unavailable_or_not_pdf"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "75601cba410631181a",
+      "subsystem": "intake",
+      "title": "Original BLITZ: two mirrored four-bar collectors",
+      "pdf_pages": [
+        5,
+        8
+      ],
+      "construction": "Dual four-bars; X44 deployment at 79.37:1; separate X60 roller drives.",
+      "team_stated_reason": "Collect sideways while passing; collapse under impacts.",
+      "engineering_analysis": "This is a coupled routing decision. Collecting on either side allows the chassis to translate across a fuel pile while its fixed shooter points toward the destination. That can recover some of the directional independence normally purchased with a turret. A four-bar can also move backward under a frontal impact, but only if the linkage, motor controller, chain and hard stops permit that motion. More joints create more wear locations, and both collectors consume the space that another architecture could use for a hopper. The second intake should therefore be evaluated by additional useful fuel delivered, rather than the visual symmetry of the mechanism.",
+      "recommended_validation": "Compare opposite-side sweep paths against turning a single-intake robot, including one damaged linkage and time to replace it.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-75601cba410631181a-1",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "BLITZ original",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 5,
+          "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=5"
+        },
+        {
+          "pdf_page": 8,
+          "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8"
+        }
+      ],
+      "image_ids": [
+        "binder-75601cba410631181a-p8-1"
+      ]
+    },
+    {
+      "binder_id": "75601cba410631181a",
+      "subsystem": "transfer",
+      "title": "Original BLITZ: serpentine inventory and passing",
+      "pdf_pages": [
+        5,
+        9
+      ],
+      "construction": "Serpentine conveyor, two X60 feeder motors, three X60 shooter motors; variable hood.",
+      "team_stated_reason": "Use the alliance zone as storage for a passing-centered role.",
+      "engineering_analysis": "The low-storage concept treats the field as an external buffer. Its success requires the alliance to recover that buffered fuel at the right time and place. Passing capacity and scoring capacity are different services even when the same launcher performs both. A continuous serpentine can constrain fuel well but adds contact length, curved transitions and friction; a well-controlled ball path may still be unable to supply enough mass flow. This original brief must be read alongside the later rebuild account: a design rationale is evidence of a hypothesis, not evidence that the hypothesis met the team’s competitive targets.",
+      "recommended_validation": "Measure fuel moved to a recoverable location, residual path inventory, and scoring available after the passer returns; vary partner collection quality.",
+      "limitations": "The brief describes a 25-fuel/s feed capability; the later account reports inadequate overall performance. Do not treat that number as an independently demonstrated match average.",
+      "id": "tech-75601cba410631181a-2",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "BLITZ original",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 5,
+          "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=5"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-75601cba410631181a-p9-1"
+      ]
+    },
+    {
+      "binder_id": "6d8168bcbb62d71a38",
+      "subsystem": "intake",
+      "title": "RE-BLITZ: strengthened slapdown",
+      "pdf_pages": [
+        7,
+        9
+      ],
+      "construction": "Four-bar replaced by slapdown; 0.6-inch plates; #35 deployment chain; powered bottom roller.",
+      "team_stated_reason": "Strength, service access and reliable full-speed acquisition.",
+      "engineering_analysis": "A single pivot simplifies the force path: an exposed roller loads its arms, pivot and hard stop without several moving links sharing the impact. That does not make it automatically more impact tolerant. The stronger arm and larger deployment chain need a corresponding chassis attachment and a stop that can react a collision without loading the gearbox teeth. Powering the lower contact also matters at the bumper transition: fuel can otherwise be caught between a moving upper roller and a stationary surface while the robot continues advancing. Plate stiffness and ball transport are separate improvements and should be tested separately.",
+      "recommended_validation": "Test a wall hit and an oblique corner hit, then remeasure roller alignment and deployment current; test full-speed pickup of worn fuel.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6d8168bcbb62d71a38-3",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "RE-BLITZ rebuild",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-6d8168bcbb62d71a38-p9-1"
+      ]
+    },
+    {
+      "binder_id": "6d8168bcbb62d71a38",
+      "subsystem": "transfer",
+      "title": "RE-BLITZ: preserve width through the floor and tower",
+      "pdf_pages": [
+        7,
+        10
+      ],
+      "construction": "Ten inclined floor rollers; four-X60 feeder; Teflon backing; enlarged four-wide path.",
+      "team_stated_reason": "Remove restrictions between hopper and launcher.",
+      "engineering_analysis": "Adding a fourth release lane helps only if four lanes remain supplied. A floor feeding a narrow or irregular throat produces alternating bursts and starvation even when the drum has ample power. Inclination and backing determine the normal force and the direction in which fuel escapes when multiple balls arrive together. Low-friction backing reduces the energy lost to sliding while powered rollers maintain forward contact. An open path also needs a controlled final approach: a ball entering the launch contact at a variable velocity or height changes compression and the exit state. Diagnose the last few balls separately from the first dense volley.",
+      "recommended_validation": "Log feeder current, wheel speed and scored output through a full hopper; repeat with 5, 15 and 30 fuel and with deliberate asymmetric loading.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6d8168bcbb62d71a38-4",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "RE-BLITZ rebuild",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7"
+        },
+        {
+          "pdf_page": 10,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-6d8168bcbb62d71a38-p10-1"
+      ]
+    },
+    {
+      "binder_id": "6d8168bcbb62d71a38",
+      "subsystem": "scoring",
+      "title": "RE-BLITZ: drum, hood rollers and flywheel recovery",
+      "pdf_pages": [
+        10
+      ],
+      "construction": "Four-inch drum, 1.5-inch hood rollers, overdriven flywheel; team reports >30 fuel/s and a 34 maximum.",
+      "team_stated_reason": "High discharge rate with manageable shooter recovery.",
+      "engineering_analysis": "A drum’s useful contact surface is a distributed launch interface. If fuel encounters different compression along its width, the nominally identical lanes can launch at different speeds. Flywheel energy can cover short impulses while the motors replace average energy, but a dense volley still requires sufficient sustained electrical power. Surface condition, ball wear and hood contact determine how much of the wheel’s speed becomes translation versus spin. The reported rate is valuable as a team result; it does not establish accuracy, defended performance, battery condition or an all-match average. Copy the geometry only with a plan to characterize those conditions.",
+      "recommended_validation": "Measure per-lane velocity and accuracy before and after a long volley; log loaded battery voltage and recovery between successive shots.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6d8168bcbb62d71a38-5",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "RE-BLITZ rebuild",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-6d8168bcbb62d71a38-p10-1"
+      ]
+    },
+    {
+      "binder_id": "6d8168bcbb62d71a38",
+      "subsystem": "storage",
+      "title": "RE-BLITZ: expansion actuated by the intake",
+      "pdf_pages": [
+        7,
+        11
+      ],
+      "construction": "Intake-driven hopper expansion; smooth internal sheet-metal joints; deployed one-way catchers.",
+      "team_stated_reason": "Store useful inventory and feed it back toward the shooter.",
+      "engineering_analysis": "The expanding walls and intake form one mechanism state machine. A wall that expands independently without managing its overlap can create a ledge, trap fuel, or fight the intake during retraction. Smooth fasteners reduce snagging, while the deployed catches react loads that should not be carried continuously by the intake motor. A large hopper helps separate acquisition from discharge, giving the driver freedom to reposition. That freedom disappears if the final fuel cannot leave without a specific intake movement. The recommendation should therefore specify both the retained capacity and the emptying sequence.",
+      "recommended_validation": "Interrupt deployment halfway with a full hopper; test reverse motion, ball trapping at panel overlaps, trench travel and final-fuel evacuation.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6d8168bcbb62d71a38-6",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "RE-BLITZ rebuild",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=11"
+        }
+      ],
+      "image_ids": [
+        "binder-6d8168bcbb62d71a38-p11-1"
+      ]
+    },
+    {
+      "binder_id": "6d8168bcbb62d71a38",
+      "subsystem": "controls",
+      "title": "RE-BLITZ: mechanism readiness and fallback operation",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "construction": "Shot gates, vision-based targeting, CANrange preload sensing and fixed-position manual fallbacks.",
+      "team_stated_reason": "Coordinate feeding with the actual launch state.",
+      "engineering_analysis": "A high mechanical ceiling can be lost to premature feed. The feeder must distinguish an intentional firing pause from a jam, an empty hopper and a shooter that has not recovered. Readiness should use measured values with hysteresis rather than one noisy threshold. Manual known-position shots preserve a useful degraded mode when localization fails, but require practiced driver cues and a stable mechanical zero. A mechanism database needs this control contract because an intake, indexer and drum borrowed from different robots may otherwise disagree about who owns the next ball.",
+      "recommended_validation": "Disable one camera, introduce an empty-hopper sensor error and force a heading correction mid-volley; check the operator can recover predictably.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-6d8168bcbb62d71a38-7",
+      "robot_id": "2026-2910",
+      "year": 2026,
+      "version_label": "RE-BLITZ rebuild",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=12"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=13"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-75601cba410631181a-1",
+      "binder_id": "75601cba410631181a",
+      "robot_id": "2026-2910",
+      "pdf_page": 7,
+      "component": "Drive",
+      "published_parameters": "Mk5n R2; X60 drive; X44 steer",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=7",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-75601cba410631181a-2",
+      "binder_id": "75601cba410631181a",
+      "robot_id": "2026-2910",
+      "pdf_page": 8,
+      "component": "Intake",
+      "published_parameters": "79.37:1 deploy; mirrored four-bars",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-75601cba410631181a-3",
+      "binder_id": "75601cba410631181a",
+      "robot_id": "2026-2910",
+      "pdf_page": 9,
+      "component": "Shooter",
+      "published_parameters": "three X60 launch motors; one X44 hood",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6d8168bcbb62d71a38-1",
+      "binder_id": "6d8168bcbb62d71a38",
+      "robot_id": "2026-2910",
+      "pdf_page": 8,
+      "component": "Drive",
+      "published_parameters": "27.5×27-in frame; Mk5n R1",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6d8168bcbb62d71a38-2",
+      "binder_id": "6d8168bcbb62d71a38",
+      "robot_id": "2026-2910",
+      "pdf_page": 9,
+      "component": "Intake",
+      "published_parameters": "40:1 deploy; #35 chain; 2-in and 1.25-in rollers",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6d8168bcbb62d71a38-3",
+      "binder_id": "6d8168bcbb62d71a38",
+      "robot_id": "2026-2910",
+      "pdf_page": 10,
+      "component": "Floor",
+      "published_parameters": "15° inclination; ten 1.25-in rollers; four-X60 feeder",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-6d8168bcbb62d71a38-4",
+      "binder_id": "6d8168bcbb62d71a38",
+      "robot_id": "2026-2910",
+      "pdf_page": 10,
+      "component": "Shooter",
+      "published_parameters": "4-in drum; 1.5-in hood rollers; 6.7:1 flywheel overdrive source description",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "75601cba410631181a",
+      "robot_id": "2026-2910",
+      "title": "2026-2910 BLITZ original technical publication",
+      "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+      "format": "pdf",
+      "pages": 11,
+      "sha256": "6782f8fa4447588eedfc8a96a39c7027ba8650e2c4579c427bd0a4ce09df9bc5",
+      "bytes": 6358964,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        5,
+        8,
+        9
+      ],
+      "figure_pages": [
+        7,
+        8,
+        9
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/521705/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    },
+    {
+      "id": "6d8168bcbb62d71a38",
+      "robot_id": "2026-2910",
+      "title": "2026-2910 RE-BLITZ rebuild technical publication",
+      "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+      "format": "pdf",
+      "pages": 13,
+      "sha256": "5e7159cec66e81e3d398b745f4737ac24d1414316523cdb19b5c95ad657f9cff",
+      "bytes": 5905576,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "figure_pages": [
+        4,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/521705/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2026-2910:publication-version:1",
+      "label": "BLITZ original",
+      "robot_id": "2026-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-75601cba410631181a-1",
+        "tech-75601cba410631181a-2"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2026-2910:publication-version:2",
+      "label": "RE-BLITZ rebuild",
+      "robot_id": "2026-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-6d8168bcbb62d71a38-3",
+        "tech-6d8168bcbb62d71a38-4",
+        "tech-6d8168bcbb62d71a38-5",
+        "tech-6d8168bcbb62d71a38-6",
+        "tech-6d8168bcbb62d71a38-7"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2026-2910",
+      "title": "2026-2910: technical construction and mechanism reasoning",
+      "year": 2026,
+      "robot_id": "2026-2910",
+      "kind": "robot_technical_review",
+      "body": "# 2026-2910: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## Original BLITZ: two mirrored four-bar collectors\n\nVersion: BLITZ original. [PDF p5](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=5) · [PDF p8](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8)\n\n**Published construction:** Dual four-bars; X44 deployment at 79.37:1; separate X60 roller drives.\n\n**Team-stated reason or evidence boundary:** Collect sideways while passing; collapse under impacts.\n\n**Engineering analysis — original inference:** This is a coupled routing decision. Collecting on either side allows the chassis to translate across a fuel pile while its fixed shooter points toward the destination. That can recover some of the directional independence normally purchased with a turret. A four-bar can also move backward under a frontal impact, but only if the linkage, motor controller, chain and hard stops permit that motion. More joints create more wear locations, and both collectors consume the space that another architecture could use for a hopper. The second intake should therefore be evaluated by additional useful fuel delivered, rather than the visual symmetry of the mechanism.\n\n**Proposed validation — not a completed test:** Compare opposite-side sweep paths against turning a single-intake robot, including one damaged linkage and time to replace it.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Original BLITZ: serpentine inventory and passing\n\nVersion: BLITZ original. [PDF p5](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=5) · [PDF p9](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9)\n\n**Published construction:** Serpentine conveyor, two X60 feeder motors, three X60 shooter motors; variable hood.\n\n**Team-stated reason or evidence boundary:** Use the alliance zone as storage for a passing-centered role.\n\n**Engineering analysis — original inference:** The low-storage concept treats the field as an external buffer. Its success requires the alliance to recover that buffered fuel at the right time and place. Passing capacity and scoring capacity are different services even when the same launcher performs both. A continuous serpentine can constrain fuel well but adds contact length, curved transitions and friction; a well-controlled ball path may still be unable to supply enough mass flow. This original brief must be read alongside the later rebuild account: a design rationale is evidence of a hypothesis, not evidence that the hypothesis met the team’s competitive targets.\n\n**Proposed validation — not a completed test:** Measure fuel moved to a recoverable location, residual path inventory, and scoring available after the passer returns; vary partner collection quality.\n\n**Limits:** The brief describes a 25-fuel/s feed capability; the later account reports inadequate overall performance. Do not treat that number as an independently demonstrated match average.\n\n## RE-BLITZ: strengthened slapdown\n\nVersion: RE-BLITZ rebuild. [PDF p7](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7) · [PDF p9](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9)\n\n**Published construction:** Four-bar replaced by slapdown; 0.6-inch plates; #35 deployment chain; powered bottom roller.\n\n**Team-stated reason or evidence boundary:** Strength, service access and reliable full-speed acquisition.\n\n**Engineering analysis — original inference:** A single pivot simplifies the force path: an exposed roller loads its arms, pivot and hard stop without several moving links sharing the impact. That does not make it automatically more impact tolerant. The stronger arm and larger deployment chain need a corresponding chassis attachment and a stop that can react a collision without loading the gearbox teeth. Powering the lower contact also matters at the bumper transition: fuel can otherwise be caught between a moving upper roller and a stationary surface while the robot continues advancing. Plate stiffness and ball transport are separate improvements and should be tested separately.\n\n**Proposed validation — not a completed test:** Test a wall hit and an oblique corner hit, then remeasure roller alignment and deployment current; test full-speed pickup of worn fuel.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: preserve width through the floor and tower\n\nVersion: RE-BLITZ rebuild. [PDF p7](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7) · [PDF p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10)\n\n**Published construction:** Ten inclined floor rollers; four-X60 feeder; Teflon backing; enlarged four-wide path.\n\n**Team-stated reason or evidence boundary:** Remove restrictions between hopper and launcher.\n\n**Engineering analysis — original inference:** Adding a fourth release lane helps only if four lanes remain supplied. A floor feeding a narrow or irregular throat produces alternating bursts and starvation even when the drum has ample power. Inclination and backing determine the normal force and the direction in which fuel escapes when multiple balls arrive together. Low-friction backing reduces the energy lost to sliding while powered rollers maintain forward contact. An open path also needs a controlled final approach: a ball entering the launch contact at a variable velocity or height changes compression and the exit state. Diagnose the last few balls separately from the first dense volley.\n\n**Proposed validation — not a completed test:** Log feeder current, wheel speed and scored output through a full hopper; repeat with 5, 15 and 30 fuel and with deliberate asymmetric loading.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: drum, hood rollers and flywheel recovery\n\nVersion: RE-BLITZ rebuild. [PDF p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10)\n\n**Published construction:** Four-inch drum, 1.5-inch hood rollers, overdriven flywheel; team reports >30 fuel/s and a 34 maximum.\n\n**Team-stated reason or evidence boundary:** High discharge rate with manageable shooter recovery.\n\n**Engineering analysis — original inference:** A drum’s useful contact surface is a distributed launch interface. If fuel encounters different compression along its width, the nominally identical lanes can launch at different speeds. Flywheel energy can cover short impulses while the motors replace average energy, but a dense volley still requires sufficient sustained electrical power. Surface condition, ball wear and hood contact determine how much of the wheel’s speed becomes translation versus spin. The reported rate is valuable as a team result; it does not establish accuracy, defended performance, battery condition or an all-match average. Copy the geometry only with a plan to characterize those conditions.\n\n**Proposed validation — not a completed test:** Measure per-lane velocity and accuracy before and after a long volley; log loaded battery voltage and recovery between successive shots.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: expansion actuated by the intake\n\nVersion: RE-BLITZ rebuild. [PDF p7](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=7) · [PDF p11](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=11)\n\n**Published construction:** Intake-driven hopper expansion; smooth internal sheet-metal joints; deployed one-way catchers.\n\n**Team-stated reason or evidence boundary:** Store useful inventory and feed it back toward the shooter.\n\n**Engineering analysis — original inference:** The expanding walls and intake form one mechanism state machine. A wall that expands independently without managing its overlap can create a ledge, trap fuel, or fight the intake during retraction. Smooth fasteners reduce snagging, while the deployed catches react loads that should not be carried continuously by the intake motor. A large hopper helps separate acquisition from discharge, giving the driver freedom to reposition. That freedom disappears if the final fuel cannot leave without a specific intake movement. The recommendation should therefore specify both the retained capacity and the emptying sequence.\n\n**Proposed validation — not a completed test:** Interrupt deployment halfway with a full hopper; test reverse motion, ball trapping at panel overlaps, trench travel and final-fuel evacuation.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## RE-BLITZ: mechanism readiness and fallback operation\n\nVersion: RE-BLITZ rebuild. [PDF p12](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=12) · [PDF p13](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=13)\n\n**Published construction:** Shot gates, vision-based targeting, CANrange preload sensing and fixed-position manual fallbacks.\n\n**Team-stated reason or evidence boundary:** Coordinate feeding with the actual launch state.\n\n**Engineering analysis — original inference:** A high mechanical ceiling can be lost to premature feed. The feeder must distinguish an intentional firing pause from a jam, an empty hopper and a shooter that has not recovered. Readiness should use measured values with hysteresis rather than one noisy threshold. Manual known-position shots preserve a useful degraded mode when localization fails, but require practiced driver cues and a stable mechanical zero. A mechanism database needs this control contract because an intake, indexer and drum borrowed from different robots may otherwise disagree about who owns the next ball.\n\n**Proposed validation — not a completed test:** Disable one camera, introduce an empty-hopper sensor error and force a heading correction mid-volley; check the operator can recover predictably.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | Mk5n R2; X60 drive; X44 steer | [Source p7](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=7) |\n| Intake | 79.37:1 deploy; mirrored four-bars | [Source p8](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8) |\n| Shooter | three X60 launch motors; one X44 hood | [Source p9](https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9) |\n| Drive | 27.5×27-in frame; Mk5n R1 | [Source p8](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=8) |\n| Intake | 40:1 deploy; #35 chain; 2-in and 1.25-in rollers | [Source p9](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9) |\n| Floor | 15° inclination; ten 1.25-in rollers; four-X60 feeder | [Source p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10) |\n| Shooter | 4-in drum; 1.5-in hood rollers; 6.7:1 flywheel overdrive source description | [Source p10](https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+        "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing"
+      ],
+      "path": "docs/technical/2026-2910.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521705/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/a/3/8/a381d4698fcc264f7bf9b9dca2f7fb35d2751692_2_690x460.jpeg",
+      "post": 1,
+      "date": "2026-06-07T20:23:33.154Z",
+      "author": "Kylie_Liu",
+      "context_tags": [],
+      "caption": "2026 team 2910 — source image from post 1 (2026-06-07). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "788e2a5f788b35c913.jpg",
+      "id": "a5ece5e207aaba9c31",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/788e2a5f788b35c913.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 460,
+      "bytes": 102915,
+      "sha256": "e0910c0f803c6670284c9facdee52c0115cdb87fb9897e645a660229dc25f8fb",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a5ece5e207aaba9c31",
+      "reader_url": "index.html#image=a5ece5e207aaba9c31",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521705/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/1/3/c13c6cf472605e20d3208b3293176a15fd2e4f75_2_690x459.jpeg",
+      "post": 1,
+      "date": "2026-06-07T20:23:33.154Z",
+      "author": "Kylie_Liu",
+      "context_tags": [],
+      "caption": "2026 team 2910 — source image from post 1 (2026-06-07). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "06e82455f5dc90de0a.jpg",
+      "id": "e3d8c6b6ad196d2e44",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/06e82455f5dc90de0a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 459,
+      "bytes": 80685,
+      "sha256": "f009f88f08b510b3bab1282b8d499f25a39c088f6f6b4506f42b68f537702a6b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "e3d8c6b6ad196d2e44",
+      "reader_url": "index.html#image=e3d8c6b6ad196d2e44",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521705/7",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/e/3/4/e34e3400c4ae12b967b405604b18e4b037864d35_2_690x301.jpeg",
+      "post": 7,
+      "date": "2026-06-08T04:14:24.802Z",
+      "author": "EthanAdler",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2026 team 2910 — source image from post 7 (2026-06-08). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "92db7ef87ce96fadc9.jpg",
+      "id": "89e1f9ba33f8a6ec4c",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/92db7ef87ce96fadc9.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 301,
+      "bytes": 35178,
+      "sha256": "eb7f5b5e265b48e952bac815ef4349d2c5232490d90cb1ff59951acde8015518",
+      "path_base": "corpus_root",
+      "reader_asset_id": "89e1f9ba33f8a6ec4c",
+      "reader_url": "index.html#image=89e1f9ba33f8a6ec4c",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516325/91",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/f/7/5/f7555188375c5717a42822705b01ea521247445a_2_517x353.jpeg",
+      "post": 91,
+      "date": "2026-05-11T23:53:22.641Z",
+      "author": "Nuttyman54",
+      "context_tags": [
+        "hopper",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2026 team 2910 — source image from post 91 (2026-05-11). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f9525153d8a85a0ffd.jpg",
+      "id": "4bd5eff22a4184631f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f9525153d8a85a0ffd.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 353,
+      "bytes": 17066,
+      "sha256": "e1df3ce20b018ba084196c75f3764f8c8a359728c444c187289109c4932c1ce8",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4bd5eff22a4184631f",
+      "reader_url": "index.html#image=4bd5eff22a4184631f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-75601cba410631181a-p7-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "75601cba410631181a",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-75601cba410631181a-p7-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=7",
+      "caption": "2026-2910 · BLITZ original · Original chassis · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Original chassis",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        154.14678955078125,
+        541.5,
+        456.189453125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 696,
+      "bytes": 114239,
+      "sha256": "540c8eb29812d65196ef66e11ec6dbfb3dd0171846c3d7c4a354d8eb45776659",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-75601cba410631181a-p7-1",
+      "reader_url": "index.html#image=binder-75601cba410631181a-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-75601cba410631181a-p8-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "75601cba410631181a",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-75601cba410631181a-p8-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=8",
+      "caption": "2026-2910 · BLITZ original · Original dual four-bar intakes · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Original dual four-bar intakes",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        156.94503784179688,
+        541.5,
+        451.59326171875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 679,
+      "bytes": 108325,
+      "sha256": "19346ce30e06ac3935fa4858f4096374a113517fddd0e4970b7d41f6698a7c9f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-75601cba410631181a-p8-1",
+      "reader_url": "index.html#image=binder-75601cba410631181a-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-75601cba410631181a-p9-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "75601cba410631181a",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-75601cba410631181a-p9-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing#page=9",
+      "caption": "2026-2910 · BLITZ original · Original serpentine and shooter · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Original serpentine and shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        163.5,
+        202.47755432128906,
+        448.4999694824219,
+        422.9775390625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 656,
+      "height_px": 508,
+      "bytes": 71170,
+      "sha256": "9d1cd72ece659abde6b7e9b8947c8005ae124b20ba061dd4fbd4036d47a2de6b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-75601cba410631181a-p9-1",
+      "reader_url": "index.html#image=binder-75601cba410631181a-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6d8168bcbb62d71a38-p8-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "6d8168bcbb62d71a38",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6d8168bcbb62d71a38-p8-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=8",
+      "caption": "2026-2910 · RE-BLITZ rebuild · Rebuild chassis · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Rebuild chassis",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        180.189453125,
+        541.4999389648438,
+        465.189453125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 656,
+      "bytes": 91310,
+      "sha256": "c56c05f7b1be9cb840f1abddd8fb92c3bf25675ace4022359f5ad80f2a50ea90",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6d8168bcbb62d71a38-p8-1",
+      "reader_url": "index.html#image=binder-6d8168bcbb62d71a38-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6d8168bcbb62d71a38-p9-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "6d8168bcbb62d71a38",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6d8168bcbb62d71a38-p9-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=9",
+      "caption": "2026-2910 · RE-BLITZ rebuild · Slapdown intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Slapdown intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        67.5,
+        172.42919921875,
+        535.5,
+        442.4775390625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 622,
+      "bytes": 62267,
+      "sha256": "3b7e5142098823305b8e94e6038347681f2f472b911e7b76bd165faa67abcc6d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6d8168bcbb62d71a38-p9-1",
+      "reader_url": "index.html#image=binder-6d8168bcbb62d71a38-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6d8168bcbb62d71a38-p10-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "6d8168bcbb62d71a38",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6d8168bcbb62d71a38-p10-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=10",
+      "caption": "2026-2910 · RE-BLITZ rebuild · Four-wide drum and powered floor · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Four-wide drum and powered floor",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        172.5,
+        322.95556640625,
+        440.25,
+        565.20556640625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 617,
+      "height_px": 558,
+      "bytes": 56302,
+      "sha256": "4b03e52d5366e7f1d8c2cc4efe68a05d952562f127f1c7a6d9f322c63b40f268",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6d8168bcbb62d71a38-p10-1",
+      "reader_url": "index.html#image=binder-6d8168bcbb62d71a38-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-6d8168bcbb62d71a38-p11-1",
+      "robot_id": "2026-2910",
+      "kind": "binder_figure",
+      "binder_id": "6d8168bcbb62d71a38",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-6d8168bcbb62d71a38-p11-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing#page=11",
+      "caption": "2026-2910 · RE-BLITZ rebuild · Expanding hopper · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Expanding hopper",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        99.0,
+        163.05569458007812,
+        508.5000305175781,
+        490.80316162109375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 943,
+      "height_px": 754,
+      "bytes": 59184,
+      "sha256": "6a4b000734cd46bd7b4a18c43c2e1fccba44b6563b003a7a76fe74e691432ca3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-6d8168bcbb62d71a38-p11-1",
+      "reader_url": "index.html#image=binder-6d8168bcbb62d71a38-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-2910",
+    "year": 2026,
+    "team": 2910,
+    "epa_rank": 12,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"2910\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 28,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "75601cba410631181a",
+      "6d8168bcbb62d71a38"
+    ],
+    "technical_note_ids": [
+      "tech-75601cba410631181a-1",
+      "tech-75601cba410631181a-2",
+      "tech-6d8168bcbb62d71a38-3",
+      "tech-6d8168bcbb62d71a38-4",
+      "tech-6d8168bcbb62d71a38-5",
+      "tech-6d8168bcbb62d71a38-6",
+      "tech-6d8168bcbb62d71a38-7"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "6d8168bcbb62d71a38",
+        "url": "https://drive.google.com/file/d/1r-6zR4afbr_BpeZfWwcM5XL1N74FjScI/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/521705/1",
+        "status": "technical_sections_reviewed"
+      },
+      {
+        "id": "75601cba410631181a",
+        "url": "https://drive.google.com/file/d/1jPf-aOGhz0dntoAgahFBgRhJiJv9rGpj/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/521705/1",
+        "status": "technical_sections_reviewed"
+      },
+      {
+        "id": "33a3ea0421e429bc2e",
+        "url": "https://drive.google.com/file/d/10zgjIj0WNtZyoMbUKI2KySqo1podTuge/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/521705/101",
+        "status": "unavailable_or_not_pdf"
+      },
+      {
+        "id": "c9dff8afc1582d1ad2",
+        "url": "https://drive.google.com/file/d/1dqSYwnNyXs1U7f6C7iOLHUaaWuKdJRH5/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/521705/101",
+        "status": "unavailable_or_not_pdf"
+      },
+      {
+        "id": "a65454cf2fc73f66cf",
+        "url": "https://drive.google.com/file/d/1KH_6wB0SgL5D8vWG8cX3lu-wCb5kVW9L/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/521705/101",
+        "status": "unavailable_or_not_pdf"
+      },
+      {
+        "id": "de3286a49d947ead35",
+        "url": "https://drive.google.com/file/d/1gJf8J252WFaKSsS9uvjkPQyoTIqS0B9D/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/521705/101",
+        "status": "unavailable_or_not_pdf"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-75601cba410631181a-1:construction",
+    "tech-75601cba410631181a-1:team_stated_reason",
+    "tech-75601cba410631181a-1:engineering_analysis",
+    "tech-75601cba410631181a-1:recommended_validation",
+    "tech-75601cba410631181a-1:limitations",
+    "tech-75601cba410631181a-2:construction",
+    "tech-75601cba410631181a-2:team_stated_reason",
+    "tech-75601cba410631181a-2:engineering_analysis",
+    "tech-75601cba410631181a-2:recommended_validation",
+    "tech-75601cba410631181a-2:limitations",
+    "tech-6d8168bcbb62d71a38-3:construction",
+    "tech-6d8168bcbb62d71a38-3:team_stated_reason",
+    "tech-6d8168bcbb62d71a38-3:engineering_analysis",
+    "tech-6d8168bcbb62d71a38-3:recommended_validation",
+    "tech-6d8168bcbb62d71a38-3:limitations",
+    "tech-6d8168bcbb62d71a38-4:construction",
+    "tech-6d8168bcbb62d71a38-4:team_stated_reason",
+    "tech-6d8168bcbb62d71a38-4:engineering_analysis",
+    "tech-6d8168bcbb62d71a38-4:recommended_validation",
+    "tech-6d8168bcbb62d71a38-4:limitations",
+    "tech-6d8168bcbb62d71a38-5:construction",
+    "tech-6d8168bcbb62d71a38-5:team_stated_reason",
+    "tech-6d8168bcbb62d71a38-5:engineering_analysis",
+    "tech-6d8168bcbb62d71a38-5:recommended_validation",
+    "tech-6d8168bcbb62d71a38-5:limitations",
+    "tech-6d8168bcbb62d71a38-6:construction",
+    "tech-6d8168bcbb62d71a38-6:team_stated_reason",
+    "tech-6d8168bcbb62d71a38-6:engineering_analysis",
+    "tech-6d8168bcbb62d71a38-6:recommended_validation",
+    "tech-6d8168bcbb62d71a38-6:limitations",
+    "tech-6d8168bcbb62d71a38-7:construction",
+    "tech-6d8168bcbb62d71a38-7:team_stated_reason",
+    "tech-6d8168bcbb62d71a38-7:engineering_analysis",
+    "tech-6d8168bcbb62d71a38-7:recommended_validation",
+    "tech-6d8168bcbb62d71a38-7:limitations",
+    "param-75601cba410631181a-1",
+    "param-75601cba410631181a-2",
+    "param-75601cba410631181a-3",
+    "param-6d8168bcbb62d71a38-1",
+    "param-6d8168bcbb62d71a38-2",
+    "param-6d8168bcbb62d71a38-3",
+    "param-6d8168bcbb62d71a38-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

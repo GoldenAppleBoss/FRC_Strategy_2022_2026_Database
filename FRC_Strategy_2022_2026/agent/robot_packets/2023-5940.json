@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-5940",
+  "year": 2023,
+  "team": 5940,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 5940,
+    "robot": "Pain d'Epi",
+    "primary": [
+      "https://youtu.be/merzyA-beto",
+      "https://www.chiefdelphi.com/t/445374"
+    ],
+    "architecture": "Rear full-width acquisition, internally rigged elevator, pivoting arm and translating/rotating station forks.",
+    "subsystems": {
+      "intake": "Rear floor intake vectors cubes; compliant pivoting cone pickup reorients tipped cones for the gripper.",
+      "transfer": "Compliant cone handoff avoids adding an actively controlled orientation axis.",
+      "scoring": "Two-stage elevator with overextending carriage and internally routed Dyneema; pivoting arm carries the gripper.",
+      "drivetrain": "Swerve platform; exact module choice should be checked in released CAD.",
+      "endgame": "Spring-deployed forks translate and rotate through a cam/string arrangement, lifting the front before rotating the chassis.",
+      "controls": "AprilTag pose estimation from three cameras on an Orange Pi 5; retroreflective vision refines cone alignment and checks node occupancy."
+    },
+    "versions": [
+      "Angled-elevator alpha robot preceded later architecture.",
+      "Elevator gearing increased as placement-speed limits became clearer.",
+      "Interview also discusses later offseason vision changes; these are not labeled Championship configuration."
+    ],
+    "analysis": "Useful for acquisition on the opposite side from scoring and for separating coarse localization from final-placement sensing. The compliant handoff is a geometric solution to an orientation problem.",
+    "limits": [
+      "Interview was filmed after the main season; late-season versus offseason details require care."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-5940",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/445374/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/f/ff2d37ecbaa37ac513b2bcfdfbcfc6c4b18137f8_2_408x375.jpeg",
+        "post": 1,
+        "date": "2023-12-05T19:22:19.682Z",
+        "author": "KKrish100",
+        "context_tags": [],
+        "caption": "2023 team 5940 — source image from post 1 (2023-12-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "2f2ea9bf57ce596d20.jpg",
+        "id": "6e17929cfbb1e6708c",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2f2ea9bf57ce596d20.jpg"
+      },
+      {
+        "robot_id": "2023-5940",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/445374/9",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/a/1a6dd75e57c8c4768f0d71f77c0a90b9a7a2ba4b_2_690x461.jpeg",
+        "post": 9,
+        "date": "2023-12-06T03:59:57.559Z",
+        "author": "trevor_h",
+        "context_tags": [
+          "intake",
+          "pivot"
+        ],
+        "caption": "2023 team 5940 — source image from post 9 (2023-12-06). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "4198f9b3c2f6292db1.jpg",
+        "id": "b1444cd069e1db32a8",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/4198f9b3c2f6292db1.jpg"
+      },
+      {
+        "robot_id": "2023-5940",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/445374/9",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/4/d4896fe22c5cfd382417c1590c92ffa373ec1ea6_2_690x407.jpeg",
+        "post": 9,
+        "date": "2023-12-06T03:59:57.559Z",
+        "author": "trevor_h",
+        "context_tags": [
+          "intake",
+          "pivot"
+        ],
+        "caption": "2023 team 5940 — source image from post 9 (2023-12-06). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "afbb20efe02c5a3cd2.jpg",
+        "id": "7b136ff38eac78c6e3",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/afbb20efe02c5a3cd2.jpg"
+      }
+    ],
+    "source_post_count": 27,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-1",
+        "url": "https://5940.onshape.com/documents/a08a30adff511fc3f6559ad9/w/364883dad964afea8a87f8e7/e/5cb282f738d376113dfcf023?configuration=default&renderMode=0&uiState=656bf51f24d383272640993b",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "62bc3cc84766ca01dc"
+      },
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-1",
+        "url": "https://github.com/BREAD5940/2023-Onseason",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "77470d86bc353d7c6f"
+      },
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-21",
+        "url": "https://github.com/BREAD5940/2023-Onseason/blob/1c6cba97125d5bbbf5d3008c8d4385f8ec7a46c9/src/main/java/frc/robot/Robot.java#L114",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b491b0ed5fb9ba1030"
+      },
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-43",
+        "url": "https://docs.google.com/presentation/d/1h7VFjwIe5MtF-dhjFE_dFsAicv6iVwkUcQ5WZjwXDBo/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f34b394e0317b64a57"
+      },
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-47",
+        "url": "https://cad.onshape.com/documents/48833030e2e8c53c9af5c277/w/c650dda728d4c9dfbaec0fc7/e/02a578d6f3c13d96a3904274?renderMode=0&uiState=657e8215bfedac606a3c4b8a",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ad73c3f36f5ef14060"
+      },
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-53",
+        "url": "https://5940.onshape.com/documents/dee14b205b4629c493a3df74/w/e71399ff72bfe8f43ffd3d9f/e/52e4bcc46d2d74ce46935381",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "cc58ab87f8623807bf"
+      },
+      {
+        "robot_id": "2023-5940",
+        "discovery_post": "2023-5940-445374-53",
+        "url": "https://cad.onshape.com/help/Content/configurations.htm",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "34cefd0232e6d4cb84"
+      }
+    ],
+    "id": "2023-5940",
+    "team_name": "BREAD",
+    "epa_rank": 7,
+    "epa": 75.09,
+    "epa_pre_champs": 65.66,
+    "epa_breakdown": {
+      "total_points": 75.09,
+      "auto_points": 19.73,
+      "teleop_points": 44.09,
+      "endgame_points": 8.83,
+      "links_rp": 0.6581,
+      "activation_rp": 0.483,
+      "tiebreaker_points": 72.65,
+      "auto_charge_station_points": 6.68,
+      "auto_pieces": 2.46,
+      "teleop_grid_points": 28.45,
+      "bottom_pieces": 1.99,
+      "middle_pieces": 3.84,
+      "top_pieces": 4.48,
+      "cube_points": 16.9,
+      "cone_points": 23.47,
+      "links": 3.62,
+      "endgame_charge_station_points": 8.83,
+      "rp_1": 0.6581,
+      "rp_2": 0.483
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "025f473cbf5df4b9",
+      "95c89c0508f8b2a8"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-5940",
+      "year": 2023,
+      "team": 5940,
+      "epa_rank": 7,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"5940\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 11,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"5940\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-5940"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-5940",
+      "title": "Passive cone reorientation removes an axis only if the handoff remains tolerant",
+      "start_seconds": 76,
+      "end_seconds": 300,
+      "construction": "A two-stage elevator has an overextending carriage and internally routed Dyneema. The rear collector vectors cubes and uses a compliant cone handoff to correct orientation before the scoring gripper receives it.",
+      "team_stated_reason": "The source links internal line routing to avoiding snags. The retained account describes passive cone reorientation in place of another controlled axis.",
+      "engineering_analysis": "Moving orientation work into compliance reduces actuator/control count while making friction, piece pose and guide geometry decisive. Internal rigging protects lines but complicates inspection and replacement.",
+      "recommended_validation": "Test extreme cone approaches, worn pieces and line service access; distinguish smooth demo transfer from statistical handoff reliability.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-5940",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/merzyA-beto",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/445374"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 76,
+        "end_seconds": 300,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "merzyA-beto",
+          "sha256": "0b9e3401dfd4993458a8193cf6015ac25c9c9864ca7fa2dc4d69e681a8b8234f",
+          "caption_segments": 317,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-5940:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-5940",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-5940"
+      ],
+      "source_urls": [
+        "https://youtu.be/merzyA-beto"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-5940",
+      "title": "2023-5940 · Passive cone reorientation removes an axis only if the handoff remains tolerant",
+      "year": 2023,
+      "robot_id": "2023-5940",
+      "kind": "focused_technical_study",
+      "body": "# 2023-5940: Passive cone reorientation removes an axis only if the handoff remains tolerant\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA two-stage elevator has an overextending carriage and internally routed Dyneema. The rear collector vectors cubes and uses a compliant cone handoff to correct orientation before the scoring gripper receives it.\n\n## Team-stated reasoning or boundary\n\nThe source links internal line routing to avoiding snags. The retained account describes passive cone reorientation in place of another controlled axis.\n\n## Engineering interpretation — analyst inference\n\nMoving orientation work into compliance reduces actuator/control count while making friction, piece pose and guide geometry decisive. Internal rigging protects lines but complicates inspection and replacement.\n\n## Proposed validation — not performed\n\nTest extreme cone approaches, worn pieces and line service access; distinguish smooth demo transfer from statistical handoff reliability.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/merzyA-beto](https://youtu.be/merzyA-beto)\n- [https://www.chiefdelphi.com/t/445374](https://www.chiefdelphi.com/t/445374)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/merzyA-beto",
+        "https://www.chiefdelphi.com/t/445374"
+      ],
+      "path": "docs/research_continuation/2023-5940.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-5940",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/445374/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/f/ff2d37ecbaa37ac513b2bcfdfbcfc6c4b18137f8_2_408x375.jpeg",
+      "post": 1,
+      "date": "2023-12-05T19:22:19.682Z",
+      "author": "KKrish100",
+      "context_tags": [],
+      "caption": "2023 team 5940 — source image from post 1 (2023-12-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "2f2ea9bf57ce596d20.jpg",
+      "id": "6e17929cfbb1e6708c",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2f2ea9bf57ce596d20.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 408,
+      "height_px": 375,
+      "bytes": 34872,
+      "sha256": "527d5a567e73d1d59eaf161436cef4cdfae00a3f564a6bc7f15c78c69828ffb9",
+      "path_base": "corpus_root",
+      "reader_asset_id": "6e17929cfbb1e6708c",
+      "reader_url": "index.html#image=6e17929cfbb1e6708c",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-5940",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/445374/9",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/a/1a6dd75e57c8c4768f0d71f77c0a90b9a7a2ba4b_2_690x461.jpeg",
+      "post": 9,
+      "date": "2023-12-06T03:59:57.559Z",
+      "author": "trevor_h",
+      "context_tags": [
+        "intake",
+        "pivot"
+      ],
+      "caption": "2023 team 5940 — source image from post 9 (2023-12-06). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "4198f9b3c2f6292db1.jpg",
+      "id": "b1444cd069e1db32a8",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/4198f9b3c2f6292db1.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 461,
+      "bytes": 39244,
+      "sha256": "f6ae17c9d5509c43f5ac595828b88d9aa3bc11fee9f192762c5cbb8a5268043b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b1444cd069e1db32a8",
+      "reader_url": "index.html#image=b1444cd069e1db32a8",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-5940",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/445374/9",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/4/d4896fe22c5cfd382417c1590c92ffa373ec1ea6_2_690x407.jpeg",
+      "post": 9,
+      "date": "2023-12-06T03:59:57.559Z",
+      "author": "trevor_h",
+      "context_tags": [
+        "intake",
+        "pivot"
+      ],
+      "caption": "2023 team 5940 — source image from post 9 (2023-12-06). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "afbb20efe02c5a3cd2.jpg",
+      "id": "7b136ff38eac78c6e3",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/afbb20efe02c5a3cd2.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 407,
+      "bytes": 26628,
+      "sha256": "215ac49e3fe286448b18fc6dc1c8248e01a4984ef08160cb3c889cf2121a97f1",
+      "path_base": "corpus_root",
+      "reader_asset_id": "7b136ff38eac78c6e3",
+      "reader_url": "index.html#image=7b136ff38eac78c6e3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-5940",
+    "year": 2023,
+    "team": 5940,
+    "epa_rank": 7,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"5940\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 11,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"5940\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-5940:construction",
+    "study6-2023-5940:team_stated_reason",
+    "study6-2023-5940:engineering_analysis",
+    "study6-2023-5940:recommended_validation",
+    "study6-2023-5940:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-2974",
+  "year": 2024,
+  "team": 2974,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 2974,
+    "robot": "Shosty",
+    "primary": [
+      "https://www.chiefdelphi.com/t/452466"
+    ],
+    "architecture": "Protected pickup and short transfer into a pivoting shooter; winch climb and trap developed later.",
+    "subsystems": {
+      "drivetrain": "SDS MK4i: Kraken drive, Falcon steering.",
+      "intake": "Under-bumper intake; carbon rollers replaced early polycarbonate; spare assembly rebuilt after impact damage.",
+      "transfer": "Curved guides and powered roller replace slower, note-damaging conveyor concepts.",
+      "scoring": "Top/bottom launcher with increasingly stiff pivot support and external position sensing.",
+      "endgame": "Winch hooks, compliant guides and later stabilizer/trap-door work; early shooter-as-climber proposal was superseded.",
+      "controls": "Choreo/PathPlanner, characterization, procedural autos, state-machine logs and added See3CAM before DCMP."
+    },
+    "versions": [
+      "March: damper added to reduce settling; pivot ratio and belts changed before DCMP. Worlds logs diagnosed belt skipping. GRITS intake damage required emergency structural support."
+    ],
+    "analysis": "Especially valuable PCH chronology: mechanical settling time was a cycle-time bottleneck; logs distinguished encoder disagreement from a simple aiming-tuning problem. The mic'd match is operational evidence, not a technical walkthrough.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context.",
+      "Prior w0AFxJFMOqg link is match/driver audio, not a technical interview; construction uses team build thread 452466."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-2974",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/452466/9",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/8/78e34155676ae42886f92d58c37dac5711babeed_2_690x392.jpeg",
+        "post": 9,
+        "date": "2024-02-18T22:13:21.616Z",
+        "author": "madelinep",
+        "context_tags": [
+          "climb",
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2024 team 2974 — source image from post 9 (2024-02-18). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7eecef4ec2d534f03d.jpg",
+        "id": "453c362eb221d50279",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7eecef4ec2d534f03d.jpg"
+      }
+    ],
+    "source_post_count": 27,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-1",
+        "url": "https://github.com/waltonrobotics/crescendo",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ec9989648c2e4ab30b"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-11",
+        "url": "https://github.com/WaltonRobotics/Crescendo/blob/main/src/main/java/frc/robot/subsystems/shooter/Aim.java#L121",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a2e84e461ffe9ca0a4"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-11",
+        "url": "https://github.com/WaltonRobotics/Crescendo/blob/main/src/main/java/frc/robot/subsystems/shooter/Aim.java#L117",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5e977bc09a746379bb"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-11",
+        "url": "https://github.com/Mechanical-Advantage/RobotCode2024/blob/main/src/main/java/org/littletonrobotics/frc2024/util/shooting/ShotCalculator.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5124e3eb60b880faf1"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-11",
+        "url": "https://github.com/WaltonRobotics/Crescendo/blob/main/src/main/java/frc/robot/subsystems/shooter/Shooter.java#L145",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "dbd27ea445f282782b"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-17",
+        "url": "https://drive.google.com/file/d/19AIjp5zkXLIHTMvwlKXxUgKEWdO49AvQ/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "9bc87e0763b6cd55ba"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-20",
+        "url": "https://drive.google.com/file/d/1dhZc-UTz4QahWyLGRqURvKwnq1NRKpj8/view?usp=drive_link",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "14a49cbf75d49752a6"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-23",
+        "url": "https://github.com/WaltonRobotics/Crescendo/blob/1e75ae0f770f851d7191837b4db22ff33b887455/docs/superstructure.md",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "faf0dd836667de1371"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-23",
+        "url": "https://github.com/WaltonRobotics/Crescendo/blob/1e75ae0f770f851d7191837b4db22ff33b887455/src/main/java/frc/robot/subsystems/Superstructure.java#L225",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b5e93eaa6325f0f9ce"
+      },
+      {
+        "robot_id": "2024-2974",
+        "discovery_post": "2024-2974-452466-23",
+        "url": "https://github.com/WaltonRobotics/Crescendo/blob/1e75ae0f770f851d7191837b4db22ff33b887455/src/main/java/frc/util/WaltRangeChecker.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "1ea62ee271363fa5a8"
+      }
+    ],
+    "id": "2024-2974",
+    "team_name": "Walton Robotics",
+    "epa_rank": 25,
+    "epa": 46.46,
+    "epa_pre_champs": 46.45,
+    "epa_breakdown": {
+      "total_points": 46.46,
+      "auto_points": 14.76,
+      "teleop_points": 30.5,
+      "endgame_points": 1.21,
+      "melody_rp": 0.7779,
+      "ensemble_rp": 0.0941,
+      "tiebreaker_points": 0.26,
+      "auto_leave_points": 1.65,
+      "auto_note_points": 13.11,
+      "teleop_note_points": 30.5,
+      "speaker_points": 39.21,
+      "amplified_notes": 5.18,
+      "endgame_park_points": 0.51,
+      "endgame_on_stage_points": 0.85,
+      "endgame_harmony_points": 0.22,
+      "endgame_trap_points": -0.43,
+      "endgame_spotlight_points": 0.05,
+      "rp_1": 0.7779,
+      "rp_2": 0.0941,
+      "total_note_points": 43.61
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "71cbad9548f63b69",
+      "4e78a14bf61afb71"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-2974",
+      "year": 2024,
+      "team": 2974,
+      "epa_rank": 25,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2974\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 16,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2974\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-2974"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-2974",
+      "title": "Pivot-settle delay and belt skipping require dated evidence",
+      "start_seconds": 0,
+      "end_seconds": 0,
+      "construction": "The build thread records replacing a slower, note-damaging conveyor with a more direct curved feed, carbon-roller shooter changes, replaceable intake assemblies and pivot stiffening. Later posts describe a friction damper, changing pivot belts, a ratio change from 125:1 to 100:1, and Worlds logs exposing belt skipping when the arm extended.",
+      "team_stated_reason": "The team explicitly ties the direct feed to speed/note preservation, the damper to waiting several seconds for the angle to settle, and the revised ratio to faster rotation. Log comparison between motor and external encoder exposed a mechanical slip rather than merely a software aiming error.",
+      "engineering_analysis": "This history explains why commanded angle, measured motor angle and true launcher angle are different quantities. Increasing control gains cannot reliably fix a slipping transmission. The fastest pivot also is not the one with the shortest complete aim-to-shot time if it oscillates afterward. The early proposal to climb using the shooter must remain a proposal unless later installation evidence supports it.",
+      "recommended_validation": "Compare motor and external encoder trajectories under arm extension, measure request-to-exit latency, and inspect intake damage after contact.",
+      "limitations": "First-party build posts in topic 452466, especially 2, 5, 21, 27 and 32. The previously linked w0AFxJFMOqg video is match/driver audio, not a technical interview; it is rejected as construction evidence here.",
+      "id": "study6-2024-2974",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.chiefdelphi.com/t/452466",
+      "additional_sources": [
+        "https://youtu.be/w0AFxJFMOqg"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 0,
+        "end_seconds": 0,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.",
+      "rejected_video_source": "w0AFxJFMOqg: match/driver audio, not construction evidence"
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-2974:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-2974",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-2974"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/452466"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-2974",
+      "title": "2024-2974 · Pivot-settle delay and belt skipping require dated evidence",
+      "year": 2024,
+      "robot_id": "2024-2974",
+      "kind": "focused_technical_study",
+      "body": "# 2024-2974: Pivot-settle delay and belt skipping require dated evidence\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe build thread records replacing a slower, note-damaging conveyor with a more direct curved feed, carbon-roller shooter changes, replaceable intake assemblies and pivot stiffening. Later posts describe a friction damper, changing pivot belts, a ratio change from 125:1 to 100:1, and Worlds logs exposing belt skipping when the arm extended.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly ties the direct feed to speed/note preservation, the damper to waiting several seconds for the angle to settle, and the revised ratio to faster rotation. Log comparison between motor and external encoder exposed a mechanical slip rather than merely a software aiming error.\n\n## Engineering interpretation — analyst inference\n\nThis history explains why commanded angle, measured motor angle and true launcher angle are different quantities. Increasing control gains cannot reliably fix a slipping transmission. The fastest pivot also is not the one with the shortest complete aim-to-shot time if it oscillates afterward. The early proposal to climb using the shooter must remain a proposal unless later installation evidence supports it.\n\n## Proposed validation — not performed\n\nCompare motor and external encoder trajectories under arm extension, measure request-to-exit latency, and inspect intake damage after contact.\n\n## Limits\n\nFirst-party build posts in topic 452466, especially 2, 5, 21, 27 and 32. The previously linked w0AFxJFMOqg video is match/driver audio, not a technical interview; it is rejected as construction evidence here.\n\n## Sources and navigation\n\n- [https://www.chiefdelphi.com/t/452466](https://www.chiefdelphi.com/t/452466)\n- [https://youtu.be/w0AFxJFMOqg](https://youtu.be/w0AFxJFMOqg)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/452466",
+        "https://youtu.be/w0AFxJFMOqg"
+      ],
+      "path": "docs/research_continuation/2024-2974.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-2974",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/452466/9",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/8/78e34155676ae42886f92d58c37dac5711babeed_2_690x392.jpeg",
+      "post": 9,
+      "date": "2024-02-18T22:13:21.616Z",
+      "author": "madelinep",
+      "context_tags": [
+        "climb",
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2024 team 2974 — source image from post 9 (2024-02-18). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7eecef4ec2d534f03d.jpg",
+      "id": "453c362eb221d50279",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7eecef4ec2d534f03d.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 392,
+      "bytes": 82778,
+      "sha256": "d50a12b00a6c204a3badc42cfe18db2d78f6167c1c62ceb17b0c4df9ca1767e2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "453c362eb221d50279",
+      "reader_url": "index.html#image=453c362eb221d50279",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-2974",
+    "year": 2024,
+    "team": 2974,
+    "epa_rank": 25,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2974\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 16,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2974\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-2974:construction",
+    "study6-2024-2974:team_stated_reason",
+    "study6-2024-2974:engineering_analysis",
+    "study6-2024-2974:recommended_validation",
+    "study6-2024-2974:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

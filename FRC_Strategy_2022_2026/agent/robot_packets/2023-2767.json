@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-2767",
+  "year": 2023,
+  "team": 2767,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 2767,
+    "robot": "Snake Eyes",
+    "primary": [
+      "https://youtu.be/ngHZf3pnI14"
+    ],
+    "architecture": "Tilting carbon-fiber elevator, roller gripper, separate wide cube intake and custom swerve.",
+    "subsystems": {
+      "drivetrain": "Custom lightweight swerve; impact compliance moved from wheel suspension to the mounting structure.",
+      "intake": "Wide belt collector for cubes; cones use the upper gripper.",
+      "transfer": "Cube intake presents pieces to powered gripper; escape space avoids trapping an extra piece.",
+      "scoring": "Carbon-fiber elevator tilts via sector gear to extend effective reach.",
+      "endgame": "Gyro-based station balance under development in the early-event interview.",
+      "controls": "Piece sensing, preset motion and autonomous cone/cube programs."
+    },
+    "versions": [
+      "Gripper evolved from gripping forks/material experiments to rollers. End-effector drive gears broke and were replaced by belts. Later CAD/code release documents the season robot."
+    ],
+    "analysis": "Familiar fabrication methods can justify an elevator choice. The complete lesson includes stiffness, weight, retention and replacement of a failing transmission, rather than just the carbon-fiber material.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-2767",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/437202/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/a/ba615cd9484f08616ecd5928ac5ced1524611a00_2_690x427.jpeg",
+        "post": 2,
+        "date": "2023-05-17T00:59:09.514Z",
+        "author": "ElliotS",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2023 team 2767 — source image from post 2 (2023-05-17). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "03f77868a76966018f.jpg",
+        "id": "b083474f9f669dfcce",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/03f77868a76966018f.jpg"
+      }
+    ],
+    "source_post_count": 18,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-2767",
+        "discovery_post": "2023-2767-437202-1",
+        "url": "https://cad.onshape.com/documents/04a54b2035c31e128e1dfced/w/505caf917c2302fdb0b5bdd9/e/4c7eedc3e2c9f9a4836827bf?renderMode=0&uiState=646420daf044046083189339",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e3a1d4304f3a8b662d"
+      },
+      {
+        "robot_id": "2023-2767",
+        "discovery_post": "2023-2767-437202-1",
+        "url": "https://github.com/strykeforce/chargedup",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "48c8251b6a742aaee9"
+      }
+    ],
+    "id": "2023-2767",
+    "team_name": "Stryke Force",
+    "epa_rank": 27,
+    "epa": 68.3,
+    "epa_pre_champs": 65.21,
+    "epa_breakdown": {
+      "total_points": 68.3,
+      "auto_points": 18.93,
+      "teleop_points": 40.11,
+      "endgame_points": 8.1,
+      "links_rp": 0.6641,
+      "activation_rp": 0.6088,
+      "tiebreaker_points": 67.15,
+      "auto_charge_station_points": 7.03,
+      "auto_pieces": 2.3,
+      "teleop_grid_points": 24.99,
+      "bottom_pieces": 1.89,
+      "middle_pieces": 3.9,
+      "top_pieces": 3.8,
+      "cube_points": 13.12,
+      "cone_points": 23.65,
+      "links": 3.25,
+      "endgame_charge_station_points": 8.1,
+      "rp_1": 0.6641,
+      "rp_2": 0.6088
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "1337406596c66720"
+    ],
+    "tags": [
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-2767",
+      "year": 2023,
+      "team": 2767,
+      "epa_rank": 27,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2767\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 10,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2767\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-2767"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-2767",
+      "title": "A familiar carbon elevator reduces development uncertainty, not every failure mode",
+      "start_seconds": 78,
+      "end_seconds": 365,
+      "construction": "A wide cube collector feeds the upper gripper while cones use direct acquisition. A carbon elevator tilts on a sector mechanism; an escape region avoids trapping a second piece.",
+      "team_stated_reason": "The team explicitly cites prior carbon-elevator experience, limited build time and a desire for reliable fast scoring. Low mass addresses concern about crossing the charge station with a tall structure.",
+      "engineering_analysis": "Mechanism familiarity is a legitimate resource constraint. Tilting extends effective reach but couples scoring geometry to support-polygon and drivetrain pitch. An extra-piece escape path must preserve control of the intended piece and the season’s possession rules.",
+      "recommended_validation": "Test charge-station pitch with the mechanism safely stowed, tilt stiffness and rejection of an unintended extra piece.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-2767",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/ngHZf3pnI14",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 78,
+        "end_seconds": 365,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "ngHZf3pnI14",
+          "sha256": "85103be22c6d2ad38667df9a3da6400df9e2140c9f72d74b69809fcdd081285c",
+          "caption_segments": 331,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-2767:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-2767",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-2767"
+      ],
+      "source_urls": [
+        "https://youtu.be/ngHZf3pnI14"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-2767",
+      "title": "2023-2767 · A familiar carbon elevator reduces development uncertainty, not every failure mode",
+      "year": 2023,
+      "robot_id": "2023-2767",
+      "kind": "focused_technical_study",
+      "body": "# 2023-2767: A familiar carbon elevator reduces development uncertainty, not every failure mode\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA wide cube collector feeds the upper gripper while cones use direct acquisition. A carbon elevator tilts on a sector mechanism; an escape region avoids trapping a second piece.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly cites prior carbon-elevator experience, limited build time and a desire for reliable fast scoring. Low mass addresses concern about crossing the charge station with a tall structure.\n\n## Engineering interpretation — analyst inference\n\nMechanism familiarity is a legitimate resource constraint. Tilting extends effective reach but couples scoring geometry to support-polygon and drivetrain pitch. An extra-piece escape path must preserve control of the intended piece and the season’s possession rules.\n\n## Proposed validation — not performed\n\nTest charge-station pitch with the mechanism safely stowed, tilt stiffness and rejection of an unintended extra piece.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/ngHZf3pnI14](https://youtu.be/ngHZf3pnI14)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/ngHZf3pnI14"
+      ],
+      "path": "docs/research_continuation/2023-2767.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-2767",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/437202/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/a/ba615cd9484f08616ecd5928ac5ced1524611a00_2_690x427.jpeg",
+      "post": 2,
+      "date": "2023-05-17T00:59:09.514Z",
+      "author": "ElliotS",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2023 team 2767 — source image from post 2 (2023-05-17). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "03f77868a76966018f.jpg",
+      "id": "b083474f9f669dfcce",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/03f77868a76966018f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 427,
+      "bytes": 25819,
+      "sha256": "550f79dea9914103983c4cb6dd5f1147fbe5f60f0ba860704ee851c7e768caef",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b083474f9f669dfcce",
+      "reader_url": "index.html#image=b083474f9f669dfcce",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-2767",
+    "year": 2023,
+    "team": 2767,
+    "epa_rank": 27,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2767\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 10,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2767\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-2767:construction",
+    "study6-2023-2767:team_stated_reason",
+    "study6-2023-2767:engineering_analysis",
+    "study6-2023-2767:recommended_validation",
+    "study6-2023-2767:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

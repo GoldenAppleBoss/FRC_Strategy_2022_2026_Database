@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "equal_tables": 24,
+  "differences": [],
+  "row_counts": {
+    "cad_code_links": 375,
+    "context_documents": 40,
+    "einstein_reviews": 80,
+    "binder_sources": 29,
+    "source_posts": 3499,
+    "robot_sources": 513,
+    "subsystems": 750,
+    "technical_parameters": 121,
+    "season_epa": 17330,
+    "technical_mechanisms": 129,
+    "seasons": 5,
+    "events": 75,
+    "video_reviews": 44,
+    "tower_summary_2026": 8,
+    "matches": 7995,
+    "robot_dossiers": 125,
+    "versions": 207,
+    "selection_audit": 154,
+    "mechanism_images": 504,
+    "sources": 4259,
+    "benchmarks": 58,
+    "binder_audit": 125,
+    "team_events": 4021,
+    "metadata": 51
+  },
+  "scope": "All normalized exported tables; FTS internal tables are derived separately."
+}

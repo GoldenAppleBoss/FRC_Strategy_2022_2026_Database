@@ -1,0 +1,437 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-6329",
+  "year": 2026,
+  "team": 6329,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 6329,
+    "robot": "Roman I → Roman II",
+    "primary": [
+      "https://youtu.be/GMLfgvYYfnU",
+      "https://www.chiefdelphi.com/t/515342"
+    ],
+    "architecture": "Rebuild from spindexer/turret to wide drum, retaining impact-folding four-bar collection.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification unresolved here.",
+      "intake": "Long-arm four-bar folds under impact; revised compact links, stub rollers and cast compliant wheels.",
+      "transfer": "Roman I spindexer and cantilevered uptake; Roman II full-width roller floor pivots about intake dead shaft for service. Low-compression UHMW feed plate.",
+      "scoring": "Roman I turret roughly 8 BPS; Roman II drum roughly 23 BPS per interview. Protected transmission and adjustable hood.",
+      "endgame": "Endgame installation not established in reviewed sources.",
+      "controls": "Third shooter-facing Limelight supplements side cameras; independent pose/range control."
+    },
+    "versions": [
+      "Roman I and II have separately released CAD/binders.",
+      "Net/rebuild increases reported storage from about 35 to 60–70.",
+      "Team notes four-bar stow was worse for trench autonomous but fit their experience/manufacturing."
+    ],
+    "analysis": "This is a strong example of choosing a feasible architecture over a nominally optimal one. The team accepted a route disadvantage to get a robust, manufacturable robot working early enough for practice and power validation.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-6329",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515342/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/b/a/4ba0cc8bb0ffeb6d538cd78254cb21728230d1dc_2_647x500.png",
+        "post": 1,
+        "date": "2026-03-02T14:21:23.545Z",
+        "author": "jboynton6329",
+        "context_tags": [],
+        "caption": "2026 team 6329 — source image from post 1 (2026-03-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e61333bf9bcb58696a.jpg",
+        "id": "c869bac363b20933ff",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e61333bf9bcb58696a.jpg"
+      },
+      {
+        "robot_id": "2026-6329",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515342/20",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/1/7/917e70c254ed4c0bc228b59d5d7ce763a3229df4_2_345x231.jpeg",
+        "post": 20,
+        "date": "2026-05-22T01:09:50.873Z",
+        "author": "w1zxrd",
+        "context_tags": [
+          "hopper",
+          "intake"
+        ],
+        "caption": "2026 team 6329 — source image from post 20 (2026-05-22). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "03ddc8c1bff636b22e.jpg",
+        "id": "373dc315416f56099e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/03ddc8c1bff636b22e.jpg"
+      },
+      {
+        "robot_id": "2026-6329",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515342/20",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/6/b/c6bfd80c245e6c492311027de71ba487521c47b7_2_660x500.png",
+        "post": 20,
+        "date": "2026-05-22T01:09:50.873Z",
+        "author": "w1zxrd",
+        "context_tags": [
+          "hopper",
+          "intake"
+        ],
+        "caption": "2026 team 6329 — source image from post 20 (2026-05-22). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "fe1e8c24d56619c98c.jpg",
+        "id": "259d88b0c105905064",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/fe1e8c24d56619c98c.jpg"
+      }
+    ],
+    "source_post_count": 11,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-6329",
+        "discovery_post": "2026-6329-515342-13",
+        "url": "https://cad.onshape.com/documents/014716f840fdbd882c1d691f/w/6f344cfa15ef9b0a4376698f/e/cd9bc0812c3416a4d99a3e17",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "97da60154ab124c392"
+      },
+      {
+        "robot_id": "2026-6329",
+        "discovery_post": "2026-6329-515342-13",
+        "url": "https://cad.onshape.com/documents/3b751a2d7ebe31cad43f1ec9/w/018d7ee027fd82ca76baee33/e/a05e47ce92279ac81a17313e",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "489147d9807e7b7f82"
+      },
+      {
+        "robot_id": "2026-6329",
+        "discovery_post": "2026-6329-515342-23",
+        "url": "https://docs.google.com/document/d/1WWDH0rUOLJbR8LoLh9JcsIdaV_GdEb8dIj6q-8spYJw/edit?tab=t.0#heading=h.v17ebj8h7b1m",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "459e1df593bcf6e431"
+      }
+    ],
+    "id": "2026-6329",
+    "team_name": "The Bucks' Wrath",
+    "epa_rank": 22,
+    "epa": 260.04,
+    "epa_pre_champs": 254.15,
+    "epa_breakdown": {
+      "total_points": 260.04,
+      "auto_points": 58.72,
+      "teleop_points": 141.73,
+      "endgame_points": 59.58,
+      "energized_rp": 0.5533,
+      "supercharged_rp": 0.8248,
+      "traversal_rp": -0.34173,
+      "tiebreaker_points": 260.04,
+      "auto_fuel": 59.02,
+      "auto_tower": -0.29,
+      "transition_fuel": 29.52,
+      "first_shift_fuel": 58.55,
+      "second_shift_fuel": 53.67,
+      "endgame_fuel": 59.7,
+      "endgame_tower": -0.12,
+      "rp_1": 0.5533,
+      "rp_2": 0.8248,
+      "rp_3": -0.34173,
+      "teleop_fuel": 201.44,
+      "total_fuel": 260.46,
+      "total_tower": -0.41
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "595efd6c09d90879",
+      "b51d4fcfa98b9e5c"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "four-bar",
+      "spindexer / DYE",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-6329",
+      "year": 2026,
+      "team": 6329,
+      "epa_rank": 22,
+      "status": "candidate_unavailable_nonrobot_or_unverified",
+      "search": {
+        "query": "\"6329\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 29,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"6329\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [
+        {
+          "id": "7a7e0a4611c12ba4f1",
+          "url": "https://www.chiefdelphi.com/uploads/short-url/aiIYU0Pv6kleLK5yW5mDDAaE2n9.pdf",
+          "error": null,
+          "discovery": "Targeted search result; robot identity unverified",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false,
+      "identity_correction": "Candidate aiIYU0... identifies Valor 6800 DOWNPOUR; association with 6329 rejected and source reassigned to 2026-6800."
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-6329"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-6329",
+      "title": "Roman I and Roman II solve different feed problems",
+      "start_seconds": 75,
+      "end_seconds": 420,
+      "construction": "Roman I uses a rotating floor/center drum and turret; first-party replies describe a roughly 20.75-inch outer drum and 6-inch center, with no fuel compression. Roman II replaces that path with a full-width roller floor and drum shooter. Its floor pivots about an intake dead shaft for electronics access; long four-bar arms fold under impact. The interview contrasts roughly 8 BPS before the rebuild with a reported 23 afterward.",
+      "team_stated_reason": "The team ties the rebuild to throughput limitations, the net to substantially greater retained inventory, and compact/flexible intake members to avoiding repeated bending. The release specifically credits 5687’s advice with setting Roman II in motion.",
+      "engineering_analysis": "The strategic change is not simply a faster wheel. Storage, feed width, shooting heading, electrical packaging and intake structure changed together. A comparison should include time spent aiming and avoiding defense, not only an unloaded discharge rate. The original no-compression spindexer and later low-compression drum entry must not be merged into an imaginary hybrid. Service access is especially useful after a rebuild because new routing and wiring require frequent inspection.",
+      "recommended_validation": "Compare complete-cycle output, residual inventory and defended aiming cost for both versions. Verify rate test conditions, and inspect shaft alignment after lifting the floor for service.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-6329",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/GMLfgvYYfnU",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/515342"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 420,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "GMLfgvYYfnU",
+          "sha256": "fbef4fda33a8c490f1d73319a7c7481b2fcd714c14ae9023400019652637068d",
+          "caption_segments": 217,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-6329:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-6329",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-6329"
+      ],
+      "source_urls": [
+        "https://youtu.be/GMLfgvYYfnU"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-6329",
+      "title": "2026-6329 · Roman I and Roman II solve different feed problems",
+      "year": 2026,
+      "robot_id": "2026-6329",
+      "kind": "focused_technical_study",
+      "body": "# 2026-6329: Roman I and Roman II solve different feed problems\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nRoman I uses a rotating floor/center drum and turret; first-party replies describe a roughly 20.75-inch outer drum and 6-inch center, with no fuel compression. Roman II replaces that path with a full-width roller floor and drum shooter. Its floor pivots about an intake dead shaft for electronics access; long four-bar arms fold under impact. The interview contrasts roughly 8 BPS before the rebuild with a reported 23 afterward.\n\n## Team-stated reasoning or boundary\n\nThe team ties the rebuild to throughput limitations, the net to substantially greater retained inventory, and compact/flexible intake members to avoiding repeated bending. The release specifically credits 5687’s advice with setting Roman II in motion.\n\n## Engineering interpretation — analyst inference\n\nThe strategic change is not simply a faster wheel. Storage, feed width, shooting heading, electrical packaging and intake structure changed together. A comparison should include time spent aiming and avoiding defense, not only an unloaded discharge rate. The original no-compression spindexer and later low-compression drum entry must not be merged into an imaginary hybrid. Service access is especially useful after a rebuild because new routing and wiring require frequent inspection.\n\n## Proposed validation — not performed\n\nCompare complete-cycle output, residual inventory and defended aiming cost for both versions. Verify rate test conditions, and inspect shaft alignment after lifting the floor for service.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/GMLfgvYYfnU](https://youtu.be/GMLfgvYYfnU)\n- [https://www.chiefdelphi.com/t/515342](https://www.chiefdelphi.com/t/515342)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/GMLfgvYYfnU",
+        "https://www.chiefdelphi.com/t/515342"
+      ],
+      "path": "docs/research_continuation/2026-6329.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-6329",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515342/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/b/a/4ba0cc8bb0ffeb6d538cd78254cb21728230d1dc_2_647x500.png",
+      "post": 1,
+      "date": "2026-03-02T14:21:23.545Z",
+      "author": "jboynton6329",
+      "context_tags": [],
+      "caption": "2026 team 6329 — source image from post 1 (2026-03-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e61333bf9bcb58696a.jpg",
+      "id": "c869bac363b20933ff",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e61333bf9bcb58696a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 55159,
+      "sha256": "efccce2afa904cd7d25eb4d0b52a5dc286c59912a0910d7eed5ae139caed9480",
+      "path_base": "corpus_root",
+      "reader_asset_id": "c869bac363b20933ff",
+      "reader_url": "index.html#image=c869bac363b20933ff",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-6329",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515342/20",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/1/7/917e70c254ed4c0bc228b59d5d7ce763a3229df4_2_345x231.jpeg",
+      "post": 20,
+      "date": "2026-05-22T01:09:50.873Z",
+      "author": "w1zxrd",
+      "context_tags": [
+        "hopper",
+        "intake"
+      ],
+      "caption": "2026 team 6329 — source image from post 20 (2026-05-22). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "03ddc8c1bff636b22e.jpg",
+      "id": "373dc315416f56099e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/03ddc8c1bff636b22e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 345,
+      "height_px": 231,
+      "bytes": 16659,
+      "sha256": "e81d213adc6f705a50118141b20699374967655ce4e011995728536467a25e50",
+      "path_base": "corpus_root",
+      "reader_asset_id": "373dc315416f56099e",
+      "reader_url": "index.html#image=373dc315416f56099e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-6329",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515342/20",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/6/b/c6bfd80c245e6c492311027de71ba487521c47b7_2_660x500.png",
+      "post": 20,
+      "date": "2026-05-22T01:09:50.873Z",
+      "author": "w1zxrd",
+      "context_tags": [
+        "hopper",
+        "intake"
+      ],
+      "caption": "2026 team 6329 — source image from post 20 (2026-05-22). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "fe1e8c24d56619c98c.jpg",
+      "id": "259d88b0c105905064",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/fe1e8c24d56619c98c.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 660,
+      "height_px": 500,
+      "bytes": 15319,
+      "sha256": "d8bcf9d904d00a59bd7bb75d571d77b1268a9cd7bd164f2b681853032f322f4a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "259d88b0c105905064",
+      "reader_url": "index.html#image=259d88b0c105905064",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-6329",
+    "year": 2026,
+    "team": 6329,
+    "epa_rank": 22,
+    "status": "candidate_unavailable_nonrobot_or_unverified",
+    "search": {
+      "query": "\"6329\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 29,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"6329\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [
+      {
+        "id": "7a7e0a4611c12ba4f1",
+        "url": "https://www.chiefdelphi.com/uploads/short-url/aiIYU0Pv6kleLK5yW5mDDAaE2n9.pdf",
+        "error": null,
+        "discovery": "Targeted search result; robot identity unverified",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false,
+    "identity_correction": "Candidate aiIYU0... identifies Valor 6800 DOWNPOUR; association with 6329 rejected and source reassigned to 2026-6800."
+  },
+  "claim_ids": [
+    "study6-2026-6329:construction",
+    "study6-2026-6329:team_stated_reason",
+    "study6-2026-6329:engineering_analysis",
+    "study6-2026-6329:recommended_validation",
+    "study6-2026-6329:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

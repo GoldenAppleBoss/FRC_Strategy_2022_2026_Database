@@ -1,0 +1,1339 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-5940",
+  "year": 2024,
+  "team": 5940,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 5940,
+    "robot": "Roti",
+    "primary": [
+      "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view"
+    ],
+    "architecture": "Shooter-on-elevator architecture combines under-stage travel, elevated shots and shared climbing/scoring actuation.",
+    "subsystems": {
+      "drivetrain": "WCP Swerve X inverted modules with Krakens; footprint extended by the intake.",
+      "intake": "Full-width under-bumper rollers and four centering wheels.",
+      "transfer": "Conical/mecanum feed spreads and positions the note; passive rollers reduce friction.",
+      "scoring": "Differential-speed launcher on a counterbalanced pivot; elevator supplies speaker/amp/trap height.",
+      "endgame": "Elevator hooks pull onto chain; lower passive hooks take the load so elevator can rise again for trap.",
+      "controls": "Direct pivot CANcoder and damping gas springs improve control; software details need the separate code release."
+    },
+    "versions": [
+      "Binder updated April 27 describes competition architecture. Full intermediate revision sequence is not separately enumerated."
+    ],
+    "analysis": "A particularly clear functional reuse: the elevator first lifts the robot, then transfers the load to passive hooks and becomes a scoring elevator again. Stage clearance and shot-over-defense height coexist.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "# 2024-5940: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## ROTI: under-bumper pickup feeds a movable shooter\n\nVersion: ROTI. [PDF p7](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7)\n\n**Published construction:** Full-width intake with pickup rollers and centering wheels.\n\n**Team-stated reason or evidence boundary:** Center notes before they enter the shooter.\n\n**Engineering analysis — original inference:** The collector has to supply a consistent location and shape to a scorer whose height and angle can change. Centering at the floor reduces the uncertainty the moving receiver must handle. A shallow pickup can preserve chassis protection but needs clearance around module and frame structure. Surface speed should capture a note without throwing it past the receiving contact. The effective system includes the handoff state that determines when the elevator may move away.\n\n**Proposed validation — not a completed test:** Test off-center acquisition and interrupted handoff while varying the receiver’s initial height and angle.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ROTI: one lift creates scoring height and endgame capability\n\nVersion: ROTI. [PDF p5](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=5) · [PDF p8](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8) · [PDF p9](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=9)\n\n**Published construction:** Continuous rope lift with overextending carriage; passive lower hooks retain the chain after initial lift.\n\n**Team-stated reason or evidence boundary:** Use one shooter for speaker, amp and trap.\n\n**Engineering analysis — original inference:** Moving the shooter upward changes its release geometry and can improve defended shot access, while stowing preserves travel routes under the stage. That broad capability costs raised mass and a multi-state handoff. The passive lower hooks are central to the climb: they take over the suspension load so the elevator can extend again for trap scoring. Without that load transfer, the same actuator cannot independently hold the robot and reposition the scorer. This is an architectural sequence rather than an elevator plus an unrelated climber.\n\n**Proposed validation — not a completed test:** Verify passive-hook engagement before re-extension; test full-height stability and stowed route clearance with the actual scorer mass.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ROTI: counterbalanced pivot and shaped note feed\n\nVersion: ROTI. [PDF p10](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10) · [PDF p11](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11)\n\n**Published construction:** Gas-spring counterbalance; output-angle sensing; asymmetric launch speeds; conical/mecanum feeder contacts.\n\n**Team-stated reason or evidence boundary:** One shooter serves several release geometries.\n\n**Engineering analysis — original inference:** A counterbalance reduces gravitational torque but changes the motor’s required effort across the angular range. Sensing the output helps distinguish gearbox motion from actual scorer angle. Conical and mecanum feed contacts can shape and spread the note before launch; their useful effect depends on how the flexible ring deforms. The front roller angle also affects trap delivery, so optimizing only speaker shots may degrade another required mode. A recommendation needs the complete scoring envelope and mode transition tests.\n\n**Proposed validation — not a completed test:** Measure output-angle hysteresis and shot dispersion in every scoring mode, with both new and damaged notes.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 1.3:1 pickup; 19.6-ft/s surface; 4.8:1 centering | [Source p7](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7) |\n| Lift | 10.37:1; two X60s; 1.5-in spool | [Source p8](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8) |\n| Pivot | 114.58:1; two 50-lbf gas springs | [Source p10](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10) |\n| Shooter | 4-in wheels; 2:1 upduction source notation | [Source p11](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2024-5940",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/466729/9",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/a/5a36f537ea842511a773d717f9f684a3245ba1a7_2_315x500.jpeg",
+        "post": 9,
+        "date": "2024-05-22T21:10:12.406Z",
+        "author": "Britt",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — source image from post 9 (2024-05-22). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d0af4253a9e6cfbc05.jpg",
+        "id": "560d935c9797bd8b9e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d0af4253a9e6cfbc05.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "page": 5,
+        "asset": "e7e363f0d7e55b4a0a.jpg",
+        "context_tags": [
+          "elevator",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 5. Page discusses elevator, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "a2d8fbef805ca6ed60",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e7e363f0d7e55b4a0a.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "page": 6,
+        "asset": "c2e8796c18e52ffa87.jpg",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 6. Page discusses intake. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "02a821706f4c7b81ce",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/c2e8796c18e52ffa87.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "page": 7,
+        "asset": "8705abc24ebdfa658c.jpg",
+        "context_tags": [
+          "intake",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 7. Page discusses intake, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "c47851ce9bc9b02f13",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/8705abc24ebdfa658c.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "page": 8,
+        "asset": "b392d4a8c6f9b2686f.jpg",
+        "context_tags": [
+          "elevator",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 8. Page discusses elevator, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "909cc49f3538017ac3",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/b392d4a8c6f9b2686f.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "page": 9,
+        "asset": "2312a4f7f351c4e3fc.jpg",
+        "context_tags": [
+          "climb",
+          "elevator"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 9. Page discusses climb, elevator. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "afebf95164fcbb3afd",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2312a4f7f351c4e3fc.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "page": 10,
+        "asset": "6b956ed4df4aa121b2.jpg",
+        "context_tags": [
+          "climb",
+          "elevator",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 10. Page discusses climb, elevator, pivot, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "3f191ba8f0b78e6ee4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/6b956ed4df4aa121b2.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+        "page": 2,
+        "asset": "5e3cd69de5bba47c2f.jpg",
+        "context_tags": [
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 2. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "e38e2ef46964a0b8dd",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/5e3cd69de5bba47c2f.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+        "page": 3,
+        "asset": "0ed833f3fd3c7c644b.jpg",
+        "context_tags": [
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 3. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "1b5f95b86f95819122",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/0ed833f3fd3c7c644b.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+        "page": 4,
+        "asset": "dfcc9758a026ea5fff.jpg",
+        "context_tags": [
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 4. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "a6a6de7f9907bc498f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/dfcc9758a026ea5fff.jpg"
+      },
+      {
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+        "page": 5,
+        "asset": "ef966115d015cb965d.jpg",
+        "context_tags": [
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 5. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "1d2cd8a8143d3cd4e1",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/ef966115d015cb965d.jpg"
+      },
+      {
+        "id": "binder-3b948aa1f27320cf6d-p6-1",
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "binder_id": "3b948aa1f27320cf6d",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-3b948aa1f27320cf6d-p6-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=6",
+        "caption": "2024-5940 · ROTI · Drivebase · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          115.52099609375,
+          541.5,
+          383.27099609375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-3b948aa1f27320cf6d-p7-1",
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "binder_id": "3b948aa1f27320cf6d",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-3b948aa1f27320cf6d-p7-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7",
+        "caption": "2024-5940 · ROTI · Under-bumper intake · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Under-bumper intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          115.52098083496094,
+          541.5,
+          356.27099609375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-3b948aa1f27320cf6d-p8-1",
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "binder_id": "3b948aa1f27320cf6d",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-3b948aa1f27320cf6d-p8-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8",
+        "caption": "2024-5940 · ROTI · Elevator · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Elevator",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          83.25,
+          99.13088989257812,
+          528.75,
+          482.27099609375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-3b948aa1f27320cf6d-p9-1",
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "binder_id": "3b948aa1f27320cf6d",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-3b948aa1f27320cf6d-p9-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=9",
+        "caption": "2024-5940 · ROTI · Climb handoff · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Climb handoff",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          235.883056640625,
+          535.5,
+          505.6279602050781
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-3b948aa1f27320cf6d-p10-1",
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "binder_id": "3b948aa1f27320cf6d",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-3b948aa1f27320cf6d-p10-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10",
+        "caption": "2024-5940 · ROTI · Shooter pivot · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Shooter pivot",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          86.64309692382812,
+          123.9248046875,
+          520.3408813476562,
+          430.6236877441406
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-3b948aa1f27320cf6d-p11-1",
+        "robot_id": "2024-5940",
+        "kind": "binder_figure",
+        "binder_id": "3b948aa1f27320cf6d",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-3b948aa1f27320cf6d-p11-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11",
+        "caption": "2024-5940 · ROTI · Shooter · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          93.68292236328125,
+          109.099609375,
+          494.3207702636719,
+          421.1085205078125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      }
+    ],
+    "source_post_count": 10,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-5940",
+        "discovery_post": "2024-5940-466729-1",
+        "url": "https://5940.onshape.com/documents/fc2ed487a3bcc1f0e49a6d9d/w/6c480d72591c00009984731f/e/6eefccfefe0d553debd9163f?aa=true",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "9476fc6493e93fdbde"
+      },
+      {
+        "robot_id": "2024-5940",
+        "discovery_post": "2024-5940-466729-1",
+        "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "25f206207f6a625171"
+      },
+      {
+        "robot_id": "2024-5940",
+        "discovery_post": "2024-5940-466729-1",
+        "url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c8a3f0c4e6e2049469"
+      },
+      {
+        "robot_id": "2024-5940",
+        "discovery_post": "2024-5940-466729-1",
+        "url": "https://github.com/BREAD5940/2024-Onseason/",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6b94652929cefa21e6"
+      }
+    ],
+    "id": "2024-5940",
+    "team_name": "BREAD",
+    "epa_rank": 15,
+    "epa": 49.23,
+    "epa_pre_champs": 56.35,
+    "epa_breakdown": {
+      "total_points": 49.23,
+      "auto_points": 15.7,
+      "teleop_points": 26.86,
+      "endgame_points": 6.67,
+      "melody_rp": 0.5983,
+      "ensemble_rp": 0.4698,
+      "tiebreaker_points": 0.29,
+      "auto_leave_points": 1.74,
+      "auto_note_points": 13.96,
+      "teleop_note_points": 26.86,
+      "speaker_points": 37.71,
+      "amplified_notes": 4.85,
+      "endgame_park_points": 0.17,
+      "endgame_on_stage_points": 2.53,
+      "endgame_harmony_points": -0.13,
+      "endgame_trap_points": 3.94,
+      "endgame_spotlight_points": 0.16,
+      "rp_1": 0.5983,
+      "rp_2": 0.4698,
+      "total_note_points": 40.82
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "685e463c396cf167"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-3b948aa1f27320cf6d-103",
+      "tech-3b948aa1f27320cf6d-104",
+      "tech-3b948aa1f27320cf6d-105"
+    ],
+    "binder_source_ids": [
+      "3b948aa1f27320cf6d"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-5940",
+      "year": 2024,
+      "team": 5940,
+      "epa_rank": 15,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"5940\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 18,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "3b948aa1f27320cf6d"
+      ],
+      "technical_note_ids": [
+        "tech-3b948aa1f27320cf6d-103",
+        "tech-3b948aa1f27320cf6d-104",
+        "tech-3b948aa1f27320cf6d-105"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "3b948aa1f27320cf6d",
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+          "error": null,
+          "discovery": "Existing primary bundle",
+          "status": "technical_sections_reviewed"
+        },
+        {
+          "id": "aaa9e7d335f738d3b6",
+          "url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/466729/1",
+          "status": "supplement_or_duplicate_not_counted_as_separate_binder"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "3b948aa1f27320cf6d",
+      "subsystem": "intake",
+      "title": "ROTI: under-bumper pickup feeds a movable shooter",
+      "pdf_pages": [
+        7
+      ],
+      "construction": "Full-width intake with pickup rollers and centering wheels.",
+      "team_stated_reason": "Center notes before they enter the shooter.",
+      "engineering_analysis": "The collector has to supply a consistent location and shape to a scorer whose height and angle can change. Centering at the floor reduces the uncertainty the moving receiver must handle. A shallow pickup can preserve chassis protection but needs clearance around module and frame structure. Surface speed should capture a note without throwing it past the receiving contact. The effective system includes the handoff state that determines when the elevator may move away.",
+      "recommended_validation": "Test off-center acquisition and interrupted handoff while varying the receiver’s initial height and angle.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-3b948aa1f27320cf6d-103",
+      "robot_id": "2024-5940",
+      "year": 2024,
+      "version_label": "ROTI",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7"
+        }
+      ],
+      "image_ids": [
+        "binder-3b948aa1f27320cf6d-p7-1"
+      ]
+    },
+    {
+      "binder_id": "3b948aa1f27320cf6d",
+      "subsystem": "positioning",
+      "title": "ROTI: one lift creates scoring height and endgame capability",
+      "pdf_pages": [
+        5,
+        8,
+        9
+      ],
+      "construction": "Continuous rope lift with overextending carriage; passive lower hooks retain the chain after initial lift.",
+      "team_stated_reason": "Use one shooter for speaker, amp and trap.",
+      "engineering_analysis": "Moving the shooter upward changes its release geometry and can improve defended shot access, while stowing preserves travel routes under the stage. That broad capability costs raised mass and a multi-state handoff. The passive lower hooks are central to the climb: they take over the suspension load so the elevator can extend again for trap scoring. Without that load transfer, the same actuator cannot independently hold the robot and reposition the scorer. This is an architectural sequence rather than an elevator plus an unrelated climber.",
+      "recommended_validation": "Verify passive-hook engagement before re-extension; test full-height stability and stowed route clearance with the actual scorer mass.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-3b948aa1f27320cf6d-104",
+      "robot_id": "2024-5940",
+      "year": 2024,
+      "version_label": "ROTI",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 5,
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=5"
+        },
+        {
+          "pdf_page": 8,
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-3b948aa1f27320cf6d-p8-1",
+        "binder-3b948aa1f27320cf6d-p9-1"
+      ]
+    },
+    {
+      "binder_id": "3b948aa1f27320cf6d",
+      "subsystem": "scoring",
+      "title": "ROTI: counterbalanced pivot and shaped note feed",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "construction": "Gas-spring counterbalance; output-angle sensing; asymmetric launch speeds; conical/mecanum feeder contacts.",
+      "team_stated_reason": "One shooter serves several release geometries.",
+      "engineering_analysis": "A counterbalance reduces gravitational torque but changes the motor’s required effort across the angular range. Sensing the output helps distinguish gearbox motion from actual scorer angle. Conical and mecanum feed contacts can shape and spread the note before launch; their useful effect depends on how the flexible ring deforms. The front roller angle also affects trap delivery, so optimizing only speaker shots may degrade another required mode. A recommendation needs the complete scoring envelope and mode transition tests.",
+      "recommended_validation": "Measure output-angle hysteresis and shot dispersion in every scoring mode, with both new and damaged notes.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-3b948aa1f27320cf6d-105",
+      "robot_id": "2024-5940",
+      "year": 2024,
+      "version_label": "ROTI",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11"
+        }
+      ],
+      "image_ids": [
+        "binder-3b948aa1f27320cf6d-p10-1",
+        "binder-3b948aa1f27320cf6d-p11-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-3b948aa1f27320cf6d-1",
+      "binder_id": "3b948aa1f27320cf6d",
+      "robot_id": "2024-5940",
+      "pdf_page": 7,
+      "component": "Intake",
+      "published_parameters": "1.3:1 pickup; 19.6-ft/s surface; 4.8:1 centering",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-3b948aa1f27320cf6d-2",
+      "binder_id": "3b948aa1f27320cf6d",
+      "robot_id": "2024-5940",
+      "pdf_page": 8,
+      "component": "Lift",
+      "published_parameters": "10.37:1; two X60s; 1.5-in spool",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-3b948aa1f27320cf6d-3",
+      "binder_id": "3b948aa1f27320cf6d",
+      "robot_id": "2024-5940",
+      "pdf_page": 10,
+      "component": "Pivot",
+      "published_parameters": "114.58:1; two 50-lbf gas springs",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-3b948aa1f27320cf6d-4",
+      "binder_id": "3b948aa1f27320cf6d",
+      "robot_id": "2024-5940",
+      "pdf_page": 11,
+      "component": "Shooter",
+      "published_parameters": "4-in wheels; 2:1 upduction source notation",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "3b948aa1f27320cf6d",
+      "robot_id": "2024-5940",
+      "title": "2024-5940 ROTI technical publication",
+      "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "format": "pdf",
+      "pages": 11,
+      "sha256": "569f3b2337257ed56c9998520cb4dd02ae687f1053f56bfc204dde022f85e52b",
+      "bytes": 2646054,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "figure_pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Existing primary bundle",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2024-5940:publication-version:1",
+      "label": "ROTI",
+      "robot_id": "2024-5940",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-3b948aa1f27320cf6d-103",
+        "tech-3b948aa1f27320cf6d-104",
+        "tech-3b948aa1f27320cf6d-105"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2024-5940",
+      "title": "2024-5940: technical construction and mechanism reasoning",
+      "year": 2024,
+      "robot_id": "2024-5940",
+      "kind": "robot_technical_review",
+      "body": "# 2024-5940: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## ROTI: under-bumper pickup feeds a movable shooter\n\nVersion: ROTI. [PDF p7](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7)\n\n**Published construction:** Full-width intake with pickup rollers and centering wheels.\n\n**Team-stated reason or evidence boundary:** Center notes before they enter the shooter.\n\n**Engineering analysis — original inference:** The collector has to supply a consistent location and shape to a scorer whose height and angle can change. Centering at the floor reduces the uncertainty the moving receiver must handle. A shallow pickup can preserve chassis protection but needs clearance around module and frame structure. Surface speed should capture a note without throwing it past the receiving contact. The effective system includes the handoff state that determines when the elevator may move away.\n\n**Proposed validation — not a completed test:** Test off-center acquisition and interrupted handoff while varying the receiver’s initial height and angle.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ROTI: one lift creates scoring height and endgame capability\n\nVersion: ROTI. [PDF p5](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=5) · [PDF p8](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8) · [PDF p9](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=9)\n\n**Published construction:** Continuous rope lift with overextending carriage; passive lower hooks retain the chain after initial lift.\n\n**Team-stated reason or evidence boundary:** Use one shooter for speaker, amp and trap.\n\n**Engineering analysis — original inference:** Moving the shooter upward changes its release geometry and can improve defended shot access, while stowing preserves travel routes under the stage. That broad capability costs raised mass and a multi-state handoff. The passive lower hooks are central to the climb: they take over the suspension load so the elevator can extend again for trap scoring. Without that load transfer, the same actuator cannot independently hold the robot and reposition the scorer. This is an architectural sequence rather than an elevator plus an unrelated climber.\n\n**Proposed validation — not a completed test:** Verify passive-hook engagement before re-extension; test full-height stability and stowed route clearance with the actual scorer mass.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ROTI: counterbalanced pivot and shaped note feed\n\nVersion: ROTI. [PDF p10](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10) · [PDF p11](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11)\n\n**Published construction:** Gas-spring counterbalance; output-angle sensing; asymmetric launch speeds; conical/mecanum feeder contacts.\n\n**Team-stated reason or evidence boundary:** One shooter serves several release geometries.\n\n**Engineering analysis — original inference:** A counterbalance reduces gravitational torque but changes the motor’s required effort across the angular range. Sensing the output helps distinguish gearbox motion from actual scorer angle. Conical and mecanum feed contacts can shape and spread the note before launch; their useful effect depends on how the flexible ring deforms. The front roller angle also affects trap delivery, so optimizing only speaker shots may degrade another required mode. A recommendation needs the complete scoring envelope and mode transition tests.\n\n**Proposed validation — not a completed test:** Measure output-angle hysteresis and shot dispersion in every scoring mode, with both new and damaged notes.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 1.3:1 pickup; 19.6-ft/s surface; 4.8:1 centering | [Source p7](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7) |\n| Lift | 10.37:1; two X60s; 1.5-in spool | [Source p8](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8) |\n| Pivot | 114.58:1; two 50-lbf gas springs | [Source p10](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10) |\n| Shooter | 4-in wheels; 2:1 upduction source notation | [Source p11](https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view"
+      ],
+      "path": "docs/technical/2024-5940.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-5940",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/466729/9",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/a/5a36f537ea842511a773d717f9f684a3245ba1a7_2_315x500.jpeg",
+      "post": 9,
+      "date": "2024-05-22T21:10:12.406Z",
+      "author": "Britt",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — source image from post 9 (2024-05-22). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d0af4253a9e6cfbc05.jpg",
+      "id": "560d935c9797bd8b9e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d0af4253a9e6cfbc05.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 315,
+      "height_px": 500,
+      "bytes": 59108,
+      "sha256": "fb210f4345a5607d6d28f3f37904db2b20d869ae9d43b8706dc70a1e6ae4125f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "560d935c9797bd8b9e",
+      "reader_url": "index.html#image=560d935c9797bd8b9e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "page": 5,
+      "asset": "e7e363f0d7e55b4a0a.jpg",
+      "context_tags": [
+        "elevator",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 5. Page discusses elevator, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "a2d8fbef805ca6ed60",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e7e363f0d7e55b4a0a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 744,
+      "height_px": 539,
+      "bytes": 50165,
+      "sha256": "44fe38c1ee5770a8abc4ede85e746e6b1df9826436f29c1d2b1ea010fabfb313",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a2d8fbef805ca6ed60",
+      "reader_url": "index.html#image=a2d8fbef805ca6ed60",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "page": 6,
+      "asset": "c2e8796c18e52ffa87.jpg",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 6. Page discusses intake. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "02a821706f4c7b81ce",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/c2e8796c18e52ffa87.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 1100,
+      "height_px": 631,
+      "bytes": 102511,
+      "sha256": "1e9f0645c315c1fabac54bb6ec0aec639975d1f47e7cfed3df3ab5690e735e94",
+      "path_base": "corpus_root",
+      "reader_asset_id": "02a821706f4c7b81ce",
+      "reader_url": "index.html#image=02a821706f4c7b81ce",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "page": 7,
+      "asset": "8705abc24ebdfa658c.jpg",
+      "context_tags": [
+        "intake",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 7. Page discusses intake, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "c47851ce9bc9b02f13",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/8705abc24ebdfa658c.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 1100,
+      "height_px": 567,
+      "bytes": 66170,
+      "sha256": "081f1a3353d662f74a082a07e9b9535638df6e43f20270eee77d2fb31e3c5fe2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "c47851ce9bc9b02f13",
+      "reader_url": "index.html#image=c47851ce9bc9b02f13",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "page": 8,
+      "asset": "b392d4a8c6f9b2686f.jpg",
+      "context_tags": [
+        "elevator",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 8. Page discusses elevator, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "909cc49f3538017ac3",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/b392d4a8c6f9b2686f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 967,
+      "height_px": 833,
+      "bytes": 115283,
+      "sha256": "facb76e72e3bc01a00719397adc9505b70fdf026698a19dbac3deee24d08d12b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "909cc49f3538017ac3",
+      "reader_url": "index.html#image=909cc49f3538017ac3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "page": 9,
+      "asset": "2312a4f7f351c4e3fc.jpg",
+      "context_tags": [
+        "climb",
+        "elevator"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 9. Page discusses climb, elevator. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "afebf95164fcbb3afd",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2312a4f7f351c4e3fc.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 849,
+      "height_px": 583,
+      "bytes": 54259,
+      "sha256": "5e7cdf57c5017666c515cd81b857de394b6facccfc55f20daa4a9f10f120cecc",
+      "path_base": "corpus_root",
+      "reader_asset_id": "afebf95164fcbb3afd",
+      "reader_url": "index.html#image=afebf95164fcbb3afd",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+      "page": 10,
+      "asset": "6b956ed4df4aa121b2.jpg",
+      "context_tags": [
+        "climb",
+        "elevator",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 10. Page discusses climb, elevator, pivot, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "3f191ba8f0b78e6ee4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/6b956ed4df4aa121b2.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 1034,
+      "height_px": 731,
+      "bytes": 81578,
+      "sha256": "f19b34c6925d33b53f8cda615837afdac58544a6e848774cf7d88330b68b8ab0",
+      "path_base": "corpus_root",
+      "reader_asset_id": "3f191ba8f0b78e6ee4",
+      "reader_url": "index.html#image=3f191ba8f0b78e6ee4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+      "page": 2,
+      "asset": "5e3cd69de5bba47c2f.jpg",
+      "context_tags": [
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 2. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "e38e2ef46964a0b8dd",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/5e3cd69de5bba47c2f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 645,
+      "height_px": 757,
+      "bytes": 76862,
+      "sha256": "c9740c1dcec82b58a34b58f9dc77ddc48bf8fe540a4c3ce1f84987437fdaa6ac",
+      "path_base": "corpus_root",
+      "reader_asset_id": "e38e2ef46964a0b8dd",
+      "reader_url": "index.html#image=e38e2ef46964a0b8dd",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+      "page": 3,
+      "asset": "0ed833f3fd3c7c644b.jpg",
+      "context_tags": [
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 3. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "1b5f95b86f95819122",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/0ed833f3fd3c7c644b.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 474,
+      "height_px": 632,
+      "bytes": 40803,
+      "sha256": "945c2e7183030c903818d61916a692cf074af88efc0e357f4ea54cc3b52b14e5",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1b5f95b86f95819122",
+      "reader_url": "index.html#image=1b5f95b86f95819122",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+      "page": 4,
+      "asset": "dfcc9758a026ea5fff.jpg",
+      "context_tags": [
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 4. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "a6a6de7f9907bc498f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/dfcc9758a026ea5fff.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 595,
+      "height_px": 627,
+      "bytes": 78116,
+      "sha256": "126eee3bfe12d44ba7528cc2202086058fd83f8bd1f66b930eabf0a195f5a723",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a6a6de7f9907bc498f",
+      "reader_url": "index.html#image=a6a6de7f9907bc498f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+      "page": 5,
+      "asset": "ef966115d015cb965d.jpg",
+      "context_tags": [
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2024 team 5940 — embedded figure from technical binder, PDF page 5. Page discusses intake, pivot, shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "1d2cd8a8143d3cd4e1",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/ef966115d015cb965d.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 606,
+      "height_px": 632,
+      "bytes": 86433,
+      "sha256": "a1a74349eb8cfec4b64529b0d538677b5555341313faedf818208d48d8c9eb8e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1d2cd8a8143d3cd4e1",
+      "reader_url": "index.html#image=1d2cd8a8143d3cd4e1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-3b948aa1f27320cf6d-p6-1",
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "binder_id": "3b948aa1f27320cf6d",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-3b948aa1f27320cf6d-p6-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=6",
+      "caption": "2024-5940 · ROTI · Drivebase · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        115.52099609375,
+        541.5,
+        383.27099609375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 617,
+      "bytes": 95366,
+      "sha256": "f998e6cda569a81daa2d0533e37e916dc3a17e5be64bcbea55329df64fd02064",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-3b948aa1f27320cf6d-p6-1",
+      "reader_url": "index.html#image=binder-3b948aa1f27320cf6d-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-3b948aa1f27320cf6d-p7-1",
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "binder_id": "3b948aa1f27320cf6d",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-3b948aa1f27320cf6d-p7-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=7",
+      "caption": "2024-5940 · ROTI · Under-bumper intake · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Under-bumper intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        115.52098083496094,
+        541.5,
+        356.27099609375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 555,
+      "bytes": 60613,
+      "sha256": "6fd3ca516e7ca649212a1ee935a1bd295bc21ea82a9049a81c898a801d713501",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-3b948aa1f27320cf6d-p7-1",
+      "reader_url": "index.html#image=binder-3b948aa1f27320cf6d-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-3b948aa1f27320cf6d-p8-1",
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "binder_id": "3b948aa1f27320cf6d",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-3b948aa1f27320cf6d-p8-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=8",
+      "caption": "2024-5940 · ROTI · Elevator · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Elevator",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        83.25,
+        99.13088989257812,
+        528.75,
+        482.27099609375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1026,
+      "height_px": 882,
+      "bytes": 112243,
+      "sha256": "e2cbe1b7f2f32555ba0886963c611c7ec4f60ff961fa5159faf05c55b55d1164",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-3b948aa1f27320cf6d-p8-1",
+      "reader_url": "index.html#image=binder-3b948aa1f27320cf6d-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-3b948aa1f27320cf6d-p9-1",
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "binder_id": "3b948aa1f27320cf6d",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-3b948aa1f27320cf6d-p9-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=9",
+      "caption": "2024-5940 · ROTI · Climb handoff · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Climb handoff",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        235.883056640625,
+        535.5,
+        505.6279602050781
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1232,
+      "height_px": 621,
+      "bytes": 84995,
+      "sha256": "21af01f2dd18e046a00a37d7a9fccd9998fc1563dc40902a210f4766db14e50d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-3b948aa1f27320cf6d-p9-1",
+      "reader_url": "index.html#image=binder-3b948aa1f27320cf6d-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-3b948aa1f27320cf6d-p10-1",
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "binder_id": "3b948aa1f27320cf6d",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-3b948aa1f27320cf6d-p10-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=10",
+      "caption": "2024-5940 · ROTI · Shooter pivot · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Shooter pivot",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        86.64309692382812,
+        123.9248046875,
+        520.3408813476562,
+        430.6236877441406
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 998,
+      "height_px": 706,
+      "bytes": 80565,
+      "sha256": "5e62da56f7176b4738010b4046bae70f36431d89834fa8272bf0f5fda5fb511a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-3b948aa1f27320cf6d-p10-1",
+      "reader_url": "index.html#image=binder-3b948aa1f27320cf6d-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-3b948aa1f27320cf6d-p11-1",
+      "robot_id": "2024-5940",
+      "kind": "binder_figure",
+      "binder_id": "3b948aa1f27320cf6d",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-3b948aa1f27320cf6d-p11-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view#page=11",
+      "caption": "2024-5940 · ROTI · Shooter · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        93.68292236328125,
+        109.099609375,
+        494.3207702636719,
+        421.1085205078125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 922,
+      "height_px": 719,
+      "bytes": 86547,
+      "sha256": "b8b387c3c7935d69741d50d5ca08e24bec134c5c349b20ddf328e644db2353d3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-3b948aa1f27320cf6d-p11-1",
+      "reader_url": "index.html#image=binder-3b948aa1f27320cf6d-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-5940",
+    "year": 2024,
+    "team": 5940,
+    "epa_rank": 15,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"5940\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 18,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "3b948aa1f27320cf6d"
+    ],
+    "technical_note_ids": [
+      "tech-3b948aa1f27320cf6d-103",
+      "tech-3b948aa1f27320cf6d-104",
+      "tech-3b948aa1f27320cf6d-105"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "3b948aa1f27320cf6d",
+        "url": "https://drive.google.com/file/d/1JueptXU9TRB6N2dDGX-fZ-d9fCz3nMKs/view",
+        "error": null,
+        "discovery": "Existing primary bundle",
+        "status": "technical_sections_reviewed"
+      },
+      {
+        "id": "aaa9e7d335f738d3b6",
+        "url": "https://drive.google.com/file/d/1zfYqLdwT_1B9t92o7QsDoBC2Qs8EvY-t/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/466729/1",
+        "status": "supplement_or_duplicate_not_counted_as_separate_binder"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-3b948aa1f27320cf6d-103:construction",
+    "tech-3b948aa1f27320cf6d-103:team_stated_reason",
+    "tech-3b948aa1f27320cf6d-103:engineering_analysis",
+    "tech-3b948aa1f27320cf6d-103:recommended_validation",
+    "tech-3b948aa1f27320cf6d-103:limitations",
+    "tech-3b948aa1f27320cf6d-104:construction",
+    "tech-3b948aa1f27320cf6d-104:team_stated_reason",
+    "tech-3b948aa1f27320cf6d-104:engineering_analysis",
+    "tech-3b948aa1f27320cf6d-104:recommended_validation",
+    "tech-3b948aa1f27320cf6d-104:limitations",
+    "tech-3b948aa1f27320cf6d-105:construction",
+    "tech-3b948aa1f27320cf6d-105:team_stated_reason",
+    "tech-3b948aa1f27320cf6d-105:engineering_analysis",
+    "tech-3b948aa1f27320cf6d-105:recommended_validation",
+    "tech-3b948aa1f27320cf6d-105:limitations",
+    "param-3b948aa1f27320cf6d-1",
+    "param-3b948aa1f27320cf6d-2",
+    "param-3b948aa1f27320cf6d-3",
+    "param-3b948aa1f27320cf6d-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

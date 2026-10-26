@@ -1,0 +1,553 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-694",
+  "year": 2025,
+  "team": 694,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 694,
+    "robot": "StuyPulse 2025",
+    "primary": [
+      "https://youtu.be/6-vO7mRoTBc",
+      "https://www.chiefdelphi.com/t/477433"
+    ],
+    "architecture": "Station-fed elevator/arm with separate multipurpose ground collector and central donut climb.",
+    "subsystems": {
+      "drivetrain": "Swerve; drive module specification not established in this interview.",
+      "intake": "Station funnel and infrared-triggered roller scorer; Froggy ground arm collects coral/algae, scores L1 and processor.",
+      "transfer": "Belted roller groups and treaded algae contact surfaces maintain control.",
+      "scoring": "Internally rigged elevator and pivoting arm; opposite-side motors counterbalance arm rather than simply minimizing motor height.",
+      "endgame": "Two hook pairs rotate against cage through changing leverage; hard stops and robot weight retain climb without a ratchet.",
+      "controls": "One driver/two human players; one-button nearest-face alignment, front/back scoring and retreat-before-stow collision protections."
+    },
+    "versions": [
+      "Reinforced pivot plates and added belt tensioning.",
+      "Cooling added to Limelights and radio after overheating. Build thread contains further version history beyond this interview summary."
+    ],
+    "analysis": "The counterbalance and passive climb retention illustrate why a generic rule such as all motors must be low is insufficient. Evaluate complete torque and CG geometry, including the scoring-to-stow collision path.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2025-694",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/477433/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/0/6/06befb542dfab3fb85e2e38e28c266fb14f06154.jpeg",
+        "post": 1,
+        "date": "2024-12-27T23:38:14.579Z",
+        "author": "pevvvvvvvvv",
+        "context_tags": [
+          "intake",
+          "shooter"
+        ],
+        "caption": "2025 team 694 — source image from post 1 (2024-12-27). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "ea97ed7e640fdef745.jpg",
+        "id": "a62ad1c82c90762f2e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/ea97ed7e640fdef745.jpg"
+      }
+    ],
+    "source_post_count": 64,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-1",
+        "url": "https://docs.google.com/document/d/1HlSeYsLa-DWVv_zjr_DY-hqGYpNExchbirz-mS0mgEY/edit",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2de13cc2fec045b007"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-1",
+        "url": "https://github.com/StuyPulse/rookie-ed",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "873196d886cbb8a888"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-11",
+        "url": "https://docs.google.com/spreadsheets/d/1QNz-fIxWTxMHTVm_p_ABlKYQPoQah5q-Sjf6AieRWAM/edit?gid=0#gid=0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "425ce1c55baf13f216"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-16",
+        "url": "https://cad.onshape.com/documents/18f50fd4a2add97e0a4e653f/w/4b4f1ebd5782c937c9d60635/e/0ea3046218c2a2321d4d3068?renderMode=0&uiState=679295980fc6f0026f26d346",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f62edf38754c8f333c"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-78",
+        "url": "https://cad.onshape.com/documents/18f50fd4a2add97e0a4e653f/w/4b4f1ebd5782c937c9d60635/e/0ea3046218c2a2321d4d3068",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "fb040ebcdb33e120d3"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-16",
+        "url": "https://github.com/StuyPulse/Alpha-Bot-2025",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4b0903a48b6a03bb7c"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-16",
+        "url": "https://docs.google.com/document/d/1PLKGRJfcdsn7l3Puprn8VNfHZXdd0qusTU7GPKtgGEU/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8f6d34b3344079ebc3"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-16",
+        "url": "https://github.com/StuyPulse/Aunt-Mary",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "fdf723952c56b6f46f"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-26",
+        "url": "https://drive.google.com/file/d/1ax7gsyjgG9AQ33maFo3rUM7aR1R0ONDB/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3127a7bbbc5247d87c"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-26",
+        "url": "https://drive.google.com/file/d/194CdYGHz-uXKChCLftbopAaRdDKhi4Sn/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "35446ad44251fcdadf"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-37",
+        "url": "https://drive.google.com/file/d/119x_TG3BO4Z4bgPzNrFe_IcJE3ThJvs3/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4d6fdd9c102d91e5d9"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-37",
+        "url": "https://drive.google.com/file/d/1gxZ1tuhyROlJP5vrDKiavDvokdF-QRyY/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7fb2122469b455cc34"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-37",
+        "url": "https://drive.google.com/file/d/1fOHVn2JwMLOtjamMb6gnimZcgmPqCgtY/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "339dd1e32db089eef3"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-37",
+        "url": "https://drive.google.com/file/d/1qH2v-7EAHoG1tONVCOE6KJM_sGXPjSdW/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2ecc34471412ddbe01"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-37",
+        "url": "https://drive.google.com/file/d/1gUZAOGV6_p05Uv_gH2p-Kuk8jos9taMu/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e3679a2afaf7e076e8"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-40",
+        "url": "https://docs.google.com/document/d/1-ghyCxDZpIFZaF0snP5VMW_wQtUOD0dxLBlArb0yApc/edit?tab=t.0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b34d6dcd1153911162"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-48",
+        "url": "https://docs.google.com/document/d/14XbMf4OOCFHet32nJAAcfUqqkykyRUP61awUAtaBMlk/edit?tab=t.0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "964060c4391579c53e"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-55",
+        "url": "https://docs.google.com/document/d/1qbpswafu6TzXEF37xCTPHcnHThDWNe1ovaQ4vX1gumw/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c04c99f8254cf53268"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-67",
+        "url": "https://github.com/StuyPulse/EVERYBOT-2025",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "80bb13964b3b744811"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-67",
+        "url": "https://github.com/lucas01b0x",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5c0bc4a46ff0720680"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-67",
+        "url": "https://github.com/dfn-slxxp",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "795a578eb90fe57332"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-67",
+        "url": "https://github.com/Danx3mer",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8b2b3602f2580f20dd"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-67",
+        "url": "https://github.com/CinoDelta",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "945686fc2b1e22094d"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-67",
+        "url": "https://github.com/Apetrock24",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "635df7411411155ba2"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-69",
+        "url": "https://docs.google.com/document/d/1Hw8eFpqDDHhMibgpwBu5GMlRu-S6ReIQ1lIL84RBmKk/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3f4caecf94e60c36bc"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-78",
+        "url": "https://docs.google.com/presentation/d/1s_U9d_HL5kcnSXfhK8LkODIbN81qvfXrugbYwAkdsmw/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f170d70939601b4b19"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-95",
+        "url": "https://cad.onshape.com/documents/9c83b73d2d932d4d4bdf872c/w/f473f5c5b9c1bef8cbfa48b2/e/21b7dd325f24488ff0c7f53f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f5cb843144b8d10694"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-99",
+        "url": "https://docs.google.com/spreadsheets/d/122HxqNByXuGvGf7TfkNgUs90SnF4muLiiulL4YeL2-A/edit?gid=0#gid=0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "86fcd6a705954f0f03"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-124",
+        "url": "https://docs.google.com/document/d/1asx3K4iEJoVxRYmHmi4QF9UMsTfMlU3IKX0ZShWHkhc/edit?tab=t.0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "618b8ae734e624bcb2"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-121",
+        "url": "https://cad.onshape.com/documents/7885d99e9c7eced04fe8963b/w/4740bdf19a59280a9fcf8153/e/c1372e176908bbdd9d386205",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "97651ea2d4b0dd6b3a"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-121",
+        "url": "https://cad.onshape.com/documents/e023c1b6232de1a1301181ea/w/dbf453916f1631a5d2534bff/e/3f8a28f744b1a2cac56810ad?renderMode=0&uiState=68fffb0241f9ddb16519bd3b",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ce699d1515c6523276"
+      },
+      {
+        "robot_id": "2025-694",
+        "discovery_post": "2025-694-477433-121",
+        "url": "https://cad.onshape.com/documents/b4b006831dc446b7c53590dd/w/1abc60d199415cbbea5042be/e/70529292d2e584e4c71615f3?renderMode=0&uiState=690002d3ad9147bdaae7bd70",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "646dff895a8afa1224"
+      }
+    ],
+    "id": "2025-694",
+    "team_name": "StuyPulse",
+    "epa_rank": 12,
+    "epa": 97.18,
+    "epa_pre_champs": 91.85,
+    "epa_breakdown": {
+      "total_points": 97.18,
+      "auto_points": 24.23,
+      "teleop_points": 58.84,
+      "endgame_points": 14.1,
+      "auto_rp": 0.6563,
+      "coral_rp": 0.8376,
+      "barge_rp": 0.80283,
+      "tiebreaker_points": 0.39,
+      "auto_coral_points": 21.01,
+      "teleop_coral_points": 47.49,
+      "coral_l1": 2.1,
+      "coral_l2": 4.92,
+      "coral_l3": 5.16,
+      "coral_l4": 4.58,
+      "processor_algae": 1.06,
+      "processor_algae_points": 3.19,
+      "net_algae_points": 8.16,
+      "barge_points": 14.1,
+      "rp_1": 0.6563,
+      "rp_2": 0.8376,
+      "rp_3": 0.80283,
+      "total_coral_points": 68.5,
+      "total_algae_points": 11.35
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "2a9be955c131a728",
+      "9b0d1722d91032df"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "pass-through",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-694",
+      "year": 2025,
+      "team": 694,
+      "epa_rank": 12,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"694\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 20,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"694\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-694"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-694",
+      "title": "A dedicated low-task arm adds work without monopolizing the elevator",
+      "start_seconds": 75,
+      "end_seconds": 590,
+      "construction": "The station funnel uses powered surfaces and an IR entry sensor. The separate Froggy mechanism acquires coral/algae from the floor and scores L1/processor; its source gives a 48:1 X60 pivot and 2:1 X60 roller drive. A linked shaft/chain keeps the side plates synchronized, while added angle reinforcement stiffens their weak direction.",
+      "team_stated_reason": "The team describes reinforcement after structural analysis and a software interlock that delays retracting Froggy until the chassis backs away from the reef. The main arm’s motor placement is also used for counterbalance.",
+      "engineering_analysis": "Low-level work can justify a dedicated mechanism when it shortens cycles and releases the primary scorer for another role. That benefit is conditional on interference: two mechanisms must be able to store, acquire and move without colliding. A geometric safety interlock should therefore be part of the architecture reference. “Button released” is not sufficient evidence that an external mechanism can retract safely.",
+      "recommended_validation": "Test concurrent main-arm/Froggy poses, compare complete L1/algae cycles, and verify retreat detection before retraction under localization error.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-694",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/6-vO7mRoTBc",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/477433"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 590,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "6-vO7mRoTBc",
+          "sha256": "77dff9a3986cb064dabce0e2b823e00047a36030a2bc64ad9f2cbfe8579985ff",
+          "caption_segments": 305,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-694:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-694",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-694"
+      ],
+      "source_urls": [
+        "https://youtu.be/6-vO7mRoTBc"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-694",
+      "title": "2025-694 · A dedicated low-task arm adds work without monopolizing the elevator",
+      "year": 2025,
+      "robot_id": "2025-694",
+      "kind": "focused_technical_study",
+      "body": "# 2025-694: A dedicated low-task arm adds work without monopolizing the elevator\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe station funnel uses powered surfaces and an IR entry sensor. The separate Froggy mechanism acquires coral/algae from the floor and scores L1/processor; its source gives a 48:1 X60 pivot and 2:1 X60 roller drive. A linked shaft/chain keeps the side plates synchronized, while added angle reinforcement stiffens their weak direction.\n\n## Team-stated reasoning or boundary\n\nThe team describes reinforcement after structural analysis and a software interlock that delays retracting Froggy until the chassis backs away from the reef. The main arm’s motor placement is also used for counterbalance.\n\n## Engineering interpretation — analyst inference\n\nLow-level work can justify a dedicated mechanism when it shortens cycles and releases the primary scorer for another role. That benefit is conditional on interference: two mechanisms must be able to store, acquire and move without colliding. A geometric safety interlock should therefore be part of the architecture reference. “Button released” is not sufficient evidence that an external mechanism can retract safely.\n\n## Proposed validation — not performed\n\nTest concurrent main-arm/Froggy poses, compare complete L1/algae cycles, and verify retreat detection before retraction under localization error.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/6-vO7mRoTBc](https://youtu.be/6-vO7mRoTBc)\n- [https://www.chiefdelphi.com/t/477433](https://www.chiefdelphi.com/t/477433)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/6-vO7mRoTBc",
+        "https://www.chiefdelphi.com/t/477433"
+      ],
+      "path": "docs/research_continuation/2025-694.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-694",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/477433/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/0/6/06befb542dfab3fb85e2e38e28c266fb14f06154.jpeg",
+      "post": 1,
+      "date": "2024-12-27T23:38:14.579Z",
+      "author": "pevvvvvvvvv",
+      "context_tags": [
+        "intake",
+        "shooter"
+      ],
+      "caption": "2025 team 694 — source image from post 1 (2024-12-27). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "ea97ed7e640fdef745.jpg",
+      "id": "a62ad1c82c90762f2e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/ea97ed7e640fdef745.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 720,
+      "height_px": 251,
+      "bytes": 34619,
+      "sha256": "248e4ae0cf6e381609ded85c3ebee01c94aef9c4e9c8bc63d405f1071b7fdc69",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a62ad1c82c90762f2e",
+      "reader_url": "index.html#image=a62ad1c82c90762f2e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-694",
+    "year": 2025,
+    "team": 694,
+    "epa_rank": 12,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"694\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 20,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"694\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-694:construction",
+    "study6-2025-694:team_stated_reason",
+    "study6-2025-694:engineering_analysis",
+    "study6-2025-694:recommended_validation",
+    "study6-2025-694:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

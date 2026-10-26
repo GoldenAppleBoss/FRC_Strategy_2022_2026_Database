@@ -1,0 +1,875 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-118",
+  "year": 2023,
+  "team": 118,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 118,
+    "robot": "Echo",
+    "primary": [
+      "https://youtu.be/bPuOgj_urzc",
+      "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf"
+    ],
+    "architecture": "Wide V-shaped collector, transfer to upper manipulator, plus specialized autonomous and denial devices.",
+    "subsystems": {
+      "drivetrain": "SDS MK4 L2; corner-oriented modules preserve internal transfer space.",
+      "intake": "Tile-grouting sponge rollers and retention flippers accept cones over a broad approach angle.",
+      "transfer": "Repeatable cone handoff and separate cube opening in the end effector.",
+      "scoring": "Upper scoring structure receives oriented pieces; exact arm geometry requires CAD/another source.",
+      "endgame": "Not explained in this interview.",
+      "controls": "Cube limit-switch sequence automates collector stop, retention and handoff."
+    },
+    "versions": [
+      "Ballast and steel belly pan added after event one for stability. Suction-cup swipers added between Magnolia and Space City; single-use autonomous cube blooper accelerates preload scoring."
+    ],
+    "analysis": "A useful specialty-role precedent: legal in-perimeter suction pickup can threaten opponent loose-cube supply. Its value depends on field zone and current possession/protection rules, not simply suction performance.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "# 2023-118: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## ECHO: compliant vector pickup and cone centering\n\nVersion: ECHO. [PDF p8](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8)\n\n**Published construction:** Sponge/noodle roller, dustpan, powered centering flappers and bent-polycarbonate structure.\n\n**Team-stated reason or evidence boundary:** The binder lists construction; detailed comparative selection reasoning is not supplied.\n\n**Engineering analysis — original inference:** A broad soft contact can accommodate variation in approach and distribute pressure on a deformable piece. The dustpan supplies support underneath, while the flappers create a separate centering action. That is a different mechanism from merely adding compliant wheels to an arm. The soft material’s wear and compression set can alter intake behavior over an event; the structure must remain aligned while yielding to impacts. Because the binder does not give a complete rejected-alternatives account, these are engineering implications rather than a claim about the team’s exact selection process.\n\n**Proposed validation — not a completed test:** Measure centering success across cone orientations and roller wear, and inspect whether the dustpan or flappers create an escape path.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ECHO: lightweight telescoping arm and roller end effector\n\nVersion: ECHO. [PDF p7](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7) · [PDF p10](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=10)\n\n**Published construction:** Sheet-metal pivot structure, carbon telescope, shimmed hex interfaces and light dead-axle end rollers.\n\n**Team-stated reason or evidence boundary:** Weight and backlash reduction are explicitly documented.\n\n**Engineering analysis — original inference:** Reducing distal mass improves both arm acceleration and the chassis stability needed to exploit it. A light telescoping tube still needs sufficient overlap and guidance to resist bending and torsion at full extension. Shimmed interfaces target lost motion, while structure and belt elasticity remain separate error sources. Dead-axle rollers can remove rotating shaft mass and simplify the wheel assembly, but their supports must retain alignment. A recommendation should compare endpoint settling and piece ownership under load rather than claiming a material alone makes the arm fast.\n\n**Proposed validation — not a completed test:** Measure endpoint deflection at full reach and after reversing both axes; inspect telescoping guidance and roller support wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ECHO: nonparallel balance-fork linkage\n\nVersion: ECHO. [PDF p9](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9)\n\n**Published construction:** Carbon-rod forks, nonparallel four-bar lift and over-center deployment with ratchet release.\n\n**Team-stated reason or evidence boundary:** Lift and tilt relative to a partner and the floor.\n\n**Engineering analysis — original inference:** A nonparallel four-bar controls orientation as well as translation. That can lift a robot while changing its attitude without another actuator, but the force and mechanical advantage vary through the stroke. Over-center deployment can hold a state mechanically, while the ratchet provides a separate release/retention function. Partner geometry and platform angle determine the contact loads. The design should be retrieved as an alliance-specific balance solution rather than grouped indiscriminately with climbers from other seasons.\n\n**Proposed validation — not a completed test:** Model linkage force through the entire stroke and test with multiple partner undersides and off-axis loading.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ECHO: preload catapult and vacuum swiper are distinct tactical tools\n\nVersion: ECHO. [PDF p11](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=11) · [PDF p12](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=12)\n\n**Published construction:** Spring-released one-shot cube catapult; dual vacuum cups added in a three-day development period.\n\n**Team-stated reason or evidence boundary:** Preload launch and opponent loading-zone cube acquisition.\n\n**Engineering analysis — original inference:** A one-shot mechanism can be mechanically simpler than forcing the main manipulator to execute the same autonomous action, but it spends mass on a narrow use. Its value depends on repeatability and the time it frees for the rest of the routine. Vacuum acquisition relies on seal area, surface condition and resistance to peeling; it is poorly described by a generic grip-force number. The swiper is a dated tactical addition, not proof every earlier robot revision carried it. Keep the development date and task boundary attached to the feature.\n\n**Proposed validation — not a completed test:** Test preload release over the allowed setup variation and vacuum retention under peeling loads and imperfect cube surfaces.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 26×26-in frame; Mk4 L2 | [Source p6](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=6) |\n| Arm | 118:1 pivot; 15.58:1 telescope | [Source p7](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7) |\n| Intake | 6.25:1 roller; 60:1 deploy; 40:1 flappers | [Source p8](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8) |\n| Forks | 230:1 lift; 28:1 deploy | [Source p9](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p6-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p6-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=6",
+        "caption": "2023-118 · ECHO · Chassis · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Chassis",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          69.59249114990234,
+          300.60479736328125,
+          542.0924682617188,
+          773.8547973632812
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p7-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p7-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7",
+        "caption": "2023-118 · ECHO · Telescoping arm · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Telescoping arm",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          50.70534896850586,
+          243.60479736328125,
+          561.455322265625,
+          728.1047973632812
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p8-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p8-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8",
+        "caption": "2023-118 · ECHO · Dustpan intake · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Dustpan intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          34.10448455810547,
+          290.4466857910156,
+          577.8544921875,
+          705.1966552734375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p9-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p9-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9",
+        "caption": "2023-118 · ECHO · Balance forks · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Balance forks",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          26.29835319519043,
+          305.4375,
+          585.79833984375,
+          690.1875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p10-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p10-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=10",
+        "caption": "2023-118 · ECHO · End effector · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "End effector",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.13258171081543,
+          303.8341369628906,
+          572.382568359375,
+          689.3341064453125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p11-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p11-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=11",
+        "caption": "2023-118 · ECHO · Preload catapult · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Preload catapult",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          130.0,
+          300.0,
+          530.0,
+          735.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-ba2298a5d1686ccd7a-p12-1",
+        "robot_id": "2023-118",
+        "kind": "binder_figure",
+        "binder_id": "ba2298a5d1686ccd7a",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-ba2298a5d1686ccd7a-p12-1.jpg",
+        "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=12",
+        "caption": "2023-118 · ECHO · Vacuum swiper · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Vacuum swiper",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          25.688114166259766,
+          384.6412658691406,
+          585.9380493164062,
+          707.8912353515625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      }
+    ],
+    "source_post_count": 1,
+    "cad_code_links": [],
+    "id": "2023-118",
+    "team_name": "Robonauts",
+    "epa_rank": 29,
+    "epa": 67.78,
+    "epa_pre_champs": 67.64,
+    "epa_breakdown": {
+      "total_points": 67.78,
+      "auto_points": 17.77,
+      "teleop_points": 37.74,
+      "endgame_points": 9.99,
+      "links_rp": 0.9031,
+      "activation_rp": 0.6494,
+      "tiebreaker_points": 65.5,
+      "auto_charge_station_points": 8.15,
+      "auto_pieces": 1.82,
+      "teleop_grid_points": 25.36,
+      "bottom_pieces": 2.85,
+      "middle_pieces": 1.79,
+      "top_pieces": 4.23,
+      "cube_points": 12.29,
+      "cone_points": 21.77,
+      "links": 2.93,
+      "endgame_charge_station_points": 9.99,
+      "rp_1": 0.9031,
+      "rp_2": 0.6494
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "75f2bdd0d81762cb"
+    ],
+    "tags": [
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-ba2298a5d1686ccd7a-90",
+      "tech-ba2298a5d1686ccd7a-91",
+      "tech-ba2298a5d1686ccd7a-92",
+      "tech-ba2298a5d1686ccd7a-93"
+    ],
+    "binder_source_ids": [
+      "ba2298a5d1686ccd7a"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-118",
+      "year": 2023,
+      "team": 118,
+      "epa_rank": 29,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"118\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 6,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "ba2298a5d1686ccd7a"
+      ],
+      "technical_note_ids": [
+        "tech-ba2298a5d1686ccd7a-90",
+        "tech-ba2298a5d1686ccd7a-91",
+        "tech-ba2298a5d1686ccd7a-92",
+        "tech-ba2298a5d1686ccd7a-93"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "ba2298a5d1686ccd7a",
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+          "error": null,
+          "discovery": "Targeted web search; identity must be verified in PDF",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "ba2298a5d1686ccd7a",
+      "subsystem": "intake",
+      "title": "ECHO: compliant vector pickup and cone centering",
+      "pdf_pages": [
+        8
+      ],
+      "construction": "Sponge/noodle roller, dustpan, powered centering flappers and bent-polycarbonate structure.",
+      "team_stated_reason": "The binder lists construction; detailed comparative selection reasoning is not supplied.",
+      "engineering_analysis": "A broad soft contact can accommodate variation in approach and distribute pressure on a deformable piece. The dustpan supplies support underneath, while the flappers create a separate centering action. That is a different mechanism from merely adding compliant wheels to an arm. The soft material’s wear and compression set can alter intake behavior over an event; the structure must remain aligned while yielding to impacts. Because the binder does not give a complete rejected-alternatives account, these are engineering implications rather than a claim about the team’s exact selection process.",
+      "recommended_validation": "Measure centering success across cone orientations and roller wear, and inspect whether the dustpan or flappers create an escape path.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-ba2298a5d1686ccd7a-90",
+      "robot_id": "2023-118",
+      "year": 2023,
+      "version_label": "ECHO",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8"
+        }
+      ],
+      "image_ids": [
+        "binder-ba2298a5d1686ccd7a-p8-1"
+      ]
+    },
+    {
+      "binder_id": "ba2298a5d1686ccd7a",
+      "subsystem": "positioning",
+      "title": "ECHO: lightweight telescoping arm and roller end effector",
+      "pdf_pages": [
+        7,
+        10
+      ],
+      "construction": "Sheet-metal pivot structure, carbon telescope, shimmed hex interfaces and light dead-axle end rollers.",
+      "team_stated_reason": "Weight and backlash reduction are explicitly documented.",
+      "engineering_analysis": "Reducing distal mass improves both arm acceleration and the chassis stability needed to exploit it. A light telescoping tube still needs sufficient overlap and guidance to resist bending and torsion at full extension. Shimmed interfaces target lost motion, while structure and belt elasticity remain separate error sources. Dead-axle rollers can remove rotating shaft mass and simplify the wheel assembly, but their supports must retain alignment. A recommendation should compare endpoint settling and piece ownership under load rather than claiming a material alone makes the arm fast.",
+      "recommended_validation": "Measure endpoint deflection at full reach and after reversing both axes; inspect telescoping guidance and roller support wear.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-ba2298a5d1686ccd7a-91",
+      "robot_id": "2023-118",
+      "year": 2023,
+      "version_label": "ECHO",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7"
+        },
+        {
+          "pdf_page": 10,
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-ba2298a5d1686ccd7a-p7-1",
+        "binder-ba2298a5d1686ccd7a-p10-1"
+      ]
+    },
+    {
+      "binder_id": "ba2298a5d1686ccd7a",
+      "subsystem": "endgame",
+      "title": "ECHO: nonparallel balance-fork linkage",
+      "pdf_pages": [
+        9
+      ],
+      "construction": "Carbon-rod forks, nonparallel four-bar lift and over-center deployment with ratchet release.",
+      "team_stated_reason": "Lift and tilt relative to a partner and the floor.",
+      "engineering_analysis": "A nonparallel four-bar controls orientation as well as translation. That can lift a robot while changing its attitude without another actuator, but the force and mechanical advantage vary through the stroke. Over-center deployment can hold a state mechanically, while the ratchet provides a separate release/retention function. Partner geometry and platform angle determine the contact loads. The design should be retrieved as an alliance-specific balance solution rather than grouped indiscriminately with climbers from other seasons.",
+      "recommended_validation": "Model linkage force through the entire stroke and test with multiple partner undersides and off-axis loading.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-ba2298a5d1686ccd7a-92",
+      "robot_id": "2023-118",
+      "year": 2023,
+      "version_label": "ECHO",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 9,
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-ba2298a5d1686ccd7a-p9-1"
+      ]
+    },
+    {
+      "binder_id": "ba2298a5d1686ccd7a",
+      "subsystem": "special",
+      "title": "ECHO: preload catapult and vacuum swiper are distinct tactical tools",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "construction": "Spring-released one-shot cube catapult; dual vacuum cups added in a three-day development period.",
+      "team_stated_reason": "Preload launch and opponent loading-zone cube acquisition.",
+      "engineering_analysis": "A one-shot mechanism can be mechanically simpler than forcing the main manipulator to execute the same autonomous action, but it spends mass on a narrow use. Its value depends on repeatability and the time it frees for the rest of the routine. Vacuum acquisition relies on seal area, surface condition and resistance to peeling; it is poorly described by a generic grip-force number. The swiper is a dated tactical addition, not proof every earlier robot revision carried it. Keep the development date and task boundary attached to the feature.",
+      "recommended_validation": "Test preload release over the allowed setup variation and vacuum retention under peeling loads and imperfect cube surfaces.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-ba2298a5d1686ccd7a-93",
+      "robot_id": "2023-118",
+      "year": 2023,
+      "version_label": "ECHO",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 11,
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=11"
+        },
+        {
+          "pdf_page": 12,
+          "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=12"
+        }
+      ],
+      "image_ids": [
+        "binder-ba2298a5d1686ccd7a-p11-1",
+        "binder-ba2298a5d1686ccd7a-p12-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-ba2298a5d1686ccd7a-1",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "robot_id": "2023-118",
+      "pdf_page": 6,
+      "component": "Base",
+      "published_parameters": "26×26-in frame; Mk4 L2",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=6",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-ba2298a5d1686ccd7a-2",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "robot_id": "2023-118",
+      "pdf_page": 7,
+      "component": "Arm",
+      "published_parameters": "118:1 pivot; 15.58:1 telescope",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-ba2298a5d1686ccd7a-3",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "robot_id": "2023-118",
+      "pdf_page": 8,
+      "component": "Intake",
+      "published_parameters": "6.25:1 roller; 60:1 deploy; 40:1 flappers",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-ba2298a5d1686ccd7a-4",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "robot_id": "2023-118",
+      "pdf_page": 9,
+      "component": "Forks",
+      "published_parameters": "230:1 lift; 28:1 deploy",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "ba2298a5d1686ccd7a",
+      "robot_id": "2023-118",
+      "title": "2023-118 ECHO technical publication",
+      "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+      "format": "pdf",
+      "pages": 14,
+      "sha256": "53d7a58cca52383205852f9a0c13008534336a61f63c13f6f21354074150386d",
+      "bytes": 5671630,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "figure_pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Targeted web search; identity must be verified in PDF",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2023-118:publication-version:1",
+      "label": "ECHO",
+      "robot_id": "2023-118",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-ba2298a5d1686ccd7a-90",
+        "tech-ba2298a5d1686ccd7a-91",
+        "tech-ba2298a5d1686ccd7a-92",
+        "tech-ba2298a5d1686ccd7a-93"
+      ],
+      "source_urls": [
+        "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2023-118",
+      "title": "2023-118: technical construction and mechanism reasoning",
+      "year": 2023,
+      "robot_id": "2023-118",
+      "kind": "robot_technical_review",
+      "body": "# 2023-118: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## ECHO: compliant vector pickup and cone centering\n\nVersion: ECHO. [PDF p8](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8)\n\n**Published construction:** Sponge/noodle roller, dustpan, powered centering flappers and bent-polycarbonate structure.\n\n**Team-stated reason or evidence boundary:** The binder lists construction; detailed comparative selection reasoning is not supplied.\n\n**Engineering analysis — original inference:** A broad soft contact can accommodate variation in approach and distribute pressure on a deformable piece. The dustpan supplies support underneath, while the flappers create a separate centering action. That is a different mechanism from merely adding compliant wheels to an arm. The soft material’s wear and compression set can alter intake behavior over an event; the structure must remain aligned while yielding to impacts. Because the binder does not give a complete rejected-alternatives account, these are engineering implications rather than a claim about the team’s exact selection process.\n\n**Proposed validation — not a completed test:** Measure centering success across cone orientations and roller wear, and inspect whether the dustpan or flappers create an escape path.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ECHO: lightweight telescoping arm and roller end effector\n\nVersion: ECHO. [PDF p7](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7) · [PDF p10](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=10)\n\n**Published construction:** Sheet-metal pivot structure, carbon telescope, shimmed hex interfaces and light dead-axle end rollers.\n\n**Team-stated reason or evidence boundary:** Weight and backlash reduction are explicitly documented.\n\n**Engineering analysis — original inference:** Reducing distal mass improves both arm acceleration and the chassis stability needed to exploit it. A light telescoping tube still needs sufficient overlap and guidance to resist bending and torsion at full extension. Shimmed interfaces target lost motion, while structure and belt elasticity remain separate error sources. Dead-axle rollers can remove rotating shaft mass and simplify the wheel assembly, but their supports must retain alignment. A recommendation should compare endpoint settling and piece ownership under load rather than claiming a material alone makes the arm fast.\n\n**Proposed validation — not a completed test:** Measure endpoint deflection at full reach and after reversing both axes; inspect telescoping guidance and roller support wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ECHO: nonparallel balance-fork linkage\n\nVersion: ECHO. [PDF p9](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9)\n\n**Published construction:** Carbon-rod forks, nonparallel four-bar lift and over-center deployment with ratchet release.\n\n**Team-stated reason or evidence boundary:** Lift and tilt relative to a partner and the floor.\n\n**Engineering analysis — original inference:** A nonparallel four-bar controls orientation as well as translation. That can lift a robot while changing its attitude without another actuator, but the force and mechanical advantage vary through the stroke. Over-center deployment can hold a state mechanically, while the ratchet provides a separate release/retention function. Partner geometry and platform angle determine the contact loads. The design should be retrieved as an alliance-specific balance solution rather than grouped indiscriminately with climbers from other seasons.\n\n**Proposed validation — not a completed test:** Model linkage force through the entire stroke and test with multiple partner undersides and off-axis loading.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## ECHO: preload catapult and vacuum swiper are distinct tactical tools\n\nVersion: ECHO. [PDF p11](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=11) · [PDF p12](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=12)\n\n**Published construction:** Spring-released one-shot cube catapult; dual vacuum cups added in a three-day development period.\n\n**Team-stated reason or evidence boundary:** Preload launch and opponent loading-zone cube acquisition.\n\n**Engineering analysis — original inference:** A one-shot mechanism can be mechanically simpler than forcing the main manipulator to execute the same autonomous action, but it spends mass on a narrow use. Its value depends on repeatability and the time it frees for the rest of the routine. Vacuum acquisition relies on seal area, surface condition and resistance to peeling; it is poorly described by a generic grip-force number. The swiper is a dated tactical addition, not proof every earlier robot revision carried it. Keep the development date and task boundary attached to the feature.\n\n**Proposed validation — not a completed test:** Test preload release over the allowed setup variation and vacuum retention under peeling loads and imperfect cube surfaces.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 26×26-in frame; Mk4 L2 | [Source p6](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=6) |\n| Arm | 118:1 pivot; 15.58:1 telescope | [Source p7](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7) |\n| Intake | 6.25:1 roller; 60:1 deploy; 40:1 flappers | [Source p8](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8) |\n| Forks | 230:1 lift; 28:1 deploy | [Source p9](https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf"
+      ],
+      "path": "docs/technical/2023-118.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p6-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p6-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=6",
+      "caption": "2023-118 · ECHO · Chassis · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Chassis",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        69.59249114990234,
+        300.60479736328125,
+        542.0924682617188,
+        773.8547973632812
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 1087,
+      "height_px": 1089,
+      "bytes": 150566,
+      "sha256": "64c6eaa427a2aff1588261aa2b1e463baa4b0ae0180e663080ef1f9ea02cb86e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p6-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p7-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p7-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=7",
+      "caption": "2023-118 · ECHO · Telescoping arm · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Telescoping arm",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        50.70534896850586,
+        243.60479736328125,
+        561.455322265625,
+        728.1047973632812
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 1176,
+      "height_px": 1115,
+      "bytes": 134940,
+      "sha256": "5f97b9845402dfc6cc0f1daf98590b32f442c9ee041988e0b49934e291ec2495",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p7-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p8-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p8-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=8",
+      "caption": "2023-118 · ECHO · Dustpan intake · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Dustpan intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        34.10448455810547,
+        290.4466857910156,
+        577.8544921875,
+        705.1966552734375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1252,
+      "height_px": 954,
+      "bytes": 95398,
+      "sha256": "97753f26127d712304fc729d4620fba95f676d8d7feece0576bb0204e0f33686",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p8-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p9-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p9-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=9",
+      "caption": "2023-118 · ECHO · Balance forks · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Balance forks",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        26.29835319519043,
+        305.4375,
+        585.79833984375,
+        690.1875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1288,
+      "height_px": 886,
+      "bytes": 162572,
+      "sha256": "a4a4d1eba3ad2ba0d0d5b405d50b6f301e0e1f4110a5f273f2620d9a477ffad8",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p9-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p10-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p10-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=10",
+      "caption": "2023-118 · ECHO · End effector · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "End effector",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.13258171081543,
+        303.8341369628906,
+        572.382568359375,
+        689.3341064453125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 1248,
+      "height_px": 888,
+      "bytes": 70672,
+      "sha256": "dfab147c55150718d9e793e6f173d45c65cb52325c8fda9ade07c9d954a498d0",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p10-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p11-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p11-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=11",
+      "caption": "2023-118 · ECHO · Preload catapult · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Preload catapult",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        130.0,
+        300.0,
+        530.0,
+        735.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 920,
+      "height_px": 1001,
+      "bytes": 63829,
+      "sha256": "4af5541a4d0e9d4c0f9d9d5392468c9cabf9707630ac789a16da611ce8dcffa6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p11-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-ba2298a5d1686ccd7a-p12-1",
+      "robot_id": "2023-118",
+      "kind": "binder_figure",
+      "binder_id": "ba2298a5d1686ccd7a",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-ba2298a5d1686ccd7a-p12-1.jpg",
+      "source_url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf#page=12",
+      "caption": "2023-118 · ECHO · Vacuum swiper · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Vacuum swiper",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        25.688114166259766,
+        384.6412658691406,
+        585.9380493164062,
+        707.8912353515625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 1289,
+      "height_px": 745,
+      "bytes": 72355,
+      "sha256": "d354ba9d57f096c56436add0358edbc86e6dda7e6d15f0fd744565b5f0ceeabf",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-ba2298a5d1686ccd7a-p12-1",
+      "reader_url": "index.html#image=binder-ba2298a5d1686ccd7a-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-118",
+    "year": 2023,
+    "team": 118,
+    "epa_rank": 29,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"118\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 6,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "ba2298a5d1686ccd7a"
+    ],
+    "technical_note_ids": [
+      "tech-ba2298a5d1686ccd7a-90",
+      "tech-ba2298a5d1686ccd7a-91",
+      "tech-ba2298a5d1686ccd7a-92",
+      "tech-ba2298a5d1686ccd7a-93"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "ba2298a5d1686ccd7a",
+        "url": "https://773cbb55-5509-49bc-8d49-05aa4e1c4c70.filesusr.com/ugd/209e0c_40103d44bfcb4b2b877c4b14bb9d1563.pdf",
+        "error": null,
+        "discovery": "Targeted web search; identity must be verified in PDF",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-ba2298a5d1686ccd7a-90:construction",
+    "tech-ba2298a5d1686ccd7a-90:team_stated_reason",
+    "tech-ba2298a5d1686ccd7a-90:engineering_analysis",
+    "tech-ba2298a5d1686ccd7a-90:recommended_validation",
+    "tech-ba2298a5d1686ccd7a-90:limitations",
+    "tech-ba2298a5d1686ccd7a-91:construction",
+    "tech-ba2298a5d1686ccd7a-91:team_stated_reason",
+    "tech-ba2298a5d1686ccd7a-91:engineering_analysis",
+    "tech-ba2298a5d1686ccd7a-91:recommended_validation",
+    "tech-ba2298a5d1686ccd7a-91:limitations",
+    "tech-ba2298a5d1686ccd7a-92:construction",
+    "tech-ba2298a5d1686ccd7a-92:team_stated_reason",
+    "tech-ba2298a5d1686ccd7a-92:engineering_analysis",
+    "tech-ba2298a5d1686ccd7a-92:recommended_validation",
+    "tech-ba2298a5d1686ccd7a-92:limitations",
+    "tech-ba2298a5d1686ccd7a-93:construction",
+    "tech-ba2298a5d1686ccd7a-93:team_stated_reason",
+    "tech-ba2298a5d1686ccd7a-93:engineering_analysis",
+    "tech-ba2298a5d1686ccd7a-93:recommended_validation",
+    "tech-ba2298a5d1686ccd7a-93:limitations",
+    "param-ba2298a5d1686ccd7a-1",
+    "param-ba2298a5d1686ccd7a-2",
+    "param-ba2298a5d1686ccd7a-3",
+    "param-ba2298a5d1686ccd7a-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

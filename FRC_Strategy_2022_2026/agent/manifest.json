@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "edition": "2026-10-26-604-original-images-and-1833-task-template",
+  "path_base": "corpus_root",
+  "entry_point": "AGENTS.md",
+  "reader": "index.html",
+  "reader_images": "All source image bytes embedded in index.html; no image network or sibling-folder requests needed.",
+  "counts": {
+    "robot_packets": 128,
+    "retrieval_units": 5012,
+    "claims": 1376,
+    "images": 508,
+    "technical_notes": 251,
+    "published_parameters": 121,
+    "robot_years_with_technical_reviews": 128
+  },
+  "files": {
+    "complete_robot_packets": "agent/robot_packets/{YEAR-TEAM}.json",
+    "retrieval_units": "agent/retrieval_units.jsonl",
+    "retrieval_index": "agent/retrieval.sqlite",
+    "claims": "agent/claims.jsonl",
+    "images": "agent/image_catalog.jsonl",
+    "publication_versions": "agent/publication_versions.jsonl",
+    "query_cli": "scripts/query_agent.py",
+    "games": "docs/game_{YEAR}.md",
+    "benchmarks": "data/benchmarks.jsonl",
+    "einstein_records": "data/einstein_reviews.jsonl",
+    "tower_sample_summary": "data/tower_summary_2026.jsonl",
+    "tower_component_rows": "data/tower_component_sample_2026.jsonl",
+    "binder_discovery_audit": "data/binder_audit.jsonl",
+    "full_sql_database": "frc_strategy.sqlite",
+    "methodology": "docs/METHODOLOGY.md",
+    "evaluation_cases": "agent/evaluation_cases.jsonl",
+    "video_quiz_prompts": "data/roboreplay_quiz_prompts.jsonl",
+    "quiz_protocol": "docs/QUIZ_PROTOCOL.md",
+    "technical_study_audit": "data/technical_study_audit.jsonl",
+    "einstein_visual_audit": "data/einstein_visual_audit.jsonl",
+    "visual_audit_protocol": "docs/EINSTEIN_VISUAL_AUDIT.md",
+    "transcript_recovery": "data/transcript_recovery_ledger.jsonl",
+    "task_list_template": "team1833/1833_Task_List_Template.xlsx",
+    "task_list_protocol": "docs/TASK_LIST_PROTOCOL.md",
+    "task_list_schema": "team1833/task_template_schema.json"
+  },
+  "semantics": {
+    "robot_id": "YEAR-TEAM; team number alone is ambiguous",
+    "image_paths": "Relative to corpus root, including inside packets; never relative to the packet file",
+    "units": "Published strings retain source units and ratio order. No automatic physical normalization.",
+    "version_groups": "Publication labels, not audited competition intervals. Null dates mean unknown.",
+    "evidence": "Types describe attribution, not calibrated probabilities. Analyst inference is not a team statement. Proposed tests are not performed.",
+    "search_ranking": "FTS5 bm25 lexical relevance only; not confidence, causation, robot quality or EPA.",
+    "field_sourcing": "Technical notes have source/page locators; dossier synopsis fields retain coarser source bundles.",
+    "manuals": "Source links and narrative references are retained; rule-version completeness and field CAD coverage are not certified. Verify governing rules for a new design.",
+    "scope": "128 provisional dossiers: original 125 plus supplemental 2022/2023/2026 Team 604 entries. 27 robot-years retain earlier reviewed technical-publication coverage; the other focused studies and new 604 primary-source studies have their own explicit scopes. Zero exhaustive version certifications. 35 available full-caption reviews; nine recovered transcripts await content review. No visual Einstein audit is claimed or required by the user. Full channel inventory remains unverified."
+  },
+  "required_workflow": [
+    "Read AGENTS.md and the full game chapter for the target year.",
+    "Set role, event stage, partner assumptions and team resources.",
+    "For each new manual analysis, material rules revision or new/revised robot design brief, follow docs/TASK_LIST_PROTOCOL.md and deliver a filled copy of the one-sheet 1833 task template before the final architecture recommendation. Preserve human decisions separately; no group tabs.",
+    "Search explicit year/function; inspect typed evidence, scope and source locators.",
+    "Load complete robot packets, including sibling claim fields and limitations.",
+    "Open the referenced image bytes with image-capable tools; text captions do not confer visual understanding.",
+    "Check exact version, mechanism interfaces, performance conditions and rule applicability.",
+    "Recommend a coherent architecture, alternatives, unresolved issues and a decision-changing test."
+  ],
+  "generation": {
+    "script": "scripts/build_agent_and_reader.py",
+    "inputs": "Included data JSONL, embedded game chapters, Markdown docs and original image bytes",
+    "network_required": false
+  }
+}

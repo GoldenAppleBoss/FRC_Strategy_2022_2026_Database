@@ -1,0 +1,409 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-5990",
+  "year": 2025,
+  "team": 5990,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 5990,
+    "robot": "TRIGON 2025",
+    "primary": [
+      "https://www.youtube.com/watch?v=bC-SjUD3KLg",
+      "https://www.chiefdelphi.com/t/492064?page=6"
+    ],
+    "architecture": "Ground-fed continuous elevator with roller manipulator and rack-driven wrist.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact drive variant unresolved here.",
+      "intake": "Two-stage roller floor pickup; drive motor remains protected inside chassis.",
+      "transfer": "Belt and centering wheel orient coral; printed beam-break fixture retains/locates coral at handoff.",
+      "scoring": "Two-motor continuous elevator with ratcheted rope tensioning. Shared drive powers coral and algae roller sets; rack-and-pinion positions gripper.",
+      "endgame": "1690's first-hand ISR-event account explicitly identifies this configuration as having no climb. Later-season addition/absence remains unverified.",
+      "controls": "Two reef-facing cameras; full reef-selection panel lets operator choose a distant branch, rather than always nearest."
+    },
+    "versions": [
+      "Contemporary ISR account compares consistent coral output against 2231's climb and extra algae access; this is event-specific."
+    ],
+    "analysis": "A missing climb can be an intentional or tolerated trade when extra cycling compensates. That judgment must be numerical and alliance-specific; it is not permission to assume every high-EPA robot needs every scoring mode.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2025-5990",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/500664/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/7/6/476ec6d47d6ef58ba2149474cd71f07d6720e084_2_690x487.png",
+        "post": 1,
+        "date": "2025-04-27T16:56:04.848Z",
+        "author": "kabla",
+        "context_tags": [],
+        "caption": "2025 team 5990 — source image from post 1 (2025-04-27). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "3962f673c499ea3881.jpg",
+        "id": "ef33981825a436b4e2",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/3962f673c499ea3881.jpg"
+      }
+    ],
+    "source_post_count": 80,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-68",
+        "url": "https://drive.google.com/file/d/1ntrpLCAixsfSPvRiUSMkNcNqFZbNHCb-/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e7a897aad1f3663528"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-98",
+        "url": "https://drive.google.com/file/d/1wQSyNiD5Tq9n05r3jvnC2tTuhyNJ-RxC/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3f0533c93ee33f25a2"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-98",
+        "url": "https://drive.google.com/file/d/1wZdV9yRmiPV-zVKGR9rs3y-LfH1FBOdl/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7484000918e11824fb"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-120",
+        "url": "https://drive.google.com/file/d/11b77UmmFbipvSfZLU0n572KwWNQQgQTy/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "26a8fbba3629ad9e21"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-120",
+        "url": "https://drive.google.com/file/d/11UTYdPe9Ez6G8RjfKmnYK7b40FyKNtaS/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "dc097063ea0b460c2b"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-120",
+        "url": "https://drive.google.com/file/d/12v5DbBBo0EhOEK4C_cH8i9mah01vQifm/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a2ab867497aa6738ea"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-146",
+        "url": "https://drive.google.com/file/d/11NxaOv9gZqSS8nHSjX6JAlgpgxOzEWhK/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8bfc8dd192b82e271c"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-146",
+        "url": "https://drive.google.com/file/d/1A4fFzUx8hRrTDY1MwKlSztibjspd_72o/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5fa8f8f0ab443a24a6"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-146",
+        "url": "https://drive.google.com/file/d/1MKGhLGDXnSwR8Nyx5DLskDEry997GGZi/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "0541a8d215762cc919"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-146",
+        "url": "https://drive.google.com/file/d/1qKZ42Jqc__mipielZUvSKpokURyVCvt2/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2ed48dbf2c64a16ab3"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-146",
+        "url": "https://drive.google.com/file/d/1pgpntP9kNeJ7-lQiHQncr9wfYHwNhg3s/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3febbfd3f4663aa467"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-492064-160",
+        "url": "https://drive.google.com/drive/folders/19BihFDWXoUJi1mkNFcz6PTV77cla18sU",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ae02b9a0aab94c0ed3"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-500664-1",
+        "url": "https://cad.onshape.com/documents/4c5e2ea12b5cd01cf3661d92/w/b89d262a51dc00d48009a6da/e/022b3839db0b9eb6d8878a1b?configuration=default&renderMode=0&uiState=680e5d4b93a2077c70aad2de",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f08805773f500dd88c"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-500664-1",
+        "url": "https://docs.google.com/presentation/d/e/2PACX-1vQDmuOuYko6tsqzaVRxMaeidCp3j22V8D6hehm5MjMr2mTX2qjtZM0GDTF_Q82WCff1eS-U3_bndLev/pub?start=false&loop=false&delayms=3000",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "93cd85509d6973472e"
+      },
+      {
+        "robot_id": "2025-5990",
+        "discovery_post": "2025-5990-500664-3",
+        "url": "https://github.com/Programming-TRIGON/RobotCode2025",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8556ad39c2c240d44c"
+      }
+    ],
+    "id": "2025-5990",
+    "team_name": "TRIGON",
+    "epa_rank": 28,
+    "epa": 87.23,
+    "epa_pre_champs": 84.31,
+    "epa_breakdown": {
+      "total_points": 87.23,
+      "auto_points": 20.02,
+      "teleop_points": 64.65,
+      "endgame_points": 2.56,
+      "auto_rp": 0.4378,
+      "coral_rp": 0.5928,
+      "barge_rp": 0.07238,
+      "tiebreaker_points": 0.31,
+      "auto_coral_points": 17.1,
+      "teleop_coral_points": 53.13,
+      "coral_l1": 2.12,
+      "coral_l2": 5.16,
+      "coral_l3": 5.19,
+      "coral_l4": 4.96,
+      "processor_algae": 0.78,
+      "processor_algae_points": 2.33,
+      "net_algae_points": 9.2,
+      "barge_points": 2.56,
+      "rp_1": 0.4378,
+      "rp_2": 0.5928,
+      "rp_3": 0.07238,
+      "total_coral_points": 70.23,
+      "total_algae_points": 11.53
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "3906e926dcbd3ffb",
+      "53b14e4b124e83ef"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-5990",
+      "year": 2025,
+      "team": 5990,
+      "epa_rank": 28,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"5990\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 24,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"5990\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-5990"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-5990",
+      "title": "Protected power and adjustable rigging support a ground-source cycle",
+      "start_seconds": 76,
+      "end_seconds": 155,
+      "construction": "The two-stage floor intake keeps its motor inside the chassis, then uses a belt and centering wheel to orient coral. A fixture/beam-break locates the handoff. The continuous elevator has two motors and wrench-adjustable ratchet tensioners for its ropes; a rack positions the shared gripper.",
+      "team_stated_reason": "The team explicitly connects internal motor placement to preventing collision damage and the ratchet arrangement to maintaining rope tension. The interview also demonstrates vision-based coral acquisition.",
+      "engineering_analysis": "A protected motor still transmits impact through shafts and belts, so the whole load path needs inspection. Adjustable rigging is useful when it makes a repeatable service procedure possible; excessive or unequal tension can add friction and rack a carriage. Vision-directed pickup should be evaluated with the mechanical centering tolerance rather than as an independent AI success.",
+      "recommended_validation": "Document a reproducible rope-tension procedure, check left/right travel under load, and test handoff after impacts. Measure acquisition success with occlusion and adjacent pieces.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-5990",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=bC-SjUD3KLg",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/492064?page=6"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 76,
+        "end_seconds": 155,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "bC-SjUD3KLg",
+          "sha256": "f47fe41bf3b7c8425affba2c7aa86f60489ea40d5c9b434e80f7d02baccbe6df",
+          "caption_segments": 188,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-5990:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-5990",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-5990"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=bC-SjUD3KLg"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-5990",
+      "title": "2025-5990 · Protected power and adjustable rigging support a ground-source cycle",
+      "year": 2025,
+      "robot_id": "2025-5990",
+      "kind": "focused_technical_study",
+      "body": "# 2025-5990: Protected power and adjustable rigging support a ground-source cycle\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe two-stage floor intake keeps its motor inside the chassis, then uses a belt and centering wheel to orient coral. A fixture/beam-break locates the handoff. The continuous elevator has two motors and wrench-adjustable ratchet tensioners for its ropes; a rack positions the shared gripper.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly connects internal motor placement to preventing collision damage and the ratchet arrangement to maintaining rope tension. The interview also demonstrates vision-based coral acquisition.\n\n## Engineering interpretation — analyst inference\n\nA protected motor still transmits impact through shafts and belts, so the whole load path needs inspection. Adjustable rigging is useful when it makes a repeatable service procedure possible; excessive or unequal tension can add friction and rack a carriage. Vision-directed pickup should be evaluated with the mechanical centering tolerance rather than as an independent AI success.\n\n## Proposed validation — not performed\n\nDocument a reproducible rope-tension procedure, check left/right travel under load, and test handoff after impacts. Measure acquisition success with occlusion and adjacent pieces.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=bC-SjUD3KLg](https://www.youtube.com/watch?v=bC-SjUD3KLg)\n- [https://www.chiefdelphi.com/t/492064?page=6](https://www.chiefdelphi.com/t/492064?page=6)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=bC-SjUD3KLg",
+        "https://www.chiefdelphi.com/t/492064?page=6"
+      ],
+      "path": "docs/research_continuation/2025-5990.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-5990",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/500664/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/7/6/476ec6d47d6ef58ba2149474cd71f07d6720e084_2_690x487.png",
+      "post": 1,
+      "date": "2025-04-27T16:56:04.848Z",
+      "author": "kabla",
+      "context_tags": [],
+      "caption": "2025 team 5990 — source image from post 1 (2025-04-27). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "3962f673c499ea3881.jpg",
+      "id": "ef33981825a436b4e2",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/3962f673c499ea3881.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 487,
+      "bytes": 60891,
+      "sha256": "0175a261bf962a15d1f5f57dc2a4f1d1fbfa8596013718ce119d2cf2df6b195d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "ef33981825a436b4e2",
+      "reader_url": "index.html#image=ef33981825a436b4e2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-5990",
+    "year": 2025,
+    "team": 5990,
+    "epa_rank": 28,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"5990\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 24,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"5990\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-5990:construction",
+    "study6-2025-5990:team_stated_reason",
+    "study6-2025-5990:engineering_analysis",
+    "study6-2025-5990:recommended_validation",
+    "study6-2025-5990:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

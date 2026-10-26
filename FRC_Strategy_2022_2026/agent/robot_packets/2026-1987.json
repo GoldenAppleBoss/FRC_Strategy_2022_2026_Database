@@ -1,0 +1,1088 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-1987",
+  "year": 2026,
+  "team": 1987,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 1987,
+    "robot": "Broncobots 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=FbkE2kAgKQE",
+      "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf"
+    ],
+    "architecture": "Low-profile turret on large coaxial DYE Rotor-family singulator.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification unresolved here.",
+      "intake": "Additional roller drives fuel deeper into hopper; metal hub caps and wall-contact Zamboni wheel resist impact damage.",
+      "transfer": "Large dish with thin upper hook geometry and independently driven coaxial wheel/hook chains; structure also supports turret.",
+      "scoring": "Low-profile two-X60 flywheel, independently controlled backspin wheels and cycloidal floating hood. Constant-force spring removes loaded hood compliance; omitted extra inertia for rapid speed changes.",
+      "endgame": "Endgame installation not established by reviewed interview.",
+      "controls": "Geared absolute encoder extends turret position range; time-of-flight/velocity prediction supports moving shots."
+    },
+    "versions": [
+      "V1 hood compliance led to added constant-force spring.",
+      "Collector reinforcement followed early durability failures."
+    ],
+    "analysis": "Independent spin control can expand moving-shot solutions but adds calibration burden. This architecture prioritizes rapid change in launch speed over stored inertia, contrasting usefully with large drums and heavy flywheel turrets.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2026-1987: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## CYCLONE: collector and frame share the impact path\n\nVersion: CYCLONE. [PDF p8](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=8) · [PDF p9](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9)\n\n**Published construction:** Full-width linear collector; 1.125-inch rollers; load-spreading hubs and washers.\n\n**Team-stated reason or evidence boundary:** Acquire five columns and survive contact.\n\n**Engineering analysis — original inference:** An exposed roller’s compliance must be paired with a force path into the chassis. A small washer can concentrate force and start a crack even if the main plate is otherwise flexible. Distributing that load across a hub or a larger washer reduces local pressure, but the joint must still allow the intended movement. The collector width also has an autonomous geometry consequence: it changes which fuel columns can be reached without the chassis crossing a contested route. A width figure should be linked to the effective acquisition envelope rather than merely the distance between arms.\n\n**Proposed validation — not a completed test:** Map acquisition success across the entire mouth with off-center hits, then repeat after controlled impact loading.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## CYCLONE: DYE-inspired rotor with independent feed\n\nVersion: CYCLONE. [PDF p10](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10)\n\n**Published construction:** 22-inch rotor; eight-fuel ring; separate rotation/feed drives; reported 18-fuel/s feed.\n\n**Team-stated reason or evidence boundary:** Maintain bulk-to-single-stream flow in a compact package.\n\n**Engineering analysis — original inference:** A rotor is not just a rotating bucket. Its moving boundary, internal feed contact and exit geometry jointly determine whether fuel circulates, enters the ring, or jams. Independent feed drive lets the team tune the launch supply without requiring the whole bulk pile to turn at that speed. A lower-profile center obstruction improves the area through which fuel can enter; reversing must not turn a hook or seam into a trap. A theoretical ring count multiplied by rotation rate is only an upper bound: pockets must actually fill and discharge.\n\n**Proposed validation — not a completed test:** Measure pocket occupancy and output variability at full, half and nearly empty loads; test reversing a deliberately bridged inlet.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## CYCLONE: floating hood, preload and turret support\n\nVersion: CYCLONE. [PDF p11](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11)\n\n**Published construction:** Compact turret; floating hood; constant-force spring; through-bore sensing; powered hood rollers.\n\n**Team-stated reason or evidence boundary:** Reduce backlash and preserve storage volume.\n\n**Engineering analysis — original inference:** Spring preload can keep a reduction loaded against one tooth flank, reducing reversal uncertainty, but adds a torque that the motor must overcome in the opposite direction. Measuring the output rather than only the motor helps detect residual compliance between gearbox and hood. The feed path and turret bearing need common structural alignment; a compact height is valuable only if it does not permit the hood to deflect enough to change the exit angle. Powered hood rollers alter the spin/contact state, so their ratio belongs in the shot calibration rather than being treated as passive guidance.\n\n**Proposed validation — not a completed test:** Measure hood angle repeatability from both approach directions and at several turret headings; compare loaded and unloaded structure.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## CYCLONE: moving-shot compensation and variable feed\n\nVersion: CYCLONE. [PDF p13](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=13)\n\n**Published construction:** Gyro latency compensation, empirical flight time and variable rotor speed are documented.\n\n**Team-stated reason or evidence boundary:** Maintain accurate mobile firing and stable throughput.\n\n**Engineering analysis — original inference:** A turret can cancel chassis heading only if the controller uses the correct observation time and the actual release state. A latency error grows with angular velocity and can look like a mechanical aiming bias. Rotor speed also changes shot timing and inlet loading; a firing command is not the same as a ball leaving the hood. The mechanical and control record should include this delay and its variation. Slowing the feed may improve delivered score if it reduces wheel droop or keeps the exit state within tolerance.\n\n**Proposed validation — not a completed test:** Time-stamp vision, gyro, turret position, feeder transitions and ball release; compare miss direction against angular and translational velocity.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 1.5:1 rollers; 3.6:1 deploy | [Source p9](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9) |\n| Rotor | 22-in diameter; 20.67:1 rotation; 1:1 feed; reported 18 fuel/s | [Source p10](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10) |\n| Shooter | 4-in 60A main; two X60s at 1.25:1; 80.5:1 hood | [Source p11](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11) |\n| Turret | 25.6:1; 360° described range | [Source p11](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2026-1987",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/524348/11",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/1/7/b174b9c308b1f680342b61328dd547df4b201cbb_2_517x207.png",
+        "post": 11,
+        "date": "2026-09-27T13:28:01.902Z",
+        "author": "jgwentworth96",
+        "context_tags": [
+          "rotor"
+        ],
+        "caption": "2026 team 1987 — source image from post 11 (2026-09-27). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "368eaf4136a2f86ccd.jpg",
+        "id": "1472e8ba80f2d0a32b",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/368eaf4136a2f86ccd.jpg"
+      },
+      {
+        "robot_id": "2026-1987",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/524348/11",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/3/f/c/3fc8a00a445fda8aef70c8b99276d5334cb49bea_2_517x299.png",
+        "post": 11,
+        "date": "2026-09-27T13:28:01.902Z",
+        "author": "jgwentworth96",
+        "context_tags": [
+          "rotor"
+        ],
+        "caption": "2026 team 1987 — source image from post 11 (2026-09-27). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "dc394486633a2eb6dc.jpg",
+        "id": "96796b0ffd4822d8b4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/dc394486633a2eb6dc.jpg"
+      },
+      {
+        "robot_id": "2026-1987",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/517100/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/5/9/1598175faaa2574a2b73cfa61fc309b6cd5931a7_2_663x500.jpeg",
+        "post": 1,
+        "date": "2026-03-23T21:24:17.582Z",
+        "author": "jon.smith",
+        "context_tags": [],
+        "caption": "2026 team 1987 — source image from post 1 (2026-03-23). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "342cc2483de568f7d6.jpg",
+        "id": "ef178510472c04f85c",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/342cc2483de568f7d6.jpg"
+      },
+      {
+        "robot_id": "2026-1987",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/517100/6",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/0/3/9/039fa12ffe8c5e2b52d12765ff6bf73ff2e3f8a7_2_288x375.jpeg",
+        "post": 6,
+        "date": "2026-03-24T16:48:16.262Z",
+        "author": "jon.smith",
+        "context_tags": [
+          "rotor"
+        ],
+        "caption": "2026 team 1987 — source image from post 6 (2026-03-24). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "0d8722a28665b3f435.jpg",
+        "id": "dc7442d2319992eedd",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/0d8722a28665b3f435.jpg"
+      },
+      {
+        "robot_id": "2026-1987",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/517100/6",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/9/b/29b470c8270bb62454425ccbd3872ab4d611dbf9_2_282x375.jpeg",
+        "post": 6,
+        "date": "2026-03-24T16:48:16.262Z",
+        "author": "jon.smith",
+        "context_tags": [
+          "rotor"
+        ],
+        "caption": "2026 team 1987 — source image from post 6 (2026-03-24). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "13f81b1f918556fece.jpg",
+        "id": "daab72bd3b184a6976",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/13f81b1f918556fece.jpg"
+      },
+      {
+        "id": "binder-df1392177a72d1aa1e-p8-1",
+        "robot_id": "2026-1987",
+        "kind": "binder_figure",
+        "binder_id": "df1392177a72d1aa1e",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-df1392177a72d1aa1e-p8-1.jpg",
+        "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=8",
+        "caption": "2026-1987 · CYCLONE · Drivebase · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          70.86544799804688,
+          359.1818542480469,
+          541.134521484375,
+          685.2027587890625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-df1392177a72d1aa1e-p9-1",
+        "robot_id": "2026-1987",
+        "kind": "binder_figure",
+        "binder_id": "df1392177a72d1aa1e",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-df1392177a72d1aa1e-p9-1.jpg",
+        "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9",
+        "caption": "2026-1987 · CYCLONE · Linear intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Linear intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          70.94739532470703,
+          458.8132019042969,
+          541.07763671875,
+          792.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-df1392177a72d1aa1e-p10-1",
+        "robot_id": "2026-1987",
+        "kind": "binder_figure",
+        "binder_id": "df1392177a72d1aa1e",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-df1392177a72d1aa1e-p10-1.jpg",
+        "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10",
+        "caption": "2026-1987 · CYCLONE · DYE-inspired rotor · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "DYE-inspired rotor",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          356.750732421875,
+          556.5787353515625,
+          576.489013671875,
+          742.2083740234375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-df1392177a72d1aa1e-p10-2",
+        "robot_id": "2026-1987",
+        "kind": "binder_figure",
+        "binder_id": "df1392177a72d1aa1e",
+        "pdf_page": 10,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-df1392177a72d1aa1e-p10-2.jpg",
+        "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10",
+        "caption": "2026-1987 · CYCLONE · DYE-inspired rotor · PDF page 10, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "DYE-inspired rotor",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          48.73225402832031,
+          548.495361328125,
+          333.55157470703125,
+          747.4195556640625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-df1392177a72d1aa1e-p11-1",
+        "robot_id": "2026-1987",
+        "kind": "binder_figure",
+        "binder_id": "df1392177a72d1aa1e",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-df1392177a72d1aa1e-p11-1.jpg",
+        "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11",
+        "caption": "2026-1987 · CYCLONE · Turret and floating hood · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Turret and floating hood",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          332.379150390625,
+          558.9559936523438,
+          571.6828002929688,
+          743.8790283203125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-df1392177a72d1aa1e-p11-2",
+        "robot_id": "2026-1987",
+        "kind": "binder_figure",
+        "binder_id": "df1392177a72d1aa1e",
+        "pdf_page": 11,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-df1392177a72d1aa1e-p11-2.jpg",
+        "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11",
+        "caption": "2026-1987 · CYCLONE · Turret and floating hood · PDF page 11, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Turret and floating hood",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          39.76866149902344,
+          543.8916625976562,
+          306.0,
+          753.308349609375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      }
+    ],
+    "source_post_count": 20,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-1987",
+        "discovery_post": "2026-1987-524348-1",
+        "url": "https://cad.onshape.com/documents/7f7a0e7897e017a2df0e247c/w/510b18fb1ae56f683adfc249/e/bf0a353c4f33ce0507c5c152",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "af4346e7339a1e8a1c"
+      },
+      {
+        "robot_id": "2026-1987",
+        "discovery_post": "2026-1987-524348-1",
+        "url": "https://github.com/FRCTeam1987/Robot2026",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c361d0389b70fb0a92"
+      },
+      {
+        "robot_id": "2026-1987",
+        "discovery_post": "2026-1987-524348-1",
+        "url": "https://github.com/wpilibsuite/SystemcoreTesting/discussions/349",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "869496a25e76458478"
+      },
+      {
+        "robot_id": "2026-1987",
+        "discovery_post": "2026-1987-524348-1",
+        "url": "https://drive.google.com/drive/folders/103UbEMtTQEKKCm3_dkM7gd1jOQonyfwN?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "94761c57ac83236046"
+      }
+    ],
+    "id": "2026-1987",
+    "team_name": "Broncobots",
+    "epa_rank": 25,
+    "epa": 257.92,
+    "epa_pre_champs": 239.97,
+    "epa_breakdown": {
+      "total_points": 257.92,
+      "auto_points": 49.26,
+      "teleop_points": 160.33,
+      "endgame_points": 48.33,
+      "energized_rp": 0.6987,
+      "supercharged_rp": 0.6637,
+      "traversal_rp": -0.34095,
+      "tiebreaker_points": 257.92,
+      "auto_fuel": 48.77,
+      "auto_tower": 0.49,
+      "transition_fuel": 19.97,
+      "first_shift_fuel": 75.2,
+      "second_shift_fuel": 65.17,
+      "endgame_fuel": 48.49,
+      "endgame_tower": -0.16,
+      "rp_1": 0.6987,
+      "rp_2": 0.6637,
+      "rp_3": -0.34095,
+      "teleop_fuel": 208.83,
+      "total_fuel": 257.6,
+      "total_tower": 0.32999999999999996
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "5c4dbae90eb1f740"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "expanding storage",
+      "spindexer / DYE",
+      "turret",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-df1392177a72d1aa1e-18",
+      "tech-df1392177a72d1aa1e-19",
+      "tech-df1392177a72d1aa1e-20",
+      "tech-df1392177a72d1aa1e-21"
+    ],
+    "binder_source_ids": [
+      "df1392177a72d1aa1e"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-1987",
+      "year": 2026,
+      "team": 1987,
+      "epa_rank": 25,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"1987\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 27,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "df1392177a72d1aa1e"
+      ],
+      "technical_note_ids": [
+        "tech-df1392177a72d1aa1e-18",
+        "tech-df1392177a72d1aa1e-19",
+        "tech-df1392177a72d1aa1e-20",
+        "tech-df1392177a72d1aa1e-21"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "df1392177a72d1aa1e",
+          "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/524348/1",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "df1392177a72d1aa1e",
+      "subsystem": "intake",
+      "title": "CYCLONE: collector and frame share the impact path",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "construction": "Full-width linear collector; 1.125-inch rollers; load-spreading hubs and washers.",
+      "team_stated_reason": "Acquire five columns and survive contact.",
+      "engineering_analysis": "An exposed roller’s compliance must be paired with a force path into the chassis. A small washer can concentrate force and start a crack even if the main plate is otherwise flexible. Distributing that load across a hub or a larger washer reduces local pressure, but the joint must still allow the intended movement. The collector width also has an autonomous geometry consequence: it changes which fuel columns can be reached without the chassis crossing a contested route. A width figure should be linked to the effective acquisition envelope rather than merely the distance between arms.",
+      "recommended_validation": "Map acquisition success across the entire mouth with off-center hits, then repeat after controlled impact loading.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-df1392177a72d1aa1e-18",
+      "robot_id": "2026-1987",
+      "year": 2026,
+      "version_label": "CYCLONE",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=8"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-df1392177a72d1aa1e-p8-1",
+        "binder-df1392177a72d1aa1e-p9-1"
+      ]
+    },
+    {
+      "binder_id": "df1392177a72d1aa1e",
+      "subsystem": "transfer",
+      "title": "CYCLONE: DYE-inspired rotor with independent feed",
+      "pdf_pages": [
+        10
+      ],
+      "construction": "22-inch rotor; eight-fuel ring; separate rotation/feed drives; reported 18-fuel/s feed.",
+      "team_stated_reason": "Maintain bulk-to-single-stream flow in a compact package.",
+      "engineering_analysis": "A rotor is not just a rotating bucket. Its moving boundary, internal feed contact and exit geometry jointly determine whether fuel circulates, enters the ring, or jams. Independent feed drive lets the team tune the launch supply without requiring the whole bulk pile to turn at that speed. A lower-profile center obstruction improves the area through which fuel can enter; reversing must not turn a hook or seam into a trap. A theoretical ring count multiplied by rotation rate is only an upper bound: pockets must actually fill and discharge.",
+      "recommended_validation": "Measure pocket occupancy and output variability at full, half and nearly empty loads; test reversing a deliberately bridged inlet.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-df1392177a72d1aa1e-19",
+      "robot_id": "2026-1987",
+      "year": 2026,
+      "version_label": "CYCLONE",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-df1392177a72d1aa1e-p10-1",
+        "binder-df1392177a72d1aa1e-p10-2"
+      ]
+    },
+    {
+      "binder_id": "df1392177a72d1aa1e",
+      "subsystem": "scoring",
+      "title": "CYCLONE: floating hood, preload and turret support",
+      "pdf_pages": [
+        11
+      ],
+      "construction": "Compact turret; floating hood; constant-force spring; through-bore sensing; powered hood rollers.",
+      "team_stated_reason": "Reduce backlash and preserve storage volume.",
+      "engineering_analysis": "Spring preload can keep a reduction loaded against one tooth flank, reducing reversal uncertainty, but adds a torque that the motor must overcome in the opposite direction. Measuring the output rather than only the motor helps detect residual compliance between gearbox and hood. The feed path and turret bearing need common structural alignment; a compact height is valuable only if it does not permit the hood to deflect enough to change the exit angle. Powered hood rollers alter the spin/contact state, so their ratio belongs in the shot calibration rather than being treated as passive guidance.",
+      "recommended_validation": "Measure hood angle repeatability from both approach directions and at several turret headings; compare loaded and unloaded structure.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-df1392177a72d1aa1e-20",
+      "robot_id": "2026-1987",
+      "year": 2026,
+      "version_label": "CYCLONE",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 11,
+          "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11"
+        }
+      ],
+      "image_ids": [
+        "binder-df1392177a72d1aa1e-p11-1",
+        "binder-df1392177a72d1aa1e-p11-2"
+      ]
+    },
+    {
+      "binder_id": "df1392177a72d1aa1e",
+      "subsystem": "controls",
+      "title": "CYCLONE: moving-shot compensation and variable feed",
+      "pdf_pages": [
+        13
+      ],
+      "construction": "Gyro latency compensation, empirical flight time and variable rotor speed are documented.",
+      "team_stated_reason": "Maintain accurate mobile firing and stable throughput.",
+      "engineering_analysis": "A turret can cancel chassis heading only if the controller uses the correct observation time and the actual release state. A latency error grows with angular velocity and can look like a mechanical aiming bias. Rotor speed also changes shot timing and inlet loading; a firing command is not the same as a ball leaving the hood. The mechanical and control record should include this delay and its variation. Slowing the feed may improve delivered score if it reduces wheel droop or keeps the exit state within tolerance.",
+      "recommended_validation": "Time-stamp vision, gyro, turret position, feeder transitions and ball release; compare miss direction against angular and translational velocity.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-df1392177a72d1aa1e-21",
+      "robot_id": "2026-1987",
+      "year": 2026,
+      "version_label": "CYCLONE",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 13,
+          "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=13"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-df1392177a72d1aa1e-1",
+      "binder_id": "df1392177a72d1aa1e",
+      "robot_id": "2026-1987",
+      "pdf_page": 9,
+      "component": "Intake",
+      "published_parameters": "1.5:1 rollers; 3.6:1 deploy",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-df1392177a72d1aa1e-2",
+      "binder_id": "df1392177a72d1aa1e",
+      "robot_id": "2026-1987",
+      "pdf_page": 10,
+      "component": "Rotor",
+      "published_parameters": "22-in diameter; 20.67:1 rotation; 1:1 feed; reported 18 fuel/s",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-df1392177a72d1aa1e-3",
+      "binder_id": "df1392177a72d1aa1e",
+      "robot_id": "2026-1987",
+      "pdf_page": 11,
+      "component": "Shooter",
+      "published_parameters": "4-in 60A main; two X60s at 1.25:1; 80.5:1 hood",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-df1392177a72d1aa1e-4",
+      "binder_id": "df1392177a72d1aa1e",
+      "robot_id": "2026-1987",
+      "pdf_page": 11,
+      "component": "Turret",
+      "published_parameters": "25.6:1; 360° described range",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "df1392177a72d1aa1e",
+      "robot_id": "2026-1987",
+      "title": "2026-1987 CYCLONE technical publication",
+      "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+      "format": "pdf",
+      "pages": 14,
+      "sha256": "767eb9736d6d2d06116e6d8ddb05044788b51ed81d0be172d2cad8e6bd807217",
+      "bytes": 4329646,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        8,
+        9,
+        10,
+        11,
+        13
+      ],
+      "figure_pages": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/524348/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2026-1987:publication-version:1",
+      "label": "CYCLONE",
+      "robot_id": "2026-1987",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-df1392177a72d1aa1e-18",
+        "tech-df1392177a72d1aa1e-19",
+        "tech-df1392177a72d1aa1e-20",
+        "tech-df1392177a72d1aa1e-21"
+      ],
+      "source_urls": [
+        "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2026-1987",
+      "title": "2026-1987: technical construction and mechanism reasoning",
+      "year": 2026,
+      "robot_id": "2026-1987",
+      "kind": "robot_technical_review",
+      "body": "# 2026-1987: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## CYCLONE: collector and frame share the impact path\n\nVersion: CYCLONE. [PDF p8](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=8) · [PDF p9](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9)\n\n**Published construction:** Full-width linear collector; 1.125-inch rollers; load-spreading hubs and washers.\n\n**Team-stated reason or evidence boundary:** Acquire five columns and survive contact.\n\n**Engineering analysis — original inference:** An exposed roller’s compliance must be paired with a force path into the chassis. A small washer can concentrate force and start a crack even if the main plate is otherwise flexible. Distributing that load across a hub or a larger washer reduces local pressure, but the joint must still allow the intended movement. The collector width also has an autonomous geometry consequence: it changes which fuel columns can be reached without the chassis crossing a contested route. A width figure should be linked to the effective acquisition envelope rather than merely the distance between arms.\n\n**Proposed validation — not a completed test:** Map acquisition success across the entire mouth with off-center hits, then repeat after controlled impact loading.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## CYCLONE: DYE-inspired rotor with independent feed\n\nVersion: CYCLONE. [PDF p10](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10)\n\n**Published construction:** 22-inch rotor; eight-fuel ring; separate rotation/feed drives; reported 18-fuel/s feed.\n\n**Team-stated reason or evidence boundary:** Maintain bulk-to-single-stream flow in a compact package.\n\n**Engineering analysis — original inference:** A rotor is not just a rotating bucket. Its moving boundary, internal feed contact and exit geometry jointly determine whether fuel circulates, enters the ring, or jams. Independent feed drive lets the team tune the launch supply without requiring the whole bulk pile to turn at that speed. A lower-profile center obstruction improves the area through which fuel can enter; reversing must not turn a hook or seam into a trap. A theoretical ring count multiplied by rotation rate is only an upper bound: pockets must actually fill and discharge.\n\n**Proposed validation — not a completed test:** Measure pocket occupancy and output variability at full, half and nearly empty loads; test reversing a deliberately bridged inlet.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## CYCLONE: floating hood, preload and turret support\n\nVersion: CYCLONE. [PDF p11](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11)\n\n**Published construction:** Compact turret; floating hood; constant-force spring; through-bore sensing; powered hood rollers.\n\n**Team-stated reason or evidence boundary:** Reduce backlash and preserve storage volume.\n\n**Engineering analysis — original inference:** Spring preload can keep a reduction loaded against one tooth flank, reducing reversal uncertainty, but adds a torque that the motor must overcome in the opposite direction. Measuring the output rather than only the motor helps detect residual compliance between gearbox and hood. The feed path and turret bearing need common structural alignment; a compact height is valuable only if it does not permit the hood to deflect enough to change the exit angle. Powered hood rollers alter the spin/contact state, so their ratio belongs in the shot calibration rather than being treated as passive guidance.\n\n**Proposed validation — not a completed test:** Measure hood angle repeatability from both approach directions and at several turret headings; compare loaded and unloaded structure.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## CYCLONE: moving-shot compensation and variable feed\n\nVersion: CYCLONE. [PDF p13](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=13)\n\n**Published construction:** Gyro latency compensation, empirical flight time and variable rotor speed are documented.\n\n**Team-stated reason or evidence boundary:** Maintain accurate mobile firing and stable throughput.\n\n**Engineering analysis — original inference:** A turret can cancel chassis heading only if the controller uses the correct observation time and the actual release state. A latency error grows with angular velocity and can look like a mechanical aiming bias. Rotor speed also changes shot timing and inlet loading; a firing command is not the same as a ball leaving the hood. The mechanical and control record should include this delay and its variation. Slowing the feed may improve delivered score if it reduces wheel droop or keeps the exit state within tolerance.\n\n**Proposed validation — not a completed test:** Time-stamp vision, gyro, turret position, feeder transitions and ball release; compare miss direction against angular and translational velocity.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 1.5:1 rollers; 3.6:1 deploy | [Source p9](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9) |\n| Rotor | 22-in diameter; 20.67:1 rotation; 1:1 feed; reported 18 fuel/s | [Source p10](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10) |\n| Shooter | 4-in 60A main; two X60s at 1.25:1; 80.5:1 hood | [Source p11](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11) |\n| Turret | 25.6:1; 360° described range | [Source p11](https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf"
+      ],
+      "path": "docs/technical/2026-1987.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-1987",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/524348/11",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/1/7/b174b9c308b1f680342b61328dd547df4b201cbb_2_517x207.png",
+      "post": 11,
+      "date": "2026-09-27T13:28:01.902Z",
+      "author": "jgwentworth96",
+      "context_tags": [
+        "rotor"
+      ],
+      "caption": "2026 team 1987 — source image from post 11 (2026-09-27). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "368eaf4136a2f86ccd.jpg",
+      "id": "1472e8ba80f2d0a32b",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/368eaf4136a2f86ccd.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 207,
+      "bytes": 15121,
+      "sha256": "2eefd1b4ef288c0050418323ac032d4ae957bb417bb51506701e49972def30b2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1472e8ba80f2d0a32b",
+      "reader_url": "index.html#image=1472e8ba80f2d0a32b",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1987",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/524348/11",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/3/f/c/3fc8a00a445fda8aef70c8b99276d5334cb49bea_2_517x299.png",
+      "post": 11,
+      "date": "2026-09-27T13:28:01.902Z",
+      "author": "jgwentworth96",
+      "context_tags": [
+        "rotor"
+      ],
+      "caption": "2026 team 1987 — source image from post 11 (2026-09-27). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "dc394486633a2eb6dc.jpg",
+      "id": "96796b0ffd4822d8b4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/dc394486633a2eb6dc.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 299,
+      "bytes": 22219,
+      "sha256": "e0338ad2b520241c4ee6e3c14d8e21ee7a93041346c05f023a524052273c3aed",
+      "path_base": "corpus_root",
+      "reader_asset_id": "96796b0ffd4822d8b4",
+      "reader_url": "index.html#image=96796b0ffd4822d8b4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1987",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/517100/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/5/9/1598175faaa2574a2b73cfa61fc309b6cd5931a7_2_663x500.jpeg",
+      "post": 1,
+      "date": "2026-03-23T21:24:17.582Z",
+      "author": "jon.smith",
+      "context_tags": [],
+      "caption": "2026 team 1987 — source image from post 1 (2026-03-23). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "342cc2483de568f7d6.jpg",
+      "id": "ef178510472c04f85c",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/342cc2483de568f7d6.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 663,
+      "height_px": 500,
+      "bytes": 122259,
+      "sha256": "a009172153b9dd358e872d8d62367f04f3bf4b9e83f1742d6026fa7f6d696ef7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "ef178510472c04f85c",
+      "reader_url": "index.html#image=ef178510472c04f85c",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1987",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/517100/6",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/0/3/9/039fa12ffe8c5e2b52d12765ff6bf73ff2e3f8a7_2_288x375.jpeg",
+      "post": 6,
+      "date": "2026-03-24T16:48:16.262Z",
+      "author": "jon.smith",
+      "context_tags": [
+        "rotor"
+      ],
+      "caption": "2026 team 1987 — source image from post 6 (2026-03-24). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "0d8722a28665b3f435.jpg",
+      "id": "dc7442d2319992eedd",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/0d8722a28665b3f435.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 288,
+      "height_px": 375,
+      "bytes": 25628,
+      "sha256": "eb66751992d35c614d6f6ee0b4929dc5fe6b54a7f4ba27388a4b691728ebb77c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "dc7442d2319992eedd",
+      "reader_url": "index.html#image=dc7442d2319992eedd",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1987",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/517100/6",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/9/b/29b470c8270bb62454425ccbd3872ab4d611dbf9_2_282x375.jpeg",
+      "post": 6,
+      "date": "2026-03-24T16:48:16.262Z",
+      "author": "jon.smith",
+      "context_tags": [
+        "rotor"
+      ],
+      "caption": "2026 team 1987 — source image from post 6 (2026-03-24). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "13f81b1f918556fece.jpg",
+      "id": "daab72bd3b184a6976",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/13f81b1f918556fece.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 282,
+      "height_px": 375,
+      "bytes": 30338,
+      "sha256": "227d94f43e6c32b5285d9dc282c9c59cd17ed844bfba6b9bcaf07c28486b83f6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "daab72bd3b184a6976",
+      "reader_url": "index.html#image=daab72bd3b184a6976",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-df1392177a72d1aa1e-p8-1",
+      "robot_id": "2026-1987",
+      "kind": "binder_figure",
+      "binder_id": "df1392177a72d1aa1e",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-df1392177a72d1aa1e-p8-1.jpg",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=8",
+      "caption": "2026-1987 · CYCLONE · Drivebase · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        70.86544799804688,
+        359.1818542480469,
+        541.134521484375,
+        685.2027587890625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1083,
+      "height_px": 750,
+      "bytes": 135936,
+      "sha256": "0ee3ea6a4cff0c2430883a4131c1823fdde0acaa59e05c08f200c93b80fbf69f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-df1392177a72d1aa1e-p8-1",
+      "reader_url": "index.html#image=binder-df1392177a72d1aa1e-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-df1392177a72d1aa1e-p9-1",
+      "robot_id": "2026-1987",
+      "kind": "binder_figure",
+      "binder_id": "df1392177a72d1aa1e",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-df1392177a72d1aa1e-p9-1.jpg",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=9",
+      "caption": "2026-1987 · CYCLONE · Linear intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Linear intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        70.94739532470703,
+        458.8132019042969,
+        541.07763671875,
+        792.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 767,
+      "bytes": 75587,
+      "sha256": "f8a1fe2f2b6ab81f8bea48ef971ee0229d13566938094c2f95d96b0acbcee315",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-df1392177a72d1aa1e-p9-1",
+      "reader_url": "index.html#image=binder-df1392177a72d1aa1e-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-df1392177a72d1aa1e-p10-1",
+      "robot_id": "2026-1987",
+      "kind": "binder_figure",
+      "binder_id": "df1392177a72d1aa1e",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-df1392177a72d1aa1e-p10-1.jpg",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10",
+      "caption": "2026-1987 · CYCLONE · DYE-inspired rotor · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "DYE-inspired rotor",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        356.750732421875,
+        556.5787353515625,
+        576.489013671875,
+        742.2083740234375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 506,
+      "height_px": 428,
+      "bytes": 24599,
+      "sha256": "40bd2f40be39f619fd91c08d3cf9e1005520c15a92deae0a75373a7a43af26db",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-df1392177a72d1aa1e-p10-1",
+      "reader_url": "index.html#image=binder-df1392177a72d1aa1e-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-df1392177a72d1aa1e-p10-2",
+      "robot_id": "2026-1987",
+      "kind": "binder_figure",
+      "binder_id": "df1392177a72d1aa1e",
+      "pdf_page": 10,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-df1392177a72d1aa1e-p10-2.jpg",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=10",
+      "caption": "2026-1987 · CYCLONE · DYE-inspired rotor · PDF page 10, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "DYE-inspired rotor",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        48.73225402832031,
+        548.495361328125,
+        333.55157470703125,
+        747.4195556640625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 656,
+      "height_px": 459,
+      "bytes": 51432,
+      "sha256": "05e29ed3954d5e71aa380ef16c6dd86122323df22ba3f3b743d405a614797d76",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-df1392177a72d1aa1e-p10-2",
+      "reader_url": "index.html#image=binder-df1392177a72d1aa1e-p10-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-df1392177a72d1aa1e-p11-1",
+      "robot_id": "2026-1987",
+      "kind": "binder_figure",
+      "binder_id": "df1392177a72d1aa1e",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-df1392177a72d1aa1e-p11-1.jpg",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11",
+      "caption": "2026-1987 · CYCLONE · Turret and floating hood · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Turret and floating hood",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        332.379150390625,
+        558.9559936523438,
+        571.6828002929688,
+        743.8790283203125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 551,
+      "height_px": 426,
+      "bytes": 24840,
+      "sha256": "99fc6a3d23ef67c8acdd48b340c0ae4d2dee7aa287b34827f7fb3f72e01fbca2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-df1392177a72d1aa1e-p11-1",
+      "reader_url": "index.html#image=binder-df1392177a72d1aa1e-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-df1392177a72d1aa1e-p11-2",
+      "robot_id": "2026-1987",
+      "kind": "binder_figure",
+      "binder_id": "df1392177a72d1aa1e",
+      "pdf_page": 11,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-df1392177a72d1aa1e-p11-2.jpg",
+      "source_url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf#page=11",
+      "caption": "2026-1987 · CYCLONE · Turret and floating hood · PDF page 11, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Turret and floating hood",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        39.76866149902344,
+        543.8916625976562,
+        306.0,
+        753.308349609375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 613,
+      "height_px": 483,
+      "bytes": 52410,
+      "sha256": "96ba98defcb9ccb87be9024c4899328f872a8ef200676b34cacf0a68e2f3b28a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-df1392177a72d1aa1e-p11-2",
+      "reader_url": "index.html#image=binder-df1392177a72d1aa1e-p11-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-1987",
+    "year": 2026,
+    "team": 1987,
+    "epa_rank": 25,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"1987\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 27,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "df1392177a72d1aa1e"
+    ],
+    "technical_note_ids": [
+      "tech-df1392177a72d1aa1e-18",
+      "tech-df1392177a72d1aa1e-19",
+      "tech-df1392177a72d1aa1e-20",
+      "tech-df1392177a72d1aa1e-21"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "df1392177a72d1aa1e",
+        "url": "https://teambroncobots.com/robots/Technical%20Books/Technical%20Book%202026.pdf",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/524348/1",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-df1392177a72d1aa1e-18:construction",
+    "tech-df1392177a72d1aa1e-18:team_stated_reason",
+    "tech-df1392177a72d1aa1e-18:engineering_analysis",
+    "tech-df1392177a72d1aa1e-18:recommended_validation",
+    "tech-df1392177a72d1aa1e-18:limitations",
+    "tech-df1392177a72d1aa1e-19:construction",
+    "tech-df1392177a72d1aa1e-19:team_stated_reason",
+    "tech-df1392177a72d1aa1e-19:engineering_analysis",
+    "tech-df1392177a72d1aa1e-19:recommended_validation",
+    "tech-df1392177a72d1aa1e-19:limitations",
+    "tech-df1392177a72d1aa1e-20:construction",
+    "tech-df1392177a72d1aa1e-20:team_stated_reason",
+    "tech-df1392177a72d1aa1e-20:engineering_analysis",
+    "tech-df1392177a72d1aa1e-20:recommended_validation",
+    "tech-df1392177a72d1aa1e-20:limitations",
+    "tech-df1392177a72d1aa1e-21:construction",
+    "tech-df1392177a72d1aa1e-21:team_stated_reason",
+    "tech-df1392177a72d1aa1e-21:engineering_analysis",
+    "tech-df1392177a72d1aa1e-21:recommended_validation",
+    "tech-df1392177a72d1aa1e-21:limitations",
+    "param-df1392177a72d1aa1e-1",
+    "param-df1392177a72d1aa1e-2",
+    "param-df1392177a72d1aa1e-3",
+    "param-df1392177a72d1aa1e-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

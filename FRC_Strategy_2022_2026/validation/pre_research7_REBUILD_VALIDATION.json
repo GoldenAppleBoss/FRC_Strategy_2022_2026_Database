@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "equal_tables": 24,
+  "differences": [],
+  "row_counts": {
+    "binder_sources": 29,
+    "cad_code_links": 375,
+    "metadata": 56,
+    "team_events": 4021,
+    "season_epa": 17330,
+    "events": 75,
+    "seasons": 5,
+    "einstein_reviews": 80,
+    "technical_parameters": 121,
+    "sources": 4259,
+    "technical_mechanisms": 227,
+    "context_documents": 171,
+    "robot_sources": 513,
+    "subsystems": 750,
+    "versions": 207,
+    "source_posts": 3499,
+    "binder_audit": 125,
+    "robot_dossiers": 125,
+    "mechanism_images": 504,
+    "matches": 7995,
+    "tower_summary_2026": 8,
+    "benchmarks": 58,
+    "selection_audit": 154,
+    "video_reviews": 44
+  }
+}

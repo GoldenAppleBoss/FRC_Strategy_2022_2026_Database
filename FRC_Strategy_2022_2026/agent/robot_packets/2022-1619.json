@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-1619",
+  "year": 2022,
+  "team": 1619,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 1619,
+    "robot": "Vertigo",
+    "primary": [
+      "https://youtu.be/MlXF9CxDrlg"
+    ],
+    "architecture": "Offset shooter and cargo path leave room for a central rotating climber.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module model not established here.",
+      "intake": "Wide compliant collection into an offset tunnel.",
+      "transfer": "Independent front and rear elevator belts oppose to store cargo and run together to feed; rear rejection uses color and infrared sensing.",
+      "scoring": "Fixed-heading adjustable-hood launcher; added back rollers and a between-regionals ball stop. Remote motor placement counterbalances the offset scorer.",
+      "endgame": "Central rear-deploying rotary system, steel clips and center-of-gravity transfer; guide flap helped clearance in a triple climb with 254.",
+      "controls": "Prime button roughly aims chassis before Limelight correction; dashboard/LEDs report cargo and ready state."
+    },
+    "versions": [
+      "Ball stop added between regional events.",
+      "Worlds used a compatible two-ball autonomous alongside 254's five-ball; later three-ball discussion is not evidence of that Worlds routine. Chezy interview is postseason."
+    ],
+    "analysis": "This is an alliance-fit example: a robot can deliberately use a smaller autonomous routine to preserve a stronger partner's route. Packaging the climber centrally shaped both intake and shooter placement.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-1619",
+    "team_name": "Up-A-Creek Robotics",
+    "epa_rank": 25,
+    "epa": 50.49,
+    "epa_pre_champs": 52.05,
+    "epa_breakdown": {
+      "total_points": 50.49,
+      "auto_points": 11.6,
+      "teleop_points": 26.04,
+      "endgame_points": 12.85,
+      "cargo_rp": 0.7884,
+      "hangar_rp": 0.3818,
+      "tiebreaker_points": 50.49,
+      "auto_taxi_points": 2.01,
+      "auto_cargo_lower": -0.04,
+      "auto_cargo_upper": 2.42,
+      "teleop_cargo_lower": 0.46,
+      "teleop_cargo_upper": 12.79,
+      "rp_1": 0.7884,
+      "rp_2": 0.3818
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "f4f29b5b72ef131c"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-1619",
+      "year": 2022,
+      "team": 1619,
+      "epa_rank": 25,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1619\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 3,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1619\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-1619"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-1619",
+      "title": "An offset path changes both cargo control and partner climb clearance",
+      "start_seconds": 109,
+      "end_seconds": 545,
+      "construction": "Separate front/rear elevator belts oppose to retain cargo and run together to feed an offset fixed-heading launcher. Color/IR staging supports rear rejection. A driver alignment flap helps place the robot for a shared hangar climb.",
+      "team_stated_reason": "The source explicitly connects the alignment cue to preventing a climb motor from hitting the hangar wall during a triple climb.",
+      "engineering_analysis": "Transport modes must preserve possession while another action waits on readiness. The offset scorer and climb envelope also affect alliance geometry; a theoretically fast independent climb may collide in a three-robot arrangement.",
+      "recommended_validation": "Test retention during belt reversals and verify shared-climb clearance with representative partners, not only an isolated fixture.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-1619",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/MlXF9CxDrlg",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 109,
+        "end_seconds": 545,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "MlXF9CxDrlg",
+          "sha256": "76398621a64bf585f3acc971380c7df81bc78af1140c88d89a8772d574be659d",
+          "caption_segments": 366,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-1619:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-1619",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-1619"
+      ],
+      "source_urls": [
+        "https://youtu.be/MlXF9CxDrlg"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-1619",
+      "title": "2022-1619 · An offset path changes both cargo control and partner climb clearance",
+      "year": 2022,
+      "robot_id": "2022-1619",
+      "kind": "focused_technical_study",
+      "body": "# 2022-1619: An offset path changes both cargo control and partner climb clearance\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nSeparate front/rear elevator belts oppose to retain cargo and run together to feed an offset fixed-heading launcher. Color/IR staging supports rear rejection. A driver alignment flap helps place the robot for a shared hangar climb.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly connects the alignment cue to preventing a climb motor from hitting the hangar wall during a triple climb.\n\n## Engineering interpretation — analyst inference\n\nTransport modes must preserve possession while another action waits on readiness. The offset scorer and climb envelope also affect alliance geometry; a theoretically fast independent climb may collide in a three-robot arrangement.\n\n## Proposed validation — not performed\n\nTest retention during belt reversals and verify shared-climb clearance with representative partners, not only an isolated fixture.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/MlXF9CxDrlg](https://youtu.be/MlXF9CxDrlg)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/MlXF9CxDrlg"
+      ],
+      "path": "docs/research_continuation/2022-1619.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-1619",
+    "year": 2022,
+    "team": 1619,
+    "epa_rank": 25,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1619\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 3,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1619\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-1619:construction",
+    "study6-2022-1619:team_stated_reason",
+    "study6-2022-1619:engineering_analysis",
+    "study6-2022-1619:recommended_validation",
+    "study6-2022-1619:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

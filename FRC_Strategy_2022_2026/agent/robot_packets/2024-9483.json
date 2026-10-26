@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-9483",
+  "year": 2024,
+  "team": 9483,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 9483,
+    "robot": "Snapfire",
+    "primary": [
+      "https://youtu.be/GaLm00wcnVE"
+    ],
+    "architecture": "Light articulated intake and adjustable shooter, with one-shot ratcheting chain engagement.",
+    "subsystems": {
+      "drivetrain": "Low-central electrical packaging intended to protect center of gravity and resist note trapping.",
+      "intake": "Multi-roller polycarbonate collector with grip tape and reinforcing shafts.",
+      "transfer": "Bent note path feeds the launcher; sensors select amp versus shooter routing.",
+      "scoring": "Adjustable launcher, automatic angle/speed selection; interview reports roughly 17–65-degree motion.",
+      "endgame": "Ratcheting hooks deploy and latch in a one-shot action; cannot simply reset on field.",
+      "controls": "Angled Limelights/MegaTag2, gyro and module odometry; automatic pickup, aim and amp alignment."
+    },
+    "versions": [
+      "Interview describes competition package; detailed sequence of earlier builds is not given."
+    ],
+    "analysis": "A one-shot endgame can reduce driver actions while losing recovery flexibility. That tradeoff belongs in architecture selection and reliability assessment.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-9483",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/457771/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/4/b/4b9e321176e0fdccf037e773da01fc4669bc7d4f_2_690x492.jpeg",
+        "post": 1,
+        "date": "2024-03-07T21:58:40.749Z",
+        "author": "oguzozgur",
+        "context_tags": [],
+        "caption": "2024 team 9483 — source image from post 1 (2024-03-07). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "166cf39bd8afedc39c.jpg",
+        "id": "4004191ae74a253283",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/166cf39bd8afedc39c.jpg"
+      }
+    ],
+    "source_post_count": 5,
+    "cad_code_links": [],
+    "id": "2024-9483",
+    "team_name": "Overcharge",
+    "epa_rank": 19,
+    "epa": 47.62,
+    "epa_pre_champs": 44.87,
+    "epa_breakdown": {
+      "total_points": 47.62,
+      "auto_points": 15.86,
+      "teleop_points": 30.21,
+      "endgame_points": 1.55,
+      "melody_rp": 0.6693,
+      "ensemble_rp": 0.2064,
+      "tiebreaker_points": 0.08,
+      "auto_leave_points": 2.01,
+      "auto_note_points": 13.86,
+      "teleop_note_points": 30.21,
+      "speaker_points": 41.02,
+      "amplified_notes": 4.84,
+      "endgame_park_points": 0.51,
+      "endgame_on_stage_points": 1.37,
+      "endgame_harmony_points": -0.03,
+      "endgame_trap_points": -0.3,
+      "endgame_spotlight_points": -0.01,
+      "rp_1": 0.6693,
+      "rp_2": 0.2064,
+      "total_note_points": 44.07
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "031a3d75233c067a"
+    ],
+    "tags": [
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-9483",
+      "year": 2024,
+      "team": 9483,
+      "epa_rank": 19,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"9483\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 18,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"9483\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-9483"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-9483",
+      "title": "A broad angle range needs controlled note position and a fallback pose estimate",
+      "start_seconds": 77,
+      "end_seconds": 260,
+      "construction": "Six collector rollers, gripping wrap and reinforced polycarbonate feed a bent note path. Sensors distinguish staging and the amp/shooter route. The interview reports an adjustable launch range approximately 17–65 degrees with automatic speed/angle selection; pose estimation continues through brief vision loss.",
+      "team_stated_reason": "The source connects grip material to acquisition and center-mounted/protected hardware to avoiding collision interruption. Exact optimum compression and a complete field range envelope are not established by the passage.",
+      "engineering_analysis": "A numerical angle range is a mechanical envelope, not a guarantee that every field position is accurate. Flexible notes arrive with different deformation and velocity, while pose confidence may degrade during occlusion. The appropriate architecture includes a readiness condition and safe fallback, not just an interpolation table.",
+      "recommended_validation": "Measure staged pose, accuracy versus range/angle, and performance after controlled vision dropout. Verify actual angular limits in code or CAD before reusing the caption numbers.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-9483",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/GaLm00wcnVE",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 260,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "GaLm00wcnVE",
+          "sha256": "92f3677d9bdc3c2ef54e19f9eee80e9074647cc2250cc3c4145015d5470f5ecc",
+          "caption_segments": 208,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-9483:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-9483",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-9483"
+      ],
+      "source_urls": [
+        "https://youtu.be/GaLm00wcnVE"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-9483",
+      "title": "2024-9483 · A broad angle range needs controlled note position and a fallback pose estimate",
+      "year": 2024,
+      "robot_id": "2024-9483",
+      "kind": "focused_technical_study",
+      "body": "# 2024-9483: A broad angle range needs controlled note position and a fallback pose estimate\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nSix collector rollers, gripping wrap and reinforced polycarbonate feed a bent note path. Sensors distinguish staging and the amp/shooter route. The interview reports an adjustable launch range approximately 17–65 degrees with automatic speed/angle selection; pose estimation continues through brief vision loss.\n\n## Team-stated reasoning or boundary\n\nThe source connects grip material to acquisition and center-mounted/protected hardware to avoiding collision interruption. Exact optimum compression and a complete field range envelope are not established by the passage.\n\n## Engineering interpretation — analyst inference\n\nA numerical angle range is a mechanical envelope, not a guarantee that every field position is accurate. Flexible notes arrive with different deformation and velocity, while pose confidence may degrade during occlusion. The appropriate architecture includes a readiness condition and safe fallback, not just an interpolation table.\n\n## Proposed validation — not performed\n\nMeasure staged pose, accuracy versus range/angle, and performance after controlled vision dropout. Verify actual angular limits in code or CAD before reusing the caption numbers.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/GaLm00wcnVE](https://youtu.be/GaLm00wcnVE)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/GaLm00wcnVE"
+      ],
+      "path": "docs/research_continuation/2024-9483.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-9483",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/457771/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/4/b/4b9e321176e0fdccf037e773da01fc4669bc7d4f_2_690x492.jpeg",
+      "post": 1,
+      "date": "2024-03-07T21:58:40.749Z",
+      "author": "oguzozgur",
+      "context_tags": [],
+      "caption": "2024 team 9483 — source image from post 1 (2024-03-07). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "166cf39bd8afedc39c.jpg",
+      "id": "4004191ae74a253283",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/166cf39bd8afedc39c.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 492,
+      "bytes": 42637,
+      "sha256": "c0fca50b63d4d45cf90c455dc2e0419934eb4760c671c62158f59b6b08e07a6c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4004191ae74a253283",
+      "reader_url": "index.html#image=4004191ae74a253283",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-9483",
+    "year": 2024,
+    "team": 9483,
+    "epa_rank": 19,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"9483\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 18,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"9483\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-9483:construction",
+    "study6-2024-9483:team_stated_reason",
+    "study6-2024-9483:engineering_analysis",
+    "study6-2024-9483:recommended_validation",
+    "study6-2024-9483:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

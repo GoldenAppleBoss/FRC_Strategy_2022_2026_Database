@@ -1,0 +1,861 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-604",
+  "year": 2025,
+  "team": 604,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 604,
+    "robot": "The Flush; separate offseason Quixshot",
+    "primary": [
+      "https://www.youtube.com/watch?v=vNXxb_Tdr4w",
+      "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824"
+    ],
+    "architecture": "Rigid single-stage elevator/arm with station funnel and compact cage winch.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification unresolved here.",
+      "intake": "Large corrugated-plastic station funnel damps bounce and funnels varied coral orientations.",
+      "transfer": "Independent feed rollers pause coral while gripper holds algae, supporting hybrid cycles.",
+      "scoring": "Chain elevator driven on both sides, stiff arm/wrist and shimmed gearboxes minimize twist/backlash.",
+      "endgame": "Stows below funnel, surgical tubing deploys, side approach captures cage then retracts into funnel; movable funnel flaps preserve clearance.",
+      "controls": "One driver; sensed one-button scoring. Net alignment constrains distance while driver chooses lateral location to avoid already-scored algae."
+    },
+    "versions": [
+      "Funnel/climb integration is documented; full chronological revision list unresolved.",
+      "In-season The Flush is distinct from offseason Quixshot; intake packaging pivot documented July 2025."
+    ],
+    "analysis": "Accuracy is a mechanical-system property as well as a vision problem. Constraining only the useful alignment axis at the net preserves human judgment about occupancy while automating repeatable geometry.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented.",
+      "Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.",
+      "Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification."
+    ],
+    "deep_context": "# 2025-604 — Quixilver: The Flush; separate offseason Quixshot\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## The Flush in-season release · drivetrain\n\n### Published construction or code\n\n29-inch square chassis with WCP X2i modules and a 5.9:1 drive ratio; the team optimized for roughly 18-foot average sprint distance. Protective panels isolate electronics from falling coral.\n\n### Stated rationale and boundaries\n\nStability at high reach and the expected travel distance drive the stated choices.\n\n### Engineering interpretation\n\nOptimize acceleration and usable travel under the expected route distribution, rather than unloaded top speed alone. A larger support polygon can help a reaching superstructure while increasing congestion exposure. The published dimensions and ratio are a configuration snapshot; they do not prove the same ratio is best for 1833 or a different game.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush elevator and arm · scoring\n\n### Published construction or code\n\nSingle-stage elevator uses 2x2 uprights, cross bracing and chain drive on both sides. The release gives two Kraken X60s, 3:1 and 28 inches of motion; stator limits increased from 40A to 80A. The arm is rigidly tied side-to-side and its gearbox shimmed; the team describes detuning and reducing the drive to one motor at 100A to avoid tipping.\n\n### Stated rationale and boundaries\n\nRigidity, low backlash and precise automated control are explicit priorities.\n\n### Engineering interpretation\n\nMotor count and theoretical joint acceleration cannot be separated from robot stability. Dual-sided chain drive addresses carriage twist, while a rigid camera mount helps relate vision measurements to mechanism geometry. Preserve the stated revisions and the release’s mixed original/final motor annotations; do not silently combine every number into one certified event configuration.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush station funnel and gripper · intake\n\n### Published construction or code\n\nA full-width 4mm corrugated-plastic funnel loads from three sides through separately powered rollers. The gripper has independently powered left/right rollers, four coral rollers and two algae rollers, plus an open top.\n\n### Stated rationale and boundaries\n\nThe team wanted tolerant loading, horizontal L1 packing and precise placement. The open top avoids reef entanglement and permits a shallower coral release angle.\n\n### Engineering interpretation\n\nA funnel can absorb human-player variability while the gripper controls the final release. Independent sides support a different L1 placement policy rather than merely increasing raw roller power. This is an architectural option for a station-fed role, not evidence that floor coral pickup was unnecessary for every alliance. Corrugated plastic stiffness, folding and clearances must be evaluated in the installed package.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush climb/funnel interface · endgame\n\n### Published construction or code\n\nThe release describes a roughly 3.5-pound climber including motor and gearbox, stowed below the funnel, surgical-tubing extension and a 15:1 winch with a 2:1 pulley. A rear funnel ramp unfolds to clear the cage and climb.\n\n### Stated rationale and boundaries\n\nCompact packaging preserves the loading system while providing cage engagement tolerance.\n\n### Engineering interpretation\n\nThe climb is coupled to the funnel’s motion and the loaded robot CG. A compact mechanism is not necessarily easy to approach under traffic; validate capture, retraction and failures with the actual funnel and piece state. These are team-reported design quantities, not measured masses or an exhaustive installed-version history.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush and separate Quixshot offseason machine · controls\n\n### Published construction or code\n\nThe Flush uses predictive target selection, smooth handover from driver motion, reef-clearance sequencing and separate local/global localization. The team reports 547/549 L2-L4 coral placements over its last two events. Quixshot is a distinct offseason coral launcher with manually tuned launch velocity differentials and a one-time intake deploy latch.\n\n### Stated rationale and boundaries\n\nThe team reports that packaging a ground pickup with the in-season climber became difficult, so the compatible pickup was instead installed on the offseason launcher.\n\n### Engineering interpretation\n\nDo not attach Quixshot’s launcher to the in-season elevator robot. The 99.6% is a bounded team-reported placement statistic, not full-match reliability or 99.6% for every task. The published offseason answer says it did not deep-climb or handle algae at that point. The strongest transferable lesson is a deliberate interface and packaging trade, not the assertion that launching always beats placing.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Distinct offseason machine\n\nQuixshot is a separate robot. The team’s July reply explains that a ground intake intended for the in-season machine conflicted with climber packaging and was installed on the launcher instead. Launch velocity differentials were manually tuned. The first offseason answer explicitly says no algae or deep climb at that point. Do not combine the two robots into one imaginary in-season architecture. Source: https://www.chiefdelphi.com/t/team-604-quixilver-2025-offseason-robot-quixshot/504607/55\n\n## Evidence limits\n\n- Only the reviewed published configurations are established; intermediate changes may be undocumented.\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n",
+    "images": [
+      {
+        "robot_id": "2025-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/502824/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/3/1/c315b77d6ca924ca71a769fc753f3451c8283d38_2_280x375.jpeg",
+        "post": 1,
+        "date": "2025-06-05T01:04:19.405Z",
+        "author": "johnH7",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "gripper",
+          "intake",
+          "pivot",
+          "wrist"
+        ],
+        "caption": "2025 team 604 — source image from post 1 (2025-06-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "4fc8403f6a4547d73b.jpg",
+        "id": "740e0061999b425214",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/4fc8403f6a4547d73b.jpg"
+      },
+      {
+        "robot_id": "2025-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/502824/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/0/7/6/076d7aa1137bb2cede7c2ba3f82ca9cb4c3897a1_2_647x500.png",
+        "post": 1,
+        "date": "2025-06-05T01:04:19.405Z",
+        "author": "johnH7",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "gripper",
+          "intake",
+          "pivot",
+          "wrist"
+        ],
+        "caption": "2025 team 604 — source image from post 1 (2025-06-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "1930ff58fe2690df45.jpg",
+        "id": "b23e8ab82dc90d9fd4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/1930ff58fe2690df45.jpg"
+      },
+      {
+        "robot_id": "2025-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/502824/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/7/2/1725959315547366a8a0fc45d0242dcd110fcc3c_2_647x500.png",
+        "post": 1,
+        "date": "2025-06-05T01:04:19.405Z",
+        "author": "johnH7",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "gripper",
+          "intake",
+          "pivot",
+          "wrist"
+        ],
+        "caption": "2025 team 604 — source image from post 1 (2025-06-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d6999fb137856e2f96.jpg",
+        "id": "8b9048d10fdfddf97e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d6999fb137856e2f96.jpg"
+      },
+      {
+        "robot_id": "2025-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/504607/55",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/c/6/4/c64437ca0a845e2b76de8928b3ec0b276850132f.gif",
+        "post": 55,
+        "date": "2025-07-25T15:57:51.572Z",
+        "author": "Eugene_Fang",
+        "context_tags": [
+          "climb",
+          "intake",
+          "launcher",
+          "pivot"
+        ],
+        "caption": "2025 team 604 — source image from post 55 (2025-07-25). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d4342adbcdfa6f1a45.jpg",
+        "id": "0978fbbe2bae6cae27",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d4342adbcdfa6f1a45.jpg"
+      },
+      {
+        "robot_id": "2025-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/504607/55",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/3/d/43d2078d5a916eb45d54d51991a1238f19fa70da_2_516x500.png",
+        "post": 55,
+        "date": "2025-07-25T15:57:51.572Z",
+        "author": "Eugene_Fang",
+        "context_tags": [
+          "climb",
+          "intake",
+          "launcher",
+          "pivot"
+        ],
+        "caption": "2025 team 604 — source image from post 55 (2025-07-25). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "fa843d9ef939a56e0b.jpg",
+        "id": "990a8c63c7b2e093aa",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/fa843d9ef939a56e0b.jpg"
+      }
+    ],
+    "source_post_count": 46,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-502824-1",
+        "url": "https://cad.onshape.com/documents/456258752934a9d51b4e2c35/w/fc69fa497b3a80cf764a6ecd/e/946f925a33bc7c7ba6066a21",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "797dfaba5fd4f3c307"
+      },
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-502824-1",
+        "url": "https://github.com/frc604/2025-public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e4d4c591d53cdb8201"
+      },
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-502824-11",
+        "url": "https://github.com/frc604/2025-public/tree/main/FRC-2025/offboard/quikplan-swerve",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "1d3c6c31a6cd1b3f0a"
+      },
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-502824-33",
+        "url": "https://github.com/frc604/2025-public/blob/main/FRC-2025/src/main/java/frc/robot/commands/ScoreCoralCommand.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4ed3740fffba1e17a8"
+      },
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-502824-33",
+        "url": "https://github.com/frc604/2025-public/blob/main/FRC-2025/src/main/java/frc/robot/commands/IntakeOrScoreAlgaeCommand.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "571fc9157ef0080c98"
+      },
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-502824-41",
+        "url": "https://github.com/frc604/2025-public/blob/f178f14f165da90f894d02db1130c483b80241e3/FRC-2025/src/main/java/frc/robot/subsystems/ClimberSubsystem.java#L29",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4246600d468a47b672"
+      },
+      {
+        "robot_id": "2025-604",
+        "discovery_post": "2025-604-504607-97",
+        "url": "https://cad.onshape.com/documents/d145a3ab4be0936ea529ad55/w/9dcb4313b69da527de0b3b1b/e/44237ea4e776abac5d7f722f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5b99ac386c56307237"
+      }
+    ],
+    "id": "2025-604",
+    "team_name": "Quixilver",
+    "epa_rank": 21,
+    "epa": 90.34,
+    "epa_pre_champs": 88.92,
+    "epa_breakdown": {
+      "total_points": 90.34,
+      "auto_points": 20.83,
+      "teleop_points": 61.19,
+      "endgame_points": 8.32,
+      "auto_rp": 0.4931,
+      "coral_rp": 0.6592,
+      "barge_rp": 0.30734,
+      "tiebreaker_points": 0.31,
+      "auto_coral_points": 17.74,
+      "teleop_coral_points": 49.37,
+      "coral_l1": 2.19,
+      "coral_l2": 4.75,
+      "coral_l3": 4.88,
+      "coral_l4": 4.78,
+      "processor_algae": 0.54,
+      "processor_algae_points": 1.61,
+      "net_algae_points": 10.21,
+      "barge_points": 8.32,
+      "rp_1": 0.4931,
+      "rp_2": 0.6592,
+      "rp_3": 0.30734,
+      "total_coral_points": 67.11,
+      "total_algae_points": 11.82
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Version-specific primary-source study; not exhaustive per-event certification",
+    "strict_acceptance": "provisional; unresolved geometry and version details explicitly retained",
+    "source_ids": [
+      "4a2b3de2aabeedab",
+      "1eb0cd785c95d8a3"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-604",
+      "year": 2025,
+      "team": 604,
+      "epa_rank": 21,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"604\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 20,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"604\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [
+        "1eb0cd785c95d8a3"
+      ],
+      "technical_note_ids": [
+        "study6-2025-604",
+        "604-expansion-2025-1",
+        "604-expansion-2025-2",
+        "604-expansion-2025-3",
+        "604-expansion-2025-4",
+        "604-expansion-2025-5"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-604",
+      "604-expansion-2025-1",
+      "604-expansion-2025-2",
+      "604-expansion-2025-3",
+      "604-expansion-2025-4",
+      "604-expansion-2025-5"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-604",
+      "title": "Precision depends on stiffness, backlash and feeding order",
+      "start_seconds": 80,
+      "end_seconds": 475,
+      "construction": "A single-stage elevator is driven by chains on both sides to reduce twist; the arm/wrist and shimmed transmissions aim to minimize backlash. The large corrugated-plastic station funnel damps entry. Independently stopped feed rollers can hold coral while the gripper handles algae, and a compact climber fits beneath the funnel.",
+      "team_stated_reason": "The team explicitly treats accuracy as a mechanical and software requirement, identifies dual-sided elevator drive with resisting twist, and explains pausing coral feed during algae possession.",
+      "engineering_analysis": "A vision system can command the correct pose yet miss a branch if the scoring frame deflects or the transmission reverses through backlash. Hybrid cycles add a scheduling constraint: the incoming coral must not collide with a manipulator that is still gripping algae. The funnel and climber also compete for the same physical space, so a copied climber cannot be assumed to fit behind another team’s station system.",
+      "recommended_validation": "Measure effector displacement under lateral load and direction reversal; test queued coral while holding algae. Compare repeatability after repeated elevator cycles and drivetrain impacts.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-604",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=vNXxb_Tdr4w",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 475,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "vNXxb_Tdr4w",
+          "sha256": "5f7ca97b97fe6c4755f70b4e5391905736b17f6c7051ef1dae2b1ad7b3eb280f",
+          "caption_segments": 287,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    },
+    {
+      "id": "604-expansion-2025-1",
+      "robot_id": "2025-604",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "drivetrain",
+      "title": "The Flush in-season release · drivetrain",
+      "version_label": "The Flush in-season release",
+      "construction": "29-inch square chassis with WCP X2i modules and a 5.9:1 drive ratio; the team optimized for roughly 18-foot average sprint distance. Protective panels isolate electronics from falling coral.",
+      "team_stated_reason": "Stability at high reach and the expected travel distance drive the stated choices.",
+      "engineering_analysis": "Optimize acceleration and usable travel under the expected route distribution, rather than unloaded top speed alone. A larger support polygon can help a reaching superstructure while increasing congestion exposure. The published dimensions and ratio are a configuration snapshot; they do not prove the same ratio is best for 1833 or a different game.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2025-2",
+      "robot_id": "2025-604",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "scoring",
+      "title": "The Flush elevator and arm · scoring",
+      "version_label": "The Flush elevator and arm",
+      "construction": "Single-stage elevator uses 2x2 uprights, cross bracing and chain drive on both sides. The release gives two Kraken X60s, 3:1 and 28 inches of motion; stator limits increased from 40A to 80A. The arm is rigidly tied side-to-side and its gearbox shimmed; the team describes detuning and reducing the drive to one motor at 100A to avoid tipping.",
+      "team_stated_reason": "Rigidity, low backlash and precise automated control are explicit priorities.",
+      "engineering_analysis": "Motor count and theoretical joint acceleration cannot be separated from robot stability. Dual-sided chain drive addresses carriage twist, while a rigid camera mount helps relate vision measurements to mechanism geometry. Preserve the stated revisions and the release’s mixed original/final motor annotations; do not silently combine every number into one certified event configuration.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2025-3",
+      "robot_id": "2025-604",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "intake",
+      "title": "The Flush station funnel and gripper · intake",
+      "version_label": "The Flush station funnel and gripper",
+      "construction": "A full-width 4mm corrugated-plastic funnel loads from three sides through separately powered rollers. The gripper has independently powered left/right rollers, four coral rollers and two algae rollers, plus an open top.",
+      "team_stated_reason": "The team wanted tolerant loading, horizontal L1 packing and precise placement. The open top avoids reef entanglement and permits a shallower coral release angle.",
+      "engineering_analysis": "A funnel can absorb human-player variability while the gripper controls the final release. Independent sides support a different L1 placement policy rather than merely increasing raw roller power. This is an architectural option for a station-fed role, not evidence that floor coral pickup was unnecessary for every alliance. Corrugated plastic stiffness, folding and clearances must be evaluated in the installed package.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2025-4",
+      "robot_id": "2025-604",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "endgame",
+      "title": "The Flush climb/funnel interface · endgame",
+      "version_label": "The Flush climb/funnel interface",
+      "construction": "The release describes a roughly 3.5-pound climber including motor and gearbox, stowed below the funnel, surgical-tubing extension and a 15:1 winch with a 2:1 pulley. A rear funnel ramp unfolds to clear the cage and climb.",
+      "team_stated_reason": "Compact packaging preserves the loading system while providing cage engagement tolerance.",
+      "engineering_analysis": "The climb is coupled to the funnel’s motion and the loaded robot CG. A compact mechanism is not necessarily easy to approach under traffic; validate capture, retraction and failures with the actual funnel and piece state. These are team-reported design quantities, not measured masses or an exhaustive installed-version history.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2025-5",
+      "robot_id": "2025-604",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "controls",
+      "title": "The Flush and separate Quixshot offseason machine · controls",
+      "version_label": "The Flush and separate Quixshot offseason machine",
+      "construction": "The Flush uses predictive target selection, smooth handover from driver motion, reef-clearance sequencing and separate local/global localization. The team reports 547/549 L2-L4 coral placements over its last two events. Quixshot is a distinct offseason coral launcher with manually tuned launch velocity differentials and a one-time intake deploy latch.",
+      "team_stated_reason": "The team reports that packaging a ground pickup with the in-season climber became difficult, so the compatible pickup was instead installed on the offseason launcher.",
+      "engineering_analysis": "Do not attach Quixshot’s launcher to the in-season elevator robot. The 99.6% is a bounded team-reported placement statistic, not full-match reliability or 99.6% for every task. The published offseason answer says it did not deep-climb or handle algae at that point. The strongest transferable lesson is a deliberate interface and packaging trade, not the assertion that launching always beats placing.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2025-offseason-robot-quixshot/504607/55"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-604:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-604"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=vNXxb_Tdr4w"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2025-604:publication-version:2",
+      "label": "The Flush in-season release",
+      "robot_id": "2025-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2025-1"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2025-604:publication-version:3",
+      "label": "The Flush elevator and arm",
+      "robot_id": "2025-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2025-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2025-604:publication-version:4",
+      "label": "The Flush station funnel and gripper",
+      "robot_id": "2025-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2025-3"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2025-604:publication-version:5",
+      "label": "The Flush climb/funnel interface",
+      "robot_id": "2025-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2025-4"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2025-604:publication-version:6",
+      "label": "The Flush and separate Quixshot offseason machine",
+      "robot_id": "2025-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2025-5"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-604",
+      "title": "2025-604 · Precision depends on stiffness, backlash and feeding order",
+      "year": 2025,
+      "robot_id": "2025-604",
+      "kind": "focused_technical_study",
+      "body": "# 2025-604: Precision depends on stiffness, backlash and feeding order\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA single-stage elevator is driven by chains on both sides to reduce twist; the arm/wrist and shimmed transmissions aim to minimize backlash. The large corrugated-plastic station funnel damps entry. Independently stopped feed rollers can hold coral while the gripper handles algae, and a compact climber fits beneath the funnel.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly treats accuracy as a mechanical and software requirement, identifies dual-sided elevator drive with resisting twist, and explains pausing coral feed during algae possession.\n\n## Engineering interpretation — analyst inference\n\nA vision system can command the correct pose yet miss a branch if the scoring frame deflects or the transmission reverses through backlash. Hybrid cycles add a scheduling constraint: the incoming coral must not collide with a manipulator that is still gripping algae. The funnel and climber also compete for the same physical space, so a copied climber cannot be assumed to fit behind another team’s station system.\n\n## Proposed validation — not performed\n\nMeasure effector displacement under lateral load and direction reversal; test queued coral while holding algae. Compare repeatability after repeated elevator cycles and drivetrain impacts.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=vNXxb_Tdr4w](https://www.youtube.com/watch?v=vNXxb_Tdr4w)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=vNXxb_Tdr4w"
+      ],
+      "path": "docs/research_continuation/2025-604.md"
+    },
+    {
+      "id": "2025-604-primary-study",
+      "title": "2025-604 primary-source mechanisms and strategic context",
+      "year": 2025,
+      "robot_id": "2025-604",
+      "kind": "robot_deep_note",
+      "body": "# 2025-604 — Quixilver: The Flush; separate offseason Quixshot\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## The Flush in-season release · drivetrain\n\n### Published construction or code\n\n29-inch square chassis with WCP X2i modules and a 5.9:1 drive ratio; the team optimized for roughly 18-foot average sprint distance. Protective panels isolate electronics from falling coral.\n\n### Stated rationale and boundaries\n\nStability at high reach and the expected travel distance drive the stated choices.\n\n### Engineering interpretation\n\nOptimize acceleration and usable travel under the expected route distribution, rather than unloaded top speed alone. A larger support polygon can help a reaching superstructure while increasing congestion exposure. The published dimensions and ratio are a configuration snapshot; they do not prove the same ratio is best for 1833 or a different game.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush elevator and arm · scoring\n\n### Published construction or code\n\nSingle-stage elevator uses 2x2 uprights, cross bracing and chain drive on both sides. The release gives two Kraken X60s, 3:1 and 28 inches of motion; stator limits increased from 40A to 80A. The arm is rigidly tied side-to-side and its gearbox shimmed; the team describes detuning and reducing the drive to one motor at 100A to avoid tipping.\n\n### Stated rationale and boundaries\n\nRigidity, low backlash and precise automated control are explicit priorities.\n\n### Engineering interpretation\n\nMotor count and theoretical joint acceleration cannot be separated from robot stability. Dual-sided chain drive addresses carriage twist, while a rigid camera mount helps relate vision measurements to mechanism geometry. Preserve the stated revisions and the release’s mixed original/final motor annotations; do not silently combine every number into one certified event configuration.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush station funnel and gripper · intake\n\n### Published construction or code\n\nA full-width 4mm corrugated-plastic funnel loads from three sides through separately powered rollers. The gripper has independently powered left/right rollers, four coral rollers and two algae rollers, plus an open top.\n\n### Stated rationale and boundaries\n\nThe team wanted tolerant loading, horizontal L1 packing and precise placement. The open top avoids reef entanglement and permits a shallower coral release angle.\n\n### Engineering interpretation\n\nA funnel can absorb human-player variability while the gripper controls the final release. Independent sides support a different L1 placement policy rather than merely increasing raw roller power. This is an architectural option for a station-fed role, not evidence that floor coral pickup was unnecessary for every alliance. Corrugated plastic stiffness, folding and clearances must be evaluated in the installed package.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush climb/funnel interface · endgame\n\n### Published construction or code\n\nThe release describes a roughly 3.5-pound climber including motor and gearbox, stowed below the funnel, surgical-tubing extension and a 15:1 winch with a 2:1 pulley. A rear funnel ramp unfolds to clear the cage and climb.\n\n### Stated rationale and boundaries\n\nCompact packaging preserves the loading system while providing cage engagement tolerance.\n\n### Engineering interpretation\n\nThe climb is coupled to the funnel’s motion and the loaded robot CG. A compact mechanism is not necessarily easy to approach under traffic; validate capture, retraction and failures with the actual funnel and piece state. These are team-reported design quantities, not measured masses or an exhaustive installed-version history.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## The Flush and separate Quixshot offseason machine · controls\n\n### Published construction or code\n\nThe Flush uses predictive target selection, smooth handover from driver motion, reef-clearance sequencing and separate local/global localization. The team reports 547/549 L2-L4 coral placements over its last two events. Quixshot is a distinct offseason coral launcher with manually tuned launch velocity differentials and a one-time intake deploy latch.\n\n### Stated rationale and boundaries\n\nThe team reports that packaging a ground pickup with the in-season climber became difficult, so the compatible pickup was instead installed on the offseason launcher.\n\n### Engineering interpretation\n\nDo not attach Quixshot’s launcher to the in-season elevator robot. The 99.6% is a bounded team-reported placement statistic, not full-match reliability or 99.6% for every task. The published offseason answer says it did not deep-climb or handle algae at that point. The strongest transferable lesson is a deliberate interface and packaging trade, not the assertion that launching always beats placing.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Distinct offseason machine\n\nQuixshot is a separate robot. The team’s July reply explains that a ground intake intended for the in-season machine conflicted with climber packaging and was installed on the launcher instead. Launch velocity differentials were manually tuned. The first offseason answer explicitly says no algae or deep climb at that point. Do not combine the two robots into one imaginary in-season architecture. Source: https://www.chiefdelphi.com/t/team-604-quixilver-2025-offseason-robot-quixshot/504607/55\n\n## Evidence limits\n\n- Only the reviewed published configurations are established; intermediate changes may be undocumented.\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-cad-code-release-for-our-2025-robot-the-flush/502824",
+        "https://www.chiefdelphi.com/t/team-604-quixilver-2025-offseason-robot-quixshot/504607/55"
+      ],
+      "path": "docs/context/2025-604-primary-study.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/502824/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/3/1/c315b77d6ca924ca71a769fc753f3451c8283d38_2_280x375.jpeg",
+      "post": 1,
+      "date": "2025-06-05T01:04:19.405Z",
+      "author": "johnH7",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "gripper",
+        "intake",
+        "pivot",
+        "wrist"
+      ],
+      "caption": "2025 team 604 — source image from post 1 (2025-06-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "4fc8403f6a4547d73b.jpg",
+      "id": "740e0061999b425214",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/4fc8403f6a4547d73b.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 280,
+      "height_px": 375,
+      "bytes": 31575,
+      "sha256": "f7f4c81438840ef70f486feea7959ce238e09e28ba68b3bec965dbca220b5d4e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "740e0061999b425214",
+      "reader_url": "index.html#image=740e0061999b425214",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/502824/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/0/7/6/076d7aa1137bb2cede7c2ba3f82ca9cb4c3897a1_2_647x500.png",
+      "post": 1,
+      "date": "2025-06-05T01:04:19.405Z",
+      "author": "johnH7",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "gripper",
+        "intake",
+        "pivot",
+        "wrist"
+      ],
+      "caption": "2025 team 604 — source image from post 1 (2025-06-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "1930ff58fe2690df45.jpg",
+      "id": "b23e8ab82dc90d9fd4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/1930ff58fe2690df45.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 55219,
+      "sha256": "a1e729dad21d7b9125a5c94c3474653b16a73b70a0c59627fea50c862c2e862e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b23e8ab82dc90d9fd4",
+      "reader_url": "index.html#image=b23e8ab82dc90d9fd4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/502824/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/7/2/1725959315547366a8a0fc45d0242dcd110fcc3c_2_647x500.png",
+      "post": 1,
+      "date": "2025-06-05T01:04:19.405Z",
+      "author": "johnH7",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "gripper",
+        "intake",
+        "pivot",
+        "wrist"
+      ],
+      "caption": "2025 team 604 — source image from post 1 (2025-06-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d6999fb137856e2f96.jpg",
+      "id": "8b9048d10fdfddf97e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d6999fb137856e2f96.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 48462,
+      "sha256": "8063811128a369b849b7f4781f3f284444870e217d34581d636febd4bea8f049",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8b9048d10fdfddf97e",
+      "reader_url": "index.html#image=8b9048d10fdfddf97e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/504607/55",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/c/6/4/c64437ca0a845e2b76de8928b3ec0b276850132f.gif",
+      "post": 55,
+      "date": "2025-07-25T15:57:51.572Z",
+      "author": "Eugene_Fang",
+      "context_tags": [
+        "climb",
+        "intake",
+        "launcher",
+        "pivot"
+      ],
+      "caption": "2025 team 604 — source image from post 55 (2025-07-25). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d4342adbcdfa6f1a45.jpg",
+      "id": "0978fbbe2bae6cae27",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d4342adbcdfa6f1a45.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 500,
+      "height_px": 282,
+      "bytes": 31433,
+      "sha256": "1a974795c214f586bcdb284df385c0d40645a2edef95009e73440790c76b412b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "0978fbbe2bae6cae27",
+      "reader_url": "index.html#image=0978fbbe2bae6cae27",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/504607/55",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/3/d/43d2078d5a916eb45d54d51991a1238f19fa70da_2_516x500.png",
+      "post": 55,
+      "date": "2025-07-25T15:57:51.572Z",
+      "author": "Eugene_Fang",
+      "context_tags": [
+        "climb",
+        "intake",
+        "launcher",
+        "pivot"
+      ],
+      "caption": "2025 team 604 — source image from post 55 (2025-07-25). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "fa843d9ef939a56e0b.jpg",
+      "id": "990a8c63c7b2e093aa",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/fa843d9ef939a56e0b.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 516,
+      "height_px": 500,
+      "bytes": 51306,
+      "sha256": "8062d6a95341a11165ba7f0802c212b1c0ec13c5aaa6991952fa0f69181bae1e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "990a8c63c7b2e093aa",
+      "reader_url": "index.html#image=990a8c63c7b2e093aa",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-604",
+    "year": 2025,
+    "team": 604,
+    "epa_rank": 21,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"604\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 20,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"604\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [
+      "1eb0cd785c95d8a3"
+    ],
+    "technical_note_ids": [
+      "study6-2025-604",
+      "604-expansion-2025-1",
+      "604-expansion-2025-2",
+      "604-expansion-2025-3",
+      "604-expansion-2025-4",
+      "604-expansion-2025-5"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-604:construction",
+    "study6-2025-604:team_stated_reason",
+    "study6-2025-604:engineering_analysis",
+    "study6-2025-604:recommended_validation",
+    "study6-2025-604:limitations",
+    "604-expansion-2025-1:construction",
+    "604-expansion-2025-1:team_stated_reason",
+    "604-expansion-2025-1:engineering_analysis",
+    "604-expansion-2025-1:recommended_validation",
+    "604-expansion-2025-1:limitations",
+    "604-expansion-2025-2:construction",
+    "604-expansion-2025-2:team_stated_reason",
+    "604-expansion-2025-2:engineering_analysis",
+    "604-expansion-2025-2:recommended_validation",
+    "604-expansion-2025-2:limitations",
+    "604-expansion-2025-3:construction",
+    "604-expansion-2025-3:team_stated_reason",
+    "604-expansion-2025-3:engineering_analysis",
+    "604-expansion-2025-3:recommended_validation",
+    "604-expansion-2025-3:limitations",
+    "604-expansion-2025-4:construction",
+    "604-expansion-2025-4:team_stated_reason",
+    "604-expansion-2025-4:engineering_analysis",
+    "604-expansion-2025-4:recommended_validation",
+    "604-expansion-2025-4:limitations",
+    "604-expansion-2025-5:construction",
+    "604-expansion-2025-5:team_stated_reason",
+    "604-expansion-2025-5:engineering_analysis",
+    "604-expansion-2025-5:recommended_validation",
+    "604-expansion-2025-5:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

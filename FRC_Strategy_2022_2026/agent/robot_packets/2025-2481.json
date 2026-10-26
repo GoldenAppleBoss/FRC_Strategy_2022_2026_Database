@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-2481",
+  "year": 2025,
+  "team": 2481,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 2481,
+    "robot": "Roboteers 2025",
+    "primary": [
+      "https://youtu.be/9T0oLjzN-Go"
+    ],
+    "architecture": "Elevator scorer with a lateral alignment slide and single-motor ground orientation.",
+    "subsystems": {
+      "drivetrain": "Custom swerve with wider contact geometry and easily exchanged gear pairs.",
+      "intake": "Ground intake exploits human-player rolling supply; passive wall, green wheel and bottom roller orient coral without separate vertical motors.",
+      "transfer": "Controlled handoff from oriented coral into scoring assembly.",
+      "scoring": "Chain-driven lateral Igus slide uses reef tags to correct position; cascade elevator uses mixed belts/chains and reinforced custom pulleys.",
+      "endgame": "Deep-cage mechanism brings anchor toward robot center; two ratchets retain load.",
+      "controls": "Two front Limelights observe reef from varied approach angles and command the slide."
+    },
+    "versions": [
+      "Elevator durability iterations included one-piece pulleys. Interview is an early-season configuration; complete Worlds change chronology unresolved."
+    ],
+    "analysis": "The slide separates fine lateral placement from chassis motion. That may shorten final alignment, but adds another actuator and collision envelope; evaluate it against a well-tuned chassis-only alignment baseline.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2025-2481",
+    "team_name": "Roboteers",
+    "epa_rank": 7,
+    "epa": 99.4,
+    "epa_pre_champs": 94.38,
+    "epa_breakdown": {
+      "total_points": 99.4,
+      "auto_points": 24.94,
+      "teleop_points": 63.26,
+      "endgame_points": 11.19,
+      "auto_rp": 0.7031,
+      "coral_rp": 0.6682,
+      "barge_rp": 0.66228,
+      "tiebreaker_points": -0.12,
+      "auto_coral_points": 21.69,
+      "teleop_coral_points": 56.84,
+      "coral_l1": 4.87,
+      "coral_l2": 5.58,
+      "coral_l3": 5.65,
+      "coral_l4": 4.6,
+      "processor_algae": -0.19,
+      "processor_algae_points": -0.56,
+      "net_algae_points": 6.99,
+      "barge_points": 11.19,
+      "rp_1": 0.7031,
+      "rp_2": 0.6682,
+      "rp_3": 0.66228,
+      "total_coral_points": 78.53,
+      "total_algae_points": 6.43
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "abb77780d8c18d98"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-2481",
+      "year": 2025,
+      "team": 2481,
+      "epa_rank": 7,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2481\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 22,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2481\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-2481"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-2481",
+      "title": "Floor orientation and a moving scorer share the alignment workload",
+      "start_seconds": 77,
+      "end_seconds": 440,
+      "construction": "The collector uses one motor, a passive guide wall and wheel/roller contact to orient floor coral without a separate vertical-roller stage. A chain-driven lateral slide on Igus guides corrects scorer position. A cascade elevator and custom drivetrain complete the retained architecture.",
+      "team_stated_reason": "The team explicitly connects floor pickup to human players rolling coral near the reef. Its custom-module discussion emphasizes traction and useful gearing rather than adopting an unmodified commercial package.",
+      "engineering_analysis": "A passive orienter exchanges actuator count for sensitivity to incoming pose, wall friction and driving direction. A lateral scorer can remove some last-meter chassis correction, but it must be stiff enough that the camera’s intended offset corresponds to the actual end-effector position. Ground-source supply and local correction should therefore be assessed as one cycle, including the human player’s delivery error.",
+      "recommended_validation": "Sample many coral approach orientations and supply distances. Measure lateral-slide backlash/deflection under acceleration, and compare whole-cycle time against a fixed scorer with chassis-only alignment.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-2481",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/9T0oLjzN-Go",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 440,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "9T0oLjzN-Go",
+          "sha256": "ac01d26da5877488983cf6b921ed8e124848b220e67d9b947584d3affb7891b2",
+          "caption_segments": 224,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-2481:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-2481",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-2481"
+      ],
+      "source_urls": [
+        "https://youtu.be/9T0oLjzN-Go"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-2481",
+      "title": "2025-2481 · Floor orientation and a moving scorer share the alignment workload",
+      "year": 2025,
+      "robot_id": "2025-2481",
+      "kind": "focused_technical_study",
+      "body": "# 2025-2481: Floor orientation and a moving scorer share the alignment workload\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe collector uses one motor, a passive guide wall and wheel/roller contact to orient floor coral without a separate vertical-roller stage. A chain-driven lateral slide on Igus guides corrects scorer position. A cascade elevator and custom drivetrain complete the retained architecture.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly connects floor pickup to human players rolling coral near the reef. Its custom-module discussion emphasizes traction and useful gearing rather than adopting an unmodified commercial package.\n\n## Engineering interpretation — analyst inference\n\nA passive orienter exchanges actuator count for sensitivity to incoming pose, wall friction and driving direction. A lateral scorer can remove some last-meter chassis correction, but it must be stiff enough that the camera’s intended offset corresponds to the actual end-effector position. Ground-source supply and local correction should therefore be assessed as one cycle, including the human player’s delivery error.\n\n## Proposed validation — not performed\n\nSample many coral approach orientations and supply distances. Measure lateral-slide backlash/deflection under acceleration, and compare whole-cycle time against a fixed scorer with chassis-only alignment.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/9T0oLjzN-Go](https://youtu.be/9T0oLjzN-Go)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/9T0oLjzN-Go"
+      ],
+      "path": "docs/research_continuation/2025-2481.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-2481",
+    "year": 2025,
+    "team": 2481,
+    "epa_rank": 7,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2481\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 22,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2481\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-2481:construction",
+    "study6-2025-2481:team_stated_reason",
+    "study6-2025-2481:engineering_analysis",
+    "study6-2025-2481:recommended_validation",
+    "study6-2025-2481:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

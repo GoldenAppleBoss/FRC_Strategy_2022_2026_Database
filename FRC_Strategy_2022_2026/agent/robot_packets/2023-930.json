@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-930",
+  "year": 2023,
+  "team": 930,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 930,
+    "robot": "Cubert Conelius",
+    "primary": [
+      "https://youtu.be/wzWFWZzy9C8"
+    ],
+    "architecture": "Continuous elevator with pass-through carbon-fiber arm and belt-based gripper.",
+    "subsystems": {
+      "drivetrain": "Swerve platform; exact module specification not established here.",
+      "intake": "Polyurethane belt gripper derived from WildStang's Open Alliance; stand-offs prevent belts rubbing the carpet.",
+      "transfer": "Later auxiliary cube intake proposed for fast low-node/link completion.",
+      "scoring": "Continuously rigged elevator with belt inside its tubes; open passage allows arm travel through the structure.",
+      "endgame": "Station implementation not explained in this walkthrough.",
+      "controls": "Joint/elevator presets, including autonomous-specific reverse acquisition poses."
+    },
+    "versions": [
+      "Aluminum arm changed to carbon fiber. Auxiliary low-scoring intake was not yet fielded at filming; do not treat the offseason CAD as the original competition robot."
+    ],
+    "analysis": "A dedicated low scorer can target link completion and qualification ranking points even when the main mechanism already reaches high nodes. Its value changes with alliance composition.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 4,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-930",
+        "discovery_post": "2023-930-438584-1",
+        "url": "https://cad.onshape.com/documents/c02d314fb955418d5f9176cc/w/1f468cead8ba92a8e09e7cc6/e/5608fb91a179b13d7920985a?renderMode=0&uiState=649e12185a787636e420c899",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "dddeeb312f3d15e87a"
+      },
+      {
+        "robot_id": "2023-930",
+        "discovery_post": "2023-930-438584-1",
+        "url": "https://github.com/FRC930/Robot2023",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "40b8d1c532b7169b9d"
+      }
+    ],
+    "id": "2023-930",
+    "team_name": "Mukwonago BEARs",
+    "epa_rank": 14,
+    "epa": 71.79,
+    "epa_pre_champs": 67.94,
+    "epa_breakdown": {
+      "total_points": 71.79,
+      "auto_points": 16.84,
+      "teleop_points": 44.23,
+      "endgame_points": 9.35,
+      "links_rp": 0.8385,
+      "activation_rp": 0.5052,
+      "tiebreaker_points": 70.42,
+      "auto_charge_station_points": 6.68,
+      "auto_pieces": 2.28,
+      "teleop_grid_points": 28.87,
+      "bottom_pieces": 2.51,
+      "middle_pieces": 3.1,
+      "top_pieces": 4.5,
+      "cube_points": 15.54,
+      "cone_points": 23.57,
+      "links": 3.35,
+      "endgame_charge_station_points": 9.35,
+      "rp_1": 0.8385,
+      "rp_2": 0.5052
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "24a725ae3e6cb85f"
+    ],
+    "tags": [
+      "elevator",
+      "pass-through",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-930",
+      "year": 2023,
+      "team": 930,
+      "epa_rank": 14,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"930\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 7,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"930\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-930"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-930",
+      "title": "A borrowed belt gripper needs its operating clearance, not just its layout",
+      "start_seconds": 143,
+      "end_seconds": 330,
+      "construction": "The polyurethane-belt gripper credits WildStang’s published work. Stand-offs keep running belts away from the carpet. A continuously rigged, internally belted elevator leaves an open arm passage; an auxiliary cube collector is discussed as a later low/link opportunity.",
+      "team_stated_reason": "The team cites grip on cones, carpet protection and keeping elevator gearing/mass low. The auxiliary collector must remain a proposal unless its later fielded configuration is established.",
+      "engineering_analysis": "Copying the contact belt without its stand-offs can create both carpet damage and an unintended ground reaction on the arm. A low-mounted drive reduces moving mass, while an open passage permits acquisition on the opposite side. The strategic value of an added cube collector depends on finishing links quickly, not simply acquiring another mechanism.",
+      "recommended_validation": "Test floor clearance under chassis pitch, compare both piece types, and measure complete low-node cycles before adding the proposed subsystem.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-930",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/wzWFWZzy9C8",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 143,
+        "end_seconds": 330,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "wzWFWZzy9C8",
+          "sha256": "2f1fcd7f78480b8ba3d0c5bb79de68d5ceb3b6641a0a1cf141119cd85229ea8a",
+          "caption_segments": 304,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-930:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-930",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-930"
+      ],
+      "source_urls": [
+        "https://youtu.be/wzWFWZzy9C8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-930",
+      "title": "2023-930 · A borrowed belt gripper needs its operating clearance, not just its layout",
+      "year": 2023,
+      "robot_id": "2023-930",
+      "kind": "focused_technical_study",
+      "body": "# 2023-930: A borrowed belt gripper needs its operating clearance, not just its layout\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe polyurethane-belt gripper credits WildStang’s published work. Stand-offs keep running belts away from the carpet. A continuously rigged, internally belted elevator leaves an open arm passage; an auxiliary cube collector is discussed as a later low/link opportunity.\n\n## Team-stated reasoning or boundary\n\nThe team cites grip on cones, carpet protection and keeping elevator gearing/mass low. The auxiliary collector must remain a proposal unless its later fielded configuration is established.\n\n## Engineering interpretation — analyst inference\n\nCopying the contact belt without its stand-offs can create both carpet damage and an unintended ground reaction on the arm. A low-mounted drive reduces moving mass, while an open passage permits acquisition on the opposite side. The strategic value of an added cube collector depends on finishing links quickly, not simply acquiring another mechanism.\n\n## Proposed validation — not performed\n\nTest floor clearance under chassis pitch, compare both piece types, and measure complete low-node cycles before adding the proposed subsystem.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/wzWFWZzy9C8](https://youtu.be/wzWFWZzy9C8)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/wzWFWZzy9C8"
+      ],
+      "path": "docs/research_continuation/2023-930.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-930",
+    "year": 2023,
+    "team": 930,
+    "epa_rank": 14,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"930\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 7,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"930\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-930:construction",
+    "study6-2023-930:team_stated_reason",
+    "study6-2023-930:engineering_analysis",
+    "study6-2023-930:recommended_validation",
+    "study6-2023-930:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

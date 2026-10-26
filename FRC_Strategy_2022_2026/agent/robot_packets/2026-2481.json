@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-2481",
+  "year": 2026,
+  "team": 2481,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 2481,
+    "robot": "Roboteers 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=phBgiNvrYCc"
+    ],
+    "architecture": "Bump-only, very large-capacity four-wide drum robot.",
+    "subsystems": {
+      "drivetrain": "Custom wide-wheel swerve with easily changed ratios; lower gearing chosen for fully loaded bump travel.",
+      "intake": "Five-ball-wide pickup with dual-X60 roller; added shielding prevents hopper load from stalling collector.",
+      "transfer": "Large roller floor and shaped entry preserve flow; hopper structure revised from angle to tubing for stiffness.",
+      "scoring": "Four-wide preaccelerated drum; passive PVC guide and grip tape improved consistency. Two-position hood changed from pneumatic to linear actuation; speed fills remaining range.",
+      "endgame": "Endgame installation not established in reviewed interview.",
+      "controls": "Driver practice focused on sweeping moving/dispersed fuel; source contrasts regional piles with more mobile Worlds supply."
+    },
+    "versions": [
+      "Reinforced shooter brackets and hopper.",
+      "Team reports roughly 115-fuel capacity and 20 BPS; these are reported configuration measurements, not independent match-rate measurements."
+    ],
+    "analysis": "The big-hopper choice can be coherent when loaded travel remains quick and fuel access is adequate. Model loaded mass and route contestability; holding more fuel is not useful if bump defense prevents reaching a scoring window.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2026-2481",
+    "team_name": "Roboteers",
+    "epa_rank": 8,
+    "epa": 288.11,
+    "epa_pre_champs": 292.48,
+    "epa_breakdown": {
+      "total_points": 288.11,
+      "auto_points": 62.91,
+      "teleop_points": 154.77,
+      "endgame_points": 70.43,
+      "energized_rp": 0.6472,
+      "supercharged_rp": 0.8578,
+      "traversal_rp": -0.33959,
+      "tiebreaker_points": 288.11,
+      "auto_fuel": 62.93,
+      "auto_tower": -0.03,
+      "transition_fuel": 27.04,
+      "first_shift_fuel": 71.61,
+      "second_shift_fuel": 56.11,
+      "endgame_fuel": 70.37,
+      "endgame_tower": 0.06,
+      "rp_1": 0.6472,
+      "rp_2": 0.8578,
+      "rp_3": -0.33959,
+      "teleop_fuel": 225.13,
+      "total_fuel": 288.06,
+      "total_tower": 0.03
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "0e2924bf06eb8ec2"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-2481",
+      "year": 2026,
+      "team": 2481,
+      "epa_rank": 8,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2481\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 27,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2481\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-2481"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-2481",
+      "title": "Large inventory changes collector loading, frame clearance and drive gearing",
+      "start_seconds": 146,
+      "end_seconds": 510,
+      "construction": "The interview reports approximately 115-fuel capacity, a 33.5×21.375-inch robot envelope before the described extension, a wide 3-inch two-X60 intake, a load shield above the collector, and hopper structure changed from angle to tube. A two-position hood changed from pneumatic to linear actuation; wheel speed covers intermediate distances. Custom modules allow ratio changes and were geared down for the loaded robot.",
+      "team_stated_reason": "The second collector motor and load shield respond to stalling and hopper pressure. Tube structure responds to racking and snagging. The lower drive ratio is explicitly tied to moving a heavily loaded robot across bumps with less stalling/current; the source attributes the actuator change to weight.",
+      "engineering_analysis": "Capacity is useful only if it remains mobile and unloads reliably. A large stored column presses on its lowest contact surfaces, so a shield can be more valuable than another nominally faster roller. The hopper bar cutout and wheel sizing belong to the same route-clearance problem: a robot that can collect a full load but beaches on the bump loses the strategic value of that load. Two hood positions simplify mechanism travel, but the remaining range must be supplied by speed without creating unacceptable release-angle or recovery-time sensitivity.",
+      "recommended_validation": "Test acceleration, bump traversal, braking, tip margin and current at empty/half/full inventory. Measure sustained unload rate rather than dividing nominal capacity by the fastest initial volley. Verify exact dimensions and the source gear notation in CAD.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-2481",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=phBgiNvrYCc",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 146,
+        "end_seconds": 510,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "phBgiNvrYCc",
+          "sha256": "a27a4050bbf8d1120b23507e2f89c900b82279b8a4840b688db0ca1481c28958",
+          "caption_segments": 328,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-2481:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-2481",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-2481"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=phBgiNvrYCc"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-2481",
+      "title": "2026-2481 · Large inventory changes collector loading, frame clearance and drive gearing",
+      "year": 2026,
+      "robot_id": "2026-2481",
+      "kind": "focused_technical_study",
+      "body": "# 2026-2481: Large inventory changes collector loading, frame clearance and drive gearing\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview reports approximately 115-fuel capacity, a 33.5×21.375-inch robot envelope before the described extension, a wide 3-inch two-X60 intake, a load shield above the collector, and hopper structure changed from angle to tube. A two-position hood changed from pneumatic to linear actuation; wheel speed covers intermediate distances. Custom modules allow ratio changes and were geared down for the loaded robot.\n\n## Team-stated reasoning or boundary\n\nThe second collector motor and load shield respond to stalling and hopper pressure. Tube structure responds to racking and snagging. The lower drive ratio is explicitly tied to moving a heavily loaded robot across bumps with less stalling/current; the source attributes the actuator change to weight.\n\n## Engineering interpretation — analyst inference\n\nCapacity is useful only if it remains mobile and unloads reliably. A large stored column presses on its lowest contact surfaces, so a shield can be more valuable than another nominally faster roller. The hopper bar cutout and wheel sizing belong to the same route-clearance problem: a robot that can collect a full load but beaches on the bump loses the strategic value of that load. Two hood positions simplify mechanism travel, but the remaining range must be supplied by speed without creating unacceptable release-angle or recovery-time sensitivity.\n\n## Proposed validation — not performed\n\nTest acceleration, bump traversal, braking, tip margin and current at empty/half/full inventory. Measure sustained unload rate rather than dividing nominal capacity by the fastest initial volley. Verify exact dimensions and the source gear notation in CAD.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=phBgiNvrYCc](https://www.youtube.com/watch?v=phBgiNvrYCc)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=phBgiNvrYCc"
+      ],
+      "path": "docs/research_continuation/2026-2481.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2026-2481",
+    "year": 2026,
+    "team": 2481,
+    "epa_rank": 8,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2481\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 27,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2481\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-2481:construction",
+    "study6-2026-2481:team_stated_reason",
+    "study6-2026-2481:engineering_analysis",
+    "study6-2026-2481:recommended_validation",
+    "study6-2026-2481:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-1771",
+  "year": 2022,
+  "team": 1771,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 1771,
+    "robot": "North Gwinnett 2022",
+    "primary": [
+      "https://youtu.be/ZYonfJLN_q8"
+    ],
+    "architecture": "Wood-framed turret scorer with floating acquisition and gyro-timed swinging traversal climb.",
+    "subsystems": {
+      "drivetrain": "SDS MK4i; most motors kept near floor for stability.",
+      "intake": "Floating broad collector with mecanum centering and grippy top/bottom rollers.",
+      "transfer": "Two-stage ball path and upper color sensing; rejection followed by a recovery/staging motion.",
+      "scoring": "Long-developed turret/flywheel family with added controlled backspin; close-goal fallback shots.",
+      "endgame": "Central lifting arm plus reaching arms uses measured robot angle and swing momentum rather than timers.",
+      "controls": "PathPlanner autonomous from extensively tuned swerve; vision owns teleop targeting after odometry drift."
+    },
+    "versions": [
+      "Intake bracing added after early competition. Camera-independent autonomous and fixed close-range shots provide fallback capability."
+    ],
+    "analysis": "A strong PCH example of familiar construction and retained design knowledge. The climb intentionally uses swing instead of eliminating it, so copying its hooks without the gyro-based sequence misses the essential behavior.",
+    "limits": [
+      "Reported performance and prototype history are attributed to the source; not every intermediate revision is recoverable."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-1771",
+    "team_name": "North Gwinnett Robotics",
+    "epa_rank": 9,
+    "epa": 56.86,
+    "epa_pre_champs": 59.0,
+    "epa_breakdown": {
+      "total_points": 56.86,
+      "auto_points": 15.28,
+      "teleop_points": 36.14,
+      "endgame_points": 5.44,
+      "cargo_rp": 0.9983,
+      "hangar_rp": 0.2277,
+      "tiebreaker_points": 56.86,
+      "auto_taxi_points": 2.04,
+      "auto_cargo_lower": -0.06,
+      "auto_cargo_upper": 3.34,
+      "teleop_cargo_lower": -0.38,
+      "teleop_cargo_upper": 18.26,
+      "rp_1": 0.9983,
+      "rp_2": 0.2277
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "8299a5ea60eb1f00"
+    ],
+    "tags": [
+      "climb",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-1771",
+      "year": 2022,
+      "team": 1771,
+      "epa_rank": 9,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1771\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 3,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1771\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-1771"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-1771",
+      "title": "Long-lived turret experience does not remove staging and rejection requirements",
+      "start_seconds": 78,
+      "end_seconds": 755,
+      "construction": "A floating broad collector and mecanum centering feed two-stage transport with color sensing and rejection recovery. The turret/launcher family has several historical iterations, including earlier-season examples, with controlled backspin in this version.",
+      "team_stated_reason": "The team explicitly describes iteration of a familiar turret family rather than a wholly new 2022 mechanism.",
+      "engineering_analysis": "Existing know-how can reduce development risk, but the new game’s piece state, rejection legality and contact path still require testing. A rejected ball may disturb the next staged piece, so recovery is part of useful cycle time.",
+      "recommended_validation": "Test rejection followed immediately by scoring and verify turret range/cable limits with the actual 2022 configuration.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-1771",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/ZYonfJLN_q8",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 78,
+        "end_seconds": 755,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "ZYonfJLN_q8",
+          "sha256": "3cc5cc5c5b59141de5e91e439114957673e1d5d166a75073df68cb79ea4554ba",
+          "caption_segments": 417,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-1771:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-1771",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-1771"
+      ],
+      "source_urls": [
+        "https://youtu.be/ZYonfJLN_q8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-1771",
+      "title": "2022-1771 · Long-lived turret experience does not remove staging and rejection requirements",
+      "year": 2022,
+      "robot_id": "2022-1771",
+      "kind": "focused_technical_study",
+      "body": "# 2022-1771: Long-lived turret experience does not remove staging and rejection requirements\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA floating broad collector and mecanum centering feed two-stage transport with color sensing and rejection recovery. The turret/launcher family has several historical iterations, including earlier-season examples, with controlled backspin in this version.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly describes iteration of a familiar turret family rather than a wholly new 2022 mechanism.\n\n## Engineering interpretation — analyst inference\n\nExisting know-how can reduce development risk, but the new game’s piece state, rejection legality and contact path still require testing. A rejected ball may disturb the next staged piece, so recovery is part of useful cycle time.\n\n## Proposed validation — not performed\n\nTest rejection followed immediately by scoring and verify turret range/cable limits with the actual 2022 configuration.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/ZYonfJLN_q8](https://youtu.be/ZYonfJLN_q8)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/ZYonfJLN_q8"
+      ],
+      "path": "docs/research_continuation/2022-1771.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-1771",
+    "year": 2022,
+    "team": 1771,
+    "epa_rank": 9,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1771\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 3,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1771\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-1771:construction",
+    "study6-2022-1771:team_stated_reason",
+    "study6-2022-1771:engineering_analysis",
+    "study6-2022-1771:recommended_validation",
+    "study6-2022-1771:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-359",
+  "year": 2025,
+  "team": 359,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 359,
+    "robot": "Hawaiian Kids 2025",
+    "primary": [
+      "https://youtu.be/AFthn6GQme4"
+    ],
+    "architecture": "Telescoping low-pivot arm adapted from 2910 2023, with arm-powered climb.",
+    "subsystems": {
+      "drivetrain": "Swerve and lengthened wheelbase to stabilize taller arm.",
+      "intake": "Wide arm-mounted roller intake collects arbitrary-orientation coral; aluminum funnels center it. Same mechanism handles algae.",
+      "transfer": "Shared end effector avoids handoff between separate acquisition and scoring mechanisms.",
+      "scoring": "Four-motor shoulder and two-motor extending arm; stages lengthened about three inches for L4/net reach.",
+      "endgame": "Post-week-5 powered cage wheels/latches replaced slower between-poles clamp. Arm provides lift; servo ratchet holds shoulder after disable.",
+      "controls": "Two Limelight 4s provide field localization and pose alignment; separate CAN buses discussed in interview."
+    },
+    "versions": [
+      "Arm extended relative to prior-year implementation, forcing chassis change.",
+      "Week-5-to-Worlds cage capture replaced; shoulder ratchet added during build development."
+    ],
+    "analysis": "The user's desired lineage vocabulary needs this precision: 2910-2023 arm describes a kinematic family, but 2025 reach, base length, torque and cage capture are new design obligations.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2025-359",
+    "team_name": "Hawaiian Kids",
+    "epa_rank": 35,
+    "epa": 85.14,
+    "epa_pre_champs": 85.76,
+    "epa_breakdown": {
+      "total_points": 85.14,
+      "auto_points": 17.81,
+      "teleop_points": 53.65,
+      "endgame_points": 13.69,
+      "auto_rp": 0.6295,
+      "coral_rp": 0.5803,
+      "barge_rp": 0.82034,
+      "tiebreaker_points": 0.38,
+      "auto_coral_points": 14.69,
+      "teleop_coral_points": 40.76,
+      "coral_l1": 0.97,
+      "coral_l2": 3.59,
+      "coral_l3": 3.85,
+      "coral_l4": 4.63,
+      "processor_algae": 0.51,
+      "processor_algae_points": 1.52,
+      "net_algae_points": 11.36,
+      "barge_points": 13.69,
+      "rp_1": 0.6295,
+      "rp_2": 0.5803,
+      "rp_3": 0.82034,
+      "total_coral_points": 55.449999999999996,
+      "total_algae_points": 12.879999999999999
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "329d92ef2fa4b0de"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-359",
+      "year": 2025,
+      "team": 359,
+      "epa_rank": 35,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"359\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 20,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"359\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-359"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-359",
+      "title": "A telescoping arm avoids a handoff but moves a large work envelope",
+      "start_seconds": 77,
+      "end_seconds": 295,
+      "construction": "The interview describes four shoulder motors with a stated 111:1 reduction, a chain-driven dead-axis pivot, and a two-motor telescoping arm. Its wide collector uses front/back roller groups and aluminum centering guides to acquire differently oriented coral; rigid guide plates reflect coral’s low compressibility. The retained record describes extending stage length for L4/net reach.",
+      "team_stated_reason": "The team links the multi-motor shoulder to power demand. Its acquisition geometry is intended to bring floor coral into the same mechanism that scores it, avoiding a separate transfer.",
+      "engineering_analysis": "Eliminating a handoff trades transfer risk for arm inertia, sweep clearance and control burden. Extension changes both shoulder torque and the position of the robot’s loaded center of mass. A floor hard stop can define a repeatable pickup plane, but should not be confused with clearance throughout the rest of the motion. Thin coral tolerates less forced compression than foam fuel, so roller selection must be paired with a controlled guide gap.",
+      "recommended_validation": "Map shoulder current and deflection through extension, test pickup against a wall, and verify coral control during acceleration and sudden chassis braking.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-359",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/AFthn6GQme4",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 295,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "AFthn6GQme4",
+          "sha256": "42389fe95e544a111d7c4d449af58bd3ff48c964c5ac35ed8dfbe0c8054515a0",
+          "caption_segments": 366,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-359:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-359",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-359"
+      ],
+      "source_urls": [
+        "https://youtu.be/AFthn6GQme4"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-359",
+      "title": "2025-359 · A telescoping arm avoids a handoff but moves a large work envelope",
+      "year": 2025,
+      "robot_id": "2025-359",
+      "kind": "focused_technical_study",
+      "body": "# 2025-359: A telescoping arm avoids a handoff but moves a large work envelope\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview describes four shoulder motors with a stated 111:1 reduction, a chain-driven dead-axis pivot, and a two-motor telescoping arm. Its wide collector uses front/back roller groups and aluminum centering guides to acquire differently oriented coral; rigid guide plates reflect coral’s low compressibility. The retained record describes extending stage length for L4/net reach.\n\n## Team-stated reasoning or boundary\n\nThe team links the multi-motor shoulder to power demand. Its acquisition geometry is intended to bring floor coral into the same mechanism that scores it, avoiding a separate transfer.\n\n## Engineering interpretation — analyst inference\n\nEliminating a handoff trades transfer risk for arm inertia, sweep clearance and control burden. Extension changes both shoulder torque and the position of the robot’s loaded center of mass. A floor hard stop can define a repeatable pickup plane, but should not be confused with clearance throughout the rest of the motion. Thin coral tolerates less forced compression than foam fuel, so roller selection must be paired with a controlled guide gap.\n\n## Proposed validation — not performed\n\nMap shoulder current and deflection through extension, test pickup against a wall, and verify coral control during acceleration and sudden chassis braking.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/AFthn6GQme4](https://youtu.be/AFthn6GQme4)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/AFthn6GQme4"
+      ],
+      "path": "docs/research_continuation/2025-359.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-359",
+    "year": 2025,
+    "team": 359,
+    "epa_rank": 35,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"359\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 20,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"359\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-359:construction",
+    "study6-2025-359:team_stated_reason",
+    "study6-2025-359:engineering_analysis",
+    "study6-2025-359:recommended_validation",
+    "study6-2025-359:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

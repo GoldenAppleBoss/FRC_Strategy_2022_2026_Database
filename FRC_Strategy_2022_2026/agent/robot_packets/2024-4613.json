@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-4613",
+  "year": 2024,
+  "team": 4613,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 4613,
+    "robot": "Barker Redbacks 2024",
+    "primary": [
+      "https://youtu.be/aDj71SWcmGA"
+    ],
+    "architecture": "Fixed-angle launcher with differential surface behavior for speaker/amp and a separate compact climber.",
+    "subsystems": {
+      "drivetrain": "Swerve; chassis/bumper packaging shared with the associated 8613 travel setup.",
+      "intake": "Under-bumper collector and low-friction guides.",
+      "transfer": "Beam-break tracking establishes note position.",
+      "scoring": "Two independently driven rollers; different wheel hardness enables amp trajectory without a launch-angle pivot.",
+      "endgame": "Spring-extended, winched two-stage single hook; protective cover prevents fallen notes disabling it.",
+      "controls": "Note sensing supports controlled feed; detailed autonomous implementation not described."
+    },
+    "versions": [
+      "Chassis extended and rollers added for acquisition access; hook cover addresses an identified jam risk."
+    ],
+    "analysis": "A useful alternative to adding an articulation axis: wheel speed/material can change exit behavior. Verify its usable shot envelope before assuming a fixed launcher replaces an adjustable one for every role.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 8,
+    "cad_code_links": [],
+    "id": "2024-4613",
+    "team_name": "Barker Redbacks",
+    "epa_rank": 16,
+    "epa": 48.36,
+    "epa_pre_champs": 43.69,
+    "epa_breakdown": {
+      "total_points": 48.36,
+      "auto_points": 13.24,
+      "teleop_points": 32.99,
+      "endgame_points": 2.12,
+      "melody_rp": 0.7989,
+      "ensemble_rp": 0.3496,
+      "tiebreaker_points": 0.19,
+      "auto_leave_points": 1.98,
+      "auto_note_points": 11.26,
+      "teleop_note_points": 32.99,
+      "speaker_points": 40.8,
+      "amplified_notes": 5.22,
+      "endgame_park_points": 0.37,
+      "endgame_on_stage_points": 1.65,
+      "endgame_harmony_points": 0.35,
+      "endgame_trap_points": -0.41,
+      "endgame_spotlight_points": 0.16,
+      "rp_1": 0.7989,
+      "rp_2": 0.3496,
+      "total_note_points": 44.25
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "ba708550ab3598f1"
+    ],
+    "tags": [
+      "climb",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-4613",
+      "year": 2024,
+      "team": 4613,
+      "epa_rank": 16,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"4613\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 17,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4613\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-4613"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-4613",
+      "title": "Different contact stiffness enables amp delivery without a pivot",
+      "start_seconds": 75,
+      "end_seconds": 180,
+      "construction": "The under-bumper collector and guides feed two independently driven launcher rollers. The interview describes a lower-durometer lower contact relative to the upper contact, combined with speed control, to curve the amp delivery without moving the whole launcher. A deflector protects the climber from dropped notes.",
+      "team_stated_reason": "The team explicitly chose the contact/speed arrangement to perform both speaker and amp tasks without a pivot, with robustness as a stated benefit. The climber guard responds to the possibility of a falling note disabling it.",
+      "engineering_analysis": "Eliminating an angle actuator shifts trajectory control into contact deformation, spin and launch speed. That reduces joints and moving wiring, but may increase sensitivity to note wear, temperature and compression. The guard illustrates that a rare dropped piece can create a structural failure state even when the main transport path works.",
+      "recommended_validation": "Map amp accuracy with used notes, varying voltage and repeated shooting. Test the dropped-note guard from several directions and verify that it does not obstruct normal climbing.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-4613",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/aDj71SWcmGA",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 180,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "aDj71SWcmGA",
+          "sha256": "7514fe024e39cdb291a8d6479a3380d628831b6b3fa7303032da94cf4edc8f9c",
+          "caption_segments": 107,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-4613:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-4613",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-4613"
+      ],
+      "source_urls": [
+        "https://youtu.be/aDj71SWcmGA"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-4613",
+      "title": "2024-4613 · Different contact stiffness enables amp delivery without a pivot",
+      "year": 2024,
+      "robot_id": "2024-4613",
+      "kind": "focused_technical_study",
+      "body": "# 2024-4613: Different contact stiffness enables amp delivery without a pivot\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe under-bumper collector and guides feed two independently driven launcher rollers. The interview describes a lower-durometer lower contact relative to the upper contact, combined with speed control, to curve the amp delivery without moving the whole launcher. A deflector protects the climber from dropped notes.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly chose the contact/speed arrangement to perform both speaker and amp tasks without a pivot, with robustness as a stated benefit. The climber guard responds to the possibility of a falling note disabling it.\n\n## Engineering interpretation — analyst inference\n\nEliminating an angle actuator shifts trajectory control into contact deformation, spin and launch speed. That reduces joints and moving wiring, but may increase sensitivity to note wear, temperature and compression. The guard illustrates that a rare dropped piece can create a structural failure state even when the main transport path works.\n\n## Proposed validation — not performed\n\nMap amp accuracy with used notes, varying voltage and repeated shooting. Test the dropped-note guard from several directions and verify that it does not obstruct normal climbing.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/aDj71SWcmGA](https://youtu.be/aDj71SWcmGA)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/aDj71SWcmGA"
+      ],
+      "path": "docs/research_continuation/2024-4613.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2024-4613",
+    "year": 2024,
+    "team": 4613,
+    "epa_rank": 16,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"4613\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 17,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4613\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-4613:construction",
+    "study6-2024-4613:team_stated_reason",
+    "study6-2024-4613:engineering_analysis",
+    "study6-2024-4613:recommended_validation",
+    "study6-2024-4613:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

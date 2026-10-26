@@ -1,0 +1,560 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-3847",
+  "year": 2024,
+  "team": 3847,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 3847,
+    "robot": "Ultraviolet",
+    "primary": [
+      "https://youtu.be/Cze2rBjAatM",
+      "https://www.chiefdelphi.com/t/447471"
+    ],
+    "architecture": "Under-bumper collector, pivoted launcher and reversible backpack amp/trap route.",
+    "subsystems": {
+      "drivetrain": "Swerve; centering wedges extend over module areas.",
+      "intake": "Silicone-wrapped rollers and low-friction wedges center notes.",
+      "transfer": "Two-roller feeder can reverse into the backpack path.",
+      "scoring": "Sector-gear pivot with steel reinforcement; asymmetrical wheel arrangement adds spin.",
+      "endgame": "Tilted hook elevator lifts robot; backpack raises and reverses note into trap.",
+      "controls": "Four Limelights localize; absolute pivot sensing controls shot angle."
+    },
+    "versions": [
+      "Powered/pliant cap geometry evolved to handle both amp and trap angles; Open Alliance thread supplies the longer development history."
+    ],
+    "analysis": "This is an especially useful source for how packaging, service access and control states develop together. The U-turn note path solves two destinations but must tolerate different release angles.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-3847",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/447471/69",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/2/c2233562e301e79b2e3f943c64b234eb131da112_2_360x375.png",
+        "post": 69,
+        "date": "2024-01-12T19:26:16.631Z",
+        "author": "Nick.kremer",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "pivot"
+        ],
+        "caption": "2024 team 3847 — source image from post 69 (2024-01-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "3020ea816c9d05ad4e.jpg",
+        "id": "6780696bf2c47cba4c",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/3020ea816c9d05ad4e.jpg"
+      },
+      {
+        "robot_id": "2024-3847",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/447471/96",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/e/8/e8e0657df5a691eb32310acb5e4cd06187ef17f5_2_267x375.jpeg",
+        "post": 96,
+        "date": "2024-01-15T19:03:39.658Z",
+        "author": "Matt_G",
+        "context_tags": [
+          "climb"
+        ],
+        "caption": "2024 team 3847 — source image from post 96 (2024-01-15). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "1141961ded48c4a762.jpg",
+        "id": "c89706a05719568475",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/1141961ded48c4a762.jpg"
+      }
+    ],
+    "source_post_count": 234,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-1",
+        "url": "https://docs.google.com/spreadsheets/d/1vwJ85SxKBxnkGc5YzNvSew_cwZYN7fuIQgU3SFYJZGs/edit#gid=0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f15b92ae155f7256a1"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-1",
+        "url": "https://docs.google.com/spreadsheets/d/1_AG12m5krbJWhUOxERKzXJGxAM9qwglokKvbcnNKF3k/edit#gid=1386834576",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "214621ae6ee052d228"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-1",
+        "url": "https://docs.google.com/presentation/d/1hZiukGhqJXsGz0fpNGKlydGhJOZhCGYhQuC-qJBBfm0/edit#slide=id.p",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ec0b4b9b31ac02e093"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-1",
+        "url": "https://cad.onshape.com/documents/726a5b2b7addca305578f3fe/w/783f5fa558d1bb78930f1c38/e/ebbdfccf9a0bb7db3c939f53",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8b4d8953cca3919787"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-3",
+        "url": "https://cad.onshape.com/documents/7ed5cf8da2c83c45087c8596/w/cc29884082963ad708e6f8c1/e/ccf765773035dd4fe92ba8d8",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ce9ce6f132fff56838"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-354",
+        "url": "https://cad.onshape.com/documents/00611aa7b4c0e713b6fda788/w/61300cce1285db6c2a4c9f81/e/5baaae6f885ce065c96f9d2d?renderMode=0&uiState=6598f70e984f440dd47837c6",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "9569688a98d7245d61"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-76",
+        "url": "https://drive.google.com/drive/folders/1wzVIJkDkO2XI60H2dtdnzAI_SYDmpnaS?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e53a49c39641ab4c19"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-83",
+        "url": "https://cad.onshape.com/documents/0b9fe420322fe41da56645bf/w/76fedf9bfb5b78e06920c37c/e/7f7fe2c94f4c984c8a5860c6",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8637c5d97a4ecb1eeb"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-101",
+        "url": "https://cad.onshape.com/documents/b6dec321d434a78b0c8b1f4a/w/e95933a4dd5ad878cfc66b01/e/66e3aefa190aed13930af890",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8e847905ec36756dd2"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-293",
+        "url": "https://cad.onshape.com/documents/ffe3f53f839b7bf3df3fda0c/w/1862685f47433f26077aa8e0/e/20f220eaa98564374aed8be9?configuration=HeatSetInsertHoleSize%3D0.00396875%2Bmeter%3BHeatSetInserts%3Dtrue%3BList_DtPMRlq6H9SkRi%3DDefault%3BPulley1Teeth%3D30.0%3BPulley1Width%3D0.009880600000000002%2Bmeter%3BPulley2Width%3D0.009880600000000002%2Bmeter%3BPulley_2Teeth%3D40.0%3BRollerBearingOD%3D0.028575000000000003%2Bmeter%3BRollerHubLength%3D0.025400000000000002%2Bmeter%3BRollerInsideDiameter%3D0.04762500000000001%2Bmeter%3BRollerOutsideDiameter%3D0.050800000000000005%2Bmeter&renderMode=0&uiState=65c4d9357ff5ad40b21acdc8",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2a1ceaf65fb5ae3ec0"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-382",
+        "url": "https://cad.onshape.com/documents/b6dec321d434a78b0c8b1f4a/w/e95933a4dd5ad878cfc66b01/e/859bb1936bab88d5ad4c5333",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d2ab4e7d05936ebf25"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-466",
+        "url": "https://cad.onshape.com/documents/0d116a8cce7c5797eccb6e62/w/a4fa2138738b2a8b16cf349f/e/4588932ee4d4fb92a6492133",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "14f9fcd9373cac64fd"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-559",
+        "url": "https://docs.google.com/spreadsheets/d/1acT6PpdR5l3zVhPqrehgamPsnUbk6yg-2JC5FcwIbb4/edit",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e901bab50b317c97bf"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-584",
+        "url": "https://github.com/Spectrum3847/2023-FM",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a9467c09c8c4c00b18"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-592",
+        "url": "https://docs.google.com/presentation/d/18Km6PWV-6Slt5ESQbFIYo8DxL3BhUzXH_tmMuM71YTA/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "11b89a3c2cfa150d39"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-600",
+        "url": "https://github.com/exeldro/obs-shaderfilter/",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c9b668b360f727570e"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-600",
+        "url": "https://github.com/Aitum/obs-vertical-canvas",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4e9468092f0c3357d9"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-600",
+        "url": "https://github.com/Aitum/obs-aitum-multistream",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "55ec95cc33b1da04da"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-600",
+        "url": "https://github.com/sorayuki/obs-multi-rtmp",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e0e9dc10d23eac1e58"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-600",
+        "url": "https://github.com/bozbez/win-capture-audio",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "86644bcaf1e5b93154"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-600",
+        "url": "https://github.com/ratwithacompiler/OBS-captions-plugin",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "32deccc2cb74d85f8b"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-611",
+        "url": "https://cad.onshape.com/documents/125a395685532e85d957f22a/v/2ac47d91e3611a1d0c8f0c7f/e/a5968209baf0e12ccd04d535",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6ce90004803103d6fa"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-634",
+        "url": "https://github.com/first-team-58/2025Beta/blob/dev/src/main/java/frc/robot/vision/OculusProcessor.java#L64-L67",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6f9fad0dec5c699e4b"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-634",
+        "url": "https://github.com/first-team-58/2025Beta/blob/dev/src/main/java/frc/robot/Constants.java#L76-L83",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "438504713989a30885"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-639",
+        "url": "https://cad.onshape.com/documents/605debf30bd71b8cde35881a/w/157d42623968b94213e2a5a8/e/dcec98cff9555eb7b4e118ef?renderMode=0&uiState=6776f116b9c62758e263ffc2",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d775655b55ad93c3b7"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-639",
+        "url": "https://github.com/Spectrum3847/2025-Spectrum",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "173a565cd6377a1a73"
+      },
+      {
+        "robot_id": "2024-3847",
+        "discovery_post": "2024-3847-447471-655",
+        "url": "https://cad.onshape.com/documents/c69ed204b00026727a4850f7/w/aecdbeb773e8281ec08223d1/e/3c17a586f8b7441cbb258fa2?renderMode=0&uiState=68927af71babdd55dbe66fdb",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3ff0f5dd2bb24d6b83"
+      }
+    ],
+    "id": "2024-3847",
+    "team_name": "Spectrum   -△◅",
+    "epa_rank": 22,
+    "epa": 46.92,
+    "epa_pre_champs": 46.9,
+    "epa_breakdown": {
+      "total_points": 46.92,
+      "auto_points": 15.33,
+      "teleop_points": 26.27,
+      "endgame_points": 5.32,
+      "melody_rp": 0.6674,
+      "ensemble_rp": 0.5003,
+      "tiebreaker_points": 0.24,
+      "auto_leave_points": 1.46,
+      "auto_note_points": 13.87,
+      "teleop_note_points": 26.27,
+      "speaker_points": 36.9,
+      "amplified_notes": 4.3,
+      "endgame_park_points": 0.14,
+      "endgame_on_stage_points": 2.59,
+      "endgame_harmony_points": -0.28,
+      "endgame_trap_points": 2.89,
+      "endgame_spotlight_points": -0.03,
+      "rp_1": 0.6674,
+      "rp_2": 0.5003,
+      "total_note_points": 40.14
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "c57cc21f4ab0f6b6",
+      "773154b031283c1c"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-3847",
+      "year": 2024,
+      "team": 3847,
+      "epa_rank": 22,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"3847\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 17,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3847\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-3847"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-3847",
+      "title": "Centering, spin and reverse transfer share one constrained path",
+      "start_seconds": 81,
+      "end_seconds": 260,
+      "construction": "Silicone-wrapped collector rollers, Teflon-covered wedges and additional module guides center the note. A two-roller feeder can reverse it into the backpack amp/trap path. Asymmetric black-wheel placement produces spin, while the main scoring pivot uses sector gearing with reinforcement.",
+      "team_stated_reason": "The team explicitly identifies the full-width intake with driver margin and the contact materials with centering. The backpack receives the note through a reversed feed sequence.",
+      "engineering_analysis": "Forward and reverse transport must both control a flexible ring. A low-friction wedge is useful for centering but may provide little retention while the robot reverses direction or lifts the note. The launcher’s intended asymmetry also depends on repeatable centering. A shared path saves hardware only if direction changes do not create a high jam or alignment burden.",
+      "recommended_validation": "Test reversed handoffs after aggressive pickup, measure note pose before each route, and verify chain clearance through the climb/backpack sequence.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-3847",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/Cze2rBjAatM",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/447471"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 81,
+        "end_seconds": 260,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "Cze2rBjAatM",
+          "sha256": "a37b8a414fe7c40e2772a68f68a1e0195426effc746733b4442d7fdcc154bedd",
+          "caption_segments": 168,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-3847:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-3847",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-3847"
+      ],
+      "source_urls": [
+        "https://youtu.be/Cze2rBjAatM"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-3847",
+      "title": "2024-3847 · Centering, spin and reverse transfer share one constrained path",
+      "year": 2024,
+      "robot_id": "2024-3847",
+      "kind": "focused_technical_study",
+      "body": "# 2024-3847: Centering, spin and reverse transfer share one constrained path\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nSilicone-wrapped collector rollers, Teflon-covered wedges and additional module guides center the note. A two-roller feeder can reverse it into the backpack amp/trap path. Asymmetric black-wheel placement produces spin, while the main scoring pivot uses sector gearing with reinforcement.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly identifies the full-width intake with driver margin and the contact materials with centering. The backpack receives the note through a reversed feed sequence.\n\n## Engineering interpretation — analyst inference\n\nForward and reverse transport must both control a flexible ring. A low-friction wedge is useful for centering but may provide little retention while the robot reverses direction or lifts the note. The launcher’s intended asymmetry also depends on repeatable centering. A shared path saves hardware only if direction changes do not create a high jam or alignment burden.\n\n## Proposed validation — not performed\n\nTest reversed handoffs after aggressive pickup, measure note pose before each route, and verify chain clearance through the climb/backpack sequence.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/Cze2rBjAatM](https://youtu.be/Cze2rBjAatM)\n- [https://www.chiefdelphi.com/t/447471](https://www.chiefdelphi.com/t/447471)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/Cze2rBjAatM",
+        "https://www.chiefdelphi.com/t/447471"
+      ],
+      "path": "docs/research_continuation/2024-3847.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-3847",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/447471/69",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/2/c2233562e301e79b2e3f943c64b234eb131da112_2_360x375.png",
+      "post": 69,
+      "date": "2024-01-12T19:26:16.631Z",
+      "author": "Nick.kremer",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "pivot"
+      ],
+      "caption": "2024 team 3847 — source image from post 69 (2024-01-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "3020ea816c9d05ad4e.jpg",
+      "id": "6780696bf2c47cba4c",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/3020ea816c9d05ad4e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 360,
+      "height_px": 375,
+      "bytes": 11030,
+      "sha256": "036b996fd8f5a1bd41532ded6ea6dd20140d1640e38c18609586c3e3288438c3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "6780696bf2c47cba4c",
+      "reader_url": "index.html#image=6780696bf2c47cba4c",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-3847",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/447471/96",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/e/8/e8e0657df5a691eb32310acb5e4cd06187ef17f5_2_267x375.jpeg",
+      "post": 96,
+      "date": "2024-01-15T19:03:39.658Z",
+      "author": "Matt_G",
+      "context_tags": [
+        "climb"
+      ],
+      "caption": "2024 team 3847 — source image from post 96 (2024-01-15). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "1141961ded48c4a762.jpg",
+      "id": "c89706a05719568475",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/1141961ded48c4a762.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 267,
+      "height_px": 375,
+      "bytes": 33015,
+      "sha256": "1007e1b92b17477fbb60657a99bf8fad1aa825d081e447fea551cd99e4420df7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "c89706a05719568475",
+      "reader_url": "index.html#image=c89706a05719568475",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-3847",
+    "year": 2024,
+    "team": 3847,
+    "epa_rank": 22,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"3847\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 17,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3847\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-3847:construction",
+    "study6-2024-3847:team_stated_reason",
+    "study6-2024-3847:engineering_analysis",
+    "study6-2024-3847:recommended_validation",
+    "study6-2024-3847:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

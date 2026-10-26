@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-2046",
+  "year": 2022,
+  "team": 2046,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 2046,
+    "robot": "Amelia Bearhart",
+    "primary": [
+      "https://youtu.be/1zQLypCgjSM",
+      "https://www.chiefdelphi.com/t/405155"
+    ],
+    "architecture": "Fixed-angle shooter and telescoping traversal mechanism with deliberately replaceable collector.",
+    "subsystems": {
+      "drivetrain": "Swerve; module detail not established in reviewed excerpt.",
+      "intake": "Early flap/Velcro concept repelled cargo; rubber followed Wilsonville, then an offseason griptape tube. Polycarbonate breakaways and quick assembly replacement protect the core.",
+      "transfer": "Mecanum centering, polycord uptake, ultrasonic capacity feedback and driver haptics.",
+      "scoring": "Fixed heading and fixed elevation; powered back roller controls spin. Team accepted a bounded shooting area around the tarmac.",
+      "endgame": "Four belt-telescoping arms; inner and outer pairs sequence through bars with swing timing. Sub-three-second claim belongs to the Chezy configuration.",
+      "controls": "Driver feedback and repeatable shot locations reduce aiming complexity."
+    },
+    "versions": [
+      "Wilsonville prompted collector material change.",
+      "Offseason collector and fast climb shown in Chezy interview; do not assume those timings at early events."
+    ],
+    "analysis": "A narrower shooting envelope can buy lower mass, easier tuning and a strong endgame. The correct comparison is points per reliable cycle over a realistic route, not adjustable versus fixed in isolation.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 6,
+    "cad_code_links": [],
+    "id": "2022-2046",
+    "team_name": "Bear Metal",
+    "epa_rank": 26,
+    "epa": 50.28,
+    "epa_pre_champs": 47.35,
+    "epa_breakdown": {
+      "total_points": 50.28,
+      "auto_points": 13.78,
+      "teleop_points": 26.99,
+      "endgame_points": 9.51,
+      "cargo_rp": 0.6106,
+      "hangar_rp": 0.4504,
+      "tiebreaker_points": 50.28,
+      "auto_taxi_points": 2.04,
+      "auto_cargo_lower": -0.1,
+      "auto_cargo_upper": 2.99,
+      "teleop_cargo_lower": -0.56,
+      "teleop_cargo_upper": 13.78,
+      "rp_1": 0.6106,
+      "rp_2": 0.4504
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "de976a1adb5aaa27",
+      "98bb370b5b6c6d86"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-2046",
+      "year": 2022,
+      "team": 2046,
+      "epa_rank": 26,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2046\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 4,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2046\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-2046"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-2046",
+      "title": "A bounded shooting envelope can be an intentional simplification",
+      "start_seconds": 80,
+      "end_seconds": 475,
+      "construction": "The collector moves from early flap/Velcro contacts through rubber to a later griptape tube. Breakaway members protect the core. A fixed-heading, fixed-elevation launcher uses a powered back roller and accepts a bounded shooting region; the climb uses swing to reach traversal.",
+      "team_stated_reason": "The source explicitly reports early contacts repelling cargo and later material experiments. The retained account treats the limited shooting area as an accepted design constraint.",
+      "engineering_analysis": "Range is not free capability. A simpler scorer can be effective if its reachable positions, acquisition routes and defended access remain adequate. Offseason material changes must not be back-projected onto Worlds.",
+      "recommended_validation": "Test access to the preferred scoring area under defense and compare collector materials with consistent cargo and approach speed.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-2046",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/1zQLypCgjSM",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/405155"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 475,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "1zQLypCgjSM",
+          "sha256": "622cc3503fbd2cb56e73abf95a370a06eccab5b7385d95b94c78ad9abb11aed4",
+          "caption_segments": 259,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-2046:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-2046",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-2046"
+      ],
+      "source_urls": [
+        "https://youtu.be/1zQLypCgjSM"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-2046",
+      "title": "2022-2046 · A bounded shooting envelope can be an intentional simplification",
+      "year": 2022,
+      "robot_id": "2022-2046",
+      "kind": "focused_technical_study",
+      "body": "# 2022-2046: A bounded shooting envelope can be an intentional simplification\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe collector moves from early flap/Velcro contacts through rubber to a later griptape tube. Breakaway members protect the core. A fixed-heading, fixed-elevation launcher uses a powered back roller and accepts a bounded shooting region; the climb uses swing to reach traversal.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly reports early contacts repelling cargo and later material experiments. The retained account treats the limited shooting area as an accepted design constraint.\n\n## Engineering interpretation — analyst inference\n\nRange is not free capability. A simpler scorer can be effective if its reachable positions, acquisition routes and defended access remain adequate. Offseason material changes must not be back-projected onto Worlds.\n\n## Proposed validation — not performed\n\nTest access to the preferred scoring area under defense and compare collector materials with consistent cargo and approach speed.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/1zQLypCgjSM](https://youtu.be/1zQLypCgjSM)\n- [https://www.chiefdelphi.com/t/405155](https://www.chiefdelphi.com/t/405155)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/1zQLypCgjSM",
+        "https://www.chiefdelphi.com/t/405155"
+      ],
+      "path": "docs/research_continuation/2022-2046.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-2046",
+    "year": 2022,
+    "team": 2046,
+    "epa_rank": 26,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2046\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 4,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2046\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-2046:construction",
+    "study6-2022-2046:team_stated_reason",
+    "study6-2022-2046:engineering_analysis",
+    "study6-2022-2046:recommended_validation",
+    "study6-2022-2046:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

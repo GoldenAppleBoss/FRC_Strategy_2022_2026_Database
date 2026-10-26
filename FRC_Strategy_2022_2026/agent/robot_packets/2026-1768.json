@@ -1,0 +1,692 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-1768",
+  "year": 2026,
+  "team": 1768,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 1768,
+    "robot": "RoboChiefs 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=zxBvVSZtS3E",
+      "https://www.chiefdelphi.com/t/525192"
+    ],
+    "architecture": "Four-bar collection and drum rebuild replacing divided dual shooter/spindexer.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Moving hopper attached to bottom four-bar link keeps folded robot beneath trench; SRPP and aluminum links improve impact survival.",
+      "transfer": "Dual spindexers replaced by roller floor with compliant entry. Integrated loading/shooting arrangement preserves contact.",
+      "scoring": "Four motors power drum/hood rollers; external hood plates and compact transmission replace former internal divider geometry. Added guide after WPI wobble.",
+      "endgame": "Endgame installation not established in reviewed interview.",
+      "controls": "Three cameras and simplified driver actions emphasize repeatable autonomous and shots; reduced belt tension lowers current."
+    },
+    "versions": [
+      "Divided dual shooter → drum with roller floor.",
+      "Worlds SRPP collector and post-WPI feed stabilization are specifically described."
+    ],
+    "analysis": "This illustrates the cost of widening a scorer: dividers, motor placement and hood supports must move, not simply disappear. The four-bar/hopper link choice simultaneously solves stowed height and expanding volume.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 1768 in 2026: the rebuild is a sequence of decisions, not one drum photograph\n\nThis supplement uses the team’s October CAD-release replies alongside the earlier technical interview. It distinguishes the original Nightshade, the Nightshift rebuild, later onseason adjustments and offseason changes. The source is unusually useful because the team explains why mechanisms and schedule choices were coupled. A successful rebuild should not be reduced to “replace two shooters with a drum,” nor should October performance be assigned to the robot that competed at Worlds.\n\n## The schedule establishes what the team actually proved\n\nThe team describes an eleven-day rebuild between URI in week 3 and WPI in week 5, with the new machine operational after nine days. Only the swerve modules and bellypan were retained. The reply’s timeline runs from the original robot’s final match on March 21 through CAD on March 25, stripping the old machine on March 27, mounting major subsystems on March 28 and reaching a practice field on April 2. Those are dated milestones reported by the team, not an inference that another team can repeat the schedule. [Schedule and retained hardware](https://www.chiefdelphi.com/t/525192/12). [Detailed milestones](https://www.chiefdelphi.com/t/525192/13).\n\nThe distinction matters when borrowing architecture. A mechanism whose drawings can be completed quickly may still consume the entire available interval in wiring, controls, feeding tests and driver learning. Conversely, retaining a technically mediocre but known assembly can preserve enough practice time to win more matches. The relevant rebuild calculation includes the probability of arriving with an integrated machine, not just the predicted performance of the finished CAD. An architecture recommendation should name the existing interfaces that survive, the ones that are replaced and the latest date at which a failed experiment can still be abandoned.\n\nThe team’s process reply describes student ownership of deadlines and explicit gates: if a new assembly does not meet a milestone, the original version stays. Older students handled CAD while newer students manufactured early enough to understand assembly. This is evidence about the organization that made a rapid rebuild possible. It is not a universal staffing prescription. [Process account](https://www.chiefdelphi.com/t/525192/21).\n\nFor a PCH rebuild, the transferable question is therefore not “can our team also rebuild in eleven days?” It is “which uncertainty can our actual team retire before our next event, with enough time left to integrate and practice?” A new hopper that retains the old collector, floor and mounting interfaces can be a fundamentally different risk from a new collector, hopper and feed path that must all work on their first combined test. The latter may still be justified, but the justification needs an integration plan and a fallback with a real deadline.\n\n## The four-bar is doing more than deploying an intake\n\nThe later replies explain that the week-zero machine did not stow under the trench. On the developed machine, the hopper attaches to the lower link of the four-bar. The team describes fitting the trench envelope in both positions, satisfying the starting envelope, folding the kicker and choosing link angles that survive contact. They arrived at the geometry through iteration rather than a single independent constraint calculation. [Envelope discussion](https://www.chiefdelphi.com/t/525192/15). [Coupled geometry](https://www.chiefdelphi.com/t/525192/16).\n\nThis is exactly why “a 2910-style intake with a Citrus hopper” needs an interface analysis. The intake’s ground contact point and deployed reach are only part of the design. The moving hopper wall changes where stored fuel rests; the lower link’s motion changes the floor slope; the kicker’s folded position changes what can occupy the trench envelope. The mechanism must pass through intermediate positions while full of fuel. A configuration that clears a field element in a static CAD screenshot can still trap fuel, pull a flexible wall into a roller or require a transition that cannot be completed while moving.\n\nThe useful inspiration is the constraint-solving strategy: let one linkage carry several compatible motions, then check the consequences as a system. It is not a claim that the same link lengths fit another chassis. A receiving team should record the deployed and retracted volumes, the swept paths of rigid members and flexible walls, the lowest loaded floor point, the expected collision direction and the fuel escape routes. If any of those are unknown, the recommendation should remain an architectural candidate rather than a dimensioned solution.\n\n## Transmission failures need local explanations\n\nOne reply separates motor-to-roller belt skipping from roller-to-roller belts that did not skip. The team changed the former to chain after Worlds, then added polycarbonate retaining flanges after the chain came off once. Their explanation involves possible motor or plate flex reducing wrap or tension around a small pulley; it is a team hypothesis about this installation. [Transmission sequence](https://www.chiefdelphi.com/t/525192/9).\n\nThat report does not establish “chain is better than belts.” It suggests tests: watch relative motor and shaft displacement under load; inspect tooth engagement through the entire torque transient; distinguish a belt climbing out of mesh from a shaft or tensioner moving; and check retention after changing the transmission type. A mechanism database should keep the failed condition, the suspected cause, the modification and the observed result as separate fields. Without that separation, an agent may copy the final component while repeating the geometry that caused the original failure.\n\nThe sliding flywheel-belt tensioner belongs to an offseason N.E.R.D. update. The team reports that high-speed slack had been damaging the belt, that the tensioner improved reported accuracy and that short testing had not yet revealed issues. They also anticipated possible creep that could be corrected by retensioning. Another reply explains the generous adjustment range and the washer arrangement around the bearing. [Tensioner report](https://www.chiefdelphi.com/t/525192/8). [Adjustment explanation](https://www.chiefdelphi.com/t/525192/11). This is promising design evidence with a limited test horizon, not a season-long reliability certification.\n\n## Fabrication and service choices change what is feasible\n\nThe team explains choosing live axles because they were quickest to manufacture for this rebuild. They recognize advantages of stubs for width iteration, but that was not the priority. This is a concrete example of a choice that can be strategically correct despite not maximizing every engineering objective. [Axle tradeoff](https://www.chiefdelphi.com/t/525192/12).\n\nTheir hood-rack reply describes printed material supported by aluminum teeth, with print settings chosen to reduce backlash. The lesson is to document the load path and what each material contributes. A screenshot that looks like a printed rack can conceal metal reinforcement; a recommendation to “print the rack” can therefore remove the part that made it survive. [Rack construction](https://www.chiefdelphi.com/t/525192/17).\n\n## Do not backdate the faster feeder\n\nOctober replies describe an entry roller using spaced compliant wheels to create lanes, combining the entry roller and floor drive at a 1:1 ratio, and matching feeder surface speed more closely to drum speed. The team reports moving from roughly 23–26 to 28–30 balls per second. These are offseason reports, not measured Worlds match averages. [October feed changes](https://www.chiefdelphi.com/t/525192/22). [Reported result](https://www.chiefdelphi.com/t/525192/24).\n\nThe architectural implication is broader than the headline firing rate. Fuel must arrive across the useful shooter width with suitable velocity, spacing and compression. Adding lanes can change the stability of that delivery; linking drives can remove one mismatch while introducing another dependency. A team evaluating the change should compare the beginning and end of a full hopper, partly depleted operation, worn fuel, lateral acceleration and recovery after a jam. A clean burst of a few fuel does not test those conditions.\n\n## What an agent should retrieve from this case\n\nRetrieve 1768 when the question involves a compressed rebuild, a moving hopper carried by a four-bar, drum packaging or separating onseason and offseason transmission fixes. Pair it with 254 and 1678 for feed-contact geometry and with 2910 for a different rebuild triggered by unmet performance goals. Do not merge the named configurations into a single idealized robot. The strongest reusable lesson is that an architecture is a set of coordinated constraints, a manufacturing plan and a validated operating sequence. The remaining unresolved endgame and exact drivetrain details in the base dossier remain unresolved; these additional replies do not establish them.\n",
+    "images": [
+      {
+        "robot_id": "2026-1768",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/525192/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/6/5/2656104285ffe30fe147abc3efee60e05ddee283_2_647x500.png",
+        "post": 1,
+        "date": "2026-10-12T23:34:13.964Z",
+        "author": "Subnautical",
+        "context_tags": [],
+        "caption": "2026 team 1768 — source image from post 1 (2026-10-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "de0a74f20ddfe0d15e.jpg",
+        "id": "b42ae8859a90ef91e0",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/de0a74f20ddfe0d15e.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/525192/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/4/c/64c061b7223bcd682e48a389dc5eff2f1859ef22_2_647x500.png",
+        "post": 1,
+        "date": "2026-10-12T23:34:13.964Z",
+        "author": "Subnautical",
+        "context_tags": [],
+        "caption": "2026 team 1768 — source image from post 1 (2026-10-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "85c23d76c050a3ad5e.jpg",
+        "id": "a426cfea30475cef67",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/85c23d76c050a3ad5e.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/525192/15",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/3/0/3/303d1ab52d5756f93724aac101b90a61d5c3323a_2_375x500.jpeg",
+        "post": 15,
+        "date": "2026-10-14T18:26:54.592Z",
+        "author": "AaronUp",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2026 team 1768 — source image from post 15 (2026-10-14). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "b34132e68572fcbfa1.jpg",
+        "id": "a7d10eb663aeec8927",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/b34132e68572fcbfa1.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/519386/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/8/0/b/80b5104243f4fdb44286c1b1976bb1419d53eec8_2_345x210.jpeg",
+        "post": 1,
+        "date": "2026-04-25T21:44:31.141Z",
+        "author": "kitkat9",
+        "context_tags": [
+          "hopper",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2026 team 1768 — source image from post 1 (2026-04-25). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d698c7cb7ab6b9b9fe.jpg",
+        "id": "2afddaccc0895bc2f1",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d698c7cb7ab6b9b9fe.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/519386/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/c/1/dc1bc40082f0750afa07f5366b675b592fafcf6f_2_310x215.jpeg",
+        "post": 1,
+        "date": "2026-04-25T21:44:31.141Z",
+        "author": "kitkat9",
+        "context_tags": [
+          "hopper",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2026 team 1768 — source image from post 1 (2026-04-25). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7fe231d8944cf9c462.jpg",
+        "id": "7e0930b0acc81a87ed",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7fe231d8944cf9c462.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/519386/7",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/a/d/9ad4b4b82dfd126360663d38d96f275ef59a8743_2_517x326.png",
+        "post": 7,
+        "date": "2026-06-17T14:09:33.591Z",
+        "author": "AaronUp",
+        "context_tags": [
+          "indexer",
+          "shooter"
+        ],
+        "caption": "2026 team 1768 — source image from post 7 (2026-06-17). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f7d30de1536e3777fc.jpg",
+        "id": "7c9a89cb1f338ad21f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f7d30de1536e3777fc.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "binder_figure",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/cSkTBJjJHHz68cz8b3rYZHDueja.pdf",
+        "page": 3,
+        "asset": "34d3d03135d38a6b9d.jpg",
+        "context_tags": [
+          "pivot"
+        ],
+        "caption": "2026 team 1768 — embedded figure from technical binder, PDF page 3. Page discusses pivot. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "84c9b10c6bb47f45d4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/34d3d03135d38a6b9d.jpg"
+      },
+      {
+        "robot_id": "2026-1768",
+        "kind": "binder_figure",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/cSkTBJjJHHz68cz8b3rYZHDueja.pdf",
+        "page": 6,
+        "asset": "c48c6537e465fbe254.jpg",
+        "context_tags": [
+          "pivot"
+        ],
+        "caption": "2026 team 1768 — embedded figure from technical binder, PDF page 6. Page discusses pivot. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "4c0f94c2af4fa8ad0e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/c48c6537e465fbe254.jpg"
+      }
+    ],
+    "source_post_count": 18,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-1768",
+        "discovery_post": "2026-1768-525192-1",
+        "url": "https://cad.onshape.com/documents/e69560710e95d0bc44da43f0/w/71df5c3fa572bfe86d193027/e/1a245beba64a947322a8cdd1?renderMode=0&uiState=6aae8e7288662ba647ed55cc",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5b4c740a493d7c748c"
+      },
+      {
+        "robot_id": "2026-1768",
+        "discovery_post": "2026-1768-525192-1",
+        "url": "https://cad.onshape.com/documents/1d7aacb3a29f34b87ae45925/w/a8253a3979c6079645b4adc6/e/827e613aac03210899b7cdc6?renderMode=0&uiState=6aadbce58f6981ae8fdd38a4",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "144f52eba9d323e3ee"
+      },
+      {
+        "robot_id": "2026-1768",
+        "discovery_post": "2026-1768-525192-22",
+        "url": "https://drive.google.com/file/d/159uBOhRmf0g3n6X0NiEXwdqWYIeBScRA/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "eb786ccb80ed462e56"
+      },
+      {
+        "robot_id": "2026-1768",
+        "discovery_post": "2026-1768-525192-22",
+        "url": "https://drive.google.com/file/d/1o31t1OkhOc5YUMyqggIVcVynhU32NRn9/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7589a15d48028878da"
+      },
+      {
+        "robot_id": "2026-1768",
+        "discovery_post": "2026-1768-525192-22",
+        "url": "https://drive.google.com/file/d/1CdI97sgIRWngXggpEIdOUm-HS7kE7YIC/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4d585fa290af014180"
+      }
+    ],
+    "id": "2026-1768",
+    "team_name": "Nashoba Robotics",
+    "epa_rank": 24,
+    "epa": 259.43,
+    "epa_pre_champs": 211.06,
+    "epa_breakdown": {
+      "total_points": 259.43,
+      "auto_points": 42.33,
+      "teleop_points": 141.21,
+      "endgame_points": 75.89,
+      "energized_rp": 0.8552,
+      "supercharged_rp": 0.608,
+      "traversal_rp": -0.3435,
+      "tiebreaker_points": 259.43,
+      "auto_fuel": 42.34,
+      "auto_tower": -0.0,
+      "transition_fuel": 22.78,
+      "first_shift_fuel": 59.15,
+      "second_shift_fuel": 59.27,
+      "endgame_fuel": 75.89,
+      "endgame_tower": -0.0,
+      "rp_1": 0.8552,
+      "rp_2": 0.608,
+      "rp_3": -0.3435,
+      "teleop_fuel": 217.09000000000003,
+      "total_fuel": 259.43,
+      "total_tower": 0
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "0c8bec89a438dc09",
+      "78825ccc052fdae0"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "expanding storage",
+      "four-bar",
+      "pass-through",
+      "spindexer / DYE",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-1768",
+      "year": 2026,
+      "team": 1768,
+      "epa_rank": 24,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1768\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 26,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1768\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-1768"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-1768",
+      "title": "Rebuild removes feed compression and separates shooter readiness",
+      "start_seconds": 108,
+      "end_seconds": 506,
+      "construction": "The interview distinguishes a former divided two-lane/double-spindexer arrangement from the drum rebuild with a roller floor. A powered lower intake roller was replaced by two 3/4-inch aluminum shafts with reduced compression. Compliant wheels near entry feed a J-shaped path; a guide was added after WPI wobble. Four motors drive the drum/kicker/hood group, and feed is enabled only after aiming, speed and hood conditions are satisfied.",
+      "team_stated_reason": "The team reports improved throughput after reducing collector compression, adds the guide to control observed motion, and describes reduced belt tension as a current-draw improvement. Driver controls were intentionally simplified around repeatable actions.",
+      "engineering_analysis": "This is evidence against treating maximum grip as maximum throughput. Too many opposing powered contacts can trap deformable fuel or make its entry velocity inconsistent. Removing a roller changes the entire force chain, so the improvement should not be generalized to a collector with different ground geometry. Likewise, the software shoot command is a sequencer rather than a simultaneous motor-on command. Feeding early can pull down wheel speed or create an inaccurate initial volley, while waiting unnecessarily long reduces usable shift time.",
+      "recommended_validation": "Compare feed latency, initial-volley accuracy, current and residual fuel with the actual readiness tolerances. Inspect the added guide over hood travel and repeat reduced-compression tests with worn fuel.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-1768",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=zxBvVSZtS3E",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/525192"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 108,
+        "end_seconds": 506,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "zxBvVSZtS3E",
+          "sha256": "e02e63866b0c5d0922642b7f4f6fb31885fe05817d51cf63b7e3199b09450190",
+          "caption_segments": 289,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-1768:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-1768",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-1768"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=zxBvVSZtS3E"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "2026-1768",
+      "title": "1768 in 2026: the rebuild is a sequence of decisions, not one drum photograph",
+      "year": 2026,
+      "robot_id": "2026-1768",
+      "kind": "robot_deep_note",
+      "body": "# 1768 in 2026: the rebuild is a sequence of decisions, not one drum photograph\n\nThis supplement uses the team’s October CAD-release replies alongside the earlier technical interview. It distinguishes the original Nightshade, the Nightshift rebuild, later onseason adjustments and offseason changes. The source is unusually useful because the team explains why mechanisms and schedule choices were coupled. A successful rebuild should not be reduced to “replace two shooters with a drum,” nor should October performance be assigned to the robot that competed at Worlds.\n\n## The schedule establishes what the team actually proved\n\nThe team describes an eleven-day rebuild between URI in week 3 and WPI in week 5, with the new machine operational after nine days. Only the swerve modules and bellypan were retained. The reply’s timeline runs from the original robot’s final match on March 21 through CAD on March 25, stripping the old machine on March 27, mounting major subsystems on March 28 and reaching a practice field on April 2. Those are dated milestones reported by the team, not an inference that another team can repeat the schedule. [Schedule and retained hardware](https://www.chiefdelphi.com/t/525192/12). [Detailed milestones](https://www.chiefdelphi.com/t/525192/13).\n\nThe distinction matters when borrowing architecture. A mechanism whose drawings can be completed quickly may still consume the entire available interval in wiring, controls, feeding tests and driver learning. Conversely, retaining a technically mediocre but known assembly can preserve enough practice time to win more matches. The relevant rebuild calculation includes the probability of arriving with an integrated machine, not just the predicted performance of the finished CAD. An architecture recommendation should name the existing interfaces that survive, the ones that are replaced and the latest date at which a failed experiment can still be abandoned.\n\nThe team’s process reply describes student ownership of deadlines and explicit gates: if a new assembly does not meet a milestone, the original version stays. Older students handled CAD while newer students manufactured early enough to understand assembly. This is evidence about the organization that made a rapid rebuild possible. It is not a universal staffing prescription. [Process account](https://www.chiefdelphi.com/t/525192/21).\n\nFor a PCH rebuild, the transferable question is therefore not “can our team also rebuild in eleven days?” It is “which uncertainty can our actual team retire before our next event, with enough time left to integrate and practice?” A new hopper that retains the old collector, floor and mounting interfaces can be a fundamentally different risk from a new collector, hopper and feed path that must all work on their first combined test. The latter may still be justified, but the justification needs an integration plan and a fallback with a real deadline.\n\n## The four-bar is doing more than deploying an intake\n\nThe later replies explain that the week-zero machine did not stow under the trench. On the developed machine, the hopper attaches to the lower link of the four-bar. The team describes fitting the trench envelope in both positions, satisfying the starting envelope, folding the kicker and choosing link angles that survive contact. They arrived at the geometry through iteration rather than a single independent constraint calculation. [Envelope discussion](https://www.chiefdelphi.com/t/525192/15). [Coupled geometry](https://www.chiefdelphi.com/t/525192/16).\n\nThis is exactly why “a 2910-style intake with a Citrus hopper” needs an interface analysis. The intake’s ground contact point and deployed reach are only part of the design. The moving hopper wall changes where stored fuel rests; the lower link’s motion changes the floor slope; the kicker’s folded position changes what can occupy the trench envelope. The mechanism must pass through intermediate positions while full of fuel. A configuration that clears a field element in a static CAD screenshot can still trap fuel, pull a flexible wall into a roller or require a transition that cannot be completed while moving.\n\nThe useful inspiration is the constraint-solving strategy: let one linkage carry several compatible motions, then check the consequences as a system. It is not a claim that the same link lengths fit another chassis. A receiving team should record the deployed and retracted volumes, the swept paths of rigid members and flexible walls, the lowest loaded floor point, the expected collision direction and the fuel escape routes. If any of those are unknown, the recommendation should remain an architectural candidate rather than a dimensioned solution.\n\n## Transmission failures need local explanations\n\nOne reply separates motor-to-roller belt skipping from roller-to-roller belts that did not skip. The team changed the former to chain after Worlds, then added polycarbonate retaining flanges after the chain came off once. Their explanation involves possible motor or plate flex reducing wrap or tension around a small pulley; it is a team hypothesis about this installation. [Transmission sequence](https://www.chiefdelphi.com/t/525192/9).\n\nThat report does not establish “chain is better than belts.” It suggests tests: watch relative motor and shaft displacement under load; inspect tooth engagement through the entire torque transient; distinguish a belt climbing out of mesh from a shaft or tensioner moving; and check retention after changing the transmission type. A mechanism database should keep the failed condition, the suspected cause, the modification and the observed result as separate fields. Without that separation, an agent may copy the final component while repeating the geometry that caused the original failure.\n\nThe sliding flywheel-belt tensioner belongs to an offseason N.E.R.D. update. The team reports that high-speed slack had been damaging the belt, that the tensioner improved reported accuracy and that short testing had not yet revealed issues. They also anticipated possible creep that could be corrected by retensioning. Another reply explains the generous adjustment range and the washer arrangement around the bearing. [Tensioner report](https://www.chiefdelphi.com/t/525192/8). [Adjustment explanation](https://www.chiefdelphi.com/t/525192/11). This is promising design evidence with a limited test horizon, not a season-long reliability certification.\n\n## Fabrication and service choices change what is feasible\n\nThe team explains choosing live axles because they were quickest to manufacture for this rebuild. They recognize advantages of stubs for width iteration, but that was not the priority. This is a concrete example of a choice that can be strategically correct despite not maximizing every engineering objective. [Axle tradeoff](https://www.chiefdelphi.com/t/525192/12).\n\nTheir hood-rack reply describes printed material supported by aluminum teeth, with print settings chosen to reduce backlash. The lesson is to document the load path and what each material contributes. A screenshot that looks like a printed rack can conceal metal reinforcement; a recommendation to “print the rack” can therefore remove the part that made it survive. [Rack construction](https://www.chiefdelphi.com/t/525192/17).\n\n## Do not backdate the faster feeder\n\nOctober replies describe an entry roller using spaced compliant wheels to create lanes, combining the entry roller and floor drive at a 1:1 ratio, and matching feeder surface speed more closely to drum speed. The team reports moving from roughly 23–26 to 28–30 balls per second. These are offseason reports, not measured Worlds match averages. [October feed changes](https://www.chiefdelphi.com/t/525192/22). [Reported result](https://www.chiefdelphi.com/t/525192/24).\n\nThe architectural implication is broader than the headline firing rate. Fuel must arrive across the useful shooter width with suitable velocity, spacing and compression. Adding lanes can change the stability of that delivery; linking drives can remove one mismatch while introducing another dependency. A team evaluating the change should compare the beginning and end of a full hopper, partly depleted operation, worn fuel, lateral acceleration and recovery after a jam. A clean burst of a few fuel does not test those conditions.\n\n## What an agent should retrieve from this case\n\nRetrieve 1768 when the question involves a compressed rebuild, a moving hopper carried by a four-bar, drum packaging or separating onseason and offseason transmission fixes. Pair it with 254 and 1678 for feed-contact geometry and with 2910 for a different rebuild triggered by unmet performance goals. Do not merge the named configurations into a single idealized robot. The strongest reusable lesson is that an architecture is a set of coordinated constraints, a manufacturing plan and a validated operating sequence. The remaining unresolved endgame and exact drivetrain details in the base dossier remain unresolved; these additional replies do not establish them.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/525192/12",
+        "https://www.chiefdelphi.com/t/525192/13",
+        "https://www.chiefdelphi.com/t/525192/21",
+        "https://www.chiefdelphi.com/t/525192/15",
+        "https://www.chiefdelphi.com/t/525192/16",
+        "https://www.chiefdelphi.com/t/525192/9",
+        "https://www.chiefdelphi.com/t/525192/8",
+        "https://www.chiefdelphi.com/t/525192/11",
+        "https://www.chiefdelphi.com/t/525192/17",
+        "https://www.chiefdelphi.com/t/525192/22",
+        "https://www.chiefdelphi.com/t/525192/24"
+      ],
+      "path": "docs/context/2026-1768.md"
+    },
+    {
+      "id": "study6-2026-1768",
+      "title": "2026-1768 · Rebuild removes feed compression and separates shooter readiness",
+      "year": 2026,
+      "robot_id": "2026-1768",
+      "kind": "focused_technical_study",
+      "body": "# 2026-1768: Rebuild removes feed compression and separates shooter readiness\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview distinguishes a former divided two-lane/double-spindexer arrangement from the drum rebuild with a roller floor. A powered lower intake roller was replaced by two 3/4-inch aluminum shafts with reduced compression. Compliant wheels near entry feed a J-shaped path; a guide was added after WPI wobble. Four motors drive the drum/kicker/hood group, and feed is enabled only after aiming, speed and hood conditions are satisfied.\n\n## Team-stated reasoning or boundary\n\nThe team reports improved throughput after reducing collector compression, adds the guide to control observed motion, and describes reduced belt tension as a current-draw improvement. Driver controls were intentionally simplified around repeatable actions.\n\n## Engineering interpretation — analyst inference\n\nThis is evidence against treating maximum grip as maximum throughput. Too many opposing powered contacts can trap deformable fuel or make its entry velocity inconsistent. Removing a roller changes the entire force chain, so the improvement should not be generalized to a collector with different ground geometry. Likewise, the software shoot command is a sequencer rather than a simultaneous motor-on command. Feeding early can pull down wheel speed or create an inaccurate initial volley, while waiting unnecessarily long reduces usable shift time.\n\n## Proposed validation — not performed\n\nCompare feed latency, initial-volley accuracy, current and residual fuel with the actual readiness tolerances. Inspect the added guide over hood travel and repeat reduced-compression tests with worn fuel.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=zxBvVSZtS3E](https://www.youtube.com/watch?v=zxBvVSZtS3E)\n- [https://www.chiefdelphi.com/t/525192](https://www.chiefdelphi.com/t/525192)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=zxBvVSZtS3E",
+        "https://www.chiefdelphi.com/t/525192"
+      ],
+      "path": "docs/research_continuation/2026-1768.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-1768",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/525192/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/6/5/2656104285ffe30fe147abc3efee60e05ddee283_2_647x500.png",
+      "post": 1,
+      "date": "2026-10-12T23:34:13.964Z",
+      "author": "Subnautical",
+      "context_tags": [],
+      "caption": "2026 team 1768 — source image from post 1 (2026-10-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "de0a74f20ddfe0d15e.jpg",
+      "id": "b42ae8859a90ef91e0",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/de0a74f20ddfe0d15e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 53682,
+      "sha256": "99df81c77578cc8791a9f2c7a33ce10c902ae15fb99f652dee568b7e72be0656",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b42ae8859a90ef91e0",
+      "reader_url": "index.html#image=b42ae8859a90ef91e0",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/525192/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/4/c/64c061b7223bcd682e48a389dc5eff2f1859ef22_2_647x500.png",
+      "post": 1,
+      "date": "2026-10-12T23:34:13.964Z",
+      "author": "Subnautical",
+      "context_tags": [],
+      "caption": "2026 team 1768 — source image from post 1 (2026-10-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "85c23d76c050a3ad5e.jpg",
+      "id": "a426cfea30475cef67",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/85c23d76c050a3ad5e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 50252,
+      "sha256": "12461e5a93090ec60c2e3b006b0d4c1adcf47d0746cb315ef5c35c2c44243136",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a426cfea30475cef67",
+      "reader_url": "index.html#image=a426cfea30475cef67",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/525192/15",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/3/0/3/303d1ab52d5756f93724aac101b90a61d5c3323a_2_375x500.jpeg",
+      "post": 15,
+      "date": "2026-10-14T18:26:54.592Z",
+      "author": "AaronUp",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2026 team 1768 — source image from post 15 (2026-10-14). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "b34132e68572fcbfa1.jpg",
+      "id": "a7d10eb663aeec8927",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/b34132e68572fcbfa1.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 55458,
+      "sha256": "116d22bb4ed08dd569ce463beb0f0f6169e8f5c55cb1e9663861582f4c0f8d84",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a7d10eb663aeec8927",
+      "reader_url": "index.html#image=a7d10eb663aeec8927",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/519386/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/8/0/b/80b5104243f4fdb44286c1b1976bb1419d53eec8_2_345x210.jpeg",
+      "post": 1,
+      "date": "2026-04-25T21:44:31.141Z",
+      "author": "kitkat9",
+      "context_tags": [
+        "hopper",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2026 team 1768 — source image from post 1 (2026-04-25). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d698c7cb7ab6b9b9fe.jpg",
+      "id": "2afddaccc0895bc2f1",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d698c7cb7ab6b9b9fe.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 345,
+      "height_px": 210,
+      "bytes": 18551,
+      "sha256": "aa05626785a9bdccb6b48c13593222a7e29c330d0e78b07cab82d568aadab81b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "2afddaccc0895bc2f1",
+      "reader_url": "index.html#image=2afddaccc0895bc2f1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/519386/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/c/1/dc1bc40082f0750afa07f5366b675b592fafcf6f_2_310x215.jpeg",
+      "post": 1,
+      "date": "2026-04-25T21:44:31.141Z",
+      "author": "kitkat9",
+      "context_tags": [
+        "hopper",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2026 team 1768 — source image from post 1 (2026-04-25). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7fe231d8944cf9c462.jpg",
+      "id": "7e0930b0acc81a87ed",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7fe231d8944cf9c462.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 310,
+      "height_px": 215,
+      "bytes": 15848,
+      "sha256": "a74339ae3c54ac01f264d0298069df3908c01c7ba63fddc68bc0fdba263b431a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "7e0930b0acc81a87ed",
+      "reader_url": "index.html#image=7e0930b0acc81a87ed",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/519386/7",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/a/d/9ad4b4b82dfd126360663d38d96f275ef59a8743_2_517x326.png",
+      "post": 7,
+      "date": "2026-06-17T14:09:33.591Z",
+      "author": "AaronUp",
+      "context_tags": [
+        "indexer",
+        "shooter"
+      ],
+      "caption": "2026 team 1768 — source image from post 7 (2026-06-17). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f7d30de1536e3777fc.jpg",
+      "id": "7c9a89cb1f338ad21f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f7d30de1536e3777fc.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 326,
+      "bytes": 21309,
+      "sha256": "91cd914125d4398fb7a32d2b681d2e7912d89f789650f53ac4e8e22ccbb56a53",
+      "path_base": "corpus_root",
+      "reader_asset_id": "7c9a89cb1f338ad21f",
+      "reader_url": "index.html#image=7c9a89cb1f338ad21f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "binder_figure",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/cSkTBJjJHHz68cz8b3rYZHDueja.pdf",
+      "page": 3,
+      "asset": "34d3d03135d38a6b9d.jpg",
+      "context_tags": [
+        "pivot"
+      ],
+      "caption": "2026 team 1768 — embedded figure from technical binder, PDF page 3. Page discusses pivot. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "84c9b10c6bb47f45d4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/34d3d03135d38a6b9d.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 1100,
+      "height_px": 850,
+      "bytes": 165901,
+      "sha256": "bb37ec6d90d38841d40c53aa7c09b5f1f7266f6c97d1ea5790fdd8588dc9d4ef",
+      "path_base": "corpus_root",
+      "reader_asset_id": "84c9b10c6bb47f45d4",
+      "reader_url": "index.html#image=84c9b10c6bb47f45d4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1768",
+      "kind": "binder_figure",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/cSkTBJjJHHz68cz8b3rYZHDueja.pdf",
+      "page": 6,
+      "asset": "c48c6537e465fbe254.jpg",
+      "context_tags": [
+        "pivot"
+      ],
+      "caption": "2026 team 1768 — embedded figure from technical binder, PDF page 6. Page discusses pivot. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "4c0f94c2af4fa8ad0e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/c48c6537e465fbe254.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 1100,
+      "height_px": 850,
+      "bytes": 114601,
+      "sha256": "c0d6049ee03a8fef050b116b42248a26a1d1a5d0cb323230e9cd51afd32f3980",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4c0f94c2af4fa8ad0e",
+      "reader_url": "index.html#image=4c0f94c2af4fa8ad0e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-1768",
+    "year": 2026,
+    "team": 1768,
+    "epa_rank": 24,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1768\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 26,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1768\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-1768:construction",
+    "study6-2026-1768:team_stated_reason",
+    "study6-2026-1768:engineering_analysis",
+    "study6-2026-1768:recommended_validation",
+    "study6-2026-1768:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

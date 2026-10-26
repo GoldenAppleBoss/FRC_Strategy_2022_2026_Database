@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-1577",
+  "year": 2023,
+  "team": 1577,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 1577,
+    "robot": "Jesko",
+    "primary": [
+      "https://youtu.be/OeSR3pGzmSI",
+      "https://www.chiefdelphi.com/t/429960",
+      "https://www.chiefdelphi.com/t/436114"
+    ],
+    "architecture": "Pivoting telescopic arm with compact roller gripper and added cone-centering floor intake.",
+    "subsystems": {
+      "intake": "Low-pivot floor collector centers tipped cones with mecanum/omni rollers and presents them for handoff.",
+      "transfer": "Collector rotates the centered cone into a narrow gripper; handoff angle adjusted to match hardware revisions.",
+      "scoring": "Pivoting, extending arm with low transmission and an absolute encoder measuring actual arm angle beyond gearbox backlash.",
+      "drivetrain": "Swerve with runtime generated drive-to-point paths.",
+      "endgame": "Autonomous modes include station traversal, retrieval and balance.",
+      "controls": "Safe arm waypoints avoid grid collisions; dashboard exposes piece/level selection and adjustable scoring setpoints."
+    },
+    "versions": [
+      "First event lacked the cone floor intake.",
+      "Earlier concept included a spindexer, which influenced the narrow gripper geometry.",
+      "Team credits Team 95 for floor-intake inspiration."
+    ],
+    "analysis": "Study the way an added acquisition capability fits a pre-existing arm. A centered handoff can preserve a small gripper rather than forcing the entire wrist to become full width.",
+    "limits": [
+      "Intermediate prototype and competition dates are not fully resolved."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-1577",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/436114/4",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/3/0/303a75e45d4a6bdd0409f2adda379e180807e8c2.jpeg",
+        "post": 4,
+        "date": "2023-04-30T07:12:26.981Z",
+        "author": "Guy",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2023 team 1577 — source image from post 4 (2023-04-30). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "aa661363ac5db0cf0c.jpg",
+        "id": "1b7ea42ed8cfdf18c8",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/aa661363ac5db0cf0c.jpg"
+      }
+    ],
+    "source_post_count": 11,
+    "cad_code_links": [],
+    "id": "2023-1577",
+    "team_name": "Steampunk",
+    "epa_rank": 11,
+    "epa": 72.31,
+    "epa_pre_champs": 68.61,
+    "epa_breakdown": {
+      "total_points": 72.31,
+      "auto_points": 12.92,
+      "teleop_points": 46.22,
+      "endgame_points": 9.72,
+      "links_rp": 0.7487,
+      "activation_rp": 0.3833,
+      "tiebreaker_points": 68.86,
+      "auto_charge_station_points": 4.83,
+      "auto_pieces": 1.4,
+      "teleop_grid_points": 32.2,
+      "bottom_pieces": 2.7,
+      "middle_pieces": 2.09,
+      "top_pieces": 5.35,
+      "cube_points": 15.75,
+      "cone_points": 24.06,
+      "links": 3.5,
+      "endgame_charge_station_points": 9.72,
+      "rp_1": 0.7487,
+      "rp_2": 0.3833
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "a63370a768e2ce5f",
+      "a6160e22fe2054e1",
+      "be06fb1ff3954f15"
+    ],
+    "tags": [
+      "climb",
+      "spindexer / DYE",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-1577",
+      "year": 2023,
+      "team": 1577,
+      "epa_rank": 11,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1577\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 8,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1577\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-1577"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-1577",
+      "title": "A compliant collector must hand off at the actual revised arm geometry",
+      "start_seconds": 77,
+      "end_seconds": 295,
+      "construction": "A low-pivot collector uses mecanum/omni contact to center a tipped cone, then rotates it toward a narrow gripper. The extending scoring arm keeps its transmission low and measures actual arm angle beyond gearbox backlash. Shoulder-style bearing support helps retain bearings in flexible plates.",
+      "team_stated_reason": "The team explicitly credits Grasshoppers inspiration, seeks fast/light centering and explains the low collector pivot as letting impacts lift the mechanism rather than break it. Handoff angle changes must follow hardware revisions.",
+      "engineering_analysis": "A wide pickup can improve acquisition while increasing the range of states presented to a narrow receiver. Compliance helps survive contact but must not erase the repeatable pose needed for transfer. Measuring the joint after transmission backlash improves observability; it does not mechanically remove the backlash.",
+      "recommended_validation": "Test handoff after collector impacts, compare actual and motor-side angle under reversals, and verify bearing retention after repeated plate flex.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-1577",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/OeSR3pGzmSI",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/429960",
+        "https://www.chiefdelphi.com/t/436114"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 295,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "OeSR3pGzmSI",
+          "sha256": "4a34416981c8d7af36d6b33a7873c506164dbf6d0638a93d797804d9e0a4eb54",
+          "caption_segments": 293,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-1577:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-1577",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-1577"
+      ],
+      "source_urls": [
+        "https://youtu.be/OeSR3pGzmSI"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-1577",
+      "title": "2023-1577 · A compliant collector must hand off at the actual revised arm geometry",
+      "year": 2023,
+      "robot_id": "2023-1577",
+      "kind": "focused_technical_study",
+      "body": "# 2023-1577: A compliant collector must hand off at the actual revised arm geometry\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA low-pivot collector uses mecanum/omni contact to center a tipped cone, then rotates it toward a narrow gripper. The extending scoring arm keeps its transmission low and measures actual arm angle beyond gearbox backlash. Shoulder-style bearing support helps retain bearings in flexible plates.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly credits Grasshoppers inspiration, seeks fast/light centering and explains the low collector pivot as letting impacts lift the mechanism rather than break it. Handoff angle changes must follow hardware revisions.\n\n## Engineering interpretation — analyst inference\n\nA wide pickup can improve acquisition while increasing the range of states presented to a narrow receiver. Compliance helps survive contact but must not erase the repeatable pose needed for transfer. Measuring the joint after transmission backlash improves observability; it does not mechanically remove the backlash.\n\n## Proposed validation — not performed\n\nTest handoff after collector impacts, compare actual and motor-side angle under reversals, and verify bearing retention after repeated plate flex.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/OeSR3pGzmSI](https://youtu.be/OeSR3pGzmSI)\n- [https://www.chiefdelphi.com/t/429960](https://www.chiefdelphi.com/t/429960)\n- [https://www.chiefdelphi.com/t/436114](https://www.chiefdelphi.com/t/436114)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/OeSR3pGzmSI",
+        "https://www.chiefdelphi.com/t/429960",
+        "https://www.chiefdelphi.com/t/436114"
+      ],
+      "path": "docs/research_continuation/2023-1577.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-1577",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/436114/4",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/3/0/303a75e45d4a6bdd0409f2adda379e180807e8c2.jpeg",
+      "post": 4,
+      "date": "2023-04-30T07:12:26.981Z",
+      "author": "Guy",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2023 team 1577 — source image from post 4 (2023-04-30). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "aa661363ac5db0cf0c.jpg",
+      "id": "1b7ea42ed8cfdf18c8",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/aa661363ac5db0cf0c.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 764,
+      "height_px": 630,
+      "bytes": 74070,
+      "sha256": "3d9e02fce5a481fc411cde661004dc80705a5cafbd20b5940acf43637ba5ede6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1b7ea42ed8cfdf18c8",
+      "reader_url": "index.html#image=1b7ea42ed8cfdf18c8",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-1577",
+    "year": 2023,
+    "team": 1577,
+    "epa_rank": 11,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1577\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 8,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1577\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-1577:construction",
+    "study6-2023-1577:team_stated_reason",
+    "study6-2023-1577:engineering_analysis",
+    "study6-2023-1577:recommended_validation",
+    "study6-2023-1577:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

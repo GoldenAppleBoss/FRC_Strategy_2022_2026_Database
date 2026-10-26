@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-4414",
+  "year": 2025,
+  "team": 4414,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 4414,
+    "robot": "High Tide 2025 rebuild",
+    "primary": [
+      "https://youtu.be/AK34whcAeC0",
+      "https://www.chiefdelphi.com/t/best-individual-subsystems-of-this-year/500114"
+    ],
+    "architecture": "Second complete robot adds full-width coral ground pickup to elevator/arm architecture.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Rebuild collector uses lightweight hollow rollers, compliant star wheels and floating front; original robot lacked this full-width intake.",
+      "transfer": "Polycarbonate funnel and three location sensors coordinate automatic handoff to claw.",
+      "scoring": "Two-stage internally belted elevator; independently tensioned up/down runs, large arm bearings and carbon tube. Shared pinch claw handles both pieces.",
+      "endgame": "Powered cage capture; over-center four-bar stops cage impact from bouncing mechanism away. Earlier robot combined algae/climb functions according to separate contemporary discussion, not fully audited here.",
+      "controls": "Single controller, state-machine handoff, profiled alignment and driver scoring confirmation."
+    },
+    "versions": [
+      "Worlds interview explicitly concerns the season's second robot.",
+      "Rebuild changed collection and endgame architecture; original full subsystem documentation remains incomplete."
+    ],
+    "analysis": "A rebuild can be justified by a missing acquisition capability rather than insufficient scoring reach. The intake was the team's highest-risk unresolved prototype; copying the finished elevator would not have resolved that risk.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 11,
+    "cad_code_links": [],
+    "id": "2025-4414",
+    "team_name": "HighTide",
+    "epa_rank": 15,
+    "epa": 94.24,
+    "epa_pre_champs": 82.62,
+    "epa_breakdown": {
+      "total_points": 94.24,
+      "auto_points": 20.09,
+      "teleop_points": 66.01,
+      "endgame_points": 8.15,
+      "auto_rp": 0.6496,
+      "coral_rp": 0.6132,
+      "barge_rp": 0.55272,
+      "tiebreaker_points": 0.14,
+      "auto_coral_points": 16.82,
+      "teleop_coral_points": 54.67,
+      "coral_l1": 5.46,
+      "coral_l2": 4.48,
+      "coral_l3": 4.97,
+      "coral_l4": 4.48,
+      "processor_algae": 0.21,
+      "processor_algae_points": 0.62,
+      "net_algae_points": 10.71,
+      "barge_points": 8.15,
+      "rp_1": 0.6496,
+      "rp_2": 0.6132,
+      "rp_3": 0.55272,
+      "total_coral_points": 71.49000000000001,
+      "total_algae_points": 11.33
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "002dfeba454d61da",
+      "ab022dd05c4dc13d"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "elevator",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-4414",
+      "year": 2025,
+      "team": 4414,
+      "epa_rank": 15,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"4414\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 24,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4414\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-4414"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-4414",
+      "title": "The rebuild’s full-width intake changes the robot’s supply model",
+      "start_seconds": 78,
+      "end_seconds": 295,
+      "construction": "The interview explicitly identifies this as the second robot and says the original lacked the rebuild’s full-width ground collector. Hollow rollers, compliant star wheels and a floating front feed a polycarbonate funnel and sensor-guided handoff. A continuous internally belted elevator and carbon-tube arm carry a shared pinch claw for coral/algae.",
+      "team_stated_reason": "The team links hollow rollers to weight reduction and identifies the wide ground collector as a major rebuild objective. It reports testing the star-wheel contact choice rather than presenting it as an arbitrary styling decision.",
+      "engineering_analysis": "The historical lineage should be specific: the team mentions 254’s 2022 hollow-roller construction, while the 2025 task requires orienting rigid coral rather than simply transporting foam cargo. Copying fabrication technique is different from copying an entire intake path. A shared pinch claw can reduce moving mechanisms but its force and retained orientation must remain acceptable for two very different pieces.",
+      "recommended_validation": "Test pickup orientation tolerance, failed handoff recovery, and claw retention through rapid arm motion. Keep the original and rebuild capabilities separate in recommendations and comparisons.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-4414",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/AK34whcAeC0",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/best-individual-subsystems-of-this-year/500114"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 78,
+        "end_seconds": 295,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "AK34whcAeC0",
+          "sha256": "68ea02d964534b239e25695e3806d69ef9d131dedc400a08c895a0d132f887e6",
+          "caption_segments": 284,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-4414:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-4414",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-4414"
+      ],
+      "source_urls": [
+        "https://youtu.be/AK34whcAeC0"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-4414",
+      "title": "2025-4414 · The rebuild’s full-width intake changes the robot’s supply model",
+      "year": 2025,
+      "robot_id": "2025-4414",
+      "kind": "focused_technical_study",
+      "body": "# 2025-4414: The rebuild’s full-width intake changes the robot’s supply model\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview explicitly identifies this as the second robot and says the original lacked the rebuild’s full-width ground collector. Hollow rollers, compliant star wheels and a floating front feed a polycarbonate funnel and sensor-guided handoff. A continuous internally belted elevator and carbon-tube arm carry a shared pinch claw for coral/algae.\n\n## Team-stated reasoning or boundary\n\nThe team links hollow rollers to weight reduction and identifies the wide ground collector as a major rebuild objective. It reports testing the star-wheel contact choice rather than presenting it as an arbitrary styling decision.\n\n## Engineering interpretation — analyst inference\n\nThe historical lineage should be specific: the team mentions 254’s 2022 hollow-roller construction, while the 2025 task requires orienting rigid coral rather than simply transporting foam cargo. Copying fabrication technique is different from copying an entire intake path. A shared pinch claw can reduce moving mechanisms but its force and retained orientation must remain acceptable for two very different pieces.\n\n## Proposed validation — not performed\n\nTest pickup orientation tolerance, failed handoff recovery, and claw retention through rapid arm motion. Keep the original and rebuild capabilities separate in recommendations and comparisons.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/AK34whcAeC0](https://youtu.be/AK34whcAeC0)\n- [https://www.chiefdelphi.com/t/best-individual-subsystems-of-this-year/500114](https://www.chiefdelphi.com/t/best-individual-subsystems-of-this-year/500114)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/AK34whcAeC0",
+        "https://www.chiefdelphi.com/t/best-individual-subsystems-of-this-year/500114"
+      ],
+      "path": "docs/research_continuation/2025-4414.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-4414",
+    "year": 2025,
+    "team": 4414,
+    "epa_rank": 15,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"4414\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 24,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4414\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-4414:construction",
+    "study6-2025-4414:team_stated_reason",
+    "study6-2025-4414:engineering_analysis",
+    "study6-2025-4414:recommended_validation",
+    "study6-2025-4414:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

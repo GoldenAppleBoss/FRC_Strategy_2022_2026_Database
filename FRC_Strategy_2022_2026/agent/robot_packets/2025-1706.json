@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-1706",
+  "year": 2025,
+  "team": 1706,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 1706,
+    "robot": "Ratchet Rockers 2025",
+    "primary": [
+      "https://youtu.be/SvBYbyf57zo"
+    ],
+    "architecture": "Low-electronics frame and belted elevator with combined coral/algae manipulation.",
+    "subsystems": {
+      "drivetrain": "Swerve frame uses corner trusses and underside electronics; added shielding after riding onto algae.",
+      "intake": "Station funnel; curved-rack algae collector added after prior event.",
+      "transfer": "Funnel supplies manipulator; separate storage permits coral/algae overlap.",
+      "scoring": "Elevator derived from 2024 design with wider belt and linked gearbox; carriage-mounted motors reduce distal arm mass.",
+      "endgame": "Funnel back wall doubles as cage capture; changed to one-bar engagement with polycarbonate guide and latch.",
+      "controls": "Safe-move cases coordinate arm/elevator; operator-selectable reef-side alignment."
+    },
+    "versions": [
+      "Added algae collector and one-bar climb revision.",
+      "Constant-force spring restrains energy chain after breakage and interference."
+    ],
+    "analysis": "Endgame volume can overlap acquisition volume if the game permits sequential use. Sharing that space requires intentional cage clearance and wire routing rather than treating the climber as a final attachment.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2025-1706",
+    "team_name": "Ratchet Rockers",
+    "epa_rank": 18,
+    "epa": 92.51,
+    "epa_pre_champs": 85.15,
+    "epa_breakdown": {
+      "total_points": 92.51,
+      "auto_points": 21.81,
+      "teleop_points": 59.98,
+      "endgame_points": 10.72,
+      "auto_rp": 0.4354,
+      "coral_rp": 0.6555,
+      "barge_rp": 0.49022,
+      "tiebreaker_points": 0.2,
+      "auto_coral_points": 18.8,
+      "teleop_coral_points": 44.72,
+      "coral_l1": 1.08,
+      "coral_l2": 4.38,
+      "coral_l3": 4.93,
+      "coral_l4": 4.62,
+      "processor_algae": 0.36,
+      "processor_algae_points": 1.08,
+      "net_algae_points": 14.17,
+      "barge_points": 10.72,
+      "rp_1": 0.4354,
+      "rp_2": 0.6555,
+      "rp_3": 0.49022,
+      "total_coral_points": 63.519999999999996,
+      "total_algae_points": 15.25
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "fcb3ba28ac00042e"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-1706",
+      "year": 2025,
+      "team": 1706,
+      "epa_rank": 18,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1706\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 21,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1706\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-1706"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-1706",
+      "title": "Cable control and a later algae arm are essential version details",
+      "start_seconds": 77,
+      "end_seconds": 285,
+      "construction": "The robot retains an elevator-based station-fed scorer and later adds a compact curved-rack algae intake. A constant-force spring pulls the elevator cable carrier inward after it repeatedly broke, flopped outward or entered the funnel. The climber uses the funnel’s rear region and was revised to grab one cage bar.",
+      "team_stated_reason": "The team describes the algae arm as lightweight and quick to deploy, and identifies the spring as the response to cable-carrier failures. The updated climb seeks easier capture rather than a larger nominal grasp.",
+      "engineering_analysis": "A cable carrier is a moving structural interface, not an afterthought in the electrical system. Its force, bend radius and free envelope affect elevator current and what can enter the station funnel. An added algae collector also changes the safe pose space of an already working scorer. The architecture should retain the dated add-on history rather than imply the final robot existed at the first event.",
+      "recommended_validation": "Run full-stroke cable fatigue tests and check the spring at maximum extension. Test coral loading with the algae mechanism deployed and verify cage capture under angular misalignment.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-1706",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/SvBYbyf57zo",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 285,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "SvBYbyf57zo",
+          "sha256": "70e94f6d04d037d812338a73dccac487a92f4e12b02252243dc0d285a14a4f9d",
+          "caption_segments": 200,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-1706:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-1706",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-1706"
+      ],
+      "source_urls": [
+        "https://youtu.be/SvBYbyf57zo"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-1706",
+      "title": "2025-1706 · Cable control and a later algae arm are essential version details",
+      "year": 2025,
+      "robot_id": "2025-1706",
+      "kind": "focused_technical_study",
+      "body": "# 2025-1706: Cable control and a later algae arm are essential version details\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe robot retains an elevator-based station-fed scorer and later adds a compact curved-rack algae intake. A constant-force spring pulls the elevator cable carrier inward after it repeatedly broke, flopped outward or entered the funnel. The climber uses the funnel’s rear region and was revised to grab one cage bar.\n\n## Team-stated reasoning or boundary\n\nThe team describes the algae arm as lightweight and quick to deploy, and identifies the spring as the response to cable-carrier failures. The updated climb seeks easier capture rather than a larger nominal grasp.\n\n## Engineering interpretation — analyst inference\n\nA cable carrier is a moving structural interface, not an afterthought in the electrical system. Its force, bend radius and free envelope affect elevator current and what can enter the station funnel. An added algae collector also changes the safe pose space of an already working scorer. The architecture should retain the dated add-on history rather than imply the final robot existed at the first event.\n\n## Proposed validation — not performed\n\nRun full-stroke cable fatigue tests and check the spring at maximum extension. Test coral loading with the algae mechanism deployed and verify cage capture under angular misalignment.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/SvBYbyf57zo](https://youtu.be/SvBYbyf57zo)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/SvBYbyf57zo"
+      ],
+      "path": "docs/research_continuation/2025-1706.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-1706",
+    "year": 2025,
+    "team": 1706,
+    "epa_rank": 18,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1706\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 21,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1706\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-1706:construction",
+    "study6-2025-1706:team_stated_reason",
+    "study6-2025-1706:engineering_analysis",
+    "study6-2025-1706:recommended_validation",
+    "study6-2025-1706:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

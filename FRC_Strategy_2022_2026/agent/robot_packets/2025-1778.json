@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-1778",
+  "year": 2025,
+  "team": 1778,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 1778,
+    "robot": "Chill Out 2025",
+    "primary": [
+      "https://youtu.be/pStoPwcBj98",
+      "https://www.chiefdelphi.com/t/501460",
+      "https://github.com/FIRST1778/2025-Robot-Code-Public"
+    ],
+    "architecture": "Wide ground intake and continuous elevator with bidirectional rotating arm.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Day-two game simulation identified unprotected-station defense; narrow ground concept replaced by a wide collector.",
+      "transfer": "Automatic handoff coordinated across collector, elevator, arm and rollers.",
+      "scoring": "Internally belted elevator informed by offseason practice and 4414 2023; arm can score toward either side.",
+      "endgame": "Endgame architecture is not established by the reviewed interview; no claim of absent climb is made.",
+      "controls": "Four cameras/two Orange Pis; weighted scoring-node selection and safe angular limits. Monolithic state machine encodes permitted transitions and reef/bellypan clearance."
+    },
+    "versions": [
+      "Early narrow intake rejected before this configuration.",
+      "Offseason elevator experience reduced implementation uncertainty; later release provides CAD/code but full endgame audit remains open."
+    ],
+    "analysis": "This is especially useful process evidence: field simulation changed the strategic requirement before the team committed to detailed design. The result connects a floor-feeding strategy to both pickup width and automated handoff.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2025-1778",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/501460/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/5/7/e/57eb6549b6237a8ca0164cc2a65ee9f75592c653_2_485x375.png",
+        "post": 1,
+        "date": "2025-05-09T03:41:13.767Z",
+        "author": "ApolloG",
+        "context_tags": [],
+        "caption": "2025 team 1778 — source image from post 1 (2025-05-09). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "c4fb432db56f0caaf0.jpg",
+        "id": "aa62865e7bc1fff111",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/c4fb432db56f0caaf0.jpg"
+      },
+      {
+        "robot_id": "2025-1778",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/501460/24",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/a/8/5/a8530c3f45082632fae7481acc0e90040383a094_2_690x401.jpeg",
+        "post": 24,
+        "date": "2025-05-13T17:24:12.662Z",
+        "author": "7280-Mito-octopus",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2025 team 1778 — source image from post 24 (2025-05-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "3aa608fefef7046eca.jpg",
+        "id": "b77f75369d69e7f4a2",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/3aa608fefef7046eca.jpg"
+      },
+      {
+        "robot_id": "2025-1778",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/501460/41",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/9/a/b9ad2175c3ef32c309713424ece4dea1d07988bd_2_690x236.jpeg",
+        "post": 41,
+        "date": "2025-06-22T17:44:33.534Z",
+        "author": "smilelsb",
+        "context_tags": [
+          "arm",
+          "intake"
+        ],
+        "caption": "2025 team 1778 — source image from post 41 (2025-06-22). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f86acc9c415486fc13.jpg",
+        "id": "4143cc43f12b3b7faa",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f86acc9c415486fc13.jpg"
+      }
+    ],
+    "source_post_count": 52,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-1778",
+        "discovery_post": "2025-1778-501460-1",
+        "url": "https://cad.onshape.com/documents/07beed2a16f5d7898cc42c9c/w/a74e4d796ba952dabae8ff7e/e/42c6b0e68334934d197bf369?renderMode=0&uiState=681d78400ee2693e5d5605f0",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "439b8b6a831bf44e25"
+      },
+      {
+        "robot_id": "2025-1778",
+        "discovery_post": "2025-1778-501460-1",
+        "url": "https://github.com/FIRST1778/2025-Robot-Code-Public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "80fe36f9599192499e"
+      },
+      {
+        "robot_id": "2025-1778",
+        "discovery_post": "2025-1778-501460-55",
+        "url": "https://cad.onshape.com/documents/53c0b14cad92676c14e04e97/w/1271c254ccb0a79563210195/e/7394c4a86d8d6c35c9a12041",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "37f20bab860ae1809f"
+      }
+    ],
+    "id": "2025-1778",
+    "team_name": "Chill Out",
+    "epa_rank": 16,
+    "epa": 92.98,
+    "epa_pre_champs": 92.38,
+    "epa_breakdown": {
+      "total_points": 92.98,
+      "auto_points": 18.71,
+      "teleop_points": 71.48,
+      "endgame_points": 2.79,
+      "auto_rp": 0.6209,
+      "coral_rp": 0.7524,
+      "barge_rp": 0.09535,
+      "tiebreaker_points": 0.12,
+      "auto_coral_points": 15.62,
+      "teleop_coral_points": 59.52,
+      "coral_l1": 5.48,
+      "coral_l2": 5.58,
+      "coral_l3": 5.3,
+      "coral_l4": 4.35,
+      "processor_algae": 0.28,
+      "processor_algae_points": 0.85,
+      "net_algae_points": 11.1,
+      "barge_points": 2.79,
+      "rp_1": 0.6209,
+      "rp_2": 0.7524,
+      "rp_3": 0.09535,
+      "total_coral_points": 75.14,
+      "total_algae_points": 11.95
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "6d0da3ba423ae812",
+      "d5f4533d1ef99266",
+      "de85b401110ae863"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-1778",
+      "year": 2025,
+      "team": 1778,
+      "epa_rank": 16,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1778\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 22,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1778\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-1778"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-1778",
+      "title": "Game simulation preceded the ground-intake commitment",
+      "start_seconds": 75,
+      "end_seconds": 510,
+      "construction": "A narrow initial ground concept became a wide collector, feeding an internally belted elevator and arm that can score toward either side. The team reports offseason experience with similar mechanisms. Each software state specifies the collector, elevator, arm and roller setpoints together, with explicit transition conditions.",
+      "team_stated_reason": "The team describes running match simulations on day two after kickoff to test the significance of unprotected station defense. It connects the floor collector to that strategic result and the monolithic state structure to predictable safe motion.",
+      "engineering_analysis": "This is a process reference as much as a hardware reference. The team tested a game constraint before committing to a cycle architecture, then used known mechanism families to reduce development risk. Wide acquisition helps only when the handoff can keep up and the arm can safely retract past both field and robot structure. A multi-subsystem state should retain possession information so a timing variation does not silently drop coral.",
+      "recommended_validation": "Repeat the strategic simulation with plausible opposing and partner robots. Test interrupted transfers and safe recovery from each intermediate state, rather than validating only the nominal score sequence.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-1778",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/pStoPwcBj98",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/501460",
+        "https://github.com/FIRST1778/2025-Robot-Code-Public"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 510,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "pStoPwcBj98",
+          "sha256": "4bc50483a95a6ae4178c9870093f10f0562346abf461660ef5956d5d2d7000f3",
+          "caption_segments": 236,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-1778:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-1778",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-1778"
+      ],
+      "source_urls": [
+        "https://youtu.be/pStoPwcBj98"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-1778",
+      "title": "2025-1778 · Game simulation preceded the ground-intake commitment",
+      "year": 2025,
+      "robot_id": "2025-1778",
+      "kind": "focused_technical_study",
+      "body": "# 2025-1778: Game simulation preceded the ground-intake commitment\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA narrow initial ground concept became a wide collector, feeding an internally belted elevator and arm that can score toward either side. The team reports offseason experience with similar mechanisms. Each software state specifies the collector, elevator, arm and roller setpoints together, with explicit transition conditions.\n\n## Team-stated reasoning or boundary\n\nThe team describes running match simulations on day two after kickoff to test the significance of unprotected station defense. It connects the floor collector to that strategic result and the monolithic state structure to predictable safe motion.\n\n## Engineering interpretation — analyst inference\n\nThis is a process reference as much as a hardware reference. The team tested a game constraint before committing to a cycle architecture, then used known mechanism families to reduce development risk. Wide acquisition helps only when the handoff can keep up and the arm can safely retract past both field and robot structure. A multi-subsystem state should retain possession information so a timing variation does not silently drop coral.\n\n## Proposed validation — not performed\n\nRepeat the strategic simulation with plausible opposing and partner robots. Test interrupted transfers and safe recovery from each intermediate state, rather than validating only the nominal score sequence.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/pStoPwcBj98](https://youtu.be/pStoPwcBj98)\n- [https://www.chiefdelphi.com/t/501460](https://www.chiefdelphi.com/t/501460)\n- [https://github.com/FIRST1778/2025-Robot-Code-Public](https://github.com/FIRST1778/2025-Robot-Code-Public)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/pStoPwcBj98",
+        "https://www.chiefdelphi.com/t/501460",
+        "https://github.com/FIRST1778/2025-Robot-Code-Public"
+      ],
+      "path": "docs/research_continuation/2025-1778.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-1778",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/501460/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/5/7/e/57eb6549b6237a8ca0164cc2a65ee9f75592c653_2_485x375.png",
+      "post": 1,
+      "date": "2025-05-09T03:41:13.767Z",
+      "author": "ApolloG",
+      "context_tags": [],
+      "caption": "2025 team 1778 — source image from post 1 (2025-05-09). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "c4fb432db56f0caaf0.jpg",
+      "id": "aa62865e7bc1fff111",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/c4fb432db56f0caaf0.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 485,
+      "height_px": 375,
+      "bytes": 24877,
+      "sha256": "bf7306ade2509bfc91cb249dd4fac093986cdfb38e504dbc0519b9bbb416c3a4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "aa62865e7bc1fff111",
+      "reader_url": "index.html#image=aa62865e7bc1fff111",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-1778",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/501460/24",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/a/8/5/a8530c3f45082632fae7481acc0e90040383a094_2_690x401.jpeg",
+      "post": 24,
+      "date": "2025-05-13T17:24:12.662Z",
+      "author": "7280-Mito-octopus",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2025 team 1778 — source image from post 24 (2025-05-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "3aa608fefef7046eca.jpg",
+      "id": "b77f75369d69e7f4a2",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/3aa608fefef7046eca.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 401,
+      "bytes": 61502,
+      "sha256": "e0e5a74d73440eec523e0e85f40bf164c7c3863b59e550d59df02164c1abf4a0",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b77f75369d69e7f4a2",
+      "reader_url": "index.html#image=b77f75369d69e7f4a2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-1778",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/501460/41",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/9/a/b9ad2175c3ef32c309713424ece4dea1d07988bd_2_690x236.jpeg",
+      "post": 41,
+      "date": "2025-06-22T17:44:33.534Z",
+      "author": "smilelsb",
+      "context_tags": [
+        "arm",
+        "intake"
+      ],
+      "caption": "2025 team 1778 — source image from post 41 (2025-06-22). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f86acc9c415486fc13.jpg",
+      "id": "4143cc43f12b3b7faa",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f86acc9c415486fc13.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 236,
+      "bytes": 41929,
+      "sha256": "0a90c0dceabbcb820ba45c9b961eb1322cdadb29b5e47ceb81596d8e1480d18d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4143cc43f12b3b7faa",
+      "reader_url": "index.html#image=4143cc43f12b3b7faa",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-1778",
+    "year": 2025,
+    "team": 1778,
+    "epa_rank": 16,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1778\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 22,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1778\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-1778:construction",
+    "study6-2025-1778:team_stated_reason",
+    "study6-2025-1778:engineering_analysis",
+    "study6-2025-1778:recommended_validation",
+    "study6-2025-1778:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

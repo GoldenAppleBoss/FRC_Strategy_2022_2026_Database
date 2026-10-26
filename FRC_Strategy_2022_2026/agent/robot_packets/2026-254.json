@@ -1,0 +1,479 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-254",
+  "year": 2026,
+  "team": 254,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 254,
+    "robot": "Cheesy Poofs 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=TTjfNHw9jxM",
+      "https://www.chiefdelphi.com/t/516252"
+    ],
+    "architecture": "Four-wide drum, continuous ball-contact geometry and extending bumper/hopper system.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved in this interview.",
+      "intake": "Main roller and titanium kicker geometry; racks changed from polycarbonate/titanium teeth to SRPP/titanium laminate after failures. Additional retention roller added between second and third events.",
+      "transfer": "Rubber-backed belts provide continuous floor transport. Intake retraction raises linked hopper floor to clear residual fuel.",
+      "scoring": "Triangle of contact among drum, lower feeder and powered hood roller stabilizes ball speed/spin. External transmission packaging preserves effective width; double-sided belt reverses hood rollers.",
+      "endgame": "Endgame installation not established by reviewed interview.",
+      "controls": "Four grayscale cameras, high-rate shooter-facing pair; slow-motion and internal-camera testing informed geometry and current draw."
+    },
+    "versions": [
+      "Floor V1 on alpha: adjustable belt/pulley implementation; binding and shaft stiffness problems.",
+      "Floor V2 at Silicon Valley: carbon tubes and adjustable tension; split dead axle failed, cam restraint allowed fuel underneath.",
+      "Floor V3 at Central Valley: continuous axle; improved tension support, but lateral cam escape remained.",
+      "Floor V4 at Worlds: fixed centers, rigid triangular supports and fully captured cam. Team reply 105 distinguishes these floor revisions; this is not a complete whole-robot revision census.",
+      "Net raised reported capacity from about 50 to 75–80; carbon corners replaced cracking hopper corners.",
+      "Team reports 25–28 BPS on fresh fuel; 30–35 was an architectural ceiling estimate, not a measured match average."
+    ],
+    "analysis": "This is the relevant meaning of 254 shooter geometry: preacceleration, controlled contact and spin, usable width, packaging and a tuned hood. A wide drum alone does not reproduce it; neither does a bench BPS claim establish whole-match output.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2026-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OVERLOAD: floor versions change what should be copied\n\nVersion: 254 OVERLOAD first-party floor and prototype explanations. [Technical source](https://www.chiefdelphi.com/t/516252/105) · [Team explanation](https://www.chiefdelphi.com/t/516252/105)\n\n**Published construction:** Alpha floor, SVDE split-axle floor, CVDE continuous axle and Worlds captured fixed-center floor are distinguished.\n\n**Team-stated reason or evidence boundary:** Eliminate binding, belt escape, shaft failure and fuel trapped beneath the floor.\n\n**Engineering analysis — original inference:** An adjustable joint can make prototyping easier while becoming a weak structural interface under a full hopper. A split axle is especially sensitive because bending, thread retention and tension adjustment meet at the same small connection. Capturing a cam follower must account for lateral deflection as well as the nominal two-dimensional motion; otherwise the follower can escape around a track that looks constrained in a sketch. Fixed centers can improve reliability once the correct tension is known, but require accurate geometry and assembly. The correct inspiration for a rebuild is a dated floor version with its failure history, not simply “254 belts.”\n\n**Proposed validation — not a completed test:** Load the floor unevenly, push the intake backward, test lateral racking and inspect whether fuel can get underneath before copying the travel geometry.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OVERLOAD: shared feeder power is a different optimization from floor tilt\n\nVersion: 254 OVERLOAD first-party floor and prototype explanations. [Technical source](https://www.chiefdelphi.com/t/516252/113) · [Team explanation](https://www.chiefdelphi.com/t/516252/113)\n\n**Published construction:** Team says final floor tilt helped modestly; compares its output with 2910’s mechanically shared feeder/floor drives.\n\n**Team-stated reason or evidence boundary:** Recognize the changing load distribution during discharge.\n\n**Engineering analysis — original inference:** A hopper floor initially accelerates under a large pile load, while the downstream feeder can dominate later in the same discharge. Mechanically sharing motors can let the available power serve those changing demands instead of leaving some motors lightly loaded while another stage struggles. That benefit trades away independent control and can transmit a jam farther through the system. Extra floor tilt is a separate variable: it may improve the entry geometry without justifying a complicated cam and narrow packaging. Compare the complete energy and service cost rather than assuming every feature of the reference robot is worth retaining.\n\n**Proposed validation — not a completed test:** Log floor and feeder torque over a full discharge; compare independently powered and shared-power layouts under identical contact geometry.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OVERLOAD: a kitbot and prototypes test the architectural premise\n\nVersion: 254 OVERLOAD first-party floor and prototype explanations. [Technical source](https://www.chiefdelphi.com/t/516252/116) · [Team explanation](https://www.chiefdelphi.com/t/516252/116)\n\n**Published construction:** Early plywood shooter and modified kitbot tested wide launch; belt and roller floors were compared before alpha integration.\n\n**Team-stated reason or evidence boundary:** Establish piece contact and multi-ball behavior quickly.\n\n**Engineering analysis — original inference:** A low-fidelity test should answer the uncertainty that changes the architecture. Before modeling a sophisticated drum, demonstrate that the available goal, piece and launch geometry can accept simultaneous streams without destructive interaction. The prototype then needs adjustable compression and a representative feed, not a beautifully finished chassis. If a simple kitbot already tests the relevant contact, reusing it can preserve time for the harder integration questions. Later failures in floor structure show the boundary of that early evidence: successful launch physics does not certify tensioning, impact survival or service access.\n\n**Proposed validation — not a completed test:** Write the decision the prototype will change, test representative piece conditions, and reserve a second integrated test for load and flow.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2026-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516252/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/c/b/ccbe85c7ded2bf2e9855cd8d0293affea213e5f3_2_567x500.jpeg",
+        "post": 1,
+        "date": "2026-03-12T22:18:45.099Z",
+        "author": "Torrance",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2026 team 254 — source image from post 1 (2026-03-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "444888e2d93abf3dee.jpg",
+        "id": "0240264ba62983c74d",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/444888e2d93abf3dee.jpg"
+      },
+      {
+        "robot_id": "2026-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516252/32",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/8/7/287295ebd1115034ad014edd38285a6d7dbf0dce_2_690x382.jpeg",
+        "post": 32,
+        "date": "2026-03-14T15:38:13.577Z",
+        "author": "Zihou",
+        "context_tags": [
+          "climb"
+        ],
+        "caption": "2026 team 254 — source image from post 32 (2026-03-14). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "60c9a8957b8b699eff.jpg",
+        "id": "9d2be0900fd2b32347",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/60c9a8957b8b699eff.jpg"
+      },
+      {
+        "robot_id": "2026-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/516252/64",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/f/0/cf018447cf1f4db6f5dde49c143544b61ece40bd_2_375x500.jpeg",
+        "post": 64,
+        "date": "2026-05-29T06:10:23.553Z",
+        "author": "Torrance",
+        "context_tags": [
+          "arm",
+          "climb",
+          "intake"
+        ],
+        "caption": "2026 team 254 — source image from post 64 (2026-05-29). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "490c2ba1592568f577.jpg",
+        "id": "b801a725a46127962b",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/490c2ba1592568f577.jpg"
+      }
+    ],
+    "source_post_count": 47,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-254",
+        "discovery_post": "2026-254-516252-109",
+        "url": "https://drive.google.com/file/d/1RwHOzDW5XM9VN8kwXyZtkl8VfFPpR8rV/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "05fe66fbbfddf2d7ba"
+      }
+    ],
+    "id": "2026-254",
+    "team_name": "The Cheesy Poofs",
+    "epa_rank": 2,
+    "epa": 327.82,
+    "epa_pre_champs": 343.41,
+    "epa_breakdown": {
+      "total_points": 327.82,
+      "auto_points": 78.44,
+      "teleop_points": 169.73,
+      "endgame_points": 79.64,
+      "energized_rp": 0.7067,
+      "supercharged_rp": 0.8548,
+      "traversal_rp": -0.34164,
+      "tiebreaker_points": 327.82,
+      "auto_fuel": 78.11,
+      "auto_tower": 0.33,
+      "transition_fuel": 27.24,
+      "first_shift_fuel": 70.29,
+      "second_shift_fuel": 72.2,
+      "endgame_fuel": 79.8,
+      "endgame_tower": -0.16,
+      "rp_1": 0.7067,
+      "rp_2": 0.8548,
+      "rp_3": -0.34164,
+      "teleop_fuel": 249.53000000000003,
+      "total_fuel": 327.64,
+      "total_tower": 0.17
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "e263954b50a8fc2f"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-discussion-2542026-127",
+      "tech-discussion-2542026-128",
+      "tech-discussion-2542026-129"
+    ],
+    "binder_source_ids": [
+      "discussion-2542026"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-254",
+      "year": 2026,
+      "team": 254,
+      "epa_rank": 2,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"254\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 25,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"254\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [
+        "discussion-2542026"
+      ],
+      "technical_note_ids": [
+        "tech-discussion-2542026-127",
+        "tech-discussion-2542026-128",
+        "tech-discussion-2542026-129"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "discussion-2542026",
+      "subsystem": "transfer",
+      "title": "OVERLOAD: floor versions change what should be copied",
+      "pdf_pages": [],
+      "construction": "Alpha floor, SVDE split-axle floor, CVDE continuous axle and Worlds captured fixed-center floor are distinguished.",
+      "team_stated_reason": "Eliminate binding, belt escape, shaft failure and fuel trapped beneath the floor.",
+      "engineering_analysis": "An adjustable joint can make prototyping easier while becoming a weak structural interface under a full hopper. A split axle is especially sensitive because bending, thread retention and tension adjustment meet at the same small connection. Capturing a cam follower must account for lateral deflection as well as the nominal two-dimensional motion; otherwise the follower can escape around a track that looks constrained in a sketch. Fixed centers can improve reliability once the correct tension is known, but require accurate geometry and assembly. The correct inspiration for a rebuild is a dated floor version with its failure history, not simply “254 belts.”",
+      "recommended_validation": "Load the floor unevenly, push the intake backward, test lateral racking and inspect whether fuel can get underneath before copying the travel geometry.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/516252/105"
+      ],
+      "id": "tech-discussion-2542026-127",
+      "robot_id": "2026-254",
+      "year": 2026,
+      "version_label": "254 OVERLOAD first-party floor and prototype explanations",
+      "source_url": "https://www.chiefdelphi.com/t/516252/105",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [],
+      "image_ids": []
+    },
+    {
+      "binder_id": "discussion-2542026",
+      "subsystem": "transfer",
+      "title": "OVERLOAD: shared feeder power is a different optimization from floor tilt",
+      "pdf_pages": [],
+      "construction": "Team says final floor tilt helped modestly; compares its output with 2910’s mechanically shared feeder/floor drives.",
+      "team_stated_reason": "Recognize the changing load distribution during discharge.",
+      "engineering_analysis": "A hopper floor initially accelerates under a large pile load, while the downstream feeder can dominate later in the same discharge. Mechanically sharing motors can let the available power serve those changing demands instead of leaving some motors lightly loaded while another stage struggles. That benefit trades away independent control and can transmit a jam farther through the system. Extra floor tilt is a separate variable: it may improve the entry geometry without justifying a complicated cam and narrow packaging. Compare the complete energy and service cost rather than assuming every feature of the reference robot is worth retaining.",
+      "recommended_validation": "Log floor and feeder torque over a full discharge; compare independently powered and shared-power layouts under identical contact geometry.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/516252/113"
+      ],
+      "id": "tech-discussion-2542026-128",
+      "robot_id": "2026-254",
+      "year": 2026,
+      "version_label": "254 OVERLOAD first-party floor and prototype explanations",
+      "source_url": "https://www.chiefdelphi.com/t/516252/113",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [],
+      "image_ids": []
+    },
+    {
+      "binder_id": "discussion-2542026",
+      "subsystem": "development",
+      "title": "OVERLOAD: a kitbot and prototypes test the architectural premise",
+      "pdf_pages": [],
+      "construction": "Early plywood shooter and modified kitbot tested wide launch; belt and roller floors were compared before alpha integration.",
+      "team_stated_reason": "Establish piece contact and multi-ball behavior quickly.",
+      "engineering_analysis": "A low-fidelity test should answer the uncertainty that changes the architecture. Before modeling a sophisticated drum, demonstrate that the available goal, piece and launch geometry can accept simultaneous streams without destructive interaction. The prototype then needs adjustable compression and a representative feed, not a beautifully finished chassis. If a simple kitbot already tests the relevant contact, reusing it can preserve time for the harder integration questions. Later failures in floor structure show the boundary of that early evidence: successful launch physics does not certify tensioning, impact survival or service access.",
+      "recommended_validation": "Write the decision the prototype will change, test representative piece conditions, and reserve a second integrated test for load and flow.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/516252/116"
+      ],
+      "id": "tech-discussion-2542026-129",
+      "robot_id": "2026-254",
+      "year": 2026,
+      "version_label": "254 OVERLOAD first-party floor and prototype explanations",
+      "source_url": "https://www.chiefdelphi.com/t/516252/116",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [
+    {
+      "id": "discussion-2542026",
+      "robot_id": "2026-254",
+      "title": "254 OVERLOAD first-party floor and prototype explanations",
+      "url": "https://www.chiefdelphi.com/t/516252",
+      "format": "team_discussion",
+      "status": "technical_sections_reviewed",
+      "review_scope": "Team replies 105, 113 and 116; this is technical discussion, not a separately downloaded formal binder",
+      "publication_kind": "first_party_technical_discussion"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2026-254:publication-version:1",
+      "label": "254 OVERLOAD first-party floor and prototype explanations",
+      "robot_id": "2026-254",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-discussion-2542026-127",
+        "tech-discussion-2542026-128",
+        "tech-discussion-2542026-129"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/516252/105",
+        "https://www.chiefdelphi.com/t/516252/113",
+        "https://www.chiefdelphi.com/t/516252/116"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2026-254",
+      "title": "2026-254: technical construction and mechanism reasoning",
+      "year": 2026,
+      "robot_id": "2026-254",
+      "kind": "robot_technical_review",
+      "body": "# 2026-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OVERLOAD: floor versions change what should be copied\n\nVersion: 254 OVERLOAD first-party floor and prototype explanations. [Technical source](https://www.chiefdelphi.com/t/516252/105) · [Team explanation](https://www.chiefdelphi.com/t/516252/105)\n\n**Published construction:** Alpha floor, SVDE split-axle floor, CVDE continuous axle and Worlds captured fixed-center floor are distinguished.\n\n**Team-stated reason or evidence boundary:** Eliminate binding, belt escape, shaft failure and fuel trapped beneath the floor.\n\n**Engineering analysis — original inference:** An adjustable joint can make prototyping easier while becoming a weak structural interface under a full hopper. A split axle is especially sensitive because bending, thread retention and tension adjustment meet at the same small connection. Capturing a cam follower must account for lateral deflection as well as the nominal two-dimensional motion; otherwise the follower can escape around a track that looks constrained in a sketch. Fixed centers can improve reliability once the correct tension is known, but require accurate geometry and assembly. The correct inspiration for a rebuild is a dated floor version with its failure history, not simply “254 belts.”\n\n**Proposed validation — not a completed test:** Load the floor unevenly, push the intake backward, test lateral racking and inspect whether fuel can get underneath before copying the travel geometry.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OVERLOAD: shared feeder power is a different optimization from floor tilt\n\nVersion: 254 OVERLOAD first-party floor and prototype explanations. [Technical source](https://www.chiefdelphi.com/t/516252/113) · [Team explanation](https://www.chiefdelphi.com/t/516252/113)\n\n**Published construction:** Team says final floor tilt helped modestly; compares its output with 2910’s mechanically shared feeder/floor drives.\n\n**Team-stated reason or evidence boundary:** Recognize the changing load distribution during discharge.\n\n**Engineering analysis — original inference:** A hopper floor initially accelerates under a large pile load, while the downstream feeder can dominate later in the same discharge. Mechanically sharing motors can let the available power serve those changing demands instead of leaving some motors lightly loaded while another stage struggles. That benefit trades away independent control and can transmit a jam farther through the system. Extra floor tilt is a separate variable: it may improve the entry geometry without justifying a complicated cam and narrow packaging. Compare the complete energy and service cost rather than assuming every feature of the reference robot is worth retaining.\n\n**Proposed validation — not a completed test:** Log floor and feeder torque over a full discharge; compare independently powered and shared-power layouts under identical contact geometry.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OVERLOAD: a kitbot and prototypes test the architectural premise\n\nVersion: 254 OVERLOAD first-party floor and prototype explanations. [Technical source](https://www.chiefdelphi.com/t/516252/116) · [Team explanation](https://www.chiefdelphi.com/t/516252/116)\n\n**Published construction:** Early plywood shooter and modified kitbot tested wide launch; belt and roller floors were compared before alpha integration.\n\n**Team-stated reason or evidence boundary:** Establish piece contact and multi-ball behavior quickly.\n\n**Engineering analysis — original inference:** A low-fidelity test should answer the uncertainty that changes the architecture. Before modeling a sophisticated drum, demonstrate that the available goal, piece and launch geometry can accept simultaneous streams without destructive interaction. The prototype then needs adjustable compression and a representative feed, not a beautifully finished chassis. If a simple kitbot already tests the relevant contact, reusing it can preserve time for the harder integration questions. Later failures in floor structure show the boundary of that early evidence: successful launch physics does not certify tensioning, impact survival or service access.\n\n**Proposed validation — not a completed test:** Write the decision the prototype will change, test representative piece conditions, and reserve a second integrated test for load and flow.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/516252/105",
+        "https://www.chiefdelphi.com/t/516252/113",
+        "https://www.chiefdelphi.com/t/516252/116"
+      ],
+      "path": "docs/technical/2026-254.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516252/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/c/b/ccbe85c7ded2bf2e9855cd8d0293affea213e5f3_2_567x500.jpeg",
+      "post": 1,
+      "date": "2026-03-12T22:18:45.099Z",
+      "author": "Torrance",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2026 team 254 — source image from post 1 (2026-03-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "444888e2d93abf3dee.jpg",
+      "id": "0240264ba62983c74d",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/444888e2d93abf3dee.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 567,
+      "height_px": 500,
+      "bytes": 40676,
+      "sha256": "d49a4b443155b0025a8418c91fa11f5b67cd78d7536a38c9a82a7b99235f4694",
+      "path_base": "corpus_root",
+      "reader_asset_id": "0240264ba62983c74d",
+      "reader_url": "index.html#image=0240264ba62983c74d",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516252/32",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/8/7/287295ebd1115034ad014edd38285a6d7dbf0dce_2_690x382.jpeg",
+      "post": 32,
+      "date": "2026-03-14T15:38:13.577Z",
+      "author": "Zihou",
+      "context_tags": [
+        "climb"
+      ],
+      "caption": "2026 team 254 — source image from post 32 (2026-03-14). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "60c9a8957b8b699eff.jpg",
+      "id": "9d2be0900fd2b32347",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/60c9a8957b8b699eff.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 382,
+      "bytes": 72180,
+      "sha256": "d0f59d23008a51df6e4691afc9f8872b59fe437ea8fe72ecefa84d56db576d97",
+      "path_base": "corpus_root",
+      "reader_asset_id": "9d2be0900fd2b32347",
+      "reader_url": "index.html#image=9d2be0900fd2b32347",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/516252/64",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/f/0/cf018447cf1f4db6f5dde49c143544b61ece40bd_2_375x500.jpeg",
+      "post": 64,
+      "date": "2026-05-29T06:10:23.553Z",
+      "author": "Torrance",
+      "context_tags": [
+        "arm",
+        "climb",
+        "intake"
+      ],
+      "caption": "2026 team 254 — source image from post 64 (2026-05-29). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "490c2ba1592568f577.jpg",
+      "id": "b801a725a46127962b",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/490c2ba1592568f577.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 22279,
+      "sha256": "8c301d190f05dc6cee4d80140bb820d23fc811a32954582ddc42f1b538baf464",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b801a725a46127962b",
+      "reader_url": "index.html#image=b801a725a46127962b",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-254",
+    "year": 2026,
+    "team": 254,
+    "epa_rank": 2,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"254\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 25,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"254\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [
+      "discussion-2542026"
+    ],
+    "technical_note_ids": [
+      "tech-discussion-2542026-127",
+      "tech-discussion-2542026-128",
+      "tech-discussion-2542026-129"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-discussion-2542026-127:construction",
+    "tech-discussion-2542026-127:team_stated_reason",
+    "tech-discussion-2542026-127:engineering_analysis",
+    "tech-discussion-2542026-127:recommended_validation",
+    "tech-discussion-2542026-127:limitations",
+    "tech-discussion-2542026-128:construction",
+    "tech-discussion-2542026-128:team_stated_reason",
+    "tech-discussion-2542026-128:engineering_analysis",
+    "tech-discussion-2542026-128:recommended_validation",
+    "tech-discussion-2542026-128:limitations",
+    "tech-discussion-2542026-129:construction",
+    "tech-discussion-2542026-129:team_stated_reason",
+    "tech-discussion-2542026-129:engineering_analysis",
+    "tech-discussion-2542026-129:recommended_validation",
+    "tech-discussion-2542026-129:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,14 @@
+# 1833’s supplied 2026 design workflow
+
+The original workbook and PDF are preserved under team1833/. Their statements are historical team planning, not validated game rules or independent mechanism measurements. Cell-level and PDF-page text exports permit exact retrieval. No source workbook or PDF was edited.
+
+The workbook contains parallel group task lists, numeric priority/difficulty judgments, formulas multiplying those ordinal values, and a cleaned must/might/won’t list. Some sheets have inconsistent priority scales. The cleaned list’s repeated “No” final-decision cells must not be interpreted as rejecting every must-do task. Group 4 even distinguishes autonomous climb priority in qualifications versus eliminations. Keep group opinions and later decisions separate instead of silently averaging them into a consensus.
+
+The PDF maps requirements into intake, storage, shooter, climb, electrical and chassis concepts. It records historical mechanism references, pros/cons and open prototype questions about compression and roller materials. It explicitly asks for service access, wire protection and mechanical/electrical compatibility. The shooter page contains proposed distances, angles and velocities; these are unverified calculations, with launch-height, drag and other assumptions needing reconstruction before reuse. References such as 2020 spindexer slot capacity must not become universal capacity limits for 2026 bulk serializers.
+
+For the agent: reproduce the task-to-requirement-to-concept chain, preserve alternatives and open tests, and distinguish kickoff judgments from later evidence. The early climb priorities are historical inputs; the user’s later correction and tower-only data establish a fuel-first default for the studied 2026 competitive context. Do not overwrite the original documents to make hindsight look like the initial decision. A future task sheet should carry rule revision, phase, partner assumptions, expected contribution, ordinal priority meaning, development cost, evidence and decision rationale. A mechanism comparison should identify which requirement it serves and what observation would change the choice.
+
+
+## Required 1833 task sheet
+
+For each new game/manual analysis, material rules revision or new/revised robot design brief, fill a fresh copy of [the one-sheet template](../../team1833/1833_Task_List_Template.xlsx). Follow `docs/TASK_LIST_PROTOCOL.md` and `team1833/task_template_schema.json`, with all paths resolved from the corpus root. The template includes task outcome, phase, points/enabling value, priority, difficulty, recommendation, rationale, alliance dependencies, acceptance target, exact rule/source, uncertainty/test and separate human decision. No group tabs; no inherited season-specific decisions. Four previously blocked 604 image originals are now recovered and embedded (2023 robot; 2026 serializer, intake and hopper).

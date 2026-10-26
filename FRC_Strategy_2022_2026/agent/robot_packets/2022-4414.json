@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-4414",
+  "year": 2022,
+  "team": 4414,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 4414,
+    "robot": "Cutback",
+    "primary": [
+      "https://youtu.be/eaLhQbCd6_I",
+      "https://www.chiefdelphi.com/t/404398",
+      "https://www.chiefdelphi.com/t/410351"
+    ],
+    "architecture": "Modular turret scorer with progressively simplified acquisition and interchangeable climb concepts.",
+    "subsystems": {
+      "drivetrain": "SDS swerve; modular structure supports repeated revisions.",
+      "intake": "Pneumatic flex-wheel design evolved to motorized roller pickup; bumper covering selected for ball grip.",
+      "transfer": "Two sensor-tracked chambers and compliant feed rollers; wrong-color cargo rejected through a slower shot.",
+      "scoring": "Over-360-degree turret and motorized adjustable hood; high camera mount retains near-goal target view.",
+      "endgame": "Dual gas-spring telescopes for traversal; separate passive high-bar prototype brought as an alternative, not assumed fielded.",
+      "controls": "Vision-corrected odometry, moving-shot compensation, intermediate pickup pose and gyro-based climb timing."
+    },
+    "versions": [
+      "Team reports four broad robot iterations. Removed pneumatics, changed intake contact material and replaced servo hood actuation with a motor."
+    ],
+    "analysis": "Compare whole configurations: the lower-priority climb was designed around the scorer, and the team explicitly considered a faster, lower-scoring endgame when late-cycle output was valuable.",
+    "limits": [
+      "Only published/reviewed configurations are established; further intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2022-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404398/25",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/5/75b205e8ddc16904f7dd48f6f5891f143e41391c_2_690x443.jpeg",
+        "post": 25,
+        "date": "2022-05-01T02:30:49.287Z",
+        "author": "jjsessa",
+        "context_tags": [
+          "arm",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2022 team 4414 — source image from post 25 (2022-05-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "055c5bcf8426e3dfce.jpg",
+        "id": "8788101b2a02f6128e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/055c5bcf8426e3dfce.jpg"
+      },
+      {
+        "robot_id": "2022-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404398/25",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/3/d3b30520a451c219c1915911bec32cc94c879337_2_420x500.png",
+        "post": 25,
+        "date": "2022-05-01T02:30:49.287Z",
+        "author": "jjsessa",
+        "context_tags": [
+          "arm",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2022 team 4414 — source image from post 25 (2022-05-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "2bff4a8dc8ec32e030.jpg",
+        "id": "169856efaa3802c6b4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2bff4a8dc8ec32e030.jpg"
+      },
+      {
+        "robot_id": "2022-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404398/25",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/5/6539855dfbea5b9beb0b59da37f1f3796e5cfca3_2_660x499.png",
+        "post": 25,
+        "date": "2022-05-01T02:30:49.287Z",
+        "author": "jjsessa",
+        "context_tags": [
+          "arm",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2022 team 4414 — source image from post 25 (2022-05-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "2a15d0ed69e59097df.jpg",
+        "id": "985b8da9016de9c1d8",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2a15d0ed69e59097df.jpg"
+      }
+    ],
+    "source_post_count": 10,
+    "cad_code_links": [],
+    "id": "2022-4414",
+    "team_name": "HighTide",
+    "epa_rank": 17,
+    "epa": 51.81,
+    "epa_pre_champs": 53.93,
+    "epa_breakdown": {
+      "total_points": 51.81,
+      "auto_points": 12.51,
+      "teleop_points": 32.57,
+      "endgame_points": 6.73,
+      "cargo_rp": 0.8137,
+      "hangar_rp": 0.3834,
+      "tiebreaker_points": 51.81,
+      "auto_taxi_points": 1.78,
+      "auto_cargo_lower": -0.02,
+      "auto_cargo_upper": 2.69,
+      "teleop_cargo_lower": -0.55,
+      "teleop_cargo_upper": 16.56,
+      "rp_1": 0.8137,
+      "rp_2": 0.3834
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "8b1cc17ea17f999f",
+      "612db32316532ba6",
+      "db34d9ce985b77e6"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "telescoping arm",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-4414",
+      "year": 2022,
+      "team": 4414,
+      "epa_rank": 17,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"4414\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 5,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4414\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-4414"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-4414",
+      "title": "Repeated intake iterations must remain attached to the correct shooter snapshot",
+      "start_seconds": 223,
+      "end_seconds": 955,
+      "construction": "The team reports several whole-robot iterations. The retained account distinguishes early pneumatic flex-wheel collection from later motorized rollers, sensor-tracked cargo chambers, a wide-range turret and a high-mounted targeting camera.",
+      "team_stated_reason": "The interview emphasizes rapid fabrication/iteration and material testing. More exact performance attribution requires the dated release/configuration, not the number of iterations alone.",
+      "engineering_analysis": "A camera mounted to preserve near-goal visibility changes the available aiming envelope. Color/rejection and staged possession must still coordinate with turret direction. Do not combine every photographed intake into one version.",
+      "recommended_validation": "Validate close-range sight lines, rejection trajectory and intake/feed readiness after a mechanism swap.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-4414",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/eaLhQbCd6_I",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/404398",
+        "https://www.chiefdelphi.com/t/410351"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 223,
+        "end_seconds": 955,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "eaLhQbCd6_I",
+          "sha256": "bd297a253f46b3d0aeb0d17f0d646d9bafcc419117977a5fd3c4466741c6b87a",
+          "caption_segments": 582,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-4414:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-4414",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-4414"
+      ],
+      "source_urls": [
+        "https://youtu.be/eaLhQbCd6_I"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-4414",
+      "title": "2022-4414 · Repeated intake iterations must remain attached to the correct shooter snapshot",
+      "year": 2022,
+      "robot_id": "2022-4414",
+      "kind": "focused_technical_study",
+      "body": "# 2022-4414: Repeated intake iterations must remain attached to the correct shooter snapshot\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe team reports several whole-robot iterations. The retained account distinguishes early pneumatic flex-wheel collection from later motorized rollers, sensor-tracked cargo chambers, a wide-range turret and a high-mounted targeting camera.\n\n## Team-stated reasoning or boundary\n\nThe interview emphasizes rapid fabrication/iteration and material testing. More exact performance attribution requires the dated release/configuration, not the number of iterations alone.\n\n## Engineering interpretation — analyst inference\n\nA camera mounted to preserve near-goal visibility changes the available aiming envelope. Color/rejection and staged possession must still coordinate with turret direction. Do not combine every photographed intake into one version.\n\n## Proposed validation — not performed\n\nValidate close-range sight lines, rejection trajectory and intake/feed readiness after a mechanism swap.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/eaLhQbCd6_I](https://youtu.be/eaLhQbCd6_I)\n- [https://www.chiefdelphi.com/t/404398](https://www.chiefdelphi.com/t/404398)\n- [https://www.chiefdelphi.com/t/410351](https://www.chiefdelphi.com/t/410351)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/eaLhQbCd6_I",
+        "https://www.chiefdelphi.com/t/404398",
+        "https://www.chiefdelphi.com/t/410351"
+      ],
+      "path": "docs/research_continuation/2022-4414.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2022-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404398/25",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/5/75b205e8ddc16904f7dd48f6f5891f143e41391c_2_690x443.jpeg",
+      "post": 25,
+      "date": "2022-05-01T02:30:49.287Z",
+      "author": "jjsessa",
+      "context_tags": [
+        "arm",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2022 team 4414 — source image from post 25 (2022-05-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "055c5bcf8426e3dfce.jpg",
+      "id": "8788101b2a02f6128e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/055c5bcf8426e3dfce.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 443,
+      "bytes": 36640,
+      "sha256": "7d3dcf3ee3dac90170c73c12df5251b01beabc515949bbaebac77d052c333360",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8788101b2a02f6128e",
+      "reader_url": "index.html#image=8788101b2a02f6128e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404398/25",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/3/d3b30520a451c219c1915911bec32cc94c879337_2_420x500.png",
+      "post": 25,
+      "date": "2022-05-01T02:30:49.287Z",
+      "author": "jjsessa",
+      "context_tags": [
+        "arm",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2022 team 4414 — source image from post 25 (2022-05-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "2bff4a8dc8ec32e030.jpg",
+      "id": "169856efaa3802c6b4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2bff4a8dc8ec32e030.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 420,
+      "height_px": 500,
+      "bytes": 32236,
+      "sha256": "de3c23da526ba9ab55aaf76cd6f5ed97f7189b3c67153e81e15e8d2111eb9e8e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "169856efaa3802c6b4",
+      "reader_url": "index.html#image=169856efaa3802c6b4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404398/25",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/5/6539855dfbea5b9beb0b59da37f1f3796e5cfca3_2_660x499.png",
+      "post": 25,
+      "date": "2022-05-01T02:30:49.287Z",
+      "author": "jjsessa",
+      "context_tags": [
+        "arm",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2022 team 4414 — source image from post 25 (2022-05-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "2a15d0ed69e59097df.jpg",
+      "id": "985b8da9016de9c1d8",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2a15d0ed69e59097df.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 660,
+      "height_px": 499,
+      "bytes": 56412,
+      "sha256": "4bcf3317db422a7c621226651fd471c0e7ca74a2d217bd363955e60d616a33d4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "985b8da9016de9c1d8",
+      "reader_url": "index.html#image=985b8da9016de9c1d8",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-4414",
+    "year": 2022,
+    "team": 4414,
+    "epa_rank": 17,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"4414\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 5,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4414\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-4414:construction",
+    "study6-2022-4414:team_stated_reason",
+    "study6-2022-4414:engineering_analysis",
+    "study6-2022-4414:recommended_validation",
+    "study6-2022-4414:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

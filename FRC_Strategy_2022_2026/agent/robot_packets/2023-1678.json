@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-1678",
+  "year": 2023,
+  "team": 1678,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 1678,
+    "robot": "Tangerine Tumbler",
+    "primary": [
+      "https://youtu.be/r6JDy85dax8",
+      "https://www.chiefdelphi.com/t/437632"
+    ],
+    "architecture": "Low-center-of-gravity pivoting elevator/arm with wristed dual-piece roller intake and integrated forks.",
+    "subsystems": {
+      "intake": "Wide roller end effector derived from the Everybot approach. Upper rollers acquire cones; lower jaw handles cubes from a common floor pose.",
+      "transfer": "Direct grip; remote wrist transmission keeps heavy components low.",
+      "scoring": "Continuously rigged elevator and pivoting arm, with low-mounted gearboxes.",
+      "drivetrain": "Robot packaging explicitly prioritizes low center of gravity and resistance to tipping.",
+      "endgame": "Forks attached to the arm engage the station/partner arrangement; existing superstructure actuators lift the drivebase rather than adding a separate climber.",
+      "controls": "Coordinated mechanism presets; exact control implementation is available through the code release."
+    },
+    "versions": [
+      "Team reports roughly seven intake iterations.",
+      "Carbon-fiber intake crossbars broke or lacked stiffness; replaced with aluminum.",
+      "Forks shortened by about four inches to improve alignment and access on both sides."
+    ],
+    "analysis": "A strong example of making endgame support fit an existing scoring mechanism. Evaluate partner geometry and load paths before borrowing the forks.",
+    "limits": [
+      "Seven iterations are reported, but each intermediate geometry is not separately documented here."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/437632/7",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/2/9/29d4bc38a5a62273ffcbda666b5df72f40c44b10_2_690x387.png",
+        "post": 7,
+        "date": "2023-05-28T02:34:19.018Z",
+        "author": "MatthewL_333",
+        "context_tags": [
+          "elevator",
+          "pivot"
+        ],
+        "caption": "2023 team 1678 — source image from post 7 (2023-05-28). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7f2d5e839476d2fd80.jpg",
+        "id": "af3ac8cc79e71448e3",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7f2d5e839476d2fd80.jpg"
+      },
+      {
+        "robot_id": "2023-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/437632/8",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/d/ddbc3bdbee22b8c6d40e68f04628e41c03778c82_2_690x409.jpeg",
+        "post": 8,
+        "date": "2023-05-28T14:16:13.530Z",
+        "author": "oguzozgur",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2023 team 1678 — source image from post 8 (2023-05-28). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "58df09ed9f03c3f8e6.jpg",
+        "id": "0e53fadf8775bab0c7",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/58df09ed9f03c3f8e6.jpg"
+      }
+    ],
+    "source_post_count": 93,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-1678",
+        "discovery_post": "2023-1678-437632-200",
+        "url": "https://cad.onshape.com/documents/7acefafff6f02b38d6405db0/w/daa863ab8e25a55a8fb9b0be/e/db7a8880dca689c8e165eacb",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b2a6dc72aad3e479d7"
+      }
+    ],
+    "id": "2023-1678",
+    "team_name": "Citrus Circuits",
+    "epa_rank": 3,
+    "epa": 77.86,
+    "epa_pre_champs": 75.96,
+    "epa_breakdown": {
+      "total_points": 77.86,
+      "auto_points": 18.5,
+      "teleop_points": 43.16,
+      "endgame_points": 11.72,
+      "links_rp": 0.8437,
+      "activation_rp": 0.6702,
+      "tiebreaker_points": 73.38,
+      "auto_charge_station_points": 7.1,
+      "auto_pieces": 2.23,
+      "teleop_grid_points": 31.13,
+      "bottom_pieces": 2.89,
+      "middle_pieces": 1.75,
+      "top_pieces": 5.51,
+      "cube_points": 17.43,
+      "cone_points": 23.4,
+      "links": 3.3,
+      "endgame_charge_station_points": 11.72,
+      "rp_1": 0.8437,
+      "rp_2": 0.6702
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "2f7c4902a8b2f848",
+      "521c649967cd9547"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-1678",
+      "year": 2023,
+      "team": 1678,
+      "epa_rank": 3,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1678\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 8,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1678\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-1678"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-1678",
+      "title": "Simple continuous rigging still requires deliberate line management",
+      "start_seconds": 107,
+      "end_seconds": 330,
+      "construction": "An Everybot-derived wide roller gripper handles cones and cubes from a common floor pose. A remote chain drives the wrist while keeping its gearbox low. The continuous elevator uses line guides/guards instead of relying solely on a grooved spool; the interview reports many collector iterations.",
+      "team_stated_reason": "The team explicitly links continuous rigging to fewer strings/failure opportunities and identifies the guards as a way to maintain self-spooling without sacrificing the intended structure.",
+      "engineering_analysis": "A common pickup pose reduces driver and software branching, but different pieces still need different contact/retention behavior. Low motors reduce moving mass while remote transmission adds slack and tension considerations. “Fewer strings” is a mechanism-specific simplification, not proof that rigging is insensitive to line stacking or abrasion.",
+      "recommended_validation": "Run repeated full-travel cycles with realistic line tension, test both pieces at the edges of the acquisition zone, and inspect remote-wrist backlash after impact.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-1678",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/r6JDy85dax8",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/437632"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 107,
+        "end_seconds": 330,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "r6JDy85dax8",
+          "sha256": "934c92195d4be83ee3329a09708c1242a7a57cd83d0b36fce65cdacff2689eac",
+          "caption_segments": 284,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-1678:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-1678"
+      ],
+      "source_urls": [
+        "https://youtu.be/r6JDy85dax8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-1678",
+      "title": "2023-1678 · Simple continuous rigging still requires deliberate line management",
+      "year": 2023,
+      "robot_id": "2023-1678",
+      "kind": "focused_technical_study",
+      "body": "# 2023-1678: Simple continuous rigging still requires deliberate line management\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nAn Everybot-derived wide roller gripper handles cones and cubes from a common floor pose. A remote chain drives the wrist while keeping its gearbox low. The continuous elevator uses line guides/guards instead of relying solely on a grooved spool; the interview reports many collector iterations.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly links continuous rigging to fewer strings/failure opportunities and identifies the guards as a way to maintain self-spooling without sacrificing the intended structure.\n\n## Engineering interpretation — analyst inference\n\nA common pickup pose reduces driver and software branching, but different pieces still need different contact/retention behavior. Low motors reduce moving mass while remote transmission adds slack and tension considerations. “Fewer strings” is a mechanism-specific simplification, not proof that rigging is insensitive to line stacking or abrasion.\n\n## Proposed validation — not performed\n\nRun repeated full-travel cycles with realistic line tension, test both pieces at the edges of the acquisition zone, and inspect remote-wrist backlash after impact.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/r6JDy85dax8](https://youtu.be/r6JDy85dax8)\n- [https://www.chiefdelphi.com/t/437632](https://www.chiefdelphi.com/t/437632)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/r6JDy85dax8",
+        "https://www.chiefdelphi.com/t/437632"
+      ],
+      "path": "docs/research_continuation/2023-1678.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/437632/7",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/2/9/29d4bc38a5a62273ffcbda666b5df72f40c44b10_2_690x387.png",
+      "post": 7,
+      "date": "2023-05-28T02:34:19.018Z",
+      "author": "MatthewL_333",
+      "context_tags": [
+        "elevator",
+        "pivot"
+      ],
+      "caption": "2023 team 1678 — source image from post 7 (2023-05-28). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7f2d5e839476d2fd80.jpg",
+      "id": "af3ac8cc79e71448e3",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7f2d5e839476d2fd80.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 387,
+      "bytes": 33317,
+      "sha256": "8b9f295b1f849eb6d271942779b872226b22bf8ca47152cd22616e591510a8ac",
+      "path_base": "corpus_root",
+      "reader_asset_id": "af3ac8cc79e71448e3",
+      "reader_url": "index.html#image=af3ac8cc79e71448e3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/437632/8",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/d/d/ddbc3bdbee22b8c6d40e68f04628e41c03778c82_2_690x409.jpeg",
+      "post": 8,
+      "date": "2023-05-28T14:16:13.530Z",
+      "author": "oguzozgur",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2023 team 1678 — source image from post 8 (2023-05-28). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "58df09ed9f03c3f8e6.jpg",
+      "id": "0e53fadf8775bab0c7",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/58df09ed9f03c3f8e6.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 409,
+      "bytes": 34347,
+      "sha256": "c0a3390538cb997e9b59caf317b09e86d75badef54ff81df1bbd3c9c3f10bc4e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "0e53fadf8775bab0c7",
+      "reader_url": "index.html#image=0e53fadf8775bab0c7",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-1678",
+    "year": 2023,
+    "team": 1678,
+    "epa_rank": 3,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1678\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 8,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1678\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-1678:construction",
+    "study6-2023-1678:team_stated_reason",
+    "study6-2023-1678:engineering_analysis",
+    "study6-2023-1678:recommended_validation",
+    "study6-2023-1678:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

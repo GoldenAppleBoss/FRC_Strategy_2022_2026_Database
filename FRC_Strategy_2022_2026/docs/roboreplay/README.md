@@ -1,0 +1,42 @@
+# Expanded RoboReplay studies
+
+The current checkpoint recovers all eleven previously pending transcripts through the normal YouTube transcript interface. No CAPTCHA appeared in this session. The 44-video ledger now has 35 complete available-caption reviews: 33 inherited reviews with selected-passage enrichment, plus two new complete caption reads. Those two studies add 27 sections and about 6,900 written words covering six 2026 Einstein matches. Nine recovered transcripts still await full content review. Across all 35 studies there are 132 sections and 114 quiz prompts. Full channel enumeration remains unverified. Tested match players stayed black and buffering, so zero visual Einstein audits are complete. Read `docs/EINSTEIN_VISUAL_AUDIT.md` and `data/einstein_visual_audit.jsonl` before using a match account as observation.
+
+- [2025 full season recap with a 2022 retrospective](1UsbJD-zRjU.md)
+- [2023 retrospective: failure response and defensive leverage](umznfQq_ACI.md)
+- [2024 retrospective: hybrid poaching against double passing](IGlyCDDcFlE.md)
+- [2022 Einstein final 1: supply, pressure and late decisions](c5rvL_wVdXc.md)
+- [Scouting analysis with Tableau](R11PUq_m8Fk.md)
+- [2019 retrospective: 1073 tank defense and constrained space](WjVe3t9njFw.md)
+- [2025 kickoff predictions](_lSTGCRcbdM.md)
+- [2025 week zero finals: collection defense](sekPy0RgPig.md)
+- [2025 first Israel event: 1690 floor supply and defensive counters](pDr6u-53fC8.md)
+- [2025 week 1: poaching, RP allocation and local efficiency](n71gb_gtHiw.md)
+- [2025 week 1 viewer matches: algae drafting and defensive geometry](Iea_ZVHkKZc.md)
+- [2025 autonomous routes and partner compatibility](Dl0jMa8w46s.md)
+- [2025 week 2: acquisition disruption and floor supply](rFdIJfdh-Gs.md)
+- [2025 week 3: 1323 floor supply, local branch completion and pins](f0eArdKNO94.md)
+- [2025 week 3 viewer matches: Rush defense and processor variance](pRg1rIZWVrU.md)
+- [2025 week 4: role switching, autonomous marginal value and human players](hTpmhxZ5KyM.md)
+- [2025 week 4 viewers: endgame pressure, processor defense and RP tradeoffs](IJwcQlTk4NQ.md)
+- [2025 week 5: floor supply refinement and contested rule interpretation](UxNLf-wI7yI.md)
+- [2025 pre-DCMP synthesis and qualification pathways](ciCaO4_So9o.md)
+- [2025 DCMP: lollipop auto, algae roles and PCH 7538](tDj42Lx9hsw.md)
+- [2025 pre-Worlds: drafting forecasts and algae counter-strategies](sD5Fsf25xh4.md)
+- [2025 Einstein finals 1–3](SQure1sSDpk.md)
+- [2025 Milstein division finals: three-match strategic adaptation](jULuwWI2RKg.md)
+- [2025 Daly and Curie: depth, declines and containment](dB1lmxKE_I0.md)
+- [2025 Hopper finals and an Einstein autonomous algae steal](myPdNZdpt30.md)
+- [2025 IRI finals: altered rules, theft and rescue costs](ZTCIVjEjDjg.md)
+- [2026 kickoff: shift-by-shift strategy predictions](nlXgZEbPmN0.md)
+- [2026 build-season architecture, using 2017 as an analogy](ci6IKTfDxic.md)
+- [2026 week zero finals and driver visibility](FGSOiKdxWrQ.md)
+- [2026 Istanbul practice: 9483 preparation and mobile firing](i2VBDzYCzE0.md)
+- [2026 week 1: triple defense, resource loops and passing](AOAG5SgewT4.md)
+- [2026 week 2: fixed shooters, turrets, geometry and PCH](NgyS03t-JO8.md)
+- [2026 week 2 viewer matches: zone defense and original 2910](U2JrZxh6YsE.md)
+
+- [2026 upper-bracket final and finals 1–3: supply control, defense and failures](-Cm-RuiSNlU.md)
+- [2026 Einstein matches 3 and 6: crossing geometry, steals and rounded bumpers](Oo5nP00wVBM.md)
+
+

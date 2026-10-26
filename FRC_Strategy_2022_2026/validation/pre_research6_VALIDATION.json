@@ -1,0 +1,86 @@
+{
+  "validation_date": "2026-10-25",
+  "edition": "image portability and agent navigation",
+  "status": "passed",
+  "agent_validation": {
+    "status": "passed",
+    "checks": 10741,
+    "counts": {
+      "robot_packets": 125,
+      "retrieval_units": 2799,
+      "claims": 766,
+      "images": 504,
+      "technical_notes": 129,
+      "published_parameters": 121,
+      "robot_years_with_technical_reviews": 27
+    },
+    "local_markdown_references": 383,
+    "broken_local_references": [],
+    "scope": "Navigation, byte identity, metadata/packet preservation, CLI filtering and SQLite integrity; not new source review or model reasoning evaluation."
+  },
+  "browser_validation": {
+    "status": "passed",
+    "browser": "Chromium 153 headless via Playwright",
+    "standalone_file": true,
+    "offline": true,
+    "embedded_images_decoded": 504,
+    "broken_images": [],
+    "all_robot_details": 125,
+    "all_binder_details": 125,
+    "full_size_view": true,
+    "download_original_bytes": true,
+    "deep_image_link": true,
+    "markdown_image_render": true,
+    "technical_text_search": true,
+    "agent_tab": true,
+    "desktop_overflow": false,
+    "mobile_overflow": false,
+    "remote_requests": 0,
+    "page_errors": []
+  },
+  "reader_logic": {
+    "checks": 25,
+    "status": "passed",
+    "all_robot_details": 125,
+    "all_binder_audits": 125,
+    "browser_layout": false
+  },
+  "portable_rebuild": {
+    "status": "passed",
+    "equal_tables": 24,
+    "differences": [],
+    "row_counts": {
+      "cad_code_links": 375,
+      "context_documents": 40,
+      "einstein_reviews": 80,
+      "binder_sources": 29,
+      "source_posts": 3499,
+      "robot_sources": 513,
+      "subsystems": 750,
+      "technical_parameters": 121,
+      "season_epa": 17330,
+      "technical_mechanisms": 129,
+      "seasons": 5,
+      "events": 75,
+      "video_reviews": 44,
+      "tower_summary_2026": 8,
+      "matches": 7995,
+      "robot_dossiers": 125,
+      "versions": 207,
+      "selection_audit": 154,
+      "mechanism_images": 504,
+      "sources": 4259,
+      "benchmarks": 58,
+      "binder_audit": 125,
+      "team_events": 4021,
+      "metadata": 51
+    },
+    "scope": "All normalized exported tables; FTS internal tables are derived separately."
+  },
+  "prior_technical_review_validation": "validation/technical_edition_v3.json",
+  "limitations": [
+    "No new external source research, source-availability audit, mechanism testing, or visual match audit in this edition.",
+    "Agent evaluation cases are authored rubrics; no model-reasoning accuracy result is claimed.",
+    "125 dossiers remain provisional; reviewed technical publications cover 27 robot-years; exhaustive version certifications remain zero."
+  ]
+}

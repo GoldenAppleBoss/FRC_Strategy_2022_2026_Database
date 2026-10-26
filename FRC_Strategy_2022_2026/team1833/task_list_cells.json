@@ -1,0 +1,4658 @@
+[
+  {
+    "sheet": "Group 2",
+    "cell": "A1",
+    "value": "  ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C1",
+    "value": "Points",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "D1",
+    "value": "Priority List",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F1",
+    "value": "Difficulty (1,2,3,5,8,13,21)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "G1",
+    "value": "Overall Score",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "H1",
+    "value": "Group 6 - https://docs.google.com/spreadsheets/d/1CVW24HBZs0Kpfu2yBU5kTnMvuRQWrvOGGUSJUOsGH_M/edit?usp=sharing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "A2",
+    "value": "Mobility",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C2",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B3",
+    "value": "Drive in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C3",
+    "value": "/`",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E3",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F3",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B4",
+    "value": "Drive over BUMP",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C4",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E4",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F4",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B5",
+    "value": "Drive under TRENCH",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C5",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E5",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F5",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B6",
+    "value": "Vision-based driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C6",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E6",
+    "value": "*",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F6",
+    "value": 7.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "L6",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "M6",
+    "value": "Driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B7",
+    "value": "Detatch Climb from TOWER L1",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C7",
+    "value": -15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E7",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F7",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "L7",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "M7",
+    "value": "Intake Ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B8",
+    "value": "Higher torque ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C8",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E8",
+    "value": "*",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F8",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "L8",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "M8",
+    "value": "Score in Hub",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B9",
+    "value": "Shooting while moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E9",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F9",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "L9",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "M9",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B10",
+    "value": "Detecting fuel while on the ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E10",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F10",
+    "value": "*",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "L10",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "M10",
+    "value": "Ferrying From Middle",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B11",
+    "value": "Programmtically detecting if the hub is active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E11",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F11",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "L11",
+    "value": 6.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C12",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "A13",
+    "value": "Collect",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C13",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B14",
+    "value": "Collect FUEL off GROUND (NEUTRAL ZONE)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C14",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "D14",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E14",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F14",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B15",
+    "value": "Collect FUEL in AUTON from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C15",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E15",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F15",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B16",
+    "value": "Collect FUEL in AUTON from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C16",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E16",
+    "value": 7.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F16",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B17",
+    "value": "Collect FUEL in TElEOP from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E17",
+    "value": 7.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F17",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B18",
+    "value": "Collect FUEL in TELEOP from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E18",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F18",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "A22",
+    "value": "Control",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B23",
+    "value": "Scoring in HUB when active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C23",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "D23",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E23",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F23",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B24",
+    "value": "Placing FUEL in the CORRAL",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C24",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "D24",
+    "value": "`",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E24",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F24",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B25",
+    "value": "Ferrying from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C25",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E25",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F25",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B26",
+    "value": "Ferry from opposite ALLIANCE ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C26",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E26",
+    "value": 6.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F26",
+    "value": 7.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "A29",
+    "value": "Scoring",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B30",
+    "value": "Scoring in AUTON ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C30",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E30",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F30",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B31",
+    "value": "Scoring in TELEOP when HUB is Active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C31",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E31",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F31",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B32",
+    "value": "Climbing L1 in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C32",
+    "value": 15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E32",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F32",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B33",
+    "value": "Scoring While Climbing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C33",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E33",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F33",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B34",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C34",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E34",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F34",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B35",
+    "value": "L2 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C35",
+    "value": 20.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E35",
+    "value": 6.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F35",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B36",
+    "value": "L3 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C36",
+    "value": 30.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E36",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F36",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B37",
+    "value": "Climb besides somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E37",
+    "value": "*",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B38",
+    "value": "Climb beneath somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E38",
+    "value": "*",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B39",
+    "value": "Climb above somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E39",
+    "value": "*",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B40",
+    "value": "Scoring in HUB when inactive",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "C40",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E40",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F40",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B41",
+    "value": "Shooting while robot is moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E41",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F41",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "A45",
+    "value": "Alignment",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B46",
+    "value": "Aligning to shoot into the HUB",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E46",
+    "value": 9.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F46",
+    "value": 6.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B47",
+    "value": "Align to ferry from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E47",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F47",
+    "value": 6.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "B48",
+    "value": "Aligning to climb for 3 levels",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "E48",
+    "value": 6.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 2",
+    "cell": "F48",
+    "value": 4.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C1",
+    "value": "Points",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "D1",
+    "value": "Priority List",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E1",
+    "value": "Priority (1>2>3) (1 is most)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F1",
+    "value": "Difficulty (1,2,3,5,8,13,21)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G1",
+    "value": "Overall Score",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "H1",
+    "value": "Group 6 - https://docs.google.com/spreadsheets/d/1CVW24HBZs0Kpfu2yBU5kTnMvuRQWrvOGGUSJUOsGH_M/edit?usp=sharing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B2",
+    "value": "Drive in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C2",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E2",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F2",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G2",
+    "value": "=E2*F2",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B3",
+    "value": "Higher torque ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C3",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E3",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F3",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G3",
+    "value": "=E3*F3",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B4",
+    "value": "Collect FUEL off GROUND (NEUTRAL ZONE)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C4",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E4",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F4",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G4",
+    "value": "=E4*F4",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B5",
+    "value": "Collect FUEL in AUTON from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C5",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E5",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F5",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G5",
+    "value": "=E5*F5",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B6",
+    "value": "Collect FUEL in TELEOP from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C6",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E6",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F6",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G6",
+    "value": "=E6*F6",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B7",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C7",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E7",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F7",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G7",
+    "value": "=E7*F7",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B8",
+    "value": "Aligning to climb for 3 levels",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E8",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F8",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G8",
+    "value": "=E8*F8",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B9",
+    "value": "Detatch Climb from TOWER L1",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C9",
+    "value": -15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E9",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F9",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G9",
+    "value": "=E9*F9",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B10",
+    "value": "Collect FUEL in AUTON from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C10",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E10",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F10",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G10",
+    "value": "=E10*F10",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B11",
+    "value": "Collect FUEL in TELEOP from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C11",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E11",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F11",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G11",
+    "value": "=E11*F11",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B12",
+    "value": "Scoring in HUB when active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C12",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E12",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F12",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G12",
+    "value": "=E12*F12",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B13",
+    "value": "Scoring in AUTON ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C13",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E13",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F13",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G13",
+    "value": "=E13*F13",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B14",
+    "value": "Scoring in TELEOP when HUB is Active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C14",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E14",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F14",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G14",
+    "value": "=E14*F14",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B15",
+    "value": "Climb besides somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E15",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F15",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G15",
+    "value": "=E15*F15",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B16",
+    "value": "Vision-based driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C16",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E16",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F16",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G16",
+    "value": "=E16*F16",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B17",
+    "value": "Aligning to shoot into the HUB",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E17",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F17",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G17",
+    "value": "=E17*F17",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B18",
+    "value": "Placing FUEL in the CORRAL",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C18",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E18",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F18",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G18",
+    "value": "=E18*F18",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B19",
+    "value": "Ferrying from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C19",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E19",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F19",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G19",
+    "value": "=E19*F19",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B20",
+    "value": "Align to ferry from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E20",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F20",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G20",
+    "value": "=E20*F20",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B21",
+    "value": "Programmtically detecting if the hub is active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E21",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F21",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G21",
+    "value": "=E21*F21",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B22",
+    "value": "Scoring in HUB when inactive",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C22",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E22",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F22",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G22",
+    "value": "=E22*F22",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B23",
+    "value": "Drive over BUMP",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C23",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E23",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F23",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G23",
+    "value": "=E23*F23",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B24",
+    "value": "Ferry from opposite ALLIANCE ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C24",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E24",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F24",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G24",
+    "value": "=E24*F24",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B25",
+    "value": "Climbing L1 in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C25",
+    "value": 15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E25",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F25",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G25",
+    "value": "=E25*F25",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B26",
+    "value": "Detecting fuel while on the ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E26",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F26",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G26",
+    "value": "=E26*F26",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B27",
+    "value": "L2 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C27",
+    "value": 20.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E27",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F27",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G27",
+    "value": "=E27*F27",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B28",
+    "value": "L3 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C28",
+    "value": 30.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E28",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F28",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G28",
+    "value": "=E28*F28",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B29",
+    "value": "Climb above somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E29",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F29",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G29",
+    "value": "=E29*F29",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B30",
+    "value": "Drive under TRENCH",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C30",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E30",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F30",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G30",
+    "value": "=E30*F30",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B31",
+    "value": "Shooting while robot is moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E31",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F31",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G31",
+    "value": "=E31*F31",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B32",
+    "value": "Scoring While Climbing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C32",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E32",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F32",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G32",
+    "value": "=E32*F32",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "B33",
+    "value": "Climb beneath somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "E33",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "F33",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "G33",
+    "value": "=E33*F33",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "A34",
+    "value": "Mobility",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C34",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C35",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "A36",
+    "value": "Collect",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "C36",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "A40",
+    "value": "Control",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "A43",
+    "value": "Scoring",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group3",
+    "cell": "A47",
+    "value": "Alignment",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "A1",
+    "value": " ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C1",
+    "value": "Points",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "D1",
+    "value": "Priority List",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E1",
+    "value": "Priority (1 is most important)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F1",
+    "value": "Difficulty (1,2,3,5,8,13,21)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "G1",
+    "value": "Overall Score",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "H1",
+    "value": "Group 6 - https://docs.google.com/spreadsheets/d/1CVW24HBZs0Kpfu2yBU5kTnMvuRQWrvOGGUSJUOsGH_M/edit?usp=sharing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "A2",
+    "value": "Mobility",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C2",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B3",
+    "value": "Drive in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C3",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E3",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F3",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B4",
+    "value": "Drive over BUMP",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C4",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E4",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F4",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B5",
+    "value": "Drive under TRENCH",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C5",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E5",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F5",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B6",
+    "value": "Vision-based driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C6",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E6",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F6",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B7",
+    "value": "Detatch Climb from TOWER L1",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C7",
+    "value": -15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E7",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F7",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B8",
+    "value": "Higher torque ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C8",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E8",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F8",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B9",
+    "value": "Shooting while moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E9",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F9",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B10",
+    "value": "Detecting fuel while on the ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E10",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F10",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B11",
+    "value": "Programmtically detecting if the hub is active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E11",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F11",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C12",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "A13",
+    "value": "Collect",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C13",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B14",
+    "value": "Collect FUEL off GROUND (NEUTRAL ZONE)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C14",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E14",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F14",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B15",
+    "value": "Collect FUEL in AUTON from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C15",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E15",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F15",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B16",
+    "value": "Collect FUEL in AUTON from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C16",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E16",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F16",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B17",
+    "value": "Collect FUEL in TElEOP from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E17",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F17",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B18",
+    "value": "Collect FUEL in TELEOP from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E18",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F18",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B20",
+    "value": " ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "A22",
+    "value": "Control",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B23",
+    "value": "Scoring in HUB when active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C23",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E23",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F23",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B24",
+    "value": "Placing FUEL in the CORRAL",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C24",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E24",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F24",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B25",
+    "value": "Ferrying from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C25",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E25",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F25",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B26",
+    "value": "Ferry from opposite ALLIANCE ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C26",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E26",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F26",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "A29",
+    "value": "Scoring",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B30",
+    "value": "Scoring in AUTON ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C30",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E30",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F30",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B31",
+    "value": "Scoring in TELEOP when HUB is Active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C31",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E31",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F31",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B32",
+    "value": "Climbing L1 in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C32",
+    "value": 15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E32",
+    "value": "1 in quals, 2 in elims",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F32",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B33",
+    "value": "Scoring While Climbing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C33",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E33",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F33",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B34",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C34",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E34",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F34",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B35",
+    "value": "L2 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C35",
+    "value": 20.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E35",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F35",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B36",
+    "value": "L3 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C36",
+    "value": 30.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E36",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F36",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B37",
+    "value": "Climb besides somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E37",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F37",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B38",
+    "value": "Climb beneath somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C38",
+    "value": " ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E38",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F38",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B39",
+    "value": "Climb above somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E39",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F39",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B40",
+    "value": "Scoring in HUB when inactive",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "C40",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E40",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F40",
+    "value": 21.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B41",
+    "value": "Shooting while robot is moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E41",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F41",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "A45",
+    "value": "Alignment",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B46",
+    "value": "Aligning to shoot into the HUB",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E46",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F46",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B47",
+    "value": "Align to ferry from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E47",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F47",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "B48",
+    "value": "Aligning to climb for one of the 3 levels",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "E48",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Group 4",
+    "cell": "F48",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "A1",
+    "value": "  ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B1",
+    "value": " ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C1",
+    "value": "Points",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "D1",
+    "value": "Priority List",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E1",
+    "value": "Priority (1<2<3) (1 is most important)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F1",
+    "value": "Difficulty (1,2,3,5,8,13,21)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G1",
+    "value": "Overall Score",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "H1",
+    "value": "Group 6 - https://docs.google.com/spreadsheets/d/1CVW24HBZs0Kpfu2yBU5kTnMvuRQWrvOGGUSJUOsGH_M/edit?usp=sharing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I1",
+    "value": "MUST DO:",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J1",
+    "value": "MIGHT DO: ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "K1",
+    "value": "WON'T DO:",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "A2",
+    "value": "Mobility",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C2",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I2",
+    "value": "Drive in Teleop",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J2",
+    "value": "Higher Torque",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "K2",
+    "value": "Placing FUEL in the CORRAL",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B3",
+    "value": "Drive in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C3",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E3",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F3",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G3",
+    "value": "=F3*E3",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I3",
+    "value": "Drive In Auton",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J3",
+    "value": "Shoot on the move",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "K3",
+    "value": "Scoring While Climbing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B4",
+    "value": "Drive over BUMP",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C4",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E4",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F4",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G4",
+    "value": "=F4*E4",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I4",
+    "value": "Drive over bump",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J4",
+    "value": "Detecting fuel on the ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "K4",
+    "value": "L2 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B5",
+    "value": "Drive under TRENCH",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C5",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E5",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F5",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G5",
+    "value": "=F5*E5",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I5",
+    "value": "Vision-Based Driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J5",
+    "value": "Collect FUEL in AUTON from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "K5",
+    "value": "Climb beneath somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B6",
+    "value": "Vision-based driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C6",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E6",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F6",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G6",
+    "value": "=F6*E6",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I6",
+    "value": "Detecting if hub is active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J6",
+    "value": "Collect FUEL in AUTON from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B7",
+    "value": "Detatch Climb from TOWER L1",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C7",
+    "value": -15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E7",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F7",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G7",
+    "value": "=F7*E7",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I7",
+    "value": "Scoring in HUB when active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J7",
+    "value": "Collect FUEL in TELEOP from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B8",
+    "value": "Higher torque ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C8",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E8",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F8",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G8",
+    "value": "=F8*E8",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I8",
+    "value": "Scoring in AUTON ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J8",
+    "value": "Collect FUEL in TELEOP from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B9",
+    "value": "Shooting while moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E9",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F9",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G9",
+    "value": "=F9*E9",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I9",
+    "value": "Scoring in TELEOP when HUB is Active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J9",
+    "value": "Climbing L1 in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B10",
+    "value": "Detecting fuel while on the ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E10",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F10",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G10",
+    "value": "=F10*E10",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I10",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J10",
+    "value": "L3 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B11",
+    "value": "Programmtically detecting if the hub is active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E11",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F11",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G11",
+    "value": "=F11*E11",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I11",
+    "value": "Climb besides somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "J11",
+    "value": "Ferry from opposite ALLIANCE ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C12",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G12",
+    "value": "=F12*E12",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I12",
+    "value": "Climb above somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "A13",
+    "value": "Collect",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C13",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G13",
+    "value": "=F13*E13",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I13",
+    "value": "Aligning to shoot into the HUB",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B14",
+    "value": "Collect FUEL off GROUND (NEUTRAL ZONE)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C14",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E14",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F14",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G14",
+    "value": "=F14*E14",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I14",
+    "value": "Align to ferry from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B15",
+    "value": "Collect FUEL in AUTON from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C15",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E15",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F15",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G15",
+    "value": "=F15*E15",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I15",
+    "value": "Aligning to climb for 3 levels",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B16",
+    "value": "Collect FUEL in AUTON from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C16",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E16",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F16",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G16",
+    "value": "=F16*E16",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I16",
+    "value": "Ferrying from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B17",
+    "value": "Collect FUEL in TElEOP from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E17",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F17",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G17",
+    "value": "=F17*E17",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I17",
+    "value": "Collect FUEL in AUTON from GROUND",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B18",
+    "value": "Collect FUEL in TELEOP from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E18",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F18",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G18",
+    "value": "=F18*E18",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "I18",
+    "value": "Collect FUEL in Teleop from Ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G19",
+    "value": "=F19*E19",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G20",
+    "value": "=F20*E20",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G21",
+    "value": "=F21*E21",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "A22",
+    "value": "Control",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G22",
+    "value": "=F22*E22",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B23",
+    "value": "Scoring in HUB when active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C23",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E23",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F23",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G23",
+    "value": "=F23*E23",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B24",
+    "value": "Placing FUEL in the CORRAL",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C24",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E24",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F24",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G24",
+    "value": "=F24*E24",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B25",
+    "value": "Ferrying from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C25",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E25",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F25",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G25",
+    "value": "=F25*E25",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B26",
+    "value": "Ferry from opposite ALLIANCE ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C26",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E26",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F26",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G26",
+    "value": "=F26*E26",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G27",
+    "value": "=F27*E27",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G28",
+    "value": "=F28*E28",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "A29",
+    "value": "Scoring",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G29",
+    "value": "=F29*E29",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B30",
+    "value": "Scoring in AUTON ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C30",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E30",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F30",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G30",
+    "value": "=F30*E30",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B31",
+    "value": "Scoring in TELEOP when HUB is Active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C31",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E31",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F31",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G31",
+    "value": "=F31*E31",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B32",
+    "value": "Climbing L1 in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C32",
+    "value": 15.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E32",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F32",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G32",
+    "value": "=F32*E32",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B33",
+    "value": "Scoring While Climbing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C33",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E33",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F33",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G33",
+    "value": "=F33*E33",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B34",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C34",
+    "value": 10.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E34",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F34",
+    "value": 5.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G34",
+    "value": "=F34*E34",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B35",
+    "value": "L2 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C35",
+    "value": 20.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E35",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F35",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G35",
+    "value": "=F35*E35",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B36",
+    "value": "L3 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C36",
+    "value": 30.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E36",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F36",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G36",
+    "value": "=F36*E36",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B37",
+    "value": "Climb besides somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "D37",
+    "value": " ",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E37",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F37",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G37",
+    "value": "=F37*E37",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B38",
+    "value": "Climb beneath somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E38",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F38",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G38",
+    "value": "=F38*E38",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B39",
+    "value": "Climb above somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E39",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F39",
+    "value": 8.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G39",
+    "value": "=F39*E39",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B40",
+    "value": "Scoring in HUB when inactive",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "C40",
+    "value": 0.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E40",
+    "value": 3.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F40",
+    "value": 21.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G40",
+    "value": "=F40*E40",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B41",
+    "value": "Climb l1 besides someone in auton",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E41",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F41",
+    "value": 13.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G41",
+    "value": "=F41*E41",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G42",
+    "value": "=F42*E42",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G43",
+    "value": "=F43*E43",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G44",
+    "value": "=F44*E44",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "A45",
+    "value": "Alignment",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G45",
+    "value": "=F45*E45",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B46",
+    "value": "Aligning to shoot into the HUB",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E46",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F46",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G46",
+    "value": "=F46*E46",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B47",
+    "value": "Align to ferry from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E47",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F47",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G47",
+    "value": "=F47*E47",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "B48",
+    "value": "Aligning to climb for 3 levels",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "E48",
+    "value": 1.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "F48",
+    "value": 2.0,
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet1",
+    "cell": "G48",
+    "value": "=F48*E48",
+    "kind": "formula"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "A1",
+    "value": "Task",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "B1",
+    "value": "Status",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "C1",
+    "value": "Owner",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "D1",
+    "value": "Stage",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "E1",
+    "value": "Due date",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "F1",
+    "value": "Notes",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "B2",
+    "value": "Not started",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "D2",
+    "value": "Pre-event",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "B3",
+    "value": "In progress",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "D3",
+    "value": "Day of",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "B4",
+    "value": "Blocked",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "D4",
+    "value": "Post-event",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Sheet4",
+    "cell": "B5",
+    "value": "Completed",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A1",
+    "value": "Mobility",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B1",
+    "value": "Priority",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C1",
+    "value": "Final Decision",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A2",
+    "value": "Drive in autonomous",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B2",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C2",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A3",
+    "value": "Drive in teleop",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B3",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C3",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A4",
+    "value": "Drive over BUMP",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B4",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C4",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A5",
+    "value": "Drive under TRENCH",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B5",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C5",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A6",
+    "value": "Vision-based driving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B6",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C6",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A7",
+    "value": "Detatch Climb from TOWER L1",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B7",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C7",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A8",
+    "value": "Shooting while moving",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B8",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C8",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A9",
+    "value": "Detecting fuel while on the ground",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B9",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C9",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A10",
+    "value": "Programmtically detecting if the hub is active",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B10",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C10",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A11",
+    "value": "Collect",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A12",
+    "value": "Collect FUEL off GROUND (NEUTRAL ZONE)",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B12",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C12",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A13",
+    "value": "Collect FUEL in AUTON from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B13",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C13",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A14",
+    "value": "Collect FUEL in AUTON from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B14",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C14",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A15",
+    "value": "Collect FUEL in TElEOP from OUTPOST",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B15",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C15",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A16",
+    "value": "Collect FUEL in TELEOP from DEPOT",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B16",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C16",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A17",
+    "value": "Control",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A18",
+    "value": "Placing FUEL in the CORRAL",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B18",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C18",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A19",
+    "value": "Ferrying from NEUTRAL ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B19",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C19",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A20",
+    "value": "Ferry from opposite ALLIANCE ZONE",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B20",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C20",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A21",
+    "value": "Scoring",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A22",
+    "value": "Shoot fuel into hub in autonomous",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B22",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C22",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A23",
+    "value": "Shoot fuel into hub in teleop",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B23",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C23",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A24",
+    "value": "Climbing L1 in AUTON",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B24",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C24",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A25",
+    "value": "Scoring While Climbing",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B25",
+    "value": "Won't do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C25",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A26",
+    "value": "L1 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B26",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C26",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A27",
+    "value": "L2 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B27",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C27",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A28",
+    "value": "L3 Climb",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B28",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C28",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A29",
+    "value": "L1 climb next to somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B29",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C29",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A30",
+    "value": "L2 climb next to somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B30",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C30",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A31",
+    "value": "L3 climb next to somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B31",
+    "value": "Won't do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C31",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A32",
+    "value": "Climb beneath somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B32",
+    "value": "Must do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C32",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A33",
+    "value": "Climb above somebody",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B33",
+    "value": "Might do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C33",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A34",
+    "value": "Scoring in HUB when inactive",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B34",
+    "value": "Won't do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C34",
+    "value": "No",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "A35",
+    "value": "L1 climb next to somebody in autonomous",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "B35",
+    "value": "Won't do",
+    "kind": "source_value"
+  },
+  {
+    "sheet": "Coopers Cleaned Up Task List",
+    "cell": "C35",
+    "value": "No",
+    "kind": "source_value"
+  }
+]

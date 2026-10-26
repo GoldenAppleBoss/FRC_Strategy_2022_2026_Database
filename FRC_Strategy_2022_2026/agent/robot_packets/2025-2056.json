@@ -1,0 +1,1105 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-2056",
+  "year": 2025,
+  "team": 2056,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 2056,
+    "robot": "OP Robotics 2025",
+    "primary": [
+      "https://youtu.be/qcZ93ukPebg",
+      "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf"
+    ],
+    "architecture": "Ground-fed elevator scorer that can retain coral while handling algae.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification deferred to team binder.",
+      "intake": "Floating-front slapdown with kicker/star wheels accepts arbitrary coral orientation.",
+      "transfer": "Independently powered Straightenator sides use current detection and brief reversal to resolve parallel-pipe jams.",
+      "scoring": "Light sheet-metal shared gripper, internally belted two-motor elevator. Hybrid cycles retain coral while moving algae to reduce duplicated travel.",
+      "endgame": "Single-motor ratcheted hanger; horns guide a cage peg and protrusion/magnet resist cage rotation.",
+      "controls": "One driver, two human players. Piece detection corrects floor pickup; two tag cameras maintain reef alignment. Team describes a specific five-coral autonomous at Worlds."
+    },
+    "versions": [
+      "First-piece starting angle changed after first event; continued path, handoff and alignment optimization produced the reported five-piece routine."
+    ],
+    "analysis": "The architecture is a coordinated logistics system: two human players supply floor-fed coral, a wide intake removes orientation cost, and independent storage permits useful algae work during a coral route. Five-piece autonomous is the result of minimizing many delays, not just elevator speed.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2025-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OPR 2025: floating capture and protected pivot drive\n\nVersion: 2025 REEFSCAPE robot. [PDF p7](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=7) · [PDF p8](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=8)\n\n**Published construction:** 20-inch OTB intake; coaxial roller drive; synchronized pivot sides; floating upper roller.\n\n**Team-stated reason or evidence boundary:** Tolerant coral pickup with motors protected in the frame.\n\n**Engineering analysis — original inference:** Coaxial power transmission lets a roller remain driven as the intake pivots without a long changing-center belt run. The floating contact accommodates an awkward tube orientation while the lower contact keeps it moving into the robot. Synchronizing both sides resists twist, but an impact can still concentrate load at the polycarbonate-to-aluminum joint. Large clamps distribute this force and retain the bearing as the plate flexes. Automatic retraction protects the collector only after the sensor has confirmed that the tube is safely inside.\n\n**Proposed validation — not a completed test:** Test diagonal pickup, asymmetric loading and capture-triggered retraction; inspect bearing retention following a side impact.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: independent straightening drives and staged cradle sensing\n\nVersion: 2025 REEFSCAPE robot. [PDF p9](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=9) · [PDF p10](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=10) · [PDF p11](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=11) · [PDF p12](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=12)\n\n**Published construction:** Independently driven straightener sides; current-triggered reversal; two-sensor cradle with anti-bounce step.\n\n**Team-stated reason or evidence boundary:** Align coral and recover jams before handoff.\n\n**Engineering analysis — original inference:** Independent sides permit relative slip or reversal instead of forcing both ends of a tube forward at the same speed. Current sensing can identify resistance, but must distinguish a normal capture transient from a persistent jam. The cradle then changes the problem from continuous alignment to a discrete known handoff position. A stop lip and anti-bounce feature control longitudinal motion, while cutouts provide room for the receiving gripper. Excessively constraining the tube at the same time as the gripper closes can create a new jam, so the handoff sequence matters as much as the tray shape.\n\n**Proposed validation — not a completed test:** Feed tubes at skewed angles, tune jam detection against false triggers, and test receiver clearance during an interrupted handoff.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: reduce moving inertia without losing algae grip\n\nVersion: 2025 REEFSCAPE robot. [PDF p13](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=13) · [PDF p14](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=14)\n\n**Published construction:** Formed-sheet arm replaced tubing; lighter geared gripper drive; remoted motor; velocity-matched coral ejection.\n\n**Team-stated reason or evidence boundary:** Reduce mass and pivot moment while keeping functional grip.\n\n**Engineering analysis — original inference:** Removing mass far from the pivot reduces inertia more effectively than removing the same mass near the axis. A remoted motor achieves that while adding a transmission whose backlash and compliance must be controlled. Formed sheet can provide a stiff section with low mass if the flanges and joints react the actual loads. Matching ejection to chassis motion can reduce unwanted relative velocity at release, but requires consistent roller surface speed and piece position. It is a coordinated robot motion, not a passive property of the gripper.\n\n**Proposed validation — not a completed test:** Measure tip settling and grip under acceleration; test scoring while approaching and backing away at several speeds.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: stiff internally belted elevator\n\nVersion: 2025 REEFSCAPE robot. [PDF p15](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=15) · [PDF p16](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=16)\n\n**Published construction:** Two-stage continuous lift, internal 18-mm HTD belt, two X60s; reported about 0.6-second travel.\n\n**Team-stated reason or evidence boundary:** Fast motion with lateral stiffness and camera visibility.\n\n**Engineering analysis — original inference:** The upright supports, top bridge and bearing guidance determine how much commanded height becomes actual end-effector position. Internal belts protect the tension path but demand a practical inspection and replacement route. Integrating a wrist gearbox into the carriage removes interfaces while increasing the consequences of a carriage service problem. Cameras on both uprights can preserve tag visibility as the robot approaches different branch sides, but their structural reference must remain stable as the lift moves.\n\n**Proposed validation — not a completed test:** Measure tip error at full and intermediate height during chassis braking; verify camera visibility and calibration on both scoring sides.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: lightweight winch and guided cage capture\n\nVersion: 2025 REEFSCAPE robot. [PDF p17](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=17) · [PDF p18](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=18)\n\n**Published construction:** 4.5-pound climbing package; rope winch, ratchet, sprung deployment and printed cage guides.\n\n**Team-stated reason or evidence boundary:** Easy alignment, legal cage clearance and power-off retention.\n\n**Engineering analysis — original inference:** A guide can enlarge the capture envelope without adding an actuator, but its shape must not let the cage rotate into the elevator or chain contact an illegal surface. Rope lifting places high local loads at the spool, attachment and pivot; these should be checked independently of motor torque. A ratchet provides a mechanical holding path after disable, while the magnet and collars manage capture and slippage. The architecture record should identify which elements guide, which retain and which actually carry the robot.\n\n**Proposed validation — not a completed test:** Test rotating and swinging cages, inspect the rope at attachment bends, and verify chain clearance through the full lift.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 4:1 roller; 51:1 deploy; 20-in mouth | [Source p7](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=7) |\n| Straightener | separate X44 sides; 3:1 | [Source p9](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=9) |\n| Arm/gripper | 59:1 pivot; 19.5:1 gripper | [Source p13](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=13) |\n| Lift | 5:1; 30T pulley; two X60s; reported ~0.6 s | [Source p15](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=15) |\n| Climb | 18:1; 3/4-in spool; 4.5 lb | [Source p17](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=17) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2025-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/502550/23",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/f/e/6fe4f51db45960f42f7f8dfcad3103b255003157_2_408x375.png",
+        "post": 23,
+        "date": "2025-05-30T02:59:22.600Z",
+        "author": "Nick.kremer",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2025 team 2056 — source image from post 23 (2025-05-30). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "4db138aa1492d35cd3.jpg",
+        "id": "b4ce1afbe25b794697",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/4db138aa1492d35cd3.jpg"
+      },
+      {
+        "robot_id": "2025-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/502550/23",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/6/0/260a7348103efc0aff40831a8f0bdae4e6d538cf_2_375x500.jpeg",
+        "post": 23,
+        "date": "2025-05-30T02:59:22.600Z",
+        "author": "Nick.kremer",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2025 team 2056 — source image from post 23 (2025-05-30). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "9bb6cd31d7fe446c5f.jpg",
+        "id": "75b5b304e7b55347ff",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/9bb6cd31d7fe446c5f.jpg"
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p6-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p6-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=6",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Drivebase · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          722.2000122070312
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p8-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p8-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=8",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Ground intake · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Ground intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          724.25
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p10-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p10-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=10",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Straightenator · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Straightenator",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.00408935546875,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p12-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p12-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=12",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Coral cradle · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Coral cradle",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p14-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 14,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p14-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=14",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Gripper arm · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Gripper arm",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 14
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p16-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 16,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p16-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=16",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Elevator · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Elevator",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 16
+      },
+      {
+        "id": "binder-cb12c402d721aad7df-p18-1",
+        "robot_id": "2025-2056",
+        "kind": "binder_figure",
+        "binder_id": "cb12c402d721aad7df",
+        "pdf_page": 18,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-cb12c402d721aad7df-p18-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=18",
+        "caption": "2025-2056 · 2025 REEFSCAPE robot · Cage climber · PDF page 18, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Cage climber",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          611.989990234375,
+          790.7999877929688
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 18
+      }
+    ],
+    "source_post_count": 93,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-2056",
+        "discovery_post": "2025-2056-502550-170",
+        "url": "https://drive.google.com/file/d/1qDfApPIipNq2SYCu0KaWWWhpbQu_U2vP/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7859aafe8b4f668730"
+      },
+      {
+        "robot_id": "2025-2056",
+        "discovery_post": "2025-2056-502550-170",
+        "url": "https://drive.google.com/file/d/1Lnc-g8-kltmZmmT1B8xRsCJJnII0AQD6/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "1d2c9dcf490e3e2541"
+      }
+    ],
+    "id": "2025-2056",
+    "team_name": "OP Robotics",
+    "epa_rank": 1,
+    "epa": 120.05,
+    "epa_pre_champs": 111.22,
+    "epa_breakdown": {
+      "total_points": 120.05,
+      "auto_points": 31.62,
+      "teleop_points": 76.06,
+      "endgame_points": 12.37,
+      "auto_rp": 0.5244,
+      "coral_rp": 0.8417,
+      "barge_rp": 0.61783,
+      "tiebreaker_points": 0.19,
+      "auto_coral_points": 28.62,
+      "teleop_coral_points": 54.79,
+      "coral_l1": 4.74,
+      "coral_l2": 5.92,
+      "coral_l3": 5.76,
+      "coral_l4": 4.99,
+      "processor_algae": 0.54,
+      "processor_algae_points": 1.62,
+      "net_algae_points": 19.66,
+      "barge_points": 12.37,
+      "rp_1": 0.5244,
+      "rp_2": 0.8417,
+      "rp_3": 0.61783,
+      "total_coral_points": 83.41,
+      "total_algae_points": 21.28
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "04dfc0882aae5b2e"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-cb12c402d721aad7df-61",
+      "tech-cb12c402d721aad7df-62",
+      "tech-cb12c402d721aad7df-63",
+      "tech-cb12c402d721aad7df-64",
+      "tech-cb12c402d721aad7df-65"
+    ],
+    "binder_source_ids": [
+      "cb12c402d721aad7df"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-2056",
+      "year": 2025,
+      "team": 2056,
+      "epa_rank": 1,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"2056\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 22,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "cb12c402d721aad7df"
+      ],
+      "technical_note_ids": [
+        "tech-cb12c402d721aad7df-61",
+        "tech-cb12c402d721aad7df-62",
+        "tech-cb12c402d721aad7df-63",
+        "tech-cb12c402d721aad7df-64",
+        "tech-cb12c402d721aad7df-65"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "cb12c402d721aad7df",
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/502550/1",
+          "status": "technical_sections_reviewed"
+        },
+        {
+          "id": "c04695e84684d300e7",
+          "url": "https://drive.google.com/file/d/1qDfApPIipNq2SYCu0KaWWWhpbQu_U2vP/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/502550/170",
+          "status": "unavailable_or_not_pdf"
+        },
+        {
+          "id": "db0385aeb556cea47a",
+          "url": "https://drive.google.com/file/d/1Lnc-g8-kltmZmmT1B8xRsCJJnII0AQD6/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/502550/170",
+          "status": "unavailable_or_not_pdf"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "cb12c402d721aad7df",
+      "subsystem": "intake",
+      "title": "OPR 2025: floating capture and protected pivot drive",
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "construction": "20-inch OTB intake; coaxial roller drive; synchronized pivot sides; floating upper roller.",
+      "team_stated_reason": "Tolerant coral pickup with motors protected in the frame.",
+      "engineering_analysis": "Coaxial power transmission lets a roller remain driven as the intake pivots without a long changing-center belt run. The floating contact accommodates an awkward tube orientation while the lower contact keeps it moving into the robot. Synchronizing both sides resists twist, but an impact can still concentrate load at the polycarbonate-to-aluminum joint. Large clamps distribute this force and retain the bearing as the plate flexes. Automatic retraction protects the collector only after the sensor has confirmed that the tube is safely inside.",
+      "recommended_validation": "Test diagonal pickup, asymmetric loading and capture-triggered retraction; inspect bearing retention following a side impact.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-cb12c402d721aad7df-61",
+      "robot_id": "2025-2056",
+      "year": 2025,
+      "version_label": "2025 REEFSCAPE robot",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=7"
+        },
+        {
+          "pdf_page": 8,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=8"
+        }
+      ],
+      "image_ids": [
+        "binder-cb12c402d721aad7df-p8-1"
+      ]
+    },
+    {
+      "binder_id": "cb12c402d721aad7df",
+      "subsystem": "transfer",
+      "title": "OPR 2025: independent straightening drives and staged cradle sensing",
+      "pdf_pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "construction": "Independently driven straightener sides; current-triggered reversal; two-sensor cradle with anti-bounce step.",
+      "team_stated_reason": "Align coral and recover jams before handoff.",
+      "engineering_analysis": "Independent sides permit relative slip or reversal instead of forcing both ends of a tube forward at the same speed. Current sensing can identify resistance, but must distinguish a normal capture transient from a persistent jam. The cradle then changes the problem from continuous alignment to a discrete known handoff position. A stop lip and anti-bounce feature control longitudinal motion, while cutouts provide room for the receiving gripper. Excessively constraining the tube at the same time as the gripper closes can create a new jam, so the handoff sequence matters as much as the tray shape.",
+      "recommended_validation": "Feed tubes at skewed angles, tune jam detection against false triggers, and test receiver clearance during an interrupted handoff.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-cb12c402d721aad7df-62",
+      "robot_id": "2025-2056",
+      "year": 2025,
+      "version_label": "2025 REEFSCAPE robot",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 9,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=9"
+        },
+        {
+          "pdf_page": 10,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=10"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=11"
+        },
+        {
+          "pdf_page": 12,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=12"
+        }
+      ],
+      "image_ids": [
+        "binder-cb12c402d721aad7df-p10-1",
+        "binder-cb12c402d721aad7df-p12-1"
+      ]
+    },
+    {
+      "binder_id": "cb12c402d721aad7df",
+      "subsystem": "scoring",
+      "title": "OPR 2025: reduce moving inertia without losing algae grip",
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "construction": "Formed-sheet arm replaced tubing; lighter geared gripper drive; remoted motor; velocity-matched coral ejection.",
+      "team_stated_reason": "Reduce mass and pivot moment while keeping functional grip.",
+      "engineering_analysis": "Removing mass far from the pivot reduces inertia more effectively than removing the same mass near the axis. A remoted motor achieves that while adding a transmission whose backlash and compliance must be controlled. Formed sheet can provide a stiff section with low mass if the flanges and joints react the actual loads. Matching ejection to chassis motion can reduce unwanted relative velocity at release, but requires consistent roller surface speed and piece position. It is a coordinated robot motion, not a passive property of the gripper.",
+      "recommended_validation": "Measure tip settling and grip under acceleration; test scoring while approaching and backing away at several speeds.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-cb12c402d721aad7df-63",
+      "robot_id": "2025-2056",
+      "year": 2025,
+      "version_label": "2025 REEFSCAPE robot",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 13,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=13"
+        },
+        {
+          "pdf_page": 14,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=14"
+        }
+      ],
+      "image_ids": [
+        "binder-cb12c402d721aad7df-p14-1"
+      ]
+    },
+    {
+      "binder_id": "cb12c402d721aad7df",
+      "subsystem": "positioning",
+      "title": "OPR 2025: stiff internally belted elevator",
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "construction": "Two-stage continuous lift, internal 18-mm HTD belt, two X60s; reported about 0.6-second travel.",
+      "team_stated_reason": "Fast motion with lateral stiffness and camera visibility.",
+      "engineering_analysis": "The upright supports, top bridge and bearing guidance determine how much commanded height becomes actual end-effector position. Internal belts protect the tension path but demand a practical inspection and replacement route. Integrating a wrist gearbox into the carriage removes interfaces while increasing the consequences of a carriage service problem. Cameras on both uprights can preserve tag visibility as the robot approaches different branch sides, but their structural reference must remain stable as the lift moves.",
+      "recommended_validation": "Measure tip error at full and intermediate height during chassis braking; verify camera visibility and calibration on both scoring sides.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-cb12c402d721aad7df-64",
+      "robot_id": "2025-2056",
+      "year": 2025,
+      "version_label": "2025 REEFSCAPE robot",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=15"
+        },
+        {
+          "pdf_page": 16,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=16"
+        }
+      ],
+      "image_ids": [
+        "binder-cb12c402d721aad7df-p16-1"
+      ]
+    },
+    {
+      "binder_id": "cb12c402d721aad7df",
+      "subsystem": "endgame",
+      "title": "OPR 2025: lightweight winch and guided cage capture",
+      "pdf_pages": [
+        17,
+        18
+      ],
+      "construction": "4.5-pound climbing package; rope winch, ratchet, sprung deployment and printed cage guides.",
+      "team_stated_reason": "Easy alignment, legal cage clearance and power-off retention.",
+      "engineering_analysis": "A guide can enlarge the capture envelope without adding an actuator, but its shape must not let the cage rotate into the elevator or chain contact an illegal surface. Rope lifting places high local loads at the spool, attachment and pivot; these should be checked independently of motor torque. A ratchet provides a mechanical holding path after disable, while the magnet and collars manage capture and slippage. The architecture record should identify which elements guide, which retain and which actually carry the robot.",
+      "recommended_validation": "Test rotating and swinging cages, inspect the rope at attachment bends, and verify chain clearance through the full lift.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-cb12c402d721aad7df-65",
+      "robot_id": "2025-2056",
+      "year": 2025,
+      "version_label": "2025 REEFSCAPE robot",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 17,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=17"
+        },
+        {
+          "pdf_page": 18,
+          "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=18"
+        }
+      ],
+      "image_ids": [
+        "binder-cb12c402d721aad7df-p18-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-cb12c402d721aad7df-1",
+      "binder_id": "cb12c402d721aad7df",
+      "robot_id": "2025-2056",
+      "pdf_page": 7,
+      "component": "Intake",
+      "published_parameters": "4:1 roller; 51:1 deploy; 20-in mouth",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=7",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-cb12c402d721aad7df-2",
+      "binder_id": "cb12c402d721aad7df",
+      "robot_id": "2025-2056",
+      "pdf_page": 9,
+      "component": "Straightener",
+      "published_parameters": "separate X44 sides; 3:1",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-cb12c402d721aad7df-3",
+      "binder_id": "cb12c402d721aad7df",
+      "robot_id": "2025-2056",
+      "pdf_page": 13,
+      "component": "Arm/gripper",
+      "published_parameters": "59:1 pivot; 19.5:1 gripper",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=13",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-cb12c402d721aad7df-4",
+      "binder_id": "cb12c402d721aad7df",
+      "robot_id": "2025-2056",
+      "pdf_page": 15,
+      "component": "Lift",
+      "published_parameters": "5:1; 30T pulley; two X60s; reported ~0.6 s",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=15",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-cb12c402d721aad7df-5",
+      "binder_id": "cb12c402d721aad7df",
+      "robot_id": "2025-2056",
+      "pdf_page": 17,
+      "component": "Climb",
+      "published_parameters": "18:1; 3/4-in spool; 4.5 lb",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=17",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "cb12c402d721aad7df",
+      "robot_id": "2025-2056",
+      "title": "2025-2056 2025 REEFSCAPE robot technical publication",
+      "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "format": "pdf",
+      "pages": 33,
+      "sha256": "5f5738b38e819860c048710d2edc4084c9328906ed93e2c8e1ce1a131f50cc1c",
+      "bytes": 17356770,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "figure_pages": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/502550/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2025-2056:publication-version:1",
+      "label": "2025 REEFSCAPE robot",
+      "robot_id": "2025-2056",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-cb12c402d721aad7df-61",
+        "tech-cb12c402d721aad7df-62",
+        "tech-cb12c402d721aad7df-63",
+        "tech-cb12c402d721aad7df-64",
+        "tech-cb12c402d721aad7df-65"
+      ],
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2025-2056",
+      "title": "2025-2056: technical construction and mechanism reasoning",
+      "year": 2025,
+      "robot_id": "2025-2056",
+      "kind": "robot_technical_review",
+      "body": "# 2025-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OPR 2025: floating capture and protected pivot drive\n\nVersion: 2025 REEFSCAPE robot. [PDF p7](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=7) · [PDF p8](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=8)\n\n**Published construction:** 20-inch OTB intake; coaxial roller drive; synchronized pivot sides; floating upper roller.\n\n**Team-stated reason or evidence boundary:** Tolerant coral pickup with motors protected in the frame.\n\n**Engineering analysis — original inference:** Coaxial power transmission lets a roller remain driven as the intake pivots without a long changing-center belt run. The floating contact accommodates an awkward tube orientation while the lower contact keeps it moving into the robot. Synchronizing both sides resists twist, but an impact can still concentrate load at the polycarbonate-to-aluminum joint. Large clamps distribute this force and retain the bearing as the plate flexes. Automatic retraction protects the collector only after the sensor has confirmed that the tube is safely inside.\n\n**Proposed validation — not a completed test:** Test diagonal pickup, asymmetric loading and capture-triggered retraction; inspect bearing retention following a side impact.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: independent straightening drives and staged cradle sensing\n\nVersion: 2025 REEFSCAPE robot. [PDF p9](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=9) · [PDF p10](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=10) · [PDF p11](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=11) · [PDF p12](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=12)\n\n**Published construction:** Independently driven straightener sides; current-triggered reversal; two-sensor cradle with anti-bounce step.\n\n**Team-stated reason or evidence boundary:** Align coral and recover jams before handoff.\n\n**Engineering analysis — original inference:** Independent sides permit relative slip or reversal instead of forcing both ends of a tube forward at the same speed. Current sensing can identify resistance, but must distinguish a normal capture transient from a persistent jam. The cradle then changes the problem from continuous alignment to a discrete known handoff position. A stop lip and anti-bounce feature control longitudinal motion, while cutouts provide room for the receiving gripper. Excessively constraining the tube at the same time as the gripper closes can create a new jam, so the handoff sequence matters as much as the tray shape.\n\n**Proposed validation — not a completed test:** Feed tubes at skewed angles, tune jam detection against false triggers, and test receiver clearance during an interrupted handoff.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: reduce moving inertia without losing algae grip\n\nVersion: 2025 REEFSCAPE robot. [PDF p13](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=13) · [PDF p14](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=14)\n\n**Published construction:** Formed-sheet arm replaced tubing; lighter geared gripper drive; remoted motor; velocity-matched coral ejection.\n\n**Team-stated reason or evidence boundary:** Reduce mass and pivot moment while keeping functional grip.\n\n**Engineering analysis — original inference:** Removing mass far from the pivot reduces inertia more effectively than removing the same mass near the axis. A remoted motor achieves that while adding a transmission whose backlash and compliance must be controlled. Formed sheet can provide a stiff section with low mass if the flanges and joints react the actual loads. Matching ejection to chassis motion can reduce unwanted relative velocity at release, but requires consistent roller surface speed and piece position. It is a coordinated robot motion, not a passive property of the gripper.\n\n**Proposed validation — not a completed test:** Measure tip settling and grip under acceleration; test scoring while approaching and backing away at several speeds.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: stiff internally belted elevator\n\nVersion: 2025 REEFSCAPE robot. [PDF p15](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=15) · [PDF p16](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=16)\n\n**Published construction:** Two-stage continuous lift, internal 18-mm HTD belt, two X60s; reported about 0.6-second travel.\n\n**Team-stated reason or evidence boundary:** Fast motion with lateral stiffness and camera visibility.\n\n**Engineering analysis — original inference:** The upright supports, top bridge and bearing guidance determine how much commanded height becomes actual end-effector position. Internal belts protect the tension path but demand a practical inspection and replacement route. Integrating a wrist gearbox into the carriage removes interfaces while increasing the consequences of a carriage service problem. Cameras on both uprights can preserve tag visibility as the robot approaches different branch sides, but their structural reference must remain stable as the lift moves.\n\n**Proposed validation — not a completed test:** Measure tip error at full and intermediate height during chassis braking; verify camera visibility and calibration on both scoring sides.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2025: lightweight winch and guided cage capture\n\nVersion: 2025 REEFSCAPE robot. [PDF p17](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=17) · [PDF p18](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=18)\n\n**Published construction:** 4.5-pound climbing package; rope winch, ratchet, sprung deployment and printed cage guides.\n\n**Team-stated reason or evidence boundary:** Easy alignment, legal cage clearance and power-off retention.\n\n**Engineering analysis — original inference:** A guide can enlarge the capture envelope without adding an actuator, but its shape must not let the cage rotate into the elevator or chain contact an illegal surface. Rope lifting places high local loads at the spool, attachment and pivot; these should be checked independently of motor torque. A ratchet provides a mechanical holding path after disable, while the magnet and collars manage capture and slippage. The architecture record should identify which elements guide, which retain and which actually carry the robot.\n\n**Proposed validation — not a completed test:** Test rotating and swinging cages, inspect the rope at attachment bends, and verify chain clearance through the full lift.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 4:1 roller; 51:1 deploy; 20-in mouth | [Source p7](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=7) |\n| Straightener | separate X44 sides; 3:1 | [Source p9](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=9) |\n| Arm/gripper | 59:1 pivot; 19.5:1 gripper | [Source p13](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=13) |\n| Lift | 5:1; 30T pulley; two X60s; reported ~0.6 s | [Source p15](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=15) |\n| Climb | 18:1; 3/4-in spool; 4.5 lb | [Source p17](https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=17) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf"
+      ],
+      "path": "docs/technical/2025-2056.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/502550/23",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/f/e/6fe4f51db45960f42f7f8dfcad3103b255003157_2_408x375.png",
+      "post": 23,
+      "date": "2025-05-30T02:59:22.600Z",
+      "author": "Nick.kremer",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2025 team 2056 — source image from post 23 (2025-05-30). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "4db138aa1492d35cd3.jpg",
+      "id": "b4ce1afbe25b794697",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/4db138aa1492d35cd3.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 408,
+      "height_px": 375,
+      "bytes": 10676,
+      "sha256": "e8f0bbb023b33b36766206fc4e0088dbb1226a47d7e648214e6cc34f706d3f13",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b4ce1afbe25b794697",
+      "reader_url": "index.html#image=b4ce1afbe25b794697",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/502550/23",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/6/0/260a7348103efc0aff40831a8f0bdae4e6d538cf_2_375x500.jpeg",
+      "post": 23,
+      "date": "2025-05-30T02:59:22.600Z",
+      "author": "Nick.kremer",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2025 team 2056 — source image from post 23 (2025-05-30). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "9bb6cd31d7fe446c5f.jpg",
+      "id": "75b5b304e7b55347ff",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/9bb6cd31d7fe446c5f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 49841,
+      "sha256": "f411351c432f62f5c0949a2b967294efffcff4e7d23e191310cc418801f5cdd7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "75b5b304e7b55347ff",
+      "reader_url": "index.html#image=75b5b304e7b55347ff",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p6-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p6-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=6",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Drivebase · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        722.2000122070312
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 1187,
+      "height_px": 1400,
+      "bytes": 399402,
+      "sha256": "5e5e471e5d07b597f8af62ec801c1a570c6c1732261038548eebf28b02650357",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p6-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p8-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p8-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=8",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Ground intake · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Ground intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        724.25
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1184,
+      "height_px": 1400,
+      "bytes": 416612,
+      "sha256": "88d672b004228477a8e35385bc22bc847f6b438a6b9c13608f289eea61a0537d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p8-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p10-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p10-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=10",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Straightenator · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Straightenator",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.00408935546875,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 1401,
+      "bytes": 299495,
+      "sha256": "09fdba00eb04cbd466ba72a97c01a6bf13af3756223da2c2f8ed588daa81cf70",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p10-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p12-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p12-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=12",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Coral cradle · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Coral cradle",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 1400,
+      "bytes": 408577,
+      "sha256": "579563f18659aaaef25d34f6e9268d0cf6e86b129c587d3442c982a635fdaf05",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p12-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p14-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 14,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p14-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=14",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Gripper arm · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Gripper arm",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 14,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 1400,
+      "bytes": 222588,
+      "sha256": "3dd6f0c768dcc728fbc233d01b79c92354a9183fdd54fc2b56b482f1867d03b9",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p14-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p14-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p16-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 16,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p16-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=16",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Elevator · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Elevator",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 16,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 1400,
+      "bytes": 338615,
+      "sha256": "1e9050b1fdbbf6ce95b13728a828391e84311cb7465826eff328dbd5c81bc843",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p16-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p16-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-cb12c402d721aad7df-p18-1",
+      "robot_id": "2025-2056",
+      "kind": "binder_figure",
+      "binder_id": "cb12c402d721aad7df",
+      "pdf_page": 18,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-cb12c402d721aad7df-p18-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf#page=18",
+      "caption": "2025-2056 · 2025 REEFSCAPE robot · Cage climber · PDF page 18, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Cage climber",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        611.989990234375,
+        790.7999877929688
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 18,
+      "media_type": "image/jpeg",
+      "width_px": 1084,
+      "height_px": 1400,
+      "bytes": 326010,
+      "sha256": "89a8bbea4951e025d1705c33925b9f95259799ae8a65cd3faf2da9ebddecbf5f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-cb12c402d721aad7df-p18-1",
+      "reader_url": "index.html#image=binder-cb12c402d721aad7df-p18-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-2056",
+    "year": 2025,
+    "team": 2056,
+    "epa_rank": 1,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"2056\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 22,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "cb12c402d721aad7df"
+    ],
+    "technical_note_ids": [
+      "tech-cb12c402d721aad7df-61",
+      "tech-cb12c402d721aad7df-62",
+      "tech-cb12c402d721aad7df-63",
+      "tech-cb12c402d721aad7df-64",
+      "tech-cb12c402d721aad7df-65"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "cb12c402d721aad7df",
+        "url": "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/502550/1",
+        "status": "technical_sections_reviewed"
+      },
+      {
+        "id": "c04695e84684d300e7",
+        "url": "https://drive.google.com/file/d/1qDfApPIipNq2SYCu0KaWWWhpbQu_U2vP/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/502550/170",
+        "status": "unavailable_or_not_pdf"
+      },
+      {
+        "id": "db0385aeb556cea47a",
+        "url": "https://drive.google.com/file/d/1Lnc-g8-kltmZmmT1B8xRsCJJnII0AQD6/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/502550/170",
+        "status": "unavailable_or_not_pdf"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-cb12c402d721aad7df-61:construction",
+    "tech-cb12c402d721aad7df-61:team_stated_reason",
+    "tech-cb12c402d721aad7df-61:engineering_analysis",
+    "tech-cb12c402d721aad7df-61:recommended_validation",
+    "tech-cb12c402d721aad7df-61:limitations",
+    "tech-cb12c402d721aad7df-62:construction",
+    "tech-cb12c402d721aad7df-62:team_stated_reason",
+    "tech-cb12c402d721aad7df-62:engineering_analysis",
+    "tech-cb12c402d721aad7df-62:recommended_validation",
+    "tech-cb12c402d721aad7df-62:limitations",
+    "tech-cb12c402d721aad7df-63:construction",
+    "tech-cb12c402d721aad7df-63:team_stated_reason",
+    "tech-cb12c402d721aad7df-63:engineering_analysis",
+    "tech-cb12c402d721aad7df-63:recommended_validation",
+    "tech-cb12c402d721aad7df-63:limitations",
+    "tech-cb12c402d721aad7df-64:construction",
+    "tech-cb12c402d721aad7df-64:team_stated_reason",
+    "tech-cb12c402d721aad7df-64:engineering_analysis",
+    "tech-cb12c402d721aad7df-64:recommended_validation",
+    "tech-cb12c402d721aad7df-64:limitations",
+    "tech-cb12c402d721aad7df-65:construction",
+    "tech-cb12c402d721aad7df-65:team_stated_reason",
+    "tech-cb12c402d721aad7df-65:engineering_analysis",
+    "tech-cb12c402d721aad7df-65:recommended_validation",
+    "tech-cb12c402d721aad7df-65:limitations",
+    "param-cb12c402d721aad7df-1",
+    "param-cb12c402d721aad7df-2",
+    "param-cb12c402d721aad7df-3",
+    "param-cb12c402d721aad7df-4",
+    "param-cb12c402d721aad7df-5"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

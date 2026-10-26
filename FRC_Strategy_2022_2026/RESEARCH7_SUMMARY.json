@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25",
+  "new_transcripts_recovered": 11,
+  "new_complete_available_caption_reads": 2,
+  "new_detailed_video_sections": 27,
+  "new_detailed_commentary_matches": [
+    "2026cmptx_sf11m1",
+    "2026cmptx_f1m1",
+    "2026cmptx_f1m2",
+    "2026cmptx_f1m3",
+    "2026cmptx_sf3m1",
+    "2026cmptx_sf6m1"
+  ],
+  "new_study_words": 6861,
+  "recovered_awaiting_full_read": 9,
+  "prior_caption_reviews": 33,
+  "total_caption_reviews": 35,
+  "canonical_einstein_matches": 80,
+  "candidate_recording_links": 80,
+  "visual_audits_completed": 0,
+  "visual_recording_pages_tested": 6,
+  "channel_inventory_complete": false,
+  "all_replay_attempts_inventoried": false,
+  "robot_dossiers": 125,
+  "technical_notes": 227,
+  "embedded_images": 504
+}

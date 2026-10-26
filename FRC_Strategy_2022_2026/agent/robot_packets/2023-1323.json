@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-1323",
+  "year": 2023,
+  "team": 1323,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 1323,
+    "robot": "MadTown 2023 (name not verified)",
+    "primary": [
+      "https://youtu.be/hz3MolcRe2M",
+      "https://youtu.be/n-_gh38o-vE"
+    ],
+    "architecture": "Wide acquisition tunnel plus independently coordinated horizontal extension, vertical elevator, shoulder and claw.",
+    "subsystems": {
+      "intake": "Wide overhead cube intake; rollers and star wheels funnel and center cubes. Cones enter through the claw.",
+      "transfer": "Internal cube tunnel feeds a coordinated claw handoff. Interview describes physical room for three pieces; this is not permission to transport three outside the game's protected possession zones.",
+      "scoring": "Belt-driven vertical elevator, chain/rope horizontal extension and articulated arm position the claw.",
+      "drivetrain": "Wide robot footprint deliberately chosen for high-level alliance play; detailed module specification not established here.",
+      "endgame": "Charge-station implementation needs a separate technical reference; the interview concentrates on acquisition and placement.",
+      "controls": "Simultaneous joint motion with collision constraints. Limelight object detection corrects autonomous cone acquisition."
+    },
+    "versions": [
+      "Tipped-cone recovery uses a deliberate uprighting sequence; team preferred reliable station loading as loose cones became less available at high-level play."
+    ],
+    "analysis": "Study how independent reach and acquisition functions can overlap. The price is joint coordination and collision management; copying the mechanism count without that software capability would miss the architecture's premise.",
+    "limits": [
+      "Endgame implementation not established.",
+      "Full configuration chronology not yet audited."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 1,
+    "cad_code_links": [],
+    "id": "2023-1323",
+    "team_name": "MadTown Robotics",
+    "epa_rank": 1,
+    "epa": 84.15,
+    "epa_pre_champs": 77.44,
+    "epa_breakdown": {
+      "total_points": 84.15,
+      "auto_points": 21.07,
+      "teleop_points": 51.68,
+      "endgame_points": 9.68,
+      "links_rp": 0.8615,
+      "activation_rp": 0.6859,
+      "tiebreaker_points": 82.43,
+      "auto_charge_station_points": 8.03,
+      "auto_pieces": 2.6,
+      "teleop_grid_points": 33.36,
+      "bottom_pieces": 3.93,
+      "middle_pieces": 3.12,
+      "top_pieces": 4.69,
+      "cube_points": 20.11,
+      "cone_points": 23.16,
+      "links": 4.01,
+      "endgame_charge_station_points": 9.68,
+      "rp_1": 0.8615,
+      "rp_2": 0.6859
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "partial / unresolved detail",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "bf19589b7811bbde",
+      "e27d060aaeaa8a0f"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-1323",
+      "year": 2023,
+      "team": 1323,
+      "epa_rank": 1,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1323\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 7,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1323\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-1323"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-1323",
+      "title": "Buffered cube supply and separate reach axes create an alliance tool",
+      "start_seconds": 107,
+      "end_seconds": 435,
+      "construction": "A wide overhead cube collector funnels through an internal tunnel to a claw. Separate vertical and horizontal elevator axes plus an articulated arm provide reach. The interview distinguishes normal cone pickup from a slower tipped-cone uprighting maneuver.",
+      "team_stated_reason": "The team explicitly describes designing for high-level play and wanting a differentiated capability. The physical room for multiple pieces is not permission to possess them outside the applicable protected zones.",
+      "engineering_analysis": "Buffering can decouple human-player delivery from the next placement, but only within the game’s legal possession constraints. Extra reach axes also create collision and maintenance demands. The slower cone fallback is capability, not evidence it is the preferred cycle.",
+      "recommended_validation": "Test legal buffered operation, tunnel recovery, both-axis settling and cone fallback cycle cost.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-1323",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/hz3MolcRe2M",
+      "additional_sources": [
+        "https://youtu.be/n-_gh38o-vE"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 107,
+        "end_seconds": 435,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "hz3MolcRe2M",
+          "sha256": "64cd56ce11167e47192a428d8d1078de1186cfac46c633c88a5fc7e2aa1a288e",
+          "caption_segments": 303,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        },
+        {
+          "video_id": "n-_gh38o-vE",
+          "sha256": "c555e63c49ecab4efbb82ea90597f11dd552ddbaefdae23548c2d000a875f404",
+          "caption_segments": 1263,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-1323:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-1323",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-1323"
+      ],
+      "source_urls": [
+        "https://youtu.be/hz3MolcRe2M"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-1323",
+      "title": "2023-1323 · Buffered cube supply and separate reach axes create an alliance tool",
+      "year": 2023,
+      "robot_id": "2023-1323",
+      "kind": "focused_technical_study",
+      "body": "# 2023-1323: Buffered cube supply and separate reach axes create an alliance tool\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA wide overhead cube collector funnels through an internal tunnel to a claw. Separate vertical and horizontal elevator axes plus an articulated arm provide reach. The interview distinguishes normal cone pickup from a slower tipped-cone uprighting maneuver.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly describes designing for high-level play and wanting a differentiated capability. The physical room for multiple pieces is not permission to possess them outside the applicable protected zones.\n\n## Engineering interpretation — analyst inference\n\nBuffering can decouple human-player delivery from the next placement, but only within the game’s legal possession constraints. Extra reach axes also create collision and maintenance demands. The slower cone fallback is capability, not evidence it is the preferred cycle.\n\n## Proposed validation — not performed\n\nTest legal buffered operation, tunnel recovery, both-axis settling and cone fallback cycle cost.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/hz3MolcRe2M](https://youtu.be/hz3MolcRe2M)\n- [https://youtu.be/n-_gh38o-vE](https://youtu.be/n-_gh38o-vE)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/hz3MolcRe2M",
+        "https://youtu.be/n-_gh38o-vE"
+      ],
+      "path": "docs/research_continuation/2023-1323.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-1323",
+    "year": 2023,
+    "team": 1323,
+    "epa_rank": 1,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1323\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 7,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1323\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-1323:construction",
+    "study6-2023-1323:team_stated_reason",
+    "study6-2023-1323:engineering_analysis",
+    "study6-2023-1323:recommended_validation",
+    "study6-2023-1323:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

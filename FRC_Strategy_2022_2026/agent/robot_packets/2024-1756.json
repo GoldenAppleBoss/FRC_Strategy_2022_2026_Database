@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-1756",
+  "year": 2024,
+  "team": 1756,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 1756,
+    "robot": "Argos 2024",
+    "primary": [
+      "https://youtu.be/Vnbv20qEBwQ"
+    ],
+    "architecture": "Full-width intake, vertically translating reversible shooter and separate chain hooks.",
+    "subsystems": {
+      "drivetrain": "Swerve; underfloor cross-shafts package elevator drives.",
+      "intake": "Omni wheels and printed wedges center notes after experiments with other wheel types.",
+      "transfer": "Shooter aligns with intake for transfer, then retains the note for the selected destination.",
+      "scoring": "Top/bottom shooter on a rotating carriage; intake rollers gently release amp/trap notes.",
+      "endgame": "Linear hook slides hold the chain while the scoring carriage rises to trap height.",
+      "controls": "Two Limelights aim relative to tags; high fixed-pose defensive shot bypasses occluded tag aiming."
+    },
+    "versions": [
+      "Prototype options included side-wheel and windup launchers. Removed wheels in regions not contacting the note to reduce rotating mass."
+    ],
+    "analysis": "The same reversible carriage handles several destinations, but requires careful alignment and sequencing. Their high defensive shot is an alternate operating mode, not evidence that every normal shot clears a defender.",
+    "limits": [
+      "Only source-established configurations and changes are described; intermediate revisions may remain unresolved."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2024-1756",
+    "team_name": "Argos",
+    "epa_rank": 10,
+    "epa": 51.67,
+    "epa_pre_champs": 44.52,
+    "epa_breakdown": {
+      "total_points": 51.67,
+      "auto_points": 12.16,
+      "teleop_points": 33.37,
+      "endgame_points": 6.14,
+      "melody_rp": 0.5085,
+      "ensemble_rp": 0.5531,
+      "tiebreaker_points": 0.18,
+      "auto_leave_points": 1.86,
+      "auto_note_points": 10.29,
+      "teleop_note_points": 33.37,
+      "speaker_points": 39.99,
+      "amplified_notes": 5.76,
+      "endgame_park_points": 0.12,
+      "endgame_on_stage_points": 2.35,
+      "endgame_harmony_points": -0.15,
+      "endgame_trap_points": 3.66,
+      "endgame_spotlight_points": 0.16,
+      "rp_1": 0.5085,
+      "rp_2": 0.5531,
+      "total_note_points": 43.66
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "f73df536c6506321"
+    ],
+    "tags": [
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-1756",
+      "year": 2024,
+      "team": 1756,
+      "epa_rank": 10,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1756\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 14,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1756\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-1756"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-1756",
+      "title": "Omni centering and reoriented transfer need defined staging states",
+      "start_seconds": 78,
+      "end_seconds": 330,
+      "construction": "Omni wheels and printed wedges center the note while allowing lateral motion. The rotating shooter aligns with the intake to receive it; paired sensors detect travel and possession. The same moving assembly uses gentle roller release for amp/trap rather than a high-speed shot.",
+      "team_stated_reason": "The team identifies lateral freedom as the reason for the omni contact choice. Sensor feedback reduces the driver’s need to see the note and helps avoid acquiring a second piece.",
+      "engineering_analysis": "A roller can create useful forward traction while resisting necessary lateral centering. Omni contact addresses that conflict, but the wedges still establish the note’s final alignment. A moving transfer interface adds a temporal constraint: feeding must wait for receiving geometry, then stop at a verified state before reorientation. Gentler release for a confined goal is a separate control mode from speaker firing.",
+      "recommended_validation": "Test diagonal entries and sensor disagreement; measure capture/transfer tolerances at the rotating interface and retention during the following motion.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-1756",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/Vnbv20qEBwQ",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 78,
+        "end_seconds": 330,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "Vnbv20qEBwQ",
+          "sha256": "9981c19dc6359ccb013021b943c5daa2224fd9062812c10e74cef02ec2b6e67a",
+          "caption_segments": 237,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-1756:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-1756",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-1756"
+      ],
+      "source_urls": [
+        "https://youtu.be/Vnbv20qEBwQ"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-1756",
+      "title": "2024-1756 · Omni centering and reoriented transfer need defined staging states",
+      "year": 2024,
+      "robot_id": "2024-1756",
+      "kind": "focused_technical_study",
+      "body": "# 2024-1756: Omni centering and reoriented transfer need defined staging states\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nOmni wheels and printed wedges center the note while allowing lateral motion. The rotating shooter aligns with the intake to receive it; paired sensors detect travel and possession. The same moving assembly uses gentle roller release for amp/trap rather than a high-speed shot.\n\n## Team-stated reasoning or boundary\n\nThe team identifies lateral freedom as the reason for the omni contact choice. Sensor feedback reduces the driver’s need to see the note and helps avoid acquiring a second piece.\n\n## Engineering interpretation — analyst inference\n\nA roller can create useful forward traction while resisting necessary lateral centering. Omni contact addresses that conflict, but the wedges still establish the note’s final alignment. A moving transfer interface adds a temporal constraint: feeding must wait for receiving geometry, then stop at a verified state before reorientation. Gentler release for a confined goal is a separate control mode from speaker firing.\n\n## Proposed validation — not performed\n\nTest diagonal entries and sensor disagreement; measure capture/transfer tolerances at the rotating interface and retention during the following motion.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/Vnbv20qEBwQ](https://youtu.be/Vnbv20qEBwQ)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/Vnbv20qEBwQ"
+      ],
+      "path": "docs/research_continuation/2024-1756.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2024-1756",
+    "year": 2024,
+    "team": 1756,
+    "epa_rank": 10,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1756\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 14,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1756\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-1756:construction",
+    "study6-2024-1756:team_stated_reason",
+    "study6-2024-1756:engineering_analysis",
+    "study6-2024-1756:recommended_validation",
+    "study6-2024-1756:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

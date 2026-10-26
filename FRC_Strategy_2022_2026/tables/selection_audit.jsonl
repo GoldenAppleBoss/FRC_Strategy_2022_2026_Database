@@ -1,0 +1,157 @@
+{"year": 2022, "team": 1678, "team_name": "Citrus Circuits", "epa_rank": 1, "epa": 69.09, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 1323, "team_name": "MadTown Robotics", "epa_rank": 2, "epa": 65.29, "selected": 0, "reason": "High performance documented; reviewed source set did not establish full subsystem/version coverage."}
+{"year": 2022, "team": 1690, "team_name": "Orbit", "epa_rank": 3, "epa": 64.95, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 254, "team_name": "The Cheesy Poofs", "epa_rank": 4, "epa": 64.86, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 27, "team_name": "Team RUSH", "epa_rank": 5, "epa": 62.1, "selected": 0, "reason": "Technical interview located, but transcript could not be reviewed; whole mechanism coverage insufficient in retrieved material."}
+{"year": 2022, "team": 67, "team_name": "The HOT Team", "epa_rank": 6, "epa": 59.21, "selected": 0, "reason": "Technical interview located, but transcript could not be reviewed; whole mechanism coverage insufficient in retrieved material."}
+{"year": 2022, "team": 2056, "team_name": "OP Robotics", "epa_rank": 7, "epa": 58.06, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 1577, "team_name": "Steampunk", "epa_rank": 8, "epa": 57.41, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 1771, "team_name": "North Gwinnett Robotics", "epa_rank": 9, "epa": 56.86, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 624, "team_name": "CRyptonite", "epa_rank": 10, "epa": 56.83, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 2910, "team_name": "Jack in the Bot", "epa_rank": 11, "epa": 55.59, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 176, "team_name": "Aces High", "epa_rank": 12, "epa": 54.53, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 148, "team_name": "Robowranglers", "epa_rank": 13, "epa": 53.98, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 973, "team_name": "Greybots", "epa_rank": 14, "epa": 53.54, "selected": 0, "reason": "Available detailed interview shows an offseason drivetrain/rebuild; onseason architecture not reconstructed sufficiently."}
+{"year": 2022, "team": 111, "team_name": "WildStang", "epa_rank": 15, "epa": 52.92, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 971, "team_name": "Spartan Robotics", "epa_rank": 16, "epa": 52.73, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 4414, "team_name": "HighTide", "epa_rank": 17, "epa": 51.81, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 5940, "team_name": "BREAD", "epa_rank": 18, "epa": 51.78, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 4911, "team_name": "CyberKnights", "epa_rank": 19, "epa": 51.66, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 2767, "team_name": "Stryke Force", "epa_rank": 20, "epa": 51.32, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2022, "team": 3310, "team_name": "Black Hawk Robotics", "epa_rank": 21, "epa": 51.28, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2022, "team": 118, "team_name": "Robonauts", "epa_rank": 22, "epa": 50.9, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 179, "team_name": "Children of the Swamp", "epa_rank": 23, "epa": 50.84, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 4206, "team_name": "Robo Vikes", "epa_rank": 24, "epa": 50.58, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2022, "team": 1619, "team_name": "Up-A-Creek Robotics", "epa_rank": 25, "epa": 50.49, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 2046, "team_name": "Bear Metal", "epa_rank": 26, "epa": 50.28, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 7407, "team_name": "Wired Boars", "epa_rank": 27, "epa": 50.26, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2022, "team": 125, "team_name": "NUTRONs", "epa_rank": 28, "epa": 50.23, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 4499, "team_name": "The Highlanders", "epa_rank": 29, "epa": 49.85, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 5895, "team_name": "Peddie Robotics", "epa_rank": 30, "epa": 49.73, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2022, "team": 180, "team_name": "S.P.A.M.", "epa_rank": 31, "epa": 49.67, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2022, "team": 694, "team_name": "StuyPulse", "epa_rank": 32, "epa": 49.67, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 2481, "team_name": "Roboteers", "epa_rank": 33, "epa": 49.21, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 987, "team_name": "HIGHROLLERS", "epa_rank": 34, "epa": 49.1, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 5172, "team_name": "Gators", "epa_rank": 35, "epa": 49.08, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 1323, "team_name": "MadTown Robotics", "epa_rank": 1, "epa": 84.15, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 2056, "team_name": "OP Robotics", "epa_rank": 2, "epa": 83.67, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 1678, "team_name": "Citrus Circuits", "epa_rank": 3, "epa": 77.86, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 6329, "team_name": "The Bucks' Wrath", "epa_rank": 4, "epa": 77.31, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 254, "team_name": "The Cheesy Poofs", "epa_rank": 5, "epa": 77.18, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 3005, "team_name": "RoboChargers", "epa_rank": 6, "epa": 75.65, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 5940, "team_name": "BREAD", "epa_rank": 7, "epa": 75.09, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 2046, "team_name": "Bear Metal", "epa_rank": 8, "epa": 74.78, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 2910, "team_name": "Jack in the Bot", "epa_rank": 9, "epa": 74.55, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 6036, "team_name": "Peninsula Robotics", "epa_rank": 10, "epa": 73.68, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 1577, "team_name": "Steampunk", "epa_rank": 11, "epa": 72.31, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 2468, "team_name": "Team Appreciate", "epa_rank": 12, "epa": 72.28, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 3538, "team_name": "RoboJackets", "epa_rank": 13, "epa": 72.21, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 930, "team_name": "Mukwonago BEARs", "epa_rank": 14, "epa": 71.79, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 1325, "team_name": "Inverse Paradox", "epa_rank": 15, "epa": 71.53, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 4678, "team_name": "CyberCavs", "epa_rank": 16, "epa": 71.46, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2023, "team": 111, "team_name": "WildStang", "epa_rank": 17, "epa": 70.79, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 2075, "team_name": "Enigma Robotics", "epa_rank": 18, "epa": 70.56, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 1731, "team_name": "Fresta Valley Robotics Club", "epa_rank": 19, "epa": 70.15, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2023, "team": 3467, "team_name": "Windham Windup", "epa_rank": 20, "epa": 70.11, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 4522, "team_name": "Team SCREAM", "epa_rank": 21, "epa": 68.82, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2023, "team": 4414, "team_name": "HighTide", "epa_rank": 22, "epa": 68.73, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 4028, "team_name": "The Beak Squad", "epa_rank": 23, "epa": 68.69, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2023, "team": 133, "team_name": "B.E.R.T.", "epa_rank": 24, "epa": 68.65, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2023, "team": 1756, "team_name": "Argos", "epa_rank": 25, "epa": 68.47, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 176, "team_name": "Aces High", "epa_rank": 26, "epa": 68.39, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2023, "team": 2767, "team_name": "Stryke Force", "epa_rank": 27, "epa": 68.3, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 1727, "team_name": "REX", "epa_rank": 28, "epa": 68.11, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 118, "team_name": "Robonauts", "epa_rank": 29, "epa": 67.78, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 973, "team_name": "Greybots", "epa_rank": 30, "epa": 67.64, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2023, "team": 125, "team_name": "NUTRONs", "epa_rank": 31, "epa": 67.6, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1678, "team_name": "Citrus Circuits", "epa_rank": 1, "epa": 58.05, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1323, "team_name": "MadTown Robotics", "epa_rank": 2, "epa": 55.76, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 3005, "team_name": "RoboChargers", "epa_rank": 3, "epa": 54.85, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 6328, "team_name": "Mechanical Advantage", "epa_rank": 4, "epa": 54.26, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 2056, "team_name": "OP Robotics", "epa_rank": 5, "epa": 53.7, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1690, "team_name": "Orbit", "epa_rank": 6, "epa": 53.63, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1796, "team_name": "RoboTigers", "epa_rank": 7, "epa": 52.99, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1771, "team_name": "North Gwinnett Robotics", "epa_rank": 8, "epa": 52.57, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 254, "team_name": "The Cheesy Poofs", "epa_rank": 9, "epa": 51.71, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1756, "team_name": "Argos", "epa_rank": 10, "epa": 51.67, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1706, "team_name": "Ratchet Rockers", "epa_rank": 11, "epa": 51.28, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 604, "team_name": "Quixilver", "epa_rank": 12, "epa": 50.93, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 2910, "team_name": "Jack in the Bot", "epa_rank": 13, "epa": 50.25, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 4414, "team_name": "HighTide", "epa_rank": 14, "epa": 49.49, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 5940, "team_name": "BREAD", "epa_rank": 15, "epa": 49.23, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 4613, "team_name": "Barker Redbacks", "epa_rank": 16, "epa": 48.36, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 3478, "team_name": "PrepaTec - LamBot", "epa_rank": 17, "epa": 48.0, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 3467, "team_name": "Windham Windup", "epa_rank": 18, "epa": 47.63, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 9483, "team_name": "Overcharge", "epa_rank": 19, "epa": 47.62, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 359, "team_name": "Hawaiian Kids", "epa_rank": 20, "epa": 47.59, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 368, "team_name": "Team Kika Mana", "epa_rank": 21, "epa": 47.22, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 3847, "team_name": "Spectrum   -\u25b3\u25c5", "epa_rank": 22, "epa": 46.92, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 2075, "team_name": "Enigma Robotics", "epa_rank": 23, "epa": 46.81, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 1778, "team_name": "Chill Out", "epa_rank": 24, "epa": 46.73, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2024, "team": 2974, "team_name": "Walton Robotics", "epa_rank": 25, "epa": 46.46, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 2056, "team_name": "OP Robotics", "epa_rank": 1, "epa": 120.05, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 2910, "team_name": "Jack in the Bot", "epa_rank": 2, "epa": 114.07, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1323, "team_name": "MadTown Robotics", "epa_rank": 3, "epa": 111.96, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1690, "team_name": "Orbit", "epa_rank": 4, "epa": 107.72, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1678, "team_name": "Citrus Circuits", "epa_rank": 5, "epa": 105.74, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 118, "team_name": "Robonauts", "epa_rank": 6, "epa": 104.75, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 2481, "team_name": "Roboteers", "epa_rank": 7, "epa": 99.4, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 5940, "team_name": "BREAD", "epa_rank": 8, "epa": 98.63, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1796, "team_name": "RoboTigers", "epa_rank": 9, "epa": 98.05, "selected": 0, "reason": "Technical interview covers hopper/elevator well but endgame and whole-robot coverage remained insufficient."}
+{"year": 2025, "team": 4678, "team_name": "CyberCavs", "epa_rank": 10, "epa": 97.95, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 3683, "team_name": "Team DAVE", "epa_rank": 11, "epa": 97.72, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 694, "team_name": "StuyPulse", "epa_rank": 12, "epa": 97.18, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 7457, "team_name": "suPURDUEper Robotics", "epa_rank": 13, "epa": 96.42, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 422, "team_name": "The Mech Tech Dragons", "epa_rank": 14, "epa": 95.58, "selected": 0, "reason": "CAD and substantial team replies found; linked binder was inaccessible (410) during this review."}
+{"year": 2025, "team": 4414, "team_name": "HighTide", "epa_rank": 15, "epa": 94.24, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1778, "team_name": "Chill Out", "epa_rank": 16, "epa": 92.98, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 254, "team_name": "The Cheesy Poofs", "epa_rank": 17, "epa": 92.77, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1706, "team_name": "Ratchet Rockers", "epa_rank": 18, "epa": 92.51, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 3005, "team_name": "RoboChargers", "epa_rank": 19, "epa": 92.38, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 341, "team_name": "Miss Daisy", "epa_rank": 20, "epa": 90.62, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 604, "team_name": "Quixilver", "epa_rank": 21, "epa": 90.34, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 4946, "team_name": "The Alpha Dogs", "epa_rank": 22, "epa": 90.04, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 5409, "team_name": "Chargers", "epa_rank": 23, "epa": 88.97, "selected": 0, "reason": "Useful team/scouting resources found; robot mechanism coverage insufficient in reviewed sources."}
+{"year": 2025, "team": 180, "team_name": "S.P.A.M.", "epa_rank": 24, "epa": 88.65, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1771, "team_name": "North Gwinnett Robotics", "epa_rank": 25, "epa": 88.4, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 1197, "team_name": "TorBots", "epa_rank": 26, "epa": 88.38, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 6369, "team_name": "Mercenary Robotics", "epa_rank": 27, "epa": 87.38, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 5990, "team_name": "TRIGON", "epa_rank": 28, "epa": 87.23, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 111, "team_name": "WildStang", "epa_rank": 29, "epa": 86.69, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 9450, "team_name": "Velocity Raptors", "epa_rank": 30, "epa": 86.58, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 190, "team_name": "Gompei and the HERD", "epa_rank": 31, "epa": 85.95, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 4907, "team_name": "Thunderstamps", "epa_rank": 32, "epa": 85.82, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 3663, "team_name": "CPR - Cedar Park Robotics", "epa_rank": 33, "epa": 85.42, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2025, "team": 4391, "team_name": "BraveBots", "epa_rank": 34, "epa": 85.37, "selected": 0, "reason": "Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted."}
+{"year": 2025, "team": 359, "team_name": "Hawaiian Kids", "epa_rank": 35, "epa": 85.14, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 4414, "team_name": "HighTide", "epa_rank": 1, "epa": 356.94, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 254, "team_name": "The Cheesy Poofs", "epa_rank": 2, "epa": 327.82, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1323, "team_name": "MadTown Robotics", "epa_rank": 3, "epa": 309.95, "selected": 0, "reason": "Critical competitive/meta reference, but a full primary technical dossier was not obtained; not a judgment of robot quality."}
+{"year": 2026, "team": 7769, "team_name": "The CREW", "epa_rank": 4, "epa": 309.29, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1690, "team_name": "Orbit", "epa_rank": 5, "epa": 302.54, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 2056, "team_name": "OP Robotics", "epa_rank": 6, "epa": 302.17, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 27, "team_name": "Team RUSH", "epa_rank": 7, "epa": 295.14, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 2481, "team_name": "Roboteers", "epa_rank": 8, "epa": 288.11, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1114, "team_name": "Simbotics", "epa_rank": 9, "epa": 287.57, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 125, "team_name": "NUTRONs", "epa_rank": 10, "epa": 283.42, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 5687, "team_name": "The Outliers", "epa_rank": 11, "epa": 282.69, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 2910, "team_name": "Jack in the Bot", "epa_rank": 12, "epa": 281.69, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1678, "team_name": "Citrus Circuits", "epa_rank": 13, "epa": 279.66, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 9470, "team_name": "Ctrl-Alt-Defeat", "epa_rank": 14, "epa": 278.91, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 7558, "team_name": "ALT-F4", "epa_rank": 15, "epa": 278.87, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 6369, "team_name": "Mercenary Robotics", "epa_rank": 16, "epa": 274.16, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 6800, "team_name": "Valor", "epa_rank": 17, "epa": 267.49, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 3467, "team_name": "Windham Windup", "epa_rank": 18, "epa": 266.45, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 9128, "team_name": "ITKAN Robotics", "epa_rank": 19, "epa": 265.56, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1796, "team_name": "RoboTigers", "epa_rank": 20, "epa": 263.46, "selected": 0, "reason": "Team confirms independent car-wash spindexer drives; remaining subsystem/version coverage insufficient."}
+{"year": 2026, "team": 9483, "team_name": "Overcharge", "epa_rank": 21, "epa": 261.31, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 6329, "team_name": "The Bucks' Wrath", "epa_rank": 22, "epa": 260.04, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 2046, "team_name": "Bear Metal", "epa_rank": 23, "epa": 259.76, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1768, "team_name": "Nashoba Robotics", "epa_rank": 24, "epa": 259.43, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 1987, "team_name": "Broncobots", "epa_rank": 25, "epa": 257.92, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 8044, "team_name": "Denham Venom", "epa_rank": 26, "epa": 256.51, "selected": 0, "reason": "Championship reveal found; comprehensive technical material not obtained. Reference to 4414 binder is not documentation of 8044."}
+{"year": 2026, "team": 1706, "team_name": "Ratchet Rockers", "epa_rank": 27, "epa": 255.98, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2026, "team": 9496, "team_name": "LYNK", "epa_rank": 28, "epa": 253.19, "selected": 1, "reason": "Included as provisional reference dossier; see per-subsystem coverage."}
+{"year": 2022, "team": 604, "team_name": "Quixilver", "epa_rank": 65, "epa": 44.9, "selected": 1, "reason": "User-requested supplemental reference outside original 25/year cohort; original selections preserved."}
+{"year": 2023, "team": 604, "team_name": "Quixilver", "epa_rank": 71, "epa": 62.89, "selected": 1, "reason": "User-requested supplemental reference outside original 25/year cohort; original selections preserved."}
+{"year": 2026, "team": 604, "team_name": "Quixilver", "epa_rank": 46, "epa": 222.47, "selected": 1, "reason": "User-requested supplemental reference outside original 25/year cohort; original selections preserved."}

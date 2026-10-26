@@ -1,0 +1,433 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-2910",
+  "year": 2022,
+  "team": 2910,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 2910,
+    "robot": "Thor",
+    "primary": [
+      "https://youtu.be/hP9RhZaW5fA",
+      "https://www.chiefdelphi.com/t/404659"
+    ],
+    "architecture": "Compact low-motor swerve, mecanum collector and high-inertia adjustable-hood shooter.",
+    "subsystems": {
+      "drivetrain": "Inverted modules move motors down into frame volume.",
+      "intake": "Pneumatic mecanum pickup; larger commercial wheels outperformed smaller printed candidates.",
+      "transfer": "Top-driven path runs over the battery to save space; long belts locate feeder motor where packaging permits.",
+      "scoring": "Large flywheel and long wrap preserve energy for two rapid shots; printed adjustable hood.",
+      "endgame": "Two telescopic climbers; external gearboxes improve service access but exposed tubes required reinforcement.",
+      "controls": "Single-driver automated climb with an operator confirmation before committing to the full sequence."
+    },
+    "versions": [
+      "Climber tubes dented at Sundome and were replaced with thicker stock. Lightweight/no-inertia shooter experiment rejected."
+    ],
+    "analysis": "Flywheel inertia answers recovery under the actual ball wrap and firing cadence. Minimum mass is not the goal if the second shot loses required energy.",
+    "limits": [
+      "Only published/reviewed configurations are established; further intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2022-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404659/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/2/8/28d80f868c02f136bc726e1dc34f43dac990f128_2_666x500.jpeg",
+        "post": 1,
+        "date": "2022-03-04T18:12:07.393Z",
+        "author": "PatrickW",
+        "context_tags": [
+          "climb",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2022 team 2910 — source image from post 1 (2022-03-04). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "235f3055fce11b33d8.jpg",
+        "id": "467f8a8feec9597cdf",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/235f3055fce11b33d8.jpg"
+      },
+      {
+        "robot_id": "2022-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404659/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/0/1039ba1f1d3e5e1003b174d75157e1f10c38ffa3_2_666x500.jpeg",
+        "post": 1,
+        "date": "2022-03-04T18:12:07.393Z",
+        "author": "PatrickW",
+        "context_tags": [
+          "climb",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2022 team 2910 — source image from post 1 (2022-03-04). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e5e033f1b5dea9e81e.jpg",
+        "id": "9b78ff70326a0178f0",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e5e033f1b5dea9e81e.jpg"
+      },
+      {
+        "robot_id": "2022-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404659/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/d/5d786a18ff26e5e85453fa164de157e1321fd449_2_666x500.jpeg",
+        "post": 1,
+        "date": "2022-03-04T18:12:07.393Z",
+        "author": "PatrickW",
+        "context_tags": [
+          "climb",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2022 team 2910 — source image from post 1 (2022-03-04). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "765bd39694b2ec4770.jpg",
+        "id": "64a7498bcd8f4d7aab",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/765bd39694b2ec4770.jpg"
+      }
+    ],
+    "source_post_count": 45,
+    "cad_code_links": [
+      {
+        "robot_id": "2022-2910",
+        "discovery_post": "2022-2910-404659-55",
+        "url": "https://workbench.grabcad.com/workbench/projects/gcRFsmK4Ty55x-o2gVNi0UJ4HzCwYKfo-MxhPcImhUsXSM#/space/gc-3iB91bsyCAqAvjC3gEysUutDWvhXgbLOpl51mw26TXb",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "05e73c101fdeb6a452"
+      },
+      {
+        "robot_id": "2022-2910",
+        "discovery_post": "2022-2910-404659-86",
+        "url": "https://cad.onshape.com/documents/27ba324129d12153b0348108",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "71c3d1a1263924bd9c"
+      },
+      {
+        "robot_id": "2022-2910",
+        "discovery_post": "2022-2910-404659-86",
+        "url": "https://cad.onshape.com/documents/fc767a1f3ab6a68b0fe25f7d",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5d323175fbc2268352"
+      },
+      {
+        "robot_id": "2022-2910",
+        "discovery_post": "2022-2910-404659-86",
+        "url": "https://cad.onshape.com/documents/23b1c72a8c8fed45d462c943",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b81c57fdd36643dcf4"
+      },
+      {
+        "robot_id": "2022-2910",
+        "discovery_post": "2022-2910-404659-86",
+        "url": "https://cad.onshape.com/documents/6d982305f940a10db2b1ed60/w/89a5c915eae64021ccb1647b/e/865b936c58dbe56831fc7d25",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6ed0da02988abffafc"
+      }
+    ],
+    "id": "2022-2910",
+    "team_name": "Jack in the Bot",
+    "epa_rank": 11,
+    "epa": 55.59,
+    "epa_pre_champs": 60.34,
+    "epa_breakdown": {
+      "total_points": 55.59,
+      "auto_points": 14.56,
+      "teleop_points": 28.54,
+      "endgame_points": 12.49,
+      "cargo_rp": 0.8933,
+      "hangar_rp": 0.5591,
+      "tiebreaker_points": 55.59,
+      "auto_taxi_points": 1.87,
+      "auto_cargo_lower": -0.01,
+      "auto_cargo_upper": 3.18,
+      "teleop_cargo_lower": -0.08,
+      "teleop_cargo_upper": 14.31,
+      "rp_1": 0.8933,
+      "rp_2": 0.5591
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "a57a7a7151015cea",
+      "c4ae7fc486d77d88"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-2910",
+      "year": 2022,
+      "team": 2910,
+      "epa_rank": 11,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2910\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 4,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2910\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-2910"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-2910",
+      "title": "Stored launcher energy and explicit hook confirmation reduce different risks",
+      "start_seconds": 81,
+      "end_seconds": 515,
+      "construction": "The retained account describes a large flywheel/long contact wrap, powered upper contacts, an adjustable hood and a top-driven path over the battery. Climb control confirms both mid-bar hooks before starting the automatic sequence.",
+      "team_stated_reason": "The team connects low swerve motor placement to CG and packaging, and explains hook confirmation as preventing a one-hook climb that could break hardware.",
+      "engineering_analysis": "A fast automated sequence should begin from a verified mechanical state. Similarly, high flywheel energy helps paired shots only if the feed preserves contact and motor power restores speed between volleys.",
+      "recommended_validation": "Test partial hook capture, full two-ball release and recovery at realistic battery conditions.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-2910",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/hP9RhZaW5fA",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/404659"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 81,
+        "end_seconds": 515,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "hP9RhZaW5fA",
+          "sha256": "11a394afbddd620bfbbd4a483c681a58b9a010c49beec10726b3f75bdcfce3f2",
+          "caption_segments": 298,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-2910:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-2910"
+      ],
+      "source_urls": [
+        "https://youtu.be/hP9RhZaW5fA"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-2910",
+      "title": "2022-2910 · Stored launcher energy and explicit hook confirmation reduce different risks",
+      "year": 2022,
+      "robot_id": "2022-2910",
+      "kind": "focused_technical_study",
+      "body": "# 2022-2910: Stored launcher energy and explicit hook confirmation reduce different risks\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe retained account describes a large flywheel/long contact wrap, powered upper contacts, an adjustable hood and a top-driven path over the battery. Climb control confirms both mid-bar hooks before starting the automatic sequence.\n\n## Team-stated reasoning or boundary\n\nThe team connects low swerve motor placement to CG and packaging, and explains hook confirmation as preventing a one-hook climb that could break hardware.\n\n## Engineering interpretation — analyst inference\n\nA fast automated sequence should begin from a verified mechanical state. Similarly, high flywheel energy helps paired shots only if the feed preserves contact and motor power restores speed between volleys.\n\n## Proposed validation — not performed\n\nTest partial hook capture, full two-ball release and recovery at realistic battery conditions.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/hP9RhZaW5fA](https://youtu.be/hP9RhZaW5fA)\n- [https://www.chiefdelphi.com/t/404659](https://www.chiefdelphi.com/t/404659)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/hP9RhZaW5fA",
+        "https://www.chiefdelphi.com/t/404659"
+      ],
+      "path": "docs/research_continuation/2022-2910.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2022-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404659/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/2/8/28d80f868c02f136bc726e1dc34f43dac990f128_2_666x500.jpeg",
+      "post": 1,
+      "date": "2022-03-04T18:12:07.393Z",
+      "author": "PatrickW",
+      "context_tags": [
+        "climb",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2022 team 2910 — source image from post 1 (2022-03-04). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "235f3055fce11b33d8.jpg",
+      "id": "467f8a8feec9597cdf",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/235f3055fce11b33d8.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 107467,
+      "sha256": "741fb6898457f5a5f9bc1e1f95d601cfed2b6df6c99f08c1b2c9ee9832872941",
+      "path_base": "corpus_root",
+      "reader_asset_id": "467f8a8feec9597cdf",
+      "reader_url": "index.html#image=467f8a8feec9597cdf",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404659/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/0/1039ba1f1d3e5e1003b174d75157e1f10c38ffa3_2_666x500.jpeg",
+      "post": 1,
+      "date": "2022-03-04T18:12:07.393Z",
+      "author": "PatrickW",
+      "context_tags": [
+        "climb",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2022 team 2910 — source image from post 1 (2022-03-04). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e5e033f1b5dea9e81e.jpg",
+      "id": "9b78ff70326a0178f0",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e5e033f1b5dea9e81e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 109055,
+      "sha256": "84c76f1c0d5943740b051259f4337b294399ee0a43c30e95d4733fde433a7f2c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "9b78ff70326a0178f0",
+      "reader_url": "index.html#image=9b78ff70326a0178f0",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404659/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/d/5d786a18ff26e5e85453fa164de157e1321fd449_2_666x500.jpeg",
+      "post": 1,
+      "date": "2022-03-04T18:12:07.393Z",
+      "author": "PatrickW",
+      "context_tags": [
+        "climb",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2022 team 2910 — source image from post 1 (2022-03-04). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "765bd39694b2ec4770.jpg",
+      "id": "64a7498bcd8f4d7aab",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/765bd39694b2ec4770.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 110194,
+      "sha256": "7506ec977bf9e352790a5863d223375c6f8dfc28f61b4f069cfec17a8ad154db",
+      "path_base": "corpus_root",
+      "reader_asset_id": "64a7498bcd8f4d7aab",
+      "reader_url": "index.html#image=64a7498bcd8f4d7aab",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-2910",
+    "year": 2022,
+    "team": 2910,
+    "epa_rank": 11,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2910\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 4,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2910\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-2910:construction",
+    "study6-2022-2910:team_stated_reason",
+    "study6-2022-2910:engineering_analysis",
+    "study6-2022-2910:recommended_validation",
+    "study6-2022-2910:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

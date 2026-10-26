@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-4911",
+  "year": 2022,
+  "team": 4911,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 4911,
+    "robot": "QUICKDROP (initially SLAPSHOT)",
+    "primary": [
+      "https://www.chiefdelphi.com/t/404720",
+      "https://www.chiefdelphi.com/t/412974"
+    ],
+    "architecture": "Swerve robot with six-bar collector, powered top-roller shooter and extensively revised traversal architecture.",
+    "subsystems": {
+      "drivetrain": "SDS MK4i; center of gravity lowered after difficult early driving.",
+      "intake": "Six-bar intake initially included knockdown rollers for bouncing cargo.",
+      "transfer": "Controlled roller path into launcher; details of all indexer revisions remain unresolved.",
+      "scoring": "Adjustable launcher rails/top roller built from the start; vision-based distance shooting arrived at DCMP.",
+      "endgame": "Initial flexible climb failed repeatedly; CAD exposes original configuration alongside later design.",
+      "controls": "Early fender shots preceded integrated Limelight range aiming."
+    },
+    "versions": [
+      "Glacier Peak: damaged knockdown rollers removed, belt/roller retention strengthened, climber reworked. CAD release explicitly preserves the original climber configuration."
+    ],
+    "analysis": "A particularly valuable capability timeline: having an adjustable hood in CAD did not mean automatic distance shooting existed at the first events. Requirements, installed hardware and demonstrated capability need separate fields.",
+    "limits": [
+      "Only published/reviewed configurations are established; further intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 10,
+    "cad_code_links": [
+      {
+        "robot_id": "2022-4911",
+        "discovery_post": "2022-4911-412974-1",
+        "url": "https://kingsschools.onshape.com/documents/7760fbbb0fdfa6cfa74a12e9/v/89b06307c1538b224c96c53c/e/623e071e1b5851315b197366?aa=true&configuration=default&renderMode=0&uiState=62b0cad030b6eb141705f296",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4b215e2cf5c8e2e4e7"
+      }
+    ],
+    "id": "2022-4911",
+    "team_name": "CyberKnights",
+    "epa_rank": 19,
+    "epa": 51.66,
+    "epa_pre_champs": 47.45,
+    "epa_breakdown": {
+      "total_points": 51.66,
+      "auto_points": 11.42,
+      "teleop_points": 30.48,
+      "endgame_points": 9.76,
+      "cargo_rp": 0.6127,
+      "hangar_rp": 0.4281,
+      "tiebreaker_points": 51.66,
+      "auto_taxi_points": 2.13,
+      "auto_cargo_lower": -0.11,
+      "auto_cargo_upper": 2.37,
+      "teleop_cargo_lower": -0.46,
+      "teleop_cargo_upper": 15.47,
+      "rp_1": 0.6127,
+      "rp_2": 0.4281
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "partial / unresolved detail",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "c34612953e6c728e",
+      "6aac06e42a1fbd68"
+    ],
+    "tags": [
+      "climb",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-4911",
+      "year": 2022,
+      "team": 4911,
+      "epa_rank": 19,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"4911\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 5,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4911\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-4911"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-4911",
+      "title": "A six-bar collector and configurable CAD need version-aware interpretation",
+      "start_seconds": 0,
+      "end_seconds": 0,
+      "construction": "The reveal describes a six-bar pickup with knockdown rollers for bouncing cargo, adjustable launcher rails/top roller and traversal climb. The later CAD release explicitly includes a configuration for the original Glacier Peak climb.",
+      "team_stated_reason": "The stated roller purpose is controlling bouncing balls and the rail/top-contact purpose includes a broad shooting envelope with reduced unwanted spin. Exact design-choice causation beyond that is not established.",
+      "engineering_analysis": "A configurable assembly can preserve genuine history, but the default displayed CAD is not automatically the configuration used at every event. Knockdown and acquisition contacts should be tested together; a roller that stops bounce may also create a pinch.",
+      "recommended_validation": "Inspect both CAD configurations and validate bouncing-entry behavior plus disabled climb retention.",
+      "limitations": "First-party release topics 404720 and 412974; no technical-video rewatch claimed. Reveal text and topic title use differing names, so source naming is preserved rather than silently harmonized.",
+      "id": "study6-2022-4911",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.chiefdelphi.com/t/404720",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/412974"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 0,
+        "end_seconds": 0,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-4911:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-4911",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-4911"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/404720"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-4911",
+      "title": "2022-4911 · A six-bar collector and configurable CAD need version-aware interpretation",
+      "year": 2022,
+      "robot_id": "2022-4911",
+      "kind": "focused_technical_study",
+      "body": "# 2022-4911: A six-bar collector and configurable CAD need version-aware interpretation\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe reveal describes a six-bar pickup with knockdown rollers for bouncing cargo, adjustable launcher rails/top roller and traversal climb. The later CAD release explicitly includes a configuration for the original Glacier Peak climb.\n\n## Team-stated reasoning or boundary\n\nThe stated roller purpose is controlling bouncing balls and the rail/top-contact purpose includes a broad shooting envelope with reduced unwanted spin. Exact design-choice causation beyond that is not established.\n\n## Engineering interpretation — analyst inference\n\nA configurable assembly can preserve genuine history, but the default displayed CAD is not automatically the configuration used at every event. Knockdown and acquisition contacts should be tested together; a roller that stops bounce may also create a pinch.\n\n## Proposed validation — not performed\n\nInspect both CAD configurations and validate bouncing-entry behavior plus disabled climb retention.\n\n## Limits\n\nFirst-party release topics 404720 and 412974; no technical-video rewatch claimed. Reveal text and topic title use differing names, so source naming is preserved rather than silently harmonized.\n\n## Sources and navigation\n\n- [https://www.chiefdelphi.com/t/404720](https://www.chiefdelphi.com/t/404720)\n- [https://www.chiefdelphi.com/t/412974](https://www.chiefdelphi.com/t/412974)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/404720",
+        "https://www.chiefdelphi.com/t/412974"
+      ],
+      "path": "docs/research_continuation/2022-4911.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-4911",
+    "year": 2022,
+    "team": 4911,
+    "epa_rank": 19,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"4911\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 5,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4911\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-4911:construction",
+    "study6-2022-4911:team_stated_reason",
+    "study6-2022-4911:engineering_analysis",
+    "study6-2022-4911:recommended_validation",
+    "study6-2022-4911:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

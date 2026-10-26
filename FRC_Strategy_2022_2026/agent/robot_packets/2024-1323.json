@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-1323",
+  "year": 2024,
+  "team": 1323,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 1323,
+    "robot": "MadTown 2024",
+    "primary": [
+      "https://youtu.be/chskc15AZ9o"
+    ],
+    "architecture": "Maximum-footprint under-bumper acquisition with low-pivot cannon and integrated hanging structure.",
+    "subsystems": {
+      "drivetrain": "Rectangular drivebase; structure and mechanism mounts deliberately share side plates.",
+      "intake": "Full-width under-bumper intake with independently powered lateral funneling.",
+      "transfer": "Printed ramp and low-distortion tunnel preserve note shape until shooting.",
+      "scoring": "Low-pivot launcher with independently driven left/right wheel groups; same moving assembly supports amp delivery.",
+      "endgame": "Gas-strut-deployed hanging arms/forks and winch form the chain engagement sequence.",
+      "controls": "Independent wheel speeds tune flight stability; controls details require separate code/technical source."
+    },
+    "versions": [
+      "Championship interview describes the integrated competition package; detailed intermediate revisions not identified."
+    ],
+    "analysis": "The wide intake and compliant note path serve different needs: forgiving acquisition and repeatable launch conditions. Copying only shooter wheel spacing would omit that upstream constraint.",
+    "limits": [
+      "Configuration description is tied to the cited interview; not a claim that every unreported shop revision is known."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2024-1323",
+    "team_name": "MadTown Robotics",
+    "epa_rank": 2,
+    "epa": 55.76,
+    "epa_pre_champs": 58.04,
+    "epa_breakdown": {
+      "total_points": 55.76,
+      "auto_points": 19.52,
+      "teleop_points": 28.58,
+      "endgame_points": 7.67,
+      "melody_rp": 0.6648,
+      "ensemble_rp": 0.8352,
+      "tiebreaker_points": 0.2,
+      "auto_leave_points": 1.83,
+      "auto_note_points": 17.69,
+      "teleop_note_points": 28.58,
+      "speaker_points": 43.31,
+      "amplified_notes": 4.88,
+      "endgame_park_points": -0.2,
+      "endgame_on_stage_points": 3.66,
+      "endgame_harmony_points": -0.08,
+      "endgame_trap_points": 4.04,
+      "endgame_spotlight_points": 0.25,
+      "rp_1": 0.6648,
+      "rp_2": 0.8352,
+      "total_note_points": 46.269999999999996
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "partial / unresolved detail"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "2101e388ba8583a5"
+    ],
+    "tags": [
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-1323",
+      "year": 2024,
+      "team": 1323,
+      "epa_rank": 2,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1323\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 13,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1323\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-1323"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-1323",
+      "title": "A low pivot and controlled note tunnel protect shot repeatability",
+      "start_seconds": 114,
+      "end_seconds": 295,
+      "construction": "A full-width under-bumper collector uses independently driven lateral funneling into a protected ramp/tunnel. The retained source record describes a low rear launcher pivot with separate left/right shooting groups and the same assembly serving amp delivery.",
+      "team_stated_reason": "The interview emphasizes preserving a continuous note journey and designing for high-level strategic options early. It does not establish that every apparent feature was added specifically for one later playoff tactic.",
+      "engineering_analysis": "A low tunnel can limit note bending and moving mass, but a protective cover also needs to avoid becoming a new trapping surface. Separately powered funneling allows transport behavior to be tuned without forcing the ground pickup to the same speed. The useful reference is a consistent note state at release; a compact exterior alone does not establish that consistency.",
+      "recommended_validation": "Test note distortion, off-center entry and cover clearances with worn notes. Compare shot variation after aggressive collection and after gentle hand placement to isolate transport effects.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-1323",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/chskc15AZ9o",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 114,
+        "end_seconds": 295,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "chskc15AZ9o",
+          "sha256": "813660a7b668ebbbac48d57058ceba53385df4d8607d10fa54b0863e92bc97dc",
+          "caption_segments": 240,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-1323:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-1323",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-1323"
+      ],
+      "source_urls": [
+        "https://youtu.be/chskc15AZ9o"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-1323",
+      "title": "2024-1323 · A low pivot and controlled note tunnel protect shot repeatability",
+      "year": 2024,
+      "robot_id": "2024-1323",
+      "kind": "focused_technical_study",
+      "body": "# 2024-1323: A low pivot and controlled note tunnel protect shot repeatability\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA full-width under-bumper collector uses independently driven lateral funneling into a protected ramp/tunnel. The retained source record describes a low rear launcher pivot with separate left/right shooting groups and the same assembly serving amp delivery.\n\n## Team-stated reasoning or boundary\n\nThe interview emphasizes preserving a continuous note journey and designing for high-level strategic options early. It does not establish that every apparent feature was added specifically for one later playoff tactic.\n\n## Engineering interpretation — analyst inference\n\nA low tunnel can limit note bending and moving mass, but a protective cover also needs to avoid becoming a new trapping surface. Separately powered funneling allows transport behavior to be tuned without forcing the ground pickup to the same speed. The useful reference is a consistent note state at release; a compact exterior alone does not establish that consistency.\n\n## Proposed validation — not performed\n\nTest note distortion, off-center entry and cover clearances with worn notes. Compare shot variation after aggressive collection and after gentle hand placement to isolate transport effects.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/chskc15AZ9o](https://youtu.be/chskc15AZ9o)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/chskc15AZ9o"
+      ],
+      "path": "docs/research_continuation/2024-1323.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2024-1323",
+    "year": 2024,
+    "team": 1323,
+    "epa_rank": 2,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1323\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 13,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1323\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-1323:construction",
+    "study6-2024-1323:team_stated_reason",
+    "study6-2024-1323:engineering_analysis",
+    "study6-2024-1323:recommended_validation",
+    "study6-2024-1323:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

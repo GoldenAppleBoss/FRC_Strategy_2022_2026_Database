@@ -1,0 +1,974 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-254",
+  "year": 2022,
+  "team": 254,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 254,
+    "robot": "Sideways",
+    "primary": [
+      "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "https://www.team254.com/first/2022/"
+    ],
+    "architecture": "Dual full-width collectors, color-aware serializer and turret, with truss-reacting traversal architecture.",
+    "subsystems": {
+      "drivetrain": "First Team 254 swerve season; SDS MK4i and low central mass.",
+      "intake": "Opposed pneumatic four-bar collectors with compliant polycarbonate plates.",
+      "transfer": "Two-sided serializer funnels to one feed stream; color sensing chooses storage or shooter-based rejection.",
+      "scoring": "Large flywheel, powered back rollers and adjustable hood; turret and energy-chain routing enable moving aim.",
+      "endgame": "Elevator engages mid bar; reaction arm braces under truss; spring-deployed stinger reaches traversal.",
+      "controls": "Coordinated state machines, pose-aware rejection and velocity-compensated shooting."
+    },
+    "versions": [
+      "Binder documents the developed season package; individual intermediate shop iterations are not all separately dated."
+    ],
+    "analysis": "Study the full chain: either-side collection reduces turning, serializer preserves flow, turret decouples heading, and reaction geometry avoids visiting every rung. High structural loads are a major cost of the endgame shortcut.",
+    "limits": [
+      "Reported performance and prototype history are attributed to the source; not every intermediate revision is recoverable."
+    ],
+    "deep_context": "# 2022-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## SIDEWAYS: compliant dual four-bar collection\n\nVersion: SIDEWAYS. [PDF p10](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=10) · [PDF p14](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14)\n\n**Published construction:** Dual pneumatic four-bars; quarter-inch polycarbonate arms; large front and smaller transfer rollers.\n\n**Team-stated reason or evidence boundary:** Acquire from either side and yield in collisions.\n\n**Engineering analysis — original inference:** Two intake directions reduce the turn needed to collect the next cargo while keeping the shooter in a useful field orientation. The four-bar defines the roller’s approach and stowed position; the arm material supplies lateral compliance that the linkage alone cannot. Different roller diameters and reductions establish surface velocities through the transition. An apparent increase in grip is unhelpful if it arrests the ball between contacts. This architecture should be understood as two collectors feeding one shared storage and shooter system, not as two independent scoring paths.\n\n**Proposed validation — not a completed test:** Measure acquisition at speed and across approach angles, then verify both directions still transfer correctly after impact.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: serialize two wide inputs and reject wrong-color cargo\n\nVersion: SIDEWAYS. [PDF p15](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15) · [PDF p21](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=21) · [PDF p22](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=22)\n\n**Published construction:** Centering wheels and rollers; beam-break position tracking; color sensing; deliberate opponent-cargo ejection.\n\n**Team-stated reason or evidence boundary:** Maintain two-cargo ownership and consistent shooter feeding.\n\n**Engineering analysis — original inference:** The serializer converts a broad acquisition front into an ordered narrow output under a possession limit. Storing the first accepted ball away from the active intake leaves room for the second; that is a spatial control policy, not merely a conveyor. Color rejection adds an adversarial constraint: an unwanted ball must leave without corrupting the state estimate or helping the opponent more than necessary. A sensor detects contact or color at one location, so software must preserve identity as balls move and occasionally slip. A jam can be a state-estimation failure even when all rollers turn.\n\n**Proposed validation — not a completed test:** Run correct/wrong-color pairs from both sides, interrupt the feed, and verify the estimated inventory against video.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: wrap, surface matching and a moving target\n\nVersion: SIDEWAYS. [PDF p16](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16) · [PDF p17](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17) · [PDF p22](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=22)\n\n**Published construction:** Nine-inch main wheel, driven back rollers, adjustable hood and ±120° turret.\n\n**Team-stated reason or evidence boundary:** Long contact and controlled spin for accurate mobile shots.\n\n**Engineering analysis — original inference:** A long wrap increases the time available to accelerate the cargo and can reduce the impulse required at any single contact. Driving the backing rollers changes both friction loss and the ball’s angular velocity. Surface-speed matching is a kinematic idea; the actual ball may slip or deform, so launch spin must be measured. The turret reduces chassis-heading dependence, while the hood and speed map determine range. None of these removes the need to account for robot velocity and shot timing. The relevant comparison is the repeatability of the exit state under a sequence of shots.\n\n**Proposed validation — not a completed test:** Measure ball translation and spin with high-speed video, compare first and second shots, and test motion compensation across turret headings.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: react against the truss before reaching traversal\n\nVersion: SIDEWAYS. [PDF p18](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18) · [PDF p19](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19)\n\n**Published construction:** Chain elevator, reaction arm, passive telescoping stinger and retention latches.\n\n**Team-stated reason or evidence boundary:** Reorient the robot to reach traversal within the envelope.\n\n**Engineering analysis — original inference:** This climb is a sequence of changing load paths. The elevator first loads a rung; the reaction arm then changes the robot angle by pushing against the truss; the stinger finally reaches a farther rung. Large internal forces can occur while the robot barely moves because opposing contacts create a short lever arm. A tensile strap can carry a known directional load efficiently, but cannot resist compression or uncontrolled reverse motion. The passive stinger can be light because it need not retract under robot load. Copying only its telescoping tubes would omit the reaction geometry that makes the reach possible.\n\n**Proposed validation — not a completed test:** Instrument reaction loads and verify every intermediate retention state; test misalignment and incomplete hook engagement before increasing speed.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: first swerve and deliberately low mass placement\n\nVersion: SIDEWAYS. [PDF p13](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13)\n\n**Published construction:** Mk4i L3 modules, added motor-shaft support bearings, low solid bellypan and central battery.\n\n**Team-stated reason or evidence boundary:** Maneuver around defense and maintain stability.\n\n**Engineering analysis — original inference:** The drive choice supports the collector and turret by allowing travel direction to change without the chassis continuously pointing toward the next ball. Lowering mass helps resist wheel unloading during fast transitions, while the chosen ground clearance still has to survive real field debris and cargo. Extra bearing support changes how module loads reach the motor shaft. A reusable design record should retain these integration details because a module family name alone cannot explain collision survival or handling.\n\n**Proposed validation — not a completed test:** Compare stopping and lateral acceleration with representative cargo and bumper loads; inspect motor-shaft support alignment after impacts.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | L3; 18 ft/s free; Mk4i; Falcon drive/steer | [Source p13](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13) |\n| Intake | 3-in primary at 2.4:1; 1-in secondary at 1.6:1; pneumatic four-bar | [Source p14](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14) |\n| Serializer | 6-in wheels at 6:1; 1-in rollers at 3:1 | [Source p15](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15) |\n| Turret | 45:1; ±120°; 12-in-ID bearing | [Source p16](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16) |\n| Shooter | 9-in main; 14:72 tooth pair; five 1.75-in backing rollers; two Falcons | [Source p17](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17) |\n| Lift | 41:1; 11 in/s; #25 chain | [Source p18](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18) |\n| Stinger | 2/1.5/1-in telescope tubes; constant-force extension | [Source p19](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "id": "binder-f93f8ab32955ff8090-p13-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p13-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13",
+        "caption": "2022-254 · SIDEWAYS · Drivebase · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          109.23600006103516,
+          137.81198120117188,
+          502.76300048828125,
+          385.79998779296875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-f93f8ab32955ff8090-p14-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 14,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p14-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14",
+        "caption": "2022-254 · SIDEWAYS · Dual four-bar intakes · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Dual four-bar intakes",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          133.6999969482422,
+          143.59298706054688,
+          478.29998779296875,
+          415.9729919433594
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 14
+      },
+      {
+        "id": "binder-f93f8ab32955ff8090-p15-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p15-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15",
+        "caption": "2022-254 · SIDEWAYS · Serializer · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Serializer",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          75.2771987915039,
+          136.00399780273438,
+          536.7232055664062,
+          462.5929870605469
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      },
+      {
+        "id": "binder-f93f8ab32955ff8090-p16-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 16,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p16-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16",
+        "caption": "2022-254 · SIDEWAYS · Turret · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Turret",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          67.71330261230469,
+          139.67098999023438,
+          544.2863159179688,
+          421.2149963378906
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 16
+      },
+      {
+        "id": "binder-f93f8ab32955ff8090-p17-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 17,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p17-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17",
+        "caption": "2022-254 · SIDEWAYS · Shooter · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          154.3489990234375,
+          133.35101318359375,
+          457.6510009765625,
+          438.7690124511719
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 17
+      },
+      {
+        "id": "binder-f93f8ab32955ff8090-p18-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 18,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p18-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18",
+        "caption": "2022-254 · SIDEWAYS · Elevator and reaction arm · PDF page 18, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Elevator and reaction arm",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          196.1959991455078,
+          131.34799194335938,
+          389.66900634765625,
+          417.1300048828125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 18
+      },
+      {
+        "id": "binder-f93f8ab32955ff8090-p19-1",
+        "robot_id": "2022-254",
+        "kind": "binder_figure",
+        "binder_id": "f93f8ab32955ff8090",
+        "pdf_page": 19,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-f93f8ab32955ff8090-p19-1.jpg",
+        "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19",
+        "caption": "2022-254 · SIDEWAYS · Traversal stinger · PDF page 19, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Traversal stinger",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          271.5459899902344,
+          137.93301391601562,
+          340.4530944824219,
+          428.72100830078125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 19
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-254",
+    "team_name": "The Cheesy Poofs",
+    "epa_rank": 4,
+    "epa": 64.86,
+    "epa_pre_champs": 70.33,
+    "epa_breakdown": {
+      "total_points": 64.86,
+      "auto_points": 14.31,
+      "teleop_points": 35.2,
+      "endgame_points": 15.34,
+      "cargo_rp": 0.7901,
+      "hangar_rp": 0.671,
+      "tiebreaker_points": 64.86,
+      "auto_taxi_points": 2.06,
+      "auto_cargo_lower": 0.02,
+      "auto_cargo_upper": 3.05,
+      "teleop_cargo_lower": -0.04,
+      "teleop_cargo_upper": 17.62,
+      "rp_1": 0.7901,
+      "rp_2": 0.671
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "f93f8ab32955ff80",
+      "00d6d04fee8b715f"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "four-bar",
+      "pass-through",
+      "turret",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-f93f8ab32955ff8090-77",
+      "tech-f93f8ab32955ff8090-78",
+      "tech-f93f8ab32955ff8090-79",
+      "tech-f93f8ab32955ff8090-80",
+      "tech-f93f8ab32955ff8090-81"
+    ],
+    "binder_source_ids": [
+      "f93f8ab32955ff8090"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-254",
+      "year": 2022,
+      "team": 254,
+      "epa_rank": 4,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"254\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 1,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "f93f8ab32955ff8090"
+      ],
+      "technical_note_ids": [
+        "tech-f93f8ab32955ff8090-77",
+        "tech-f93f8ab32955ff8090-78",
+        "tech-f93f8ab32955ff8090-79",
+        "tech-f93f8ab32955ff8090-80",
+        "tech-f93f8ab32955ff8090-81"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "f93f8ab32955ff8090",
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+          "error": null,
+          "discovery": "Existing primary bundle",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "f93f8ab32955ff8090",
+      "subsystem": "intake",
+      "title": "SIDEWAYS: compliant dual four-bar collection",
+      "pdf_pages": [
+        10,
+        14
+      ],
+      "construction": "Dual pneumatic four-bars; quarter-inch polycarbonate arms; large front and smaller transfer rollers.",
+      "team_stated_reason": "Acquire from either side and yield in collisions.",
+      "engineering_analysis": "Two intake directions reduce the turn needed to collect the next cargo while keeping the shooter in a useful field orientation. The four-bar defines the roller’s approach and stowed position; the arm material supplies lateral compliance that the linkage alone cannot. Different roller diameters and reductions establish surface velocities through the transition. An apparent increase in grip is unhelpful if it arrests the ball between contacts. This architecture should be understood as two collectors feeding one shared storage and shooter system, not as two independent scoring paths.",
+      "recommended_validation": "Measure acquisition at speed and across approach angles, then verify both directions still transfer correctly after impact.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-f93f8ab32955ff8090-77",
+      "robot_id": "2022-254",
+      "year": 2022,
+      "version_label": "SIDEWAYS",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=10"
+        },
+        {
+          "pdf_page": 14,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14"
+        }
+      ],
+      "image_ids": [
+        "binder-f93f8ab32955ff8090-p14-1"
+      ]
+    },
+    {
+      "binder_id": "f93f8ab32955ff8090",
+      "subsystem": "transfer",
+      "title": "SIDEWAYS: serialize two wide inputs and reject wrong-color cargo",
+      "pdf_pages": [
+        15,
+        21,
+        22
+      ],
+      "construction": "Centering wheels and rollers; beam-break position tracking; color sensing; deliberate opponent-cargo ejection.",
+      "team_stated_reason": "Maintain two-cargo ownership and consistent shooter feeding.",
+      "engineering_analysis": "The serializer converts a broad acquisition front into an ordered narrow output under a possession limit. Storing the first accepted ball away from the active intake leaves room for the second; that is a spatial control policy, not merely a conveyor. Color rejection adds an adversarial constraint: an unwanted ball must leave without corrupting the state estimate or helping the opponent more than necessary. A sensor detects contact or color at one location, so software must preserve identity as balls move and occasionally slip. A jam can be a state-estimation failure even when all rollers turn.",
+      "recommended_validation": "Run correct/wrong-color pairs from both sides, interrupt the feed, and verify the estimated inventory against video.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-f93f8ab32955ff8090-78",
+      "robot_id": "2022-254",
+      "year": 2022,
+      "version_label": "SIDEWAYS",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15"
+        },
+        {
+          "pdf_page": 21,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=21"
+        },
+        {
+          "pdf_page": 22,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=22"
+        }
+      ],
+      "image_ids": [
+        "binder-f93f8ab32955ff8090-p15-1"
+      ]
+    },
+    {
+      "binder_id": "f93f8ab32955ff8090",
+      "subsystem": "scoring",
+      "title": "SIDEWAYS: wrap, surface matching and a moving target",
+      "pdf_pages": [
+        16,
+        17,
+        22
+      ],
+      "construction": "Nine-inch main wheel, driven back rollers, adjustable hood and ±120° turret.",
+      "team_stated_reason": "Long contact and controlled spin for accurate mobile shots.",
+      "engineering_analysis": "A long wrap increases the time available to accelerate the cargo and can reduce the impulse required at any single contact. Driving the backing rollers changes both friction loss and the ball’s angular velocity. Surface-speed matching is a kinematic idea; the actual ball may slip or deform, so launch spin must be measured. The turret reduces chassis-heading dependence, while the hood and speed map determine range. None of these removes the need to account for robot velocity and shot timing. The relevant comparison is the repeatability of the exit state under a sequence of shots.",
+      "recommended_validation": "Measure ball translation and spin with high-speed video, compare first and second shots, and test motion compensation across turret headings.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-f93f8ab32955ff8090-79",
+      "robot_id": "2022-254",
+      "year": 2022,
+      "version_label": "SIDEWAYS",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 16,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16"
+        },
+        {
+          "pdf_page": 17,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17"
+        },
+        {
+          "pdf_page": 22,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=22"
+        }
+      ],
+      "image_ids": [
+        "binder-f93f8ab32955ff8090-p16-1",
+        "binder-f93f8ab32955ff8090-p17-1"
+      ]
+    },
+    {
+      "binder_id": "f93f8ab32955ff8090",
+      "subsystem": "endgame",
+      "title": "SIDEWAYS: react against the truss before reaching traversal",
+      "pdf_pages": [
+        18,
+        19
+      ],
+      "construction": "Chain elevator, reaction arm, passive telescoping stinger and retention latches.",
+      "team_stated_reason": "Reorient the robot to reach traversal within the envelope.",
+      "engineering_analysis": "This climb is a sequence of changing load paths. The elevator first loads a rung; the reaction arm then changes the robot angle by pushing against the truss; the stinger finally reaches a farther rung. Large internal forces can occur while the robot barely moves because opposing contacts create a short lever arm. A tensile strap can carry a known directional load efficiently, but cannot resist compression or uncontrolled reverse motion. The passive stinger can be light because it need not retract under robot load. Copying only its telescoping tubes would omit the reaction geometry that makes the reach possible.",
+      "recommended_validation": "Instrument reaction loads and verify every intermediate retention state; test misalignment and incomplete hook engagement before increasing speed.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-f93f8ab32955ff8090-80",
+      "robot_id": "2022-254",
+      "year": 2022,
+      "version_label": "SIDEWAYS",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 18,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18"
+        },
+        {
+          "pdf_page": 19,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19"
+        }
+      ],
+      "image_ids": [
+        "binder-f93f8ab32955ff8090-p18-1",
+        "binder-f93f8ab32955ff8090-p19-1"
+      ]
+    },
+    {
+      "binder_id": "f93f8ab32955ff8090",
+      "subsystem": "drivetrain",
+      "title": "SIDEWAYS: first swerve and deliberately low mass placement",
+      "pdf_pages": [
+        13
+      ],
+      "construction": "Mk4i L3 modules, added motor-shaft support bearings, low solid bellypan and central battery.",
+      "team_stated_reason": "Maneuver around defense and maintain stability.",
+      "engineering_analysis": "The drive choice supports the collector and turret by allowing travel direction to change without the chassis continuously pointing toward the next ball. Lowering mass helps resist wheel unloading during fast transitions, while the chosen ground clearance still has to survive real field debris and cargo. Extra bearing support changes how module loads reach the motor shaft. A reusable design record should retain these integration details because a module family name alone cannot explain collision survival or handling.",
+      "recommended_validation": "Compare stopping and lateral acceleration with representative cargo and bumper loads; inspect motor-shaft support alignment after impacts.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-f93f8ab32955ff8090-81",
+      "robot_id": "2022-254",
+      "year": 2022,
+      "version_label": "SIDEWAYS",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 13,
+          "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-f93f8ab32955ff8090-p13-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-f93f8ab32955ff8090-1",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 13,
+      "component": "Drive",
+      "published_parameters": "L3; 18 ft/s free; Mk4i; Falcon drive/steer",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-f93f8ab32955ff8090-2",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 14,
+      "component": "Intake",
+      "published_parameters": "3-in primary at 2.4:1; 1-in secondary at 1.6:1; pneumatic four-bar",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-f93f8ab32955ff8090-3",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 15,
+      "component": "Serializer",
+      "published_parameters": "6-in wheels at 6:1; 1-in rollers at 3:1",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-f93f8ab32955ff8090-4",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 16,
+      "component": "Turret",
+      "published_parameters": "45:1; ±120°; 12-in-ID bearing",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-f93f8ab32955ff8090-5",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 17,
+      "component": "Shooter",
+      "published_parameters": "9-in main; 14:72 tooth pair; five 1.75-in backing rollers; two Falcons",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-f93f8ab32955ff8090-6",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 18,
+      "component": "Lift",
+      "published_parameters": "41:1; 11 in/s; #25 chain",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-f93f8ab32955ff8090-7",
+      "binder_id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "pdf_page": 19,
+      "component": "Stinger",
+      "published_parameters": "2/1.5/1-in telescope tubes; constant-force extension",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "f93f8ab32955ff8090",
+      "robot_id": "2022-254",
+      "title": "2022-254 SIDEWAYS technical publication",
+      "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+      "format": "pdf",
+      "pages": 24,
+      "sha256": "2d367a5942551240c19d10dae03addd7b0b6d1769bf06ae8a2fb2da347c23740",
+      "bytes": 1572701,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        10,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22
+      ],
+      "figure_pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Existing primary bundle",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2022-254:publication-version:1",
+      "label": "SIDEWAYS",
+      "robot_id": "2022-254",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-f93f8ab32955ff8090-77",
+        "tech-f93f8ab32955ff8090-78",
+        "tech-f93f8ab32955ff8090-79",
+        "tech-f93f8ab32955ff8090-80",
+        "tech-f93f8ab32955ff8090-81"
+      ],
+      "source_urls": [
+        "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2022-254",
+      "title": "2022-254: technical construction and mechanism reasoning",
+      "year": 2022,
+      "robot_id": "2022-254",
+      "kind": "robot_technical_review",
+      "body": "# 2022-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## SIDEWAYS: compliant dual four-bar collection\n\nVersion: SIDEWAYS. [PDF p10](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=10) · [PDF p14](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14)\n\n**Published construction:** Dual pneumatic four-bars; quarter-inch polycarbonate arms; large front and smaller transfer rollers.\n\n**Team-stated reason or evidence boundary:** Acquire from either side and yield in collisions.\n\n**Engineering analysis — original inference:** Two intake directions reduce the turn needed to collect the next cargo while keeping the shooter in a useful field orientation. The four-bar defines the roller’s approach and stowed position; the arm material supplies lateral compliance that the linkage alone cannot. Different roller diameters and reductions establish surface velocities through the transition. An apparent increase in grip is unhelpful if it arrests the ball between contacts. This architecture should be understood as two collectors feeding one shared storage and shooter system, not as two independent scoring paths.\n\n**Proposed validation — not a completed test:** Measure acquisition at speed and across approach angles, then verify both directions still transfer correctly after impact.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: serialize two wide inputs and reject wrong-color cargo\n\nVersion: SIDEWAYS. [PDF p15](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15) · [PDF p21](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=21) · [PDF p22](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=22)\n\n**Published construction:** Centering wheels and rollers; beam-break position tracking; color sensing; deliberate opponent-cargo ejection.\n\n**Team-stated reason or evidence boundary:** Maintain two-cargo ownership and consistent shooter feeding.\n\n**Engineering analysis — original inference:** The serializer converts a broad acquisition front into an ordered narrow output under a possession limit. Storing the first accepted ball away from the active intake leaves room for the second; that is a spatial control policy, not merely a conveyor. Color rejection adds an adversarial constraint: an unwanted ball must leave without corrupting the state estimate or helping the opponent more than necessary. A sensor detects contact or color at one location, so software must preserve identity as balls move and occasionally slip. A jam can be a state-estimation failure even when all rollers turn.\n\n**Proposed validation — not a completed test:** Run correct/wrong-color pairs from both sides, interrupt the feed, and verify the estimated inventory against video.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: wrap, surface matching and a moving target\n\nVersion: SIDEWAYS. [PDF p16](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16) · [PDF p17](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17) · [PDF p22](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=22)\n\n**Published construction:** Nine-inch main wheel, driven back rollers, adjustable hood and ±120° turret.\n\n**Team-stated reason or evidence boundary:** Long contact and controlled spin for accurate mobile shots.\n\n**Engineering analysis — original inference:** A long wrap increases the time available to accelerate the cargo and can reduce the impulse required at any single contact. Driving the backing rollers changes both friction loss and the ball’s angular velocity. Surface-speed matching is a kinematic idea; the actual ball may slip or deform, so launch spin must be measured. The turret reduces chassis-heading dependence, while the hood and speed map determine range. None of these removes the need to account for robot velocity and shot timing. The relevant comparison is the repeatability of the exit state under a sequence of shots.\n\n**Proposed validation — not a completed test:** Measure ball translation and spin with high-speed video, compare first and second shots, and test motion compensation across turret headings.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: react against the truss before reaching traversal\n\nVersion: SIDEWAYS. [PDF p18](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18) · [PDF p19](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19)\n\n**Published construction:** Chain elevator, reaction arm, passive telescoping stinger and retention latches.\n\n**Team-stated reason or evidence boundary:** Reorient the robot to reach traversal within the envelope.\n\n**Engineering analysis — original inference:** This climb is a sequence of changing load paths. The elevator first loads a rung; the reaction arm then changes the robot angle by pushing against the truss; the stinger finally reaches a farther rung. Large internal forces can occur while the robot barely moves because opposing contacts create a short lever arm. A tensile strap can carry a known directional load efficiently, but cannot resist compression or uncontrolled reverse motion. The passive stinger can be light because it need not retract under robot load. Copying only its telescoping tubes would omit the reaction geometry that makes the reach possible.\n\n**Proposed validation — not a completed test:** Instrument reaction loads and verify every intermediate retention state; test misalignment and incomplete hook engagement before increasing speed.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SIDEWAYS: first swerve and deliberately low mass placement\n\nVersion: SIDEWAYS. [PDF p13](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13)\n\n**Published construction:** Mk4i L3 modules, added motor-shaft support bearings, low solid bellypan and central battery.\n\n**Team-stated reason or evidence boundary:** Maneuver around defense and maintain stability.\n\n**Engineering analysis — original inference:** The drive choice supports the collector and turret by allowing travel direction to change without the chassis continuously pointing toward the next ball. Lowering mass helps resist wheel unloading during fast transitions, while the chosen ground clearance still has to survive real field debris and cargo. Extra bearing support changes how module loads reach the motor shaft. A reusable design record should retain these integration details because a module family name alone cannot explain collision survival or handling.\n\n**Proposed validation — not a completed test:** Compare stopping and lateral acceleration with representative cargo and bumper loads; inspect motor-shaft support alignment after impacts.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | L3; 18 ft/s free; Mk4i; Falcon drive/steer | [Source p13](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13) |\n| Intake | 3-in primary at 2.4:1; 1-in secondary at 1.6:1; pneumatic four-bar | [Source p14](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14) |\n| Serializer | 6-in wheels at 6:1; 1-in rollers at 3:1 | [Source p15](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15) |\n| Turret | 45:1; ±120°; 12-in-ID bearing | [Source p16](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16) |\n| Shooter | 9-in main; 14:72 tooth pair; five 1.75-in backing rollers; two Falcons | [Source p17](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17) |\n| Lift | 41:1; 11 in/s; #25 chain | [Source p18](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18) |\n| Stinger | 2/1.5/1-in telescope tubes; constant-force extension | [Source p19](https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf"
+      ],
+      "path": "docs/technical/2022-254.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "binder-f93f8ab32955ff8090-p13-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p13-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=13",
+      "caption": "2022-254 · SIDEWAYS · Drivebase · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        109.23600006103516,
+        137.81198120117188,
+        502.76300048828125,
+        385.79998779296875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 906,
+      "height_px": 572,
+      "bytes": 61921,
+      "sha256": "06f51f432a589e69e8d0f8fee0deb9047b7bc4dd42a4d3883f118f3719c61afb",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p13-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-f93f8ab32955ff8090-p14-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 14,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p14-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=14",
+      "caption": "2022-254 · SIDEWAYS · Dual four-bar intakes · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Dual four-bar intakes",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        133.6999969482422,
+        143.59298706054688,
+        478.29998779296875,
+        415.9729919433594
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 14,
+      "media_type": "image/jpeg",
+      "width_px": 794,
+      "height_px": 627,
+      "bytes": 51993,
+      "sha256": "49f7c5c0303c9f15d9f967ffce3d4d29708ebe82df772eb652b6bb78afd0cf9b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p14-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p14-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-f93f8ab32955ff8090-p15-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p15-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=15",
+      "caption": "2022-254 · SIDEWAYS · Serializer · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Serializer",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        75.2771987915039,
+        136.00399780273438,
+        536.7232055664062,
+        462.5929870605469
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 1062,
+      "height_px": 752,
+      "bytes": 112429,
+      "sha256": "34ee7f8b8402fd0869253acdf12eb21e18ab849d99ad189126fe9b5a81a83289",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p15-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-f93f8ab32955ff8090-p16-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 16,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p16-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=16",
+      "caption": "2022-254 · SIDEWAYS · Turret · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Turret",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        67.71330261230469,
+        139.67098999023438,
+        544.2863159179688,
+        421.2149963378906
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 16,
+      "media_type": "image/jpeg",
+      "width_px": 1097,
+      "height_px": 648,
+      "bytes": 58721,
+      "sha256": "aa6ee76094368f1f1d75786e63985cfda8ff164ecdaefbd0135f191bfce06053",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p16-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p16-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-f93f8ab32955ff8090-p17-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 17,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p17-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=17",
+      "caption": "2022-254 · SIDEWAYS · Shooter · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        154.3489990234375,
+        133.35101318359375,
+        457.6510009765625,
+        438.7690124511719
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 17,
+      "media_type": "image/jpeg",
+      "width_px": 698,
+      "height_px": 704,
+      "bytes": 73731,
+      "sha256": "2007a724bb5bf077e21653c96910f7a308d2a2c76df27e1e061c14de9e494655",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p17-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p17-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-f93f8ab32955ff8090-p18-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 18,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p18-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=18",
+      "caption": "2022-254 · SIDEWAYS · Elevator and reaction arm · PDF page 18, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Elevator and reaction arm",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        196.1959991455078,
+        131.34799194335938,
+        389.66900634765625,
+        417.1300048828125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 18,
+      "media_type": "image/jpeg",
+      "width_px": 446,
+      "height_px": 658,
+      "bytes": 35267,
+      "sha256": "5a25dedcbf9880515a886ff98b83a79e1d8c7ecde1aee21f0b1e272933c91a39",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p18-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p18-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-f93f8ab32955ff8090-p19-1",
+      "robot_id": "2022-254",
+      "kind": "binder_figure",
+      "binder_id": "f93f8ab32955ff8090",
+      "pdf_page": 19,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-f93f8ab32955ff8090-p19-1.jpg",
+      "source_url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf#page=19",
+      "caption": "2022-254 · SIDEWAYS · Traversal stinger · PDF page 19, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Traversal stinger",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        271.5459899902344,
+        137.93301391601562,
+        340.4530944824219,
+        428.72100830078125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 19,
+      "media_type": "image/jpeg",
+      "width_px": 160,
+      "height_px": 670,
+      "bytes": 8238,
+      "sha256": "89e6eaf58716d79542c4ec3e85edf502c435ec893c8ea1c9723fc7fef78f539e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-f93f8ab32955ff8090-p19-1",
+      "reader_url": "index.html#image=binder-f93f8ab32955ff8090-p19-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-254",
+    "year": 2022,
+    "team": 254,
+    "epa_rank": 4,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"254\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 1,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "f93f8ab32955ff8090"
+    ],
+    "technical_note_ids": [
+      "tech-f93f8ab32955ff8090-77",
+      "tech-f93f8ab32955ff8090-78",
+      "tech-f93f8ab32955ff8090-79",
+      "tech-f93f8ab32955ff8090-80",
+      "tech-f93f8ab32955ff8090-81"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "f93f8ab32955ff8090",
+        "url": "https://media.team254.com/2022/10/8f2407a5-Team_254_Tech_Binder_2022.pdf",
+        "error": null,
+        "discovery": "Existing primary bundle",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-f93f8ab32955ff8090-77:construction",
+    "tech-f93f8ab32955ff8090-77:team_stated_reason",
+    "tech-f93f8ab32955ff8090-77:engineering_analysis",
+    "tech-f93f8ab32955ff8090-77:recommended_validation",
+    "tech-f93f8ab32955ff8090-77:limitations",
+    "tech-f93f8ab32955ff8090-78:construction",
+    "tech-f93f8ab32955ff8090-78:team_stated_reason",
+    "tech-f93f8ab32955ff8090-78:engineering_analysis",
+    "tech-f93f8ab32955ff8090-78:recommended_validation",
+    "tech-f93f8ab32955ff8090-78:limitations",
+    "tech-f93f8ab32955ff8090-79:construction",
+    "tech-f93f8ab32955ff8090-79:team_stated_reason",
+    "tech-f93f8ab32955ff8090-79:engineering_analysis",
+    "tech-f93f8ab32955ff8090-79:recommended_validation",
+    "tech-f93f8ab32955ff8090-79:limitations",
+    "tech-f93f8ab32955ff8090-80:construction",
+    "tech-f93f8ab32955ff8090-80:team_stated_reason",
+    "tech-f93f8ab32955ff8090-80:engineering_analysis",
+    "tech-f93f8ab32955ff8090-80:recommended_validation",
+    "tech-f93f8ab32955ff8090-80:limitations",
+    "tech-f93f8ab32955ff8090-81:construction",
+    "tech-f93f8ab32955ff8090-81:team_stated_reason",
+    "tech-f93f8ab32955ff8090-81:engineering_analysis",
+    "tech-f93f8ab32955ff8090-81:recommended_validation",
+    "tech-f93f8ab32955ff8090-81:limitations",
+    "param-f93f8ab32955ff8090-1",
+    "param-f93f8ab32955ff8090-2",
+    "param-f93f8ab32955ff8090-3",
+    "param-f93f8ab32955ff8090-4",
+    "param-f93f8ab32955ff8090-5",
+    "param-f93f8ab32955ff8090-6",
+    "param-f93f8ab32955ff8090-7"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

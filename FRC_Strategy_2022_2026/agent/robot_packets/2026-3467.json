@@ -1,0 +1,1200 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-3467",
+  "year": 2026,
+  "team": 3467,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 3467,
+    "robot": "Windham Windup 2026",
+    "primary": [
+      "https://youtu.be/XXEyiGw7u54",
+      "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf"
+    ],
+    "architecture": "Four-wide drum rebuild with extensively iterated hot-dog roller feed.",
+    "subsystems": {
+      "drivetrain": "Swerve; precise module variant unresolved here.",
+      "intake": "Single griptape stub roller and spring-supported kicker; SRPP preserves impact shape.",
+      "transfer": "Compliant wheels plus stub rollers singulate from net hopper; rising path accelerates fuel in roughly five-percent steps.",
+      "scoring": "Original single stream grew to independent dual streams, then post-week-1/2 rebuild to wide drum. Separate belt loops replaced poorly controlled continuous tensioned loop.",
+      "endgame": "Endgame installation not established by reviewed interview.",
+      "controls": "Camera/computer failures led to Jetson-based C2 vision; resilient trajectory follower pauses feedforward when far off path then resumes after recovery."
+    },
+    "versions": [
+      "Competed weeks 1, 2 and 5; major rebuild occurred between weeks 2 and 5.",
+      "Around 30 indexer development revisions are reported, not 30 competed configurations."
+    ],
+    "analysis": "The rate-limiting subsystem and reliability problem changed together: a wider scorer needed stable feed and pose estimates. Architecture reuse should include diagnostics and recovery paths, not just nominal autonomous routes.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2026-3467: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## 3467: redundant rack support and expanding walls\n\nVersion: 2026 dual shooter. [PDF p9](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9) · [PDF p10](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=10)\n\n**Published construction:** Double polycarbonate rack plates; powered and idler pinions; walls move with intake.\n\n**Team-stated reason or evidence boundary:** Impact tolerance, tooth engagement and more storage.\n\n**Engineering analysis — original inference:** Supporting a rack at more than one point reduces its tendency to peel away from the drive pinion under load. Two rack plates can distribute stress, but only if their tooth timing and guidance are aligned; otherwise they can fight each other. Moving the walls with the collector creates agitation as well as extra volume. Agitation may improve flow near the floor but can also throw a top layer out unless the lid and wall overlap control it. A side load remains a separate case from a frontal collapse.\n\n**Proposed validation — not a completed test:** Test rack deflection, skipping and skew with a side hit; observe fuel near moving wall seams during repeated deploy/retract cycles.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 3467: active centering into two launch streams\n\nVersion: 2026 dual shooter. [PDF p11](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11) · [PDF p12](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=12)\n\n**Published construction:** Ten floor rollers; powered stacked-belt side wedges; central divider; live-axle tower roller.\n\n**Team-stated reason or evidence boundary:** Center fuel while limiting tower oscillation.\n\n**Engineering analysis — original inference:** Active side contact can rotate or translate fuel away from a bottleneck rather than relying on gravity against a fixed wall. Its surface direction has to agree with the desired stream; excessive inward force can create an arch at the divider. The live-axle tower roller is a structural answer to rapidly changing multi-ball loads, reducing a source of compression variation. The useful comparison is not simply belts versus rollers: it is whether the particular contact geometry establishes two repeatable, supplied paths through the entire range of hopper fill.\n\n**Proposed validation — not a completed test:** Feed off-center piles, log each stream separately, and compare tower deflection under single-ball and paired-ball arrivals.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 3467: two independent launchers and stored energy\n\nVersion: 2026 dual shooter. [PDF p13](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13) · [PDF p14](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14)\n\n**Published construction:** Two launchers; four 3-inch 45A wheels per launcher with inertia kits; adjustable hood.\n\n**Team-stated reason or evidence boundary:** High rate with controllable exit conditions.\n\n**Engineering analysis — original inference:** Independent launch drives can compensate for asymmetric supply, but increase the number of conditions that must be measured. Added inertia can reduce transient speed droop while consuming mass and spin-up time. A soft wheel increases compliance and contact duration, but changes compression as it wears or heats. Hood range should be translated into a validated scoring and passing envelope, rather than assuming every geometric angle produces a useful trajectory. The desired test is a full stream of representative fuel, not a single ideal ball launched repeatedly.\n\n**Proposed validation — not a completed test:** Compare both streams’ exit speed distributions and accuracy through a long volley, at fresh and worn surface conditions.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 3467: camera structure and predictive trench ducking\n\nVersion: 2026 dual shooter. [PDF p15](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=15) · [PDF p19](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=19) · [PDF p20](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=20)\n\n**Published construction:** Braced camera towers; measured shot gates; future-pose hood retraction for trench entry.\n\n**Team-stated reason or evidence boundary:** Preserve localization and avoid hood collisions.\n\n**Engineering analysis — original inference:** Camera vibration produces an apparent pose error even if the vision algorithm is otherwise correct. Bracing the mount to the shooter can stiffen it, but also transmits shooter vibration; the net effect should be measured. Trench protection is a dynamic clearance problem: retracting at the boundary is too late when the mechanism takes time to move. The lookahead should include speed, control delay, deceleration and an uncertainty margin, with a safe fallback if localization becomes invalid. This is a control requirement created by the mechanism’s envelope.\n\n**Proposed validation — not a completed test:** Run approach tests at several speeds and headings with degraded pose data; verify the hood clears before the physical entry plane.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 3.5:1 deploy; 10T 10DP; 2-in roller at 2:1 | [Source p10](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=10) |\n| Indexer | 1.5:1 floor; 21-ft/s surface; 2.5:1 live wedges | [Source p12](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=12) |\n| Shooter | four 3-in 45A wheels per stream; 1:1.11 source ratio; 56.23:1 hood | [Source p14](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14) |\n| Feeder | 2-in 45A; 3:1 | [Source p14](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2026-3467",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/508474/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/3/3/4331892237bd289bb7182bffd9e6e7b27deb2d55_2_553x500.jpeg",
+        "post": 1,
+        "date": "2025-11-21T17:37:35.994Z",
+        "author": "Kevin_Leonard",
+        "context_tags": [
+          "climb",
+          "intake"
+        ],
+        "caption": "2026 team 3467 — source image from post 1 (2025-11-21). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "5af469e68c42c8d5f1.jpg",
+        "id": "40f83bb3271101eae2",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/5af469e68c42c8d5f1.jpg"
+      },
+      {
+        "robot_id": "2026-3467",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/508474/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/f/f/5/ff55cd63131b89a41707527241880b6a4210d463.jpeg",
+        "post": 1,
+        "date": "2025-11-21T17:37:35.994Z",
+        "author": "Kevin_Leonard",
+        "context_tags": [
+          "climb",
+          "intake"
+        ],
+        "caption": "2026 team 3467 — source image from post 1 (2025-11-21). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "9575b0cb6040a5eb04.jpg",
+        "id": "4bc2fe8b280b0e8afe",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/9575b0cb6040a5eb04.jpg"
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p7-1",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p7-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=7",
+        "caption": "2026-3467 · 2026 dual shooter · Drivebase · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          99.4334716796875,
+          612.0,
+          551.5638427734375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p9-1",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p9-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9",
+        "caption": "2026-3467 · 2026 dual shooter · Linear intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Linear intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          129.6591796875,
+          552.4002685546875,
+          439.8179016113281
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p9-2",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 9,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p9-2.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9",
+        "caption": "2026-3467 · 2026 dual shooter · Linear intake · PDF page 9, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Linear intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          8.995819091796875,
+          464.7164306640625,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p11-1",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p11-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11",
+        "caption": "2026-3467 · 2026 dual shooter · Two-stream indexer · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Two-stream indexer",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          55.319244384765625,
+          128.4620361328125,
+          576.859375,
+          420.16058349609375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p11-2",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 11,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p11-2.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11",
+        "caption": "2026-3467 · 2026 dual shooter · Two-stream indexer · PDF page 11, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Two-stream indexer",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          446.80609130859375,
+          612.0,
+          792.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p13-1",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p13-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13",
+        "caption": "2026-3467 · 2026 dual shooter · Dual launchers · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Dual launchers",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.8604736328125,
+          151.31707763671875,
+          518.8837280273438,
+          403.8300476074219
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p13-2",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 13,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p13-2.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13",
+        "caption": "2026-3467 · 2026 dual shooter · Dual launchers · PDF page 13, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Dual launchers",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          47.673919677734375,
+          426.29736328125,
+          612.0,
+          762.047607421875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-1e35160c2e3b44126d-p15-1",
+        "robot_id": "2026-3467",
+        "kind": "binder_figure",
+        "binder_id": "1e35160c2e3b44126d",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1e35160c2e3b44126d-p15-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=15",
+        "caption": "2026-3467 · 2026 dual shooter · Camera towers · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Camera towers",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          49.555145263671875,
+          612.0,
+          554.2557373046875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      }
+    ],
+    "source_post_count": 101,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-117",
+        "url": "https://cad.onshape.com/documents/7ef2c49c5bb48212a6b180ee/w/d8d5e96ccea2e7e9ddb671f1/e/d311a2bcbeba035c9b61ad60?renderMode=0&uiState=6962747c5b03cee403e4a9cc",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "31ce25784c14292ba4"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/Elevator/ElevatorIO.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "50fcaa466458145a8a"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/Elevator/ElevatorIOSim.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "17b1bf586693f7034c"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/Elevator/ElevatorIOTalonFX.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "bee175b86aa6c3b3a0"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/Arm/ArmIOSim.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a4b396264cbeda8e85"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/Arm/ArmIOTalonFX.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "24594f4ca2b064ca5e"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/Claw/ClawRollerLaserCAN/ClawRollerLaserCAN.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7705dc836c62d572d9"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.15-Baja/blob/main/src/main/java/frc/robot/subsystems/GenericMotionProfiledSubsystem/GenericMotionProfiledSubsystemIOImpl.java#L99",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "da728aaf3b2c138ba6"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-132",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.16/wiki",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "bee65a0fbda7b82753"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-168",
+        "url": "https://github.com/NAHSRobotics-Team5667/FRC-2026/blob/58a465f5cb1c7e3af9a3ec326085f44edefe6c6e/src/main/java/frc/robot/generated/TunerConstants.java#L57",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7085b6f3f9ceaddf76"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-168",
+        "url": "https://github.com/NAHSRobotics-Team5667/FRC-2026/blob/58a465f5cb1c7e3af9a3ec326085f44edefe6c6e/src/main/java/frc/robot/generated/TunerConstants.java#L69",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d1a48a0842c3288622"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-168",
+        "url": "https://github.com/NAHSRobotics-Team5667/FRC-2026/blob/58a465f5cb1c7e3af9a3ec326085f44edefe6c6e/src/main/java/frc/robot/subsystems/FeederSubsystem.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7462b924ad5e87ca6e"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-168",
+        "url": "https://github.com/NAHSRobotics-Team5667/FRC-2026/blob/58a465f5cb1c7e3af9a3ec326085f44edefe6c6e/src/main/java/frc/robot/subsystems/IntakeSubsystem.java#L61-L66",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "830862df9f8a6937b9"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-168",
+        "url": "https://github.com/NAHSRobotics-Team5667/FRC-2026/blob/58a465f5cb1c7e3af9a3ec326085f44edefe6c6e/src/main/java/frc/robot/subsystems/ShooterSubsystem.java#L74",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "590f1b3a7b3dd2c138"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-172",
+        "url": "https://docs.google.com/spreadsheets/d/13lekrt_fvF7GKTiTeHgQG-VlZi7ZksPeBROJX_ke3GU/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "66c9f94aa6d96a02d6"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-202",
+        "url": "https://cad.onshape.com/documents/84cd5e2093675c89bf1f0483/w/51d2ffa6ab9a6583991baac1/e/a33699ce118f32005d005d13?renderMode=0&uiState=69fa1e594d17e4fc09a5586a",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d2726e1455a879edec"
+      },
+      {
+        "robot_id": "2026-3467",
+        "discovery_post": "2026-3467-508474-202",
+        "url": "https://cad.onshape.com/documents/2739c3e9cb45d741d69b414f/w/7201c98691e294823bf10f7b/e/c5ab938ca0a847e8f54ad849?renderMode=0&uiState=69fa3625b1462db72ca71a24",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "8f89aaaa0eea799e7a"
+      }
+    ],
+    "id": "2026-3467",
+    "team_name": "Windham Windup",
+    "epa_rank": 18,
+    "epa": 266.45,
+    "epa_pre_champs": 270.2,
+    "epa_breakdown": {
+      "total_points": 266.45,
+      "auto_points": 48.41,
+      "teleop_points": 150.87,
+      "endgame_points": 67.16,
+      "energized_rp": 0.7257,
+      "supercharged_rp": 0.7882,
+      "traversal_rp": -0.34345,
+      "tiebreaker_points": 266.45,
+      "auto_fuel": 48.49,
+      "auto_tower": -0.08,
+      "transition_fuel": 21.13,
+      "first_shift_fuel": 65.15,
+      "second_shift_fuel": 64.59,
+      "endgame_fuel": 67.04,
+      "endgame_tower": 0.13,
+      "rp_1": 0.7257,
+      "rp_2": 0.7882,
+      "rp_3": -0.34345,
+      "teleop_fuel": 217.91000000000003,
+      "total_fuel": 266.40000000000003,
+      "total_tower": 0.05
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "43ee3e175dbe15af"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "elevator",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-1e35160c2e3b44126d-22",
+      "tech-1e35160c2e3b44126d-23",
+      "tech-1e35160c2e3b44126d-24",
+      "tech-1e35160c2e3b44126d-25"
+    ],
+    "binder_source_ids": [
+      "1e35160c2e3b44126d"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-3467",
+      "year": 2026,
+      "team": 3467,
+      "epa_rank": 18,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"3467\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 28,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "1e35160c2e3b44126d"
+      ],
+      "technical_note_ids": [
+        "tech-1e35160c2e3b44126d-22",
+        "tech-1e35160c2e3b44126d-23",
+        "tech-1e35160c2e3b44126d-24",
+        "tech-1e35160c2e3b44126d-25"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "1e35160c2e3b44126d",
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+          "error": null,
+          "discovery": "Targeted web search; identity pending PDF inspection",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "1e35160c2e3b44126d",
+      "subsystem": "intake",
+      "title": "3467: redundant rack support and expanding walls",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "construction": "Double polycarbonate rack plates; powered and idler pinions; walls move with intake.",
+      "team_stated_reason": "Impact tolerance, tooth engagement and more storage.",
+      "engineering_analysis": "Supporting a rack at more than one point reduces its tendency to peel away from the drive pinion under load. Two rack plates can distribute stress, but only if their tooth timing and guidance are aligned; otherwise they can fight each other. Moving the walls with the collector creates agitation as well as extra volume. Agitation may improve flow near the floor but can also throw a top layer out unless the lid and wall overlap control it. A side load remains a separate case from a frontal collapse.",
+      "recommended_validation": "Test rack deflection, skipping and skew with a side hit; observe fuel near moving wall seams during repeated deploy/retract cycles.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1e35160c2e3b44126d-22",
+      "robot_id": "2026-3467",
+      "year": 2026,
+      "version_label": "2026 dual shooter",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 9,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9"
+        },
+        {
+          "pdf_page": 10,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-1e35160c2e3b44126d-p9-1",
+        "binder-1e35160c2e3b44126d-p9-2"
+      ]
+    },
+    {
+      "binder_id": "1e35160c2e3b44126d",
+      "subsystem": "transfer",
+      "title": "3467: active centering into two launch streams",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "construction": "Ten floor rollers; powered stacked-belt side wedges; central divider; live-axle tower roller.",
+      "team_stated_reason": "Center fuel while limiting tower oscillation.",
+      "engineering_analysis": "Active side contact can rotate or translate fuel away from a bottleneck rather than relying on gravity against a fixed wall. Its surface direction has to agree with the desired stream; excessive inward force can create an arch at the divider. The live-axle tower roller is a structural answer to rapidly changing multi-ball loads, reducing a source of compression variation. The useful comparison is not simply belts versus rollers: it is whether the particular contact geometry establishes two repeatable, supplied paths through the entire range of hopper fill.",
+      "recommended_validation": "Feed off-center piles, log each stream separately, and compare tower deflection under single-ball and paired-ball arrivals.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1e35160c2e3b44126d-23",
+      "robot_id": "2026-3467",
+      "year": 2026,
+      "version_label": "2026 dual shooter",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 11,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11"
+        },
+        {
+          "pdf_page": 12,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=12"
+        }
+      ],
+      "image_ids": [
+        "binder-1e35160c2e3b44126d-p11-1",
+        "binder-1e35160c2e3b44126d-p11-2"
+      ]
+    },
+    {
+      "binder_id": "1e35160c2e3b44126d",
+      "subsystem": "scoring",
+      "title": "3467: two independent launchers and stored energy",
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "construction": "Two launchers; four 3-inch 45A wheels per launcher with inertia kits; adjustable hood.",
+      "team_stated_reason": "High rate with controllable exit conditions.",
+      "engineering_analysis": "Independent launch drives can compensate for asymmetric supply, but increase the number of conditions that must be measured. Added inertia can reduce transient speed droop while consuming mass and spin-up time. A soft wheel increases compliance and contact duration, but changes compression as it wears or heats. Hood range should be translated into a validated scoring and passing envelope, rather than assuming every geometric angle produces a useful trajectory. The desired test is a full stream of representative fuel, not a single ideal ball launched repeatedly.",
+      "recommended_validation": "Compare both streams’ exit speed distributions and accuracy through a long volley, at fresh and worn surface conditions.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1e35160c2e3b44126d-24",
+      "robot_id": "2026-3467",
+      "year": 2026,
+      "version_label": "2026 dual shooter",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 13,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13"
+        },
+        {
+          "pdf_page": 14,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14"
+        }
+      ],
+      "image_ids": [
+        "binder-1e35160c2e3b44126d-p13-1",
+        "binder-1e35160c2e3b44126d-p13-2"
+      ]
+    },
+    {
+      "binder_id": "1e35160c2e3b44126d",
+      "subsystem": "controls",
+      "title": "3467: camera structure and predictive trench ducking",
+      "pdf_pages": [
+        15,
+        19,
+        20
+      ],
+      "construction": "Braced camera towers; measured shot gates; future-pose hood retraction for trench entry.",
+      "team_stated_reason": "Preserve localization and avoid hood collisions.",
+      "engineering_analysis": "Camera vibration produces an apparent pose error even if the vision algorithm is otherwise correct. Bracing the mount to the shooter can stiffen it, but also transmits shooter vibration; the net effect should be measured. Trench protection is a dynamic clearance problem: retracting at the boundary is too late when the mechanism takes time to move. The lookahead should include speed, control delay, deceleration and an uncertainty margin, with a safe fallback if localization becomes invalid. This is a control requirement created by the mechanism’s envelope.",
+      "recommended_validation": "Run approach tests at several speeds and headings with degraded pose data; verify the hood clears before the physical entry plane.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1e35160c2e3b44126d-25",
+      "robot_id": "2026-3467",
+      "year": 2026,
+      "version_label": "2026 dual shooter",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=15"
+        },
+        {
+          "pdf_page": 19,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=19"
+        },
+        {
+          "pdf_page": 20,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=20"
+        }
+      ],
+      "image_ids": [
+        "binder-1e35160c2e3b44126d-p15-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-1e35160c2e3b44126d-1",
+      "binder_id": "1e35160c2e3b44126d",
+      "robot_id": "2026-3467",
+      "pdf_page": 10,
+      "component": "Intake",
+      "published_parameters": "3.5:1 deploy; 10T 10DP; 2-in roller at 2:1",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1e35160c2e3b44126d-2",
+      "binder_id": "1e35160c2e3b44126d",
+      "robot_id": "2026-3467",
+      "pdf_page": 12,
+      "component": "Indexer",
+      "published_parameters": "1.5:1 floor; 21-ft/s surface; 2.5:1 live wedges",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=12",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1e35160c2e3b44126d-3",
+      "binder_id": "1e35160c2e3b44126d",
+      "robot_id": "2026-3467",
+      "pdf_page": 14,
+      "component": "Shooter",
+      "published_parameters": "four 3-in 45A wheels per stream; 1:1.11 source ratio; 56.23:1 hood",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1e35160c2e3b44126d-4",
+      "binder_id": "1e35160c2e3b44126d",
+      "robot_id": "2026-3467",
+      "pdf_page": 14,
+      "component": "Feeder",
+      "published_parameters": "2-in 45A; 3:1",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "1e35160c2e3b44126d",
+      "robot_id": "2026-3467",
+      "title": "2026-3467 2026 dual shooter technical publication",
+      "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+      "format": "pdf",
+      "pages": 20,
+      "sha256": "982880b55a925a430d1933b78a4c739e8d87025f1df1475dcbd1ea85fe447583",
+      "bytes": 6934624,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20
+      ],
+      "figure_pages": [
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Targeted web search; identity pending PDF inspection",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2026-3467:publication-version:1",
+      "label": "2026 dual shooter",
+      "robot_id": "2026-3467",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-1e35160c2e3b44126d-22",
+        "tech-1e35160c2e3b44126d-23",
+        "tech-1e35160c2e3b44126d-24",
+        "tech-1e35160c2e3b44126d-25"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2026-3467",
+      "title": "2026-3467: technical construction and mechanism reasoning",
+      "year": 2026,
+      "robot_id": "2026-3467",
+      "kind": "robot_technical_review",
+      "body": "# 2026-3467: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## 3467: redundant rack support and expanding walls\n\nVersion: 2026 dual shooter. [PDF p9](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9) · [PDF p10](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=10)\n\n**Published construction:** Double polycarbonate rack plates; powered and idler pinions; walls move with intake.\n\n**Team-stated reason or evidence boundary:** Impact tolerance, tooth engagement and more storage.\n\n**Engineering analysis — original inference:** Supporting a rack at more than one point reduces its tendency to peel away from the drive pinion under load. Two rack plates can distribute stress, but only if their tooth timing and guidance are aligned; otherwise they can fight each other. Moving the walls with the collector creates agitation as well as extra volume. Agitation may improve flow near the floor but can also throw a top layer out unless the lid and wall overlap control it. A side load remains a separate case from a frontal collapse.\n\n**Proposed validation — not a completed test:** Test rack deflection, skipping and skew with a side hit; observe fuel near moving wall seams during repeated deploy/retract cycles.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 3467: active centering into two launch streams\n\nVersion: 2026 dual shooter. [PDF p11](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11) · [PDF p12](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=12)\n\n**Published construction:** Ten floor rollers; powered stacked-belt side wedges; central divider; live-axle tower roller.\n\n**Team-stated reason or evidence boundary:** Center fuel while limiting tower oscillation.\n\n**Engineering analysis — original inference:** Active side contact can rotate or translate fuel away from a bottleneck rather than relying on gravity against a fixed wall. Its surface direction has to agree with the desired stream; excessive inward force can create an arch at the divider. The live-axle tower roller is a structural answer to rapidly changing multi-ball loads, reducing a source of compression variation. The useful comparison is not simply belts versus rollers: it is whether the particular contact geometry establishes two repeatable, supplied paths through the entire range of hopper fill.\n\n**Proposed validation — not a completed test:** Feed off-center piles, log each stream separately, and compare tower deflection under single-ball and paired-ball arrivals.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 3467: two independent launchers and stored energy\n\nVersion: 2026 dual shooter. [PDF p13](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13) · [PDF p14](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14)\n\n**Published construction:** Two launchers; four 3-inch 45A wheels per launcher with inertia kits; adjustable hood.\n\n**Team-stated reason or evidence boundary:** High rate with controllable exit conditions.\n\n**Engineering analysis — original inference:** Independent launch drives can compensate for asymmetric supply, but increase the number of conditions that must be measured. Added inertia can reduce transient speed droop while consuming mass and spin-up time. A soft wheel increases compliance and contact duration, but changes compression as it wears or heats. Hood range should be translated into a validated scoring and passing envelope, rather than assuming every geometric angle produces a useful trajectory. The desired test is a full stream of representative fuel, not a single ideal ball launched repeatedly.\n\n**Proposed validation — not a completed test:** Compare both streams’ exit speed distributions and accuracy through a long volley, at fresh and worn surface conditions.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## 3467: camera structure and predictive trench ducking\n\nVersion: 2026 dual shooter. [PDF p15](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=15) · [PDF p19](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=19) · [PDF p20](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=20)\n\n**Published construction:** Braced camera towers; measured shot gates; future-pose hood retraction for trench entry.\n\n**Team-stated reason or evidence boundary:** Preserve localization and avoid hood collisions.\n\n**Engineering analysis — original inference:** Camera vibration produces an apparent pose error even if the vision algorithm is otherwise correct. Bracing the mount to the shooter can stiffen it, but also transmits shooter vibration; the net effect should be measured. Trench protection is a dynamic clearance problem: retracting at the boundary is too late when the mechanism takes time to move. The lookahead should include speed, control delay, deceleration and an uncertainty margin, with a safe fallback if localization becomes invalid. This is a control requirement created by the mechanism’s envelope.\n\n**Proposed validation — not a completed test:** Run approach tests at several speeds and headings with degraded pose data; verify the hood clears before the physical entry plane.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 3.5:1 deploy; 10T 10DP; 2-in roller at 2:1 | [Source p10](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=10) |\n| Indexer | 1.5:1 floor; 21-ft/s surface; 2.5:1 live wedges | [Source p12](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=12) |\n| Shooter | four 3-in 45A wheels per stream; 1:1.11 source ratio; 56.23:1 hood | [Source p14](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14) |\n| Feeder | 2-in 45A; 3:1 | [Source p14](https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=14) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf"
+      ],
+      "path": "docs/technical/2026-3467.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-3467",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/508474/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/4/3/3/4331892237bd289bb7182bffd9e6e7b27deb2d55_2_553x500.jpeg",
+      "post": 1,
+      "date": "2025-11-21T17:37:35.994Z",
+      "author": "Kevin_Leonard",
+      "context_tags": [
+        "climb",
+        "intake"
+      ],
+      "caption": "2026 team 3467 — source image from post 1 (2025-11-21). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "5af469e68c42c8d5f1.jpg",
+      "id": "40f83bb3271101eae2",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/5af469e68c42c8d5f1.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 553,
+      "height_px": 500,
+      "bytes": 27862,
+      "sha256": "6f5892d218a9a8e43ab9af29fdd49c5847cd858093fda8a5fc60504b6aaec7a4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "40f83bb3271101eae2",
+      "reader_url": "index.html#image=40f83bb3271101eae2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-3467",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/508474/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/f/f/5/ff55cd63131b89a41707527241880b6a4210d463.jpeg",
+      "post": 1,
+      "date": "2025-11-21T17:37:35.994Z",
+      "author": "Kevin_Leonard",
+      "context_tags": [
+        "climb",
+        "intake"
+      ],
+      "caption": "2026 team 3467 — source image from post 1 (2025-11-21). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "9575b0cb6040a5eb04.jpg",
+      "id": "4bc2fe8b280b0e8afe",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/9575b0cb6040a5eb04.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 623,
+      "height_px": 392,
+      "bytes": 49006,
+      "sha256": "a2bf39d24eab9cad985820b6c26d54e77d60f2029dde982c230445821b37f9b4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4bc2fe8b280b0e8afe",
+      "reader_url": "index.html#image=4bc2fe8b280b0e8afe",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p7-1",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p7-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=7",
+      "caption": "2026-3467 · 2026 dual shooter · Drivebase · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        99.4334716796875,
+        612.0,
+        551.5638427734375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 1400,
+      "height_px": 1035,
+      "bytes": 90469,
+      "sha256": "33cf707bcbb3d19da5ffb45faeed6e1e76ac672d3cfd4dde55e6df1c773e67dd",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p7-1",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p9-1",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p9-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9",
+      "caption": "2026-3467 · 2026 dual shooter · Linear intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Linear intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        129.6591796875,
+        552.4002685546875,
+        439.8179016113281
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1271,
+      "height_px": 714,
+      "bytes": 45535,
+      "sha256": "c4ba5225f6c13ec122f631ae1614778a892b38e9cde7d2eadcaba3efb5903ebb",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p9-1",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p9-2",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 9,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p9-2.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=9",
+      "caption": "2026-3467 · 2026 dual shooter · Linear intake · PDF page 9, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Linear intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        8.995819091796875,
+        464.7164306640625,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1388,
+      "height_px": 754,
+      "bytes": 50480,
+      "sha256": "74755f8fb90830d147a6178cdd6cc9960c516efe4b94c5a1ca41ca068ab0c155",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p9-2",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p9-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p11-1",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p11-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11",
+      "caption": "2026-3467 · 2026 dual shooter · Two-stream indexer · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Two-stream indexer",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        55.319244384765625,
+        128.4620361328125,
+        576.859375,
+        420.16058349609375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 1200,
+      "height_px": 672,
+      "bytes": 58716,
+      "sha256": "e84b351a2cfcd2138fc539e89eefd6aba9695433005716ea6479d735fb5bf591",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p11-1",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p11-2",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 11,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p11-2.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=11",
+      "caption": "2026-3467 · 2026 dual shooter · Two-stream indexer · PDF page 11, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Two-stream indexer",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        446.80609130859375,
+        612.0,
+        792.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 1400,
+      "height_px": 790,
+      "bytes": 59057,
+      "sha256": "f47d54668761de4b6be406950718dfb16fb910f1e2b8d4521e24f9bad74c807f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p11-2",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p11-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p13-1",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p13-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13",
+      "caption": "2026-3467 · 2026 dual shooter · Dual launchers · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Dual launchers",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.8604736328125,
+        151.31707763671875,
+        518.8837280273438,
+        403.8300476074219
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1025,
+      "height_px": 581,
+      "bytes": 44322,
+      "sha256": "9d4adc40ac1f75adc0760c8763c05bff23cdc376ca77d27d4710528f4cc4df27",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p13-1",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p13-2",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 13,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p13-2.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=13",
+      "caption": "2026-3467 · 2026 dual shooter · Dual launchers · PDF page 13, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Dual launchers",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        47.673919677734375,
+        426.29736328125,
+        612.0,
+        762.047607421875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1299,
+      "height_px": 773,
+      "bytes": 54698,
+      "sha256": "6fa472f117c541726ab82e71daa8760b4c24247e99fb9f174a8e4e5018ebdda8",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p13-2",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p13-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1e35160c2e3b44126d-p15-1",
+      "robot_id": "2026-3467",
+      "kind": "binder_figure",
+      "binder_id": "1e35160c2e3b44126d",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1e35160c2e3b44126d-p15-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf#page=15",
+      "caption": "2026-3467 · 2026 dual shooter · Camera towers · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Camera towers",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        49.555145263671875,
+        612.0,
+        554.2557373046875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 1400,
+      "height_px": 1155,
+      "bytes": 88648,
+      "sha256": "42d63897f2bc9230478c1d323bed401f6c138b9aa0a3ed8ed4bcb25e4ac5b44d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1e35160c2e3b44126d-p15-1",
+      "reader_url": "index.html#image=binder-1e35160c2e3b44126d-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-3467",
+    "year": 2026,
+    "team": 3467,
+    "epa_rank": 18,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"3467\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 28,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "1e35160c2e3b44126d"
+    ],
+    "technical_note_ids": [
+      "tech-1e35160c2e3b44126d-22",
+      "tech-1e35160c2e3b44126d-23",
+      "tech-1e35160c2e3b44126d-24",
+      "tech-1e35160c2e3b44126d-25"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "1e35160c2e3b44126d",
+        "url": "https://www.chiefdelphi.com/uploads/short-url/lbtPppphC5xWP1sMBjDA1Xwhlhl.pdf",
+        "error": null,
+        "discovery": "Targeted web search; identity pending PDF inspection",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-1e35160c2e3b44126d-22:construction",
+    "tech-1e35160c2e3b44126d-22:team_stated_reason",
+    "tech-1e35160c2e3b44126d-22:engineering_analysis",
+    "tech-1e35160c2e3b44126d-22:recommended_validation",
+    "tech-1e35160c2e3b44126d-22:limitations",
+    "tech-1e35160c2e3b44126d-23:construction",
+    "tech-1e35160c2e3b44126d-23:team_stated_reason",
+    "tech-1e35160c2e3b44126d-23:engineering_analysis",
+    "tech-1e35160c2e3b44126d-23:recommended_validation",
+    "tech-1e35160c2e3b44126d-23:limitations",
+    "tech-1e35160c2e3b44126d-24:construction",
+    "tech-1e35160c2e3b44126d-24:team_stated_reason",
+    "tech-1e35160c2e3b44126d-24:engineering_analysis",
+    "tech-1e35160c2e3b44126d-24:recommended_validation",
+    "tech-1e35160c2e3b44126d-24:limitations",
+    "tech-1e35160c2e3b44126d-25:construction",
+    "tech-1e35160c2e3b44126d-25:team_stated_reason",
+    "tech-1e35160c2e3b44126d-25:engineering_analysis",
+    "tech-1e35160c2e3b44126d-25:recommended_validation",
+    "tech-1e35160c2e3b44126d-25:limitations",
+    "param-1e35160c2e3b44126d-1",
+    "param-1e35160c2e3b44126d-2",
+    "param-1e35160c2e3b44126d-3",
+    "param-1e35160c2e3b44126d-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-7769",
+  "year": 2026,
+  "team": 7769,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 7769,
+    "robot": "The CREW 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=6BrndIrOmgU"
+    ],
+    "architecture": "Large-capacity drum robot with roller-fed expanding net hopper.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification unresolved here.",
+      "intake": "Rack-driven collector; damaged rack teeth were repaired using sections of spares during championship-level defense.",
+      "transfer": "Belt floor and eight compliant wheels feed an S-shaped path; access panel lifts for electronics service.",
+      "scoring": "Originally separate large shooters jammed; central obstruction removed for one continuous drum. Four shooter motors and adjustable hood.",
+      "endgame": "Front flippy-hook concept conflicted with shooter; side harpoon used with vision alignment, but removed for the filmed event circumstances because net could catch. Team would climb when useful for RP.",
+      "controls": "Second Limelight repurposed for climb after competing pose estimates caused aiming trouble."
+    },
+    "versions": [
+      "Dual shooters changed to continuous drum.",
+      "Filmed at state championship before Worlds; reported 65–70 capacity belongs to this configuration."
+    ],
+    "analysis": "The high-capacity route needs a maintenance plan for racks, a dependable bump crossing and explicit net/climber clearance. The presence of a climb in CAD is different from choosing to install and use it in a particular match.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-7769",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521008/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/5/c/c5cd62147d78743af6e0f706a0d1b87ff4d9b0d1_2_646x500.jpeg",
+        "post": 1,
+        "date": "2026-05-18T15:05:39.175Z",
+        "author": "Smitka",
+        "context_tags": [
+          "hopper",
+          "shooter"
+        ],
+        "caption": "2026 team 7769 — source image from post 1 (2026-05-18). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e04486bd9536f4a996.jpg",
+        "id": "634bbc41a9568057bd",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e04486bd9536f4a996.jpg"
+      },
+      {
+        "robot_id": "2026-7769",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521008/8",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/e/b/6ebca2c9fc78279f49c194209e0d0eb27574f6ea_2_523x500.jpeg",
+        "post": 8,
+        "date": "2026-05-21T11:03:58.269Z",
+        "author": "Coach-Cal",
+        "context_tags": [
+          "indexer",
+          "shooter"
+        ],
+        "caption": "2026 team 7769 — source image from post 8 (2026-05-21). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "67acc3a080d86d6b1a.jpg",
+        "id": "13571b4e0997ee3b8f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/67acc3a080d86d6b1a.jpg"
+      },
+      {
+        "robot_id": "2026-7769",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521008/8",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/c/e/2cefbd16061a8a730be22681117783370860884a_2_553x499.jpeg",
+        "post": 8,
+        "date": "2026-05-21T11:03:58.269Z",
+        "author": "Coach-Cal",
+        "context_tags": [
+          "indexer",
+          "shooter"
+        ],
+        "caption": "2026 team 7769 — source image from post 8 (2026-05-21). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "27d79fd1e615ff7af5.jpg",
+        "id": "a9049e6efb38259c33",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/27d79fd1e615ff7af5.jpg"
+      }
+    ],
+    "source_post_count": 15,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-7769",
+        "discovery_post": "2026-7769-521008-1",
+        "url": "https://ostcse.onshape.com/documents/692fc43a78732f76f6a7fc01/w/68c7f5631809df4361fcb808/e/ae1887b4c2531db24673e5e9?renderMode=0&uiState=6a0b15866b77a2ef44500831",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2b5e776d9cb9fc7dfe"
+      },
+      {
+        "robot_id": "2026-7769",
+        "discovery_post": "2026-7769-521008-1",
+        "url": "https://docs.google.com/presentation/d/19V4ULNr7_ooZ6yJXtI6NRUoB1uEt86Wnw5UOy8DofH0/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a2047500d55d21c15c"
+      }
+    ],
+    "id": "2026-7769",
+    "team_name": "The CREW",
+    "epa_rank": 4,
+    "epa": 309.29,
+    "epa_pre_champs": 288.2,
+    "epa_breakdown": {
+      "total_points": 309.29,
+      "auto_points": 66.68,
+      "teleop_points": 175.04,
+      "endgame_points": 67.57,
+      "energized_rp": 0.8016,
+      "supercharged_rp": 0.7792,
+      "traversal_rp": -0.34157,
+      "tiebreaker_points": 309.29,
+      "auto_fuel": 66.75,
+      "auto_tower": -0.07,
+      "transition_fuel": 27.22,
+      "first_shift_fuel": 88.51,
+      "second_shift_fuel": 59.31,
+      "endgame_fuel": 67.4,
+      "endgame_tower": 0.17,
+      "rp_1": 0.8016,
+      "rp_2": 0.7792,
+      "rp_3": -0.34157,
+      "teleop_fuel": 242.44000000000003,
+      "total_fuel": 309.19000000000005,
+      "total_tower": 0.1
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "1252bca8ff49216b"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "drum / batch",
+      "expanding storage",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-7769",
+      "year": 2026,
+      "team": 7769,
+      "epa_rank": 4,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"7769\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 30,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"7769\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-7769"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-7769",
+      "title": "Passive feed solved one jam while rack durability remained unresolved",
+      "start_seconds": 75,
+      "end_seconds": 390,
+      "construction": "The rack collector and belt floor feed an originally divided shooter that became one continuous drum. In the team’s later technical discussion, powered upper/lower indexing rollers overpacked the ramp; immobilizing the lower rollers corrected that feed issue. The static hood avoids an exposed powered-roller belt. The team separately reports repeated polycarbonate rack-tooth failures and a 45-A deploying/5-A deployed current-limit strategy at Worlds.",
+      "team_stated_reason": "The stated priorities are simple, durable mechanisms and resistance to trench contact. The lower surface was made static to meter entry rather than forcing fuel into a congested ramp. The current-limit change aimed to let the intake collapse under impact; failures became less frequent but did not disappear.",
+      "engineering_analysis": "This example needs two distinct failure histories. A feed-path change can be successful while the deployment structure remains unreliable. Stronger propulsion is not automatically the fix for a packing jam, and a high-performing alliance run does not certify rack durability. Source-reported storage also has a useful distinction: almost 70 geometric capacity versus commonly 50–60 in play. Protected interior PETG vector wheels surviving a season is not evidence that the same prints would survive as exposed intake wheels.",
+      "recommended_validation": "Test the passive lower feed with full hopper pressure and varied fuel. Instrument deployment impact/current and inspect tooth-root damage. A proposed decoupling of intake sides is a future idea, not a fielded fix.",
+      "limitations": "Focused interview plus first-party technical replies 5, 8, 11, 13 and 15 in topic 521008. Tech-slide access returned Gone; the slides were not reviewed or counted as a binder.",
+      "id": "study6-2026-7769",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/8",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15",
+        "https://www.youtube.com/watch?v=6BrndIrOmgU"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 390,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "6BrndIrOmgU",
+          "sha256": "5f9ac66e3a55b22d011f1c671373777e46d3c9eb42465166f829752628a443ad",
+          "caption_segments": 226,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-7769:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-7769",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-7769"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-7769",
+      "title": "2026-7769 · Passive feed solved one jam while rack durability remained unresolved",
+      "year": 2026,
+      "robot_id": "2026-7769",
+      "kind": "focused_technical_study",
+      "body": "# 2026-7769: Passive feed solved one jam while rack durability remained unresolved\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe rack collector and belt floor feed an originally divided shooter that became one continuous drum. In the team’s later technical discussion, powered upper/lower indexing rollers overpacked the ramp; immobilizing the lower rollers corrected that feed issue. The static hood avoids an exposed powered-roller belt. The team separately reports repeated polycarbonate rack-tooth failures and a 45-A deploying/5-A deployed current-limit strategy at Worlds.\n\n## Team-stated reasoning or boundary\n\nThe stated priorities are simple, durable mechanisms and resistance to trench contact. The lower surface was made static to meter entry rather than forcing fuel into a congested ramp. The current-limit change aimed to let the intake collapse under impact; failures became less frequent but did not disappear.\n\n## Engineering interpretation — analyst inference\n\nThis example needs two distinct failure histories. A feed-path change can be successful while the deployment structure remains unreliable. Stronger propulsion is not automatically the fix for a packing jam, and a high-performing alliance run does not certify rack durability. Source-reported storage also has a useful distinction: almost 70 geometric capacity versus commonly 50–60 in play. Protected interior PETG vector wheels surviving a season is not evidence that the same prints would survive as exposed intake wheels.\n\n## Proposed validation — not performed\n\nTest the passive lower feed with full hopper pressure and varied fuel. Instrument deployment impact/current and inspect tooth-root damage. A proposed decoupling of intake sides is a future idea, not a fielded fix.\n\n## Limits\n\nFocused interview plus first-party technical replies 5, 8, 11, 13 and 15 in topic 521008. Tech-slide access returned Gone; the slides were not reviewed or counted as a binder.\n\n## Sources and navigation\n\n- [https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/8](https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/8)\n- [https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15](https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15)\n- [https://www.youtube.com/watch?v=6BrndIrOmgU](https://www.youtube.com/watch?v=6BrndIrOmgU)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/8",
+        "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15",
+        "https://www.youtube.com/watch?v=6BrndIrOmgU"
+      ],
+      "path": "docs/research_continuation/2026-7769.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-7769",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521008/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/5/c/c5cd62147d78743af6e0f706a0d1b87ff4d9b0d1_2_646x500.jpeg",
+      "post": 1,
+      "date": "2026-05-18T15:05:39.175Z",
+      "author": "Smitka",
+      "context_tags": [
+        "hopper",
+        "shooter"
+      ],
+      "caption": "2026 team 7769 — source image from post 1 (2026-05-18). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e04486bd9536f4a996.jpg",
+      "id": "634bbc41a9568057bd",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e04486bd9536f4a996.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 646,
+      "height_px": 500,
+      "bytes": 73283,
+      "sha256": "3f6c628c456854c445078c099e839af9e2526f9f689b13abc4f6772acdbd79b1",
+      "path_base": "corpus_root",
+      "reader_asset_id": "634bbc41a9568057bd",
+      "reader_url": "index.html#image=634bbc41a9568057bd",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-7769",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521008/8",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/e/b/6ebca2c9fc78279f49c194209e0d0eb27574f6ea_2_523x500.jpeg",
+      "post": 8,
+      "date": "2026-05-21T11:03:58.269Z",
+      "author": "Coach-Cal",
+      "context_tags": [
+        "indexer",
+        "shooter"
+      ],
+      "caption": "2026 team 7769 — source image from post 8 (2026-05-21). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "67acc3a080d86d6b1a.jpg",
+      "id": "13571b4e0997ee3b8f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/67acc3a080d86d6b1a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 523,
+      "height_px": 500,
+      "bytes": 53954,
+      "sha256": "65a8f148be2ccdf8ff60e4265ed6340b70fa5f45b4c1bc4b4d9213a9ad6db831",
+      "path_base": "corpus_root",
+      "reader_asset_id": "13571b4e0997ee3b8f",
+      "reader_url": "index.html#image=13571b4e0997ee3b8f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-7769",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521008/8",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/c/e/2cefbd16061a8a730be22681117783370860884a_2_553x499.jpeg",
+      "post": 8,
+      "date": "2026-05-21T11:03:58.269Z",
+      "author": "Coach-Cal",
+      "context_tags": [
+        "indexer",
+        "shooter"
+      ],
+      "caption": "2026 team 7769 — source image from post 8 (2026-05-21). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "27d79fd1e615ff7af5.jpg",
+      "id": "a9049e6efb38259c33",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/27d79fd1e615ff7af5.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 553,
+      "height_px": 499,
+      "bytes": 56373,
+      "sha256": "a0d60474f19d7cf44fb9a9bc534b8e6d969ba539091622ca24280af8c0ba79f3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "a9049e6efb38259c33",
+      "reader_url": "index.html#image=a9049e6efb38259c33",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-7769",
+    "year": 2026,
+    "team": 7769,
+    "epa_rank": 4,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"7769\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 30,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"7769\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-7769:construction",
+    "study6-2026-7769:team_stated_reason",
+    "study6-2026-7769:engineering_analysis",
+    "study6-2026-7769:recommended_validation",
+    "study6-2026-7769:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

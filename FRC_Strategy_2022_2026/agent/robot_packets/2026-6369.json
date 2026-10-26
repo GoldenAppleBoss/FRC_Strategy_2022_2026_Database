@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-6369",
+  "year": 2026,
+  "team": 6369,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 6369,
+    "robot": "Mercenary Robotics 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=FpoHvjmMULY"
+    ],
+    "architecture": "Drum rebuild retaining slapdown pickup and full-width rolling floor.",
+    "subsystems": {
+      "drivetrain": "Swerve; module variant unresolved here.",
+      "intake": "Slapdown pushes fuel into path during retraction; long kicker ramp maintains compression.",
+      "transfer": "Stub roller floor pivots with collector; jackshaft hidden within roller preserves width. Hopper passively extends with intake.",
+      "scoring": "Four-X60 drum with supplemental geared-up flywheel; backward-tilted transfer rollers funnel fuel, adjustable powered hood. Additional inertia addressed loaded speed droop.",
+      "endgame": "Planned tube-in-tube L1 removed at inspection after shop/event scale discrepancy; interview explicitly says it was not fielded in this configuration.",
+      "controls": "Range/speed adjustment for local scoring and passing; exact full control design unresolved here."
+    },
+    "versions": [
+      "Rebuild retains successful pickup elements.",
+      "Hood reduction changed substantially after testing.",
+      "Climber removal is a documented configuration change, not a scoring failure."
+    ],
+    "analysis": "Mass margin is a strategic requirement. A climb that exists in the shop can vanish at the event; the delivered robot must be evaluated with inspected mass, fuel load and retained capability.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2026-6369",
+    "team_name": "Mercenary Robotics",
+    "epa_rank": 16,
+    "epa": 274.16,
+    "epa_pre_champs": 268.31,
+    "epa_breakdown": {
+      "total_points": 274.16,
+      "auto_points": 59.03,
+      "teleop_points": 150.31,
+      "endgame_points": 64.82,
+      "energized_rp": 0.8788,
+      "supercharged_rp": 0.6432,
+      "traversal_rp": -0.34359,
+      "tiebreaker_points": 274.16,
+      "auto_fuel": 59.22,
+      "auto_tower": -0.19,
+      "transition_fuel": 27.19,
+      "first_shift_fuel": 63.25,
+      "second_shift_fuel": 59.88,
+      "endgame_fuel": 65.03,
+      "endgame_tower": -0.21,
+      "rp_1": 0.8788,
+      "rp_2": 0.6432,
+      "rp_3": -0.34359,
+      "teleop_fuel": 215.35,
+      "total_fuel": 274.57,
+      "total_tower": -0.4
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "partial / unresolved detail"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "2054273b482d449a"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-6369",
+      "year": 2026,
+      "team": 6369,
+      "epa_rank": 16,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"6369\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 29,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"6369\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-6369"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-6369",
+      "title": "A drum rebuild shifts the problem to inertia, loading and inspection mass",
+      "start_seconds": 76,
+      "end_seconds": 440,
+      "construction": "The interview distinguishes the former turret from a four-X60 drum rebuild. A long kicker ramp maintains contact; a stub-roller floor pivots with the collector, with a jackshaft inside a roller. Passive hopper/net expansion is reported as roughly 50–55 fuel unexpanded and up to 78 expanded. A 1.5-lb steel flywheel with a stated 1:3 transmission supplements launcher inertia. The planned L1 mechanism was removed at inspection.",
+      "team_stated_reason": "The team attributes the ramp to sustained compression, the added flywheel to speed droop while feeding a large load, and climb removal to a discrepancy between shop and event weighing. A revised hood ratio sought a compromise between actuation speed and resistance to disturbance.",
+      "engineering_analysis": "The supplementary flywheel stores energy in the motor-to-drum system; its contribution depends on the square of its speed ratio. That does not establish a sustained power budget, so a high first-volley rate may still decay. The pivoting floor improves access but introduces moving shaft/alignment interfaces. The source caption calls one small drum dimension ambiguously; do not infer diameter from that wording. Likewise, a removed climber is an unfielded feature for the filmed configuration, not an autonomous capability.",
+      "recommended_validation": "Measure speed droop over a complete hopper and repeated shifts, verify drive/driven ratio order, and calibrate scales before allocating the final mass margin.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-6369",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=FpoHvjmMULY",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 76,
+        "end_seconds": 440,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "FpoHvjmMULY",
+          "sha256": "d9caeb26966941594e5842053ab12ba19423b3cd7b382f44514a6ad6d3545115",
+          "caption_segments": 278,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-6369:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-6369",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-6369"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=FpoHvjmMULY"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-6369",
+      "title": "2026-6369 · A drum rebuild shifts the problem to inertia, loading and inspection mass",
+      "year": 2026,
+      "robot_id": "2026-6369",
+      "kind": "focused_technical_study",
+      "body": "# 2026-6369: A drum rebuild shifts the problem to inertia, loading and inspection mass\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe interview distinguishes the former turret from a four-X60 drum rebuild. A long kicker ramp maintains contact; a stub-roller floor pivots with the collector, with a jackshaft inside a roller. Passive hopper/net expansion is reported as roughly 50–55 fuel unexpanded and up to 78 expanded. A 1.5-lb steel flywheel with a stated 1:3 transmission supplements launcher inertia. The planned L1 mechanism was removed at inspection.\n\n## Team-stated reasoning or boundary\n\nThe team attributes the ramp to sustained compression, the added flywheel to speed droop while feeding a large load, and climb removal to a discrepancy between shop and event weighing. A revised hood ratio sought a compromise between actuation speed and resistance to disturbance.\n\n## Engineering interpretation — analyst inference\n\nThe supplementary flywheel stores energy in the motor-to-drum system; its contribution depends on the square of its speed ratio. That does not establish a sustained power budget, so a high first-volley rate may still decay. The pivoting floor improves access but introduces moving shaft/alignment interfaces. The source caption calls one small drum dimension ambiguously; do not infer diameter from that wording. Likewise, a removed climber is an unfielded feature for the filmed configuration, not an autonomous capability.\n\n## Proposed validation — not performed\n\nMeasure speed droop over a complete hopper and repeated shifts, verify drive/driven ratio order, and calibrate scales before allocating the final mass margin.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=FpoHvjmMULY](https://www.youtube.com/watch?v=FpoHvjmMULY)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=FpoHvjmMULY"
+      ],
+      "path": "docs/research_continuation/2026-6369.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2026-6369",
+    "year": 2026,
+    "team": 6369,
+    "epa_rank": 16,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"6369\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 29,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"6369\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-6369:construction",
+    "study6-2026-6369:team_stated_reason",
+    "study6-2026-6369:engineering_analysis",
+    "study6-2026-6369:recommended_validation",
+    "study6-2026-6369:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

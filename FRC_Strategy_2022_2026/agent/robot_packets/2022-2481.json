@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-2481",
+  "year": 2022,
+  "team": 2481,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 2481,
+    "robot": "Roboteers 2022",
+    "primary": [
+      "https://youtu.be/oG17jVYqORY",
+      "https://www.chiefdelphi.com/t/405919"
+    ],
+    "architecture": "Five-module octagonal swerve with a truss-driving traversal architecture.",
+    "subsystems": {
+      "drivetrain": "Five swerve modules; octagonal frame packages a roughly 44-inch truss-driving climb geometry.",
+      "intake": "Four-bar pickup changed from Velcro to compliant green wheels; an asymmetric extra wheel prioritizes one of two adjacent balls.",
+      "transfer": "Rollers lift cargo toward a half-turn turret.",
+      "scoring": "Heavy main wheel and three compliant back wheels; extra heavy wheels removed to control spin/inertia.",
+      "endgame": "Deployable front/rear drive wheels travel along the hangar truss; side guides center chassis and sprung carabiner hooks retain traversal.",
+      "controls": "Manual alignment at the first event; line sensing was proposed, not yet demonstrated in this interview."
+    },
+    "versions": [
+      "Collector material and flywheel mass revised.",
+      "Separate planned line-sensor alignment from the demonstrated manual sequence."
+    ],
+    "analysis": "This mechanism changes the climb from repeated hook transfers into a constrained driving problem. It also commits the entire frame shape and packaging to that endgame choice.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 14,
+    "cad_code_links": [
+      {
+        "robot_id": "2022-2481",
+        "discovery_post": "2022-2481-405919-78",
+        "url": "https://github.com/Frc2481",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d2b612ef520f927279"
+      }
+    ],
+    "id": "2022-2481",
+    "team_name": "Roboteers",
+    "epa_rank": 33,
+    "epa": 49.21,
+    "epa_pre_champs": 51.33,
+    "epa_breakdown": {
+      "total_points": 49.21,
+      "auto_points": 10.07,
+      "teleop_points": 26.63,
+      "endgame_points": 12.51,
+      "cargo_rp": 0.7592,
+      "hangar_rp": 0.3527,
+      "tiebreaker_points": 49.21,
+      "auto_taxi_points": 1.84,
+      "auto_cargo_lower": 0.02,
+      "auto_cargo_upper": 2.05,
+      "teleop_cargo_lower": -0.18,
+      "teleop_cargo_upper": 13.4,
+      "rp_1": 0.7592,
+      "rp_2": 0.3527
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "954882d1dedc9e51",
+      "982de3dc69f25fa9"
+    ],
+    "tags": [
+      "climb",
+      "four-bar",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-2481",
+      "year": 2022,
+      "team": 2481,
+      "epa_rank": 33,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2481\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 4,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2481\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-2481"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-2481",
+      "title": "Frame and climb objectives can justify an unusual drivetrain",
+      "start_seconds": 79,
+      "end_seconds": 520,
+      "construction": "The source describes an octagonal five-module chassis, asymmetric collector contact for adjacent cargo and a turreted launcher. At the filmed event, alignment for its special climb remains manual; floor-line sensors are planned.",
+      "team_stated_reason": "The team links frame length to its truss-climb approach and the fifth module to stability while driving.",
+      "engineering_analysis": "An unusual module count cannot be evaluated independently of the task geometry that produced it. Added contact and mass may help stability while increasing power, scrub and service burden. Planned alignment sensors cannot be credited to the filmed result.",
+      "recommended_validation": "Measure traction/current, alignment success and shared-climb clearance with the actual event configuration.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-2481",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/oG17jVYqORY",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/405919"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 520,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "oG17jVYqORY",
+          "sha256": "b97875825d1b25a52ef04f6733fe8734c2f673d98110bcab3bce9702f425af30",
+          "caption_segments": 267,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-2481:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-2481",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-2481"
+      ],
+      "source_urls": [
+        "https://youtu.be/oG17jVYqORY"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-2481",
+      "title": "2022-2481 · Frame and climb objectives can justify an unusual drivetrain",
+      "year": 2022,
+      "robot_id": "2022-2481",
+      "kind": "focused_technical_study",
+      "body": "# 2022-2481: Frame and climb objectives can justify an unusual drivetrain\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe source describes an octagonal five-module chassis, asymmetric collector contact for adjacent cargo and a turreted launcher. At the filmed event, alignment for its special climb remains manual; floor-line sensors are planned.\n\n## Team-stated reasoning or boundary\n\nThe team links frame length to its truss-climb approach and the fifth module to stability while driving.\n\n## Engineering interpretation — analyst inference\n\nAn unusual module count cannot be evaluated independently of the task geometry that produced it. Added contact and mass may help stability while increasing power, scrub and service burden. Planned alignment sensors cannot be credited to the filmed result.\n\n## Proposed validation — not performed\n\nMeasure traction/current, alignment success and shared-climb clearance with the actual event configuration.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/oG17jVYqORY](https://youtu.be/oG17jVYqORY)\n- [https://www.chiefdelphi.com/t/405919](https://www.chiefdelphi.com/t/405919)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/oG17jVYqORY",
+        "https://www.chiefdelphi.com/t/405919"
+      ],
+      "path": "docs/research_continuation/2022-2481.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-2481",
+    "year": 2022,
+    "team": 2481,
+    "epa_rank": 33,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2481\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 4,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2481\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-2481:construction",
+    "study6-2022-2481:team_stated_reason",
+    "study6-2022-2481:engineering_analysis",
+    "study6-2022-2481:recommended_validation",
+    "study6-2022-2481:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-694",
+  "year": 2022,
+  "team": 694,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 694,
+    "robot": "StuyPulse 2022",
+    "primary": [
+      "https://youtu.be/L5cOLYeOdfA",
+      "https://www.chiefdelphi.com/t/423303"
+    ],
+    "architecture": "Differential drive with simple two-position launcher and tilting telescopic climb.",
+    "subsystems": {
+      "drivetrain": "Tank/differential chassis; no turret.",
+      "intake": "Collector has large printed mecanum ends; biased flaps and tread combat two-ball jams.",
+      "transfer": "Tall conveyor and rejection fork; infrared staging pauses a ball long enough for delayed color sensing.",
+      "scoring": "Two-position pneumatic elevation at fixed speed/distance; brass flywheel inertia and compliant passive Lexan/yoga-mat hood. Powered back roller was unfinished.",
+      "endgame": "Tilting telescope with passive hooks and rope-induced center-of-gravity movement; lighter plastic outer stage outperformed a heavier replacement that damaged bearings.",
+      "controls": "Color rejection disabled in autonomous to save time, enabled in teleop. Limited field practice informed simpler shot controls."
+    },
+    "versions": [
+      "Collector jam countermeasures added.",
+      "Heavier aluminum climb stage was tried and rejected; do not describe it as the final improvement."
+    ],
+    "analysis": "This is a valuable counterexample to copying the most complex elite architecture: development time and practice availability can make a discrete shot map and lower mechanical mass more effective.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-694",
+    "team_name": "StuyPulse",
+    "epa_rank": 32,
+    "epa": 49.67,
+    "epa_pre_champs": 49.54,
+    "epa_breakdown": {
+      "total_points": 49.67,
+      "auto_points": 14.68,
+      "teleop_points": 25.87,
+      "endgame_points": 9.13,
+      "cargo_rp": 0.6862,
+      "hangar_rp": 0.6343,
+      "tiebreaker_points": 49.67,
+      "auto_taxi_points": 2.2,
+      "auto_cargo_lower": -0.15,
+      "auto_cargo_upper": 3.19,
+      "teleop_cargo_lower": -0.54,
+      "teleop_cargo_upper": 13.2,
+      "rp_1": 0.6862,
+      "rp_2": 0.6343
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "1f4623f3d5f578f5",
+      "138a4a3b39b9bea4"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-694",
+      "year": 2022,
+      "team": 694,
+      "epa_rank": 32,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"694\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 2,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"694\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-694"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-694",
+      "title": "Sensor latency and passive hood compliance are deliberate constraints",
+      "start_seconds": 80,
+      "end_seconds": 730,
+      "construction": "A tall conveyor and rejection fork pause cargo for delayed color sensing. Printed collector contacts and biased flaps address two-ball jams. The retained launcher uses added flywheel inertia and a compliant passive hood; an additional powered back roller was unfinished.",
+      "team_stated_reason": "The team explicitly prioritizes simpler scoring after pandemic-related experience gaps.",
+      "engineering_analysis": "A deliberate staging pause can improve correct classification even when it lowers nominal feed speed. A passive hood saves actuation but must hold repeatable compression as material wears. Unfinished hardware cannot be credited as an explanation of observed shooting.",
+      "recommended_validation": "Measure classification latency, false rejection, two-ball recovery and trajectory drift as the hood material ages.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-694",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/L5cOLYeOdfA",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/423303"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 730,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "L5cOLYeOdfA",
+          "sha256": "259bd779354fbfab7bd866fb9292b31f565ae11adb0c22e48bfcf434b4eb591c",
+          "caption_segments": 410,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-694:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-694",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-694"
+      ],
+      "source_urls": [
+        "https://youtu.be/L5cOLYeOdfA"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-694",
+      "title": "2022-694 · Sensor latency and passive hood compliance are deliberate constraints",
+      "year": 2022,
+      "robot_id": "2022-694",
+      "kind": "focused_technical_study",
+      "body": "# 2022-694: Sensor latency and passive hood compliance are deliberate constraints\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA tall conveyor and rejection fork pause cargo for delayed color sensing. Printed collector contacts and biased flaps address two-ball jams. The retained launcher uses added flywheel inertia and a compliant passive hood; an additional powered back roller was unfinished.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly prioritizes simpler scoring after pandemic-related experience gaps.\n\n## Engineering interpretation — analyst inference\n\nA deliberate staging pause can improve correct classification even when it lowers nominal feed speed. A passive hood saves actuation but must hold repeatable compression as material wears. Unfinished hardware cannot be credited as an explanation of observed shooting.\n\n## Proposed validation — not performed\n\nMeasure classification latency, false rejection, two-ball recovery and trajectory drift as the hood material ages.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/L5cOLYeOdfA](https://youtu.be/L5cOLYeOdfA)\n- [https://www.chiefdelphi.com/t/423303](https://www.chiefdelphi.com/t/423303)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/L5cOLYeOdfA",
+        "https://www.chiefdelphi.com/t/423303"
+      ],
+      "path": "docs/research_continuation/2022-694.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-694",
+    "year": 2022,
+    "team": 694,
+    "epa_rank": 32,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"694\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 2,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"694\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-694:construction",
+    "study6-2022-694:team_stated_reason",
+    "study6-2022-694:engineering_analysis",
+    "study6-2022-694:recommended_validation",
+    "study6-2022-694:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

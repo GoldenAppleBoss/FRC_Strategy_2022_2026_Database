@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "equal_tables": 24,
+  "row_counts": {
+    "sources": 4263,
+    "technical_parameters": 121,
+    "technical_mechanisms": 251,
+    "matches": 7995,
+    "events": 75,
+    "seasons": 5,
+    "video_reviews": 44,
+    "season_epa": 17330,
+    "source_posts": 3499,
+    "subsystems": 768,
+    "mechanism_images": 504,
+    "team_events": 4021,
+    "tower_summary_2026": 8,
+    "einstein_reviews": 80,
+    "robot_dossiers": 128,
+    "context_documents": 182,
+    "robot_sources": 517,
+    "versions": 219,
+    "metadata": 56,
+    "cad_code_links": 375,
+    "binder_sources": 29,
+    "selection_audit": 157,
+    "benchmarks": 58,
+    "binder_audit": 128
+  }
+}

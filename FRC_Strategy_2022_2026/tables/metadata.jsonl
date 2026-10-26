@@ -1,0 +1,62 @@
+{"key": "rank_source", "value": "https://api-statbotics.popcornpenguins.com/v3/site/team_years/{year}"}
+{"key": "scope", "value": "128 reference dossiers (original 125 plus three supplemental 604); exhaustive mechanism/version gate open; 80 Einstein records; no visual audit claimed or required"}
+{"key": "expansion", "value": "508 embedded images; 35 full available-caption reviews; 9 recovered transcripts await content review; mandatory one-sheet 1833 task template"}
+{"key": "context_entrypoint", "value": "AGENTS.md"}
+{"key": "audit_snapshot", "value": "\"2026-10-26\""}
+{"key": "audit_robots", "value": "128"}
+{"key": "audit_robots_by_year", "value": "{\"2022\": 26, \"2023\": 26, \"2024\": 25, \"2025\": 25, \"2026\": 26}"}
+{"key": "audit_provisional_dossiers", "value": "128"}
+{"key": "audit_exhaustive_version_certifications", "value": "0"}
+{"key": "audit_subsystem_status_counts", "value": "{\"documented synopsis\": 674, \"partial / unresolved detail\": 76}"}
+{"key": "audit_events", "value": "75"}
+{"key": "audit_completed_matches", "value": "7995"}
+{"key": "audit_team_events", "value": "4021"}
+{"key": "audit_benchmarks", "value": "58"}
+{"key": "audit_einstein_matches", "value": "80"}
+{"key": "audit_einstein_with_reported_tactics", "value": "54"}
+{"key": "audit_einstein_visual_reviews", "value": "0"}
+{"key": "audit_known_rejected_video_association", "value": "\"2022cmptx_sf1m2 → actual sf1m15\""}
+{"key": "audit_ranking_source", "value": "\"user-supplied Statbotics mirror\""}
+{"key": "audit_strict_user_acceptance_gate", "value": "\"OPEN: 128 provisional dossiers (original 125 plus three supplemental 604 entries); exhaustive mechanism/version histories and full channel review remain incomplete. User no longer requires visual match audits.\""}
+{"key": "audit_curated_images", "value": "508"}
+{"key": "audit_robot_years_with_images", "value": "78"}
+{"key": "audit_context_documents", "value": "183"}
+{"key": "audit_context_words", "value": "104539"}
+{"key": "audit_robot_specific_deep_notes", "value": "28"}
+{"key": "audit_source_post_locators", "value": "3499"}
+{"key": "audit_robot_years_with_post_locators", "value": "91"}
+{"key": "audit_cad_code_discovery_links", "value": "375"}
+{"key": "audit_roboreplay_discovered", "value": "44"}
+{"key": "audit_roboreplay_full_transcript_reviews", "value": "35"}
+{"key": "audit_roboreplay_pending", "value": "9"}
+{"key": "audit_roboreplay_channel_inventory_complete", "value": "false"}
+{"key": "audit_roboreplay_visual_reviews", "value": "0"}
+{"key": "audit_roboreplay_reviewed_caption_hours", "value": "15.46"}
+{"key": "audit_permanent_internal_memory_write", "value": "false"}
+{"key": "audit_edition", "value": "\"604 original images recovered and mandatory 1833 single-sheet task template\""}
+{"key": "audit_binder_discovery_robot_years", "value": "128"}
+{"key": "audit_binder_second_search_targets", "value": "101"}
+{"key": "audit_technical_publications_reviewed", "value": "29"}
+{"key": "audit_pdf_technical_publications_reviewed", "value": "26"}
+{"key": "audit_web_technical_publications_reviewed", "value": "2"}
+{"key": "audit_technical_discussions_reviewed", "value": "1"}
+{"key": "audit_robot_years_with_technical_reviews", "value": "128"}
+{"key": "audit_technical_notes", "value": "251"}
+{"key": "audit_published_parameter_records", "value": "121"}
+{"key": "audit_new_binder_figures", "value": "246"}
+{"key": "audit_binder_audit_status_counts", "value": "{\"no_verified_binder_located_in_search_passes\": 90, \"accessible_technical_publication_reviewed\": 27, \"candidate_unavailable_nonrobot_or_unverified\": 8}"}
+{"key": "edition", "value": "604 original images recovered and mandatory 1833 single-sheet task template"}
+{"key": "audit_reader_embedded_images", "value": "508"}
+{"key": "audit_agent_robot_packets", "value": "128"}
+{"key": "audit_agent_typed_claims", "value": "1376"}
+{"key": "audit_robot_years_with_technical_publication_reviews", "value": "27"}
+{"key": "audit_focused_technical_studies", "value": "98"}
+{"key": "audit_expanded_video_reviews", "value": "35"}
+{"key": "audit_expanded_video_sections", "value": "132"}
+{"key": "audit_video_quiz_prompts", "value": "114"}
+{"key": "audit_roboreplay_pending_retrieval", "value": "0"}
+{"key": "audit_recovered_transcripts_this_pass", "value": "11"}
+{"key": "audit_einstein_recording_links", "value": "80"}
+{"key": "audit_einstein_recording_pages_tested_this_pass", "value": "6"}
+{"key": "audit_supplemental_604_dossiers", "value": "3"}
+{"key": "audit_original_selection_cohort", "value": "125"}

@@ -1,0 +1,328 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-1706",
+  "year": 2024,
+  "team": 1706,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 1706,
+    "robot": "Riot",
+    "primary": [
+      "https://youtu.be/C-kz6RLoH24"
+    ],
+    "architecture": "Two-sided acquisition, differential-speed fixed-heading shooter and elevator amp/trap carriage.",
+    "subsystems": {
+      "drivetrain": "Beta Thrifty swerve; beltless module architecture.",
+      "intake": "Front and rear intake; extra leading roller reaches notes against the wall.",
+      "transfer": "Shooter normally stages the note; reverse/feed sequence redirects it into the scoring carriage.",
+      "scoring": "Independent left/right wheel speed adds flight-stabilizing spin; pivoted launcher.",
+      "endgame": "Climb supports elevator/carriage trap delivery; exact hook transmission is not explained in this walkthrough.",
+      "controls": "Three Limelights, full-field pose, selectable autonomous orders; note tracking used selectively."
+    },
+    "versions": [
+      "Added differential wheel speeds after long-range notes dived. Added wall-acquisition roller. At Champs, favored faster odometry-based acquisition over slower note tracking in some autos."
+    ],
+    "analysis": "Explicit turret alternative: dual-sided pickup can recover much of the cleanup-cycle benefit with a simpler transfer. Sensors are chosen by time-to-complete, not by their availability.",
+    "limits": [
+      "Only source-established configurations and changes are described; intermediate revisions may remain unresolved."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-1706",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/467163/6",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/3/f3b12854e3967f501e31145c50c1f1714d351150_2_690x475.jpeg",
+        "post": 6,
+        "date": "2024-06-03T16:09:00.038Z",
+        "author": "ArdaTurkmen",
+        "context_tags": [
+          "elevator"
+        ],
+        "caption": "2024 team 1706 — source image from post 6 (2024-06-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f587e8522d28c0e1c6.jpg",
+        "id": "ab8e5121efd0d1f0d1",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f587e8522d28c0e1c6.jpg"
+      }
+    ],
+    "source_post_count": 14,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-1706",
+        "discovery_post": "2024-1706-467163-1",
+        "url": "https://cad.onshape.com/documents/a41c17fdc034d46f856ebcc7/w/934e52886a6f6873c4be7558/e/a351f37bcb33c52e479db756?renderMode=0&uiState=665dd1087662a93f584874ec",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f8cf537c91bc0b374b"
+      },
+      {
+        "robot_id": "2024-1706",
+        "discovery_post": "2024-1706-467163-19",
+        "url": "https://cad.onshape.com/documents/a41c17fdc034d46f856ebcc7/w/934e52886a6f6873c4be7558/e/a351f37bcb33c52e479db756?renderMode=0&uiState=67781ba4b7718a4058d81ec1",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "06773186638f91124f"
+      },
+      {
+        "robot_id": "2024-1706",
+        "discovery_post": "2024-1706-467163-19",
+        "url": "https://github.com/rr1706/2024-RIOT",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "bfb34e468409161c1a"
+      }
+    ],
+    "id": "2024-1706",
+    "team_name": "Ratchet Rockers",
+    "epa_rank": 11,
+    "epa": 51.28,
+    "epa_pre_champs": 49.21,
+    "epa_breakdown": {
+      "total_points": 51.28,
+      "auto_points": 16.99,
+      "teleop_points": 28.09,
+      "endgame_points": 6.2,
+      "melody_rp": 0.7169,
+      "ensemble_rp": 0.3903,
+      "tiebreaker_points": 0.3,
+      "auto_leave_points": 1.75,
+      "auto_note_points": 15.25,
+      "teleop_note_points": 28.09,
+      "speaker_points": 40.11,
+      "amplified_notes": 4.79,
+      "endgame_park_points": -0.06,
+      "endgame_on_stage_points": 3.13,
+      "endgame_harmony_points": -0.06,
+      "endgame_trap_points": 3.0,
+      "endgame_spotlight_points": 0.19,
+      "rp_1": 0.7169,
+      "rp_2": 0.3903,
+      "total_note_points": 43.34
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "765df2b5bca8465e"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "pass-through",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-1706",
+      "year": 2024,
+      "team": 1706,
+      "epa_rank": 11,
+      "status": "candidate_unavailable_nonrobot_or_unverified",
+      "search": {
+        "query": "\"1706\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 14,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1706\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [
+        {
+          "id": "246cc8a2c25098ce50",
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ec8aCTSBNFrWoZMubLGENkq0W66.pdf",
+          "error": null,
+          "discovery": "Second targeted Chief Delphi search",
+          "status": "excluded_non_robot_publication"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false,
+      "identity_correction": "Downloaded Pit Writeup documents furniture and event facilities, not the robot; excluded from mechanism evidence."
+    },
+    "technical_note_ids": [
+      "study6-2024-1706"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-1706",
+      "title": "Two acquisition directions were the alternative to a turret",
+      "start_seconds": 79,
+      "end_seconds": 300,
+      "construction": "The robot has front/rear acquisition, an extended leading roller for wall notes, and a pivoted differential-speed launcher. Reversing the staged note redirects it to the amp/trap carriage. Its swerve uses selectable gearing, with a middle setting in the filmed configuration.",
+      "team_stated_reason": "The team explicitly says turret complexity would burden the intake and handoff, so it chose two intakes instead. It reports fast local cleanup as a benefit; the brief amplified-period claim is a team account, not a universal four-note cycle benchmark.",
+      "engineering_analysis": "Directional independence can be purchased at the collector instead of the launcher. This can reduce turning during pickup while retaining simpler aiming hardware, but adds a second collision face and more transfer states. The correct comparison is total useful scoring under the expected note distribution and defense, including reversal into the amp carriage.",
+      "recommended_validation": "Compare opposite-direction acquisition cycles with a one-intake baseline, and test handoff after a note enters off-center from either side.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-1706",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/C-kz6RLoH24",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 300,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "C-kz6RLoH24",
+          "sha256": "3f87fe45f18c814f608924b2a4f1e00e3dd0e47c6dac1a3cd46d33bb1d624e64",
+          "caption_segments": 300,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-1706:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-1706",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-1706"
+      ],
+      "source_urls": [
+        "https://youtu.be/C-kz6RLoH24"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-1706",
+      "title": "2024-1706 · Two acquisition directions were the alternative to a turret",
+      "year": 2024,
+      "robot_id": "2024-1706",
+      "kind": "focused_technical_study",
+      "body": "# 2024-1706: Two acquisition directions were the alternative to a turret\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe robot has front/rear acquisition, an extended leading roller for wall notes, and a pivoted differential-speed launcher. Reversing the staged note redirects it to the amp/trap carriage. Its swerve uses selectable gearing, with a middle setting in the filmed configuration.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly says turret complexity would burden the intake and handoff, so it chose two intakes instead. It reports fast local cleanup as a benefit; the brief amplified-period claim is a team account, not a universal four-note cycle benchmark.\n\n## Engineering interpretation — analyst inference\n\nDirectional independence can be purchased at the collector instead of the launcher. This can reduce turning during pickup while retaining simpler aiming hardware, but adds a second collision face and more transfer states. The correct comparison is total useful scoring under the expected note distribution and defense, including reversal into the amp carriage.\n\n## Proposed validation — not performed\n\nCompare opposite-direction acquisition cycles with a one-intake baseline, and test handoff after a note enters off-center from either side.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/C-kz6RLoH24](https://youtu.be/C-kz6RLoH24)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/C-kz6RLoH24"
+      ],
+      "path": "docs/research_continuation/2024-1706.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-1706",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/467163/6",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/3/f3b12854e3967f501e31145c50c1f1714d351150_2_690x475.jpeg",
+      "post": 6,
+      "date": "2024-06-03T16:09:00.038Z",
+      "author": "ArdaTurkmen",
+      "context_tags": [
+        "elevator"
+      ],
+      "caption": "2024 team 1706 — source image from post 6 (2024-06-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f587e8522d28c0e1c6.jpg",
+      "id": "ab8e5121efd0d1f0d1",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f587e8522d28c0e1c6.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 475,
+      "bytes": 71144,
+      "sha256": "310ec15678cd15aad2d71429cc748793ac84bfdb0360f7925376e509512f5693",
+      "path_base": "corpus_root",
+      "reader_asset_id": "ab8e5121efd0d1f0d1",
+      "reader_url": "index.html#image=ab8e5121efd0d1f0d1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-1706",
+    "year": 2024,
+    "team": 1706,
+    "epa_rank": 11,
+    "status": "candidate_unavailable_nonrobot_or_unverified",
+    "search": {
+      "query": "\"1706\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 14,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1706\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [
+      {
+        "id": "246cc8a2c25098ce50",
+        "url": "https://www.chiefdelphi.com/uploads/short-url/ec8aCTSBNFrWoZMubLGENkq0W66.pdf",
+        "error": null,
+        "discovery": "Second targeted Chief Delphi search",
+        "status": "excluded_non_robot_publication"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false,
+    "identity_correction": "Downloaded Pit Writeup documents furniture and event facilities, not the robot; excluded from mechanism evidence."
+  },
+  "claim_ids": [
+    "study6-2024-1706:construction",
+    "study6-2024-1706:team_stated_reason",
+    "study6-2024-1706:engineering_analysis",
+    "study6-2024-1706:recommended_validation",
+    "study6-2024-1706:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

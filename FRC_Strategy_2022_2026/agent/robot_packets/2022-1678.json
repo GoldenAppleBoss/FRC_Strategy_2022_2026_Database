@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-1678",
+  "year": 2022,
+  "team": 1678,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 1678,
+    "robot": "Margie",
+    "primary": [
+      "https://youtu.be/ijiDMVvGc_E",
+      "https://www.chiefdelphi.com/t/404113",
+      "https://github.com/frc1678/C2022-Public"
+    ],
+    "architecture": "Low-center-of-gravity shooter with early color rejection and alternating telescopic traversal climb.",
+    "subsystems": {
+      "drivetrain": "Swerve; heavy motors deliberately kept low.",
+      "intake": "Unequal four-bar collector with compliant plates; later winglets/belts improve edge acquisition.",
+      "transfer": "Sensor-tracked slots and independent ejector roller choose storage versus rear rejection.",
+      "scoring": "Adjustable hood derived from 2910 lineage; flywheel and back rollers suppress unwanted spin.",
+      "endgame": "Telescopic arms alternate bars; passive gas-spring/stop geometry controls robot pitch.",
+      "controls": "Color-ratio sorting, current-based homing, vision-assisted targeting and gyro-relative automated climb."
+    },
+    "versions": [
+      "Pneumatics removed early. Rejected conventional and 125-inspired climb concepts before final passive-angle telescope design. Intake edge guides added later."
+    ],
+    "analysis": "The simpler ball path freed controls effort for automatic sorting and robust climb logic. Opponent-cargo rejection speed was chosen to place balls deliberately, not just expel them.",
+    "limits": [
+      "Reported performance and prototype history are attributed to the source; not every intermediate revision is recoverable."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2022-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404113/61",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/a/c/ac67cfd84cf636d0367a1bd688da05bc4477e210_2_375x499.jpeg",
+        "post": 61,
+        "date": "2022-05-02T14:49:53.127Z",
+        "author": "tedang",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2022 team 1678 — source image from post 61 (2022-05-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "1d31e448fa0a8dbd84.jpg",
+        "id": "c7128380c515a24bb5",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/1d31e448fa0a8dbd84.jpg"
+      },
+      {
+        "robot_id": "2022-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404113/66",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/8/c84338381d909fa3266c1dd04c6c2eb33b3fce6b_2_338x500.jpeg",
+        "post": 66,
+        "date": "2022-05-02T21:31:51.213Z",
+        "author": "davepowers",
+        "context_tags": [
+          "intake",
+          "pivot"
+        ],
+        "caption": "2022 team 1678 — source image from post 66 (2022-05-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "c022af2679963cf48a.jpg",
+        "id": "1e3df0adcd88660729",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/c022af2679963cf48a.jpg"
+      },
+      {
+        "robot_id": "2022-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/404113/66",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/a/ca26ca6c74faaeb49e4d13572d072cf4521f9f17_2_273x500.jpeg",
+        "post": 66,
+        "date": "2022-05-02T21:31:51.213Z",
+        "author": "davepowers",
+        "context_tags": [
+          "intake",
+          "pivot"
+        ],
+        "caption": "2022 team 1678 — source image from post 66 (2022-05-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "238e8d4db278225fb0.jpg",
+        "id": "d94657c0668e39acad",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/238e8d4db278225fb0.jpg"
+      }
+    ],
+    "source_post_count": 68,
+    "cad_code_links": [
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-44",
+        "url": "https://drive.google.com/file/d/1a9DiXWVbJ5OMYxL_AhhzIfLfECimH1l4/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f127f6f43b030919ec"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-147",
+        "url": "https://github.com/frc1678/C2022",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "fa6f110b31501859cc"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-157",
+        "url": "https://github.com/frc1678/C2022/pulls",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ff35f971cd7fe63d47"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-158",
+        "url": "https://github.com/frc1678/C2022/blob/main/src/main/java/com/team1678/frc2022/subsystems/RobotStateEstimator.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "89f1053b2ab1623d38"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-158",
+        "url": "https://github.com/frc1678/C2022/blob/main/src/main/java/com/team1678/frc2022/RobotState.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f0f20932a0bd248520"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-158",
+        "url": "https://github.com/frc1678/C2022/blob/main/src/main/java/com/team1678/frc2022/subsystems/Superstructure.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a18a13e02a53294e91"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-164",
+        "url": "https://github.com/wpilibsuite/allwpilib/tree/main/wpimath/src/main/java/edu/wpi/first/math/geometry",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "373ede845a4bb549e9"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-164",
+        "url": "https://github.com/wpilibsuite/allwpilib/blob/main/wpiutil/src/main/java/edu/wpi/first/util/InterpolatingTreeMap.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "9688a15be4a2b50394"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-164",
+        "url": "https://github.com/wpilibsuite/allwpilib/blob/main/wpiutil/src/main/native/include/wpi/interpolating_map.h",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "67f751425b1cb1e258"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-164",
+        "url": "https://github.com/wpilibsuite/allwpilib/tree/main/wpimath/src/main/java/edu/wpi/first/math/estimator",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "283a5bdd6056dab7ec"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-164",
+        "url": "https://github.com/wpilibsuite/sysid/blob/main/sysid-application/src/main/native/cpp/analysis/OLS.cpp",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d7570f437317c8db7a"
+      },
+      {
+        "robot_id": "2022-1678",
+        "discovery_post": "2022-1678-404113-181",
+        "url": "https://docs.google.com/spreadsheets/d/18vDiDgYWfXMvfhSVZON0UGh3gwqYySlxK2UqFpL1XJo/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "819c1f0401c5fe50f9"
+      }
+    ],
+    "id": "2022-1678",
+    "team_name": "Citrus Circuits",
+    "epa_rank": 1,
+    "epa": 69.09,
+    "epa_pre_champs": 69.74,
+    "epa_breakdown": {
+      "total_points": 69.09,
+      "auto_points": 16.26,
+      "teleop_points": 40.61,
+      "endgame_points": 12.23,
+      "cargo_rp": 0.8598,
+      "hangar_rp": 0.7001,
+      "tiebreaker_points": 69.09,
+      "auto_taxi_points": 2.13,
+      "auto_cargo_lower": -0.04,
+      "auto_cargo_upper": 3.55,
+      "teleop_cargo_lower": -0.29,
+      "teleop_cargo_upper": 20.45,
+      "rp_1": 0.8598,
+      "rp_2": 0.7001
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "dff9caffa33a513b",
+      "7f0253e700b82438",
+      "46b7677161a9ac97"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "four-bar",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-1678",
+      "year": 2022,
+      "team": 1678,
+      "epa_rank": 1,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1678\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 3,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1678\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-1678"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-1678",
+      "title": "Late winglets improve edge acquisition without changing the core scorer",
+      "start_seconds": 146,
+      "end_seconds": 185,
+      "construction": "An unequal four-bar with compliant plates receives later deployable winglets/belts to address edge jams. Sensor-tracked slots and an independent ejector select retained versus wrong-color cargo; the hood lineage credits 2910.",
+      "team_stated_reason": "The interview explicitly ties most intake optimization to side-entry jamming and describes winglets stowing inside the starting envelope.",
+      "engineering_analysis": "Acquisition width is only useful if edge contacts direct cargo into a controlled state. Adding a winglet changes impact and stow geometry, so its success cannot be inferred from center pickups. Lineage should retain year and implementation differences.",
+      "recommended_validation": "Measure edge pickup/rejection recovery and stow clearance under deformed plates and realistic impacts.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-1678",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/ijiDMVvGc_E",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/404113",
+        "https://github.com/frc1678/C2022-Public"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 146,
+        "end_seconds": 185,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "ijiDMVvGc_E",
+          "sha256": "1828a8cc0a91feba0d5686086c9b85390566d6c11da1f74b07124a28f13342f9",
+          "caption_segments": 543,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-1678:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-1678"
+      ],
+      "source_urls": [
+        "https://youtu.be/ijiDMVvGc_E"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-1678",
+      "title": "2022-1678 · Late winglets improve edge acquisition without changing the core scorer",
+      "year": 2022,
+      "robot_id": "2022-1678",
+      "kind": "focused_technical_study",
+      "body": "# 2022-1678: Late winglets improve edge acquisition without changing the core scorer\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nAn unequal four-bar with compliant plates receives later deployable winglets/belts to address edge jams. Sensor-tracked slots and an independent ejector select retained versus wrong-color cargo; the hood lineage credits 2910.\n\n## Team-stated reasoning or boundary\n\nThe interview explicitly ties most intake optimization to side-entry jamming and describes winglets stowing inside the starting envelope.\n\n## Engineering interpretation — analyst inference\n\nAcquisition width is only useful if edge contacts direct cargo into a controlled state. Adding a winglet changes impact and stow geometry, so its success cannot be inferred from center pickups. Lineage should retain year and implementation differences.\n\n## Proposed validation — not performed\n\nMeasure edge pickup/rejection recovery and stow clearance under deformed plates and realistic impacts.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/ijiDMVvGc_E](https://youtu.be/ijiDMVvGc_E)\n- [https://www.chiefdelphi.com/t/404113](https://www.chiefdelphi.com/t/404113)\n- [https://github.com/frc1678/C2022-Public](https://github.com/frc1678/C2022-Public)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/ijiDMVvGc_E",
+        "https://www.chiefdelphi.com/t/404113",
+        "https://github.com/frc1678/C2022-Public"
+      ],
+      "path": "docs/research_continuation/2022-1678.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2022-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404113/61",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/a/c/ac67cfd84cf636d0367a1bd688da05bc4477e210_2_375x499.jpeg",
+      "post": 61,
+      "date": "2022-05-02T14:49:53.127Z",
+      "author": "tedang",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2022 team 1678 — source image from post 61 (2022-05-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "1d31e448fa0a8dbd84.jpg",
+      "id": "c7128380c515a24bb5",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/1d31e448fa0a8dbd84.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 499,
+      "bytes": 69822,
+      "sha256": "822489f6977f39d482e562393e51ac0c2b0a96ae63c0a859bab33347ff33f2ef",
+      "path_base": "corpus_root",
+      "reader_asset_id": "c7128380c515a24bb5",
+      "reader_url": "index.html#image=c7128380c515a24bb5",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404113/66",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/8/c84338381d909fa3266c1dd04c6c2eb33b3fce6b_2_338x500.jpeg",
+      "post": 66,
+      "date": "2022-05-02T21:31:51.213Z",
+      "author": "davepowers",
+      "context_tags": [
+        "intake",
+        "pivot"
+      ],
+      "caption": "2022 team 1678 — source image from post 66 (2022-05-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "c022af2679963cf48a.jpg",
+      "id": "1e3df0adcd88660729",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/c022af2679963cf48a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 338,
+      "height_px": 500,
+      "bytes": 49063,
+      "sha256": "3a6ebb1f7ee025d1d0a39fafc67ad4de482fd16493b1acb1aac4524c9eff6c9e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1e3df0adcd88660729",
+      "reader_url": "index.html#image=1e3df0adcd88660729",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/404113/66",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/a/ca26ca6c74faaeb49e4d13572d072cf4521f9f17_2_273x500.jpeg",
+      "post": 66,
+      "date": "2022-05-02T21:31:51.213Z",
+      "author": "davepowers",
+      "context_tags": [
+        "intake",
+        "pivot"
+      ],
+      "caption": "2022 team 1678 — source image from post 66 (2022-05-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "238e8d4db278225fb0.jpg",
+      "id": "d94657c0668e39acad",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/238e8d4db278225fb0.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 273,
+      "height_px": 500,
+      "bytes": 32827,
+      "sha256": "8a3138b5c1bf75879492909170ed0213afec04e25930223d78bdda7b915ad822",
+      "path_base": "corpus_root",
+      "reader_asset_id": "d94657c0668e39acad",
+      "reader_url": "index.html#image=d94657c0668e39acad",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-1678",
+    "year": 2022,
+    "team": 1678,
+    "epa_rank": 1,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1678\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 3,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1678\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-1678:construction",
+    "study6-2022-1678:team_stated_reason",
+    "study6-2022-1678:engineering_analysis",
+    "study6-2022-1678:recommended_validation",
+    "study6-2022-1678:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

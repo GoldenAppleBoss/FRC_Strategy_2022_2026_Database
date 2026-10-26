@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-1706",
+  "year": 2026,
+  "team": 1706,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 1706,
+    "robot": "Mirage",
+    "primary": [
+      "https://www.youtube.com/watch?v=O2KMy1tlU9M"
+    ],
+    "architecture": "Twin turrets over dual conical spindexers, with extensible net hopper and L1 climb.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Intake deploy also expands hopper; commanded roller speed follows chassis speed and collector motion agitates fuel.",
+      "transfer": "Spinning floors and ribbed cones drive two uptake ramps. Bristles → stacked wheels → shaped cones after inadequate feed and jams.",
+      "scoring": "Independent turret aiming and hood control; aluminum flywheels replaced overly heavy steel trial. Separate kickers control fuel entering each shooter.",
+      "endgame": "L1 chosen for weight and autonomous speed; physical lift details not completely established by interview.",
+      "controls": "Each turret has offset-corrected hub vector, interpolation and moving-shot calculation. Three Limelight 4s fuse with odometry; can shoot during climb."
+    },
+    "versions": [
+      "First regional used stacked wheels; cone/rib geometry revised afterward.",
+      "Steel flywheel trial was rejected, not final hardware."
+    ],
+    "analysis": "Dual turrets trade feed complexity and mass for multiple heading-independent streams. Their value depends on both streams remaining supplied during real congestion and on the measured benefit over a simpler single turret or drum.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-1706",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/522276/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/d/4/f/d4f4feb344ee2340e79db3b414e40ae3a2e198a1.jpeg",
+        "post": 2,
+        "date": "2026-07-01T18:39:25.689Z",
+        "author": "pigrammer",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2026 team 1706 — source image from post 2 (2026-07-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d6a1c601c93b2ca574.jpg",
+        "id": "40ecf1ca393a982e26",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d6a1c601c93b2ca574.jpg"
+      },
+      {
+        "robot_id": "2026-1706",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/522276/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/3/3/2/332aa5213a292c9d009a831d774984d8324b4bc7_2_335x500.jpeg",
+        "post": 2,
+        "date": "2026-07-01T18:39:25.689Z",
+        "author": "pigrammer",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2026 team 1706 — source image from post 2 (2026-07-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "451bbcee9b4805b560.jpg",
+        "id": "9a15791c0310a9b926",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/451bbcee9b4805b560.jpg"
+      },
+      {
+        "robot_id": "2026-1706",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/522276/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/8/5/b854c8531c46e06538da8e82d4977f33f1fbb515_2_651x499.jpeg",
+        "post": 2,
+        "date": "2026-07-01T18:39:25.689Z",
+        "author": "pigrammer",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2026 team 1706 — source image from post 2 (2026-07-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7a813968dfa0426b66.jpg",
+        "id": "59a0d239aed9be0127",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7a813968dfa0426b66.jpg"
+      }
+    ],
+    "source_post_count": 9,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-1706",
+        "discovery_post": "2026-1706-522276-1",
+        "url": "https://cad.onshape.com/documents/23ba2ed5b3893ab97929c8b6/w/d7012e1e8978e09c9756ee4c/e/70526e43c92b434a946b53a6?renderMode=0&uiState=6a4551305d34dab275300f85",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "69d034b64c6e8e6bcc"
+      }
+    ],
+    "id": "2026-1706",
+    "team_name": "Ratchet Rockers",
+    "epa_rank": 27,
+    "epa": 255.98,
+    "epa_pre_champs": 211.17,
+    "epa_breakdown": {
+      "total_points": 255.98,
+      "auto_points": 47.57,
+      "teleop_points": 151.21,
+      "endgame_points": 57.2,
+      "energized_rp": 0.7256,
+      "supercharged_rp": 0.2629,
+      "traversal_rp": -0.33933,
+      "tiebreaker_points": 255.98,
+      "auto_fuel": 46.34,
+      "auto_tower": 1.23,
+      "transition_fuel": 15.68,
+      "first_shift_fuel": 75.77,
+      "second_shift_fuel": 59.76,
+      "endgame_fuel": 56.76,
+      "endgame_tower": 0.44,
+      "rp_1": 0.7256,
+      "rp_2": 0.2629,
+      "rp_3": -0.33933,
+      "teleop_fuel": 207.96999999999997,
+      "total_fuel": 254.30999999999997,
+      "total_tower": 1.67
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "2323a9a17f7dd93e"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "expanding storage",
+      "spindexer / DYE",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-1706",
+      "year": 2026,
+      "team": 1706,
+      "epa_rank": 27,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1706\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 26,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1706\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-1706"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-1706",
+      "title": "Twin spindexers trade packaging freedom for multiple coupled interfaces",
+      "start_seconds": 184,
+      "end_seconds": 735,
+      "construction": "The mechanism has two rotating floor/cone systems and uptake ramps, separately controlled kickers, independent turrets and hood adjustment. The interview describes X44-driven indexer systems, 6-inch aluminum flywheels replacing heavy steel trials, an under-mounted battery on a pinned removable panel, and chassis-speed-dependent intake voltage bounded around 6.5–12 V.",
+      "team_stated_reason": "Aluminum flywheels were chosen after the steel trial proved too heavy. The battery mounting responds to crowded internal packaging. The retained interview account describes bristles, stacked wheels and shaped cones as successive feed iterations.",
+      "engineering_analysis": "Two aiming channels do not automatically double match output. Fuel must be distributed to both cones, delivered through both ramps and accelerated without one path starving or overpacking. Moving-shot math must use the location of each turret rather than a single robot-center vector; angular chassis motion creates different local velocities at separated release points. Dynamic collector speed can match acquisition to chassis motion, but the exact speed signal and interpolation should be checked in code because the caption wording mixes angular and translational quantities. The removable battery panel is part of the architecture: dense packaging is only useful if the robot can still be serviced reliably.",
+      "recommended_validation": "Test unequal hopper loading, one jammed lane, low battery, turning shots and underbody battery retention after bump contact. Verify the actual intake-speed input in source code before reproducing the controller.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-1706",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=O2KMy1tlU9M",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 184,
+        "end_seconds": 735,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "O2KMy1tlU9M",
+          "sha256": "58f38a923f1532d9f705fb37a33e6378c1132e8ecec4be0785d04871d922d845",
+          "caption_segments": 357,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-1706:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-1706",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-1706"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=O2KMy1tlU9M"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-1706",
+      "title": "2026-1706 · Twin spindexers trade packaging freedom for multiple coupled interfaces",
+      "year": 2026,
+      "robot_id": "2026-1706",
+      "kind": "focused_technical_study",
+      "body": "# 2026-1706: Twin spindexers trade packaging freedom for multiple coupled interfaces\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe mechanism has two rotating floor/cone systems and uptake ramps, separately controlled kickers, independent turrets and hood adjustment. The interview describes X44-driven indexer systems, 6-inch aluminum flywheels replacing heavy steel trials, an under-mounted battery on a pinned removable panel, and chassis-speed-dependent intake voltage bounded around 6.5–12 V.\n\n## Team-stated reasoning or boundary\n\nAluminum flywheels were chosen after the steel trial proved too heavy. The battery mounting responds to crowded internal packaging. The retained interview account describes bristles, stacked wheels and shaped cones as successive feed iterations.\n\n## Engineering interpretation — analyst inference\n\nTwo aiming channels do not automatically double match output. Fuel must be distributed to both cones, delivered through both ramps and accelerated without one path starving or overpacking. Moving-shot math must use the location of each turret rather than a single robot-center vector; angular chassis motion creates different local velocities at separated release points. Dynamic collector speed can match acquisition to chassis motion, but the exact speed signal and interpolation should be checked in code because the caption wording mixes angular and translational quantities. The removable battery panel is part of the architecture: dense packaging is only useful if the robot can still be serviced reliably.\n\n## Proposed validation — not performed\n\nTest unequal hopper loading, one jammed lane, low battery, turning shots and underbody battery retention after bump contact. Verify the actual intake-speed input in source code before reproducing the controller.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=O2KMy1tlU9M](https://www.youtube.com/watch?v=O2KMy1tlU9M)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=O2KMy1tlU9M"
+      ],
+      "path": "docs/research_continuation/2026-1706.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-1706",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/522276/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/d/4/f/d4f4feb344ee2340e79db3b414e40ae3a2e198a1.jpeg",
+      "post": 2,
+      "date": "2026-07-01T18:39:25.689Z",
+      "author": "pigrammer",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2026 team 1706 — source image from post 2 (2026-07-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d6a1c601c93b2ca574.jpg",
+      "id": "40ecf1ca393a982e26",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d6a1c601c93b2ca574.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 720,
+      "height_px": 447,
+      "bytes": 66759,
+      "sha256": "b869ac1a291b9ad04b4752618e57adcac8ca1d3300e7b40c403bad6286ff517b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "40ecf1ca393a982e26",
+      "reader_url": "index.html#image=40ecf1ca393a982e26",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1706",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/522276/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/3/3/2/332aa5213a292c9d009a831d774984d8324b4bc7_2_335x500.jpeg",
+      "post": 2,
+      "date": "2026-07-01T18:39:25.689Z",
+      "author": "pigrammer",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2026 team 1706 — source image from post 2 (2026-07-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "451bbcee9b4805b560.jpg",
+      "id": "9a15791c0310a9b926",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/451bbcee9b4805b560.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 335,
+      "height_px": 500,
+      "bytes": 52007,
+      "sha256": "cf2307f9868e646ecda142759f6a6bd8b935d7b47d836595f4c016135859da73",
+      "path_base": "corpus_root",
+      "reader_asset_id": "9a15791c0310a9b926",
+      "reader_url": "index.html#image=9a15791c0310a9b926",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1706",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/522276/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/8/5/b854c8531c46e06538da8e82d4977f33f1fbb515_2_651x499.jpeg",
+      "post": 2,
+      "date": "2026-07-01T18:39:25.689Z",
+      "author": "pigrammer",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2026 team 1706 — source image from post 2 (2026-07-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7a813968dfa0426b66.jpg",
+      "id": "59a0d239aed9be0127",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7a813968dfa0426b66.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 651,
+      "height_px": 499,
+      "bytes": 66073,
+      "sha256": "38925b69ab8453709b57104e979f3a16cd86cca7239d18f179539efd5aa32523",
+      "path_base": "corpus_root",
+      "reader_asset_id": "59a0d239aed9be0127",
+      "reader_url": "index.html#image=59a0d239aed9be0127",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-1706",
+    "year": 2026,
+    "team": 1706,
+    "epa_rank": 27,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1706\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 26,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1706\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-1706:construction",
+    "study6-2026-1706:team_stated_reason",
+    "study6-2026-1706:engineering_analysis",
+    "study6-2026-1706:recommended_validation",
+    "study6-2026-1706:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

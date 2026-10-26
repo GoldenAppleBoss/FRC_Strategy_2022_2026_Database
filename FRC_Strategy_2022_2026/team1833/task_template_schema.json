@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "template": "team1833/1833_Task_List_Template.xlsx",
+  "protocol": "docs/TASK_LIST_PROTOCOL.md",
+  "worksheet": "Task List",
+  "worksheet_count": 1,
+  "table": "RobotTasks",
+  "header_row": 12,
+  "first_task_row": 13,
+  "last_starter_task_row": 92,
+  "task_capacity_is_limit": false,
+  "metadata": {
+    "C2:H2": "season/game",
+    "C3:H3": "manual revision + source URL",
+    "C4:H4": "event/week/stage",
+    "C5:H5": "partner/opponent assumptions",
+    "C6:H6": "1833 resources/constraints",
+    "C7:H7": "agent/date/human review status"
+  },
+  "columns": {
+    "A": "Category",
+    "B": "Task / required outcome",
+    "C": "Phase / applicability",
+    "D": "Points / enabling value",
+    "E": "Priority (1–3)",
+    "F": "Difficulty",
+    "G": "P×D aid",
+    "H": "Agent recommendation",
+    "I": "Why / tradeoff",
+    "J": "Dependencies / partner role",
+    "K": "Acceptance target / units",
+    "L": "Rule + source locator",
+    "M": "Unknowns / smallest test",
+    "N": "1833 final decision / rationale"
+  },
+  "required_agent_columns": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M"
+  ],
+  "computed_columns": [
+    "G"
+  ],
+  "human_decision_columns": [
+    "N"
+  ],
+  "allowed_priority": [
+    1,
+    2,
+    3
+  ],
+  "allowed_difficulty": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21
+  ],
+  "allowed_recommendations": [
+    "Must do",
+    "Might do",
+    "Won’t do",
+    "Needs discussion"
+  ],
+  "missing_value_policy": "Explicit unknown or N/A plus reason; do not invent facts, exact targets or human decisions.",
+  "triggers": [
+    "new game/manual analysis",
+    "material rules revision",
+    "new or revised robot design brief"
+  ],
+  "completion_gate": "Filled one-sheet workbook required before final architecture recommendation; see protocol for extension and evidence requirements."
+}

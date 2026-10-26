@@ -1,0 +1,421 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-4414",
+  "year": 2024,
+  "team": 4414,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 4414,
+    "robot": "TIDEPOD",
+    "primary": [
+      "https://youtu.be/bmybbP0aJqo"
+    ],
+    "architecture": "Rebuilt compact fixed-heading shooter with rack elevator and integrated chain/trap system.",
+    "subsystems": {
+      "drivetrain": "Rebuild uses 26-by-27.5-inch base, deeper rails and thicker belly pan.",
+      "intake": "Protected intake with titanium rollers; dead-axle feeder preserves a short path.",
+      "transfer": "Direct shot path; reverse shooter feed and kicker transfer to amp elevator.",
+      "scoring": "Four-motor differential-speed launcher optimized for short time-to-shoot and long-range shots.",
+      "endgame": "Rack-and-pinion amp/trap elevator; individual hooks and passive stage-reaction forks.",
+      "controls": "Multiple Limelight lenses cover distant/near targets, note detection and climb alignment; one-driver controls."
+    },
+    "versions": [
+      "Original larger, maximum-weight turret robot replaced between Weeks 2 and 5. Team cited poor intake performance and inadequate long-range shot; rebuilt without turret."
+    ],
+    "analysis": "A crucial counterexample to assuming the most capable-looking architecture wins: their rebuild deliberately surrendered turret freedom to improve acquisition, launch speed, weight and range.",
+    "limits": [
+      "Only source-established configurations and changes are described; intermediate revisions may remain unresolved."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/460154/24",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/9/c9011f860bd8ce2191f300f00fa7689228e68230_2_510x375.jpeg",
+        "post": 24,
+        "date": "2024-03-26T14:33:32.608Z",
+        "author": "HarbringerOfAuroras",
+        "context_tags": [
+          "climb",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2024 team 4414 — source image from post 24 (2024-03-26). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f05309acbd8d3051ef.jpg",
+        "id": "e292cb63921be687a1",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f05309acbd8d3051ef.jpg"
+      },
+      {
+        "robot_id": "2024-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/460154/43",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/a/d/adbcdc35c7d82240b5cd347bf21affffabf6fb17_2_485x500.jpeg",
+        "post": 43,
+        "date": "2024-05-03T16:44:48.120Z",
+        "author": "jjsessa",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2024 team 4414 — source image from post 43 (2024-05-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "b1474a272980d119d2.jpg",
+        "id": "1ee9c115a2402052d6",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/b1474a272980d119d2.jpg"
+      },
+      {
+        "robot_id": "2024-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/460154/43",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/0/2/029d7f13ffa2c3c74815c732ba21e0681b352779_2_503x500.jpeg",
+        "post": 43,
+        "date": "2024-05-03T16:44:48.120Z",
+        "author": "jjsessa",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2024 team 4414 — source image from post 43 (2024-05-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "71b5173978e4fca020.jpg",
+        "id": "060401b91fafc07968",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/71b5173978e4fca020.jpg"
+      }
+    ],
+    "source_post_count": 41,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-4414",
+        "discovery_post": "2024-4414-460154-38",
+        "url": "https://docs.google.com/document/d/1oioM2l_x35WyaZ5aIngZDdhDZifJ1rNlZHE9s-3Fqz4/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3b5984158341b669e9"
+      },
+      {
+        "robot_id": "2024-4414",
+        "discovery_post": "2024-4414-460154-69",
+        "url": "https://cad.onshape.com/documents/2891401ccc10c5a965e87031/v/7310bec30e339288e6febf21/e/61ae9bada0bb78a89833b58f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2cf13c09892512cdd5"
+      },
+      {
+        "robot_id": "2024-4414",
+        "discovery_post": "2024-4414-460154-73",
+        "url": "https://docs.google.com/document/d/1yDqaqkgjQNEYwPyO38O4OAOHm8cfEg3fAkgrVf7SGsg/edit",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "965822af1d098ac4d5"
+      },
+      {
+        "robot_id": "2024-4414",
+        "discovery_post": "2024-4414-460154-73",
+        "url": "https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/c66db2b954da7f29d438195a",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4a6dcde8edb61eaca3"
+      }
+    ],
+    "id": "2024-4414",
+    "team_name": "HighTide",
+    "epa_rank": 14,
+    "epa": 49.49,
+    "epa_pre_champs": 49.54,
+    "epa_breakdown": {
+      "total_points": 49.49,
+      "auto_points": 18.05,
+      "teleop_points": 25.58,
+      "endgame_points": 5.86,
+      "melody_rp": 0.6647,
+      "ensemble_rp": 0.4387,
+      "tiebreaker_points": 0.26,
+      "auto_leave_points": 1.67,
+      "auto_note_points": 16.37,
+      "teleop_note_points": 25.58,
+      "speaker_points": 38.82,
+      "amplified_notes": 4.11,
+      "endgame_park_points": 0.02,
+      "endgame_on_stage_points": 2.89,
+      "endgame_harmony_points": 0.05,
+      "endgame_trap_points": 2.85,
+      "endgame_spotlight_points": 0.05,
+      "rp_1": 0.6647,
+      "rp_2": 0.4387,
+      "total_note_points": 41.95
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "7c2cbab2776a025e"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-4414",
+      "year": 2024,
+      "team": 4414,
+      "epa_rank": 14,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"4414\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 17,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4414\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-4414"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-4414",
+      "title": "The rebuild traded turret freedom for structure and long-range consistency",
+      "start_seconds": 75,
+      "end_seconds": 180,
+      "construction": "The source distinguishes the original turret from a rebuilt fixed-heading launcher. The rebuild changes drive tubes to 3×1, belly-pan thickness to 3/16 inch and base dimensions to 26×27.5 inches. Protected dead-axis feed and four-motor differential-speed shooting serve long range; reverse feeding sends a note to the amp elevator.",
+      "team_stated_reason": "The team reports structural problems affecting under-bumper acquisition and insufficient original turret power for its preferred long shot. It decided the turret’s advantages did not outweigh its costs for the intended robot functions.",
+      "engineering_analysis": "This is a strategic architecture rejection with concrete technical causes. A turret is not automatically superior when its packaging reduces stiffness, collection quality or release capability. The fixed-heading replacement must still pay chassis-aiming time and defended heading constraints, so the reason applies to the team’s specific route/shot strategy rather than every Crescendo robot.",
+      "recommended_validation": "Compare full acquisition-to-release time and range under defense, inspect frame deflection, and test reversed amp transfer after long shots. Preserve original/rebuild boundaries in any inspiration sentence.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-4414",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/bmybbP0aJqo",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 75,
+        "end_seconds": 180,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "bmybbP0aJqo",
+          "sha256": "5e2005b45f067772e41a79546a8fd9f7b32dae603d6d71f36fc7a54d522b64e3",
+          "caption_segments": 215,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-4414:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-4414",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-4414"
+      ],
+      "source_urls": [
+        "https://youtu.be/bmybbP0aJqo"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-4414",
+      "title": "2024-4414 · The rebuild traded turret freedom for structure and long-range consistency",
+      "year": 2024,
+      "robot_id": "2024-4414",
+      "kind": "focused_technical_study",
+      "body": "# 2024-4414: The rebuild traded turret freedom for structure and long-range consistency\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe source distinguishes the original turret from a rebuilt fixed-heading launcher. The rebuild changes drive tubes to 3×1, belly-pan thickness to 3/16 inch and base dimensions to 26×27.5 inches. Protected dead-axis feed and four-motor differential-speed shooting serve long range; reverse feeding sends a note to the amp elevator.\n\n## Team-stated reasoning or boundary\n\nThe team reports structural problems affecting under-bumper acquisition and insufficient original turret power for its preferred long shot. It decided the turret’s advantages did not outweigh its costs for the intended robot functions.\n\n## Engineering interpretation — analyst inference\n\nThis is a strategic architecture rejection with concrete technical causes. A turret is not automatically superior when its packaging reduces stiffness, collection quality or release capability. The fixed-heading replacement must still pay chassis-aiming time and defended heading constraints, so the reason applies to the team’s specific route/shot strategy rather than every Crescendo robot.\n\n## Proposed validation — not performed\n\nCompare full acquisition-to-release time and range under defense, inspect frame deflection, and test reversed amp transfer after long shots. Preserve original/rebuild boundaries in any inspiration sentence.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/bmybbP0aJqo](https://youtu.be/bmybbP0aJqo)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/bmybbP0aJqo"
+      ],
+      "path": "docs/research_continuation/2024-4414.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/460154/24",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/c/9/c9011f860bd8ce2191f300f00fa7689228e68230_2_510x375.jpeg",
+      "post": 24,
+      "date": "2024-03-26T14:33:32.608Z",
+      "author": "HarbringerOfAuroras",
+      "context_tags": [
+        "climb",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2024 team 4414 — source image from post 24 (2024-03-26). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f05309acbd8d3051ef.jpg",
+      "id": "e292cb63921be687a1",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f05309acbd8d3051ef.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 510,
+      "height_px": 375,
+      "bytes": 44630,
+      "sha256": "85bb3d32c038dd87ed00738f9aa52464aa0d56a42118a4695cff403a5b95a909",
+      "path_base": "corpus_root",
+      "reader_asset_id": "e292cb63921be687a1",
+      "reader_url": "index.html#image=e292cb63921be687a1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/460154/43",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/a/d/adbcdc35c7d82240b5cd347bf21affffabf6fb17_2_485x500.jpeg",
+      "post": 43,
+      "date": "2024-05-03T16:44:48.120Z",
+      "author": "jjsessa",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2024 team 4414 — source image from post 43 (2024-05-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "b1474a272980d119d2.jpg",
+      "id": "1ee9c115a2402052d6",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/b1474a272980d119d2.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 485,
+      "height_px": 500,
+      "bytes": 30023,
+      "sha256": "f05389ac364347efe1aa046c392f2a79da7b914ddd5ac2b33edc9adf8e1ef0b5",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1ee9c115a2402052d6",
+      "reader_url": "index.html#image=1ee9c115a2402052d6",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/460154/43",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/0/2/029d7f13ffa2c3c74815c732ba21e0681b352779_2_503x500.jpeg",
+      "post": 43,
+      "date": "2024-05-03T16:44:48.120Z",
+      "author": "jjsessa",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2024 team 4414 — source image from post 43 (2024-05-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "71b5173978e4fca020.jpg",
+      "id": "060401b91fafc07968",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/71b5173978e4fca020.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 503,
+      "height_px": 500,
+      "bytes": 56058,
+      "sha256": "48b4f6b51d0eb278f1683ade63f4790c113612a1b032d370a1f591a0928696af",
+      "path_base": "corpus_root",
+      "reader_asset_id": "060401b91fafc07968",
+      "reader_url": "index.html#image=060401b91fafc07968",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-4414",
+    "year": 2024,
+    "team": 4414,
+    "epa_rank": 14,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"4414\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 17,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4414\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-4414:construction",
+    "study6-2024-4414:team_stated_reason",
+    "study6-2024-4414:engineering_analysis",
+    "study6-2024-4414:recommended_validation",
+    "study6-2024-4414:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

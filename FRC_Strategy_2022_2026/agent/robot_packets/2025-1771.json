@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-1771",
+  "year": 2025,
+  "team": 1771,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 1771,
+    "robot": "Driftwood",
+    "primary": [
+      "https://youtu.be/2W807-oy25U",
+      "https://www.northgwinnettrobotics.com/home"
+    ],
+    "architecture": "Two-stage elevator with pivot/wrist and self-centering shared manipulator.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Station feed and ground-intake handoff; detailed intake geometry not established by reviewed excerpt.",
+      "transfer": "Two range sensors and a transverse wheel actively center coral; position shifts for L4 clearance.",
+      "scoring": "4414-2023-inspired continuous elevator; spring-compliant shared coral/algae gripper. Pivot/wrist compensates for limited elevator height.",
+      "endgame": "Endgame mechanism not established by reviewed interview; this is an explicit research gap.",
+      "controls": "Reef-state dashboard can track scored pieces/removed algae; objectives differ for ranking-point versus playoff scoring priorities."
+    },
+    "versions": [
+      "Interview documents configuration and objective-based software; complete season hardware chronology unresolved."
+    ],
+    "analysis": "For PCH, this robot is useful evidence that mechanism capability and alliance objectives must be linked in software. A selector that pursues an RP threshold can be inappropriate once an elimination match rewards total score only.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2025-1771",
+    "team_name": "North Gwinnett Robotics",
+    "epa_rank": 25,
+    "epa": 88.4,
+    "epa_pre_champs": 91.76,
+    "epa_breakdown": {
+      "total_points": 88.4,
+      "auto_points": 27.48,
+      "teleop_points": 51.05,
+      "endgame_points": 9.87,
+      "auto_rp": 0.7364,
+      "coral_rp": 0.5933,
+      "barge_rp": 0.58151,
+      "tiebreaker_points": 0.15,
+      "auto_coral_points": 24.52,
+      "teleop_coral_points": 40.11,
+      "coral_l1": 3.42,
+      "coral_l2": 4.02,
+      "coral_l3": 4.35,
+      "coral_l4": 4.26,
+      "processor_algae": 0.74,
+      "processor_algae_points": 2.22,
+      "net_algae_points": 8.73,
+      "barge_points": 9.87,
+      "rp_1": 0.7364,
+      "rp_2": 0.5933,
+      "rp_3": 0.58151,
+      "total_coral_points": 64.63,
+      "total_algae_points": 10.950000000000001
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "partial / unresolved detail",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "5e18e5541b4a8c67",
+      "b2cc7a2167486c23"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-1771",
+      "year": 2025,
+      "team": 1771,
+      "epa_rank": 25,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1771\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 22,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1771\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-1771"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-1771",
+      "title": "Wrist freedom creates L1 value and a collision-planning obligation",
+      "start_seconds": 80,
+      "end_seconds": 405,
+      "construction": "The team explicitly credits 4414’s 2023 continuous elevator. Its carriage combines a pivot, wrist and compliant coral/algae end effector; range sensors and a transverse wheel actively center coral. The software models tested safe poses and allows only transitions connected in a graph.",
+      "team_stated_reason": "The interview ties the wrist to effective L1 cycles and the pivot to serving both ground and station acquisition. The restricted transition graph is intended to prevent destructive arm/elevator interactions and overshoot.",
+      "engineering_analysis": "The wrist should not be justified only by branch reach. It also changes how coral can be presented to the trough, so its value can rise in a low-task alliance role. The price is a larger configuration space: correct endpoint poses do not prove that the path between them is safe. A tested edge graph is a concrete way to carry mechanical clearance assumptions into software.",
+      "recommended_validation": "Test every allowed transition under lag, sensor error and simultaneous chassis motion. Measure L1 throughput as well as L4 reach, and verify active centering before the final placement motion.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-1771",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/2W807-oy25U",
+      "additional_sources": [
+        "https://www.northgwinnettrobotics.com/home"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 405,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "2W807-oy25U",
+          "sha256": "91a2b275a418c36e873bc1de4b199c9f0b3c516e24ad63f2d385c687dea46a55",
+          "caption_segments": 297,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-1771:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-1771",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-1771"
+      ],
+      "source_urls": [
+        "https://youtu.be/2W807-oy25U"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-1771",
+      "title": "2025-1771 · Wrist freedom creates L1 value and a collision-planning obligation",
+      "year": 2025,
+      "robot_id": "2025-1771",
+      "kind": "focused_technical_study",
+      "body": "# 2025-1771: Wrist freedom creates L1 value and a collision-planning obligation\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe team explicitly credits 4414’s 2023 continuous elevator. Its carriage combines a pivot, wrist and compliant coral/algae end effector; range sensors and a transverse wheel actively center coral. The software models tested safe poses and allows only transitions connected in a graph.\n\n## Team-stated reasoning or boundary\n\nThe interview ties the wrist to effective L1 cycles and the pivot to serving both ground and station acquisition. The restricted transition graph is intended to prevent destructive arm/elevator interactions and overshoot.\n\n## Engineering interpretation — analyst inference\n\nThe wrist should not be justified only by branch reach. It also changes how coral can be presented to the trough, so its value can rise in a low-task alliance role. The price is a larger configuration space: correct endpoint poses do not prove that the path between them is safe. A tested edge graph is a concrete way to carry mechanical clearance assumptions into software.\n\n## Proposed validation — not performed\n\nTest every allowed transition under lag, sensor error and simultaneous chassis motion. Measure L1 throughput as well as L4 reach, and verify active centering before the final placement motion.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/2W807-oy25U](https://youtu.be/2W807-oy25U)\n- [https://www.northgwinnettrobotics.com/home](https://www.northgwinnettrobotics.com/home)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/2W807-oy25U",
+        "https://www.northgwinnettrobotics.com/home"
+      ],
+      "path": "docs/research_continuation/2025-1771.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-1771",
+    "year": 2025,
+    "team": 1771,
+    "epa_rank": 25,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1771\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 22,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1771\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-1771:construction",
+    "study6-2025-1771:team_stated_reason",
+    "study6-2025-1771:engineering_analysis",
+    "study6-2025-1771:recommended_validation",
+    "study6-2025-1771:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

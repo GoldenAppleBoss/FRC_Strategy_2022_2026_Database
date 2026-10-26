@@ -1,0 +1,1174 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-254",
+  "year": 2023,
+  "team": 254,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 254,
+    "robot": "BREAKDOWN",
+    "primary": [
+      "https://youtu.be/D_-aiikeOH8",
+      "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "https://www.chiefdelphi.com/t/443167"
+    ],
+    "architecture": "Vertical elevator plus horizontal Laterator, firm roller gripper, auxiliary floor intake and independent forks.",
+    "subsystems": {
+      "intake": "Articulating roller gripper retains cones securely; supplementary floor intake guides cubes and supports acquisition.",
+      "transfer": "Floor intake translates on printed blocks with low-friction tape; handoff geometry is coordinated with the gripper.",
+      "scoring": "Belt-driven vertical elevator and multi-stage horizontal Laterator separate height from reach.",
+      "drivetrain": "SDS inverted swerve modules; front rail strengthened after repeated loading impacts.",
+      "endgame": "Separate translating/articulating forks lift the chassis while respecting the tall superstructure's clearance constraints.",
+      "controls": "Coordinated scoring poses, autonomous paths and balancing; code and technical binder are public."
+    },
+    "versions": [
+      "Auxiliary floor roller added after acquisition problems.",
+      "Front frame rail thickened through successive revisions to solid aluminum.",
+      "Elevator bracing strengthened after twisting and impact damage."
+    ],
+    "analysis": "Compare with 1678's integrated forks: similar endgame objective, but different superstructure geometry changes the viable lifting motion. The independent axes simplify placement geometry while increasing structure and service complexity.",
+    "limits": [
+      "Public binder and Q&A describe revisions, but no claim is made that every shop iteration is enumerated."
+    ],
+    "deep_context": "# 2023-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## BREAKDOWN: independent vertical and lateral extension\n\nVersion: BREAKDOWN. [PDF p12](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12) · [PDF p13](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13)\n\n**Published construction:** Vertical elevator plus 15° inclined three-stage carbon-fiber laterator; PEEK guidance rollers.\n\n**Team-stated reason or evidence boundary:** Fast reach with low moving mass.\n\n**Engineering analysis — original inference:** Separating vertical and outward motion turns scoring poses into two mostly independent coordinates. That can simplify the end-effector geometry and let the chassis remain farther from the grid, but adds another flexible stage and a collision envelope between stages. Low-mass carbon structures reduce inertia; guidance roller preload and tube alignment determine whether they move freely without excessive play. The laterator’s angle contributes vertical motion as it extends, so the control system still needs a coupled pose model. A reported travel time describes one axis, not a complete pickup-to-placement transition.\n\n**Proposed validation — not a completed test:** Measure coral-equivalent tool-tip error under simultaneous axis motion and chassis acceleration; inspect guidance play and cable drag across the entire stroke.\n\n**Limits:** The PDF required OCR. Page 12 elevator construction was checked visually; other numerical OCR details should be checked in the original before fabrication.\n\n## BREAKDOWN: articulate contacts for cones and cubes\n\nVersion: BREAKDOWN. [PDF p8](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=8) · [PDF p15](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=15)\n\n**Published construction:** Articulating roller claw with distinct cube and cone contacts; over-center cone grip.\n\n**Team-stated reason or evidence boundary:** Serve upright cones and cubes without pursuing every floor orientation.\n\n**Engineering analysis — original inference:** A cone and a cube present different contact and centering problems. An articulated claw can open enough for a cube while using a different smaller contact to constrain a cone. Over-center geometry can supply retention without continuous high motor force, provided the piece is located in the intended three-point contact. Choosing not to solve sideways floor cones is an explicit scope decision linked to expected high-level supply; it must not become a universal claim that such pickup has no value. A local event or a disrupted supply plan can change that assumption.\n\n**Proposed validation — not a completed test:** Test each intended piece orientation and define a safe fallback for excluded orientations; measure grip after approach collisions.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## BREAKDOWN: rack-deployed cube floor pickup\n\nVersion: BREAKDOWN. [PDF p16](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16)\n\n**Published construction:** Rack-and-pinion polycarbonate extension and a small grippy roller feed the main claw.\n\n**Team-stated reason or evidence boundary:** Lightweight, robust access to floor cubes.\n\n**Engineering analysis — original inference:** Linear extension preserves roller height while changing its distance from the chassis, which is useful when a simple pivot would change the pickup geometry too much. A rack cut directly into the side plate reduces part count but concentrates wear and impact load in that plate. The floor mechanism does not solve every piece task; it supplies a known cube path to the articulating claw. That specialization can be efficient when the human-player and game-piece plan makes it sufficient.\n\n**Proposed validation — not a completed test:** Test cube acquisition near walls and with oblique contact; inspect rack alignment and tooth wear after repeated forced retractions.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## BREAKDOWN: forks change the robot’s balance interface\n\nVersion: BREAKDOWN. [PDF p17](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17)\n\n**Published construction:** Carbon-fiber forks and a sliding carriage react against bumper structure; rope lift.\n\n**Team-stated reason or evidence boundary:** Lift alongside partners and balance quickly.\n\n**Engineering analysis — original inference:** The forks are an alliance interaction mechanism. Their usefulness depends on the partner’s underside, bumper placement and where the combined load settles on the platform. Reacting through bumper wood can counter sag but creates a load path that needs appropriate mounting and repeatability. A mechanism that works under one partner may interfere with another, so compatibility belongs in the selection criteria. This differs fundamentally from a cage or rung climb despite sharing motors, rope and lifting motion.\n\n**Proposed validation — not a completed test:** Test with representative partner geometries, unequal loading and platform tilt; verify the load path through the bumper attachment.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## BREAKDOWN: collision avoidance and compliant station intake\n\nVersion: BREAKDOWN. [PDF p20](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=20) · [PDF p21](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=21)\n\n**Published construction:** Intermediate superstructure states, reduced-precision transitions and a compliant laterator intake mode.\n\n**Team-stated reason or evidence boundary:** Move quickly while avoiding collisions and station impact loads.\n\n**Engineering analysis — original inference:** A Cartesian-looking mechanism still needs a safe sequence through its intermediate states. Requiring every joint to settle precisely at every waypoint wastes time, while removing all intermediate conditions can create a collision. A compliant acquisition mode trades position stiffness for reduced impact, so its transition back to scoring control must be deliberate. Vision and odometry should supply a confidence-aware pose; the mechanical compliance is a complement to that estimate rather than evidence that accurate sensing is unnecessary.\n\n**Proposed validation — not a completed test:** Start transitions from unexpected interrupted states, test a station impact, and verify that the mechanism returns to a known scoring reference.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | 26×26-in frame; L3; 18 ft/s free | [Source p11](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=11) |\n| Elevator | 4.64:1; 24T 5-mm HTD; 41.5-in travel; reported 0.4 s | [Source p12](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12) |\n| Laterator | 3.75:1; 18T 5-mm HTD; 49.875-in travel; reported 0.18 s | [Source p13](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13) |\n| Intake | 3.3:1 deploy; 10T 10DP rack pinion | [Source p16](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16) |\n| Forks | 14.6:1; 1-in rope drum; 6.75-in travel | [Source p17](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2023-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/443167/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/b/1bd3b6a9e2f11a615cc99fae02cc5a2649e9d0f8_2_271x250.jpeg",
+        "post": 1,
+        "date": "2023-10-26T21:54:25.436Z",
+        "author": "Torrance",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2023 team 254 — source image from post 1 (2023-10-26). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "1d5997b400f00d00a6.jpg",
+        "id": "325552ea6f2ea9bbff",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/1d5997b400f00d00a6.jpg"
+      },
+      {
+        "robot_id": "2023-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/440533/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/c/fcaf33de648f7229663f0be6e86db53e72e236d2_2_381x375.png",
+        "post": 2,
+        "date": "2023-09-06T05:29:05.127Z",
+        "author": "Torrance",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2023 team 254 — source image from post 2 (2023-09-06). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7b69596701b3a28c53.jpg",
+        "id": "e7732e49526eca7170",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7b69596701b3a28c53.jpg"
+      },
+      {
+        "robot_id": "2023-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/440533/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/e/be5f905a618db59bf86ea984ac397399015a5b5b_2_437x375.jpeg",
+        "post": 2,
+        "date": "2023-09-06T05:29:05.127Z",
+        "author": "Torrance",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2023 team 254 — source image from post 2 (2023-09-06). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "766d15b8087973a092.jpg",
+        "id": "f4ae834c3a1e9e170f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/766d15b8087973a092.jpg"
+      },
+      {
+        "robot_id": "2023-254",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/440533/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/7/57d7de252b6e21005c4c610710c02648c1d7e1ff_2_517x368.png",
+        "post": 2,
+        "date": "2023-09-06T05:29:05.127Z",
+        "author": "Torrance",
+        "context_tags": [
+          "arm",
+          "climb",
+          "elevator",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2023 team 254 — source image from post 2 (2023-09-06). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "4ffcafe05907ac1466.jpg",
+        "id": "c6abf4cad1fe222d35",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/4ffcafe05907ac1466.jpg"
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p11-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p11-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=11",
+        "caption": "2023-254 · BREAKDOWN · Drivebase · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          65.0,
+          125.0,
+          535.0,
+          430.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p12-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p12-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12",
+        "caption": "2023-254 · BREAKDOWN · Elevator · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Elevator",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          250.0,
+          140.0,
+          530.0,
+          685.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p13-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p13-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13",
+        "caption": "2023-254 · BREAKDOWN · Laterator · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Laterator",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          65.0,
+          130.0,
+          530.0,
+          295.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p14-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 14,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p14-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=14",
+        "caption": "2023-254 · BREAKDOWN · Intake prototypes · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake prototypes",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          65.0,
+          220.0,
+          535.0,
+          700.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 14
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p15-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p15-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=15",
+        "caption": "2023-254 · BREAKDOWN · Roller claw · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Roller claw",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          65.0,
+          140.0,
+          540.0,
+          480.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p16-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 16,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p16-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16",
+        "caption": "2023-254 · BREAKDOWN · Linear floor intake · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Linear floor intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          65.0,
+          140.0,
+          540.0,
+          420.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 16
+      },
+      {
+        "id": "binder-1b0b189d42a421199e-p17-1",
+        "robot_id": "2023-254",
+        "kind": "binder_figure",
+        "binder_id": "1b0b189d42a421199e",
+        "pdf_page": 17,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-1b0b189d42a421199e-p17-1.jpg",
+        "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17",
+        "caption": "2023-254 · BREAKDOWN · Balance forks · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Balance forks",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          65.0,
+          140.0,
+          540.0,
+          430.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 17
+      }
+    ],
+    "source_post_count": 84,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-254",
+        "discovery_post": "2023-254-443167-1",
+        "url": "https://github.com/Team254/FRC-2023-Public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "26299df3f6778bebd5"
+      },
+      {
+        "robot_id": "2023-254",
+        "discovery_post": "2023-254-440533-2",
+        "url": "https://docs.google.com/presentation/d/1buz00ZFuwzW4XMRfJ2HSnYIixsR8YgIltE6SkM7Hc1w/edit#slide=id.gc75b47a3fd_0_6",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f40c7b02b17b9600d0"
+      }
+    ],
+    "id": "2023-254",
+    "team_name": "The Cheesy Poofs",
+    "epa_rank": 5,
+    "epa": 77.18,
+    "epa_pre_champs": 80.33,
+    "epa_breakdown": {
+      "total_points": 77.18,
+      "auto_points": 18.63,
+      "teleop_points": 46.23,
+      "endgame_points": 9.3,
+      "links_rp": 0.886,
+      "activation_rp": 0.4552,
+      "tiebreaker_points": 74.16,
+      "auto_charge_station_points": 7.05,
+      "auto_pieces": 2.1,
+      "teleop_grid_points": 31.38,
+      "bottom_pieces": 3.02,
+      "middle_pieces": 2.87,
+      "top_pieces": 5.08,
+      "cube_points": 16.88,
+      "cone_points": 25.26,
+      "links": 3.58,
+      "endgame_charge_station_points": 9.3,
+      "rp_1": 0.886,
+      "rp_2": 0.4552
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "9a05a5ce9f5a3b7e",
+      "1b0b189d42a42119",
+      "d063eb0eb4167170"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-1b0b189d42a421199e-82",
+      "tech-1b0b189d42a421199e-83",
+      "tech-1b0b189d42a421199e-84",
+      "tech-1b0b189d42a421199e-85",
+      "tech-1b0b189d42a421199e-86"
+    ],
+    "binder_source_ids": [
+      "1b0b189d42a421199e"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-254",
+      "year": 2023,
+      "team": 254,
+      "epa_rank": 5,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"254\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 7,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "1b0b189d42a421199e"
+      ],
+      "technical_note_ids": [
+        "tech-1b0b189d42a421199e-82",
+        "tech-1b0b189d42a421199e-83",
+        "tech-1b0b189d42a421199e-84",
+        "tech-1b0b189d42a421199e-85",
+        "tech-1b0b189d42a421199e-86"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "1b0b189d42a421199e",
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+          "error": null,
+          "discovery": "Existing primary bundle",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "1b0b189d42a421199e",
+      "subsystem": "positioning",
+      "title": "BREAKDOWN: independent vertical and lateral extension",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "construction": "Vertical elevator plus 15° inclined three-stage carbon-fiber laterator; PEEK guidance rollers.",
+      "team_stated_reason": "Fast reach with low moving mass.",
+      "engineering_analysis": "Separating vertical and outward motion turns scoring poses into two mostly independent coordinates. That can simplify the end-effector geometry and let the chassis remain farther from the grid, but adds another flexible stage and a collision envelope between stages. Low-mass carbon structures reduce inertia; guidance roller preload and tube alignment determine whether they move freely without excessive play. The laterator’s angle contributes vertical motion as it extends, so the control system still needs a coupled pose model. A reported travel time describes one axis, not a complete pickup-to-placement transition.",
+      "recommended_validation": "Measure coral-equivalent tool-tip error under simultaneous axis motion and chassis acceleration; inspect guidance play and cable drag across the entire stroke.",
+      "limitations": "The PDF required OCR. Page 12 elevator construction was checked visually; other numerical OCR details should be checked in the original before fabrication.",
+      "id": "tech-1b0b189d42a421199e-82",
+      "robot_id": "2023-254",
+      "year": 2023,
+      "version_label": "BREAKDOWN",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-1b0b189d42a421199e-p12-1",
+        "binder-1b0b189d42a421199e-p13-1"
+      ]
+    },
+    {
+      "binder_id": "1b0b189d42a421199e",
+      "subsystem": "scoring",
+      "title": "BREAKDOWN: articulate contacts for cones and cubes",
+      "pdf_pages": [
+        8,
+        15
+      ],
+      "construction": "Articulating roller claw with distinct cube and cone contacts; over-center cone grip.",
+      "team_stated_reason": "Serve upright cones and cubes without pursuing every floor orientation.",
+      "engineering_analysis": "A cone and a cube present different contact and centering problems. An articulated claw can open enough for a cube while using a different smaller contact to constrain a cone. Over-center geometry can supply retention without continuous high motor force, provided the piece is located in the intended three-point contact. Choosing not to solve sideways floor cones is an explicit scope decision linked to expected high-level supply; it must not become a universal claim that such pickup has no value. A local event or a disrupted supply plan can change that assumption.",
+      "recommended_validation": "Test each intended piece orientation and define a safe fallback for excluded orientations; measure grip after approach collisions.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1b0b189d42a421199e-83",
+      "robot_id": "2023-254",
+      "year": 2023,
+      "version_label": "BREAKDOWN",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=8"
+        },
+        {
+          "pdf_page": 15,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=15"
+        }
+      ],
+      "image_ids": [
+        "binder-1b0b189d42a421199e-p15-1"
+      ]
+    },
+    {
+      "binder_id": "1b0b189d42a421199e",
+      "subsystem": "intake",
+      "title": "BREAKDOWN: rack-deployed cube floor pickup",
+      "pdf_pages": [
+        16
+      ],
+      "construction": "Rack-and-pinion polycarbonate extension and a small grippy roller feed the main claw.",
+      "team_stated_reason": "Lightweight, robust access to floor cubes.",
+      "engineering_analysis": "Linear extension preserves roller height while changing its distance from the chassis, which is useful when a simple pivot would change the pickup geometry too much. A rack cut directly into the side plate reduces part count but concentrates wear and impact load in that plate. The floor mechanism does not solve every piece task; it supplies a known cube path to the articulating claw. That specialization can be efficient when the human-player and game-piece plan makes it sufficient.",
+      "recommended_validation": "Test cube acquisition near walls and with oblique contact; inspect rack alignment and tooth wear after repeated forced retractions.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1b0b189d42a421199e-84",
+      "robot_id": "2023-254",
+      "year": 2023,
+      "version_label": "BREAKDOWN",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 16,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16"
+        }
+      ],
+      "image_ids": [
+        "binder-1b0b189d42a421199e-p16-1"
+      ]
+    },
+    {
+      "binder_id": "1b0b189d42a421199e",
+      "subsystem": "endgame",
+      "title": "BREAKDOWN: forks change the robot’s balance interface",
+      "pdf_pages": [
+        17
+      ],
+      "construction": "Carbon-fiber forks and a sliding carriage react against bumper structure; rope lift.",
+      "team_stated_reason": "Lift alongside partners and balance quickly.",
+      "engineering_analysis": "The forks are an alliance interaction mechanism. Their usefulness depends on the partner’s underside, bumper placement and where the combined load settles on the platform. Reacting through bumper wood can counter sag but creates a load path that needs appropriate mounting and repeatability. A mechanism that works under one partner may interfere with another, so compatibility belongs in the selection criteria. This differs fundamentally from a cage or rung climb despite sharing motors, rope and lifting motion.",
+      "recommended_validation": "Test with representative partner geometries, unequal loading and platform tilt; verify the load path through the bumper attachment.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1b0b189d42a421199e-85",
+      "robot_id": "2023-254",
+      "year": 2023,
+      "version_label": "BREAKDOWN",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 17,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17"
+        }
+      ],
+      "image_ids": [
+        "binder-1b0b189d42a421199e-p17-1"
+      ]
+    },
+    {
+      "binder_id": "1b0b189d42a421199e",
+      "subsystem": "controls",
+      "title": "BREAKDOWN: collision avoidance and compliant station intake",
+      "pdf_pages": [
+        20,
+        21
+      ],
+      "construction": "Intermediate superstructure states, reduced-precision transitions and a compliant laterator intake mode.",
+      "team_stated_reason": "Move quickly while avoiding collisions and station impact loads.",
+      "engineering_analysis": "A Cartesian-looking mechanism still needs a safe sequence through its intermediate states. Requiring every joint to settle precisely at every waypoint wastes time, while removing all intermediate conditions can create a collision. A compliant acquisition mode trades position stiffness for reduced impact, so its transition back to scoring control must be deliberate. Vision and odometry should supply a confidence-aware pose; the mechanical compliance is a complement to that estimate rather than evidence that accurate sensing is unnecessary.",
+      "recommended_validation": "Start transitions from unexpected interrupted states, test a station impact, and verify that the mechanism returns to a known scoring reference.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-1b0b189d42a421199e-86",
+      "robot_id": "2023-254",
+      "year": 2023,
+      "version_label": "BREAKDOWN",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 20,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=20"
+        },
+        {
+          "pdf_page": 21,
+          "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=21"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-1b0b189d42a421199e-1",
+      "binder_id": "1b0b189d42a421199e",
+      "robot_id": "2023-254",
+      "pdf_page": 11,
+      "component": "Drive",
+      "published_parameters": "26×26-in frame; L3; 18 ft/s free",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1b0b189d42a421199e-2",
+      "binder_id": "1b0b189d42a421199e",
+      "robot_id": "2023-254",
+      "pdf_page": 12,
+      "component": "Elevator",
+      "published_parameters": "4.64:1; 24T 5-mm HTD; 41.5-in travel; reported 0.4 s",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1b0b189d42a421199e-3",
+      "binder_id": "1b0b189d42a421199e",
+      "robot_id": "2023-254",
+      "pdf_page": 13,
+      "component": "Laterator",
+      "published_parameters": "3.75:1; 18T 5-mm HTD; 49.875-in travel; reported 0.18 s",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1b0b189d42a421199e-4",
+      "binder_id": "1b0b189d42a421199e",
+      "robot_id": "2023-254",
+      "pdf_page": 16,
+      "component": "Intake",
+      "published_parameters": "3.3:1 deploy; 10T 10DP rack pinion",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-1b0b189d42a421199e-5",
+      "binder_id": "1b0b189d42a421199e",
+      "robot_id": "2023-254",
+      "pdf_page": 17,
+      "component": "Forks",
+      "published_parameters": "14.6:1; 1-in rope drum; 6.75-in travel",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "1b0b189d42a421199e",
+      "robot_id": "2023-254",
+      "title": "2023-254 BREAKDOWN technical publication",
+      "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+      "format": "pdf",
+      "pages": 22,
+      "sha256": "3a6106881b1e60641e6a8372dfcb605aa5fd1cefff9ad764ed5ed22d35d3110e",
+      "bytes": 6372961,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        20,
+        21
+      ],
+      "figure_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Existing primary bundle",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2023-254:publication-version:1",
+      "label": "BREAKDOWN",
+      "robot_id": "2023-254",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-1b0b189d42a421199e-82",
+        "tech-1b0b189d42a421199e-83",
+        "tech-1b0b189d42a421199e-84",
+        "tech-1b0b189d42a421199e-85",
+        "tech-1b0b189d42a421199e-86"
+      ],
+      "source_urls": [
+        "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2023-254",
+      "title": "2023-254: technical construction and mechanism reasoning",
+      "year": 2023,
+      "robot_id": "2023-254",
+      "kind": "robot_technical_review",
+      "body": "# 2023-254: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## BREAKDOWN: independent vertical and lateral extension\n\nVersion: BREAKDOWN. [PDF p12](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12) · [PDF p13](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13)\n\n**Published construction:** Vertical elevator plus 15° inclined three-stage carbon-fiber laterator; PEEK guidance rollers.\n\n**Team-stated reason or evidence boundary:** Fast reach with low moving mass.\n\n**Engineering analysis — original inference:** Separating vertical and outward motion turns scoring poses into two mostly independent coordinates. That can simplify the end-effector geometry and let the chassis remain farther from the grid, but adds another flexible stage and a collision envelope between stages. Low-mass carbon structures reduce inertia; guidance roller preload and tube alignment determine whether they move freely without excessive play. The laterator’s angle contributes vertical motion as it extends, so the control system still needs a coupled pose model. A reported travel time describes one axis, not a complete pickup-to-placement transition.\n\n**Proposed validation — not a completed test:** Measure coral-equivalent tool-tip error under simultaneous axis motion and chassis acceleration; inspect guidance play and cable drag across the entire stroke.\n\n**Limits:** The PDF required OCR. Page 12 elevator construction was checked visually; other numerical OCR details should be checked in the original before fabrication.\n\n## BREAKDOWN: articulate contacts for cones and cubes\n\nVersion: BREAKDOWN. [PDF p8](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=8) · [PDF p15](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=15)\n\n**Published construction:** Articulating roller claw with distinct cube and cone contacts; over-center cone grip.\n\n**Team-stated reason or evidence boundary:** Serve upright cones and cubes without pursuing every floor orientation.\n\n**Engineering analysis — original inference:** A cone and a cube present different contact and centering problems. An articulated claw can open enough for a cube while using a different smaller contact to constrain a cone. Over-center geometry can supply retention without continuous high motor force, provided the piece is located in the intended three-point contact. Choosing not to solve sideways floor cones is an explicit scope decision linked to expected high-level supply; it must not become a universal claim that such pickup has no value. A local event or a disrupted supply plan can change that assumption.\n\n**Proposed validation — not a completed test:** Test each intended piece orientation and define a safe fallback for excluded orientations; measure grip after approach collisions.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## BREAKDOWN: rack-deployed cube floor pickup\n\nVersion: BREAKDOWN. [PDF p16](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16)\n\n**Published construction:** Rack-and-pinion polycarbonate extension and a small grippy roller feed the main claw.\n\n**Team-stated reason or evidence boundary:** Lightweight, robust access to floor cubes.\n\n**Engineering analysis — original inference:** Linear extension preserves roller height while changing its distance from the chassis, which is useful when a simple pivot would change the pickup geometry too much. A rack cut directly into the side plate reduces part count but concentrates wear and impact load in that plate. The floor mechanism does not solve every piece task; it supplies a known cube path to the articulating claw. That specialization can be efficient when the human-player and game-piece plan makes it sufficient.\n\n**Proposed validation — not a completed test:** Test cube acquisition near walls and with oblique contact; inspect rack alignment and tooth wear after repeated forced retractions.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## BREAKDOWN: forks change the robot’s balance interface\n\nVersion: BREAKDOWN. [PDF p17](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17)\n\n**Published construction:** Carbon-fiber forks and a sliding carriage react against bumper structure; rope lift.\n\n**Team-stated reason or evidence boundary:** Lift alongside partners and balance quickly.\n\n**Engineering analysis — original inference:** The forks are an alliance interaction mechanism. Their usefulness depends on the partner’s underside, bumper placement and where the combined load settles on the platform. Reacting through bumper wood can counter sag but creates a load path that needs appropriate mounting and repeatability. A mechanism that works under one partner may interfere with another, so compatibility belongs in the selection criteria. This differs fundamentally from a cage or rung climb despite sharing motors, rope and lifting motion.\n\n**Proposed validation — not a completed test:** Test with representative partner geometries, unequal loading and platform tilt; verify the load path through the bumper attachment.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## BREAKDOWN: collision avoidance and compliant station intake\n\nVersion: BREAKDOWN. [PDF p20](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=20) · [PDF p21](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=21)\n\n**Published construction:** Intermediate superstructure states, reduced-precision transitions and a compliant laterator intake mode.\n\n**Team-stated reason or evidence boundary:** Move quickly while avoiding collisions and station impact loads.\n\n**Engineering analysis — original inference:** A Cartesian-looking mechanism still needs a safe sequence through its intermediate states. Requiring every joint to settle precisely at every waypoint wastes time, while removing all intermediate conditions can create a collision. A compliant acquisition mode trades position stiffness for reduced impact, so its transition back to scoring control must be deliberate. Vision and odometry should supply a confidence-aware pose; the mechanical compliance is a complement to that estimate rather than evidence that accurate sensing is unnecessary.\n\n**Proposed validation — not a completed test:** Start transitions from unexpected interrupted states, test a station impact, and verify that the mechanism returns to a known scoring reference.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Drive | 26×26-in frame; L3; 18 ft/s free | [Source p11](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=11) |\n| Elevator | 4.64:1; 24T 5-mm HTD; 41.5-in travel; reported 0.4 s | [Source p12](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12) |\n| Laterator | 3.75:1; 18T 5-mm HTD; 49.875-in travel; reported 0.18 s | [Source p13](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13) |\n| Intake | 3.3:1 deploy; 10T 10DP rack pinion | [Source p16](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16) |\n| Forks | 14.6:1; 1-in rope drum; 6.75-in travel | [Source p17](https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf"
+      ],
+      "path": "docs/technical/2023-254.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/443167/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/b/1bd3b6a9e2f11a615cc99fae02cc5a2649e9d0f8_2_271x250.jpeg",
+      "post": 1,
+      "date": "2023-10-26T21:54:25.436Z",
+      "author": "Torrance",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2023 team 254 — source image from post 1 (2023-10-26). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "1d5997b400f00d00a6.jpg",
+      "id": "325552ea6f2ea9bbff",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/1d5997b400f00d00a6.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 271,
+      "height_px": 250,
+      "bytes": 12128,
+      "sha256": "2235d0a5de1980289bc655fee4fc08d425d0ecccc2483755abe04f091c77b074",
+      "path_base": "corpus_root",
+      "reader_asset_id": "325552ea6f2ea9bbff",
+      "reader_url": "index.html#image=325552ea6f2ea9bbff",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/440533/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/c/fcaf33de648f7229663f0be6e86db53e72e236d2_2_381x375.png",
+      "post": 2,
+      "date": "2023-09-06T05:29:05.127Z",
+      "author": "Torrance",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2023 team 254 — source image from post 2 (2023-09-06). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7b69596701b3a28c53.jpg",
+      "id": "e7732e49526eca7170",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7b69596701b3a28c53.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 381,
+      "height_px": 375,
+      "bytes": 36903,
+      "sha256": "4502d2199917689d2aac3071eecde389d18ab4b75bc5cdd195a092c1c8f181e7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "e7732e49526eca7170",
+      "reader_url": "index.html#image=e7732e49526eca7170",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/440533/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/e/be5f905a618db59bf86ea984ac397399015a5b5b_2_437x375.jpeg",
+      "post": 2,
+      "date": "2023-09-06T05:29:05.127Z",
+      "author": "Torrance",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2023 team 254 — source image from post 2 (2023-09-06). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "766d15b8087973a092.jpg",
+      "id": "f4ae834c3a1e9e170f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/766d15b8087973a092.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 437,
+      "height_px": 375,
+      "bytes": 30445,
+      "sha256": "f4775ed2a61f67bc47990d47dce1e66893c0d0eef7a41084aeb32fdfc4ba8b16",
+      "path_base": "corpus_root",
+      "reader_asset_id": "f4ae834c3a1e9e170f",
+      "reader_url": "index.html#image=f4ae834c3a1e9e170f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-254",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/440533/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/7/57d7de252b6e21005c4c610710c02648c1d7e1ff_2_517x368.png",
+      "post": 2,
+      "date": "2023-09-06T05:29:05.127Z",
+      "author": "Torrance",
+      "context_tags": [
+        "arm",
+        "climb",
+        "elevator",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2023 team 254 — source image from post 2 (2023-09-06). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "4ffcafe05907ac1466.jpg",
+      "id": "c6abf4cad1fe222d35",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/4ffcafe05907ac1466.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 368,
+      "bytes": 20735,
+      "sha256": "117f8a85505ce3f418d3d441616d7df7fcd9d61cf560f8707ddec7d228f2d65b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "c6abf4cad1fe222d35",
+      "reader_url": "index.html#image=c6abf4cad1fe222d35",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p11-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p11-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=11",
+      "caption": "2023-254 · BREAKDOWN · Drivebase · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        65.0,
+        125.0,
+        535.0,
+        430.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 702,
+      "bytes": 82409,
+      "sha256": "a0cfddc6e8fc8a88fb4fbd02d3588879187ce12a4743303537532c594d7321b1",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p11-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p12-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p12-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=12",
+      "caption": "2023-254 · BREAKDOWN · Elevator · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Elevator",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        250.0,
+        140.0,
+        530.0,
+        685.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 644,
+      "height_px": 1254,
+      "bytes": 66570,
+      "sha256": "6d1eda9355e0c2f988886636c85e21fb02350081b394290f97d1a533a14e79d0",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p12-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p13-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p13-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=13",
+      "caption": "2023-254 · BREAKDOWN · Laterator · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Laterator",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        65.0,
+        130.0,
+        530.0,
+        295.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1070,
+      "height_px": 380,
+      "bytes": 41449,
+      "sha256": "1b16a021f55acc7df7d3650293f01556607f21a07e05f7829db90db3c7bb32dd",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p13-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p14-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 14,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p14-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=14",
+      "caption": "2023-254 · BREAKDOWN · Intake prototypes · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake prototypes",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        65.0,
+        220.0,
+        535.0,
+        700.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 14,
+      "media_type": "image/jpeg",
+      "width_px": 1082,
+      "height_px": 1104,
+      "bytes": 128256,
+      "sha256": "9903b984ceb5e9cf556dd89b492f5c04be59dbe17234b901e059f2d0ff919a6f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p14-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p14-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p15-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p15-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=15",
+      "caption": "2023-254 · BREAKDOWN · Roller claw · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Roller claw",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        65.0,
+        140.0,
+        540.0,
+        480.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 1093,
+      "height_px": 782,
+      "bytes": 65350,
+      "sha256": "507fd2065ebe0356ed3d92932e0a0ca22a19b90886ab7e92d0cd2c2fce4ddd01",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p15-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p16-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 16,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p16-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=16",
+      "caption": "2023-254 · BREAKDOWN · Linear floor intake · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Linear floor intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        65.0,
+        140.0,
+        540.0,
+        420.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 16,
+      "media_type": "image/jpeg",
+      "width_px": 1093,
+      "height_px": 644,
+      "bytes": 50596,
+      "sha256": "11d44f8874565d29a8ce052af5a07e285091c5c84d57bcbb04af912350e802ff",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p16-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p16-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-1b0b189d42a421199e-p17-1",
+      "robot_id": "2023-254",
+      "kind": "binder_figure",
+      "binder_id": "1b0b189d42a421199e",
+      "pdf_page": 17,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-1b0b189d42a421199e-p17-1.jpg",
+      "source_url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf#page=17",
+      "caption": "2023-254 · BREAKDOWN · Balance forks · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Balance forks",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        65.0,
+        140.0,
+        540.0,
+        430.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 17,
+      "media_type": "image/jpeg",
+      "width_px": 1093,
+      "height_px": 667,
+      "bytes": 33934,
+      "sha256": "c19ea1cf26e450abf44d632661fa646b9f2224946a26ddb32d7ff8764c219968",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-1b0b189d42a421199e-p17-1",
+      "reader_url": "index.html#image=binder-1b0b189d42a421199e-p17-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-254",
+    "year": 2023,
+    "team": 254,
+    "epa_rank": 5,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"254\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 7,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "1b0b189d42a421199e"
+    ],
+    "technical_note_ids": [
+      "tech-1b0b189d42a421199e-82",
+      "tech-1b0b189d42a421199e-83",
+      "tech-1b0b189d42a421199e-84",
+      "tech-1b0b189d42a421199e-85",
+      "tech-1b0b189d42a421199e-86"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "1b0b189d42a421199e",
+        "url": "https://media.team254.com/2023/10/90bc07c6-2023-Tech-Binder-V6.pdf",
+        "error": null,
+        "discovery": "Existing primary bundle",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-1b0b189d42a421199e-82:construction",
+    "tech-1b0b189d42a421199e-82:team_stated_reason",
+    "tech-1b0b189d42a421199e-82:engineering_analysis",
+    "tech-1b0b189d42a421199e-82:recommended_validation",
+    "tech-1b0b189d42a421199e-82:limitations",
+    "tech-1b0b189d42a421199e-83:construction",
+    "tech-1b0b189d42a421199e-83:team_stated_reason",
+    "tech-1b0b189d42a421199e-83:engineering_analysis",
+    "tech-1b0b189d42a421199e-83:recommended_validation",
+    "tech-1b0b189d42a421199e-83:limitations",
+    "tech-1b0b189d42a421199e-84:construction",
+    "tech-1b0b189d42a421199e-84:team_stated_reason",
+    "tech-1b0b189d42a421199e-84:engineering_analysis",
+    "tech-1b0b189d42a421199e-84:recommended_validation",
+    "tech-1b0b189d42a421199e-84:limitations",
+    "tech-1b0b189d42a421199e-85:construction",
+    "tech-1b0b189d42a421199e-85:team_stated_reason",
+    "tech-1b0b189d42a421199e-85:engineering_analysis",
+    "tech-1b0b189d42a421199e-85:recommended_validation",
+    "tech-1b0b189d42a421199e-85:limitations",
+    "tech-1b0b189d42a421199e-86:construction",
+    "tech-1b0b189d42a421199e-86:team_stated_reason",
+    "tech-1b0b189d42a421199e-86:engineering_analysis",
+    "tech-1b0b189d42a421199e-86:recommended_validation",
+    "tech-1b0b189d42a421199e-86:limitations",
+    "param-1b0b189d42a421199e-1",
+    "param-1b0b189d42a421199e-2",
+    "param-1b0b189d42a421199e-3",
+    "param-1b0b189d42a421199e-4",
+    "param-1b0b189d42a421199e-5"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

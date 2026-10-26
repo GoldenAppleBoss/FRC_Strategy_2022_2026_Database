@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-125",
+  "year": 2023,
+  "team": 125,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 125,
+    "robot": "NUTRONs 2023",
+    "primary": [
+      "https://youtu.be/fmK7OAET3F4"
+    ],
+    "architecture": "Three-stage telescopic arm with low stow, printed wrist and split translating cube collector.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module version needs code/CAD confirmation.",
+      "intake": "Two cantilevered rack-and-pinion cube-intake halves leave a center gap for the arm.",
+      "transfer": "Cross-shaft synchronizes the intake halves; service couplers permit separate removal.",
+      "scoring": "NEO-powered cascading telescope on a chain-driven shoulder; compact printed wrist and roller claw.",
+      "endgame": "Not explained in the retrieved interview.",
+      "controls": "Arm gravity effects require tuning across extension; setup and motion integrated with swerve."
+    },
+    "versions": [
+      "Traffic-cone orienting collector concept was shelved; team focused on station cones. Interview is week zero, not a final-season configuration."
+    ],
+    "analysis": "The intake gap and telescopic packaging are one integrated decision: moving the arm lower during transit can matter as much as its maximum reach. Shelf loading was an explicit scope reduction.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-125",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/427639/7",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/b/fbacf294a27f5b89311823058f76fece4ab25c79_2_666x500.jpeg",
+        "post": 7,
+        "date": "2023-08-24T22:13:04.988Z",
+        "author": "Brandon_Holley",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2023 team 125 — source image from post 7 (2023-08-24). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e9ad16e1341d9393f8.jpg",
+        "id": "2ceae7c20e4065be20",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e9ad16e1341d9393f8.jpg"
+      },
+      {
+        "robot_id": "2023-125",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/427639/7",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/c/5c03eecffb4946594d89ec87c93fc2f9999fdac6_2_374x500.jpeg",
+        "post": 7,
+        "date": "2023-08-24T22:13:04.988Z",
+        "author": "Brandon_Holley",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2023 team 125 — source image from post 7 (2023-08-24). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e7a57716448c7b991f.jpg",
+        "id": "8c2c1e877164070623",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e7a57716448c7b991f.jpg"
+      }
+    ],
+    "source_post_count": 8,
+    "cad_code_links": [],
+    "id": "2023-125",
+    "team_name": "NUTRONs",
+    "epa_rank": 31,
+    "epa": 67.6,
+    "epa_pre_champs": 62.08,
+    "epa_breakdown": {
+      "total_points": 67.6,
+      "auto_points": 17.53,
+      "teleop_points": 37.25,
+      "endgame_points": 10.93,
+      "links_rp": 0.4048,
+      "activation_rp": 0.5087,
+      "tiebreaker_points": 65.71,
+      "auto_charge_station_points": 6.11,
+      "auto_pieces": 2.03,
+      "teleop_grid_points": 25.61,
+      "bottom_pieces": 2.12,
+      "middle_pieces": 2.23,
+      "top_pieces": 4.38,
+      "cube_points": 13.53,
+      "cone_points": 21.31,
+      "links": 2.7,
+      "endgame_charge_station_points": 10.93,
+      "rp_1": 0.4048,
+      "rp_2": 0.5087
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "ed11db0a77d5ea20"
+    ],
+    "tags": [
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-125",
+      "year": 2023,
+      "team": 125,
+      "epa_rank": 31,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"125\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 6,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"125\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-125"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-125",
+      "title": "Split rack collectors preserve a central arm corridor",
+      "start_seconds": 79,
+      "end_seconds": 300,
+      "construction": "Two cantilevered rack-and-pinion collector halves leave space for a telescoping arm, synchronized by a cross-shaft with service couplers. The shoulder transmission is nested below the arm; a compact wrist and roller claw complete direct scoring.",
+      "team_stated_reason": "The team identifies robust, controllable deployment and avoiding pneumatics as reasons for the rack choice. Shoulder placement is tied to maximizing useful stowed arm length.",
+      "engineering_analysis": "The center gap is not wasted intake width: it is clearance purchased for another mechanism. Synchronization must keep both collector halves from racking while still permitting fast replacement. As the arm extends, gravity torque rises with lever arm, so tuning only the retracted shoulder does not establish controllability at high reach.",
+      "recommended_validation": "Test one-sided collector impacts, service-coupler realignment and shoulder tracking at maximum extension with each game piece.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-125",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/fmK7OAET3F4",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 300,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "fmK7OAET3F4",
+          "sha256": "901442c54f950e76d43e2514de326cebdcc96ae8b627d3db0e7a25546bd79f4f",
+          "caption_segments": 346,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-125:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-125",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-125"
+      ],
+      "source_urls": [
+        "https://youtu.be/fmK7OAET3F4"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-125",
+      "title": "2023-125 · Split rack collectors preserve a central arm corridor",
+      "year": 2023,
+      "robot_id": "2023-125",
+      "kind": "focused_technical_study",
+      "body": "# 2023-125: Split rack collectors preserve a central arm corridor\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nTwo cantilevered rack-and-pinion collector halves leave space for a telescoping arm, synchronized by a cross-shaft with service couplers. The shoulder transmission is nested below the arm; a compact wrist and roller claw complete direct scoring.\n\n## Team-stated reasoning or boundary\n\nThe team identifies robust, controllable deployment and avoiding pneumatics as reasons for the rack choice. Shoulder placement is tied to maximizing useful stowed arm length.\n\n## Engineering interpretation — analyst inference\n\nThe center gap is not wasted intake width: it is clearance purchased for another mechanism. Synchronization must keep both collector halves from racking while still permitting fast replacement. As the arm extends, gravity torque rises with lever arm, so tuning only the retracted shoulder does not establish controllability at high reach.\n\n## Proposed validation — not performed\n\nTest one-sided collector impacts, service-coupler realignment and shoulder tracking at maximum extension with each game piece.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/fmK7OAET3F4](https://youtu.be/fmK7OAET3F4)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/fmK7OAET3F4"
+      ],
+      "path": "docs/research_continuation/2023-125.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-125",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/427639/7",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/b/fbacf294a27f5b89311823058f76fece4ab25c79_2_666x500.jpeg",
+      "post": 7,
+      "date": "2023-08-24T22:13:04.988Z",
+      "author": "Brandon_Holley",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2023 team 125 — source image from post 7 (2023-08-24). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e9ad16e1341d9393f8.jpg",
+      "id": "2ceae7c20e4065be20",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e9ad16e1341d9393f8.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 79121,
+      "sha256": "4d9076f6a016d104e1a5a982e1748c616cf4e55d757d33b807eb15312557f71c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "2ceae7c20e4065be20",
+      "reader_url": "index.html#image=2ceae7c20e4065be20",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-125",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/427639/7",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/c/5c03eecffb4946594d89ec87c93fc2f9999fdac6_2_374x500.jpeg",
+      "post": 7,
+      "date": "2023-08-24T22:13:04.988Z",
+      "author": "Brandon_Holley",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2023 team 125 — source image from post 7 (2023-08-24). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e7a57716448c7b991f.jpg",
+      "id": "8c2c1e877164070623",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e7a57716448c7b991f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 374,
+      "height_px": 500,
+      "bytes": 57659,
+      "sha256": "9806fb4fdd831e084a60154429bb6f2f4d30c075541ab0d7b7555277fe5be3c7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8c2c1e877164070623",
+      "reader_url": "index.html#image=8c2c1e877164070623",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-125",
+    "year": 2023,
+    "team": 125,
+    "epa_rank": 31,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"125\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 6,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"125\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-125:construction",
+    "study6-2023-125:team_stated_reason",
+    "study6-2023-125:engineering_analysis",
+    "study6-2023-125:recommended_validation",
+    "study6-2023-125:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

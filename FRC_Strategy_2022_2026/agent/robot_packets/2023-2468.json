@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-2468",
+  "year": 2023,
+  "team": 2468,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 2468,
+    "robot": "Team Appreciate 2023",
+    "primary": [
+      "https://youtu.be/LvGNxp2PQ7I",
+      "https://www.chiefdelphi.com/t/429455"
+    ],
+    "architecture": "Fixed-angle cascading elevator, rigid arm and wristed floor-acquisition gripper.",
+    "subsystems": {
+      "intake": "Narrower gripper chosen to fit between hybrid-node dividers and retrieve/rescore pieces; team primarily uses human-player floor loading.",
+      "transfer": "Direct acquisition; no separate transfer described.",
+      "scoring": "Wide two-stage cascading elevator tilted to match cone-node geometry; wrist supplies end-effector orientation.",
+      "drivetrain": "Swerve; module model is not specified in the interview.",
+      "endgame": "Dashboard checks pitch/roll for autonomous engage; detailed endgame mechanics not specified.",
+      "controls": "Game-piece state is remembered from operator selection, not automatically detected. Custom dashboard and clothoid-path tooling support operation."
+    },
+    "versions": [
+      "Wrist transmission changed from belts to chain for load handling.",
+      "Torque-carrying structure changed from half-inch hex to REV MAXSpline tubing."
+    ],
+    "analysis": "The narrow intake is an intentional scoring-access tradeoff, not automatically an inferior collector. This is a good test case for an agent that otherwise assumes full width is always better.",
+    "limits": [
+      "Endgame method and later revision chronology need additional evidence."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 1,
+    "cad_code_links": [],
+    "id": "2023-2468",
+    "team_name": "Team Appreciate",
+    "epa_rank": 12,
+    "epa": 72.28,
+    "epa_pre_champs": 66.99,
+    "epa_breakdown": {
+      "total_points": 72.28,
+      "auto_points": 19.97,
+      "teleop_points": 43.63,
+      "endgame_points": 8.06,
+      "links_rp": 0.6755,
+      "activation_rp": 0.5835,
+      "tiebreaker_points": 71.66,
+      "auto_charge_station_points": 9.23,
+      "auto_pieces": 1.96,
+      "teleop_grid_points": 26.75,
+      "bottom_pieces": 3.47,
+      "middle_pieces": 3.35,
+      "top_pieces": 3.56,
+      "cube_points": 15.85,
+      "cone_points": 20.91,
+      "links": 3.5,
+      "endgame_charge_station_points": 8.06,
+      "rp_1": 0.6755,
+      "rp_2": 0.5835
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "35cc781ad48bfccf",
+      "e745095934c7deb2"
+    ],
+    "tags": [
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-2468",
+      "year": 2023,
+      "team": 2468,
+      "epa_rank": 12,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2468\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 10,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2468\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-2468"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-2468",
+      "title": "A narrower claw purchases access to contested low geometry",
+      "start_seconds": 107,
+      "end_seconds": 250,
+      "construction": "A narrow gripper handles both pieces, with a wide tilted cascading elevator and wrist. Cross-bracing resists parallelogram deformation; shimmed gearing and a chain wrist reduce play under the collector load.",
+      "team_stated_reason": "The retained account ties claw width to fitting between hybrid dividers for retrieval/re-scoring. The team says a chain held the wrist load better than its belt trial.",
+      "engineering_analysis": "Maximum acquisition width is not always optimal. A smaller receiver can access a task a wider collector cannot, provided pickup tolerance remains acceptable. Elevator tilt can improve approach geometry while changing tip margin and wrist loads.",
+      "recommended_validation": "Measure pickup tolerance, low-node retrieval clearance, wrist hysteresis and full-extension stability.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-2468",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/LvGNxp2PQ7I",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/429455"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 107,
+        "end_seconds": 250,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "LvGNxp2PQ7I",
+          "sha256": "033f516c605e03c55f602b7d7a5c8e654e7f3b4ca16674251cd4985022278873",
+          "caption_segments": 320,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-2468:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-2468",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-2468"
+      ],
+      "source_urls": [
+        "https://youtu.be/LvGNxp2PQ7I"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-2468",
+      "title": "2023-2468 · A narrower claw purchases access to contested low geometry",
+      "year": 2023,
+      "robot_id": "2023-2468",
+      "kind": "focused_technical_study",
+      "body": "# 2023-2468: A narrower claw purchases access to contested low geometry\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA narrow gripper handles both pieces, with a wide tilted cascading elevator and wrist. Cross-bracing resists parallelogram deformation; shimmed gearing and a chain wrist reduce play under the collector load.\n\n## Team-stated reasoning or boundary\n\nThe retained account ties claw width to fitting between hybrid dividers for retrieval/re-scoring. The team says a chain held the wrist load better than its belt trial.\n\n## Engineering interpretation — analyst inference\n\nMaximum acquisition width is not always optimal. A smaller receiver can access a task a wider collector cannot, provided pickup tolerance remains acceptable. Elevator tilt can improve approach geometry while changing tip margin and wrist loads.\n\n## Proposed validation — not performed\n\nMeasure pickup tolerance, low-node retrieval clearance, wrist hysteresis and full-extension stability.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/LvGNxp2PQ7I](https://youtu.be/LvGNxp2PQ7I)\n- [https://www.chiefdelphi.com/t/429455](https://www.chiefdelphi.com/t/429455)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/LvGNxp2PQ7I",
+        "https://www.chiefdelphi.com/t/429455"
+      ],
+      "path": "docs/research_continuation/2023-2468.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2023-2468",
+    "year": 2023,
+    "team": 2468,
+    "epa_rank": 12,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2468\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 10,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2468\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-2468:construction",
+    "study6-2023-2468:team_stated_reason",
+    "study6-2023-2468:engineering_analysis",
+    "study6-2023-2468:recommended_validation",
+    "study6-2023-2468:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

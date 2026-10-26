@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": 10741,
+  "counts": {
+    "robot_packets": 125,
+    "retrieval_units": 2799,
+    "claims": 766,
+    "images": 504,
+    "technical_notes": 129,
+    "published_parameters": 121,
+    "robot_years_with_technical_reviews": 27
+  },
+  "local_markdown_references": 383,
+  "broken_local_references": [],
+  "scope": "Navigation, byte identity, metadata/packet preservation, CLI filtering and SQLite integrity; not new source review or model reasoning evaluation."
+}

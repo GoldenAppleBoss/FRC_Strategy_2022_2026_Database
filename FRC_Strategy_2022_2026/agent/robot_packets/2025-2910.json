@@ -1,0 +1,1224 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-2910",
+  "year": 2025,
+  "team": 2910,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 2910,
+    "robot": "Spectre",
+    "primary": [
+      "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view"
+    ],
+    "architecture": "Low-pivot telescoping arm with shared coral/algae intake and arm-assisted deep climb.",
+    "subsystems": {
+      "drivetrain": "MK4i through PNW DCMP; prototype MK5 at Worlds. Brass ballast counters arm motion.",
+      "intake": "Vertical and horizontal powered rollers orient coral and collect algae; reversible wrist supports front/back scoring.",
+      "transfer": "Four range sensors index coral lengthwise or sideways; pass-through effector controls both piece types.",
+      "scoring": "Two-stage extending arm on a low offset pivot; same manipulator places all coral levels and scores algae.",
+      "endgame": "Powered cage collector and passive latches ride a carriage along arm; shoulder lifts robot, carriage balances CG and extension locks into bumper frame.",
+      "controls": "Four Limelight 4s; automated pose/rotation-selected reef alignment with driver selecting level/side."
+    },
+    "versions": [
+      "Worlds module conversion replaced steering motors and recovered weight for additional low ballast. Binder requirements are targets, not independently measured success rates."
+    ],
+    "analysis": "This is a reference for sharing major actuators across scoring and climbing. The cost is a tightly coupled system: arm stiffness, mass distribution and climb locking all become architecture-level requirements.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2025-2910: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## SPECTRE: base and module revision at Championship\n\nVersion: SPECTRE. [PDF p5](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=5)\n\n**Published construction:** District Mk4i modules changed to prototype Mk5 at Worlds; ballast placement also changed.\n\n**Team-stated reason or evidence boundary:** Low center of gravity and short-cycle maneuverability.\n\n**Engineering analysis — original inference:** A module swap is a robot version, even if the scoring architecture looks unchanged. Saving module weight can be reinvested as low ballast rather than removed from the robot, changing traction and stability differently from a simple weight reduction. A wide tread and different enclosure can alter friction, debris protection and maintenance. Retuning drive and autonomous behavior is part of the mechanical change: old acceleration and feedforward assumptions should not be carried over without measurements. The database should name the competition stage associated with each configuration.\n\n**Proposed validation — not a completed test:** Compare module slip, current and stopping repeatability before and after the change with the actual ballast and bumper package.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: remote power at an integrated pivot\n\nVersion: SPECTRE. [PDF p6](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6) · [PDF p9](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9)\n\n**Published construction:** Separate three-X60 shoulder and extension gearboxes; dead-axle pivot; two-stage cascade arm.\n\n**Team-stated reason or evidence boundary:** Fast motion with a low stowed center of gravity and serviceable arm.\n\n**Engineering analysis — original inference:** Keeping heavy actuators near the base reduces distal inertia and lets the arm respond without carrying all its drive mass at the tip. The price is a more complicated transmission across the pivot and through the telescope. A coaxial extension drive must preserve tension and alignment over the shoulder’s range. A large shared pivot can support stiffness and removal, but its clamps and end plugs become critical load interfaces. Motor count alone does not explain speed: the arm’s inertia, reduction, current limits and acceleration profile determine whether it can move quickly without rocking the chassis.\n\n**Proposed validation — not a completed test:** Measure end-point settling after simultaneous pivot and extension; test removal/reinstallation repeatability and chain tension over the full range.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: acquire, orient and score with one end mechanism\n\nVersion: SPECTRE. [PDF p8](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8)\n\n**Published construction:** Vertical and horizontal roller sets; four CANrange sensors; reversible front/back handoff and scoring.\n\n**Team-stated reason or evidence boundary:** Serve coral and algae tasks with the same manipulator.\n\n**Engineering analysis — original inference:** Combining acquisition and scoring avoids a separate transfer interface, but makes the moving assembly larger and creates competing contact requirements. Coral has to be oriented differently for branches and L1; algae needs enough compliant pinch to stay captured during rapid motion. Multiple sensors can distinguish piece position and direction, provided their views remain reliable for both geometries. Front/back scoring reduces chassis rotation when the software chooses a sensible approach. The architecture should be assessed by complete cycle time and reach under defense, not by the number of available poses.\n\n**Proposed validation — not a completed test:** Test front/back coral scoring, intentional horizontal L1 placement and algae capture with the same rollers after wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: moving climb carriage manages the hanging center\n\nVersion: SPECTRE. [PDF p7](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=7) · [PDF p9](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9)\n\n**Published construction:** Powered one-bar cage capture; carriage slides along arm; shoulder lifts; extension locks to bumper structure.\n\n**Team-stated reason or evidence boundary:** Balance under the chain while reusing the main arm.\n\n**Engineering analysis — original inference:** The carriage is not just a convenient mount. Its translation changes where the cage pulls relative to the robot’s mass, allowing a controlled transition into suspension. The shoulder then supplies the lifting work and the arm lock supplies a post-match retention path. Those are separate functions and should be recorded separately. Reusing the arm reduces dedicated hardware but raises its required load and reliability. Any recommendation needs the actual cage contact, latch, shoulder and lock sequence rather than assuming that a strong scoring arm can safely substitute for a complete climber.\n\n**Proposed validation — not a completed test:** Capture at several swing angles, verify carriage travel under load, and test power-off retention through the intended bumper lock.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: automate approach choice and L1 placement\n\nVersion: SPECTRE. [PDF p10](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=10)\n\n**Published construction:** Automatic front/back reef choice; level/side selected by driver; distinct base/top L1 states.\n\n**Team-stated reason or evidence boundary:** Remove repeated alignment work from the driver.\n\n**Engineering analysis — original inference:** Choosing the nearest face or easiest orientation can save time, but the shortest geometric route is not always the least congested or the most valuable remaining target. L1 stacking creates an occupancy problem as well as a pose problem: a fixed placement height is insufficient once previous coral changes the landing surface. The driver still needs strategic control over task and side, with software handling repeatable motion. A mechanism recommendation should include the sensors, pose references and operator choices required to realize its cycle advantage.\n\n**Proposed validation — not a completed test:** Test automatic choices near boundaries between faces and with populated L1; verify deliberate driver override and recovery after a failed release.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Pivot/extension | 120.83:1 shoulder; 6.28:1 extension; three X60s each | [Source p6](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6) |\n| Intake | one X60 horizontal; two X44 vertical; four CANrange sensors | [Source p8](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8) |\n| Arm | two-stage cascade; #25 chains plus 3-mm UHMWPE rope | [Source p9](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2025-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/500310/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/4/7/c4708c45a81ab3ba086db35f850ce2ff9a1c7dbc_2_375x500.jpeg",
+        "post": 1,
+        "date": "2025-04-23T19:40:00.842Z",
+        "author": "Sudhir",
+        "context_tags": [],
+        "caption": "2025 team 2910 — source image from post 1 (2025-04-23). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e1dcfec8af2311e75d.jpg",
+        "id": "321eb4b0291a6542c0",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e1dcfec8af2311e75d.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/494648/101",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/b/5/9b5795abe1966029bf56db3c7c6e696b8b10afb5_2_665x500.jpeg",
+        "post": 101,
+        "date": "2025-04-07T04:13:25.822Z",
+        "author": "PatrickW",
+        "context_tags": [
+          "arm"
+        ],
+        "caption": "2025 team 2910 — source image from post 101 (2025-04-07). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "fa71700a63e2a6fd87.jpg",
+        "id": "0fb5cbfac4399d6bd8",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/fa71700a63e2a6fd87.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/494648/122",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/9/a/19acf2a47537583ae846c236586345bb88fbcba9_2_666x500.jpeg",
+        "post": 122,
+        "date": "2025-04-21T05:59:32.423Z",
+        "author": "PatrickW",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2025 team 2910 — source image from post 122 (2025-04-21). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d41d5a681be5a95e4b.jpg",
+        "id": "6bc86d3306855b32fe",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d41d5a681be5a95e4b.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+        "page": 5,
+        "asset": "a779909ebf09cc287e.jpg",
+        "context_tags": [
+          "arm",
+          "pivot"
+        ],
+        "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 5. Page discusses arm, pivot. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "44ad3f440a8de93939",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/a779909ebf09cc287e.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+        "page": 6,
+        "asset": "00cf5e3c6ee7bc4647.jpg",
+        "context_tags": [
+          "arm",
+          "pivot"
+        ],
+        "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 6. Page discusses arm, pivot. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "58bd55a61f6b3f7b33",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/00cf5e3c6ee7bc4647.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+        "page": 7,
+        "asset": "932cafbc37acf34e33.jpg",
+        "context_tags": [
+          "arm",
+          "climb",
+          "collector",
+          "intake",
+          "pivot"
+        ],
+        "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 7. Page discusses arm, climb, collector, intake, pivot. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "4d061f6a514e1133aa",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/932cafbc37acf34e33.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+        "page": 8,
+        "asset": "b05aa820f99d0e8b0a.jpg",
+        "context_tags": [
+          "intake",
+          "wrist"
+        ],
+        "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 8. Page discusses intake, wrist. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "484263c487a0c7464b",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/b05aa820f99d0e8b0a.jpg"
+      },
+      {
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+        "page": 9,
+        "asset": "e5b1ffe97c2c5da148.jpg",
+        "context_tags": [
+          "arm",
+          "climb",
+          "intake",
+          "pivot"
+        ],
+        "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 9. Page discusses arm, climb, intake, pivot. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "8119294b6fffd66e61",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e5b1ffe97c2c5da148.jpg"
+      },
+      {
+        "id": "binder-c8be42e3972c8859d8-p5-1",
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "binder_id": "c8be42e3972c8859d8",
+        "pdf_page": 5,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c8be42e3972c8859d8-p5-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=5",
+        "caption": "2025-2910 · SPECTRE · Drivebase versions · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase versions",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          163.42236328125,
+          541.5,
+          464.17236328125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 5
+      },
+      {
+        "id": "binder-c8be42e3972c8859d8-p6-1",
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "binder_id": "c8be42e3972c8859d8",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c8be42e3972c8859d8-p6-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6",
+        "caption": "2025-2910 · SPECTRE · Pivot gearboxes · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Pivot gearboxes",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          154.45806884765625,
+          541.5,
+          541.541015625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-c8be42e3972c8859d8-p7-1",
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "binder_id": "c8be42e3972c8859d8",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c8be42e3972c8859d8-p7-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=7",
+        "caption": "2025-2910 · SPECTRE · Shared-arm climber · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Shared-arm climber",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          195.15966796875,
+          504.0000305175781,
+          512.40966796875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-c8be42e3972c8859d8-p8-1",
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "binder_id": "c8be42e3972c8859d8",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c8be42e3972c8859d8-p8-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8",
+        "caption": "2025-2910 · SPECTRE · Intake and wrist · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake and wrist",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          174.00146484375,
+          541.5,
+          522.75146484375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-c8be42e3972c8859d8-p9-1",
+        "robot_id": "2025-2910",
+        "kind": "binder_figure",
+        "binder_id": "c8be42e3972c8859d8",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c8be42e3972c8859d8-p9-1.jpg",
+        "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9",
+        "caption": "2025-2910 · SPECTRE · Telescoping arm · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Telescoping arm",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          73.5,
+          189.8701171875,
+          513.75,
+          468.1201171875
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      }
+    ],
+    "source_post_count": 275,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-2910",
+        "discovery_post": "2025-2910-494648-156",
+        "url": "https://2910.onshape.com/documents/f33ab032b00dc4b711aa86a6/w/951c0955d38b370eab02b587/e/415a66cb7efdf4aba6199086?configuration=default&renderMode=0&uiState=68091e6c81c18033fbb4fd25",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "dd4022a48607c1c68b"
+      },
+      {
+        "robot_id": "2025-2910",
+        "discovery_post": "2025-2910-494648-156",
+        "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2afc5a826970a31288"
+      },
+      {
+        "robot_id": "2025-2910",
+        "discovery_post": "2025-2910-503697-1",
+        "url": "https://github.com/FRCTeam2910/2025CompetitionRobot-Public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2534c3e365c8bf0fbb"
+      },
+      {
+        "robot_id": "2025-2910",
+        "discovery_post": "2025-2910-503697-2",
+        "url": "https://github.com/FRCTeam2910/2025CompetitionRobot-Public/blob/main/src/main/java/org/frc2910/robot/subsystems/drive/SwerveSubsystem.java#L290",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b890581b31b5986150"
+      },
+      {
+        "robot_id": "2025-2910",
+        "discovery_post": "2025-2910-503697-9",
+        "url": "https://docs.google.com/spreadsheets/d/1mrNfBA8ZLrNEE5x-Iu0jWxuKyEPj8YHWPqSZqwwA-oM/edit?gid=0#gid=0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "330807a40935b02774"
+      },
+      {
+        "robot_id": "2025-2910",
+        "discovery_post": "2025-2910-503697-31",
+        "url": "https://github.com/FRCTeam2910/2025CompetitionRobot-Public/blob/main/src/main/java/org/frc2910/robot/subsystems/vision/VisionIOLimelight.java#L150",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a5d1177fb24c505129"
+      }
+    ],
+    "id": "2025-2910",
+    "team_name": "Jack in the Bot",
+    "epa_rank": 2,
+    "epa": 114.07,
+    "epa_pre_champs": 115.71,
+    "epa_breakdown": {
+      "total_points": 114.07,
+      "auto_points": 28.35,
+      "teleop_points": 72.75,
+      "endgame_points": 12.97,
+      "auto_rp": 0.5422,
+      "coral_rp": 0.8718,
+      "barge_rp": 0.7309,
+      "tiebreaker_points": 0.2,
+      "auto_coral_points": 25.27,
+      "teleop_coral_points": 55.37,
+      "coral_l1": 6.42,
+      "coral_l2": 5.85,
+      "coral_l3": 5.28,
+      "coral_l4": 4.33,
+      "processor_algae": 1.01,
+      "processor_algae_points": 3.02,
+      "net_algae_points": 14.36,
+      "barge_points": 12.97,
+      "rp_1": 0.5422,
+      "rp_2": 0.8718,
+      "rp_3": 0.7309,
+      "total_coral_points": 80.64,
+      "total_algae_points": 17.38
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "0369e4fdcaac8ed4"
+    ],
+    "tags": [
+      "climb",
+      "pass-through",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-c8be42e3972c8859d8-43",
+      "tech-c8be42e3972c8859d8-44",
+      "tech-c8be42e3972c8859d8-45",
+      "tech-c8be42e3972c8859d8-46",
+      "tech-c8be42e3972c8859d8-47"
+    ],
+    "binder_source_ids": [
+      "c8be42e3972c8859d8"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-2910",
+      "year": 2025,
+      "team": 2910,
+      "epa_rank": 2,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"2910\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 23,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "c8be42e3972c8859d8"
+      ],
+      "technical_note_ids": [
+        "tech-c8be42e3972c8859d8-43",
+        "tech-c8be42e3972c8859d8-44",
+        "tech-c8be42e3972c8859d8-45",
+        "tech-c8be42e3972c8859d8-46",
+        "tech-c8be42e3972c8859d8-47"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "c8be42e3972c8859d8",
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+          "error": null,
+          "discovery": "Existing primary bundle",
+          "status": "technical_sections_reviewed"
+        },
+        {
+          "id": "de6cdc753a2899027c",
+          "url": "https://drive.google.com/file/d/1klCS6PTG5JrHWjFqFJQm29atvCNIZCiH/view?usp=sharing",
+          "error": null,
+          "discovery": "https://docs.lynkrobotics.org/technicalBinders/",
+          "status": "supplement_or_duplicate_not_counted_as_separate_binder"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "alliance_role_context": "Newton 2025: branch work alongside 4272 complements 1323 L1/algae, then L1 after upper work. User observation plus existing source context; no invented per-robot scoring ledger."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "c8be42e3972c8859d8",
+      "subsystem": "drivetrain",
+      "title": "SPECTRE: base and module revision at Championship",
+      "pdf_pages": [
+        5
+      ],
+      "construction": "District Mk4i modules changed to prototype Mk5 at Worlds; ballast placement also changed.",
+      "team_stated_reason": "Low center of gravity and short-cycle maneuverability.",
+      "engineering_analysis": "A module swap is a robot version, even if the scoring architecture looks unchanged. Saving module weight can be reinvested as low ballast rather than removed from the robot, changing traction and stability differently from a simple weight reduction. A wide tread and different enclosure can alter friction, debris protection and maintenance. Retuning drive and autonomous behavior is part of the mechanical change: old acceleration and feedforward assumptions should not be carried over without measurements. The database should name the competition stage associated with each configuration.",
+      "recommended_validation": "Compare module slip, current and stopping repeatability before and after the change with the actual ballast and bumper package.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c8be42e3972c8859d8-43",
+      "robot_id": "2025-2910",
+      "year": 2025,
+      "version_label": "SPECTRE",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 5,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=5"
+        }
+      ],
+      "image_ids": [
+        "binder-c8be42e3972c8859d8-p5-1"
+      ]
+    },
+    {
+      "binder_id": "c8be42e3972c8859d8",
+      "subsystem": "positioning",
+      "title": "SPECTRE: remote power at an integrated pivot",
+      "pdf_pages": [
+        6,
+        9
+      ],
+      "construction": "Separate three-X60 shoulder and extension gearboxes; dead-axle pivot; two-stage cascade arm.",
+      "team_stated_reason": "Fast motion with a low stowed center of gravity and serviceable arm.",
+      "engineering_analysis": "Keeping heavy actuators near the base reduces distal inertia and lets the arm respond without carrying all its drive mass at the tip. The price is a more complicated transmission across the pivot and through the telescope. A coaxial extension drive must preserve tension and alignment over the shoulder’s range. A large shared pivot can support stiffness and removal, but its clamps and end plugs become critical load interfaces. Motor count alone does not explain speed: the arm’s inertia, reduction, current limits and acceleration profile determine whether it can move quickly without rocking the chassis.",
+      "recommended_validation": "Measure end-point settling after simultaneous pivot and extension; test removal/reinstallation repeatability and chain tension over the full range.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c8be42e3972c8859d8-44",
+      "robot_id": "2025-2910",
+      "year": 2025,
+      "version_label": "SPECTRE",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 6,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-c8be42e3972c8859d8-p6-1",
+        "binder-c8be42e3972c8859d8-p9-1"
+      ]
+    },
+    {
+      "binder_id": "c8be42e3972c8859d8",
+      "subsystem": "intake",
+      "title": "SPECTRE: acquire, orient and score with one end mechanism",
+      "pdf_pages": [
+        8
+      ],
+      "construction": "Vertical and horizontal roller sets; four CANrange sensors; reversible front/back handoff and scoring.",
+      "team_stated_reason": "Serve coral and algae tasks with the same manipulator.",
+      "engineering_analysis": "Combining acquisition and scoring avoids a separate transfer interface, but makes the moving assembly larger and creates competing contact requirements. Coral has to be oriented differently for branches and L1; algae needs enough compliant pinch to stay captured during rapid motion. Multiple sensors can distinguish piece position and direction, provided their views remain reliable for both geometries. Front/back scoring reduces chassis rotation when the software chooses a sensible approach. The architecture should be assessed by complete cycle time and reach under defense, not by the number of available poses.",
+      "recommended_validation": "Test front/back coral scoring, intentional horizontal L1 placement and algae capture with the same rollers after wear.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c8be42e3972c8859d8-45",
+      "robot_id": "2025-2910",
+      "year": 2025,
+      "version_label": "SPECTRE",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8"
+        }
+      ],
+      "image_ids": [
+        "binder-c8be42e3972c8859d8-p8-1"
+      ]
+    },
+    {
+      "binder_id": "c8be42e3972c8859d8",
+      "subsystem": "endgame",
+      "title": "SPECTRE: moving climb carriage manages the hanging center",
+      "pdf_pages": [
+        7,
+        9
+      ],
+      "construction": "Powered one-bar cage capture; carriage slides along arm; shoulder lifts; extension locks to bumper structure.",
+      "team_stated_reason": "Balance under the chain while reusing the main arm.",
+      "engineering_analysis": "The carriage is not just a convenient mount. Its translation changes where the cage pulls relative to the robot’s mass, allowing a controlled transition into suspension. The shoulder then supplies the lifting work and the arm lock supplies a post-match retention path. Those are separate functions and should be recorded separately. Reusing the arm reduces dedicated hardware but raises its required load and reliability. Any recommendation needs the actual cage contact, latch, shoulder and lock sequence rather than assuming that a strong scoring arm can safely substitute for a complete climber.",
+      "recommended_validation": "Capture at several swing angles, verify carriage travel under load, and test power-off retention through the intended bumper lock.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c8be42e3972c8859d8-46",
+      "robot_id": "2025-2910",
+      "year": 2025,
+      "version_label": "SPECTRE",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=7"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-c8be42e3972c8859d8-p7-1",
+        "binder-c8be42e3972c8859d8-p9-1"
+      ]
+    },
+    {
+      "binder_id": "c8be42e3972c8859d8",
+      "subsystem": "controls",
+      "title": "SPECTRE: automate approach choice and L1 placement",
+      "pdf_pages": [
+        10
+      ],
+      "construction": "Automatic front/back reef choice; level/side selected by driver; distinct base/top L1 states.",
+      "team_stated_reason": "Remove repeated alignment work from the driver.",
+      "engineering_analysis": "Choosing the nearest face or easiest orientation can save time, but the shortest geometric route is not always the least congested or the most valuable remaining target. L1 stacking creates an occupancy problem as well as a pose problem: a fixed placement height is insufficient once previous coral changes the landing surface. The driver still needs strategic control over task and side, with software handling repeatable motion. A mechanism recommendation should include the sensors, pose references and operator choices required to realize its cycle advantage.",
+      "recommended_validation": "Test automatic choices near boundaries between faces and with populated L1; verify deliberate driver override and recovery after a failed release.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c8be42e3972c8859d8-47",
+      "robot_id": "2025-2910",
+      "year": 2025,
+      "version_label": "SPECTRE",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=10"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-c8be42e3972c8859d8-1",
+      "binder_id": "c8be42e3972c8859d8",
+      "robot_id": "2025-2910",
+      "pdf_page": 6,
+      "component": "Pivot/extension",
+      "published_parameters": "120.83:1 shoulder; 6.28:1 extension; three X60s each",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-c8be42e3972c8859d8-2",
+      "binder_id": "c8be42e3972c8859d8",
+      "robot_id": "2025-2910",
+      "pdf_page": 8,
+      "component": "Intake",
+      "published_parameters": "one X60 horizontal; two X44 vertical; four CANrange sensors",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-c8be42e3972c8859d8-3",
+      "binder_id": "c8be42e3972c8859d8",
+      "robot_id": "2025-2910",
+      "pdf_page": 9,
+      "component": "Arm",
+      "published_parameters": "two-stage cascade; #25 chains plus 3-mm UHMWPE rope",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "c8be42e3972c8859d8",
+      "robot_id": "2025-2910",
+      "title": "2025-2910 SPECTRE technical publication",
+      "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+      "format": "pdf",
+      "pages": 10,
+      "sha256": "dbe369ef86b342411aeee815b099be6145c20400546cc5d89668d9853fce4856",
+      "bytes": 1954919,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "figure_pages": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Existing primary bundle",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2025-2910:publication-version:1",
+      "label": "SPECTRE",
+      "robot_id": "2025-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-c8be42e3972c8859d8-43",
+        "tech-c8be42e3972c8859d8-44",
+        "tech-c8be42e3972c8859d8-45",
+        "tech-c8be42e3972c8859d8-46",
+        "tech-c8be42e3972c8859d8-47"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2025-2910",
+      "title": "2025-2910: technical construction and mechanism reasoning",
+      "year": 2025,
+      "robot_id": "2025-2910",
+      "kind": "robot_technical_review",
+      "body": "# 2025-2910: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## SPECTRE: base and module revision at Championship\n\nVersion: SPECTRE. [PDF p5](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=5)\n\n**Published construction:** District Mk4i modules changed to prototype Mk5 at Worlds; ballast placement also changed.\n\n**Team-stated reason or evidence boundary:** Low center of gravity and short-cycle maneuverability.\n\n**Engineering analysis — original inference:** A module swap is a robot version, even if the scoring architecture looks unchanged. Saving module weight can be reinvested as low ballast rather than removed from the robot, changing traction and stability differently from a simple weight reduction. A wide tread and different enclosure can alter friction, debris protection and maintenance. Retuning drive and autonomous behavior is part of the mechanical change: old acceleration and feedforward assumptions should not be carried over without measurements. The database should name the competition stage associated with each configuration.\n\n**Proposed validation — not a completed test:** Compare module slip, current and stopping repeatability before and after the change with the actual ballast and bumper package.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: remote power at an integrated pivot\n\nVersion: SPECTRE. [PDF p6](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6) · [PDF p9](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9)\n\n**Published construction:** Separate three-X60 shoulder and extension gearboxes; dead-axle pivot; two-stage cascade arm.\n\n**Team-stated reason or evidence boundary:** Fast motion with a low stowed center of gravity and serviceable arm.\n\n**Engineering analysis — original inference:** Keeping heavy actuators near the base reduces distal inertia and lets the arm respond without carrying all its drive mass at the tip. The price is a more complicated transmission across the pivot and through the telescope. A coaxial extension drive must preserve tension and alignment over the shoulder’s range. A large shared pivot can support stiffness and removal, but its clamps and end plugs become critical load interfaces. Motor count alone does not explain speed: the arm’s inertia, reduction, current limits and acceleration profile determine whether it can move quickly without rocking the chassis.\n\n**Proposed validation — not a completed test:** Measure end-point settling after simultaneous pivot and extension; test removal/reinstallation repeatability and chain tension over the full range.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: acquire, orient and score with one end mechanism\n\nVersion: SPECTRE. [PDF p8](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8)\n\n**Published construction:** Vertical and horizontal roller sets; four CANrange sensors; reversible front/back handoff and scoring.\n\n**Team-stated reason or evidence boundary:** Serve coral and algae tasks with the same manipulator.\n\n**Engineering analysis — original inference:** Combining acquisition and scoring avoids a separate transfer interface, but makes the moving assembly larger and creates competing contact requirements. Coral has to be oriented differently for branches and L1; algae needs enough compliant pinch to stay captured during rapid motion. Multiple sensors can distinguish piece position and direction, provided their views remain reliable for both geometries. Front/back scoring reduces chassis rotation when the software chooses a sensible approach. The architecture should be assessed by complete cycle time and reach under defense, not by the number of available poses.\n\n**Proposed validation — not a completed test:** Test front/back coral scoring, intentional horizontal L1 placement and algae capture with the same rollers after wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: moving climb carriage manages the hanging center\n\nVersion: SPECTRE. [PDF p7](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=7) · [PDF p9](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9)\n\n**Published construction:** Powered one-bar cage capture; carriage slides along arm; shoulder lifts; extension locks to bumper structure.\n\n**Team-stated reason or evidence boundary:** Balance under the chain while reusing the main arm.\n\n**Engineering analysis — original inference:** The carriage is not just a convenient mount. Its translation changes where the cage pulls relative to the robot’s mass, allowing a controlled transition into suspension. The shoulder then supplies the lifting work and the arm lock supplies a post-match retention path. Those are separate functions and should be recorded separately. Reusing the arm reduces dedicated hardware but raises its required load and reliability. Any recommendation needs the actual cage contact, latch, shoulder and lock sequence rather than assuming that a strong scoring arm can safely substitute for a complete climber.\n\n**Proposed validation — not a completed test:** Capture at several swing angles, verify carriage travel under load, and test power-off retention through the intended bumper lock.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## SPECTRE: automate approach choice and L1 placement\n\nVersion: SPECTRE. [PDF p10](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=10)\n\n**Published construction:** Automatic front/back reef choice; level/side selected by driver; distinct base/top L1 states.\n\n**Team-stated reason or evidence boundary:** Remove repeated alignment work from the driver.\n\n**Engineering analysis — original inference:** Choosing the nearest face or easiest orientation can save time, but the shortest geometric route is not always the least congested or the most valuable remaining target. L1 stacking creates an occupancy problem as well as a pose problem: a fixed placement height is insufficient once previous coral changes the landing surface. The driver still needs strategic control over task and side, with software handling repeatable motion. A mechanism recommendation should include the sensors, pose references and operator choices required to realize its cycle advantage.\n\n**Proposed validation — not a completed test:** Test automatic choices near boundaries between faces and with populated L1; verify deliberate driver override and recovery after a failed release.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Pivot/extension | 120.83:1 shoulder; 6.28:1 extension; three X60s each | [Source p6](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6) |\n| Intake | one X60 horizontal; two X44 vertical; four CANrange sensors | [Source p8](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8) |\n| Arm | two-stage cascade; #25 chains plus 3-mm UHMWPE rope | [Source p9](https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view"
+      ],
+      "path": "docs/technical/2025-2910.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/500310/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/c/4/7/c4708c45a81ab3ba086db35f850ce2ff9a1c7dbc_2_375x500.jpeg",
+      "post": 1,
+      "date": "2025-04-23T19:40:00.842Z",
+      "author": "Sudhir",
+      "context_tags": [],
+      "caption": "2025 team 2910 — source image from post 1 (2025-04-23). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e1dcfec8af2311e75d.jpg",
+      "id": "321eb4b0291a6542c0",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e1dcfec8af2311e75d.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 78562,
+      "sha256": "968c0286818d1a50edbdfbc7c97cd31ee6d2fa46e05517594453c20a3e16f769",
+      "path_base": "corpus_root",
+      "reader_asset_id": "321eb4b0291a6542c0",
+      "reader_url": "index.html#image=321eb4b0291a6542c0",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/494648/101",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/b/5/9b5795abe1966029bf56db3c7c6e696b8b10afb5_2_665x500.jpeg",
+      "post": 101,
+      "date": "2025-04-07T04:13:25.822Z",
+      "author": "PatrickW",
+      "context_tags": [
+        "arm"
+      ],
+      "caption": "2025 team 2910 — source image from post 101 (2025-04-07). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "fa71700a63e2a6fd87.jpg",
+      "id": "0fb5cbfac4399d6bd8",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/fa71700a63e2a6fd87.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 665,
+      "height_px": 500,
+      "bytes": 64421,
+      "sha256": "e4503e2fe2175aadfb321d4d7986d56150968e014617dc89c60bd0b71d817857",
+      "path_base": "corpus_root",
+      "reader_asset_id": "0fb5cbfac4399d6bd8",
+      "reader_url": "index.html#image=0fb5cbfac4399d6bd8",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/494648/122",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/9/a/19acf2a47537583ae846c236586345bb88fbcba9_2_666x500.jpeg",
+      "post": 122,
+      "date": "2025-04-21T05:59:32.423Z",
+      "author": "PatrickW",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2025 team 2910 — source image from post 122 (2025-04-21). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d41d5a681be5a95e4b.jpg",
+      "id": "6bc86d3306855b32fe",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d41d5a681be5a95e4b.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 106553,
+      "sha256": "b36f2fab79d9cfb7812fc5544b4a811fdf4c84449a73afc8047e5fd9cfc9e876",
+      "path_base": "corpus_root",
+      "reader_asset_id": "6bc86d3306855b32fe",
+      "reader_url": "index.html#image=6bc86d3306855b32fe",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+      "page": 5,
+      "asset": "a779909ebf09cc287e.jpg",
+      "context_tags": [
+        "arm",
+        "pivot"
+      ],
+      "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 5. Page discusses arm, pivot. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "44ad3f440a8de93939",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/a779909ebf09cc287e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 943,
+      "height_px": 607,
+      "bytes": 98197,
+      "sha256": "a70afa6a5e882438e151b18eb68803b2c52d9892e1befd04552e3a151bb4dbae",
+      "path_base": "corpus_root",
+      "reader_asset_id": "44ad3f440a8de93939",
+      "reader_url": "index.html#image=44ad3f440a8de93939",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+      "page": 6,
+      "asset": "00cf5e3c6ee7bc4647.jpg",
+      "context_tags": [
+        "arm",
+        "pivot"
+      ],
+      "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 6. Page discusses arm, pivot. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "58bd55a61f6b3f7b33",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/00cf5e3c6ee7bc4647.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 741,
+      "height_px": 613,
+      "bytes": 75939,
+      "sha256": "23f0a37d3de01b3120cd33de6e353ec43cd079b915059cb1699965b9bb13e67b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "58bd55a61f6b3f7b33",
+      "reader_url": "index.html#image=58bd55a61f6b3f7b33",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+      "page": 7,
+      "asset": "932cafbc37acf34e33.jpg",
+      "context_tags": [
+        "arm",
+        "climb",
+        "collector",
+        "intake",
+        "pivot"
+      ],
+      "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 7. Page discusses arm, climb, collector, intake, pivot. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "4d061f6a514e1133aa",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/932cafbc37acf34e33.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 767,
+      "height_px": 566,
+      "bytes": 76014,
+      "sha256": "61f905e21a4421692a09a4560171cba5681c8df5d5f791a3fc04fad4572e7301",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4d061f6a514e1133aa",
+      "reader_url": "index.html#image=4d061f6a514e1133aa",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+      "page": 8,
+      "asset": "b05aa820f99d0e8b0a.jpg",
+      "context_tags": [
+        "intake",
+        "wrist"
+      ],
+      "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 8. Page discusses intake, wrist. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "484263c487a0c7464b",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/b05aa820f99d0e8b0a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 899,
+      "height_px": 671,
+      "bytes": 99712,
+      "sha256": "9f772129b8c308f2328542e30ebcc611522ed2c44e1068dd99474b4fcc02f490",
+      "path_base": "corpus_root",
+      "reader_asset_id": "484263c487a0c7464b",
+      "reader_url": "index.html#image=484263c487a0c7464b",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view?usp=drivesdk",
+      "page": 9,
+      "asset": "e5b1ffe97c2c5da148.jpg",
+      "context_tags": [
+        "arm",
+        "climb",
+        "intake",
+        "pivot"
+      ],
+      "caption": "2025 team 2910 — embedded figure from technical binder, PDF page 9. Page discusses arm, climb, intake, pivot. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "8119294b6fffd66e61",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e5b1ffe97c2c5da148.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 810,
+      "height_px": 512,
+      "bytes": 86594,
+      "sha256": "70c8a58ecaf6edd7ab38b0aac0ace429bc3b388d3b89d354bdc45b3b52f2cc99",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8119294b6fffd66e61",
+      "reader_url": "index.html#image=8119294b6fffd66e61",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c8be42e3972c8859d8-p5-1",
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "binder_id": "c8be42e3972c8859d8",
+      "pdf_page": 5,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c8be42e3972c8859d8-p5-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=5",
+      "caption": "2025-2910 · SPECTRE · Drivebase versions · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase versions",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        163.42236328125,
+        541.5,
+        464.17236328125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 5,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 693,
+      "bytes": 104890,
+      "sha256": "1da60c01200dcc79a0c6017975a165c5dc9f9ed0b41030916deb49ea9285c7a7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c8be42e3972c8859d8-p5-1",
+      "reader_url": "index.html#image=binder-c8be42e3972c8859d8-p5-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c8be42e3972c8859d8-p6-1",
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "binder_id": "c8be42e3972c8859d8",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c8be42e3972c8859d8-p6-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=6",
+      "caption": "2025-2910 · SPECTRE · Pivot gearboxes · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Pivot gearboxes",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        154.45806884765625,
+        541.5,
+        541.541015625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 891,
+      "bytes": 120489,
+      "sha256": "88cfcc6993ca4cefb2369b7b4eb398eb38a7f457383d2318af2dbaa0c03da8b1",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c8be42e3972c8859d8-p6-1",
+      "reader_url": "index.html#image=binder-c8be42e3972c8859d8-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c8be42e3972c8859d8-p7-1",
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "binder_id": "c8be42e3972c8859d8",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c8be42e3972c8859d8-p7-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=7",
+      "caption": "2025-2910 · SPECTRE · Shared-arm climber · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Shared-arm climber",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        195.15966796875,
+        504.0000305175781,
+        512.40966796875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 991,
+      "height_px": 731,
+      "bytes": 94376,
+      "sha256": "060b782437e40202ed6f7f675240a0544d21be818f367e84c2c544bccae6a56a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c8be42e3972c8859d8-p7-1",
+      "reader_url": "index.html#image=binder-c8be42e3972c8859d8-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c8be42e3972c8859d8-p8-1",
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "binder_id": "c8be42e3972c8859d8",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c8be42e3972c8859d8-p8-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=8",
+      "caption": "2025-2910 · SPECTRE · Intake and wrist · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake and wrist",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        174.00146484375,
+        541.5,
+        522.75146484375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1077,
+      "height_px": 803,
+      "bytes": 113835,
+      "sha256": "a9ec031ec9272fcfb16543d6c2c7398e5068b299a0038fe00b6316b81e92cf16",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c8be42e3972c8859d8-p8-1",
+      "reader_url": "index.html#image=binder-c8be42e3972c8859d8-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c8be42e3972c8859d8-p9-1",
+      "robot_id": "2025-2910",
+      "kind": "binder_figure",
+      "binder_id": "c8be42e3972c8859d8",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c8be42e3972c8859d8-p9-1.jpg",
+      "source_url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view#page=9",
+      "caption": "2025-2910 · SPECTRE · Telescoping arm · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Telescoping arm",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        73.5,
+        189.8701171875,
+        513.75,
+        468.1201171875
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1013,
+      "height_px": 641,
+      "bytes": 104579,
+      "sha256": "f99597525087aa94b7b542ebcc431b44677b65baf63cdf68c714df5c6a7f867d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c8be42e3972c8859d8-p9-1",
+      "reader_url": "index.html#image=binder-c8be42e3972c8859d8-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-2910",
+    "year": 2025,
+    "team": 2910,
+    "epa_rank": 2,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"2910\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 23,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "c8be42e3972c8859d8"
+    ],
+    "technical_note_ids": [
+      "tech-c8be42e3972c8859d8-43",
+      "tech-c8be42e3972c8859d8-44",
+      "tech-c8be42e3972c8859d8-45",
+      "tech-c8be42e3972c8859d8-46",
+      "tech-c8be42e3972c8859d8-47"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "c8be42e3972c8859d8",
+        "url": "https://drive.google.com/file/d/1bjl1LJRS1vXOiLeVq6HdaQw0rmdQOUhk/view",
+        "error": null,
+        "discovery": "Existing primary bundle",
+        "status": "technical_sections_reviewed"
+      },
+      {
+        "id": "de6cdc753a2899027c",
+        "url": "https://drive.google.com/file/d/1klCS6PTG5JrHWjFqFJQm29atvCNIZCiH/view?usp=sharing",
+        "error": null,
+        "discovery": "https://docs.lynkrobotics.org/technicalBinders/",
+        "status": "supplement_or_duplicate_not_counted_as_separate_binder"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-c8be42e3972c8859d8-43:construction",
+    "tech-c8be42e3972c8859d8-43:team_stated_reason",
+    "tech-c8be42e3972c8859d8-43:engineering_analysis",
+    "tech-c8be42e3972c8859d8-43:recommended_validation",
+    "tech-c8be42e3972c8859d8-43:limitations",
+    "tech-c8be42e3972c8859d8-44:construction",
+    "tech-c8be42e3972c8859d8-44:team_stated_reason",
+    "tech-c8be42e3972c8859d8-44:engineering_analysis",
+    "tech-c8be42e3972c8859d8-44:recommended_validation",
+    "tech-c8be42e3972c8859d8-44:limitations",
+    "tech-c8be42e3972c8859d8-45:construction",
+    "tech-c8be42e3972c8859d8-45:team_stated_reason",
+    "tech-c8be42e3972c8859d8-45:engineering_analysis",
+    "tech-c8be42e3972c8859d8-45:recommended_validation",
+    "tech-c8be42e3972c8859d8-45:limitations",
+    "tech-c8be42e3972c8859d8-46:construction",
+    "tech-c8be42e3972c8859d8-46:team_stated_reason",
+    "tech-c8be42e3972c8859d8-46:engineering_analysis",
+    "tech-c8be42e3972c8859d8-46:recommended_validation",
+    "tech-c8be42e3972c8859d8-46:limitations",
+    "tech-c8be42e3972c8859d8-47:construction",
+    "tech-c8be42e3972c8859d8-47:team_stated_reason",
+    "tech-c8be42e3972c8859d8-47:engineering_analysis",
+    "tech-c8be42e3972c8859d8-47:recommended_validation",
+    "tech-c8be42e3972c8859d8-47:limitations",
+    "param-c8be42e3972c8859d8-1",
+    "param-c8be42e3972c8859d8-2",
+    "param-c8be42e3972c8859d8-3"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

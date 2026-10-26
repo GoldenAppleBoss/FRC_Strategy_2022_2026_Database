@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-604",
+  "year": 2023,
+  "team": 604,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 604,
+    "robot": "2023 published robot (name not independently confirmed)",
+    "primary": [
+      "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255"
+    ],
+    "architecture": "A pasta-roller intake grips a cone flange and pinches a cube, constraining cones to tip-in or tip-out. A roller reorienter supplies the additional rotational degree of freedom needed for an upright handoff. Rollers are powered coaxially through the reorienter. A linear intake slider brings the piece inward and permits frontal compliance. A separate horizontal scoring-arm slider reaches across the intake. A time-of-flight sensor first distinguishes orientation at a fixed location, then locates the piece laterally. The elevator lowers while the intake expels to hand off.",
+    "subsystems": {
+      "drivetrain": "Unresolved in reviewed sources; do not infer absence.",
+      "intake": "A pasta-roller intake grips a cone flange and pinches a cube, constraining cones to tip-in or tip-out. A roller reorienter supplies the additional rotational degree of freedom needed for an upright handoff. Rollers are powered coaxially through the reorienter.",
+      "transfer": "A linear intake slider brings the piece inward and permits frontal compliance. A separate horizontal scoring-arm slider reaches across the intake. A time-of-flight sensor first distinguishes orientation at a fixed location, then locates the piece laterally. The elevator lowers while the intake expels to hand off.",
+      "scoring": "A non-parallel four-bar provides scoring reach. An Everybot-style lightweight gripper squeezes the cone tip and pinches a cube. The release describes scoring all levels.",
+      "endgame": "Unresolved in reviewed sources; do not infer absence.",
+      "controls": "Originally the operator selected scoring locations on a driverstation keyboard and the driver triggered automated scoring. The team later reports the driver becoming faster and more consistent than that sequence, reducing the operator role to piece and level selection."
+    },
+    "versions": [
+      "2023 published robot account"
+    ],
+    "analysis": "The linkage choice belongs with the piece acquisition and handoff design. Saving moving mass can reduce the drive and tipping burden, but linkage workspace, joint play and gripper compliance determine the usable placement envelope. A later team using a single-stage elevator should not be read as proof that this four-bar was a failed architecture; the game, interface and required motion differ. Automation should be judged against practiced human operation, including recovery, rather than valued simply because it exists. This is a useful counterexample to treating 604’s later single-driver automation as an unchanging philosophy implemented identically every year. Keep the final software release and its 2024-beta port distinct. Detailed drivetrain specifications and the charge-station balancing mechanism are not established by this reviewed release.",
+    "limits": [
+      "Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.",
+      "Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification."
+    ],
+    "deep_context": "# 2023-604 — Quixilver: 2023 published robot (name not independently confirmed)\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## 2023 published robot account · intake\n\n### Published construction or code\n\nA pasta-roller intake grips a cone flange and pinches a cube, constraining cones to tip-in or tip-out. A roller reorienter supplies the additional rotational degree of freedom needed for an upright handoff. Rollers are powered coaxially through the reorienter.\n\n### Stated rationale and boundaries\n\nThe team wanted ground pickup in arbitrary orientations; human-player throwing could shorten travel by an estimated 40% and reduce loading-zone traffic. Coaxial drive protects motors and reduces mass at the intake edge.\n\n### Engineering interpretation\n\nThis is an explicit strategy-to-mechanism chain: changing the pickup source reduces travel only if orientation and handoff remain reliable. The 40% is the team’s route estimate, not an independently measured cycle improvement. A broad capture envelope transfers complexity downstream unless the robot can reduce the resulting pose uncertainty. Compare full acquisition-to-scoring cycles, including difficult orientations, rather than pickup speed alone.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2023 published robot account · transfer\n\n### Published construction or code\n\nA linear intake slider brings the piece inward and permits frontal compliance. A separate horizontal scoring-arm slider reaches across the intake. A time-of-flight sensor first distinguishes orientation at a fixed location, then locates the piece laterally. The elevator lowers while the intake expels to hand off.\n\n### Stated rationale and boundaries\n\nThe team needed handoff despite variable piece position across the intake width.\n\n### Engineering interpretation\n\nDo not collapse the two sliders into a single motion. The intake reduces some uncertainty, then sensing and the receiving mechanism handle what remains. This avoids requiring perfect passive centering, at the cost of coordinated motion, sensor interpretation and collision clearance. Sensor occlusion, flange shape, cone reflectivity and loaded mechanism deflection are plausible validation concerns, not failures established by this publication.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2023 published robot account · scoring\n\n### Published construction or code\n\nA non-parallel four-bar provides scoring reach. An Everybot-style lightweight gripper squeezes the cone tip and pinches a cube. The release describes scoring all levels.\n\n### Stated rationale and boundaries\n\nThe team chose the linkage for low mass and long extension, and judged the high-versus-middle scoring difference sufficient to justify the added capability.\n\n### Engineering interpretation\n\nThe linkage choice belongs with the piece acquisition and handoff design. Saving moving mass can reduce the drive and tipping burden, but linkage workspace, joint play and gripper compliance determine the usable placement envelope. A later team using a single-stage elevator should not be read as proof that this four-bar was a failed architecture; the game, interface and required motion differ.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2023 published robot account · controls\n\n### Published construction or code\n\nOriginally the operator selected scoring locations on a driverstation keyboard and the driver triggered automated scoring. The team later reports the driver becoming faster and more consistent than that sequence, reducing the operator role to piece and level selection.\n\n### Stated rationale and boundaries\n\nThe control allocation evolved with driver performance.\n\n### Engineering interpretation\n\nAutomation should be judged against practiced human operation, including recovery, rather than valued simply because it exists. This is a useful counterexample to treating 604’s later single-driver automation as an unchanging philosophy implemented identically every year. Keep the final software release and its 2024-beta port distinct. Detailed drivetrain specifications and the charge-station balancing mechanism are not established by this reviewed release.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n\nThe reviewed publication does not establish charge-station balance construction or exact drivetrain hardware. FIRST’s carried-forward robot-name field is not treated as authoritative identity for this different-season machine.\n\n\n## Recovered original source images · 2026-10-26\n\nThe earlier direct-download failures are resolved. These are unchanged originals from the team release; the labels below are editorial retrieval aids. Inspect the full view before borrowing packaging ideas. Exact dimensions, hidden construction and match performance require independent source evidence.\n\n### Whole robot / scoring arm\n\n![2023-604 · Field photograph of the 2023 robot with blue 604 bumpers and extended scoring arm. A whole-robot view, not an isolated mechanism detail.](../../images/604_2023_robot.png)\n\n2023-604 · Field photograph of the 2023 robot with blue 604 bumpers and extended scoring arm. A whole-robot view, not an isolated mechanism detail.\n\n[Team release](https://www.chiefdelphi.com/t/447255/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/3X/c/e/ceea2ea1a4a1ee8c9568398fa6188eee82feefee.png) · Image ID `604-source-2023-robot`.\n\n",
+    "images": [
+      {
+        "id": "604-source-2023-robot",
+        "robot_id": "2023-604",
+        "kind": "team_release_original",
+        "path": "images/604_2023_robot.png",
+        "source_url": "https://www.chiefdelphi.com/t/447255/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/c/e/ceea2ea1a4a1ee8c9568398fa6188eee82feefee.png",
+        "caption": "2023-604 · Field photograph of the 2023 robot with blue 604 bumpers and extended scoring arm. A whole-robot view, not an isolated mechanism detail.",
+        "publisher_label": "Whole robot / scoring arm",
+        "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+        "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+        "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+        "whole_robot_photo": true,
+        "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+        "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+        "downloaded_on": "2026-10-26",
+        "download_method": "Normal browser navigation to the original image URL and browser media download",
+        "sha256": "2a249314c2d7c7043d43682641c92d0cbad92f9b9f965ae94c0c51d13a98972e"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2023-604",
+    "team_name": "Quixilver",
+    "epa_rank": 71,
+    "epa": 62.89,
+    "epa_pre_champs": 59.49,
+    "epa_breakdown": {
+      "total_points": 62.89,
+      "auto_points": 13.56,
+      "teleop_points": 38.42,
+      "endgame_points": 10.05,
+      "links_rp": 0.4538,
+      "activation_rp": 0.5287,
+      "tiebreaker_points": 62.04,
+      "auto_charge_station_points": 5.4,
+      "auto_pieces": 1.43,
+      "teleop_grid_points": 24.61,
+      "bottom_pieces": 3.11,
+      "middle_pieces": 1.86,
+      "top_pieces": 3.81,
+      "cube_points": 9.24,
+      "cone_points": 23.04,
+      "links": 2.93,
+      "endgame_charge_station_points": 10.05,
+      "rp_1": 0.4538,
+      "rp_2": 0.5287
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Version-specific primary-source study; not exhaustive per-event certification",
+    "strict_acceptance": "provisional; unresolved geometry and version details explicitly retained",
+    "source_ids": [
+      "604-source-2023"
+    ],
+    "tags": [
+      "user-requested supplemental reference"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-604",
+      "year": 2023,
+      "team": 604,
+      "epa_rank": 71,
+      "status": "primary_source_review_no_verified_binder",
+      "search": {
+        "query": "604 2023 technical release",
+        "review_date": "2026-10-26"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "604-source-2023"
+      ],
+      "technical_note_ids": [
+        "604-expansion-2023-1",
+        "604-expansion-2023-2",
+        "604-expansion-2023-3",
+        "604-expansion-2023-4"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Primary technical release/code reviewed; no standalone binder certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "604-expansion-2023-1",
+      "604-expansion-2023-2",
+      "604-expansion-2023-3",
+      "604-expansion-2023-4"
+    ],
+    "selection_scope": "User-requested supplemental reference outside original 25/year cohort; original selections preserved."
+  },
+  "technical_notes": [
+    {
+      "id": "604-expansion-2023-1",
+      "robot_id": "2023-604",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "intake",
+      "title": "2023 published robot account · intake",
+      "version_label": "2023 published robot account",
+      "construction": "A pasta-roller intake grips a cone flange and pinches a cube, constraining cones to tip-in or tip-out. A roller reorienter supplies the additional rotational degree of freedom needed for an upright handoff. Rollers are powered coaxially through the reorienter.",
+      "team_stated_reason": "The team wanted ground pickup in arbitrary orientations; human-player throwing could shorten travel by an estimated 40% and reduce loading-zone traffic. Coaxial drive protects motors and reduces mass at the intake edge.",
+      "engineering_analysis": "This is an explicit strategy-to-mechanism chain: changing the pickup source reduces travel only if orientation and handoff remain reliable. The 40% is the team’s route estimate, not an independently measured cycle improvement. A broad capture envelope transfers complexity downstream unless the robot can reduce the resulting pose uncertainty. Compare full acquisition-to-scoring cycles, including difficult orientations, rather than pickup speed alone.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2023-robot"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2023-2",
+      "robot_id": "2023-604",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "transfer",
+      "title": "2023 published robot account · transfer",
+      "version_label": "2023 published robot account",
+      "construction": "A linear intake slider brings the piece inward and permits frontal compliance. A separate horizontal scoring-arm slider reaches across the intake. A time-of-flight sensor first distinguishes orientation at a fixed location, then locates the piece laterally. The elevator lowers while the intake expels to hand off.",
+      "team_stated_reason": "The team needed handoff despite variable piece position across the intake width.",
+      "engineering_analysis": "Do not collapse the two sliders into a single motion. The intake reduces some uncertainty, then sensing and the receiving mechanism handle what remains. This avoids requiring perfect passive centering, at the cost of coordinated motion, sensor interpretation and collision clearance. Sensor occlusion, flange shape, cone reflectivity and loaded mechanism deflection are plausible validation concerns, not failures established by this publication.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2023-robot"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2023-3",
+      "robot_id": "2023-604",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "scoring",
+      "title": "2023 published robot account · scoring",
+      "version_label": "2023 published robot account",
+      "construction": "A non-parallel four-bar provides scoring reach. An Everybot-style lightweight gripper squeezes the cone tip and pinches a cube. The release describes scoring all levels.",
+      "team_stated_reason": "The team chose the linkage for low mass and long extension, and judged the high-versus-middle scoring difference sufficient to justify the added capability.",
+      "engineering_analysis": "The linkage choice belongs with the piece acquisition and handoff design. Saving moving mass can reduce the drive and tipping burden, but linkage workspace, joint play and gripper compliance determine the usable placement envelope. A later team using a single-stage elevator should not be read as proof that this four-bar was a failed architecture; the game, interface and required motion differ.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2023-robot"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2023-4",
+      "robot_id": "2023-604",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "controls",
+      "title": "2023 published robot account · controls",
+      "version_label": "2023 published robot account",
+      "construction": "Originally the operator selected scoring locations on a driverstation keyboard and the driver triggered automated scoring. The team later reports the driver becoming faster and more consistent than that sequence, reducing the operator role to piece and level selection.",
+      "team_stated_reason": "The control allocation evolved with driver performance.",
+      "engineering_analysis": "Automation should be judged against practiced human operation, including recovery, rather than valued simply because it exists. This is a useful counterexample to treating 604’s later single-driver automation as an unchanging philosophy implemented identically every year. Keep the final software release and its 2024-beta port distinct. Detailed drivetrain specifications and the charge-station balancing mechanism are not established by this reviewed release.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [
+        "604-source-2023-robot"
+      ],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-604:publication-version:1",
+      "label": "2023 published robot account",
+      "robot_id": "2023-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2023-1",
+        "604-expansion-2023-2",
+        "604-expansion-2023-3",
+        "604-expansion-2023-4"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "2023-604-primary-study",
+      "title": "2023-604 primary-source mechanisms and strategic context",
+      "year": 2023,
+      "robot_id": "2023-604",
+      "kind": "robot_deep_note",
+      "body": "# 2023-604 — Quixilver: 2023 published robot (name not independently confirmed)\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## 2023 published robot account · intake\n\n### Published construction or code\n\nA pasta-roller intake grips a cone flange and pinches a cube, constraining cones to tip-in or tip-out. A roller reorienter supplies the additional rotational degree of freedom needed for an upright handoff. Rollers are powered coaxially through the reorienter.\n\n### Stated rationale and boundaries\n\nThe team wanted ground pickup in arbitrary orientations; human-player throwing could shorten travel by an estimated 40% and reduce loading-zone traffic. Coaxial drive protects motors and reduces mass at the intake edge.\n\n### Engineering interpretation\n\nThis is an explicit strategy-to-mechanism chain: changing the pickup source reduces travel only if orientation and handoff remain reliable. The 40% is the team’s route estimate, not an independently measured cycle improvement. A broad capture envelope transfers complexity downstream unless the robot can reduce the resulting pose uncertainty. Compare full acquisition-to-scoring cycles, including difficult orientations, rather than pickup speed alone.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2023 published robot account · transfer\n\n### Published construction or code\n\nA linear intake slider brings the piece inward and permits frontal compliance. A separate horizontal scoring-arm slider reaches across the intake. A time-of-flight sensor first distinguishes orientation at a fixed location, then locates the piece laterally. The elevator lowers while the intake expels to hand off.\n\n### Stated rationale and boundaries\n\nThe team needed handoff despite variable piece position across the intake width.\n\n### Engineering interpretation\n\nDo not collapse the two sliders into a single motion. The intake reduces some uncertainty, then sensing and the receiving mechanism handle what remains. This avoids requiring perfect passive centering, at the cost of coordinated motion, sensor interpretation and collision clearance. Sensor occlusion, flange shape, cone reflectivity and loaded mechanism deflection are plausible validation concerns, not failures established by this publication.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2023 published robot account · scoring\n\n### Published construction or code\n\nA non-parallel four-bar provides scoring reach. An Everybot-style lightweight gripper squeezes the cone tip and pinches a cube. The release describes scoring all levels.\n\n### Stated rationale and boundaries\n\nThe team chose the linkage for low mass and long extension, and judged the high-versus-middle scoring difference sufficient to justify the added capability.\n\n### Engineering interpretation\n\nThe linkage choice belongs with the piece acquisition and handoff design. Saving moving mass can reduce the drive and tipping burden, but linkage workspace, joint play and gripper compliance determine the usable placement envelope. A later team using a single-stage elevator should not be read as proof that this four-bar was a failed architecture; the game, interface and required motion differ.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2023 published robot account · controls\n\n### Published construction or code\n\nOriginally the operator selected scoring locations on a driverstation keyboard and the driver triggered automated scoring. The team later reports the driver becoming faster and more consistent than that sequence, reducing the operator role to piece and level selection.\n\n### Stated rationale and boundaries\n\nThe control allocation evolved with driver performance.\n\n### Engineering interpretation\n\nAutomation should be judged against practiced human operation, including recovery, rather than valued simply because it exists. This is a useful counterexample to treating 604’s later single-driver automation as an unchanging philosophy implemented identically every year. Keep the final software release and its 2024-beta port distinct. Detailed drivetrain specifications and the charge-station balancing mechanism are not established by this reviewed release.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n\nThe reviewed publication does not establish charge-station balance construction or exact drivetrain hardware. FIRST’s carried-forward robot-name field is not treated as authoritative identity for this different-season machine.\n\n\n## Recovered original source images · 2026-10-26\n\nThe earlier direct-download failures are resolved. These are unchanged originals from the team release; the labels below are editorial retrieval aids. Inspect the full view before borrowing packaging ideas. Exact dimensions, hidden construction and match performance require independent source evidence.\n\n### Whole robot / scoring arm\n\n![2023-604 · Field photograph of the 2023 robot with blue 604 bumpers and extended scoring arm. A whole-robot view, not an isolated mechanism detail.](../../images/604_2023_robot.png)\n\n2023-604 · Field photograph of the 2023 robot with blue 604 bumpers and extended scoring arm. A whole-robot view, not an isolated mechanism detail.\n\n[Team release](https://www.chiefdelphi.com/t/447255/1) · [Original image](https://www.chiefdelphi.com/uploads/default/original/3X/c/e/ceea2ea1a4a1ee8c9568398fa6188eee82feefee.png) · Image ID `604-source-2023-robot`.\n\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2023-robot-and-code-release/447255"
+      ],
+      "path": "docs/context/2023-604-primary-study.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "604-source-2023-robot",
+      "robot_id": "2023-604",
+      "kind": "team_release_original",
+      "path": "images/604_2023_robot.png",
+      "source_url": "https://www.chiefdelphi.com/t/447255/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/c/e/ceea2ea1a4a1ee8c9568398fa6188eee82feefee.png",
+      "caption": "2023-604 · Field photograph of the 2023 robot with blue 604 bumpers and extended scoring arm. A whole-robot view, not an isolated mechanism detail.",
+      "publisher_label": "Whole robot / scoring arm",
+      "label_basis": "Editorial retrieval label based on visual inspection; not a publisher-assigned figure title",
+      "review_status": "Original image downloaded through browser media download and visually inspected on 2026-10-26",
+      "visual_review": "Visible whole-robot geometry inspected; no dimensional measurement, CAD validation or event-version certification",
+      "whole_robot_photo": true,
+      "depicted_team_status": "Source-associated Team 604 release; 604 bumpers visible in 2023 photo",
+      "rights": "Credited reference image from team publication; copyright remains with its owner. No license transfer is implied.",
+      "downloaded_on": "2026-10-26",
+      "download_method": "Normal browser navigation to the original image URL and browser media download",
+      "sha256": "2a249314c2d7c7043d43682641c92d0cbad92f9b9f965ae94c0c51d13a98972e",
+      "media_type": "image/png",
+      "width_px": 1600,
+      "height_px": 1070,
+      "bytes": 2840564,
+      "path_base": "corpus_root",
+      "reader_asset_id": "604-source-2023-robot",
+      "reader_url": "index.html#image=604-source-2023-robot",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-604",
+    "year": 2023,
+    "team": 604,
+    "epa_rank": 71,
+    "status": "primary_source_review_no_verified_binder",
+    "search": {
+      "query": "604 2023 technical release",
+      "review_date": "2026-10-26"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "604-source-2023"
+    ],
+    "technical_note_ids": [
+      "604-expansion-2023-1",
+      "604-expansion-2023-2",
+      "604-expansion-2023-3",
+      "604-expansion-2023-4"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Primary technical release/code reviewed; no standalone binder certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "604-expansion-2023-1:construction",
+    "604-expansion-2023-1:team_stated_reason",
+    "604-expansion-2023-1:engineering_analysis",
+    "604-expansion-2023-1:recommended_validation",
+    "604-expansion-2023-1:limitations",
+    "604-expansion-2023-2:construction",
+    "604-expansion-2023-2:team_stated_reason",
+    "604-expansion-2023-2:engineering_analysis",
+    "604-expansion-2023-2:recommended_validation",
+    "604-expansion-2023-2:limitations",
+    "604-expansion-2023-3:construction",
+    "604-expansion-2023-3:team_stated_reason",
+    "604-expansion-2023-3:engineering_analysis",
+    "604-expansion-2023-3:recommended_validation",
+    "604-expansion-2023-3:limitations",
+    "604-expansion-2023-4:construction",
+    "604-expansion-2023-4:team_stated_reason",
+    "604-expansion-2023-4:engineering_analysis",
+    "604-expansion-2023-4:recommended_validation",
+    "604-expansion-2023-4:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

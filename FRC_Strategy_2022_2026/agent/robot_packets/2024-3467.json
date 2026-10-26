@@ -1,0 +1,871 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-3467",
+  "year": 2024,
+  "team": 3467,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 3467,
+    "robot": "Nocturne",
+    "primary": [
+      "https://youtu.be/tmRQ12MZrVo",
+      "https://www.chiefdelphi.com/t/460678",
+      "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf"
+    ],
+    "architecture": "Protected acquisition and a shared shooter/amp/climb pivot with later blower-assisted trap development.",
+    "subsystems": {
+      "drivetrain": "Compact swerve platform.",
+      "intake": "Under-bumper flexible-wheel intake with passive low-friction centering wedges.",
+      "transfer": "Powered staging rollers accelerate and retain the note.",
+      "scoring": "Single arm pivot supported by four chain runs; adjustable wheel-speed/angle shots.",
+      "endgame": "Hooks on the scoring arm provide fast chain lift; blower trap solution researched after primary scoring worked.",
+      "controls": "Tag-based pose, note pickup assistance, moving shots and PathPlanner routines."
+    },
+    "versions": [
+      "Early over-bumper, fixed subwoofer shooter replaced. Active centering abandoned for power demand. Blower shown as a plan/test in the interview; later release governs its fielded status."
+    ],
+    "analysis": "A clean priority sequence: first improve acquisition robustness and scoring range, then pursue trap. Keep the blower's legal mechanism and successful field configuration tied to dated evidence.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "# 2024-3467: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## NOCTURNE: passive centering trades motor count for geometry\n\nVersion: NOCTURNE at Granite State. [PDF p10](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10) · [Team explanation](https://www.chiefdelphi.com/t/445350/82) · [Team explanation](https://www.chiefdelphi.com/t/445350/95)\n\n**Published construction:** Fast under-bumper rollers with passive wedges replacing an active-centering beta design.\n\n**Team-stated reason or evidence boundary:** Reduce current while retaining useful acquisition.\n\n**Engineering analysis — original inference:** A passive wedge can convert forward motion into centering without another motor, but requires the right approach velocity, contact friction and space for the note to move laterally. If a note is pinched against the wedge before it is captured, a faster roller can make the jam worse. The source represents the Granite State configuration, and a later team account describes impact failures and difficult repairs. The observed update is therefore part of the technical recommendation: a pickup can satisfy its contact objective while losing event value through poor service access.\n\n**Proposed validation — not a completed test:** Test wide and oblique capture, then time a damaged roller replacement and verify alignment after repair.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## NOCTURNE: reuse a familiar joint and simplify the architecture\n\nVersion: NOCTURNE at Granite State. [PDF p3](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=3) · [PDF p6](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=6) · [PDF p7](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=7)\n\n**Published construction:** Single-joint arm, paired planetary drives, chain final reduction and output-angle sensing.\n\n**Team-stated reason or evidence boundary:** Reuse 2023 experience and preserve time before week 1.\n\n**Engineering analysis — original inference:** A familiar joint can reduce the number of new mechanical and software problems, which matters when experienced students have graduated. It still needs a force-path and backlash review for its new payload. Multiple chain runs can distribute load but require matched tension so one does not carry nearly everything. A hard-stop shot gives a mechanically referenced fallback when vision or arm control fails, but repeated impact into the stop can change alignment. Schedule feasibility is a legitimate architecture criterion alongside reach and nominal speed.\n\n**Proposed validation — not a completed test:** Measure output repeatability under reversing load and after repeated hard-stop approaches; test the documented fallback with vision disabled.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## NOCTURNE: stage the note before launch while minimizing distal mass\n\nVersion: NOCTURNE at Granite State. [PDF p8](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8) · [PDF p9](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=9)\n\n**Published construction:** Eight launch wheels; lightweight staging rollers and low-friction guides integrated with the scorer.\n\n**Team-stated reason or evidence boundary:** Hold and preaccelerate without another storage mechanism.\n\n**Engineering analysis — original inference:** A staging section can establish a repeatable note entry and prevent an uncontrolled piece from touching the flywheels prematurely. Using a smaller motor reduces moving mass only if it still supplies enough capture and feed force. The structure must resist both wheel vibration and arm acceleration; a flexible mount changes the launch angle even with correct encoder readings. A grippy stage and low-friction guides serve different purposes: one supplies drive while the other avoids wasting that effort. Test the full transfer at operating speed rather than assuming more grip everywhere is better.\n\n**Proposed validation — not a completed test:** Measure note-entry timing, launch dispersion and structure vibration with new and worn notes while the arm is moving.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## NOCTURNE: the real field exposed calibration and fallback needs\n\nVersion: NOCTURNE at Granite State. [PDF p12](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=12) · [PDF p13](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=13) · [Team explanation](https://www.chiefdelphi.com/t/445350/82) · [Team explanation](https://www.chiefdelphi.com/t/445350/95)\n\n**Published construction:** Pose-based shot map, motion lookahead and automatic intake stop after note detection.\n\n**Team-stated reason or evidence boundary:** Aim through brief vision loss and avoid accidental extra possession.\n\n**Engineering analysis — original inference:** A consistent pose estimate can still be systematically wrong if the practice target or camera geometry is wrong. Calibrating a lookup table against an inaccurate practice field can make reliable local shots fail at an event. A safe fallback should use a mechanically repeatable pose with a validated close shot, rather than trusting the same mistaken distance model. The fixed under-bumper intake also creates a possession-control requirement because it cannot simply retract away from a second piece. Mechanical geometry and sensor timing must be verified together.\n\n**Proposed validation — not a completed test:** Validate against measured field geometry, remove expected vision input, and test closely spaced notes for unintended second-piece capture.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 26.875×31-in; 6.12:1 L3; 18-ft/s free | [Source p5](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=5) |\n| Arm | two 49:1 planetaries; 16:64 final sprockets | [Source p7](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=7) |\n| Shooter | eight 4-in wheels; 1:1.625 source ratio | [Source p8](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8) |\n| Stage | 1.125-in rollers; 3:1 BAG drive | [Source p9](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=9) |\n| Intake | 1.5:1; passive 6-in centering wedges | [Source p10](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2024-3467",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/445350/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/1/7181bd879d49742086fb86009d7bc4cc8a8ff8cd_2_603x500.jpeg",
+        "post": 1,
+        "date": "2023-12-05T13:14:24.214Z",
+        "author": "Kevin_Leonard",
+        "context_tags": [
+          "intake",
+          "launcher"
+        ],
+        "caption": "2024 team 3467 — source image from post 1 (2023-12-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "2975d7781d73f2b72c.jpg",
+        "id": "d487bbc5686281a9ad",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2975d7781d73f2b72c.jpg"
+      },
+      {
+        "robot_id": "2024-3467",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/445350/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/5/85c51e6c8f54277b9d0e2356b69d9ca10eb59839_2_573x500.jpeg",
+        "post": 1,
+        "date": "2023-12-05T13:14:24.214Z",
+        "author": "Kevin_Leonard",
+        "context_tags": [
+          "intake",
+          "launcher"
+        ],
+        "caption": "2024 team 3467 — source image from post 1 (2023-12-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d355447bcbdaa6931d.jpg",
+        "id": "f5697850b7d4880a8a",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d355447bcbdaa6931d.jpg"
+      },
+      {
+        "id": "binder-c3e9d55e9042421508-p5-1",
+        "robot_id": "2024-3467",
+        "kind": "binder_figure",
+        "binder_id": "c3e9d55e9042421508",
+        "pdf_page": 5,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c3e9d55e9042421508-p5-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=5",
+        "caption": "2024-3467 · NOCTURNE at Granite State · Drivebase · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          125.40737915039062,
+          169.5,
+          500.4989013671875,
+          415.5
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 5
+      },
+      {
+        "id": "binder-c3e9d55e9042421508-p6-1",
+        "robot_id": "2024-3467",
+        "kind": "binder_figure",
+        "binder_id": "c3e9d55e9042421508",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c3e9d55e9042421508-p6-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=6",
+        "caption": "2024-3467 · NOCTURNE at Granite State · Arm and tower · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Arm and tower",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          147.98458862304688,
+          132.3291015625,
+          464.0154113769531,
+          493.8291015625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-c3e9d55e9042421508-p8-1",
+        "robot_id": "2024-3467",
+        "kind": "binder_figure",
+        "binder_id": "c3e9d55e9042421508",
+        "pdf_page": 8,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c3e9d55e9042421508-p8-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8",
+        "caption": "2024-3467 · NOCTURNE at Granite State · Shooter · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          76.91885375976562,
+          182.7548828125,
+          535.0811767578125,
+          446.0048828125
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 8
+      },
+      {
+        "id": "binder-c3e9d55e9042421508-p10-1",
+        "robot_id": "2024-3467",
+        "kind": "binder_figure",
+        "binder_id": "c3e9d55e9042421508",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-c3e9d55e9042421508-p10-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10",
+        "caption": "2024-3467 · NOCTURNE at Granite State · Under-bumper intake · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Under-bumper intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          41.21722412109375,
+          132.32958984375,
+          588.0327758789062,
+          351.32958984375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      }
+    ],
+    "source_post_count": 70,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-3467",
+        "discovery_post": "2024-3467-460678-9",
+        "url": "https://drive.google.com/file/d/1RGEwGheczJUGCZmGCz2t9k3jupoye1R3/view",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "41f2c6b9b62d6821e4"
+      },
+      {
+        "robot_id": "2024-3467",
+        "discovery_post": "2024-3467-460678-19",
+        "url": "https://cad.onshape.com/documents/2fc7c67cf0caa47d6fd88b44/w/50f8171b9e5f18a6a9f1f1d8/e/6bf3af59f010e7afe9e0d482?renderMode=0&uiState=660d75cda4208344b76722af",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "2b7b04e7f832f3bcaa"
+      },
+      {
+        "robot_id": "2024-3467",
+        "discovery_post": "2024-3467-445350-1",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.12",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "151fcf23bfa8afecdb"
+      },
+      {
+        "robot_id": "2024-3467",
+        "discovery_post": "2024-3467-445350-23",
+        "url": "https://cad.onshape.com/documents/2fc7c67cf0caa47d6fd88b44/w/50f8171b9e5f18a6a9f1f1d8/e/24363072fbeb6eea90180db0?renderMode=0&uiState=65a038ac2c5fb7195b91b41f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "35a9ddb19aa9599f0b"
+      }
+    ],
+    "id": "2024-3467",
+    "team_name": "Windham Windup",
+    "epa_rank": 18,
+    "epa": 47.63,
+    "epa_pre_champs": 46.48,
+    "epa_breakdown": {
+      "total_points": 47.63,
+      "auto_points": 11.86,
+      "teleop_points": 32.49,
+      "endgame_points": 3.29,
+      "melody_rp": 0.7334,
+      "ensemble_rp": 0.2088,
+      "tiebreaker_points": 0.22,
+      "auto_leave_points": 2.07,
+      "auto_note_points": 9.78,
+      "teleop_note_points": 32.49,
+      "speaker_points": 37.78,
+      "amplified_notes": 5.51,
+      "endgame_park_points": 0.15,
+      "endgame_on_stage_points": 2.56,
+      "endgame_harmony_points": 0.26,
+      "endgame_trap_points": 0.32,
+      "endgame_spotlight_points": 0.0,
+      "rp_1": 0.7334,
+      "rp_2": 0.2088,
+      "total_note_points": 42.27
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "c6a974a35d994136",
+      "92c17b7642f61748"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-c3e9d55e9042421508-123",
+      "tech-c3e9d55e9042421508-124",
+      "tech-c3e9d55e9042421508-125",
+      "tech-c3e9d55e9042421508-126"
+    ],
+    "binder_source_ids": [
+      "c3e9d55e9042421508"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-3467",
+      "year": 2024,
+      "team": 3467,
+      "epa_rank": 18,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"3467\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 16,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3467\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [
+        "c3e9d55e9042421508"
+      ],
+      "technical_note_ids": [
+        "tech-c3e9d55e9042421508-123",
+        "tech-c3e9d55e9042421508-124",
+        "tech-c3e9d55e9042421508-125",
+        "tech-c3e9d55e9042421508-126"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "c3e9d55e9042421508",
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/445350/92",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "c3e9d55e9042421508",
+      "subsystem": "intake",
+      "title": "NOCTURNE: passive centering trades motor count for geometry",
+      "pdf_pages": [
+        10
+      ],
+      "construction": "Fast under-bumper rollers with passive wedges replacing an active-centering beta design.",
+      "team_stated_reason": "Reduce current while retaining useful acquisition.",
+      "engineering_analysis": "A passive wedge can convert forward motion into centering without another motor, but requires the right approach velocity, contact friction and space for the note to move laterally. If a note is pinched against the wedge before it is captured, a faster roller can make the jam worse. The source represents the Granite State configuration, and a later team account describes impact failures and difficult repairs. The observed update is therefore part of the technical recommendation: a pickup can satisfy its contact objective while losing event value through poor service access.",
+      "recommended_validation": "Test wide and oblique capture, then time a damaged roller replacement and verify alignment after repair.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/445350/82",
+        "https://www.chiefdelphi.com/t/445350/95"
+      ],
+      "id": "tech-c3e9d55e9042421508-123",
+      "robot_id": "2024-3467",
+      "year": 2024,
+      "version_label": "NOCTURNE at Granite State",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10"
+        }
+      ],
+      "image_ids": [
+        "binder-c3e9d55e9042421508-p10-1"
+      ]
+    },
+    {
+      "binder_id": "c3e9d55e9042421508",
+      "subsystem": "positioning",
+      "title": "NOCTURNE: reuse a familiar joint and simplify the architecture",
+      "pdf_pages": [
+        3,
+        6,
+        7
+      ],
+      "construction": "Single-joint arm, paired planetary drives, chain final reduction and output-angle sensing.",
+      "team_stated_reason": "Reuse 2023 experience and preserve time before week 1.",
+      "engineering_analysis": "A familiar joint can reduce the number of new mechanical and software problems, which matters when experienced students have graduated. It still needs a force-path and backlash review for its new payload. Multiple chain runs can distribute load but require matched tension so one does not carry nearly everything. A hard-stop shot gives a mechanically referenced fallback when vision or arm control fails, but repeated impact into the stop can change alignment. Schedule feasibility is a legitimate architecture criterion alongside reach and nominal speed.",
+      "recommended_validation": "Measure output repeatability under reversing load and after repeated hard-stop approaches; test the documented fallback with vision disabled.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c3e9d55e9042421508-124",
+      "robot_id": "2024-3467",
+      "year": 2024,
+      "version_label": "NOCTURNE at Granite State",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 3,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=3"
+        },
+        {
+          "pdf_page": 6,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=6"
+        },
+        {
+          "pdf_page": 7,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=7"
+        }
+      ],
+      "image_ids": [
+        "binder-c3e9d55e9042421508-p6-1"
+      ]
+    },
+    {
+      "binder_id": "c3e9d55e9042421508",
+      "subsystem": "scoring",
+      "title": "NOCTURNE: stage the note before launch while minimizing distal mass",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "construction": "Eight launch wheels; lightweight staging rollers and low-friction guides integrated with the scorer.",
+      "team_stated_reason": "Hold and preaccelerate without another storage mechanism.",
+      "engineering_analysis": "A staging section can establish a repeatable note entry and prevent an uncontrolled piece from touching the flywheels prematurely. Using a smaller motor reduces moving mass only if it still supplies enough capture and feed force. The structure must resist both wheel vibration and arm acceleration; a flexible mount changes the launch angle even with correct encoder readings. A grippy stage and low-friction guides serve different purposes: one supplies drive while the other avoids wasting that effort. Test the full transfer at operating speed rather than assuming more grip everywhere is better.",
+      "recommended_validation": "Measure note-entry timing, launch dispersion and structure vibration with new and worn notes while the arm is moving.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-c3e9d55e9042421508-125",
+      "robot_id": "2024-3467",
+      "year": 2024,
+      "version_label": "NOCTURNE at Granite State",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-c3e9d55e9042421508-p8-1"
+      ]
+    },
+    {
+      "binder_id": "c3e9d55e9042421508",
+      "subsystem": "controls",
+      "title": "NOCTURNE: the real field exposed calibration and fallback needs",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "construction": "Pose-based shot map, motion lookahead and automatic intake stop after note detection.",
+      "team_stated_reason": "Aim through brief vision loss and avoid accidental extra possession.",
+      "engineering_analysis": "A consistent pose estimate can still be systematically wrong if the practice target or camera geometry is wrong. Calibrating a lookup table against an inaccurate practice field can make reliable local shots fail at an event. A safe fallback should use a mechanically repeatable pose with a validated close shot, rather than trusting the same mistaken distance model. The fixed under-bumper intake also creates a possession-control requirement because it cannot simply retract away from a second piece. Mechanical geometry and sensor timing must be verified together.",
+      "recommended_validation": "Validate against measured field geometry, remove expected vision input, and test closely spaced notes for unintended second-piece capture.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/445350/82",
+        "https://www.chiefdelphi.com/t/445350/95"
+      ],
+      "id": "tech-c3e9d55e9042421508-126",
+      "robot_id": "2024-3467",
+      "year": 2024,
+      "version_label": "NOCTURNE at Granite State",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=12"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=13"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-c3e9d55e9042421508-1",
+      "binder_id": "c3e9d55e9042421508",
+      "robot_id": "2024-3467",
+      "pdf_page": 5,
+      "component": "Base",
+      "published_parameters": "26.875×31-in; 6.12:1 L3; 18-ft/s free",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=5",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-c3e9d55e9042421508-2",
+      "binder_id": "c3e9d55e9042421508",
+      "robot_id": "2024-3467",
+      "pdf_page": 7,
+      "component": "Arm",
+      "published_parameters": "two 49:1 planetaries; 16:64 final sprockets",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=7",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-c3e9d55e9042421508-3",
+      "binder_id": "c3e9d55e9042421508",
+      "robot_id": "2024-3467",
+      "pdf_page": 8,
+      "component": "Shooter",
+      "published_parameters": "eight 4-in wheels; 1:1.625 source ratio",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-c3e9d55e9042421508-4",
+      "binder_id": "c3e9d55e9042421508",
+      "robot_id": "2024-3467",
+      "pdf_page": 9,
+      "component": "Stage",
+      "published_parameters": "1.125-in rollers; 3:1 BAG drive",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=9",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-c3e9d55e9042421508-5",
+      "binder_id": "c3e9d55e9042421508",
+      "robot_id": "2024-3467",
+      "pdf_page": 10,
+      "component": "Intake",
+      "published_parameters": "1.5:1; passive 6-in centering wedges",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "c3e9d55e9042421508",
+      "robot_id": "2024-3467",
+      "title": "2024-3467 NOCTURNE at Granite State technical publication",
+      "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+      "format": "pdf",
+      "pages": 13,
+      "sha256": "70cdcccd34b5594cc0ffad7ded6a78a63d4b87f2bb0a3ab109222037fd6a9a1c",
+      "bytes": 8800327,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "figure_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/445350/92",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2024-3467:publication-version:1",
+      "label": "NOCTURNE at Granite State",
+      "robot_id": "2024-3467",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-c3e9d55e9042421508-123",
+        "tech-c3e9d55e9042421508-124",
+        "tech-c3e9d55e9042421508-125",
+        "tech-c3e9d55e9042421508-126"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2024-3467",
+      "title": "2024-3467: technical construction and mechanism reasoning",
+      "year": 2024,
+      "robot_id": "2024-3467",
+      "kind": "robot_technical_review",
+      "body": "# 2024-3467: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## NOCTURNE: passive centering trades motor count for geometry\n\nVersion: NOCTURNE at Granite State. [PDF p10](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10) · [Team explanation](https://www.chiefdelphi.com/t/445350/82) · [Team explanation](https://www.chiefdelphi.com/t/445350/95)\n\n**Published construction:** Fast under-bumper rollers with passive wedges replacing an active-centering beta design.\n\n**Team-stated reason or evidence boundary:** Reduce current while retaining useful acquisition.\n\n**Engineering analysis — original inference:** A passive wedge can convert forward motion into centering without another motor, but requires the right approach velocity, contact friction and space for the note to move laterally. If a note is pinched against the wedge before it is captured, a faster roller can make the jam worse. The source represents the Granite State configuration, and a later team account describes impact failures and difficult repairs. The observed update is therefore part of the technical recommendation: a pickup can satisfy its contact objective while losing event value through poor service access.\n\n**Proposed validation — not a completed test:** Test wide and oblique capture, then time a damaged roller replacement and verify alignment after repair.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## NOCTURNE: reuse a familiar joint and simplify the architecture\n\nVersion: NOCTURNE at Granite State. [PDF p3](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=3) · [PDF p6](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=6) · [PDF p7](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=7)\n\n**Published construction:** Single-joint arm, paired planetary drives, chain final reduction and output-angle sensing.\n\n**Team-stated reason or evidence boundary:** Reuse 2023 experience and preserve time before week 1.\n\n**Engineering analysis — original inference:** A familiar joint can reduce the number of new mechanical and software problems, which matters when experienced students have graduated. It still needs a force-path and backlash review for its new payload. Multiple chain runs can distribute load but require matched tension so one does not carry nearly everything. A hard-stop shot gives a mechanically referenced fallback when vision or arm control fails, but repeated impact into the stop can change alignment. Schedule feasibility is a legitimate architecture criterion alongside reach and nominal speed.\n\n**Proposed validation — not a completed test:** Measure output repeatability under reversing load and after repeated hard-stop approaches; test the documented fallback with vision disabled.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## NOCTURNE: stage the note before launch while minimizing distal mass\n\nVersion: NOCTURNE at Granite State. [PDF p8](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8) · [PDF p9](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=9)\n\n**Published construction:** Eight launch wheels; lightweight staging rollers and low-friction guides integrated with the scorer.\n\n**Team-stated reason or evidence boundary:** Hold and preaccelerate without another storage mechanism.\n\n**Engineering analysis — original inference:** A staging section can establish a repeatable note entry and prevent an uncontrolled piece from touching the flywheels prematurely. Using a smaller motor reduces moving mass only if it still supplies enough capture and feed force. The structure must resist both wheel vibration and arm acceleration; a flexible mount changes the launch angle even with correct encoder readings. A grippy stage and low-friction guides serve different purposes: one supplies drive while the other avoids wasting that effort. Test the full transfer at operating speed rather than assuming more grip everywhere is better.\n\n**Proposed validation — not a completed test:** Measure note-entry timing, launch dispersion and structure vibration with new and worn notes while the arm is moving.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## NOCTURNE: the real field exposed calibration and fallback needs\n\nVersion: NOCTURNE at Granite State. [PDF p12](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=12) · [PDF p13](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=13) · [Team explanation](https://www.chiefdelphi.com/t/445350/82) · [Team explanation](https://www.chiefdelphi.com/t/445350/95)\n\n**Published construction:** Pose-based shot map, motion lookahead and automatic intake stop after note detection.\n\n**Team-stated reason or evidence boundary:** Aim through brief vision loss and avoid accidental extra possession.\n\n**Engineering analysis — original inference:** A consistent pose estimate can still be systematically wrong if the practice target or camera geometry is wrong. Calibrating a lookup table against an inaccurate practice field can make reliable local shots fail at an event. A safe fallback should use a mechanically repeatable pose with a validated close shot, rather than trusting the same mistaken distance model. The fixed under-bumper intake also creates a possession-control requirement because it cannot simply retract away from a second piece. Mechanical geometry and sensor timing must be verified together.\n\n**Proposed validation — not a completed test:** Validate against measured field geometry, remove expected vision input, and test closely spaced notes for unintended second-piece capture.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 26.875×31-in; 6.12:1 L3; 18-ft/s free | [Source p5](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=5) |\n| Arm | two 49:1 planetaries; 16:64 final sprockets | [Source p7](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=7) |\n| Shooter | eight 4-in wheels; 1:1.625 source ratio | [Source p8](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8) |\n| Stage | 1.125-in rollers; 3:1 BAG drive | [Source p9](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=9) |\n| Intake | 1.5:1; passive 6-in centering wedges | [Source p10](https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf"
+      ],
+      "path": "docs/technical/2024-3467.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-3467",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/445350/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/1/7181bd879d49742086fb86009d7bc4cc8a8ff8cd_2_603x500.jpeg",
+      "post": 1,
+      "date": "2023-12-05T13:14:24.214Z",
+      "author": "Kevin_Leonard",
+      "context_tags": [
+        "intake",
+        "launcher"
+      ],
+      "caption": "2024 team 3467 — source image from post 1 (2023-12-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "2975d7781d73f2b72c.jpg",
+      "id": "d487bbc5686281a9ad",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2975d7781d73f2b72c.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 603,
+      "height_px": 500,
+      "bytes": 75258,
+      "sha256": "ed210593e04d8a830597d7f5fe039bf4989db17197d2d17be421aa89f03405a3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "d487bbc5686281a9ad",
+      "reader_url": "index.html#image=d487bbc5686281a9ad",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-3467",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/445350/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/5/85c51e6c8f54277b9d0e2356b69d9ca10eb59839_2_573x500.jpeg",
+      "post": 1,
+      "date": "2023-12-05T13:14:24.214Z",
+      "author": "Kevin_Leonard",
+      "context_tags": [
+        "intake",
+        "launcher"
+      ],
+      "caption": "2024 team 3467 — source image from post 1 (2023-12-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d355447bcbdaa6931d.jpg",
+      "id": "f5697850b7d4880a8a",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d355447bcbdaa6931d.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 573,
+      "height_px": 500,
+      "bytes": 29670,
+      "sha256": "06010688167e67defc9f859414ef3afa1858b8db37a0b4bcffa74061602c2224",
+      "path_base": "corpus_root",
+      "reader_asset_id": "f5697850b7d4880a8a",
+      "reader_url": "index.html#image=f5697850b7d4880a8a",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c3e9d55e9042421508-p5-1",
+      "robot_id": "2024-3467",
+      "kind": "binder_figure",
+      "binder_id": "c3e9d55e9042421508",
+      "pdf_page": 5,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c3e9d55e9042421508-p5-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=5",
+      "caption": "2024-3467 · NOCTURNE at Granite State · Drivebase · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        125.40737915039062,
+        169.5,
+        500.4989013671875,
+        415.5
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 5,
+      "media_type": "image/jpeg",
+      "width_px": 864,
+      "height_px": 567,
+      "bytes": 57450,
+      "sha256": "07e8a783991ae9caee76826fea39510bcdd33eb866c7be4caf6d44114787c52f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c3e9d55e9042421508-p5-1",
+      "reader_url": "index.html#image=binder-c3e9d55e9042421508-p5-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c3e9d55e9042421508-p6-1",
+      "robot_id": "2024-3467",
+      "kind": "binder_figure",
+      "binder_id": "c3e9d55e9042421508",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c3e9d55e9042421508-p6-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=6",
+      "caption": "2024-3467 · NOCTURNE at Granite State · Arm and tower · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Arm and tower",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        147.98458862304688,
+        132.3291015625,
+        464.0154113769531,
+        493.8291015625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 728,
+      "height_px": 832,
+      "bytes": 40828,
+      "sha256": "a7cc63d3f8fb6dbadff079eecee91df22646e3a0eadecb9664676a7e1a50499b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c3e9d55e9042421508-p6-1",
+      "reader_url": "index.html#image=binder-c3e9d55e9042421508-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c3e9d55e9042421508-p8-1",
+      "robot_id": "2024-3467",
+      "kind": "binder_figure",
+      "binder_id": "c3e9d55e9042421508",
+      "pdf_page": 8,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c3e9d55e9042421508-p8-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=8",
+      "caption": "2024-3467 · NOCTURNE at Granite State · Shooter · PDF page 8, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        76.91885375976562,
+        182.7548828125,
+        535.0811767578125,
+        446.0048828125
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 8,
+      "media_type": "image/jpeg",
+      "width_px": 1055,
+      "height_px": 606,
+      "bytes": 45174,
+      "sha256": "1e280c77ba3bf083b65e64b1fd6265122d054a9736b8e59f6944a08da652f2f2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c3e9d55e9042421508-p8-1",
+      "reader_url": "index.html#image=binder-c3e9d55e9042421508-p8-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-c3e9d55e9042421508-p10-1",
+      "robot_id": "2024-3467",
+      "kind": "binder_figure",
+      "binder_id": "c3e9d55e9042421508",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-c3e9d55e9042421508-p10-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf#page=10",
+      "caption": "2024-3467 · NOCTURNE at Granite State · Under-bumper intake · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Under-bumper intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        41.21722412109375,
+        132.32958984375,
+        588.0327758789062,
+        351.32958984375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 1259,
+      "height_px": 505,
+      "bytes": 53552,
+      "sha256": "84c1b9e0d39c178f32949d413034a4f060880fa83ff7fe918ca8777d8213f334",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-c3e9d55e9042421508-p10-1",
+      "reader_url": "index.html#image=binder-c3e9d55e9042421508-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-3467",
+    "year": 2024,
+    "team": 3467,
+    "epa_rank": 18,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"3467\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 16,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3467\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [
+      "c3e9d55e9042421508"
+    ],
+    "technical_note_ids": [
+      "tech-c3e9d55e9042421508-123",
+      "tech-c3e9d55e9042421508-124",
+      "tech-c3e9d55e9042421508-125",
+      "tech-c3e9d55e9042421508-126"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "c3e9d55e9042421508",
+        "url": "https://www.chiefdelphi.com/uploads/short-url/ih64E84mBXtAJg7fKLBo7rgi5xM.pdf",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/445350/92",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-c3e9d55e9042421508-123:construction",
+    "tech-c3e9d55e9042421508-123:team_stated_reason",
+    "tech-c3e9d55e9042421508-123:engineering_analysis",
+    "tech-c3e9d55e9042421508-123:recommended_validation",
+    "tech-c3e9d55e9042421508-123:limitations",
+    "tech-c3e9d55e9042421508-124:construction",
+    "tech-c3e9d55e9042421508-124:team_stated_reason",
+    "tech-c3e9d55e9042421508-124:engineering_analysis",
+    "tech-c3e9d55e9042421508-124:recommended_validation",
+    "tech-c3e9d55e9042421508-124:limitations",
+    "tech-c3e9d55e9042421508-125:construction",
+    "tech-c3e9d55e9042421508-125:team_stated_reason",
+    "tech-c3e9d55e9042421508-125:engineering_analysis",
+    "tech-c3e9d55e9042421508-125:recommended_validation",
+    "tech-c3e9d55e9042421508-125:limitations",
+    "tech-c3e9d55e9042421508-126:construction",
+    "tech-c3e9d55e9042421508-126:team_stated_reason",
+    "tech-c3e9d55e9042421508-126:engineering_analysis",
+    "tech-c3e9d55e9042421508-126:recommended_validation",
+    "tech-c3e9d55e9042421508-126:limitations",
+    "param-c3e9d55e9042421508-1",
+    "param-c3e9d55e9042421508-2",
+    "param-c3e9d55e9042421508-3",
+    "param-c3e9d55e9042421508-4",
+    "param-c3e9d55e9042421508-5"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

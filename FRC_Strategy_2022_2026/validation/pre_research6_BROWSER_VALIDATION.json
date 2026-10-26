@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "browser": "Chromium 153 headless via Playwright",
+  "standalone_file": true,
+  "offline": true,
+  "embedded_images_decoded": 504,
+  "broken_images": [],
+  "all_robot_details": 125,
+  "all_binder_details": 125,
+  "full_size_view": true,
+  "download_original_bytes": true,
+  "deep_image_link": true,
+  "markdown_image_render": true,
+  "technical_text_search": true,
+  "agent_tab": true,
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "remote_requests": 0,
+  "page_errors": []
+}

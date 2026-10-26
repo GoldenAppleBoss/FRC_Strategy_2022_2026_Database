@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-1114",
+  "year": 2026,
+  "team": 1114,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 1114,
+    "robot": "Simbot Tim",
+    "primary": [
+      "https://youtu.be/ksvuenS2gGY",
+      "https://www.chiefdelphi.com/t/522887"
+    ],
+    "architecture": "Tall bump robot with large hopper, roller elevator and drum scorer.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification in linked CAD, not fully extracted here.",
+      "intake": "Collector/kicker now folds with hopper for bump clearance; intake iterations supported by 1678.",
+      "transfer": "Active floor and wall rollers plus passive side rollers reduce fuel bridging; roller elevator feeds drum.",
+      "scoring": "High mounted drum with limited hood travel; grip tape replaced silicone on selected surfaces for improved reported consistency.",
+      "endgame": "Climber installed March 1, removed by March 19 before first event due to mass. Stayed off as mass went into reliable feeding.",
+      "controls": "Three Limelights/odometry; variable intake agitation can also help recover from beaching."
+    },
+    "versions": [
+      "Active wall added after first event, then passive side rollers.",
+      "Team reports accuracy rising about 80% to 95–98% after surface changes; method/sample not independently audited."
+    ],
+    "analysis": "The key improvement was reducing low-output interruptions rather than raising peak rate. The documented climb removal is a resource trade toward consistent scoring, and should be recorded as removed hardware rather than an available endgame.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-1114",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/522887/5",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/7/3/d/73dae9a6f520ec5cfe0d6cbaa85aa179a667fe83.jpeg",
+        "post": 5,
+        "date": "2026-07-26T04:12:23.623Z",
+        "author": "NickBalyk",
+        "context_tags": [
+          "hopper",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2026 team 1114 — source image from post 5 (2026-07-26). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e525861ae7eb9578e9.jpg",
+        "id": "b98963305ad55420af",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e525861ae7eb9578e9.jpg"
+      }
+    ],
+    "source_post_count": 11,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-1114",
+        "discovery_post": "2026-1114-522887-1",
+        "url": "https://cad.onshape.com/documents/7959d159451177786d52dd9a/w/535bc31b66b0cc442967f1d0/e/a263c1a625ed8cf2484ae82f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "14eeb46f12d35119d4"
+      },
+      {
+        "robot_id": "2026-1114",
+        "discovery_post": "2026-1114-524512-1",
+        "url": "https://github.com/Simbotics/2026-Simbot-Tim",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "540883de68bd573c47"
+      }
+    ],
+    "id": "2026-1114",
+    "team_name": "Simbotics",
+    "epa_rank": 9,
+    "epa": 287.57,
+    "epa_pre_champs": 317.54,
+    "epa_breakdown": {
+      "total_points": 287.57,
+      "auto_points": 73.13,
+      "teleop_points": 140.52,
+      "endgame_points": 73.92,
+      "energized_rp": 0.6833,
+      "supercharged_rp": 0.6517,
+      "traversal_rp": -0.34162,
+      "tiebreaker_points": 287.57,
+      "auto_fuel": 73.92,
+      "auto_tower": -0.78,
+      "transition_fuel": 19.14,
+      "first_shift_fuel": 70.71,
+      "second_shift_fuel": 50.67,
+      "endgame_fuel": 73.5,
+      "endgame_tower": 0.42,
+      "rp_1": 0.6833,
+      "rp_2": 0.6517,
+      "rp_3": -0.34162,
+      "teleop_fuel": 214.01999999999998,
+      "total_fuel": 287.94,
+      "total_tower": -0.36000000000000004
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "a1b19fa0e9bd3be2",
+      "95f55a26d5c4a850"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-1114",
+      "year": 2026,
+      "team": 1114,
+      "epa_rank": 9,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1114\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 25,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1114\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-1114"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-1114",
+      "title": "A rising fuel path makes agitation and service mass consequential",
+      "start_seconds": 110,
+      "end_seconds": 365,
+      "construction": "The collector kicker changed from a hanging deployed bar to a member that folds with the hopper. Side agitation, passive dead-zone rollers, added gripping rollers and a belt-linked roller elevator feed the drum. The retained dated source account records the climber being installed March 1 and removed March 19 before the first event.",
+      "team_stated_reason": "The folding kicker is explained as improving bump clearance. Added contact surfaces respond to trapped fuel and insufficient feed. The retained team account attributes removing the climber to weight, with later mass devoted to reliable feeding.",
+      "engineering_analysis": "This design transports fuel upward before release, so every additional elevation change has a traction and packing cost. An apparently small passive roller may be important because it removes a place where the moving stream can unload into a dead pocket. The coupled hopper/kicker motion is also a route-clearance feature, not merely storage expansion. Removing a climber should be understood as reallocating mass and development effort to the bottleneck; it does not imply that tower scoring was mechanically impossible or that endgame fuel should be counted as climb value.",
+      "recommended_validation": "Log current and residual inventory along the entire rising path, test folding while fully loaded, and compare bump clearance before and after the kicker folds. Do not derive undisclosed gear ratios from the interview wording.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-1114",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/ksvuenS2gGY",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/522887"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 110,
+        "end_seconds": 365,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "ksvuenS2gGY",
+          "sha256": "4570de4494be5652689f5d1be0c8d6025d06c383e3ba2b001a546faa15bee9b9",
+          "caption_segments": 205,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-1114:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-1114",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-1114"
+      ],
+      "source_urls": [
+        "https://youtu.be/ksvuenS2gGY"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-1114",
+      "title": "2026-1114 · A rising fuel path makes agitation and service mass consequential",
+      "year": 2026,
+      "robot_id": "2026-1114",
+      "kind": "focused_technical_study",
+      "body": "# 2026-1114: A rising fuel path makes agitation and service mass consequential\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe collector kicker changed from a hanging deployed bar to a member that folds with the hopper. Side agitation, passive dead-zone rollers, added gripping rollers and a belt-linked roller elevator feed the drum. The retained dated source account records the climber being installed March 1 and removed March 19 before the first event.\n\n## Team-stated reasoning or boundary\n\nThe folding kicker is explained as improving bump clearance. Added contact surfaces respond to trapped fuel and insufficient feed. The retained team account attributes removing the climber to weight, with later mass devoted to reliable feeding.\n\n## Engineering interpretation — analyst inference\n\nThis design transports fuel upward before release, so every additional elevation change has a traction and packing cost. An apparently small passive roller may be important because it removes a place where the moving stream can unload into a dead pocket. The coupled hopper/kicker motion is also a route-clearance feature, not merely storage expansion. Removing a climber should be understood as reallocating mass and development effort to the bottleneck; it does not imply that tower scoring was mechanically impossible or that endgame fuel should be counted as climb value.\n\n## Proposed validation — not performed\n\nLog current and residual inventory along the entire rising path, test folding while fully loaded, and compare bump clearance before and after the kicker folds. Do not derive undisclosed gear ratios from the interview wording.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/ksvuenS2gGY](https://youtu.be/ksvuenS2gGY)\n- [https://www.chiefdelphi.com/t/522887](https://www.chiefdelphi.com/t/522887)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/ksvuenS2gGY",
+        "https://www.chiefdelphi.com/t/522887"
+      ],
+      "path": "docs/research_continuation/2026-1114.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-1114",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/522887/5",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/7/3/d/73dae9a6f520ec5cfe0d6cbaa85aa179a667fe83.jpeg",
+      "post": 5,
+      "date": "2026-07-26T04:12:23.623Z",
+      "author": "NickBalyk",
+      "context_tags": [
+        "hopper",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2026 team 1114 — source image from post 5 (2026-07-26). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e525861ae7eb9578e9.jpg",
+      "id": "b98963305ad55420af",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e525861ae7eb9578e9.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 537,
+      "height_px": 313,
+      "bytes": 38037,
+      "sha256": "4213a678ece255806d4c6586a3240d56c850e56786ff246478d3bba61d750797",
+      "path_base": "corpus_root",
+      "reader_asset_id": "b98963305ad55420af",
+      "reader_url": "index.html#image=b98963305ad55420af",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-1114",
+    "year": 2026,
+    "team": 1114,
+    "epa_rank": 9,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1114\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 25,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1114\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-1114:construction",
+    "study6-2026-1114:team_stated_reason",
+    "study6-2026-1114:engineering_analysis",
+    "study6-2026-1114:recommended_validation",
+    "study6-2026-1114:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-3005",
+  "year": 2023,
+  "team": 3005,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 3005,
+    "robot": "AMP",
+    "primary": [
+      "https://youtu.be/_k9of7qRoeY",
+      "https://www.chiefdelphi.com/t/434083"
+    ],
+    "architecture": "Light pivoting telescopic arm with a highly articulated dual-piece wrist.",
+    "subsystems": {
+      "intake": "Distinct cone and cube contact geometries; wrist orientation permits acquisition of upright and tipped pieces.",
+      "transfer": "Direct end-effector acquisition avoids a separate transfer.",
+      "scoring": "Telescoping arm on a braced A-frame. Cable bracing helps resist fore/aft loads without a heavy upper structure.",
+      "drivetrain": "REV MAXSwerve; team describes the module's lineage from its earlier custom swerve development.",
+      "endgame": "Charge-station implementation not established in this interview.",
+      "controls": "Piece mode and LEDs coordinate human-player loading and mechanism presets."
+    },
+    "versions": [
+      "Team reports eleventh-generation cone intake and fourth-generation cube intake at filming.",
+      "Selected pivoting telescope over a slanted elevator concept for expected mass and speed advantages."
+    ],
+    "analysis": "An important reference for treating the cone and cube interfaces as separate optimization problems even when they share one wrist. The stated prototype counts do not establish eleven competition configurations.",
+    "limits": [
+      "Endgame method needs further evidence.",
+      "Individual prototype geometries not fully enumerated."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-3005",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/434083/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/d/fd40adf5205d6052e2948265979b73c614e19b5e_2_409x500.jpeg",
+        "post": 1,
+        "date": "2023-04-12T15:49:35.923Z",
+        "author": "Orion.DeYoe",
+        "context_tags": [],
+        "caption": "2023 team 3005 — source image from post 1 (2023-04-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "76253092a72051c64c.jpg",
+        "id": "e94bde91891fe1ed38",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/76253092a72051c64c.jpg"
+      }
+    ],
+    "source_post_count": 11,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-3005",
+        "discovery_post": "2023-3005-434083-1",
+        "url": "https://cad.onshape.com/documents/230339548ba1828471e00cef/w/7608c62ea34bc84ee4acccd6/e/6a002e572ec5e1812bae3918?renderMode=0&uiState=6436b79f99bcb7580ba64f8e",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f1ac0533f3cf9ed0fe"
+      }
+    ],
+    "id": "2023-3005",
+    "team_name": "RoboChargers",
+    "epa_rank": 6,
+    "epa": 75.65,
+    "epa_pre_champs": 71.54,
+    "epa_breakdown": {
+      "total_points": 75.65,
+      "auto_points": 18.68,
+      "teleop_points": 46.84,
+      "endgame_points": 7.16,
+      "links_rp": 0.7498,
+      "activation_rp": 0.3384,
+      "tiebreaker_points": 72.68,
+      "auto_charge_station_points": 6.59,
+      "auto_pieces": 2.22,
+      "teleop_grid_points": 32.63,
+      "bottom_pieces": 0.98,
+      "middle_pieces": 4.73,
+      "top_pieces": 4.79,
+      "cube_points": 14.27,
+      "cone_points": 28.06,
+      "links": 3.44,
+      "endgame_charge_station_points": 7.16,
+      "rp_1": 0.7498,
+      "rp_2": 0.3384
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "drivetrain": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "56f87a5d66a4ba10",
+      "4df6eaf74d66ce2a"
+    ],
+    "tags": [
+      "elevator",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-3005",
+      "year": 2023,
+      "team": 3005,
+      "epa_rank": 6,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"3005\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 10,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3005\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-3005"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-3005",
+      "title": "Separate contact development can outperform one compromised gripper",
+      "start_seconds": 110,
+      "end_seconds": 510,
+      "construction": "A telescoping arm on a braced A-frame uses a highly articulated wrist and distinct cone/cube contact arrangements. The interview reports eleven cone-intake iterations versus four cube-intake generations.",
+      "team_stated_reason": "The team’s stated goal is a light, fast robot that acquires cones in different orientations and scores high/mid; the different contact systems emerged through tests.",
+      "engineering_analysis": "The separate iteration counts show that the two pieces presented different problems. Avoid inferring that a more complex-looking gripper was unnecessary without comparing acquisition and release reliability. Bracing saves upper structural mass only if its tension and anchors remain repeatable.",
+      "recommended_validation": "Test both pieces, cable-brace tension and wrist motion limits; include calibration and replacement time.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-3005",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/_k9of7qRoeY",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/434083"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 110,
+        "end_seconds": 510,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "_k9of7qRoeY",
+          "sha256": "0e83e0b62f9d1992319713a55dcc21827ae66e955887ca4c4fabefce593afc9b",
+          "caption_segments": 285,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-3005:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-3005",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-3005"
+      ],
+      "source_urls": [
+        "https://youtu.be/_k9of7qRoeY"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-3005",
+      "title": "2023-3005 · Separate contact development can outperform one compromised gripper",
+      "year": 2023,
+      "robot_id": "2023-3005",
+      "kind": "focused_technical_study",
+      "body": "# 2023-3005: Separate contact development can outperform one compromised gripper\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA telescoping arm on a braced A-frame uses a highly articulated wrist and distinct cone/cube contact arrangements. The interview reports eleven cone-intake iterations versus four cube-intake generations.\n\n## Team-stated reasoning or boundary\n\nThe team’s stated goal is a light, fast robot that acquires cones in different orientations and scores high/mid; the different contact systems emerged through tests.\n\n## Engineering interpretation — analyst inference\n\nThe separate iteration counts show that the two pieces presented different problems. Avoid inferring that a more complex-looking gripper was unnecessary without comparing acquisition and release reliability. Bracing saves upper structural mass only if its tension and anchors remain repeatable.\n\n## Proposed validation — not performed\n\nTest both pieces, cable-brace tension and wrist motion limits; include calibration and replacement time.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/_k9of7qRoeY](https://youtu.be/_k9of7qRoeY)\n- [https://www.chiefdelphi.com/t/434083](https://www.chiefdelphi.com/t/434083)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/_k9of7qRoeY",
+        "https://www.chiefdelphi.com/t/434083"
+      ],
+      "path": "docs/research_continuation/2023-3005.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-3005",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/434083/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/d/fd40adf5205d6052e2948265979b73c614e19b5e_2_409x500.jpeg",
+      "post": 1,
+      "date": "2023-04-12T15:49:35.923Z",
+      "author": "Orion.DeYoe",
+      "context_tags": [],
+      "caption": "2023 team 3005 — source image from post 1 (2023-04-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "76253092a72051c64c.jpg",
+      "id": "e94bde91891fe1ed38",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/76253092a72051c64c.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 409,
+      "height_px": 500,
+      "bytes": 41450,
+      "sha256": "2a0ef4f7a3966b4dc5944cc34dcede910be027cdaa5b0939b7ec11fc7a431bdf",
+      "path_base": "corpus_root",
+      "reader_asset_id": "e94bde91891fe1ed38",
+      "reader_url": "index.html#image=e94bde91891fe1ed38",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-3005",
+    "year": 2023,
+    "team": 3005,
+    "epa_rank": 6,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"3005\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 10,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3005\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-3005:construction",
+    "study6-2023-3005:team_stated_reason",
+    "study6-2023-3005:engineering_analysis",
+    "study6-2023-3005:recommended_validation",
+    "study6-2023-3005:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

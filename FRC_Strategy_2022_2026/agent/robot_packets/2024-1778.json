@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-1778",
+  "year": 2024,
+  "team": 1778,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 1778,
+    "robot": "Zappy Feet",
+    "primary": [
+      "https://youtu.be/EEC-2XpqYQ0",
+      "https://www.chiefdelphi.com/t/466727"
+    ],
+    "architecture": "Minimal-roller deployed pickup and shooter with mechanically linked amp bar; redundant climbers.",
+    "subsystems": {
+      "drivetrain": "Swerve platform.",
+      "intake": "Four-roller over-bumper collector kept light for rapid retract.",
+      "transfer": "Indexer stores the note and doubles as the amp delivery path.",
+      "scoring": "Independent top/bottom launcher, asymmetric wheel count and virtual-four-bar amp guide.",
+      "endgame": "Two motors per climber; team reports continuing to climb with one entire climber removed.",
+      "controls": "Source-loading fallback, heading presets, shot lock/reacquire and tested autonomous routines."
+    },
+    "versions": [
+      "One climber removed for repairs at Bonney Lake; redundant side preserved endgame. Core design intentionally limits additional actuators."
+    ],
+    "analysis": "A useful reliability case: redundancy protects an actual scoring function, and source loading remains possible after intake loss. Assess the mass/electrical cost against the specific failure it survives.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-1778",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/466727/5",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/f/1/f17b72c8fafd5f2ed8d94b90971ce8d4347c84c7.png",
+        "post": 5,
+        "date": "2024-06-02T05:46:14.301Z",
+        "author": "ApolloG",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2024 team 1778 — source image from post 5 (2024-06-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "264e2bdf5cbb6eef7a.jpg",
+        "id": "da15ac78c17b852b38",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/264e2bdf5cbb6eef7a.jpg"
+      },
+      {
+        "robot_id": "2024-1778",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/466727/5",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/5/15bded835bc4ba6b936511c10826fb181e6cb0c7_2_324x250.png",
+        "post": 5,
+        "date": "2024-06-02T05:46:14.301Z",
+        "author": "ApolloG",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2024 team 1778 — source image from post 5 (2024-06-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "4cf83335c2a06d961a.jpg",
+        "id": "f5a1c179e82e03b346",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/4cf83335c2a06d961a.jpg"
+      }
+    ],
+    "source_post_count": 4,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-1778",
+        "discovery_post": "2024-1778-466727-1",
+        "url": "https://cad.onshape.com/documents/bcbf24dd5a87e45bf4e7feb1/w/ffa6c81a1dfe71234cde9aca/e/e925d7cf2a2b03135bc67046",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "0381190f69d7d508f5"
+      },
+      {
+        "robot_id": "2024-1778",
+        "discovery_post": "2024-1778-466727-1",
+        "url": "https://github.com/FIRST1778/2024-Robot-Code-Public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b6a03d7ad5a0c9ab4f"
+      }
+    ],
+    "id": "2024-1778",
+    "team_name": "Chill Out",
+    "epa_rank": 24,
+    "epa": 46.73,
+    "epa_pre_champs": 41.38,
+    "epa_breakdown": {
+      "total_points": 46.73,
+      "auto_points": 13.77,
+      "teleop_points": 28.79,
+      "endgame_points": 4.16,
+      "melody_rp": 0.5624,
+      "ensemble_rp": 0.2837,
+      "tiebreaker_points": 0.28,
+      "auto_leave_points": 1.95,
+      "auto_note_points": 11.82,
+      "teleop_note_points": 28.79,
+      "speaker_points": 36.79,
+      "amplified_notes": 4.99,
+      "endgame_park_points": -0.03,
+      "endgame_on_stage_points": 3.15,
+      "endgame_harmony_points": 0.44,
+      "endgame_trap_points": 0.53,
+      "endgame_spotlight_points": 0.08,
+      "rp_1": 0.5624,
+      "rp_2": 0.2837,
+      "total_note_points": 40.61
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "8bca3f8a8dcc3fc4",
+      "6b747b003ccb04eb"
+    ],
+    "tags": [
+      "climb",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-1778",
+      "year": 2024,
+      "team": 1778,
+      "epa_rank": 24,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1778\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 15,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1778\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-1778"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-1778",
+      "title": "Minimal intake rollers and redundant climb capacity have different justifications",
+      "start_seconds": 80,
+      "end_seconds": 260,
+      "construction": "The over-bumper collector uses four rollers after early prototyping. An indexer retains the note and serves amp delivery through a virtual linkage. The top/bottom launcher uses asymmetric wheel contact. Each climber has two motors, and the team describes continuing after one side was removed following a failure.",
+      "team_stated_reason": "The team ties the reduced collector to sufficient pickup performance with lower mass, and the unusual climb power to single-side operation and imperfect chain alignment. Asymmetric contact is reported to improve spin/stability and range.",
+      "engineering_analysis": "Simplicity should be evaluated per task rather than imposed uniformly. Removing an unnecessary roller can improve collector dynamics, while adding climb reserve can preserve a match outcome after damage. Those are compatible engineering decisions. Single-side climbing also changes structural loads and roll, so redundancy is only real if the frame and scoring mechanisms tolerate the alternate load case.",
+      "recommended_validation": "Test the minimum collector with worn notes and wall contact. Validate disabled-side climb loading and harmony clearance, rather than extrapolating from two-side nominal lifts.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-1778",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/EEC-2XpqYQ0",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/466727"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 260,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "EEC-2XpqYQ0",
+          "sha256": "96b9f1ec4816b5577bb8cab9dd510cdb61912156dae563532705d7d712b8933f",
+          "caption_segments": 218,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-1778:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-1778",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-1778"
+      ],
+      "source_urls": [
+        "https://youtu.be/EEC-2XpqYQ0"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-1778",
+      "title": "2024-1778 · Minimal intake rollers and redundant climb capacity have different justifications",
+      "year": 2024,
+      "robot_id": "2024-1778",
+      "kind": "focused_technical_study",
+      "body": "# 2024-1778: Minimal intake rollers and redundant climb capacity have different justifications\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe over-bumper collector uses four rollers after early prototyping. An indexer retains the note and serves amp delivery through a virtual linkage. The top/bottom launcher uses asymmetric wheel contact. Each climber has two motors, and the team describes continuing after one side was removed following a failure.\n\n## Team-stated reasoning or boundary\n\nThe team ties the reduced collector to sufficient pickup performance with lower mass, and the unusual climb power to single-side operation and imperfect chain alignment. Asymmetric contact is reported to improve spin/stability and range.\n\n## Engineering interpretation — analyst inference\n\nSimplicity should be evaluated per task rather than imposed uniformly. Removing an unnecessary roller can improve collector dynamics, while adding climb reserve can preserve a match outcome after damage. Those are compatible engineering decisions. Single-side climbing also changes structural loads and roll, so redundancy is only real if the frame and scoring mechanisms tolerate the alternate load case.\n\n## Proposed validation — not performed\n\nTest the minimum collector with worn notes and wall contact. Validate disabled-side climb loading and harmony clearance, rather than extrapolating from two-side nominal lifts.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/EEC-2XpqYQ0](https://youtu.be/EEC-2XpqYQ0)\n- [https://www.chiefdelphi.com/t/466727](https://www.chiefdelphi.com/t/466727)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/EEC-2XpqYQ0",
+        "https://www.chiefdelphi.com/t/466727"
+      ],
+      "path": "docs/research_continuation/2024-1778.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-1778",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/466727/5",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/f/1/f17b72c8fafd5f2ed8d94b90971ce8d4347c84c7.png",
+      "post": 5,
+      "date": "2024-06-02T05:46:14.301Z",
+      "author": "ApolloG",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2024 team 1778 — source image from post 5 (2024-06-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "264e2bdf5cbb6eef7a.jpg",
+      "id": "da15ac78c17b852b38",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/264e2bdf5cbb6eef7a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 579,
+      "height_px": 496,
+      "bytes": 40825,
+      "sha256": "3d1432953bceaaeb1e1bc5f80292a0fc126df5b294def7ce7432fcf9df0d5e47",
+      "path_base": "corpus_root",
+      "reader_asset_id": "da15ac78c17b852b38",
+      "reader_url": "index.html#image=da15ac78c17b852b38",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-1778",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/466727/5",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/5/15bded835bc4ba6b936511c10826fb181e6cb0c7_2_324x250.png",
+      "post": 5,
+      "date": "2024-06-02T05:46:14.301Z",
+      "author": "ApolloG",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2024 team 1778 — source image from post 5 (2024-06-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "4cf83335c2a06d961a.jpg",
+      "id": "f5a1c179e82e03b346",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/4cf83335c2a06d961a.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 324,
+      "height_px": 250,
+      "bytes": 17771,
+      "sha256": "2b60a4f6986632fcc3ad9a99cfd4c49d1013d5cadb6597b30c8f64f0f9644b88",
+      "path_base": "corpus_root",
+      "reader_asset_id": "f5a1c179e82e03b346",
+      "reader_url": "index.html#image=f5a1c179e82e03b346",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-1778",
+    "year": 2024,
+    "team": 1778,
+    "epa_rank": 24,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1778\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 15,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1778\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-1778:construction",
+    "study6-2024-1778:team_stated_reason",
+    "study6-2024-1778:engineering_analysis",
+    "study6-2024-1778:recommended_validation",
+    "study6-2024-1778:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

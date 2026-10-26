@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-5172",
+  "year": 2022,
+  "team": 5172,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 5172,
+    "robot": "Gators 2022",
+    "primary": [
+      "https://youtu.be/5pX6RHlKFR0"
+    ],
+    "architecture": "First-year swerve scorer with carefully staged cargo and a reverted climber.",
+    "subsystems": {
+      "drivetrain": "First swerve season after differential drive; team emphasized driver practice.",
+      "intake": "Nonparallel four-bar with carbon/foam roller and printed mecanum features; passive deployed flap bridges the bumper gap.",
+      "transfer": "Single-roller ramp; wrong-color cargo rejected using an alternative turret aim.",
+      "scoring": "Aluminum/nitrile main wheel with brass inertia disks; back wheels reduce spin. Wheel idles throughout the match and changes speed with range.",
+      "endgame": "First-regional pivot/telescope replaced by faster four-stage design at regional 2; reliability problems led to a return to original architecture for Worlds with wider hooks and a second rear hook. Reported 15–20 seconds.",
+      "controls": "LED shooter-readiness feedback supports driver decisions."
+    },
+    "versions": [
+      "Three distinct climber states: original, faster replacement, revised original at Worlds."
+    ],
+    "analysis": "A reverted design is a real season evolution, not missing progress. Count successful retained climbs and total match contribution rather than treating a faster prototype as a superior final robot.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-5172",
+    "team_name": "Gators",
+    "epa_rank": 35,
+    "epa": 49.08,
+    "epa_pre_champs": 51.21,
+    "epa_breakdown": {
+      "total_points": 49.08,
+      "auto_points": 13.41,
+      "teleop_points": 30.14,
+      "endgame_points": 5.53,
+      "cargo_rp": 0.792,
+      "hangar_rp": 0.2855,
+      "tiebreaker_points": 49.08,
+      "auto_taxi_points": 2.32,
+      "auto_cargo_lower": 0.01,
+      "auto_cargo_upper": 2.77,
+      "teleop_cargo_lower": -0.43,
+      "teleop_cargo_upper": 15.28,
+      "rp_1": 0.792,
+      "rp_2": 0.2855
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "134525527dc496a5"
+    ],
+    "tags": [
+      "climb",
+      "four-bar",
+      "telescoping arm",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-5172",
+      "year": 2022,
+      "team": 5172,
+      "epa_rank": 35,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"5172\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 5,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"5172\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-5172"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-5172",
+      "title": "A fast rejected climb is not the same as a useful fielded climb",
+      "start_seconds": 79,
+      "end_seconds": 475,
+      "construction": "A nonparallel four-bar and passive bumper-gap flap feed a ramp and turreted launcher with added brass inertia. The team says a faster two-arm climb had mechanical problems, so it reverted and widened hooks to clear the turret/reduce swing.",
+      "team_stated_reason": "The source explicitly prioritizes the revised reliable climb over the failed fast alternative.",
+      "engineering_analysis": "Useful timing includes completion probability and physical interference. A turret that scores well can still block the climb’s swept envelope. Continuous wheel idling also has an electrical/thermal cost that should be measured.",
+      "recommended_validation": "Test hook clearance over turret range, climb swing and repeated-volley wheel recovery.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-5172",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/5pX6RHlKFR0",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 475,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "5pX6RHlKFR0",
+          "sha256": "555e32f41f2a2a8979bf9434c9346a66ec2ca19a351baf8270401d6c044a4ced",
+          "caption_segments": 289,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-5172:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-5172",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-5172"
+      ],
+      "source_urls": [
+        "https://youtu.be/5pX6RHlKFR0"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-5172",
+      "title": "2022-5172 · A fast rejected climb is not the same as a useful fielded climb",
+      "year": 2022,
+      "robot_id": "2022-5172",
+      "kind": "focused_technical_study",
+      "body": "# 2022-5172: A fast rejected climb is not the same as a useful fielded climb\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA nonparallel four-bar and passive bumper-gap flap feed a ramp and turreted launcher with added brass inertia. The team says a faster two-arm climb had mechanical problems, so it reverted and widened hooks to clear the turret/reduce swing.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly prioritizes the revised reliable climb over the failed fast alternative.\n\n## Engineering interpretation — analyst inference\n\nUseful timing includes completion probability and physical interference. A turret that scores well can still block the climb’s swept envelope. Continuous wheel idling also has an electrical/thermal cost that should be measured.\n\n## Proposed validation — not performed\n\nTest hook clearance over turret range, climb swing and repeated-volley wheel recovery.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/5pX6RHlKFR0](https://youtu.be/5pX6RHlKFR0)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/5pX6RHlKFR0"
+      ],
+      "path": "docs/research_continuation/2022-5172.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-5172",
+    "year": 2022,
+    "team": 5172,
+    "epa_rank": 35,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"5172\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 5,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"5172\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-5172:construction",
+    "study6-2022-5172:team_stated_reason",
+    "study6-2022-5172:engineering_analysis",
+    "study6-2022-5172:recommended_validation",
+    "study6-2022-5172:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

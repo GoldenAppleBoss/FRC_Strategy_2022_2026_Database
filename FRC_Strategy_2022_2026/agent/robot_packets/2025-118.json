@@ -1,0 +1,1175 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-118",
+  "year": 2025,
+  "team": 118,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 118,
+    "robot": "Firefly",
+    "primary": [
+      "https://youtu.be/UQoFvZiMdpA",
+      "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf"
+    ],
+    "architecture": "Low-powered arm/lift with distinct coral and algae sides and actively oriented floor pickup.",
+    "subsystems": {
+      "drivetrain": "Swerve; low-mounted transmission hardware emphasizes CG control.",
+      "intake": "Added a twisted vertical belt after perpendicular coral caused driver difficulty; grip tape and separately driven roller groups control orientation.",
+      "transfer": "Remote motors and split shafts transmit independent effector power through a narrow arm package.",
+      "scoring": "Custom cycloidal arm reductions; lift raises primarily for L4. Opposed coral/algae effectors use different torque ratios.",
+      "endgame": "Central rotating cage capture evolved from driver-aligned fingers to intake wheels, magnets, switches and automated latches.",
+      "controls": "Custom power-distribution electronics permit individual device resets; sensed latches and visual cues support automated climb."
+    },
+    "versions": [
+      "Reveal lacked later perpendicular-coral belt.",
+      "Climber geometry, magnets, sensing and automation changed substantially throughout season."
+    ],
+    "analysis": "This is a reference for moving power away from an elevated manipulator and refining intake orientation locally. It also shows that an initially manual deep climb can evolve through sensing and capture geometry rather than complete replacement.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2025-118: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## FIREFLY: wheel stiffness is part of end-effector accuracy\n\nVersion: FIREFLY. [PDF p10](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=10) · [PDF p11](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11) · [Team explanation](https://www.chiefdelphi.com/t/502317/5)\n\n**Published construction:** Custom Grip Lock hubs, lowered Mk4-C base and later lower drive gearing.\n\n**Team-stated reason or evidence boundary:** Reduce tire flex and preserve a stiff floor-to-tool reference.\n\n**Engineering analysis — original inference:** Wheel compliance permits the chassis to rotate relative to the carpet even when the frame and elevator are stiff. The resulting angular error becomes a larger displacement at an elevated tool, so a tire-hub change can improve L4 placement without changing the wrist. A low frame and ballast distribution address another component of the same stability problem. The gearing revision also changes acceleration and braking behavior; it needs drive retuning with the real mechanism load. Do not treat a module model or a free speed as a complete explanation of placement repeatability.\n\n**Proposed validation — not a completed test:** Measure tool-tip displacement under known lateral load and during stopping, separating tire deflection from lift deflection.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: short lift and low-mounted carriage actuators\n\nVersion: FIREFLY. [PDF p8](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=8) · [PDF p12](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=12)\n\n**Published construction:** Single-stage counterbalanced lift; thin-wall tube; algae, coral and arm drives mounted low on carriage.\n\n**Team-stated reason or evidence boundary:** Low moving center of gravity and direct piece delivery.\n\n**Engineering analysis — original inference:** Remoting the roller drives removes mass from the far end of the arm while keeping it on the lift carriage. That reduces one component of arm inertia without eliminating the carriage mass that the lift must accelerate. A single-stage lift can simplify guidance but requires the arm to supply the remaining reach and orientation. Counterbalance reduces gravity demand, while belt tension and routing still determine tracking and friction. The integration goal is a useful task sequence with no wait for piece delivery, rather than a collection of independently fast axes.\n\n**Proposed validation — not a completed test:** Measure lift current and tool settling during combined motion; verify belt tension and direct-handoff clearance at every relevant pose.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: sideways orientation while maintaining coral ownership\n\nVersion: FIREFLY. [PDF p14](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14)\n\n**Published construction:** Sideways reorienting belt, compliant tube rollers, independent roller drives and twisted-belt transmission.\n\n**Team-stated reason or evidence boundary:** Direct handoff or controlled L1 without staging the coral.\n\n**Engineering analysis — original inference:** A sideways belt gives the tube a deliberate transverse velocity rather than relying only on passive wedges. The remaining contacts must keep ownership while that reorientation happens; an unconstrained gap can erase the advantage. Separate roller drives permit holding a tube for L1 or continuing into the end effector, but create more state choices and sensor requirements. Twisted and bent belts solve an off-axis power-routing problem, while adding tracking, wear and alignment concerns. Their tension cannot be chosen solely for torque transmission if the belt also participates in piece contact.\n\n**Proposed validation — not a completed test:** Film diagonal and lengthwise entries through both L1 and handoff branches, then repeat after belt wear and an intake impact.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: dedicated floor-algae route integrates with climb\n\nVersion: FIREFLY. [PDF p13](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=13)\n\n**Published construction:** Counter-rotating floor-algae rollers; reinforced printed bevel gears; three-piece jackshaft around climb packaging.\n\n**Team-stated reason or evidence boundary:** Acquire algae and deliver it to the arm without subsystem interference.\n\n**Engineering analysis — original inference:** A dedicated floor pickup lets the main end effector specialize in retention and scoring rather than reaching a difficult carpet pose. That value must exceed the added mass and handoff complexity. Segmenting the jackshaft can make assembly possible around another subsystem, but every joint adds an alignment and torque-transfer interface. Printed bevel gears need stable bearing support and an appropriate tooth load; a successful material in another mechanism does not certify this one. The pathway should remain useful if the climb is damaged, consistent with the robot’s stated degraded-operation objective.\n\n**Proposed validation — not a completed test:** Test floor acquisition and handoff while climb is stowed, partially deployed and disabled; inspect bevel alignment under peak capture load.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: internal coral grip and algae torque selected by test\n\nVersion: FIREFLY. [PDF p15](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=15) · [Team explanation](https://www.chiefdelphi.com/t/502317/11)\n\n**Published construction:** Internal coral gripping; compliant placement geometry; shared tool also acquires and scores algae.\n\n**Team-stated reason or evidence boundary:** Control both pieces while keeping moving structure light.\n\n**Engineering analysis — original inference:** Gripping inside a tube changes the reference surface and can leave the outside clearer for placement. It still needs a controlled release and enough compliance to tolerate the branch without wedging the tool. Algae retention is a different torque problem: the wheel must deform and hold a soft sphere rather than simply spin at the desired acquisition speed. A practical way to choose the ratio is to measure the required final-shaft torque, then check speed and motor current under that load. This is more informative than selecting a reduction from a famous robot without matching its compression and geometry.\n\n**Proposed validation — not a completed test:** Measure algae pull-in torque and holding current, then test coral release with intentional branch misalignment and the same worn contacts.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: powered magnetic cage acquisition and sensed latching\n\nVersion: FIREFLY. [PDF p10](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=10) · [PDF p16](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16)\n\n**Published construction:** Magnetic TPU intake wheels pull cage into two one-way latches; winch/rotation share a drive.\n\n**Team-stated reason or evidence boundary:** Capture before automatically lifting.\n\n**Engineering analysis — original inference:** Magnetic attraction can improve the first contact with a steel cage, but the final robot load should pass through the designed latch and structure. Two capture switches give the controller a stronger condition than assuming engagement after a fixed time. Shared winch and rotation power saves hardware while tying the phase sequence to transmission geometry. The dated timeline records later additions to the cage collector and automation, so the final system should not be projected back to the robot’s first event. Total climb time includes acquisition and settling, not just the powered lift.\n\n**Proposed validation — not a completed test:** Test one-sided and swinging-cage contact, sensor disagreement and disable retention; confirm the latch carries the suspended load.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: custom cycloidal reduction is an iterative capability\n\nVersion: FIREFLY. [PDF p17](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17)\n\n**Published construction:** 23:1 dual-disc cycloidal; hardened steel discs; rolling pins; team reports about 0.3° backlash.\n\n**Team-stated reason or evidence boundary:** Compact, lightweight low-backlash joint drive.\n\n**Engineering analysis — original inference:** A cycloidal gearbox trades ordinary spur stages for a shaped eccentric load path with multiple contacts. Opposed discs can reduce dynamic imbalance, but machining accuracy, pin support and eccentric bearings still control vibration, efficiency and backlash. The reported backlash is a team result for its design and measurement conditions. It should not be assumed for a copied outline made with a different process. This is a mature, revised manufacturing capability, so its adoption cost includes inspection, heat treatment and assembly knowledge rather than just CAD availability.\n\n**Proposed validation — not a completed test:** Characterize output backlash, temperature and efficiency under the intended reversing load, and inspect contact wear after repeated shock cycles.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 29×29-in; Mk4-C L1+; 3/4-in lowering | [Source p11](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11) |\n| Coral intake | 23:1 cycloidal deploy; X60 plus X44 rollers | [Source p14](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14) |\n| Climb | 33.6:1; X44 winch; separate X44 cage intake | [Source p16](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16) |\n| Cycloidal | 23:1; dual discs; team reports ~0.3° backlash | [Source p17](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2025-118",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/478987/69",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/6/b65d46a9ad88c92fb85ed78f8d9850753c227ad9_2_423x500.jpeg",
+        "post": 69,
+        "date": "2025-01-27T23:03:27.051Z",
+        "author": "Liamthebuildgoon",
+        "context_tags": [
+          "climb"
+        ],
+        "caption": "2025 team 118 — source image from post 69 (2025-01-27). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "513318bc456a468579.jpg",
+        "id": "413bc48095a1eb4042",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/513318bc456a468579.jpg"
+      },
+      {
+        "robot_id": "2025-118",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/478987/73",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/d/3/d374b26fd1265e2bfdd6f93aa63895f700ae5ffc.png",
+        "post": 73,
+        "date": "2025-01-28T03:34:20.598Z",
+        "author": "jedgar6",
+        "context_tags": [
+          "climb"
+        ],
+        "caption": "2025 team 118 — source image from post 73 (2025-01-28). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "fc891464c76d1affd7.jpg",
+        "id": "42e215d8da3630ccdb",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/fc891464c76d1affd7.jpg"
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p11-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p11-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11",
+        "caption": "2025-118 · FIREFLY · Chassis and wheel hubs · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Chassis and wheel hubs",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          340.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p12-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p12-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=12",
+        "caption": "2025-118 · FIREFLY · Lift and remoted carriage drives · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Lift and remoted carriage drives",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          310.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p13-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p13-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=13",
+        "caption": "2025-118 · FIREFLY · Algae pickup · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Algae pickup",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          320.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p14-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 14,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p14-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14",
+        "caption": "2025-118 · FIREFLY · Coral orientation intake · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Coral orientation intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          350.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 14
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p15-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p15-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=15",
+        "caption": "2025-118 · FIREFLY · Internal-grip end effector · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Internal-grip end effector",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          330.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p16-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 16,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p16-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16",
+        "caption": "2025-118 · FIREFLY · Powered cage intake and climb · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Powered cage intake and climb",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          430.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 16
+      },
+      {
+        "id": "binder-fea3938f462d86d32d-p17-1",
+        "robot_id": "2025-118",
+        "kind": "binder_figure",
+        "binder_id": "fea3938f462d86d32d",
+        "pdf_page": 17,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fea3938f462d86d32d-p17-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17",
+        "caption": "2025-118 · FIREFLY · Custom cycloidal gearbox · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Custom cycloidal gearbox",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.0,
+          330.0,
+          585.0,
+          748.0
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 17
+      }
+    ],
+    "source_post_count": 30,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-50",
+        "url": "https://cad.onshape.com/documents/322c7df6642d82ddf075940f/w/8ad012ad66362b6d4f5577e0/e/e921bded1f7315514cafb5a6?renderMode=0&uiState=6786fea7f1065e0a527a300d",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "dd493d86e2143a9170"
+      },
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-33",
+        "url": "https://docs.google.com/spreadsheets/d/1xdodEr3vj5AneTFxeAHf_wto5SA2gwDHoCzKOeL6VsE/edit?gid=0#gid=0",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "45c98331442216a357"
+      },
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-50",
+        "url": "https://drive.google.com/drive/folders/11rmf2mMmYooSvV4UwBnba3eJvCZcSJAN?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "9f204e0bd418837422"
+      },
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-1",
+        "url": "https://drive.google.com/drive/folders/1sUP19WCUuQKzJp3KsBW6bazIK08D-APO?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "5838d9f3bd8a6b6a17"
+      },
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-64",
+        "url": "https://github.com/Robonauts-Everybot/Everybot-2025-Code",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "9accb5fb41de0d0b13"
+      },
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-64",
+        "url": "https://cad.onshape.com/documents/0b2fddf6cbaed8ae6e810a63/w/585256f8e7c40d2046d984c7/e/4320ca0c1560b09ddf06fefd?configuration=Electronics%3Dtrue%3BList_yGRXgL8geHvEYk%3DMK4c%3BLocal_Length%3D0.7366%2Bmeter%3BLocal_Width%3D0.7366%2Bmeter&renderMode=0&uiState=678f3b7c4065f37b6b1b10b5",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ac7925b779911cf5d2"
+      },
+      {
+        "robot_id": "2025-118",
+        "discovery_post": "2025-118-478987-64",
+        "url": "https://cad.onshape.com/documents/6092fa1a75b6df7bcb1491a8/w/f9d68b609e79b6061a0e1a79/e/e58e73b32e4d959aa141624c?configuration=Electronics_Solution%3Dfalse%3BList_68k8zXbNbEsyyb%3DNo_Battery_Solution&renderMode=0&uiState=678f3a0bbd86ad1416fbd80d",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "bf0b89a83551e1ff35"
+      }
+    ],
+    "id": "2025-118",
+    "team_name": "Robonauts",
+    "epa_rank": 6,
+    "epa": 104.75,
+    "epa_pre_champs": 107.44,
+    "epa_breakdown": {
+      "total_points": 104.75,
+      "auto_points": 20.04,
+      "teleop_points": 72.72,
+      "endgame_points": 11.99,
+      "auto_rp": 0.8486,
+      "coral_rp": 1.0346,
+      "barge_rp": 0.80098,
+      "tiebreaker_points": 0.33,
+      "auto_coral_points": 16.99,
+      "teleop_coral_points": 59.23,
+      "coral_l1": 3.58,
+      "coral_l2": 5.77,
+      "coral_l3": 5.72,
+      "coral_l4": 4.8,
+      "processor_algae": 0.89,
+      "processor_algae_points": 2.68,
+      "net_algae_points": 10.81,
+      "barge_points": 11.99,
+      "rp_1": 0.8486,
+      "rp_2": 1.0346,
+      "rp_3": 0.80098,
+      "total_coral_points": 76.22,
+      "total_algae_points": 13.49
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "569e888e9c4944b2"
+    ],
+    "tags": [
+      "climb",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-fea3938f462d86d32d-116",
+      "tech-fea3938f462d86d32d-117",
+      "tech-fea3938f462d86d32d-118",
+      "tech-fea3938f462d86d32d-119",
+      "tech-fea3938f462d86d32d-120",
+      "tech-fea3938f462d86d32d-121",
+      "tech-fea3938f462d86d32d-122"
+    ],
+    "binder_source_ids": [
+      "fea3938f462d86d32d"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-118",
+      "year": 2025,
+      "team": 118,
+      "epa_rank": 6,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"118\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 19,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"118\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [
+        "fea3938f462d86d32d"
+      ],
+      "technical_note_ids": [
+        "tech-fea3938f462d86d32d-116",
+        "tech-fea3938f462d86d32d-117",
+        "tech-fea3938f462d86d32d-118",
+        "tech-fea3938f462d86d32d-119",
+        "tech-fea3938f462d86d32d-120",
+        "tech-fea3938f462d86d32d-121",
+        "tech-fea3938f462d86d32d-122"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "fea3938f462d86d32d",
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/502317/1",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "drivetrain",
+      "title": "FIREFLY: wheel stiffness is part of end-effector accuracy",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "construction": "Custom Grip Lock hubs, lowered Mk4-C base and later lower drive gearing.",
+      "team_stated_reason": "Reduce tire flex and preserve a stiff floor-to-tool reference.",
+      "engineering_analysis": "Wheel compliance permits the chassis to rotate relative to the carpet even when the frame and elevator are stiff. The resulting angular error becomes a larger displacement at an elevated tool, so a tire-hub change can improve L4 placement without changing the wrist. A low frame and ballast distribution address another component of the same stability problem. The gearing revision also changes acceleration and braking behavior; it needs drive retuning with the real mechanism load. Do not treat a module model or a free speed as a complete explanation of placement repeatability.",
+      "recommended_validation": "Measure tool-tip displacement under known lateral load and during stopping, separating tire deflection from lift deflection.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/502317/5"
+      ],
+      "id": "tech-fea3938f462d86d32d-116",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=10"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p11-1"
+      ]
+    },
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "positioning",
+      "title": "FIREFLY: short lift and low-mounted carriage actuators",
+      "pdf_pages": [
+        8,
+        12
+      ],
+      "construction": "Single-stage counterbalanced lift; thin-wall tube; algae, coral and arm drives mounted low on carriage.",
+      "team_stated_reason": "Low moving center of gravity and direct piece delivery.",
+      "engineering_analysis": "Remoting the roller drives removes mass from the far end of the arm while keeping it on the lift carriage. That reduces one component of arm inertia without eliminating the carriage mass that the lift must accelerate. A single-stage lift can simplify guidance but requires the arm to supply the remaining reach and orientation. Counterbalance reduces gravity demand, while belt tension and routing still determine tracking and friction. The integration goal is a useful task sequence with no wait for piece delivery, rather than a collection of independently fast axes.",
+      "recommended_validation": "Measure lift current and tool settling during combined motion; verify belt tension and direct-handoff clearance at every relevant pose.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fea3938f462d86d32d-117",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=8"
+        },
+        {
+          "pdf_page": 12,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=12"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p12-1"
+      ]
+    },
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "intake",
+      "title": "FIREFLY: sideways orientation while maintaining coral ownership",
+      "pdf_pages": [
+        14
+      ],
+      "construction": "Sideways reorienting belt, compliant tube rollers, independent roller drives and twisted-belt transmission.",
+      "team_stated_reason": "Direct handoff or controlled L1 without staging the coral.",
+      "engineering_analysis": "A sideways belt gives the tube a deliberate transverse velocity rather than relying only on passive wedges. The remaining contacts must keep ownership while that reorientation happens; an unconstrained gap can erase the advantage. Separate roller drives permit holding a tube for L1 or continuing into the end effector, but create more state choices and sensor requirements. Twisted and bent belts solve an off-axis power-routing problem, while adding tracking, wear and alignment concerns. Their tension cannot be chosen solely for torque transmission if the belt also participates in piece contact.",
+      "recommended_validation": "Film diagonal and lengthwise entries through both L1 and handoff branches, then repeat after belt wear and an intake impact.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fea3938f462d86d32d-118",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 14,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p14-1"
+      ]
+    },
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "intake",
+      "title": "FIREFLY: dedicated floor-algae route integrates with climb",
+      "pdf_pages": [
+        13
+      ],
+      "construction": "Counter-rotating floor-algae rollers; reinforced printed bevel gears; three-piece jackshaft around climb packaging.",
+      "team_stated_reason": "Acquire algae and deliver it to the arm without subsystem interference.",
+      "engineering_analysis": "A dedicated floor pickup lets the main end effector specialize in retention and scoring rather than reaching a difficult carpet pose. That value must exceed the added mass and handoff complexity. Segmenting the jackshaft can make assembly possible around another subsystem, but every joint adds an alignment and torque-transfer interface. Printed bevel gears need stable bearing support and an appropriate tooth load; a successful material in another mechanism does not certify this one. The pathway should remain useful if the climb is damaged, consistent with the robot’s stated degraded-operation objective.",
+      "recommended_validation": "Test floor acquisition and handoff while climb is stowed, partially deployed and disabled; inspect bevel alignment under peak capture load.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fea3938f462d86d32d-119",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 13,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p13-1"
+      ]
+    },
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "scoring",
+      "title": "FIREFLY: internal coral grip and algae torque selected by test",
+      "pdf_pages": [
+        15
+      ],
+      "construction": "Internal coral gripping; compliant placement geometry; shared tool also acquires and scores algae.",
+      "team_stated_reason": "Control both pieces while keeping moving structure light.",
+      "engineering_analysis": "Gripping inside a tube changes the reference surface and can leave the outside clearer for placement. It still needs a controlled release and enough compliance to tolerate the branch without wedging the tool. Algae retention is a different torque problem: the wheel must deform and hold a soft sphere rather than simply spin at the desired acquisition speed. A practical way to choose the ratio is to measure the required final-shaft torque, then check speed and motor current under that load. This is more informative than selecting a reduction from a famous robot without matching its compression and geometry.",
+      "recommended_validation": "Measure algae pull-in torque and holding current, then test coral release with intentional branch misalignment and the same worn contacts.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/502317/11"
+      ],
+      "id": "tech-fea3938f462d86d32d-120",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=15"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p15-1"
+      ]
+    },
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "endgame",
+      "title": "FIREFLY: powered magnetic cage acquisition and sensed latching",
+      "pdf_pages": [
+        10,
+        16
+      ],
+      "construction": "Magnetic TPU intake wheels pull cage into two one-way latches; winch/rotation share a drive.",
+      "team_stated_reason": "Capture before automatically lifting.",
+      "engineering_analysis": "Magnetic attraction can improve the first contact with a steel cage, but the final robot load should pass through the designed latch and structure. Two capture switches give the controller a stronger condition than assuming engagement after a fixed time. Shared winch and rotation power saves hardware while tying the phase sequence to transmission geometry. The dated timeline records later additions to the cage collector and automation, so the final system should not be projected back to the robot’s first event. Total climb time includes acquisition and settling, not just the powered lift.",
+      "recommended_validation": "Test one-sided and swinging-cage contact, sensor disagreement and disable retention; confirm the latch carries the suspended load.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fea3938f462d86d32d-121",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=10"
+        },
+        {
+          "pdf_page": 16,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p16-1"
+      ]
+    },
+    {
+      "binder_id": "fea3938f462d86d32d",
+      "subsystem": "transmission",
+      "title": "FIREFLY: custom cycloidal reduction is an iterative capability",
+      "pdf_pages": [
+        17
+      ],
+      "construction": "23:1 dual-disc cycloidal; hardened steel discs; rolling pins; team reports about 0.3° backlash.",
+      "team_stated_reason": "Compact, lightweight low-backlash joint drive.",
+      "engineering_analysis": "A cycloidal gearbox trades ordinary spur stages for a shaped eccentric load path with multiple contacts. Opposed discs can reduce dynamic imbalance, but machining accuracy, pin support and eccentric bearings still control vibration, efficiency and backlash. The reported backlash is a team result for its design and measurement conditions. It should not be assumed for a copied outline made with a different process. This is a mature, revised manufacturing capability, so its adoption cost includes inspection, heat treatment and assembly knowledge rather than just CAD availability.",
+      "recommended_validation": "Characterize output backlash, temperature and efficiency under the intended reversing load, and inspect contact wear after repeated shock cycles.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fea3938f462d86d32d-122",
+      "robot_id": "2025-118",
+      "year": 2025,
+      "version_label": "FIREFLY",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 17,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17"
+        }
+      ],
+      "image_ids": [
+        "binder-fea3938f462d86d32d-p17-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-fea3938f462d86d32d-1",
+      "binder_id": "fea3938f462d86d32d",
+      "robot_id": "2025-118",
+      "pdf_page": 11,
+      "component": "Base",
+      "published_parameters": "29×29-in; Mk4-C L1+; 3/4-in lowering",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-fea3938f462d86d32d-2",
+      "binder_id": "fea3938f462d86d32d",
+      "robot_id": "2025-118",
+      "pdf_page": 14,
+      "component": "Coral intake",
+      "published_parameters": "23:1 cycloidal deploy; X60 plus X44 rollers",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-fea3938f462d86d32d-3",
+      "binder_id": "fea3938f462d86d32d",
+      "robot_id": "2025-118",
+      "pdf_page": 16,
+      "component": "Climb",
+      "published_parameters": "33.6:1; X44 winch; separate X44 cage intake",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-fea3938f462d86d32d-4",
+      "binder_id": "fea3938f462d86d32d",
+      "robot_id": "2025-118",
+      "pdf_page": 17,
+      "component": "Cycloidal",
+      "published_parameters": "23:1; dual discs; team reports ~0.3° backlash",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "fea3938f462d86d32d",
+      "robot_id": "2025-118",
+      "title": "2025-118 FIREFLY technical publication",
+      "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+      "format": "pdf",
+      "pages": 22,
+      "sha256": "d8e44e1e27b7b5563369fd4c68bc55c02773ab24692df9759ca3736b48139647",
+      "bytes": 53737743,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "figure_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/502317/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2025-118:publication-version:1",
+      "label": "FIREFLY",
+      "robot_id": "2025-118",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-fea3938f462d86d32d-116",
+        "tech-fea3938f462d86d32d-117",
+        "tech-fea3938f462d86d32d-118",
+        "tech-fea3938f462d86d32d-119",
+        "tech-fea3938f462d86d32d-120",
+        "tech-fea3938f462d86d32d-121",
+        "tech-fea3938f462d86d32d-122"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2025-118",
+      "title": "2025-118: technical construction and mechanism reasoning",
+      "year": 2025,
+      "robot_id": "2025-118",
+      "kind": "robot_technical_review",
+      "body": "# 2025-118: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## FIREFLY: wheel stiffness is part of end-effector accuracy\n\nVersion: FIREFLY. [PDF p10](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=10) · [PDF p11](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11) · [Team explanation](https://www.chiefdelphi.com/t/502317/5)\n\n**Published construction:** Custom Grip Lock hubs, lowered Mk4-C base and later lower drive gearing.\n\n**Team-stated reason or evidence boundary:** Reduce tire flex and preserve a stiff floor-to-tool reference.\n\n**Engineering analysis — original inference:** Wheel compliance permits the chassis to rotate relative to the carpet even when the frame and elevator are stiff. The resulting angular error becomes a larger displacement at an elevated tool, so a tire-hub change can improve L4 placement without changing the wrist. A low frame and ballast distribution address another component of the same stability problem. The gearing revision also changes acceleration and braking behavior; it needs drive retuning with the real mechanism load. Do not treat a module model or a free speed as a complete explanation of placement repeatability.\n\n**Proposed validation — not a completed test:** Measure tool-tip displacement under known lateral load and during stopping, separating tire deflection from lift deflection.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: short lift and low-mounted carriage actuators\n\nVersion: FIREFLY. [PDF p8](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=8) · [PDF p12](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=12)\n\n**Published construction:** Single-stage counterbalanced lift; thin-wall tube; algae, coral and arm drives mounted low on carriage.\n\n**Team-stated reason or evidence boundary:** Low moving center of gravity and direct piece delivery.\n\n**Engineering analysis — original inference:** Remoting the roller drives removes mass from the far end of the arm while keeping it on the lift carriage. That reduces one component of arm inertia without eliminating the carriage mass that the lift must accelerate. A single-stage lift can simplify guidance but requires the arm to supply the remaining reach and orientation. Counterbalance reduces gravity demand, while belt tension and routing still determine tracking and friction. The integration goal is a useful task sequence with no wait for piece delivery, rather than a collection of independently fast axes.\n\n**Proposed validation — not a completed test:** Measure lift current and tool settling during combined motion; verify belt tension and direct-handoff clearance at every relevant pose.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: sideways orientation while maintaining coral ownership\n\nVersion: FIREFLY. [PDF p14](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14)\n\n**Published construction:** Sideways reorienting belt, compliant tube rollers, independent roller drives and twisted-belt transmission.\n\n**Team-stated reason or evidence boundary:** Direct handoff or controlled L1 without staging the coral.\n\n**Engineering analysis — original inference:** A sideways belt gives the tube a deliberate transverse velocity rather than relying only on passive wedges. The remaining contacts must keep ownership while that reorientation happens; an unconstrained gap can erase the advantage. Separate roller drives permit holding a tube for L1 or continuing into the end effector, but create more state choices and sensor requirements. Twisted and bent belts solve an off-axis power-routing problem, while adding tracking, wear and alignment concerns. Their tension cannot be chosen solely for torque transmission if the belt also participates in piece contact.\n\n**Proposed validation — not a completed test:** Film diagonal and lengthwise entries through both L1 and handoff branches, then repeat after belt wear and an intake impact.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: dedicated floor-algae route integrates with climb\n\nVersion: FIREFLY. [PDF p13](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=13)\n\n**Published construction:** Counter-rotating floor-algae rollers; reinforced printed bevel gears; three-piece jackshaft around climb packaging.\n\n**Team-stated reason or evidence boundary:** Acquire algae and deliver it to the arm without subsystem interference.\n\n**Engineering analysis — original inference:** A dedicated floor pickup lets the main end effector specialize in retention and scoring rather than reaching a difficult carpet pose. That value must exceed the added mass and handoff complexity. Segmenting the jackshaft can make assembly possible around another subsystem, but every joint adds an alignment and torque-transfer interface. Printed bevel gears need stable bearing support and an appropriate tooth load; a successful material in another mechanism does not certify this one. The pathway should remain useful if the climb is damaged, consistent with the robot’s stated degraded-operation objective.\n\n**Proposed validation — not a completed test:** Test floor acquisition and handoff while climb is stowed, partially deployed and disabled; inspect bevel alignment under peak capture load.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: internal coral grip and algae torque selected by test\n\nVersion: FIREFLY. [PDF p15](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=15) · [Team explanation](https://www.chiefdelphi.com/t/502317/11)\n\n**Published construction:** Internal coral gripping; compliant placement geometry; shared tool also acquires and scores algae.\n\n**Team-stated reason or evidence boundary:** Control both pieces while keeping moving structure light.\n\n**Engineering analysis — original inference:** Gripping inside a tube changes the reference surface and can leave the outside clearer for placement. It still needs a controlled release and enough compliance to tolerate the branch without wedging the tool. Algae retention is a different torque problem: the wheel must deform and hold a soft sphere rather than simply spin at the desired acquisition speed. A practical way to choose the ratio is to measure the required final-shaft torque, then check speed and motor current under that load. This is more informative than selecting a reduction from a famous robot without matching its compression and geometry.\n\n**Proposed validation — not a completed test:** Measure algae pull-in torque and holding current, then test coral release with intentional branch misalignment and the same worn contacts.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: powered magnetic cage acquisition and sensed latching\n\nVersion: FIREFLY. [PDF p10](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=10) · [PDF p16](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16)\n\n**Published construction:** Magnetic TPU intake wheels pull cage into two one-way latches; winch/rotation share a drive.\n\n**Team-stated reason or evidence boundary:** Capture before automatically lifting.\n\n**Engineering analysis — original inference:** Magnetic attraction can improve the first contact with a steel cage, but the final robot load should pass through the designed latch and structure. Two capture switches give the controller a stronger condition than assuming engagement after a fixed time. Shared winch and rotation power saves hardware while tying the phase sequence to transmission geometry. The dated timeline records later additions to the cage collector and automation, so the final system should not be projected back to the robot’s first event. Total climb time includes acquisition and settling, not just the powered lift.\n\n**Proposed validation — not a completed test:** Test one-sided and swinging-cage contact, sensor disagreement and disable retention; confirm the latch carries the suspended load.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## FIREFLY: custom cycloidal reduction is an iterative capability\n\nVersion: FIREFLY. [PDF p17](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17)\n\n**Published construction:** 23:1 dual-disc cycloidal; hardened steel discs; rolling pins; team reports about 0.3° backlash.\n\n**Team-stated reason or evidence boundary:** Compact, lightweight low-backlash joint drive.\n\n**Engineering analysis — original inference:** A cycloidal gearbox trades ordinary spur stages for a shaped eccentric load path with multiple contacts. Opposed discs can reduce dynamic imbalance, but machining accuracy, pin support and eccentric bearings still control vibration, efficiency and backlash. The reported backlash is a team result for its design and measurement conditions. It should not be assumed for a copied outline made with a different process. This is a mature, revised manufacturing capability, so its adoption cost includes inspection, heat treatment and assembly knowledge rather than just CAD availability.\n\n**Proposed validation — not a completed test:** Characterize output backlash, temperature and efficiency under the intended reversing load, and inspect contact wear after repeated shock cycles.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Base | 29×29-in; Mk4-C L1+; 3/4-in lowering | [Source p11](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11) |\n| Coral intake | 23:1 cycloidal deploy; X60 plus X44 rollers | [Source p14](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14) |\n| Climb | 33.6:1; X44 winch; separate X44 cage intake | [Source p16](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16) |\n| Cycloidal | 23:1; dual discs; team reports ~0.3° backlash | [Source p17](https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf"
+      ],
+      "path": "docs/technical/2025-118.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-118",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/478987/69",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/6/b65d46a9ad88c92fb85ed78f8d9850753c227ad9_2_423x500.jpeg",
+      "post": 69,
+      "date": "2025-01-27T23:03:27.051Z",
+      "author": "Liamthebuildgoon",
+      "context_tags": [
+        "climb"
+      ],
+      "caption": "2025 team 118 — source image from post 69 (2025-01-27). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "513318bc456a468579.jpg",
+      "id": "413bc48095a1eb4042",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/513318bc456a468579.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 423,
+      "height_px": 500,
+      "bytes": 59396,
+      "sha256": "0e5881a2a814b778d59a8ee57acba4924d62c15c693c166cc85742a49fbc4383",
+      "path_base": "corpus_root",
+      "reader_asset_id": "413bc48095a1eb4042",
+      "reader_url": "index.html#image=413bc48095a1eb4042",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-118",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/478987/73",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/d/3/d374b26fd1265e2bfdd6f93aa63895f700ae5ffc.png",
+      "post": 73,
+      "date": "2025-01-28T03:34:20.598Z",
+      "author": "jedgar6",
+      "context_tags": [
+        "climb"
+      ],
+      "caption": "2025 team 118 — source image from post 73 (2025-01-28). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "fc891464c76d1affd7.jpg",
+      "id": "42e215d8da3630ccdb",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/fc891464c76d1affd7.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 555,
+      "height_px": 493,
+      "bytes": 30782,
+      "sha256": "8024ec215db56e5134159208d1e03930b37df294ed3661665d5d22c618a61b91",
+      "path_base": "corpus_root",
+      "reader_asset_id": "42e215d8da3630ccdb",
+      "reader_url": "index.html#image=42e215d8da3630ccdb",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p11-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p11-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=11",
+      "caption": "2025-118 · FIREFLY · Chassis and wheel hubs · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Chassis and wheel hubs",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        340.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 939,
+      "bytes": 131547,
+      "sha256": "b748f54d1b3c8a01ee6aec52829ab68c1577598c99199eb69c1686e85677f4dd",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p11-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p12-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p12-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=12",
+      "caption": "2025-118 · FIREFLY · Lift and remoted carriage drives · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Lift and remoted carriage drives",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        310.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 1008,
+      "bytes": 104977,
+      "sha256": "5c2756d558ae757f743a2e2575b9ed8cf810c01230cbb69d638b69830a0f2c82",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p12-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p13-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p13-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=13",
+      "caption": "2025-118 · FIREFLY · Algae pickup · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Algae pickup",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        320.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 985,
+      "bytes": 109046,
+      "sha256": "74dd5f48c326761ddcfef887693d8f99e984c09e328f1792369605212bcdde8d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p13-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p14-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 14,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p14-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=14",
+      "caption": "2025-118 · FIREFLY · Coral orientation intake · PDF page 14, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Coral orientation intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        350.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 14,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 916,
+      "bytes": 127006,
+      "sha256": "918b62a1a6d4c43355b38384e4138e5fa8036c92f43223b37017d191cfcff6ca",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p14-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p14-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p15-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p15-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=15",
+      "caption": "2025-118 · FIREFLY · Internal-grip end effector · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Internal-grip end effector",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        330.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 962,
+      "bytes": 85468,
+      "sha256": "849d6d8a513fbea8410285137b7213592d5529c5829a19a883f15f1f9acee5be",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p15-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p16-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 16,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p16-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=16",
+      "caption": "2025-118 · FIREFLY · Powered cage intake and climb · PDF page 16, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Powered cage intake and climb",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        430.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 16,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 732,
+      "bytes": 139932,
+      "sha256": "9d3b2c3966def617b16d0d0eb4976d17fced99032e43bbc1083beb83a01d1b2a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p16-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p16-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fea3938f462d86d32d-p17-1",
+      "robot_id": "2025-118",
+      "kind": "binder_figure",
+      "binder_id": "fea3938f462d86d32d",
+      "pdf_page": 17,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fea3938f462d86d32d-p17-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf#page=17",
+      "caption": "2025-118 · FIREFLY · Custom cycloidal gearbox · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Custom cycloidal gearbox",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.0,
+        330.0,
+        585.0,
+        748.0
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 17,
+      "media_type": "image/jpeg",
+      "width_px": 1277,
+      "height_px": 962,
+      "bytes": 87572,
+      "sha256": "d2e4917381f04aa01a96e5d5dbf9c952c596f470f6e42a14af13ea31d243aae6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fea3938f462d86d32d-p17-1",
+      "reader_url": "index.html#image=binder-fea3938f462d86d32d-p17-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-118",
+    "year": 2025,
+    "team": 118,
+    "epa_rank": 6,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"118\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 19,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"118\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [
+      "fea3938f462d86d32d"
+    ],
+    "technical_note_ids": [
+      "tech-fea3938f462d86d32d-116",
+      "tech-fea3938f462d86d32d-117",
+      "tech-fea3938f462d86d32d-118",
+      "tech-fea3938f462d86d32d-119",
+      "tech-fea3938f462d86d32d-120",
+      "tech-fea3938f462d86d32d-121",
+      "tech-fea3938f462d86d32d-122"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "fea3938f462d86d32d",
+        "url": "https://www.chiefdelphi.com/uploads/short-url/5VYfconlxrh4QdiOcvuLGWunsv1.pdf",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/502317/1",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-fea3938f462d86d32d-116:construction",
+    "tech-fea3938f462d86d32d-116:team_stated_reason",
+    "tech-fea3938f462d86d32d-116:engineering_analysis",
+    "tech-fea3938f462d86d32d-116:recommended_validation",
+    "tech-fea3938f462d86d32d-116:limitations",
+    "tech-fea3938f462d86d32d-117:construction",
+    "tech-fea3938f462d86d32d-117:team_stated_reason",
+    "tech-fea3938f462d86d32d-117:engineering_analysis",
+    "tech-fea3938f462d86d32d-117:recommended_validation",
+    "tech-fea3938f462d86d32d-117:limitations",
+    "tech-fea3938f462d86d32d-118:construction",
+    "tech-fea3938f462d86d32d-118:team_stated_reason",
+    "tech-fea3938f462d86d32d-118:engineering_analysis",
+    "tech-fea3938f462d86d32d-118:recommended_validation",
+    "tech-fea3938f462d86d32d-118:limitations",
+    "tech-fea3938f462d86d32d-119:construction",
+    "tech-fea3938f462d86d32d-119:team_stated_reason",
+    "tech-fea3938f462d86d32d-119:engineering_analysis",
+    "tech-fea3938f462d86d32d-119:recommended_validation",
+    "tech-fea3938f462d86d32d-119:limitations",
+    "tech-fea3938f462d86d32d-120:construction",
+    "tech-fea3938f462d86d32d-120:team_stated_reason",
+    "tech-fea3938f462d86d32d-120:engineering_analysis",
+    "tech-fea3938f462d86d32d-120:recommended_validation",
+    "tech-fea3938f462d86d32d-120:limitations",
+    "tech-fea3938f462d86d32d-121:construction",
+    "tech-fea3938f462d86d32d-121:team_stated_reason",
+    "tech-fea3938f462d86d32d-121:engineering_analysis",
+    "tech-fea3938f462d86d32d-121:recommended_validation",
+    "tech-fea3938f462d86d32d-121:limitations",
+    "tech-fea3938f462d86d32d-122:construction",
+    "tech-fea3938f462d86d32d-122:team_stated_reason",
+    "tech-fea3938f462d86d32d-122:engineering_analysis",
+    "tech-fea3938f462d86d32d-122:recommended_validation",
+    "tech-fea3938f462d86d32d-122:limitations",
+    "param-fea3938f462d86d32d-1",
+    "param-fea3938f462d86d32d-2",
+    "param-fea3938f462d86d32d-3",
+    "param-fea3938f462d86d32d-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

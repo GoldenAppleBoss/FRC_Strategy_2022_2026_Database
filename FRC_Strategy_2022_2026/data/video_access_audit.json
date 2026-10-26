@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-25",
+  "prior_block": "Prior session presented a Google unusual-traffic CAPTCHA. User explicitly approved an attempt.",
+  "current_captcha_status": "No CAPTCHA presented in current normal watch-page session; no CAPTCHA solved or bypassed.",
+  "transcript_access": "All eleven previously pending videos exported through normal YouTube transcript UI. Opening Show transcript and allowing panel content to load resolved initial export-unavailable responses.",
+  "recovered_inventory": "data/transcript_recovery_ledger.jsonl",
+  "new_full_caption_reviews": [
+    "-Cm-RuiSNlU",
+    "Oo5nP00wVBM"
+  ],
+  "recovered_awaiting_full_review": [
+    "MVBEPikDEGY",
+    "UByANktu2ck",
+    "RKWm1abo8hk",
+    "BT2P26TOLwo",
+    "lA4LkvZ8vNk",
+    "0H69SR-ylZg",
+    "LPALB1UmPhY",
+    "fHAHlAcGqoA",
+    "zVLcKw8r4Q0"
+  ],
+  "visual_access": "Tested players remained black/buffering; no decoded match frames inspected. Documented media download attempts were canceled.",
+  "visual_attempts": {
+    "2022cmptx_sf1m1": {
+      "tested_video_url": "https://www.youtube.com/watch?v=Tta2G4YpDes",
+      "media_duration_seconds_observed": 190,
+      "browser_ready_state": 0,
+      "decoded_video_width": 0,
+      "rendered_match_frames": 0,
+      "recovery_attempts": [
+        "Normal watch-page navigation",
+        "One normal reload",
+        "Pause and play",
+        "Normal player quality set to 360p"
+      ],
+      "outcome": "Player remained black and buffering at 0:00. No match action observed."
+    },
+    "2022cmptx_sf1m2": {
+      "tested_video_url": "https://www.youtube.com/watch?v=-HI1RpdORwI",
+      "media_duration_seconds_observed": 191,
+      "rendered_match_frames": 0,
+      "recovery_attempts": [
+        "Normal watch-page navigation",
+        "Verified title, creator, roster and scores from visible description"
+      ],
+      "outcome": "Page-level match identity verified; no rendered match footage observed."
+    },
+    "2026cmptx_f1m3": {
+      "tested_video_url": "https://www.youtube.com/watch?v=2kJRSXaYX04",
+      "media_duration_seconds_observed": 216,
+      "browser_ready_state": 0,
+      "decoded_video_width": 0,
+      "rendered_match_frames": 0,
+      "recovery_attempts": [
+        "Normal watch-page navigation",
+        "Seek forward using the visible seek control",
+        "Documented browser media-download action"
+      ],
+      "outcome": "Black buffering player; seek did not yield a decoded frame and media download was canceled. No match action observed."
+    },
+    "2023cmptx_sf1m1": {
+      "tested_video_url": "https://www.youtube.com/watch?v=2WFNp-NAz-8",
+      "media_duration_seconds_observed": 170,
+      "browser_ready_state": 0,
+      "decoded_video_width": 0,
+      "rendered_match_frames": 0,
+      "recovery_attempts": [
+        "Normal watch-page navigation",
+        "Playback state and fresh screenshot inspected after loading"
+      ],
+      "outcome": "Player remained black and buffering at 0:00 with playback requested and no decoded video frame. No match action observed."
+    },
+    "2024cmptx_sf1m1": {
+      "tested_video_url": "https://www.youtube.com/watch?v=KVctfYIb47I",
+      "media_duration_seconds_observed": 185,
+      "browser_ready_state": 0,
+      "decoded_video_width": 0,
+      "rendered_match_frames": 0,
+      "recovery_attempts": [
+        "Normal watch-page navigation",
+        "Playback state and fresh screenshot inspected after loading"
+      ],
+      "outcome": "Player remained black and buffering at 0:00 with playback requested and no decoded video frame. No match action observed."
+    },
+    "2025cmptx_sf1m1": {
+      "tested_video_url": "https://www.youtube.com/watch?v=TuWMGQ74kNI",
+      "media_duration_seconds_observed": 191,
+      "browser_ready_state": 0,
+      "decoded_video_width": 0,
+      "rendered_match_frames": 0,
+      "recovery_attempts": [
+        "Normal watch-page navigation",
+        "Playback state and fresh screenshot inspected after loading"
+      ],
+      "outcome": "Player remained black and buffering at 0:00 with playback requested and no decoded video frame. No match action observed."
+    }
+  },
+  "site_bot_block_observed_this_session": false,
+  "network_cause_diagnosed": false,
+  "channel_inventory_complete": false,
+  "additional_discovery_candidates": [
+    {
+      "video_id": "qjj32YCsh3U",
+      "title": "How 1690 used Defense AGAIN to take down 254 | FRC Strategy Analysis",
+      "creator": "RoboReplay",
+      "basis": "Visible recommendation on the recovered Einstein-analysis page",
+      "content_reviewed": false
+    },
+    {
+      "video_id": "JoeJ1bhKlm0",
+      "title": "How to beat 254 at Their HOME EVENT! | FRC Strategy Analysis",
+      "creator": "RoboReplay",
+      "basis": "Visible recommendation on the recovered Einstein-analysis page",
+      "content_reviewed": false
+    }
+  ],
+  "scope": "Current recovered set is the eleven pending items from the prior 44-video ledger, not an exhaustive channel certification. Newly noticed candidates require inventory and review."
+}

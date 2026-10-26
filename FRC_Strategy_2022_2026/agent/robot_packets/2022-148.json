@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-148",
+  "year": 2022,
+  "team": 148,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 148,
+    "robot": "Quickdraw",
+    "primary": [
+      "https://youtu.be/qvxmqMO1hv8",
+      "https://www.chiefdelphi.com/t/404469"
+    ],
+    "architecture": "Inverted swerve, actively positioned collector and turreted shooter with rotating traversal climb.",
+    "subsystems": {
+      "drivetrain": "WCP inverted swerve chosen for packaging and low motor placement.",
+      "intake": "Motor-controlled low collector catches bouncing cargo; side impact guards protect centering wheels.",
+      "transfer": "Printed guide, staging limit switch and color sensor feed the shooter.",
+      "scoring": "Turret on routed gear; operator sequencing/shot tuning emphasized.",
+      "endgame": "Spring deployment plus rotating arm, latching hooks and servo-released retention transfer between rungs.",
+      "controls": "Color rejection through an alternate shot; climb sequence manages when hooks are locked or released."
+    },
+    "versions": [
+      "Side guards added after walls damaged foam wheels. Multiple collector prototypes preceded final geometry."
+    ],
+    "analysis": "The latches are essential to the rotating climb, and the collector must retract clear of it. Preserve those interaction constraints when comparing apparently similar rotating climbers.",
+    "limits": [
+      "Only published/reviewed configurations are established; further intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 1,
+    "cad_code_links": [],
+    "id": "2022-148",
+    "team_name": "Robowranglers",
+    "epa_rank": 13,
+    "epa": 53.98,
+    "epa_pre_champs": 53.96,
+    "epa_breakdown": {
+      "total_points": 53.98,
+      "auto_points": 14.61,
+      "teleop_points": 30.18,
+      "endgame_points": 9.2,
+      "cargo_rp": 0.8358,
+      "hangar_rp": 0.548,
+      "tiebreaker_points": 53.98,
+      "auto_taxi_points": 1.94,
+      "auto_cargo_lower": -0.11,
+      "auto_cargo_upper": 3.22,
+      "teleop_cargo_lower": -0.62,
+      "teleop_cargo_upper": 15.4,
+      "rp_1": 0.8358,
+      "rp_2": 0.548
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "9aa93a614460ea13",
+      "00c59c680cbd7611"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-148",
+      "year": 2022,
+      "team": 148,
+      "epa_rank": 13,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"148\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 0,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"148\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-148"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-148",
+      "title": "Low hardware placement and staged turret feeding share scarce volume",
+      "start_seconds": 76,
+      "end_seconds": 475,
+      "construction": "An inverted swerve arrangement moves motors low, while a protected collector and printed guide feed staged cargo to the turret. A limit switch and color sensor support possession/rejection. The climb uses retained hooks and a rotating arm.",
+      "team_stated_reason": "The team identifies top-side packaging space as a reason for the inverted modules. More exact collector optimization intent remains in the retained source bundle rather than the selected excerpt.",
+      "engineering_analysis": "Lower motors can free the turret/feed envelope without eliminating service and cable constraints. Color detection and staged possession need separate states so a delayed classification cannot feed the wrong cargo.",
+      "recommended_validation": "Test sensor latency, partial entry and turret-angle transfer clearance; verify climb hard-stop and disabled retention.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-148",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/qvxmqMO1hv8",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/404469"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 76,
+        "end_seconds": 475,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "qvxmqMO1hv8",
+          "sha256": "d04c37a62f5967b73cacda775509d6891434ec79769bd6c721b7cc6a4ed61946",
+          "caption_segments": 324,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-148:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-148",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-148"
+      ],
+      "source_urls": [
+        "https://youtu.be/qvxmqMO1hv8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-148",
+      "title": "2022-148 · Low hardware placement and staged turret feeding share scarce volume",
+      "year": 2022,
+      "robot_id": "2022-148",
+      "kind": "focused_technical_study",
+      "body": "# 2022-148: Low hardware placement and staged turret feeding share scarce volume\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nAn inverted swerve arrangement moves motors low, while a protected collector and printed guide feed staged cargo to the turret. A limit switch and color sensor support possession/rejection. The climb uses retained hooks and a rotating arm.\n\n## Team-stated reasoning or boundary\n\nThe team identifies top-side packaging space as a reason for the inverted modules. More exact collector optimization intent remains in the retained source bundle rather than the selected excerpt.\n\n## Engineering interpretation — analyst inference\n\nLower motors can free the turret/feed envelope without eliminating service and cable constraints. Color detection and staged possession need separate states so a delayed classification cannot feed the wrong cargo.\n\n## Proposed validation — not performed\n\nTest sensor latency, partial entry and turret-angle transfer clearance; verify climb hard-stop and disabled retention.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/qvxmqMO1hv8](https://youtu.be/qvxmqMO1hv8)\n- [https://www.chiefdelphi.com/t/404469](https://www.chiefdelphi.com/t/404469)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/qvxmqMO1hv8",
+        "https://www.chiefdelphi.com/t/404469"
+      ],
+      "path": "docs/research_continuation/2022-148.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-148",
+    "year": 2022,
+    "team": 148,
+    "epa_rank": 13,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"148\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 0,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"148\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-148:construction",
+    "study6-2022-148:team_stated_reason",
+    "study6-2022-148:engineering_analysis",
+    "study6-2022-148:recommended_validation",
+    "study6-2022-148:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

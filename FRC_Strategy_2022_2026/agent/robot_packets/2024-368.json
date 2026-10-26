@@ -1,0 +1,687 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-368",
+  "year": 2024,
+  "team": 368,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 368,
+    "robot": "Team Kika Mana 2024",
+    "primary": [
+      "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf",
+      "https://www.chiefdelphi.com/t/460883"
+    ],
+    "architecture": "Under-bumper acquisition, rack-pivot shooter and telescopic chain/trap architecture.",
+    "subsystems": {
+      "drivetrain": "31.5-by-26-inch frame; Falcon SDS L4 swerve.",
+      "intake": "Silicone/flex-wheel pickup with passive centering.",
+      "transfer": "Three small taped rollers and lateral precompression rollers prepare notes for launch.",
+      "scoring": "Asymmetric Colson placement adds spin; dual Falcons and rack-based pivot cover bumper-to-wing shots.",
+      "endgame": "Independent rope-driven sides, shooter-actuated ratchet and delayed reaction-bar deployment; two-stage extrusion elevator.",
+      "controls": "Automatic ranging, alignment and trap sequencing."
+    },
+    "versions": [
+      "After LA: predeployed hooks and faster climb target, second shooter motor, more autonomous modes and reinforced front structure/bumpers."
+    ],
+    "analysis": "The team documents an integrated trap cycle rather than treating chain engagement and note delivery separately. Their quoted sub-three-second target should not be converted into an established success statistic.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "# 2024-368: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## Team Kika Mana: technical sheet supports construction, not a complete design history\n\nVersion: Team Kika Mana 2024. [PDF p1](https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1)\n\n**Published construction:** Asymmetric 3-inch Colson shooter; side-compression feed; rack hood; elevator-mounted scoring package.\n\n**Team-stated reason or evidence boundary:** The sheet attributes spin to shot accuracy; broader selection reasoning is not documented.\n\n**Engineering analysis — original inference:** This source is useful for geometry and component identification but should not be promoted to a full engineering binder. Different wheel count or speed across the note can create spin; compression controls the contact state and must remain consistent through the feed. A moving scorer adds position and angle errors that require joint calibration. The exact tolerance, rejected alternatives and event-by-event revision history are not established by one illustrated sheet. The agent should use it to locate a mechanism family and then seek CAD, interviews or team replies before claiming why every dimension was selected.\n\n**Proposed validation — not a completed test:** Validate wheel arrangement and compression in CAD, then test dispersion and elevator deflection across the intended scoring range.\n\n**Limits:** One-page technical sheet only. Complete trade studies, final reductions and season revision history remain unverified.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Source sheet | 31.5×26-in base; L4 SDS; 3-in Colsons; 1.67× speed-up; 18.75:1 climb | [Source p1](https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2024-368",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/460883/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/3/b3d7aca210deade009eb497fb2be7f51b0349d6b_2_647x500.png",
+        "post": 1,
+        "date": "2024-04-01T13:21:44.910Z",
+        "author": "jun",
+        "context_tags": [],
+        "caption": "2024 team 368 — source image from post 1 (2024-04-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "c30008f93de8d06e3f.jpg",
+        "id": "bf1606786e99e0bf98",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/c30008f93de8d06e3f.jpg"
+      },
+      {
+        "robot_id": "2024-368",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/460883/3",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/f/5f9566f20822f17d0bdb465b966c4753ee9d22c2_2_690x460.jpeg",
+        "post": 3,
+        "date": "2024-04-01T13:39:56.724Z",
+        "author": "jun",
+        "context_tags": [
+          "climb",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2024 team 368 — source image from post 3 (2024-04-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "2bda6c70492ead0e48.jpg",
+        "id": "1269faea371d465841",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/2bda6c70492ead0e48.jpg"
+      },
+      {
+        "id": "binder-53aa4619f3f5cdb626-p1-1",
+        "robot_id": "2024-368",
+        "kind": "binder_figure",
+        "binder_id": "53aa4619f3f5cdb626",
+        "pdf_page": 1,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-53aa4619f3f5cdb626-p1-1.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+        "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Robot technical sheet",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          30.600000381469727,
+          95.04000091552734,
+          293.760009765625,
+          261.3599853515625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 1
+      },
+      {
+        "id": "binder-53aa4619f3f5cdb626-p1-2",
+        "robot_id": "2024-368",
+        "kind": "binder_figure",
+        "binder_id": "53aa4619f3f5cdb626",
+        "pdf_page": 1,
+        "figure_number": 2,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-53aa4619f3f5cdb626-p1-2.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+        "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 2. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Robot technical sheet",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          306.0,
+          79.19999694824219,
+          495.7200012207031,
+          237.60000610351562
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 1
+      },
+      {
+        "id": "binder-53aa4619f3f5cdb626-p1-3",
+        "robot_id": "2024-368",
+        "kind": "binder_figure",
+        "binder_id": "53aa4619f3f5cdb626",
+        "pdf_page": 1,
+        "figure_number": 3,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-53aa4619f3f5cdb626-p1-3.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+        "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 3. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Robot technical sheet",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          24.479999542236328,
+          277.20001220703125,
+          275.3999938964844,
+          443.5199890136719
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 1
+      },
+      {
+        "id": "binder-53aa4619f3f5cdb626-p1-4",
+        "robot_id": "2024-368",
+        "kind": "binder_figure",
+        "binder_id": "53aa4619f3f5cdb626",
+        "pdf_page": 1,
+        "figure_number": 4,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-53aa4619f3f5cdb626-p1-4.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+        "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 4. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Robot technical sheet",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          318.239990234375,
+          277.20001220703125,
+          520.2000122070312,
+          443.5199890136719
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 1
+      },
+      {
+        "id": "binder-53aa4619f3f5cdb626-p1-5",
+        "robot_id": "2024-368",
+        "kind": "binder_figure",
+        "binder_id": "53aa4619f3f5cdb626",
+        "pdf_page": 1,
+        "figure_number": 5,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-53aa4619f3f5cdb626-p1-5.jpg",
+        "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+        "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 5. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Robot technical sheet",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          24.479999542236328,
+          530.6400146484375,
+          244.8000030517578,
+          696.9600219726562
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 1
+      }
+    ],
+    "source_post_count": 2,
+    "cad_code_links": [],
+    "id": "2024-368",
+    "team_name": "Team Kika Mana",
+    "epa_rank": 21,
+    "epa": 47.22,
+    "epa_pre_champs": 45.71,
+    "epa_breakdown": {
+      "total_points": 47.22,
+      "auto_points": 16.86,
+      "teleop_points": 23.53,
+      "endgame_points": 6.83,
+      "melody_rp": 0.6042,
+      "ensemble_rp": 0.3591,
+      "tiebreaker_points": 0.21,
+      "auto_leave_points": 1.84,
+      "auto_note_points": 15.02,
+      "teleop_note_points": 23.53,
+      "speaker_points": 35.69,
+      "amplified_notes": 3.75,
+      "endgame_park_points": -0.03,
+      "endgame_on_stage_points": 2.96,
+      "endgame_harmony_points": -0.05,
+      "endgame_trap_points": 3.95,
+      "endgame_spotlight_points": 0.0,
+      "rp_1": 0.6042,
+      "rp_2": 0.3591,
+      "total_note_points": 38.55
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "53aa4619f3f5cdb6",
+      "aaecb669c2045ef2"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-53aa4619f3f5cdb626-106"
+    ],
+    "binder_source_ids": [
+      "53aa4619f3f5cdb626"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-368",
+      "year": 2024,
+      "team": 368,
+      "epa_rank": 21,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"368\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 13,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "53aa4619f3f5cdb626"
+      ],
+      "technical_note_ids": [
+        "tech-53aa4619f3f5cdb626-106"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "53aa4619f3f5cdb626",
+          "url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf",
+          "error": null,
+          "discovery": "Existing primary bundle",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "53aa4619f3f5cdb626",
+      "subsystem": "scoring",
+      "title": "Team Kika Mana: technical sheet supports construction, not a complete design history",
+      "pdf_pages": [
+        1
+      ],
+      "construction": "Asymmetric 3-inch Colson shooter; side-compression feed; rack hood; elevator-mounted scoring package.",
+      "team_stated_reason": "The sheet attributes spin to shot accuracy; broader selection reasoning is not documented.",
+      "engineering_analysis": "This source is useful for geometry and component identification but should not be promoted to a full engineering binder. Different wheel count or speed across the note can create spin; compression controls the contact state and must remain consistent through the feed. A moving scorer adds position and angle errors that require joint calibration. The exact tolerance, rejected alternatives and event-by-event revision history are not established by one illustrated sheet. The agent should use it to locate a mechanism family and then seek CAD, interviews or team replies before claiming why every dimension was selected.",
+      "recommended_validation": "Validate wheel arrangement and compression in CAD, then test dispersion and elevator deflection across the intended scoring range.",
+      "limitations": "One-page technical sheet only. Complete trade studies, final reductions and season revision history remain unverified.",
+      "id": "tech-53aa4619f3f5cdb626-106",
+      "robot_id": "2024-368",
+      "year": 2024,
+      "version_label": "Team Kika Mana 2024",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 1,
+          "url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1"
+        }
+      ],
+      "image_ids": [
+        "binder-53aa4619f3f5cdb626-p1-1",
+        "binder-53aa4619f3f5cdb626-p1-2",
+        "binder-53aa4619f3f5cdb626-p1-3",
+        "binder-53aa4619f3f5cdb626-p1-4",
+        "binder-53aa4619f3f5cdb626-p1-5"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-53aa4619f3f5cdb626-1",
+      "binder_id": "53aa4619f3f5cdb626",
+      "robot_id": "2024-368",
+      "pdf_page": 1,
+      "component": "Source sheet",
+      "published_parameters": "31.5×26-in base; L4 SDS; 3-in Colsons; 1.67× speed-up; 18.75:1 climb",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "53aa4619f3f5cdb626",
+      "robot_id": "2024-368",
+      "title": "2024-368 Team Kika Mana 2024 technical publication",
+      "url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf",
+      "format": "pdf",
+      "pages": 1,
+      "sha256": "3082654c3dc0ea7ec64f8c27ca24935afcc227975384f608a1045ce8fe26712f",
+      "bytes": 845158,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "figure_pages": [
+        1
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "Existing primary bundle",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "one_page_technical_sheet"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2024-368:publication-version:1",
+      "label": "Team Kika Mana 2024",
+      "robot_id": "2024-368",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-53aa4619f3f5cdb626-106"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2024-368",
+      "title": "2024-368: technical construction and mechanism reasoning",
+      "year": 2024,
+      "robot_id": "2024-368",
+      "kind": "robot_technical_review",
+      "body": "# 2024-368: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## Team Kika Mana: technical sheet supports construction, not a complete design history\n\nVersion: Team Kika Mana 2024. [PDF p1](https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1)\n\n**Published construction:** Asymmetric 3-inch Colson shooter; side-compression feed; rack hood; elevator-mounted scoring package.\n\n**Team-stated reason or evidence boundary:** The sheet attributes spin to shot accuracy; broader selection reasoning is not documented.\n\n**Engineering analysis — original inference:** This source is useful for geometry and component identification but should not be promoted to a full engineering binder. Different wheel count or speed across the note can create spin; compression controls the contact state and must remain consistent through the feed. A moving scorer adds position and angle errors that require joint calibration. The exact tolerance, rejected alternatives and event-by-event revision history are not established by one illustrated sheet. The agent should use it to locate a mechanism family and then seek CAD, interviews or team replies before claiming why every dimension was selected.\n\n**Proposed validation — not a completed test:** Validate wheel arrangement and compression in CAD, then test dispersion and elevator deflection across the intended scoring range.\n\n**Limits:** One-page technical sheet only. Complete trade studies, final reductions and season revision history remain unverified.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Source sheet | 31.5×26-in base; L4 SDS; 3-in Colsons; 1.67× speed-up; 18.75:1 climb | [Source p1](https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf"
+      ],
+      "path": "docs/technical/2024-368.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-368",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/460883/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/b/3/b3d7aca210deade009eb497fb2be7f51b0349d6b_2_647x500.png",
+      "post": 1,
+      "date": "2024-04-01T13:21:44.910Z",
+      "author": "jun",
+      "context_tags": [],
+      "caption": "2024 team 368 — source image from post 1 (2024-04-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "c30008f93de8d06e3f.jpg",
+      "id": "bf1606786e99e0bf98",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/c30008f93de8d06e3f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 34681,
+      "sha256": "94899edc60e33ea6cab6f55eba105b9d876debd983cc7bf2e7b432298317ab5d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "bf1606786e99e0bf98",
+      "reader_url": "index.html#image=bf1606786e99e0bf98",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-368",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/460883/3",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/5/f/5f9566f20822f17d0bdb465b966c4753ee9d22c2_2_690x460.jpeg",
+      "post": 3,
+      "date": "2024-04-01T13:39:56.724Z",
+      "author": "jun",
+      "context_tags": [
+        "climb",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2024 team 368 — source image from post 3 (2024-04-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "2bda6c70492ead0e48.jpg",
+      "id": "1269faea371d465841",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/2bda6c70492ead0e48.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 460,
+      "bytes": 116156,
+      "sha256": "81b49b3531a920930e6bad8673d3b9c2fc0a2425fad4308ab340152d706185ae",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1269faea371d465841",
+      "reader_url": "index.html#image=1269faea371d465841",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-53aa4619f3f5cdb626-p1-1",
+      "robot_id": "2024-368",
+      "kind": "binder_figure",
+      "binder_id": "53aa4619f3f5cdb626",
+      "pdf_page": 1,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-53aa4619f3f5cdb626-p1-1.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+      "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Robot technical sheet",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        30.600000381469727,
+        95.04000091552734,
+        293.760009765625,
+        261.3599853515625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 1,
+      "media_type": "image/jpeg",
+      "width_px": 606,
+      "height_px": 384,
+      "bytes": 43950,
+      "sha256": "ddf13539b858967ae9b7a6f94dff20e370c2319959ae1e9ea0b8abe0e9bcb638",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-53aa4619f3f5cdb626-p1-1",
+      "reader_url": "index.html#image=binder-53aa4619f3f5cdb626-p1-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-53aa4619f3f5cdb626-p1-2",
+      "robot_id": "2024-368",
+      "kind": "binder_figure",
+      "binder_id": "53aa4619f3f5cdb626",
+      "pdf_page": 1,
+      "figure_number": 2,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-53aa4619f3f5cdb626-p1-2.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+      "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 2. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Robot technical sheet",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        306.0,
+        79.19999694824219,
+        495.7200012207031,
+        237.60000610351562
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 1,
+      "media_type": "image/jpeg",
+      "width_px": 438,
+      "height_px": 365,
+      "bytes": 48063,
+      "sha256": "50e19207d6cca777c815e2f0cdb08e9368bcd4d2bfd1db9af1c6acc60ca5e3bb",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-53aa4619f3f5cdb626-p1-2",
+      "reader_url": "index.html#image=binder-53aa4619f3f5cdb626-p1-2",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-53aa4619f3f5cdb626-p1-3",
+      "robot_id": "2024-368",
+      "kind": "binder_figure",
+      "binder_id": "53aa4619f3f5cdb626",
+      "pdf_page": 1,
+      "figure_number": 3,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-53aa4619f3f5cdb626-p1-3.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+      "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 3. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Robot technical sheet",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        24.479999542236328,
+        277.20001220703125,
+        275.3999938964844,
+        443.5199890136719
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 1,
+      "media_type": "image/jpeg",
+      "width_px": 578,
+      "height_px": 384,
+      "bytes": 48091,
+      "sha256": "abd15be9d06f5c905ced9048297066763e48cc0284869c1894fa4c43536b20a8",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-53aa4619f3f5cdb626-p1-3",
+      "reader_url": "index.html#image=binder-53aa4619f3f5cdb626-p1-3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-53aa4619f3f5cdb626-p1-4",
+      "robot_id": "2024-368",
+      "kind": "binder_figure",
+      "binder_id": "53aa4619f3f5cdb626",
+      "pdf_page": 1,
+      "figure_number": 4,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-53aa4619f3f5cdb626-p1-4.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+      "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 4. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Robot technical sheet",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        318.239990234375,
+        277.20001220703125,
+        520.2000122070312,
+        443.5199890136719
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 1,
+      "media_type": "image/jpeg",
+      "width_px": 466,
+      "height_px": 384,
+      "bytes": 37333,
+      "sha256": "f958ba446bdebf28031e7b5d9866100d2624de19e44637768ce7b465cf71ada8",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-53aa4619f3f5cdb626-p1-4",
+      "reader_url": "index.html#image=binder-53aa4619f3f5cdb626-p1-4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-53aa4619f3f5cdb626-p1-5",
+      "robot_id": "2024-368",
+      "kind": "binder_figure",
+      "binder_id": "53aa4619f3f5cdb626",
+      "pdf_page": 1,
+      "figure_number": 5,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-53aa4619f3f5cdb626-p1-5.jpg",
+      "source_url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf#page=1",
+      "caption": "2024-368 · Team Kika Mana 2024 · Robot technical sheet · PDF page 1, extracted detail 5. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Robot technical sheet",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        24.479999542236328,
+        530.6400146484375,
+        244.8000030517578,
+        696.9600219726562
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 1,
+      "media_type": "image/jpeg",
+      "width_px": 508,
+      "height_px": 384,
+      "bytes": 44715,
+      "sha256": "1b86dca2e58f7b20c96ff7a33b57aef3a53b64ea00b9ac57a07debe6db36200c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-53aa4619f3f5cdb626-p1-5",
+      "reader_url": "index.html#image=binder-53aa4619f3f5cdb626-p1-5",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-368",
+    "year": 2024,
+    "team": 368,
+    "epa_rank": 21,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"368\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 13,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "53aa4619f3f5cdb626"
+    ],
+    "technical_note_ids": [
+      "tech-53aa4619f3f5cdb626-106"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "53aa4619f3f5cdb626",
+        "url": "https://www.chiefdelphi.com/uploads/short-url/f88CQDlOmk8KBTSeom6DQOruSVt.pdf",
+        "error": null,
+        "discovery": "Existing primary bundle",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-53aa4619f3f5cdb626-106:construction",
+    "tech-53aa4619f3f5cdb626-106:team_stated_reason",
+    "tech-53aa4619f3f5cdb626-106:engineering_analysis",
+    "tech-53aa4619f3f5cdb626-106:recommended_validation",
+    "tech-53aa4619f3f5cdb626-106:limitations",
+    "param-53aa4619f3f5cdb626-1"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

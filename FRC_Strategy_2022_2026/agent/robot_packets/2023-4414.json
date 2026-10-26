@@ -1,0 +1,382 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-4414",
+  "year": 2023,
+  "team": 4414,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 4414,
+    "robot": "Tsunami",
+    "primary": [
+      "https://youtu.be/URZEkOANGHQ"
+    ],
+    "architecture": "High-speed swerve, belt elevator, virtual nonparallel four-bar and later cube collector.",
+    "subsystems": {
+      "drivetrain": "Custom SDS MK4i top plates add a second drive motor per module: twelve swerve motors total.",
+      "intake": "Roller claw handles cones and cubes; later wide cube collector improves acquisition speed.",
+      "transfer": "Cube collector hands through the wide elevator opening.",
+      "scoring": "Belt-driven elevator and chained virtual four-bar control placement orientation.",
+      "endgame": "No separate lifting mechanism described; team allocated extra motors to drive performance.",
+      "controls": "Three Limelights, dynamic drive-to-node trajectories, 27-button grid selector and piece sensors."
+    },
+    "versions": [
+      "Cube intake added after initial architecture. Sensor-driven automatic stow reduces operator steps after acquisition/release."
+    ],
+    "analysis": "The strategic package prioritizes reduced travel and alignment time. Distinguish quoted theoretical drivetrain speed from a measured average cycle speed; the latter also includes loading and scoring.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/428584/126",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/6/f/6feba98b2dcc71458f197c60066a03db3cd548fd.jpeg",
+        "post": 126,
+        "date": "2023-04-28T15:53:27.208Z",
+        "author": "mswhite60",
+        "context_tags": [
+          "hopper"
+        ],
+        "caption": "2023 team 4414 — source image from post 126 (2023-04-28). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "1bccbfc976f247df04.jpg",
+        "id": "d182fc850bc2f47de6",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/1bccbfc976f247df04.jpg"
+      },
+      {
+        "robot_id": "2023-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/428584/134",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/2/7280cb4cb4deb141c22fe95c90621e2065ffb810_2_375x500.jpeg",
+        "post": 134,
+        "date": "2023-06-15T23:45:51.411Z",
+        "author": "Pizzatc",
+        "context_tags": [
+          "elevator"
+        ],
+        "caption": "2023 team 4414 — source image from post 134 (2023-06-15). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "6986d2690ccac1d196.jpg",
+        "id": "70d7e3cf67eeff0781",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/6986d2690ccac1d196.jpg"
+      },
+      {
+        "robot_id": "2023-4414",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/428584/155",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/2/f26fe6ff6bb810915bb7392c90810e23a31e12b2_2_285x375.jpeg",
+        "post": 155,
+        "date": "2023-06-29T07:26:12.804Z",
+        "author": "jjsessa",
+        "context_tags": [
+          "elevator",
+          "intake"
+        ],
+        "caption": "2023 team 4414 — source image from post 155 (2023-06-29). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "92669f0597fec5ade0.jpg",
+        "id": "12e462a7f56a668960",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/92669f0597fec5ade0.jpg"
+      }
+    ],
+    "source_post_count": 60,
+    "cad_code_links": [],
+    "id": "2023-4414",
+    "team_name": "HighTide",
+    "epa_rank": 22,
+    "epa": 68.73,
+    "epa_pre_champs": 65.22,
+    "epa_breakdown": {
+      "total_points": 68.73,
+      "auto_points": 14.27,
+      "teleop_points": 45.63,
+      "endgame_points": 8.11,
+      "links_rp": 0.6767,
+      "activation_rp": 0.4708,
+      "tiebreaker_points": 68.0,
+      "auto_charge_station_points": 6.88,
+      "auto_pieces": 1.6,
+      "teleop_grid_points": 29.47,
+      "bottom_pieces": 3.77,
+      "middle_pieces": 3.0,
+      "top_pieces": 3.19,
+      "cube_points": 13.16,
+      "cone_points": 20.89,
+      "links": 3.38,
+      "endgame_charge_station_points": 8.11,
+      "rp_1": 0.6767,
+      "rp_2": 0.4708
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "072fbe60e1ac7c97"
+    ],
+    "tags": [
+      "elevator",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-4414",
+      "year": 2023,
+      "team": 4414,
+      "epa_rank": 22,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"4414\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 11,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"4414\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-4414"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-4414",
+      "title": "A wide elevator enables a later collector, with a real packaging cost",
+      "start_seconds": 146,
+      "end_seconds": 335,
+      "construction": "A belted elevator and chained virtual four-bar place a shared claw. A later cube collector passes through the elevator opening. The source describes a custom second drive motor on each module and a nominal ratio/speed claim.",
+      "team_stated_reason": "The team explicitly says the wide opening made the late cube handoff possible. Additional drive power is a configuration-specific choice, not a requirement for every copied elevator.",
+      "engineering_analysis": "Future expansion space can create strategic flexibility, but extra width and power hardware consume mass and electrical margin from the beginning. Separate the original direct claw from the later cube-assisted acquisition.",
+      "recommended_validation": "Measure handoff tolerance, frame torsion and loaded drivetrain current before copying the full package.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-4414",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/URZEkOANGHQ",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 146,
+        "end_seconds": 335,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "URZEkOANGHQ",
+          "sha256": "93d9e7e79b1078a997dbe55aec3eb0553031282d25a7af0c5f960d44a8bfa27e",
+          "caption_segments": 412,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-4414:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-4414",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-4414"
+      ],
+      "source_urls": [
+        "https://youtu.be/URZEkOANGHQ"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-4414",
+      "title": "2023-4414 · A wide elevator enables a later collector, with a real packaging cost",
+      "year": 2023,
+      "robot_id": "2023-4414",
+      "kind": "focused_technical_study",
+      "body": "# 2023-4414: A wide elevator enables a later collector, with a real packaging cost\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA belted elevator and chained virtual four-bar place a shared claw. A later cube collector passes through the elevator opening. The source describes a custom second drive motor on each module and a nominal ratio/speed claim.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly says the wide opening made the late cube handoff possible. Additional drive power is a configuration-specific choice, not a requirement for every copied elevator.\n\n## Engineering interpretation — analyst inference\n\nFuture expansion space can create strategic flexibility, but extra width and power hardware consume mass and electrical margin from the beginning. Separate the original direct claw from the later cube-assisted acquisition.\n\n## Proposed validation — not performed\n\nMeasure handoff tolerance, frame torsion and loaded drivetrain current before copying the full package.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/URZEkOANGHQ](https://youtu.be/URZEkOANGHQ)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/URZEkOANGHQ"
+      ],
+      "path": "docs/research_continuation/2023-4414.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/428584/126",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/6/f/6feba98b2dcc71458f197c60066a03db3cd548fd.jpeg",
+      "post": 126,
+      "date": "2023-04-28T15:53:27.208Z",
+      "author": "mswhite60",
+      "context_tags": [
+        "hopper"
+      ],
+      "caption": "2023 team 4414 — source image from post 126 (2023-04-28). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "1bccbfc976f247df04.jpg",
+      "id": "d182fc850bc2f47de6",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/1bccbfc976f247df04.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 632,
+      "height_px": 699,
+      "bytes": 93746,
+      "sha256": "82ae70ba376c6635f67b9ec570ddf0dbc3b3ad3c588fb9b8bf9c36315217238b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "d182fc850bc2f47de6",
+      "reader_url": "index.html#image=d182fc850bc2f47de6",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/428584/134",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/2/7280cb4cb4deb141c22fe95c90621e2065ffb810_2_375x500.jpeg",
+      "post": 134,
+      "date": "2023-06-15T23:45:51.411Z",
+      "author": "Pizzatc",
+      "context_tags": [
+        "elevator"
+      ],
+      "caption": "2023 team 4414 — source image from post 134 (2023-06-15). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "6986d2690ccac1d196.jpg",
+      "id": "70d7e3cf67eeff0781",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/6986d2690ccac1d196.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 44610,
+      "sha256": "bba092b6a163f3401e852df6fb4c9f5198a492bd5792c8f96273c66feca5c4b4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "70d7e3cf67eeff0781",
+      "reader_url": "index.html#image=70d7e3cf67eeff0781",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-4414",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/428584/155",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/2/f26fe6ff6bb810915bb7392c90810e23a31e12b2_2_285x375.jpeg",
+      "post": 155,
+      "date": "2023-06-29T07:26:12.804Z",
+      "author": "jjsessa",
+      "context_tags": [
+        "elevator",
+        "intake"
+      ],
+      "caption": "2023 team 4414 — source image from post 155 (2023-06-29). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "92669f0597fec5ade0.jpg",
+      "id": "12e462a7f56a668960",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/92669f0597fec5ade0.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 285,
+      "height_px": 375,
+      "bytes": 18984,
+      "sha256": "661acce5e40240fb182cbdc4087ba6c541f9af8b22f194a482c167372c1c80f7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "12e462a7f56a668960",
+      "reader_url": "index.html#image=12e462a7f56a668960",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-4414",
+    "year": 2023,
+    "team": 4414,
+    "epa_rank": 22,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"4414\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 11,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"4414\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-4414:construction",
+    "study6-2023-4414:team_stated_reason",
+    "study6-2023-4414:engineering_analysis",
+    "study6-2023-4414:recommended_validation",
+    "study6-2023-4414:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

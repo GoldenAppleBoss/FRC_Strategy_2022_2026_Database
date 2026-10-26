@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-2075",
+  "year": 2024,
+  "team": 2075,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 2075,
+    "robot": "Masquerade",
+    "primary": [
+      "https://youtu.be/DEHi3v9PK90",
+      "https://www.chiefdelphi.com/t/456972"
+    ],
+    "architecture": "Hybrid under/over-bumper pickup and a shared shooting/climbing pivot.",
+    "subsystems": {
+      "drivetrain": "Swerve; compact protected under-bumper approach.",
+      "intake": "Spring-out friction-driven collectors compress the note through limited bumper clearance; supplementary over-bumper intake.",
+      "transfer": "Sensor-tracked conveyor feeds a staged launcher.",
+      "scoring": "Pivoted launcher with matched wheel arrangement and revised output power for range.",
+      "endgame": "Ratcheting hooks capture chain; shooter wheels react against stage; flexible fingers open trap.",
+      "controls": "Front note-detection and rear target camera; distance-based speed/angle maps and automated note states."
+    },
+    "versions": [
+      "Timing-pulley intake prototype changed to inline friction drive for packaging. Launcher power increased after range limitations."
+    ],
+    "analysis": "The friction drive is a packaging response, not a universal transmission preference. Shared launch/climb actuation also makes the reaction geometry and ratchet behavior central to trap reliability.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2024-2075",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/456972/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/2/1/21c482f93380780c053441ca1c7c0a371b7aee58_2_666x500.jpeg",
+        "post": 1,
+        "date": "2024-03-02T19:39:59.705Z",
+        "author": "Quinn_S",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2024 team 2075 — source image from post 1 (2024-03-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "b898cb995caf388ade.jpg",
+        "id": "e2a96e3b41509b0cdd",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/b898cb995caf388ade.jpg"
+      },
+      {
+        "robot_id": "2024-2075",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/456972/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/9/1/91dd4213866737451fd9cf7ec191dfcb4946925f.gif",
+        "post": 1,
+        "date": "2024-03-02T19:39:59.705Z",
+        "author": "Quinn_S",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2024 team 2075 — source image from post 1 (2024-03-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "0f2c0ec2620ad09302.jpg",
+        "id": "2c7b1f13b919419837",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/0f2c0ec2620ad09302.jpg"
+      },
+      {
+        "robot_id": "2024-2075",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/456972/5",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/b/6baa3d01b8b7e902cf47507ca350c3610be626c6_2_376x500.jpeg",
+        "post": 5,
+        "date": "2024-03-29T13:13:12.493Z",
+        "author": "Robosquatch76",
+        "context_tags": [
+          "climb",
+          "intake"
+        ],
+        "caption": "2024 team 2075 — source image from post 5 (2024-03-29). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "5dac5b77bcb31caeec.jpg",
+        "id": "db3fb2819698cbe01f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/5dac5b77bcb31caeec.jpg"
+      }
+    ],
+    "source_post_count": 3,
+    "cad_code_links": [],
+    "id": "2024-2075",
+    "team_name": "Enigma Robotics",
+    "epa_rank": 23,
+    "epa": 46.81,
+    "epa_pre_champs": 42.67,
+    "epa_breakdown": {
+      "total_points": 46.81,
+      "auto_points": 14.11,
+      "teleop_points": 28.33,
+      "endgame_points": 4.37,
+      "melody_rp": 0.4194,
+      "ensemble_rp": 0.1781,
+      "tiebreaker_points": 0.15,
+      "auto_leave_points": 2.04,
+      "auto_note_points": 12.08,
+      "teleop_note_points": 28.33,
+      "speaker_points": 37.5,
+      "amplified_notes": 4.45,
+      "endgame_park_points": 0.16,
+      "endgame_on_stage_points": 2.83,
+      "endgame_harmony_points": -0.04,
+      "endgame_trap_points": 1.31,
+      "endgame_spotlight_points": 0.11,
+      "rp_1": 0.4194,
+      "rp_2": 0.1781,
+      "total_note_points": 40.41
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "922f0549a64a7097",
+      "a32760c542aa294f"
+    ],
+    "tags": [
+      "climb",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-2075",
+      "year": 2024,
+      "team": 2075,
+      "epa_rank": 23,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2075\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 15,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2075\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-2075"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-2075",
+      "title": "Compliant bumper entry and a supported pivot solve separate uncertainties",
+      "start_seconds": 76,
+      "end_seconds": 258,
+      "construction": "Spring-loaded under-bumper collector segments compress notes through a limited opening, with an additional over-bumper collector. A sensor-tracked conveyor stages the note. The launcher angle is driven on both sides, and the source describes protecting the separate position sensor/transmission from damage.",
+      "team_stated_reason": "The team connects the two-sided pivot drive to reducing wobble and describes launcher changes made to gain useful shooting distance. The independent collector segments are intended to acquire at a wall as well as in open space.",
+      "engineering_analysis": "Compliant entry can increase tolerance while making the note’s shape and arrival speed variable. The downstream stage must restore a repeatable state before release. A symmetric pivot support helps angular repeatability, but the stiffness of the frame and belt/chain tension still determine the actual output angle.",
+      "recommended_validation": "Measure entry success at bumper contact, note deformation after transport, and left/right pivot deflection under acceleration. Verify stage sensing before comparing range.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-2075",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/DEHi3v9PK90",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/456972"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 76,
+        "end_seconds": 258,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "DEHi3v9PK90",
+          "sha256": "2407a6704f04aadb1e52c7148b72357be26dc14fd6bfb90876a0e6cb5a94b68a",
+          "caption_segments": 190,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-2075:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-2075",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-2075"
+      ],
+      "source_urls": [
+        "https://youtu.be/DEHi3v9PK90"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-2075",
+      "title": "2024-2075 · Compliant bumper entry and a supported pivot solve separate uncertainties",
+      "year": 2024,
+      "robot_id": "2024-2075",
+      "kind": "focused_technical_study",
+      "body": "# 2024-2075: Compliant bumper entry and a supported pivot solve separate uncertainties\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nSpring-loaded under-bumper collector segments compress notes through a limited opening, with an additional over-bumper collector. A sensor-tracked conveyor stages the note. The launcher angle is driven on both sides, and the source describes protecting the separate position sensor/transmission from damage.\n\n## Team-stated reasoning or boundary\n\nThe team connects the two-sided pivot drive to reducing wobble and describes launcher changes made to gain useful shooting distance. The independent collector segments are intended to acquire at a wall as well as in open space.\n\n## Engineering interpretation — analyst inference\n\nCompliant entry can increase tolerance while making the note’s shape and arrival speed variable. The downstream stage must restore a repeatable state before release. A symmetric pivot support helps angular repeatability, but the stiffness of the frame and belt/chain tension still determine the actual output angle.\n\n## Proposed validation — not performed\n\nMeasure entry success at bumper contact, note deformation after transport, and left/right pivot deflection under acceleration. Verify stage sensing before comparing range.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/DEHi3v9PK90](https://youtu.be/DEHi3v9PK90)\n- [https://www.chiefdelphi.com/t/456972](https://www.chiefdelphi.com/t/456972)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/DEHi3v9PK90",
+        "https://www.chiefdelphi.com/t/456972"
+      ],
+      "path": "docs/research_continuation/2024-2075.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-2075",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/456972/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/2/1/21c482f93380780c053441ca1c7c0a371b7aee58_2_666x500.jpeg",
+      "post": 1,
+      "date": "2024-03-02T19:39:59.705Z",
+      "author": "Quinn_S",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2024 team 2075 — source image from post 1 (2024-03-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "b898cb995caf388ade.jpg",
+      "id": "e2a96e3b41509b0cdd",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/b898cb995caf388ade.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 69388,
+      "sha256": "1b7b2e4dd0327008d41f37ea9fd047f960759cbd9d8d55e038f50bd98b58046f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "e2a96e3b41509b0cdd",
+      "reader_url": "index.html#image=e2a96e3b41509b0cdd",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-2075",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/456972/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/9/1/91dd4213866737451fd9cf7ec191dfcb4946925f.gif",
+      "post": 1,
+      "date": "2024-03-02T19:39:59.705Z",
+      "author": "Quinn_S",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2024 team 2075 — source image from post 1 (2024-03-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "0f2c0ec2620ad09302.jpg",
+      "id": "2c7b1f13b919419837",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/0f2c0ec2620ad09302.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 426,
+      "height_px": 240,
+      "bytes": 37959,
+      "sha256": "0d9a270d64148785b31bb982084b2bca504c8431caacab874782249e124dc7b6",
+      "path_base": "corpus_root",
+      "reader_asset_id": "2c7b1f13b919419837",
+      "reader_url": "index.html#image=2c7b1f13b919419837",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-2075",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/456972/5",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/b/6baa3d01b8b7e902cf47507ca350c3610be626c6_2_376x500.jpeg",
+      "post": 5,
+      "date": "2024-03-29T13:13:12.493Z",
+      "author": "Robosquatch76",
+      "context_tags": [
+        "climb",
+        "intake"
+      ],
+      "caption": "2024 team 2075 — source image from post 5 (2024-03-29). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "5dac5b77bcb31caeec.jpg",
+      "id": "db3fb2819698cbe01f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/5dac5b77bcb31caeec.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 376,
+      "height_px": 500,
+      "bytes": 71272,
+      "sha256": "fb37c795bbf0f5ade794cda1059de7fb7f42bc352eca7402f9722726094aa3fb",
+      "path_base": "corpus_root",
+      "reader_asset_id": "db3fb2819698cbe01f",
+      "reader_url": "index.html#image=db3fb2819698cbe01f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-2075",
+    "year": 2024,
+    "team": 2075,
+    "epa_rank": 23,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2075\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 15,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2075\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-2075:construction",
+    "study6-2024-2075:team_stated_reason",
+    "study6-2024-2075:engineering_analysis",
+    "study6-2024-2075:recommended_validation",
+    "study6-2024-2075:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

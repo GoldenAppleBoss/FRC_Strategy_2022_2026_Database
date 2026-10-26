@@ -1,0 +1,120 @@
+{
+  "edition": "604 five-season expansion",
+  "status": "data_validation_passed_research_limits_explicit",
+  "reports": {
+    "604_VALIDATION.json": {
+      "status": "passed",
+      "dossiers": 128,
+      "604_years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "new_dossiers": 3,
+      "expanded_existing_dossiers": 2,
+      "new_technical_notes": 24,
+      "technical_notes_total": 251,
+      "original_125_preserved": true,
+      "normalized_tables_equal": 24,
+      "table_rows": {
+        "sources": 4263,
+        "technical_parameters": 121,
+        "technical_mechanisms": 251,
+        "matches": 7995,
+        "events": 75,
+        "seasons": 5,
+        "video_reviews": 44,
+        "season_epa": 17330,
+        "source_posts": 3499,
+        "subsystems": 768,
+        "mechanism_images": 504,
+        "team_events": 4021,
+        "tower_summary_2026": 8,
+        "einstein_reviews": 80,
+        "robot_dossiers": 128,
+        "context_documents": 182,
+        "robot_sources": 517,
+        "versions": 219,
+        "metadata": 56,
+        "cad_code_links": 375,
+        "binder_sources": 29,
+        "selection_audit": 157,
+        "benchmarks": 58,
+        "binder_audit": 128
+      },
+      "source_files_preserved": true,
+      "new_image_extractions": 0,
+      "image_access_limit": "Newly located source images returned HTTP 403 to direct downloads; no new local image extraction claimed.",
+      "scope": "Selected published technical narrative, code and explicit team revisions. All-version completeness and independently measured performance are not certified."
+    },
+    "AGENT_VALIDATION.json": {
+      "status": "passed",
+      "checks": 16690,
+      "counts": {
+        "robot_packets": 128,
+        "retrieval_units": 4993,
+        "claims": 1376,
+        "images": 504,
+        "technical_notes": 251,
+        "published_parameters": 121,
+        "robot_years_with_technical_reviews": 128
+      },
+      "local_markdown_references": 602,
+      "broken_local_references": [],
+      "scope": "Navigation, byte identity, metadata/packet preservation, CLI filtering and SQLite integrity; not new source review or model reasoning evaluation."
+    },
+    "BROWSER_VALIDATION.json": {
+      "status": "passed",
+      "scope": "Offline reader UI only, not match footage or external video access",
+      "browser_version": "153.0.8010.0",
+      "new_video_sections_rendered": 14,
+      "match_commentary_rendered": true,
+      "visual_audit_pending_boundary_rendered": true,
+      "images": {
+        "decoded": 504,
+        "broken": []
+      },
+      "mobile_horizontal_overflow": false,
+      "page_errors": []
+    },
+    "READER_VALIDATION.json": {
+      "checks": 30,
+      "status": "passed",
+      "all_robot_details": 125,
+      "all_binder_audits": 125,
+      "browser_layout": false
+    },
+    "REBUILD_VALIDATION.json": {
+      "status": "passed",
+      "equal_tables": 24,
+      "row_counts": {
+        "sources": 4263,
+        "technical_parameters": 121,
+        "technical_mechanisms": 251,
+        "matches": 7995,
+        "events": 75,
+        "seasons": 5,
+        "video_reviews": 44,
+        "season_epa": 17330,
+        "source_posts": 3499,
+        "subsystems": 768,
+        "mechanism_images": 504,
+        "team_events": 4021,
+        "tower_summary_2026": 8,
+        "einstein_reviews": 80,
+        "robot_dossiers": 128,
+        "context_documents": 182,
+        "robot_sources": 517,
+        "versions": 219,
+        "metadata": 56,
+        "cad_code_links": 375,
+        "binder_sources": 29,
+        "selection_audit": 157,
+        "benchmarks": 58,
+        "binder_audit": 128
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "Offline reader UI only, not match footage or external video access",
+  "browser_version": "153.0.8010.0",
+  "new_video_sections_rendered": 14,
+  "match_commentary_rendered": true,
+  "visual_audit_pending_boundary_rendered": true,
+  "images": {
+    "decoded": 508,
+    "broken": []
+  },
+  "recovered_604_gallery_dialogs": 4,
+  "task_template_links_verified": true,
+  "mobile_horizontal_overflow": false,
+  "page_errors": []
+}

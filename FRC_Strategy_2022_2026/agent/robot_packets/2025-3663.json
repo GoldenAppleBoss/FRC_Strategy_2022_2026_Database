@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-3663",
+  "year": 2025,
+  "team": 3663,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 3663,
+    "robot": "CPR 2025",
+    "primary": [
+      "https://youtu.be/7lY_t0Ueh7U"
+    ],
+    "architecture": "Sideways elevator/arm chosen to achieve pass-through-style access without passing through the elevator.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Coral acquisition feeds arm-mounted grabber; detailed collector structure unresolved in reviewed interview.",
+      "transfer": "Sideways elevator packages transfer/scoring beside structure; fourth arm/grabber development iteration.",
+      "scoring": "Arm/grabber supports L1–L4 and algae processor/net; collision envelope includes reef and bellypan.",
+      "endgame": "High-pivot cage latch moves chain toward CG, balanced around battery/elevator; gearing retained load adequately, so proposed ratchet was omitted.",
+      "controls": "Collision avoidance and level-specific placement speeds coordinate scoring."
+    },
+    "versions": [
+      "Fourth design iteration is documented, not four verified competition robots.",
+      "Ratchet was considered and omitted in shown configuration."
+    ],
+    "analysis": "This architecture pursues the strategic advantage of front/back access through a different packaging route. Store the desired access pattern separately from a literal pass-through conveyor.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2025-3663",
+    "team_name": "CPR - Cedar Park Robotics",
+    "epa_rank": 33,
+    "epa": 85.42,
+    "epa_pre_champs": 82.76,
+    "epa_breakdown": {
+      "total_points": 85.42,
+      "auto_points": 18.08,
+      "teleop_points": 56.08,
+      "endgame_points": 11.27,
+      "auto_rp": 0.5923,
+      "coral_rp": 0.6235,
+      "barge_rp": 0.5552,
+      "tiebreaker_points": 0.24,
+      "auto_coral_points": 14.99,
+      "teleop_coral_points": 43.92,
+      "coral_l1": 2.39,
+      "coral_l2": 4.48,
+      "coral_l3": 4.28,
+      "coral_l4": 3.86,
+      "processor_algae": 0.26,
+      "processor_algae_points": 0.79,
+      "net_algae_points": 11.37,
+      "barge_points": 11.27,
+      "rp_1": 0.5923,
+      "rp_2": 0.6235,
+      "rp_3": 0.5552,
+      "total_coral_points": 58.910000000000004,
+      "total_algae_points": 12.16
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "partial / unresolved detail",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "48a65d0ae2090173"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "pass-through",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-3663",
+      "year": 2025,
+      "team": 3663,
+      "epa_rank": 33,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"3663\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 23,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3663\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-3663"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-3663",
+      "title": "A sideways elevator makes pass-through feasible with different interference",
+      "start_seconds": 147,
+      "end_seconds": 255,
+      "construction": "The fourth arm/grabber iteration works beside a sideways-oriented elevator. The robot handles coral levels and algae with the same arm assembly. The interview also describes placing the battery to counter the elevator’s mass and moving the scoring arm clear during climbing.",
+      "team_stated_reason": "The team explicitly says it wanted pass-through behavior but did not consider passing through the elevator suitable for its resources. It identifies low center of gravity as a reason for the alternate arrangement.",
+      "engineering_analysis": "Pass-through is a functional requirement, not a mandate to send the piece through an elevator opening. An offset mechanism can provide the desired acquisition/scoring directions while changing lateral load, frame torsion and the safe sweep envelope. Counterweight placement may improve static balance but should be checked throughout arm travel and with each game piece.",
+      "recommended_validation": "Measure lateral deflection and tip margin in the highest off-center pose; test all arm-to-climber transitions. Do not infer an undisclosed collector construction from the functional pass-through description.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-3663",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/7lY_t0Ueh7U",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 147,
+        "end_seconds": 255,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "7lY_t0Ueh7U",
+          "sha256": "00b046d410873d6df132d9645d543820600218b14ca099b4ec7cf2bcfd46dcac",
+          "caption_segments": 151,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-3663:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-3663",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-3663"
+      ],
+      "source_urls": [
+        "https://youtu.be/7lY_t0Ueh7U"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-3663",
+      "title": "2025-3663 · A sideways elevator makes pass-through feasible with different interference",
+      "year": 2025,
+      "robot_id": "2025-3663",
+      "kind": "focused_technical_study",
+      "body": "# 2025-3663: A sideways elevator makes pass-through feasible with different interference\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe fourth arm/grabber iteration works beside a sideways-oriented elevator. The robot handles coral levels and algae with the same arm assembly. The interview also describes placing the battery to counter the elevator’s mass and moving the scoring arm clear during climbing.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly says it wanted pass-through behavior but did not consider passing through the elevator suitable for its resources. It identifies low center of gravity as a reason for the alternate arrangement.\n\n## Engineering interpretation — analyst inference\n\nPass-through is a functional requirement, not a mandate to send the piece through an elevator opening. An offset mechanism can provide the desired acquisition/scoring directions while changing lateral load, frame torsion and the safe sweep envelope. Counterweight placement may improve static balance but should be checked throughout arm travel and with each game piece.\n\n## Proposed validation — not performed\n\nMeasure lateral deflection and tip margin in the highest off-center pose; test all arm-to-climber transitions. Do not infer an undisclosed collector construction from the functional pass-through description.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/7lY_t0Ueh7U](https://youtu.be/7lY_t0Ueh7U)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/7lY_t0Ueh7U"
+      ],
+      "path": "docs/research_continuation/2025-3663.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-3663",
+    "year": 2025,
+    "team": 3663,
+    "epa_rank": 33,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"3663\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 23,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3663\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-3663:construction",
+    "study6-2025-3663:team_stated_reason",
+    "study6-2025-3663:engineering_analysis",
+    "study6-2025-3663:recommended_validation",
+    "study6-2025-3663:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

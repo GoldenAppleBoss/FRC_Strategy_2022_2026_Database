@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-604",
+  "year": 2024,
+  "team": 604,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 604,
+    "robot": "Domotron",
+    "primary": [
+      "https://youtu.be/bGivb7bY7kI",
+      "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799"
+    ],
+    "architecture": "Low under-stage package, compliant full-width pickup and asymmetrical launcher on a trap elevator.",
+    "subsystems": {
+      "drivetrain": "Swerve; clearance opens an additional cycle lane under the stage.",
+      "intake": "Compliant polycarbonate/dead-axle collector; mecanum placement and guides center the ring without crushing it.",
+      "transfer": "Centered feed preserves the asymmetric launcher's intended contact sequence.",
+      "scoring": "Asymmetric roller contact deliberately initiates stable spin; same launcher handles amp delivery.",
+      "endgame": "Spring-assisted chain hooks tip robot toward stage; elevator positions launcher for trap.",
+      "controls": "Particle-filter localization, moving-shot calculation and guarded shoot commands support one-driver control."
+    },
+    "versions": [
+      "Symmetric shooter produced inconsistent flight; high-speed observation led to asymmetric contact. Dead-axle/shaft lengths selected to survive impacts.",
+      "May 2025 release follow-up identifies unresolved 2024 axle-bolt and deploy-chain failures; later 2026 independent arms address the coupling."
+    ],
+    "analysis": "This is a good causal design account: observe when successful shots gain spin, then reproduce the contact sequence. Under-stage clearance matters because it changes accessible routes.",
+    "limits": [
+      "Only source-established configurations and changes are described; intermediate revisions may remain unresolved.",
+      "Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.",
+      "Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification."
+    ],
+    "deep_context": "# 2024-604 — Quixilver: Domotron\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## 2024 release and May 2025 follow-up · intake\n\n### Published construction or code\n\nPolycarbonate rollers flex under impact; short dead-axle sections avoid a full-width shaft permanently bending. The team reports rollers deflecting more than half their diameter in bad hits. Deployment ties the two sides through chain and a cross shaft inside the frame.\n\n### Stated rationale and boundaries\n\nCompliance, weight and packaging drove the split-axle construction. The team explicitly reports axle-mount bolts shearing and deployment chain snapping, unresolved during the season.\n\n### Engineering interpretation\n\nA compliant roller is not the same as a robust entire intake. Moving deformation away from a long shaft can concentrate load in axle bolts or a mechanically coupled deployment system. This matters directly to 1833’s request for something beefy: copy the load path and its known limitations, not merely the visible material. The 2026 independently driven arms are a later response to the chain failure, not a configuration that existed throughout 2024.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2024 published CAD versus installed hardware · controls\n\n### Published construction or code\n\nThe team says bellypan holes were hand-drilled and omitted from CAD, electronics were suppressed to reduce CAD lag, shooter shafts were actually cut shorter, and a reused climber shaft tensioned surgical tubing absent from CAD.\n\n### Stated rationale and boundaries\n\nSome differences were drafting omissions, some deliberate reuse and some effort-versus-benefit decisions.\n\n### Engineering interpretation\n\nA released CAD assembly is a valuable geometry reference but not a perfect as-built record. A long shaft in a rendering is not automatically an intended design feature. Likewise, suppressed electronics do not imply an unplanned electrical layout. Follow the team’s replies when interpreting the release. The existing interview synopsis documents the asymmetric launcher and trap system; this addition focuses on the explicitly published manufacturing and intake corrections.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Only source-established configurations and changes are described; intermediate revisions may remain unresolved.\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n",
+    "images": [
+      {
+        "robot_id": "2024-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/477799/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/5/856ad395740b2121b4894128f68f41472572c69f_2_690x460.jpeg",
+        "post": 1,
+        "date": "2025-01-01T02:04:08.785Z",
+        "author": "johnH7",
+        "context_tags": [],
+        "caption": "2024 team 604 — source image from post 1 (2025-01-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "0277a3679b1eb09524.jpg",
+        "id": "bc86921e0b405ef8c6",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/0277a3679b1eb09524.jpg"
+      },
+      {
+        "robot_id": "2024-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/477799/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/e/8e45b44ca92937832e7069f436a9cf16c6772731_2_647x500.png",
+        "post": 1,
+        "date": "2025-01-01T02:04:08.785Z",
+        "author": "johnH7",
+        "context_tags": [],
+        "caption": "2024 team 604 — source image from post 1 (2025-01-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "4a5d8519b14d737de2.jpg",
+        "id": "01e7f0030fe23008de",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/4a5d8519b14d737de2.jpg"
+      },
+      {
+        "robot_id": "2024-604",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/477799/2",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/3/d/3d8876e7bd143e3f6dfa9d25914d3fa6556ef7d8_2_480x500.png",
+        "post": 2,
+        "date": "2025-01-01T02:47:55.533Z",
+        "author": "CooperSurma",
+        "context_tags": [
+          "elevator",
+          "shooter"
+        ],
+        "caption": "2024 team 604 — source image from post 2 (2025-01-01). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f1f7d2d0aa4180408e.jpg",
+        "id": "ac1c8925cc81e8bc46",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f1f7d2d0aa4180408e.jpg"
+      }
+    ],
+    "source_post_count": 7,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-604",
+        "discovery_post": "2024-604-477799-1",
+        "url": "https://cad.onshape.com/documents/201f606d504f880810571715/w/853b3ad6f05fc11c952eff08/e/d5e7c596d3f7c0b01175d779",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "15a693c92e5d6b5471"
+      },
+      {
+        "robot_id": "2024-604",
+        "discovery_post": "2024-604-477799-1",
+        "url": "https://github.com/frc604/2024-public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c3e7c0d123333b562c"
+      }
+    ],
+    "id": "2024-604",
+    "team_name": "Quixilver",
+    "epa_rank": 12,
+    "epa": 50.93,
+    "epa_pre_champs": 48.58,
+    "epa_breakdown": {
+      "total_points": 50.93,
+      "auto_points": 16.62,
+      "teleop_points": 28.55,
+      "endgame_points": 5.77,
+      "melody_rp": 0.7711,
+      "ensemble_rp": 0.5378,
+      "tiebreaker_points": 0.15,
+      "auto_leave_points": 1.71,
+      "auto_note_points": 14.9,
+      "teleop_note_points": 28.55,
+      "speaker_points": 40.57,
+      "amplified_notes": 4.61,
+      "endgame_park_points": 0.23,
+      "endgame_on_stage_points": 2.74,
+      "endgame_harmony_points": -0.1,
+      "endgame_trap_points": 3.0,
+      "endgame_spotlight_points": -0.1,
+      "rp_1": 0.7711,
+      "rp_2": 0.5378,
+      "total_note_points": 43.45
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Version-specific primary-source study; not exhaustive per-event certification",
+    "strict_acceptance": "provisional; unresolved geometry and version details explicitly retained",
+    "source_ids": [
+      "01d8c0676d36ab52",
+      "604-source-2024"
+    ],
+    "tags": [
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-604",
+      "year": 2024,
+      "team": 604,
+      "epa_rank": 12,
+      "status": "candidate_unavailable_nonrobot_or_unverified",
+      "search": {
+        "query": "\"604\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 13,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"604\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [
+        "604-source-2024"
+      ],
+      "technical_note_ids": [
+        "study6-2024-604",
+        "604-expansion-2024-1",
+        "604-expansion-2024-2"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "62f331f692b7b120aa",
+          "url": "https://resources.604robotics.com/_next/static/chunks/src/files/2024%20-%20FRC%20604%20-%20OpenPit.5aa86c81bd141a9c.pdf",
+          "error": null,
+          "discovery": "Targeted web search; identity pending PDF inspection",
+          "status": "excluded_non_robot_publication"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false,
+      "identity_correction": "Downloaded OpenPit PDF is pit furniture documentation, not a robot technical binder; excluded from mechanism evidence."
+    },
+    "technical_note_ids": [
+      "study6-2024-604",
+      "604-expansion-2024-1",
+      "604-expansion-2024-2"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-604",
+      "title": "Controlled centering preserves deliberately asymmetric shooting contact",
+      "start_seconds": 111,
+      "end_seconds": 365,
+      "construction": "A wide compliant/dead-axis intake and guides center the note before an asymmetric launcher contact sequence. The same scoring assembly handles amp delivery and rises for trap work. Beam-break acquisition feedback retracts the collector and rumbles the driver controller.",
+      "team_stated_reason": "The team identifies driver tolerance, source pickup speed and long-range scoring that reduces driving as priorities. The source reports about a second of cycle improvement from acquisition feedback/retraction behavior; that is a team estimate, not an isolated controlled trial.",
+      "engineering_analysis": "Ring deformation and lateral offset can change which launcher contact happens first. Centering is therefore part of generating the intended spin, not merely getting the note somewhere inside the robot. The driver-feedback example also shows how a small state signal can reduce wasted acquisition motion without changing motor power.",
+      "recommended_validation": "Vary lateral entry, note wear and intake speed; measure spin, trajectory spread and complete cycle time. Separate the effect of a wider pickup from the effect of better feedback.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-604",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/bGivb7bY7kI",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 111,
+        "end_seconds": 365,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "bGivb7bY7kI",
+          "sha256": "c874ff6672227fee9262435a7cd6b340bbfbf457e1b9b07bf251eca526adab46",
+          "caption_segments": 329,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    },
+    {
+      "id": "604-expansion-2024-1",
+      "robot_id": "2024-604",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "intake",
+      "title": "2024 release and May 2025 follow-up · intake",
+      "version_label": "2024 release and May 2025 follow-up",
+      "construction": "Polycarbonate rollers flex under impact; short dead-axle sections avoid a full-width shaft permanently bending. The team reports rollers deflecting more than half their diameter in bad hits. Deployment ties the two sides through chain and a cross shaft inside the frame.",
+      "team_stated_reason": "Compliance, weight and packaging drove the split-axle construction. The team explicitly reports axle-mount bolts shearing and deployment chain snapping, unresolved during the season.",
+      "engineering_analysis": "A compliant roller is not the same as a robust entire intake. Moving deformation away from a long shaft can concentrate load in axle bolts or a mechanically coupled deployment system. This matters directly to 1833’s request for something beefy: copy the load path and its known limitations, not merely the visible material. The 2026 independently driven arms are a later response to the chain failure, not a configuration that existed throughout 2024.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2024-2",
+      "robot_id": "2024-604",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "controls",
+      "title": "2024 published CAD versus installed hardware · controls",
+      "version_label": "2024 published CAD versus installed hardware",
+      "construction": "The team says bellypan holes were hand-drilled and omitted from CAD, electronics were suppressed to reduce CAD lag, shooter shafts were actually cut shorter, and a reused climber shaft tensioned surgical tubing absent from CAD.",
+      "team_stated_reason": "Some differences were drafting omissions, some deliberate reuse and some effort-versus-benefit decisions.",
+      "engineering_analysis": "A released CAD assembly is a valuable geometry reference but not a perfect as-built record. A long shaft in a rendering is not automatically an intended design feature. Likewise, suppressed electronics do not imply an unplanned electrical layout. Follow the team’s replies when interpreting the release. The existing interview synopsis documents the asymmetric launcher and trap system; this addition focuses on the explicitly published manufacturing and intake corrections.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Team release, selected mechanism sections and identified replies"
+      ],
+      "source_url": "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799",
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-604:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-604"
+      ],
+      "source_urls": [
+        "https://youtu.be/bGivb7bY7kI"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2024-604:publication-version:2",
+      "label": "2024 release and May 2025 follow-up",
+      "robot_id": "2024-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2024-1"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2024-604:publication-version:3",
+      "label": "2024 published CAD versus installed hardware",
+      "robot_id": "2024-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2024-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-604",
+      "title": "2024-604 · Controlled centering preserves deliberately asymmetric shooting contact",
+      "year": 2024,
+      "robot_id": "2024-604",
+      "kind": "focused_technical_study",
+      "body": "# 2024-604: Controlled centering preserves deliberately asymmetric shooting contact\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA wide compliant/dead-axis intake and guides center the note before an asymmetric launcher contact sequence. The same scoring assembly handles amp delivery and rises for trap work. Beam-break acquisition feedback retracts the collector and rumbles the driver controller.\n\n## Team-stated reasoning or boundary\n\nThe team identifies driver tolerance, source pickup speed and long-range scoring that reduces driving as priorities. The source reports about a second of cycle improvement from acquisition feedback/retraction behavior; that is a team estimate, not an isolated controlled trial.\n\n## Engineering interpretation — analyst inference\n\nRing deformation and lateral offset can change which launcher contact happens first. Centering is therefore part of generating the intended spin, not merely getting the note somewhere inside the robot. The driver-feedback example also shows how a small state signal can reduce wasted acquisition motion without changing motor power.\n\n## Proposed validation — not performed\n\nVary lateral entry, note wear and intake speed; measure spin, trajectory spread and complete cycle time. Separate the effect of a wider pickup from the effect of better feedback.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/bGivb7bY7kI](https://youtu.be/bGivb7bY7kI)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/bGivb7bY7kI"
+      ],
+      "path": "docs/research_continuation/2024-604.md"
+    },
+    {
+      "id": "2024-604-primary-study",
+      "title": "2024-604 primary-source mechanisms and strategic context",
+      "year": 2024,
+      "robot_id": "2024-604",
+      "kind": "robot_deep_note",
+      "body": "# 2024-604 — Quixilver: Domotron\n\nPrimary source: https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\n## 2024 release and May 2025 follow-up · intake\n\n### Published construction or code\n\nPolycarbonate rollers flex under impact; short dead-axle sections avoid a full-width shaft permanently bending. The team reports rollers deflecting more than half their diameter in bad hits. Deployment ties the two sides through chain and a cross shaft inside the frame.\n\n### Stated rationale and boundaries\n\nCompliance, weight and packaging drove the split-axle construction. The team explicitly reports axle-mount bolts shearing and deployment chain snapping, unresolved during the season.\n\n### Engineering interpretation\n\nA compliant roller is not the same as a robust entire intake. Moving deformation away from a long shaft can concentrate load in axle bolts or a mechanically coupled deployment system. This matters directly to 1833’s request for something beefy: copy the load path and its known limitations, not merely the visible material. The 2026 independently driven arms are a later response to the chain failure, not a configuration that existed throughout 2024.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## 2024 published CAD versus installed hardware · controls\n\n### Published construction or code\n\nThe team says bellypan holes were hand-drilled and omitted from CAD, electronics were suppressed to reduce CAD lag, shooter shafts were actually cut shorter, and a reused climber shaft tensioned surgical tubing absent from CAD.\n\n### Stated rationale and boundaries\n\nSome differences were drafting omissions, some deliberate reuse and some effort-versus-benefit decisions.\n\n### Engineering interpretation\n\nA released CAD assembly is a valuable geometry reference but not a perfect as-built record. A long shaft in a rendering is not automatically an intended design feature. Likewise, suppressed electronics do not imply an unplanned electrical layout. Follow the team’s replies when interpreting the release. The existing interview synopsis documents the asymmetric launcher and trap system; this addition focuses on the explicitly published manufacturing and intake corrections.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Only source-established configurations and changes are described; intermediate revisions may remain unresolved.\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-604-quixilver-presents-our-2024-robot-cad-and-code-release/477799"
+      ],
+      "path": "docs/context/2024-604-primary-study.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/477799/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/5/856ad395740b2121b4894128f68f41472572c69f_2_690x460.jpeg",
+      "post": 1,
+      "date": "2025-01-01T02:04:08.785Z",
+      "author": "johnH7",
+      "context_tags": [],
+      "caption": "2024 team 604 — source image from post 1 (2025-01-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "0277a3679b1eb09524.jpg",
+      "id": "bc86921e0b405ef8c6",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/0277a3679b1eb09524.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 460,
+      "bytes": 97760,
+      "sha256": "acaf64bf421ef23fe9f0144067fc3abae680f1286c94c2745eecb4b8dda93159",
+      "path_base": "corpus_root",
+      "reader_asset_id": "bc86921e0b405ef8c6",
+      "reader_url": "index.html#image=bc86921e0b405ef8c6",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/477799/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/8/e/8e45b44ca92937832e7069f436a9cf16c6772731_2_647x500.png",
+      "post": 1,
+      "date": "2025-01-01T02:04:08.785Z",
+      "author": "johnH7",
+      "context_tags": [],
+      "caption": "2024 team 604 — source image from post 1 (2025-01-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "4a5d8519b14d737de2.jpg",
+      "id": "01e7f0030fe23008de",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/4a5d8519b14d737de2.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 647,
+      "height_px": 500,
+      "bytes": 58684,
+      "sha256": "0e01d6d194fb88ec9b9087201e972e5d21342aa86b6fbd4469758c26c4f8eabf",
+      "path_base": "corpus_root",
+      "reader_asset_id": "01e7f0030fe23008de",
+      "reader_url": "index.html#image=01e7f0030fe23008de",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-604",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/477799/2",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/3/d/3d8876e7bd143e3f6dfa9d25914d3fa6556ef7d8_2_480x500.png",
+      "post": 2,
+      "date": "2025-01-01T02:47:55.533Z",
+      "author": "CooperSurma",
+      "context_tags": [
+        "elevator",
+        "shooter"
+      ],
+      "caption": "2024 team 604 — source image from post 2 (2025-01-01). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f1f7d2d0aa4180408e.jpg",
+      "id": "ac1c8925cc81e8bc46",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f1f7d2d0aa4180408e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 480,
+      "height_px": 500,
+      "bytes": 9971,
+      "sha256": "5fbd01c1209f838ec29086cbb75d01b0d35fb8a293b1b13e000211bcff4d72cc",
+      "path_base": "corpus_root",
+      "reader_asset_id": "ac1c8925cc81e8bc46",
+      "reader_url": "index.html#image=ac1c8925cc81e8bc46",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-604",
+    "year": 2024,
+    "team": 604,
+    "epa_rank": 12,
+    "status": "candidate_unavailable_nonrobot_or_unverified",
+    "search": {
+      "query": "\"604\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 13,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"604\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [
+      "604-source-2024"
+    ],
+    "technical_note_ids": [
+      "study6-2024-604",
+      "604-expansion-2024-1",
+      "604-expansion-2024-2"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "62f331f692b7b120aa",
+        "url": "https://resources.604robotics.com/_next/static/chunks/src/files/2024%20-%20FRC%20604%20-%20OpenPit.5aa86c81bd141a9c.pdf",
+        "error": null,
+        "discovery": "Targeted web search; identity pending PDF inspection",
+        "status": "excluded_non_robot_publication"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false,
+    "identity_correction": "Downloaded OpenPit PDF is pit furniture documentation, not a robot technical binder; excluded from mechanism evidence."
+  },
+  "claim_ids": [
+    "study6-2024-604:construction",
+    "study6-2024-604:team_stated_reason",
+    "study6-2024-604:engineering_analysis",
+    "study6-2024-604:recommended_validation",
+    "study6-2024-604:limitations",
+    "604-expansion-2024-1:construction",
+    "604-expansion-2024-1:team_stated_reason",
+    "604-expansion-2024-1:engineering_analysis",
+    "604-expansion-2024-1:recommended_validation",
+    "604-expansion-2024-1:limitations",
+    "604-expansion-2024-2:construction",
+    "604-expansion-2024-2:team_stated_reason",
+    "604-expansion-2024-2:engineering_analysis",
+    "604-expansion-2024-2:recommended_validation",
+    "604-expansion-2024-2:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

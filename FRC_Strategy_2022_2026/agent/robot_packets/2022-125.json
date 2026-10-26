@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-125",
+  "year": 2022,
+  "team": 125,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 125,
+    "robot": "Freefall",
+    "primary": [
+      "https://youtu.be/O5ZSv-1vbJ8",
+      "https://www.chiefdelphi.com/t/403891",
+      "https://www.chiefdelphi.com/t/405399"
+    ],
+    "architecture": "Compliant cargo collection, hooded shooter and high-bar-reacting climber.",
+    "subsystems": {
+      "drivetrain": "Exact drive configuration remains unresolved in this review.",
+      "intake": "Wide dead-axle pneumatic collector retracts cargo into an S-shaped path; open front can receive bouncing cargo.",
+      "transfer": "Curved roller path preserves control toward launcher.",
+      "scoring": "Light grippy main wheels, two powered rollers to reduce backspin, adjustable hood and Limelight.",
+      "endgame": "Uses a hangar bar as its reaction surface to reach the next bar; this differs from a truss-reacting 254 climb.",
+      "controls": "Week-zero interview describes manual climbing sequence; later automated sequence and five-ball autonomous were plans at that time."
+    },
+    "versions": [
+      "Week-zero configuration is documented; later reveal links are indexed but a complete season-change audit is unresolved."
+    ],
+    "analysis": "Mechanism names need reaction geometry. Two superficially similar pivoting climbs may load different field members and have different alignment requirements.",
+    "limits": [
+      "Early technical interview; full later-season software and hardware chronology has not been verified."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 3,
+    "cad_code_links": [],
+    "id": "2022-125",
+    "team_name": "NUTRONs",
+    "epa_rank": 28,
+    "epa": 50.23,
+    "epa_pre_champs": 52.22,
+    "epa_breakdown": {
+      "total_points": 50.23,
+      "auto_points": 12.12,
+      "teleop_points": 27.95,
+      "endgame_points": 10.16,
+      "cargo_rp": 0.8629,
+      "hangar_rp": 0.5282,
+      "tiebreaker_points": 50.23,
+      "auto_taxi_points": 1.97,
+      "auto_cargo_lower": -0.02,
+      "auto_cargo_upper": 2.55,
+      "teleop_cargo_lower": -0.72,
+      "teleop_cargo_upper": 14.34,
+      "rp_1": 0.8629,
+      "rp_2": 0.5282
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "f71d8f670f4f8468",
+      "e24506458aef2d2e",
+      "93b7c404944deb91"
+    ],
+    "tags": [
+      "climb",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-125",
+      "year": 2022,
+      "team": 125,
+      "epa_rank": 28,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"125\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 0,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"125\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-125"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-125",
+      "title": "Impact-resistant acquisition and reduced spin require coordinated contacts",
+      "start_seconds": 80,
+      "end_seconds": 410,
+      "construction": "A wide dead-axis collector feeds a curved S-path and hooded launcher with powered upper contacts to reduce backspin. The interview discusses planned bouncing-cargo improvements and future climb automation, while the filmed climb remains manually sequenced.",
+      "team_stated_reason": "The source explicitly identifies fast acquisition and impact resistance as collector priorities.",
+      "engineering_analysis": "A controlled transfer can prepare incoming speed/spin, but each curve introduces another compression interface. Planned Velcro and planned automation must remain unfielded at this snapshot; neither can be used to explain its existing results.",
+      "recommended_validation": "Test side impacts, bouncing entry, full-path current and manual climb timing before attributing later automation benefits.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-125",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/O5ZSv-1vbJ8",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/403891",
+        "https://www.chiefdelphi.com/t/405399"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 410,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "O5ZSv-1vbJ8",
+          "sha256": "08269bb8f057dd0a8f010429cace4908d6e8f2028394dfb1ff2ca71b721e3740",
+          "caption_segments": 288,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-125:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-125",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-125"
+      ],
+      "source_urls": [
+        "https://youtu.be/O5ZSv-1vbJ8"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-125",
+      "title": "2022-125 · Impact-resistant acquisition and reduced spin require coordinated contacts",
+      "year": 2022,
+      "robot_id": "2022-125",
+      "kind": "focused_technical_study",
+      "body": "# 2022-125: Impact-resistant acquisition and reduced spin require coordinated contacts\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA wide dead-axis collector feeds a curved S-path and hooded launcher with powered upper contacts to reduce backspin. The interview discusses planned bouncing-cargo improvements and future climb automation, while the filmed climb remains manually sequenced.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly identifies fast acquisition and impact resistance as collector priorities.\n\n## Engineering interpretation — analyst inference\n\nA controlled transfer can prepare incoming speed/spin, but each curve introduces another compression interface. Planned Velcro and planned automation must remain unfielded at this snapshot; neither can be used to explain its existing results.\n\n## Proposed validation — not performed\n\nTest side impacts, bouncing entry, full-path current and manual climb timing before attributing later automation benefits.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/O5ZSv-1vbJ8](https://youtu.be/O5ZSv-1vbJ8)\n- [https://www.chiefdelphi.com/t/403891](https://www.chiefdelphi.com/t/403891)\n- [https://www.chiefdelphi.com/t/405399](https://www.chiefdelphi.com/t/405399)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/O5ZSv-1vbJ8",
+        "https://www.chiefdelphi.com/t/403891",
+        "https://www.chiefdelphi.com/t/405399"
+      ],
+      "path": "docs/research_continuation/2022-125.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-125",
+    "year": 2022,
+    "team": 125,
+    "epa_rank": 28,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"125\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 0,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"125\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-125:construction",
+    "study6-2022-125:team_stated_reason",
+    "study6-2022-125:engineering_analysis",
+    "study6-2022-125:recommended_validation",
+    "study6-2022-125:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

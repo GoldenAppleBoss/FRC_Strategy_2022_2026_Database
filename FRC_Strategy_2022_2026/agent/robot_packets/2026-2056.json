@@ -1,0 +1,1022 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-2056",
+  "year": 2026,
+  "team": 2056,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 2056,
+    "robot": "Desperate Times / Desperate Measures",
+    "primary": [
+      "https://www.youtube.com/watch?v=iruLnDDMKRs",
+      "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf"
+    ],
+    "architecture": "Low turret scorer with compliant pickup and approximately 62-fuel net hopper.",
+    "subsystems": {
+      "drivetrain": "DESPERATE MEASURES binder: Mk5n R1, 25.5×29.5-inch frame, 15-ft/s reported top speed, low shear-plate base and spike-grip tread.",
+      "intake": "Rubber front roller and surgical-tubing-supported kicker; tubing added after fuel trapped against bumper.",
+      "transfer": "Neoprene live floor ends in a slick roller to permit slip; belt conveyor and reverse anti-jam roller feed turret.",
+      "scoring": "Single-stream turret with approximately 370-degree cable-limited travel. Main flywheel held at fixed speed; kicker spin and hood angle vary trajectory/passing.",
+      "endgame": "Endgame capability not established by reviewed interview.",
+      "controls": "Constant-flight-time scoring trajectory aims to prevent in-air collisions; controller rumble/LEDs signal brownout and states."
+    },
+    "versions": [
+      "DESPERATE TIMES: initial hopperless concept; inadequate throughput for its storage tradeoff.",
+      "DESPERATE MEASURES: three-week architecture pivot retaining turret; new hopper, intake and singulator. Orbit 1690 credited as principal redesign inspiration.",
+      "Net enlarged before Worlds.",
+      "Strategy evolved by Ontario provincials from primarily scoring to aggressive opponent-fuel acquisition."
+    ],
+    "analysis": "The team's own account gives a key meta shift: removing fuel from the opponent can matter more than a small increase in one's firing rate. That favors maneuverability, durable acquisition and useful passing, with scoring throughput evaluated only after supply is secured.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "# 2026-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## DESPERATE MEASURES: linear collector as a controllable spring\n\nVersion: DESPERATE MEASURES rebuild. [PDF p8](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=8) · [PDF p9](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=9)\n\n**Published construction:** Double-layer polycarbonate rack; two 2-inch rollers; low-stator-current deployment.\n\n**Team-stated reason or evidence boundary:** Large acquisition area with passive impact retraction.\n\n**Engineering analysis — original inference:** A backdrivable, current-limited rack can yield during a collision rather than make the gearbox a rigid stop. That behavior depends on friction, reduction, acceleration limits and the controller remaining enabled; it is not supplied by polycarbonate alone. Stacking a structural plate beside the rack allows the designer to distribute load without relying only on gear teeth. A paired-roller collector should preserve positive contact as fuel crosses the bumper. The matching chassis and slide must react lateral hits, because a low-current motor primarily helps the axial direction.\n\n**Proposed validation — not a completed test:** Measure peak rack load during frontal and sideways impacts; check tooth engagement and deployment after the test.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE MEASURES: active floor and inventory policy\n\nVersion: DESPERATE MEASURES rebuild. [PDF p10](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=10) · [PDF p20](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=20)\n\n**Published construction:** 1.5-inch powered floor rollers; net; CANrange minimum-inventory control while passing.\n\n**Team-stated reason or evidence boundary:** Keep fuel available for the next scoring shift.\n\n**Engineering analysis — original inference:** Inventory sensing changes the job of a passer. Passing every available ball can improve the alliance pile but leave this robot empty when the shift turns. A minimum reserve is a control policy tied to how quickly the robot can refill, return and shoot. A distance sensor sees a local surface, not a perfect total count; a sloped or bridged pile can produce the same reading at very different usable inventories. The threshold needs validation under different pile shapes and while accelerating. Reserve logic should have an operator override when alliance strategy intentionally assigns all fuel elsewhere.\n\n**Proposed validation — not a completed test:** Compare sensor reading with deliverable inventory for uneven fills and motion; measure reserve adequacy at the start of each shift.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE MEASURES: constrained belts and collision sorting\n\nVersion: DESPERATE MEASURES rebuild. [PDF p12](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=12) · [PDF p13](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=13)\n\n**Published construction:** Two rubber-coated conveyors, printed carryways, vertical kicker, quarter-pipe feed.\n\n**Team-stated reason or evidence boundary:** Turn bulk fuel into a reliable stream.\n\n**Engineering analysis — original inference:** The carryway controls the support beneath the belt so compression does not change with belt sag. The vertical kicker addresses a different failure: two balls arriving at the quarter-pipe entrance can lock each other before either is captured. That distinction matters when diagnosing a singulator. Increasing belt speed does not necessarily release an arch; changing relative contact directions or reversing one element can. The quarter-pipe must preserve contact through the bend and deliver fuel at an appropriate velocity to the turret. A compact throat earns hopper space only if it remains serviceable and can clear a hard jam.\n\n**Proposed validation — not a completed test:** Feed deliberately paired balls and partially collapsed fuel; log current signatures before and after reversal and inspect carryway wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE MEASURES: compact turret and continuous hood\n\nVersion: DESPERATE MEASURES rebuild. [PDF p14](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14) · [PDF p15](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=15)\n\n**Published construction:** Eight-inch bearing; ±185° turret; 4-inch Fairlane wheel; separate backspin kicker; variable hood.\n\n**Team-stated reason or evidence boundary:** Score and pass across a broad envelope.\n\n**Engineering analysis — original inference:** The bearing and base plate must keep the launch contact aligned while the chassis accelerates and balls enter the shooter. Independent back contact permits spin tuning without changing the main wheel, but also introduces another speed and recovery condition. A range slightly greater than one turn reduces the frequency of an unwind; it does not create unlimited rotation. The cable chain must survive the worst combined hood and turret state. For a recommendation, the compact swept envelope and the singulator’s feed location are as important as the shooter’s wheel diameter.\n\n**Proposed validation — not a completed test:** Map accuracy over turret angle and hood angle, including near both cable limits and under representative chassis acceleration.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE TIMES to DESPERATE MEASURES\n\nVersion: DESPERATE MEASURES rebuild. [PDF p2](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=2) · [PDF p24](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=24)\n\n**Published construction:** Original hopperless four-to-two-to-one path replaced; turret reused; Orbit 1690 explicitly credited.\n\n**Team-stated reason or evidence boundary:** Original throughput did not justify minimal storage.\n\n**Engineering analysis — original inference:** This is a valuable negative result because it separates the concept from its execution. A narrowing conveyor can spread fuel longitudinally as it accelerates, yet still fail to maintain sufficient launch supply. Without a hopper, every interruption in acquisition becomes an interruption in scoring. Reusing the turret preserved calibrated software and known interfaces while the rest of the architecture changed. The proper historical record includes both machines and the transition; the later successful package should not be projected backward onto the initial competitions or treated as a season-long fixed architecture.\n\n**Proposed validation — not a completed test:** For a rebuild, identify which calibrated interfaces can survive unchanged and which performance assumptions require new integrated testing.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 12:30 belt; 8:40 deploy gear; 12T 8DP rack pinion | [Source p8](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=8) |\n| Singulator | 12:36 feed belts; 16:28 shooter-feed gears | [Source p12](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=12) |\n| Turret | ±185°; 34° hood stroke; 73.5°–39.5° release | [Source p14](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14) |\n| Launch | 4-in Fairlane; 28:34 belt; independent backspin kicker | [Source p14](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2026-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/525183/6",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/c/6/9c64a3122f59392d29fcb571e4c6edfa406bf65d_2_690x444.jpeg",
+        "post": 6,
+        "date": "2026-10-13T00:59:10.305Z",
+        "author": "LP3",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2026 team 2056 — source image from post 6 (2026-10-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "8779f4af185448871b.jpg",
+        "id": "dbaa8c172905446c6f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/8779f4af185448871b.jpg"
+      },
+      {
+        "robot_id": "2026-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/525183/17",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/f/5/e/f5e18ff592a5b1838a01f9cfe6272d4e44d126aa_2_517x334.jpeg",
+        "post": 17,
+        "date": "2026-10-13T19:38:14.771Z",
+        "author": "Khalsa",
+        "context_tags": [
+          "hopper",
+          "intake",
+          "shooter"
+        ],
+        "caption": "2026 team 2056 — source image from post 17 (2026-10-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "69231ad04f9a864161.jpg",
+        "id": "8cb2cccc2ad5f85554",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/69231ad04f9a864161.jpg"
+      },
+      {
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+        "page": 14,
+        "asset": "4f9a84548a7f47fd8e.jpg",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2026 team 2056 — embedded figure from technical binder, PDF page 14. Page discusses shooter. Figure identity requires the surrounding source page.",
+        "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+        "id": "d2cb2e41b00bd9099e",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "extraction_note": "Mask reconstruction unavailable: FzErrorArgument",
+        "path": "images/4f9a84548a7f47fd8e.jpg"
+      },
+      {
+        "id": "binder-86ae539d8a57982e4c-p7-1",
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "binder_id": "86ae539d8a57982e4c",
+        "pdf_page": 7,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-86ae539d8a57982e4c-p7-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=7",
+        "caption": "2026-2056 · DESPERATE MEASURES rebuild · Drivebase · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.00103759765625,
+          612.0,
+          723.1010131835938
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 7
+      },
+      {
+        "id": "binder-86ae539d8a57982e4c-p9-1",
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "binder_id": "86ae539d8a57982e4c",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-86ae539d8a57982e4c-p9-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=9",
+        "caption": "2026-2056 · DESPERATE MEASURES rebuild · Linear intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Linear intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          722.9500122070312
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-86ae539d8a57982e4c-p11-1",
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "binder_id": "86ae539d8a57982e4c",
+        "pdf_page": 11,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-86ae539d8a57982e4c-p11-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=11",
+        "caption": "2026-2056 · DESPERATE MEASURES rebuild · Powered hopper · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Powered hopper",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          611.97998046875,
+          724.9500732421875
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 11
+      },
+      {
+        "id": "binder-86ae539d8a57982e4c-p13-1",
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "binder_id": "86ae539d8a57982e4c",
+        "pdf_page": 13,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-86ae539d8a57982e4c-p13-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=13",
+        "caption": "2026-2056 · DESPERATE MEASURES rebuild · Singulator · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Singulator",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          722.2000122070312
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 13
+      },
+      {
+        "id": "binder-86ae539d8a57982e4c-p15-1",
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "binder_id": "86ae539d8a57982e4c",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-86ae539d8a57982e4c-p15-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=15",
+        "caption": "2026-2056 · DESPERATE MEASURES rebuild · Turret shooter · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Turret shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          611.9999389648438,
+          725.0999755859375
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      },
+      {
+        "id": "binder-86ae539d8a57982e4c-p24-1",
+        "robot_id": "2026-2056",
+        "kind": "binder_figure",
+        "binder_id": "86ae539d8a57982e4c",
+        "pdf_page": 24,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-86ae539d8a57982e4c-p24-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=24",
+        "caption": "2026-2056 · DESPERATE MEASURES rebuild · DESPERATE TIMES original architecture · PDF page 24, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "DESPERATE TIMES original architecture",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          47.25,
+          292.3500061035156,
+          564.2999877929688,
+          695.4500122070312
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 24
+      }
+    ],
+    "source_post_count": 21,
+    "cad_code_links": [],
+    "id": "2026-2056",
+    "team_name": "OP Robotics",
+    "epa_rank": 6,
+    "epa": 302.17,
+    "epa_pre_champs": 316.48,
+    "epa_breakdown": {
+      "total_points": 302.17,
+      "auto_points": 83.88,
+      "teleop_points": 168.99,
+      "endgame_points": 49.29,
+      "energized_rp": 0.8009,
+      "supercharged_rp": 0.9293,
+      "traversal_rp": -0.34153,
+      "tiebreaker_points": 302.17,
+      "auto_fuel": 83.59,
+      "auto_tower": 0.29,
+      "transition_fuel": 33.24,
+      "first_shift_fuel": 75.92,
+      "second_shift_fuel": 59.83,
+      "endgame_fuel": 49.6,
+      "endgame_tower": -0.31,
+      "rp_1": 0.8009,
+      "rp_2": 0.9293,
+      "rp_3": -0.34153,
+      "teleop_fuel": 218.59,
+      "total_fuel": 302.18,
+      "total_tower": -0.020000000000000018
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "44268a05590e5a6c"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "turret",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-86ae539d8a57982e4c-13",
+      "tech-86ae539d8a57982e4c-14",
+      "tech-86ae539d8a57982e4c-15",
+      "tech-86ae539d8a57982e4c-16",
+      "tech-86ae539d8a57982e4c-17"
+    ],
+    "binder_source_ids": [
+      "86ae539d8a57982e4c"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-2056",
+      "year": 2026,
+      "team": 2056,
+      "epa_rank": 6,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"2056\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 27,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "86ae539d8a57982e4c"
+      ],
+      "technical_note_ids": [
+        "tech-86ae539d8a57982e4c-13",
+        "tech-86ae539d8a57982e4c-14",
+        "tech-86ae539d8a57982e4c-15",
+        "tech-86ae539d8a57982e4c-16",
+        "tech-86ae539d8a57982e4c-17"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "86ae539d8a57982e4c",
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/525183/1",
+          "status": "technical_sections_reviewed"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification."
+  },
+  "technical_notes": [
+    {
+      "binder_id": "86ae539d8a57982e4c",
+      "subsystem": "intake",
+      "title": "DESPERATE MEASURES: linear collector as a controllable spring",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "construction": "Double-layer polycarbonate rack; two 2-inch rollers; low-stator-current deployment.",
+      "team_stated_reason": "Large acquisition area with passive impact retraction.",
+      "engineering_analysis": "A backdrivable, current-limited rack can yield during a collision rather than make the gearbox a rigid stop. That behavior depends on friction, reduction, acceleration limits and the controller remaining enabled; it is not supplied by polycarbonate alone. Stacking a structural plate beside the rack allows the designer to distribute load without relying only on gear teeth. A paired-roller collector should preserve positive contact as fuel crosses the bumper. The matching chassis and slide must react lateral hits, because a low-current motor primarily helps the axial direction.",
+      "recommended_validation": "Measure peak rack load during frontal and sideways impacts; check tooth engagement and deployment after the test.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-86ae539d8a57982e4c-13",
+      "robot_id": "2026-2056",
+      "year": 2026,
+      "version_label": "DESPERATE MEASURES rebuild",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=8"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=9"
+        }
+      ],
+      "image_ids": [
+        "binder-86ae539d8a57982e4c-p9-1"
+      ]
+    },
+    {
+      "binder_id": "86ae539d8a57982e4c",
+      "subsystem": "storage",
+      "title": "DESPERATE MEASURES: active floor and inventory policy",
+      "pdf_pages": [
+        10,
+        20
+      ],
+      "construction": "1.5-inch powered floor rollers; net; CANrange minimum-inventory control while passing.",
+      "team_stated_reason": "Keep fuel available for the next scoring shift.",
+      "engineering_analysis": "Inventory sensing changes the job of a passer. Passing every available ball can improve the alliance pile but leave this robot empty when the shift turns. A minimum reserve is a control policy tied to how quickly the robot can refill, return and shoot. A distance sensor sees a local surface, not a perfect total count; a sloped or bridged pile can produce the same reading at very different usable inventories. The threshold needs validation under different pile shapes and while accelerating. Reserve logic should have an operator override when alliance strategy intentionally assigns all fuel elsewhere.",
+      "recommended_validation": "Compare sensor reading with deliverable inventory for uneven fills and motion; measure reserve adequacy at the start of each shift.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-86ae539d8a57982e4c-14",
+      "robot_id": "2026-2056",
+      "year": 2026,
+      "version_label": "DESPERATE MEASURES rebuild",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=10"
+        },
+        {
+          "pdf_page": 20,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=20"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "binder_id": "86ae539d8a57982e4c",
+      "subsystem": "transfer",
+      "title": "DESPERATE MEASURES: constrained belts and collision sorting",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "construction": "Two rubber-coated conveyors, printed carryways, vertical kicker, quarter-pipe feed.",
+      "team_stated_reason": "Turn bulk fuel into a reliable stream.",
+      "engineering_analysis": "The carryway controls the support beneath the belt so compression does not change with belt sag. The vertical kicker addresses a different failure: two balls arriving at the quarter-pipe entrance can lock each other before either is captured. That distinction matters when diagnosing a singulator. Increasing belt speed does not necessarily release an arch; changing relative contact directions or reversing one element can. The quarter-pipe must preserve contact through the bend and deliver fuel at an appropriate velocity to the turret. A compact throat earns hopper space only if it remains serviceable and can clear a hard jam.",
+      "recommended_validation": "Feed deliberately paired balls and partially collapsed fuel; log current signatures before and after reversal and inspect carryway wear.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-86ae539d8a57982e4c-15",
+      "robot_id": "2026-2056",
+      "year": 2026,
+      "version_label": "DESPERATE MEASURES rebuild",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=12"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=13"
+        }
+      ],
+      "image_ids": [
+        "binder-86ae539d8a57982e4c-p13-1"
+      ]
+    },
+    {
+      "binder_id": "86ae539d8a57982e4c",
+      "subsystem": "scoring",
+      "title": "DESPERATE MEASURES: compact turret and continuous hood",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "construction": "Eight-inch bearing; ±185° turret; 4-inch Fairlane wheel; separate backspin kicker; variable hood.",
+      "team_stated_reason": "Score and pass across a broad envelope.",
+      "engineering_analysis": "The bearing and base plate must keep the launch contact aligned while the chassis accelerates and balls enter the shooter. Independent back contact permits spin tuning without changing the main wheel, but also introduces another speed and recovery condition. A range slightly greater than one turn reduces the frequency of an unwind; it does not create unlimited rotation. The cable chain must survive the worst combined hood and turret state. For a recommendation, the compact swept envelope and the singulator’s feed location are as important as the shooter’s wheel diameter.",
+      "recommended_validation": "Map accuracy over turret angle and hood angle, including near both cable limits and under representative chassis acceleration.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-86ae539d8a57982e4c-16",
+      "robot_id": "2026-2056",
+      "year": 2026,
+      "version_label": "DESPERATE MEASURES rebuild",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 14,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14"
+        },
+        {
+          "pdf_page": 15,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=15"
+        }
+      ],
+      "image_ids": [
+        "binder-86ae539d8a57982e4c-p15-1"
+      ]
+    },
+    {
+      "binder_id": "86ae539d8a57982e4c",
+      "subsystem": "versions",
+      "title": "DESPERATE TIMES to DESPERATE MEASURES",
+      "pdf_pages": [
+        2,
+        24
+      ],
+      "construction": "Original hopperless four-to-two-to-one path replaced; turret reused; Orbit 1690 explicitly credited.",
+      "team_stated_reason": "Original throughput did not justify minimal storage.",
+      "engineering_analysis": "This is a valuable negative result because it separates the concept from its execution. A narrowing conveyor can spread fuel longitudinally as it accelerates, yet still fail to maintain sufficient launch supply. Without a hopper, every interruption in acquisition becomes an interruption in scoring. Reusing the turret preserved calibrated software and known interfaces while the rest of the architecture changed. The proper historical record includes both machines and the transition; the later successful package should not be projected backward onto the initial competitions or treated as a season-long fixed architecture.",
+      "recommended_validation": "For a rebuild, identify which calibrated interfaces can survive unchanged and which performance assumptions require new integrated testing.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-86ae539d8a57982e4c-17",
+      "robot_id": "2026-2056",
+      "year": 2026,
+      "version_label": "DESPERATE MEASURES rebuild",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 2,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=2"
+        },
+        {
+          "pdf_page": 24,
+          "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=24"
+        }
+      ],
+      "image_ids": [
+        "binder-86ae539d8a57982e4c-p24-1"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-86ae539d8a57982e4c-1",
+      "binder_id": "86ae539d8a57982e4c",
+      "robot_id": "2026-2056",
+      "pdf_page": 8,
+      "component": "Intake",
+      "published_parameters": "12:30 belt; 8:40 deploy gear; 12T 8DP rack pinion",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-86ae539d8a57982e4c-2",
+      "binder_id": "86ae539d8a57982e4c",
+      "robot_id": "2026-2056",
+      "pdf_page": 12,
+      "component": "Singulator",
+      "published_parameters": "12:36 feed belts; 16:28 shooter-feed gears",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=12",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-86ae539d8a57982e4c-3",
+      "binder_id": "86ae539d8a57982e4c",
+      "robot_id": "2026-2056",
+      "pdf_page": 14,
+      "component": "Turret",
+      "published_parameters": "±185°; 34° hood stroke; 73.5°–39.5° release",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-86ae539d8a57982e4c-4",
+      "binder_id": "86ae539d8a57982e4c",
+      "robot_id": "2026-2056",
+      "pdf_page": 14,
+      "component": "Launch",
+      "published_parameters": "4-in Fairlane; 28:34 belt; independent backspin kicker",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "86ae539d8a57982e4c",
+      "robot_id": "2026-2056",
+      "title": "2026-2056 DESPERATE MEASURES rebuild technical publication",
+      "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "format": "pdf",
+      "pages": 29,
+      "sha256": "bf8251682ee9af0fef69e421cb5c19757fbd0df70600043589a7a961f0258938",
+      "bytes": 5765073,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        2,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        20,
+        24
+      ],
+      "figure_pages": [
+        7,
+        9,
+        11,
+        13,
+        15,
+        24
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/525183/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2026-2056:publication-version:1",
+      "label": "DESPERATE MEASURES rebuild",
+      "robot_id": "2026-2056",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-86ae539d8a57982e4c-13",
+        "tech-86ae539d8a57982e4c-14",
+        "tech-86ae539d8a57982e4c-15",
+        "tech-86ae539d8a57982e4c-16",
+        "tech-86ae539d8a57982e4c-17"
+      ],
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2026-2056",
+      "title": "2026-2056: technical construction and mechanism reasoning",
+      "year": 2026,
+      "robot_id": "2026-2056",
+      "kind": "robot_technical_review",
+      "body": "# 2026-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## DESPERATE MEASURES: linear collector as a controllable spring\n\nVersion: DESPERATE MEASURES rebuild. [PDF p8](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=8) · [PDF p9](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=9)\n\n**Published construction:** Double-layer polycarbonate rack; two 2-inch rollers; low-stator-current deployment.\n\n**Team-stated reason or evidence boundary:** Large acquisition area with passive impact retraction.\n\n**Engineering analysis — original inference:** A backdrivable, current-limited rack can yield during a collision rather than make the gearbox a rigid stop. That behavior depends on friction, reduction, acceleration limits and the controller remaining enabled; it is not supplied by polycarbonate alone. Stacking a structural plate beside the rack allows the designer to distribute load without relying only on gear teeth. A paired-roller collector should preserve positive contact as fuel crosses the bumper. The matching chassis and slide must react lateral hits, because a low-current motor primarily helps the axial direction.\n\n**Proposed validation — not a completed test:** Measure peak rack load during frontal and sideways impacts; check tooth engagement and deployment after the test.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE MEASURES: active floor and inventory policy\n\nVersion: DESPERATE MEASURES rebuild. [PDF p10](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=10) · [PDF p20](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=20)\n\n**Published construction:** 1.5-inch powered floor rollers; net; CANrange minimum-inventory control while passing.\n\n**Team-stated reason or evidence boundary:** Keep fuel available for the next scoring shift.\n\n**Engineering analysis — original inference:** Inventory sensing changes the job of a passer. Passing every available ball can improve the alliance pile but leave this robot empty when the shift turns. A minimum reserve is a control policy tied to how quickly the robot can refill, return and shoot. A distance sensor sees a local surface, not a perfect total count; a sloped or bridged pile can produce the same reading at very different usable inventories. The threshold needs validation under different pile shapes and while accelerating. Reserve logic should have an operator override when alliance strategy intentionally assigns all fuel elsewhere.\n\n**Proposed validation — not a completed test:** Compare sensor reading with deliverable inventory for uneven fills and motion; measure reserve adequacy at the start of each shift.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE MEASURES: constrained belts and collision sorting\n\nVersion: DESPERATE MEASURES rebuild. [PDF p12](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=12) · [PDF p13](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=13)\n\n**Published construction:** Two rubber-coated conveyors, printed carryways, vertical kicker, quarter-pipe feed.\n\n**Team-stated reason or evidence boundary:** Turn bulk fuel into a reliable stream.\n\n**Engineering analysis — original inference:** The carryway controls the support beneath the belt so compression does not change with belt sag. The vertical kicker addresses a different failure: two balls arriving at the quarter-pipe entrance can lock each other before either is captured. That distinction matters when diagnosing a singulator. Increasing belt speed does not necessarily release an arch; changing relative contact directions or reversing one element can. The quarter-pipe must preserve contact through the bend and deliver fuel at an appropriate velocity to the turret. A compact throat earns hopper space only if it remains serviceable and can clear a hard jam.\n\n**Proposed validation — not a completed test:** Feed deliberately paired balls and partially collapsed fuel; log current signatures before and after reversal and inspect carryway wear.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE MEASURES: compact turret and continuous hood\n\nVersion: DESPERATE MEASURES rebuild. [PDF p14](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14) · [PDF p15](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=15)\n\n**Published construction:** Eight-inch bearing; ±185° turret; 4-inch Fairlane wheel; separate backspin kicker; variable hood.\n\n**Team-stated reason or evidence boundary:** Score and pass across a broad envelope.\n\n**Engineering analysis — original inference:** The bearing and base plate must keep the launch contact aligned while the chassis accelerates and balls enter the shooter. Independent back contact permits spin tuning without changing the main wheel, but also introduces another speed and recovery condition. A range slightly greater than one turn reduces the frequency of an unwind; it does not create unlimited rotation. The cable chain must survive the worst combined hood and turret state. For a recommendation, the compact swept envelope and the singulator’s feed location are as important as the shooter’s wheel diameter.\n\n**Proposed validation — not a completed test:** Map accuracy over turret angle and hood angle, including near both cable limits and under representative chassis acceleration.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## DESPERATE TIMES to DESPERATE MEASURES\n\nVersion: DESPERATE MEASURES rebuild. [PDF p2](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=2) · [PDF p24](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=24)\n\n**Published construction:** Original hopperless four-to-two-to-one path replaced; turret reused; Orbit 1690 explicitly credited.\n\n**Team-stated reason or evidence boundary:** Original throughput did not justify minimal storage.\n\n**Engineering analysis — original inference:** This is a valuable negative result because it separates the concept from its execution. A narrowing conveyor can spread fuel longitudinally as it accelerates, yet still fail to maintain sufficient launch supply. Without a hopper, every interruption in acquisition becomes an interruption in scoring. Reusing the turret preserved calibrated software and known interfaces while the rest of the architecture changed. The proper historical record includes both machines and the transition; the later successful package should not be projected backward onto the initial competitions or treated as a season-long fixed architecture.\n\n**Proposed validation — not a completed test:** For a rebuild, identify which calibrated interfaces can survive unchanged and which performance assumptions require new integrated testing.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | 12:30 belt; 8:40 deploy gear; 12T 8DP rack pinion | [Source p8](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=8) |\n| Singulator | 12:36 feed belts; 16:28 shooter-feed gears | [Source p12](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=12) |\n| Turret | ±185°; 34° hood stroke; 73.5°–39.5° release | [Source p14](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14) |\n| Launch | 4-in Fairlane; 28:34 belt; independent backspin kicker | [Source p14](https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=14) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf"
+      ],
+      "path": "docs/technical/2026-2056.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/525183/6",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/9/c/6/9c64a3122f59392d29fcb571e4c6edfa406bf65d_2_690x444.jpeg",
+      "post": 6,
+      "date": "2026-10-13T00:59:10.305Z",
+      "author": "LP3",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2026 team 2056 — source image from post 6 (2026-10-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "8779f4af185448871b.jpg",
+      "id": "dbaa8c172905446c6f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/8779f4af185448871b.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 444,
+      "bytes": 37352,
+      "sha256": "923162edb2b474279c1a54ed2df55bdeec090dff6d47cafabe180399e3fe0abc",
+      "path_base": "corpus_root",
+      "reader_asset_id": "dbaa8c172905446c6f",
+      "reader_url": "index.html#image=dbaa8c172905446c6f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/525183/17",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/f/5/e/f5e18ff592a5b1838a01f9cfe6272d4e44d126aa_2_517x334.jpeg",
+      "post": 17,
+      "date": "2026-10-13T19:38:14.771Z",
+      "author": "Khalsa",
+      "context_tags": [
+        "hopper",
+        "intake",
+        "shooter"
+      ],
+      "caption": "2026 team 2056 — source image from post 17 (2026-10-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "69231ad04f9a864161.jpg",
+      "id": "8cb2cccc2ad5f85554",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/69231ad04f9a864161.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 517,
+      "height_px": 334,
+      "bytes": 32258,
+      "sha256": "bfa52e79f94540b278ac50d6ebea2c3bebd11e1726b95633a56d709563a923d2",
+      "path_base": "corpus_root",
+      "reader_asset_id": "8cb2cccc2ad5f85554",
+      "reader_url": "index.html#image=8cb2cccc2ad5f85554",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+      "page": 14,
+      "asset": "4f9a84548a7f47fd8e.jpg",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2026 team 2056 — embedded figure from technical binder, PDF page 14. Page discusses shooter. Figure identity requires the surrounding source page.",
+      "review": "Individual embedded figure extracted; contextual page tags, not a visually verified engineering drawing",
+      "id": "d2cb2e41b00bd9099e",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "extraction_note": "Mask reconstruction unavailable: FzErrorArgument",
+      "path": "images/4f9a84548a7f47fd8e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 455,
+      "height_px": 161,
+      "bytes": 11990,
+      "sha256": "3900ee515e0c305d7d564fe0e5b3aa587e8c3f411e905768fd9eb9d6b542a40a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "d2cb2e41b00bd9099e",
+      "reader_url": "index.html#image=d2cb2e41b00bd9099e",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-86ae539d8a57982e4c-p7-1",
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "binder_id": "86ae539d8a57982e4c",
+      "pdf_page": 7,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-86ae539d8a57982e4c-p7-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=7",
+      "caption": "2026-2056 · DESPERATE MEASURES rebuild · Drivebase · PDF page 7, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.00103759765625,
+        612.0,
+        723.1010131835938
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 7,
+      "media_type": "image/jpeg",
+      "width_px": 1185,
+      "height_px": 1401,
+      "bytes": 170184,
+      "sha256": "939729812ab774a828cb2357dbc8049eca30687070b555ef8de83c677fde829f",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-86ae539d8a57982e4c-p7-1",
+      "reader_url": "index.html#image=binder-86ae539d8a57982e4c-p7-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-86ae539d8a57982e4c-p9-1",
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "binder_id": "86ae539d8a57982e4c",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-86ae539d8a57982e4c-p9-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=9",
+      "caption": "2026-2056 · DESPERATE MEASURES rebuild · Linear intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Linear intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        722.9500122070312
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1186,
+      "height_px": 1400,
+      "bytes": 344567,
+      "sha256": "54469728c07ac9b40fd268a9091efec3417d71206924c5040fb29d45c22af6d3",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-86ae539d8a57982e4c-p9-1",
+      "reader_url": "index.html#image=binder-86ae539d8a57982e4c-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-86ae539d8a57982e4c-p11-1",
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "binder_id": "86ae539d8a57982e4c",
+      "pdf_page": 11,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-86ae539d8a57982e4c-p11-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=11",
+      "caption": "2026-2056 · DESPERATE MEASURES rebuild · Powered hopper · PDF page 11, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Powered hopper",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        611.97998046875,
+        724.9500732421875
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 11,
+      "media_type": "image/jpeg",
+      "width_px": 1182,
+      "height_px": 1400,
+      "bytes": 363676,
+      "sha256": "44822dc85ba92b770a013158ec05620e23b0ef45cdb5c91b0c9eeca7e9be27cf",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-86ae539d8a57982e4c-p11-1",
+      "reader_url": "index.html#image=binder-86ae539d8a57982e4c-p11-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-86ae539d8a57982e4c-p13-1",
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "binder_id": "86ae539d8a57982e4c",
+      "pdf_page": 13,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-86ae539d8a57982e4c-p13-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=13",
+      "caption": "2026-2056 · DESPERATE MEASURES rebuild · Singulator · PDF page 13, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Singulator",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        722.2000122070312
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 13,
+      "media_type": "image/jpeg",
+      "width_px": 1187,
+      "height_px": 1400,
+      "bytes": 266367,
+      "sha256": "d60f8e96c81b288ff73b87243c25373996eca8038d057894087710e0e4a7ed48",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-86ae539d8a57982e4c-p13-1",
+      "reader_url": "index.html#image=binder-86ae539d8a57982e4c-p13-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-86ae539d8a57982e4c-p15-1",
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "binder_id": "86ae539d8a57982e4c",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-86ae539d8a57982e4c-p15-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=15",
+      "caption": "2026-2056 · DESPERATE MEASURES rebuild · Turret shooter · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Turret shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        611.9999389648438,
+        725.0999755859375
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 1182,
+      "height_px": 1400,
+      "bytes": 293228,
+      "sha256": "a8693a87a80a3519f9354242288dc7f10b20be1903c418022c4ba93a69c25067",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-86ae539d8a57982e4c-p15-1",
+      "reader_url": "index.html#image=binder-86ae539d8a57982e4c-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-86ae539d8a57982e4c-p24-1",
+      "robot_id": "2026-2056",
+      "kind": "binder_figure",
+      "binder_id": "86ae539d8a57982e4c",
+      "pdf_page": 24,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-86ae539d8a57982e4c-p24-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf#page=24",
+      "caption": "2026-2056 · DESPERATE MEASURES rebuild · DESPERATE TIMES original architecture · PDF page 24, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "DESPERATE TIMES original architecture",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        47.25,
+        292.3500061035156,
+        564.2999877929688,
+        695.4500122070312
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 24,
+      "media_type": "image/jpeg",
+      "width_px": 1190,
+      "height_px": 928,
+      "bytes": 162223,
+      "sha256": "d765adc6de380afbda7bea3997b473e4e1900eaa4037113f2f5f4743980db211",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-86ae539d8a57982e4c-p24-1",
+      "reader_url": "index.html#image=binder-86ae539d8a57982e4c-p24-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-2056",
+    "year": 2026,
+    "team": 2056,
+    "epa_rank": 6,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"2056\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 27,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "86ae539d8a57982e4c"
+    ],
+    "technical_note_ids": [
+      "tech-86ae539d8a57982e4c-13",
+      "tech-86ae539d8a57982e4c-14",
+      "tech-86ae539d8a57982e4c-15",
+      "tech-86ae539d8a57982e4c-16",
+      "tech-86ae539d8a57982e4c-17"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "86ae539d8a57982e4c",
+        "url": "https://2056.ca/wp-content/uploads/2026/10/OPR26-B-2056-Technical-Binder.pdf",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/525183/1",
+        "status": "technical_sections_reviewed"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-86ae539d8a57982e4c-13:construction",
+    "tech-86ae539d8a57982e4c-13:team_stated_reason",
+    "tech-86ae539d8a57982e4c-13:engineering_analysis",
+    "tech-86ae539d8a57982e4c-13:recommended_validation",
+    "tech-86ae539d8a57982e4c-13:limitations",
+    "tech-86ae539d8a57982e4c-14:construction",
+    "tech-86ae539d8a57982e4c-14:team_stated_reason",
+    "tech-86ae539d8a57982e4c-14:engineering_analysis",
+    "tech-86ae539d8a57982e4c-14:recommended_validation",
+    "tech-86ae539d8a57982e4c-14:limitations",
+    "tech-86ae539d8a57982e4c-15:construction",
+    "tech-86ae539d8a57982e4c-15:team_stated_reason",
+    "tech-86ae539d8a57982e4c-15:engineering_analysis",
+    "tech-86ae539d8a57982e4c-15:recommended_validation",
+    "tech-86ae539d8a57982e4c-15:limitations",
+    "tech-86ae539d8a57982e4c-16:construction",
+    "tech-86ae539d8a57982e4c-16:team_stated_reason",
+    "tech-86ae539d8a57982e4c-16:engineering_analysis",
+    "tech-86ae539d8a57982e4c-16:recommended_validation",
+    "tech-86ae539d8a57982e4c-16:limitations",
+    "tech-86ae539d8a57982e4c-17:construction",
+    "tech-86ae539d8a57982e4c-17:team_stated_reason",
+    "tech-86ae539d8a57982e4c-17:engineering_analysis",
+    "tech-86ae539d8a57982e4c-17:recommended_validation",
+    "tech-86ae539d8a57982e4c-17:limitations",
+    "param-86ae539d8a57982e4c-1",
+    "param-86ae539d8a57982e4c-2",
+    "param-86ae539d8a57982e4c-3",
+    "param-86ae539d8a57982e4c-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

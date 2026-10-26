@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-604",
+  "year": 2022,
+  "team": 604,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 604,
+    "robot": "Octopus Prime",
+    "primary": [
+      "https://github.com/frc604/2022-public"
+    ],
+    "architecture": "Calibration defines a 20.5-inch wheelbase and track width, 3.94-inch wheel diameter, 6.75:1 drive reduction and 12.8:1 steering reduction. These are software configuration values, not independent measurements. Intake.java configures distinct Falcon 500 roller and deployment motors, a trapezoidal deployment profile, arm feedforward and a 45A deployment stator limit. Intake, eject, unjam and yeet commands are separate entry points.",
+    "subsystems": {
+      "drivetrain": "Calibration defines a 20.5-inch wheelbase and track width, 3.94-inch wheel diameter, 6.75:1 drive reduction and 12.8:1 steering reduction. These are software configuration values, not independent measurements.",
+      "intake": "Intake.java configures distinct Falcon 500 roller and deployment motors, a trapezoidal deployment profile, arm feedforward and a 45A deployment stator limit. Intake, eject, unjam and yeet commands are separate entry points.",
+      "transfer": "BallPath.java separates upper and lower Falcon-driven transport sections and exposes position/velocity control and sensor-based ball handling.",
+      "scoring": "Launcher.java configures front and rear Falcon flywheel motors with feedforward and feedback. Readiness checks use a five-sample speed buffer and tolerance; distance-related bounds are treated separately.",
+      "endgame": "Climber.java configures three NEO motors and staged first-rung, lift, handoff, high-rung and traversal transitions. It uses filtered tilt and tilt rate, position/profile completion and an angle-history lockout.",
+      "controls": "The repository README identifies FRC-2022 as robot code and FRC-2022-NEW as a work-in-progress reimplementation for learning and cleanup. Quikplan-swerve and the offboard quixpf particle filter are separate directories."
+    },
+    "versions": [
+      "Published FRC-2022 code",
+      "Original code versus learning rewrite"
+    ],
+    "analysis": "This is a dynamic climb sequence, not a simple winch toggle. A transition may require both operator approval and a suitable swing/position state. That ties compliance, sensor filtering, angular thresholds and operator timing together. A traversal state in released code proves intended capability, not a successful traversal in every match or that all events ran this revision. Exact hook and support geometry remain open. Do not read the cleaner NEW tree and retroactively claim every behavior was fielded in 2022. The original tree is the stronger starting point for event-era behavior, though its final commit still lacks per-event installation certification. Pin the repository commit and file path when citing code; preserve the distinction between software configuration, mechanical construction and observed performance.",
+    "limits": [
+      "Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.",
+      "Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification."
+    ],
+    "deep_context": "# 2022-604 — Quixilver: Octopus Prime\n\nPrimary source: https://github.com/frc604/2022-public\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\nCode commit: 2cfd645d19ac09681d201481e8eecd10156b2b9d. Read the original FRC-2022 tree. FRC-2022-NEW is a learning rewrite, not certified event code. File locators: Intake.java, BallPath.java, Launcher.java, Climber.java and Calibration.java under FRC-2022/src/com/_604robotics/robot2022/.\n\n## Published FRC-2022 code · drivetrain\n\n### Published construction or code\n\nCalibration defines a 20.5-inch wheelbase and track width, 3.94-inch wheel diameter, 6.75:1 drive reduction and 12.8:1 steering reduction. These are software configuration values, not independent measurements.\n\n### Stated rationale and boundaries\n\nMechanical selection rationale is not established by the code.\n\n### Engineering interpretation\n\nThe swerve and localization must be considered together. A configured maximum speed is not a demonstrated match speed. Wheel calibration affects both the path tracker and the launch-distance estimate, so a copied drive configuration can corrupt scoring even when teleop feels acceptable. Check hardware revision, encoder scales and actual loaded wheel circumference before borrowing constants.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · intake\n\n### Published construction or code\n\nIntake.java configures distinct Falcon 500 roller and deployment motors, a trapezoidal deployment profile, arm feedforward and a 45A deployment stator limit. Intake, eject, unjam and yeet commands are separate entry points.\n\n### Stated rationale and boundaries\n\nThe code does not state why this exact mechanical geometry was selected.\n\n### Engineering interpretation\n\nThe published interface treats recovery and reverse flow as designed operating modes. That is useful architectural evidence, but it does not establish roller material, width, compression or impact survival. A profiled pivot can reduce abrupt actuation; whether it does so under contact depends on the real mechanism and controller settings. Preserve these unknowns rather than infer a later 604 polycarbonate intake in 2022.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · transfer\n\n### Published construction or code\n\nBallPath.java separates upper and lower Falcon-driven transport sections and exposes position/velocity control and sensor-based ball handling.\n\n### Stated rationale and boundaries\n\nExact transport geometry and team selection rationale remain unresolved.\n\n### Engineering interpretation\n\nSeparately controlled transport can stage a second cargo while releasing the first, but introduces coordination between occupancy sensing, launcher readiness and reverse recovery. Code supports the existence of these interfaces, not an independent throughput result or proof of jam-free behavior. A two-cargo game rewards preserving a reliable staged sequence; extra transport complexity should be justified by actual scoring continuity.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · scoring\n\n### Published construction or code\n\nLauncher.java configures front and rear Falcon flywheel motors with feedforward and feedback. Readiness checks use a five-sample speed buffer and tolerance; distance-related bounds are treated separately.\n\n### Stated rationale and boundaries\n\nThe source establishes readiness logic, not a published mechanical reason for wheel geometry.\n\n### Engineering interpretation\n\nRequiring recent samples within tolerance is different from checking one instantaneous RPM. It can reject a momentary speed crossing after spin-up or a previous shot. The trade is delayed release versus launch consistency. The existence of front/rear motors does not establish independent spin control in competition, wheel dimensions, a turret, or exact release angle. Those require geometry and event evidence.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · endgame\n\n### Published construction or code\n\nClimber.java configures three NEO motors and staged first-rung, lift, handoff, high-rung and traversal transitions. It uses filtered tilt and tilt rate, position/profile completion and an angle-history lockout.\n\n### Stated rationale and boundaries\n\nComments explicitly describe gyro-controlled transitions and an antenna-touch-angle lockout; broader hardware intent is not fully documented here.\n\n### Engineering interpretation\n\nThis is a dynamic climb sequence, not a simple winch toggle. A transition may require both operator approval and a suitable swing/position state. That ties compliance, sensor filtering, angular thresholds and operator timing together. A traversal state in released code proves intended capability, not a successful traversal in every match or that all events ran this revision. Exact hook and support geometry remain open.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Original code versus learning rewrite · controls\n\n### Published construction or code\n\nThe repository README identifies FRC-2022 as robot code and FRC-2022-NEW as a work-in-progress reimplementation for learning and cleanup. Quikplan-swerve and the offboard quixpf particle filter are separate directories.\n\n### Stated rationale and boundaries\n\nThe rewrite is explicitly described as preparation and learning.\n\n### Engineering interpretation\n\nDo not read the cleaner NEW tree and retroactively claim every behavior was fielded in 2022. The original tree is the stronger starting point for event-era behavior, though its final commit still lacks per-event installation certification. Pin the repository commit and file path when citing code; preserve the distinction between software configuration, mechanical construction and observed performance.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-604",
+    "team_name": "Quixilver",
+    "epa_rank": 65,
+    "epa": 44.9,
+    "epa_pre_champs": 44.69,
+    "epa_breakdown": {
+      "total_points": 44.9,
+      "auto_points": 12.01,
+      "teleop_points": 20.68,
+      "endgame_points": 12.21,
+      "cargo_rp": 0.832,
+      "hangar_rp": 0.5789,
+      "tiebreaker_points": 44.9,
+      "auto_taxi_points": 1.98,
+      "auto_cargo_lower": 0.16,
+      "auto_cargo_upper": 2.43,
+      "teleop_cargo_lower": -0.13,
+      "teleop_cargo_upper": 10.4,
+      "rp_1": 0.832,
+      "rp_2": 0.5789
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Version-specific primary-source study; not exhaustive per-event certification",
+    "strict_acceptance": "provisional; unresolved geometry and version details explicitly retained",
+    "source_ids": [
+      "604-source-2022"
+    ],
+    "tags": [
+      "user-requested supplemental reference"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-604",
+      "year": 2022,
+      "team": 604,
+      "epa_rank": 65,
+      "status": "primary_source_review_no_verified_binder",
+      "search": {
+        "query": "604 2022 technical release",
+        "review_date": "2026-10-26"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "604-source-2022"
+      ],
+      "technical_note_ids": [
+        "604-expansion-2022-1",
+        "604-expansion-2022-2",
+        "604-expansion-2022-3",
+        "604-expansion-2022-4",
+        "604-expansion-2022-5",
+        "604-expansion-2022-6"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Primary technical release/code reviewed; no standalone binder certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "604-expansion-2022-1",
+      "604-expansion-2022-2",
+      "604-expansion-2022-3",
+      "604-expansion-2022-4",
+      "604-expansion-2022-5",
+      "604-expansion-2022-6"
+    ],
+    "selection_scope": "User-requested supplemental reference outside original 25/year cohort; original selections preserved."
+  },
+  "technical_notes": [
+    {
+      "id": "604-expansion-2022-1",
+      "robot_id": "2022-604",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "drivetrain",
+      "title": "Published FRC-2022 code · drivetrain",
+      "version_label": "Published FRC-2022 code",
+      "construction": "Calibration defines a 20.5-inch wheelbase and track width, 3.94-inch wheel diameter, 6.75:1 drive reduction and 12.8:1 steering reduction. These are software configuration values, not independent measurements.",
+      "team_stated_reason": "Mechanical selection rationale is not established by the code.",
+      "engineering_analysis": "The swerve and localization must be considered together. A configured maximum speed is not a demonstrated match speed. Wheel calibration affects both the path tracker and the launch-distance estimate, so a copied drive configuration can corrupt scoring even when teleop feels acceptable. Check hardware revision, encoder scales and actual loaded wheel circumference before borrowing constants.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Repository README and original subsystem/Calibration files"
+      ],
+      "source_url": "https://github.com/frc604/2022-public",
+      "additional_sources": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2022-2",
+      "robot_id": "2022-604",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "intake",
+      "title": "Published FRC-2022 code · intake",
+      "version_label": "Published FRC-2022 code",
+      "construction": "Intake.java configures distinct Falcon 500 roller and deployment motors, a trapezoidal deployment profile, arm feedforward and a 45A deployment stator limit. Intake, eject, unjam and yeet commands are separate entry points.",
+      "team_stated_reason": "The code does not state why this exact mechanical geometry was selected.",
+      "engineering_analysis": "The published interface treats recovery and reverse flow as designed operating modes. That is useful architectural evidence, but it does not establish roller material, width, compression or impact survival. A profiled pivot can reduce abrupt actuation; whether it does so under contact depends on the real mechanism and controller settings. Preserve these unknowns rather than infer a later 604 polycarbonate intake in 2022.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Repository README and original subsystem/Calibration files"
+      ],
+      "source_url": "https://github.com/frc604/2022-public",
+      "additional_sources": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2022-3",
+      "robot_id": "2022-604",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "transfer",
+      "title": "Published FRC-2022 code · transfer",
+      "version_label": "Published FRC-2022 code",
+      "construction": "BallPath.java separates upper and lower Falcon-driven transport sections and exposes position/velocity control and sensor-based ball handling.",
+      "team_stated_reason": "Exact transport geometry and team selection rationale remain unresolved.",
+      "engineering_analysis": "Separately controlled transport can stage a second cargo while releasing the first, but introduces coordination between occupancy sensing, launcher readiness and reverse recovery. Code supports the existence of these interfaces, not an independent throughput result or proof of jam-free behavior. A two-cargo game rewards preserving a reliable staged sequence; extra transport complexity should be justified by actual scoring continuity.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Repository README and original subsystem/Calibration files"
+      ],
+      "source_url": "https://github.com/frc604/2022-public",
+      "additional_sources": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2022-4",
+      "robot_id": "2022-604",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "scoring",
+      "title": "Published FRC-2022 code · scoring",
+      "version_label": "Published FRC-2022 code",
+      "construction": "Launcher.java configures front and rear Falcon flywheel motors with feedforward and feedback. Readiness checks use a five-sample speed buffer and tolerance; distance-related bounds are treated separately.",
+      "team_stated_reason": "The source establishes readiness logic, not a published mechanical reason for wheel geometry.",
+      "engineering_analysis": "Requiring recent samples within tolerance is different from checking one instantaneous RPM. It can reject a momentary speed crossing after spin-up or a previous shot. The trade is delayed release versus launch consistency. The existence of front/rear motors does not establish independent spin control in competition, wheel dimensions, a turret, or exact release angle. Those require geometry and event evidence.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Repository README and original subsystem/Calibration files"
+      ],
+      "source_url": "https://github.com/frc604/2022-public",
+      "additional_sources": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2022-5",
+      "robot_id": "2022-604",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "endgame",
+      "title": "Published FRC-2022 code · endgame",
+      "version_label": "Published FRC-2022 code",
+      "construction": "Climber.java configures three NEO motors and staged first-rung, lift, handoff, high-rung and traversal transitions. It uses filtered tilt and tilt rate, position/profile completion and an angle-history lockout.",
+      "team_stated_reason": "Comments explicitly describe gyro-controlled transitions and an antenna-touch-angle lockout; broader hardware intent is not fully documented here.",
+      "engineering_analysis": "This is a dynamic climb sequence, not a simple winch toggle. A transition may require both operator approval and a suitable swing/position state. That ties compliance, sensor filtering, angular thresholds and operator timing together. A traversal state in released code proves intended capability, not a successful traversal in every match or that all events ran this revision. Exact hook and support geometry remain open.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Repository README and original subsystem/Calibration files"
+      ],
+      "source_url": "https://github.com/frc604/2022-public",
+      "additional_sources": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    },
+    {
+      "id": "604-expansion-2022-6",
+      "robot_id": "2022-604",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "controls",
+      "title": "Original code versus learning rewrite · controls",
+      "version_label": "Original code versus learning rewrite",
+      "construction": "The repository README identifies FRC-2022 as robot code and FRC-2022-NEW as a work-in-progress reimplementation for learning and cleanup. Quikplan-swerve and the offboard quixpf particle filter are separate directories.",
+      "team_stated_reason": "The rewrite is explicitly described as preparation and learning.",
+      "engineering_analysis": "Do not read the cleaner NEW tree and retroactively claim every behavior was fielded in 2022. The original tree is the stronger starting point for event-era behavior, though its final commit still lacks per-event installation certification. Pin the repository commit and file path when citing code; preserve the distinction between software configuration, mechanical construction and observed performance.",
+      "recommended_validation": "Verify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.",
+      "limitations": "Source report or published-code behavior, not independent performance testing. Geometry, dates and unreviewed mechanisms remain unknown.",
+      "pdf_pages": [],
+      "page_references": [
+        "Repository README and original subsystem/Calibration files"
+      ],
+      "source_url": "https://github.com/frc604/2022-public",
+      "additional_sources": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "team_reported_or_unmeasured",
+      "image_ids": [],
+      "review_scope": "Selected primary technical sections; exact CAD geometry and every competition version not audited"
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-604:publication-version:1",
+      "label": "Published FRC-2022 code",
+      "robot_id": "2022-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2022-1",
+        "604-expansion-2022-2",
+        "604-expansion-2022-3",
+        "604-expansion-2022-4",
+        "604-expansion-2022-5"
+      ],
+      "source_urls": [
+        "https://github.com/frc604/2022-public"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2022-604:publication-version:2",
+      "label": "Original code versus learning rewrite",
+      "robot_id": "2022-604",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "604-expansion-2022-6"
+      ],
+      "source_urls": [
+        "https://github.com/frc604/2022-public"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "2022-604-primary-study",
+      "title": "2022-604 primary-source mechanisms and strategic context",
+      "year": 2022,
+      "robot_id": "2022-604",
+      "kind": "robot_deep_note",
+      "body": "# 2022-604 — Quixilver: Octopus Prime\n\nPrimary source: https://github.com/frc604/2022-public\n\nReviewed 2026-10-26. This is a source-bounded technical study. Construction, stated intent, interpretation and unresolved evidence are separate.\n\nCode commit: 2cfd645d19ac09681d201481e8eecd10156b2b9d. Read the original FRC-2022 tree. FRC-2022-NEW is a learning rewrite, not certified event code. File locators: Intake.java, BallPath.java, Launcher.java, Climber.java and Calibration.java under FRC-2022/src/com/_604robotics/robot2022/.\n\n## Published FRC-2022 code · drivetrain\n\n### Published construction or code\n\nCalibration defines a 20.5-inch wheelbase and track width, 3.94-inch wheel diameter, 6.75:1 drive reduction and 12.8:1 steering reduction. These are software configuration values, not independent measurements.\n\n### Stated rationale and boundaries\n\nMechanical selection rationale is not established by the code.\n\n### Engineering interpretation\n\nThe swerve and localization must be considered together. A configured maximum speed is not a demonstrated match speed. Wheel calibration affects both the path tracker and the launch-distance estimate, so a copied drive configuration can corrupt scoring even when teleop feels acceptable. Check hardware revision, encoder scales and actual loaded wheel circumference before borrowing constants.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · intake\n\n### Published construction or code\n\nIntake.java configures distinct Falcon 500 roller and deployment motors, a trapezoidal deployment profile, arm feedforward and a 45A deployment stator limit. Intake, eject, unjam and yeet commands are separate entry points.\n\n### Stated rationale and boundaries\n\nThe code does not state why this exact mechanical geometry was selected.\n\n### Engineering interpretation\n\nThe published interface treats recovery and reverse flow as designed operating modes. That is useful architectural evidence, but it does not establish roller material, width, compression or impact survival. A profiled pivot can reduce abrupt actuation; whether it does so under contact depends on the real mechanism and controller settings. Preserve these unknowns rather than infer a later 604 polycarbonate intake in 2022.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · transfer\n\n### Published construction or code\n\nBallPath.java separates upper and lower Falcon-driven transport sections and exposes position/velocity control and sensor-based ball handling.\n\n### Stated rationale and boundaries\n\nExact transport geometry and team selection rationale remain unresolved.\n\n### Engineering interpretation\n\nSeparately controlled transport can stage a second cargo while releasing the first, but introduces coordination between occupancy sensing, launcher readiness and reverse recovery. Code supports the existence of these interfaces, not an independent throughput result or proof of jam-free behavior. A two-cargo game rewards preserving a reliable staged sequence; extra transport complexity should be justified by actual scoring continuity.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · scoring\n\n### Published construction or code\n\nLauncher.java configures front and rear Falcon flywheel motors with feedforward and feedback. Readiness checks use a five-sample speed buffer and tolerance; distance-related bounds are treated separately.\n\n### Stated rationale and boundaries\n\nThe source establishes readiness logic, not a published mechanical reason for wheel geometry.\n\n### Engineering interpretation\n\nRequiring recent samples within tolerance is different from checking one instantaneous RPM. It can reject a momentary speed crossing after spin-up or a previous shot. The trade is delayed release versus launch consistency. The existence of front/rear motors does not establish independent spin control in competition, wheel dimensions, a turret, or exact release angle. Those require geometry and event evidence.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Published FRC-2022 code · endgame\n\n### Published construction or code\n\nClimber.java configures three NEO motors and staged first-rung, lift, handoff, high-rung and traversal transitions. It uses filtered tilt and tilt rate, position/profile completion and an angle-history lockout.\n\n### Stated rationale and boundaries\n\nComments explicitly describe gyro-controlled transitions and an antenna-touch-angle lockout; broader hardware intent is not fully documented here.\n\n### Engineering interpretation\n\nThis is a dynamic climb sequence, not a simple winch toggle. A transition may require both operator approval and a suitable swing/position state. That ties compliance, sensor filtering, angular thresholds and operator timing together. A traversal state in released code proves intended capability, not a successful traversal in every match or that all events ran this revision. Exact hook and support geometry remain open.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Original code versus learning rewrite · controls\n\n### Published construction or code\n\nThe repository README identifies FRC-2022 as robot code and FRC-2022-NEW as a work-in-progress reimplementation for learning and cleanup. Quikplan-swerve and the offboard quixpf particle filter are separate directories.\n\n### Stated rationale and boundaries\n\nThe rewrite is explicitly described as preparation and learning.\n\n### Engineering interpretation\n\nDo not read the cleaner NEW tree and retroactively claim every behavior was fielded in 2022. The original tree is the stronger starting point for event-era behavior, though its final commit still lacks per-event installation certification. Pin the repository commit and file path when citing code; preserve the distinction between software configuration, mechanical construction and observed performance.\n\n### Validation still required\n\nVerify the installed configuration and interfaces against the original publication/CAD; prototype full acquisition-to-output cycles, recovery and service access under the intended loaded and defended conditions. These tests are proposed, not performed.\n\n## Evidence limits\n\n- Selected primary publications/code reviewed; exact per-event installation and exhaustive intermediate revisions remain unresolved.\n- Four previously blocked source originals (2023 robot photo; 2026 serializer, intake and hopper CAD views) were recovered through normal browser downloads on 2026-10-26 and inspected. Whole-robot source views are not exhaustive mechanism or event-version certification.\n",
+      "source_urls": [
+        "https://github.com/frc604/2022-public"
+      ],
+      "path": "docs/context/2022-604-primary-study.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-604",
+    "year": 2022,
+    "team": 604,
+    "epa_rank": 65,
+    "status": "primary_source_review_no_verified_binder",
+    "search": {
+      "query": "604 2022 technical release",
+      "review_date": "2026-10-26"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "604-source-2022"
+    ],
+    "technical_note_ids": [
+      "604-expansion-2022-1",
+      "604-expansion-2022-2",
+      "604-expansion-2022-3",
+      "604-expansion-2022-4",
+      "604-expansion-2022-5",
+      "604-expansion-2022-6"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Primary technical release/code reviewed; no standalone binder certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "604-expansion-2022-1:construction",
+    "604-expansion-2022-1:team_stated_reason",
+    "604-expansion-2022-1:engineering_analysis",
+    "604-expansion-2022-1:recommended_validation",
+    "604-expansion-2022-1:limitations",
+    "604-expansion-2022-2:construction",
+    "604-expansion-2022-2:team_stated_reason",
+    "604-expansion-2022-2:engineering_analysis",
+    "604-expansion-2022-2:recommended_validation",
+    "604-expansion-2022-2:limitations",
+    "604-expansion-2022-3:construction",
+    "604-expansion-2022-3:team_stated_reason",
+    "604-expansion-2022-3:engineering_analysis",
+    "604-expansion-2022-3:recommended_validation",
+    "604-expansion-2022-3:limitations",
+    "604-expansion-2022-4:construction",
+    "604-expansion-2022-4:team_stated_reason",
+    "604-expansion-2022-4:engineering_analysis",
+    "604-expansion-2022-4:recommended_validation",
+    "604-expansion-2022-4:limitations",
+    "604-expansion-2022-5:construction",
+    "604-expansion-2022-5:team_stated_reason",
+    "604-expansion-2022-5:engineering_analysis",
+    "604-expansion-2022-5:recommended_validation",
+    "604-expansion-2022-5:limitations",
+    "604-expansion-2022-6:construction",
+    "604-expansion-2022-6:team_stated_reason",
+    "604-expansion-2022-6:engineering_analysis",
+    "604-expansion-2022-6:recommended_validation",
+    "604-expansion-2022-6:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

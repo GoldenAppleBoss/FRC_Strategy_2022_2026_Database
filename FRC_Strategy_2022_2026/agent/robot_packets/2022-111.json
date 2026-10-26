@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-111",
+  "year": 2022,
+  "team": 111,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 111,
+    "robot": "WildStang 2022",
+    "primary": [
+      "https://www.youtube.com/watch?v=dQxUV3jSOuQ"
+    ],
+    "architecture": "Fixed-heading adjustable-hood scorer, gated feeder and telescopic/pivot traversal climb.",
+    "subsystems": {
+      "drivetrain": "Swerve provides chassis aiming rather than a turret.",
+      "intake": "Roller collector repeatedly simplified to eliminate pinch points.",
+      "transfer": "Pneumatic gate separates stored cargo from shooter; kicker controls feed speed. Two sensors stop collection at capacity.",
+      "scoring": "Lighter Colson main wheels and back wheels tune recovery and exit spin; Limelight sets aim/hood.",
+      "endgame": "Compact telescopic arms and retaining hooks support repeated rung transfers with a pneumatic angle change.",
+      "controls": "Automatic capacity logic and targeting; climb actions sequenced around hook engagement."
+    },
+    "versions": [
+      "Removed unnecessary edge wheels and support bar that trapped cargo. Added/adjusted feeder restraint and kicker."
+    ],
+    "analysis": "A strong example of improving flow by removing contact geometry. More rollers and more grip can create new trapping modes rather than increase intake reliability.",
+    "limits": [
+      "Only published/reviewed configurations are established; further intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2022-111",
+    "team_name": "WildStang",
+    "epa_rank": 15,
+    "epa": 52.92,
+    "epa_pre_champs": 50.62,
+    "epa_breakdown": {
+      "total_points": 52.92,
+      "auto_points": 15.39,
+      "teleop_points": 28.69,
+      "endgame_points": 8.84,
+      "cargo_rp": 0.7376,
+      "hangar_rp": 0.371,
+      "tiebreaker_points": 52.92,
+      "auto_taxi_points": 2.03,
+      "auto_cargo_lower": 0.13,
+      "auto_cargo_upper": 3.28,
+      "teleop_cargo_lower": -0.25,
+      "teleop_cargo_upper": 14.47,
+      "rp_1": 0.7376,
+      "rp_2": 0.371
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "604103eb934b21c5"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-111",
+      "year": 2022,
+      "team": 111,
+      "epa_rank": 15,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"111\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 0,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"111\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-111"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-111",
+      "title": "Removing contact points can improve cargo flow",
+      "start_seconds": 79,
+      "end_seconds": 370,
+      "construction": "The collector was repeatedly revised to remove dead zones and pinch points. A pneumatic gate separates stored cargo from the launcher, with a kicker and two capacity sensors. The retained source distinguishes main/back-wheel choices and a sequential traversal climb.",
+      "team_stated_reason": "The team explicitly ties collector iteration to reliable acquisition rather than simply higher roller speed.",
+      "engineering_analysis": "A gate decouples possession from launch readiness. More grip can create an unwanted stable pinch, so the test must include side-by-side cargo and partial entry, not only single clean pickups.",
+      "recommended_validation": "Measure jam/recovery frequency and feed latency with worn cargo; test gate timing during wheel recovery.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-111",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=dQxUV3jSOuQ",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 370,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "dQxUV3jSOuQ",
+          "sha256": "f8b4de4147addbe70dad9f37852e1315934c7994d7f818195fd69943869a7fcd",
+          "caption_segments": 241,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-111:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-111",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-111"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=dQxUV3jSOuQ"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-111",
+      "title": "2022-111 · Removing contact points can improve cargo flow",
+      "year": 2022,
+      "robot_id": "2022-111",
+      "kind": "focused_technical_study",
+      "body": "# 2022-111: Removing contact points can improve cargo flow\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe collector was repeatedly revised to remove dead zones and pinch points. A pneumatic gate separates stored cargo from the launcher, with a kicker and two capacity sensors. The retained source distinguishes main/back-wheel choices and a sequential traversal climb.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly ties collector iteration to reliable acquisition rather than simply higher roller speed.\n\n## Engineering interpretation — analyst inference\n\nA gate decouples possession from launch readiness. More grip can create an unwanted stable pinch, so the test must include side-by-side cargo and partial entry, not only single clean pickups.\n\n## Proposed validation — not performed\n\nMeasure jam/recovery frequency and feed latency with worn cargo; test gate timing during wheel recovery.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=dQxUV3jSOuQ](https://www.youtube.com/watch?v=dQxUV3jSOuQ)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=dQxUV3jSOuQ"
+      ],
+      "path": "docs/research_continuation/2022-111.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2022-111",
+    "year": 2022,
+    "team": 111,
+    "epa_rank": 15,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"111\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 0,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"111\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-111:construction",
+    "study6-2022-111:team_stated_reason",
+    "study6-2022-111:engineering_analysis",
+    "study6-2022-111:recommended_validation",
+    "study6-2022-111:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

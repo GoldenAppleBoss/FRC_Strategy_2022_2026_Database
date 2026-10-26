@@ -1,0 +1,338 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-2075",
+  "year": 2023,
+  "team": 2075,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 2075,
+    "robot": "Cypher",
+    "primary": [
+      "https://youtu.be/YCgAOm7wFq4"
+    ],
+    "architecture": "Two-joint arm and wide floor collector with compliant handoff to a station-capable claw.",
+    "subsystems": {
+      "drivetrain": "Swerve; wheel odometry corrected with vision in autonomous.",
+      "intake": "Beater-bar/roller floor acquisition for both pieces.",
+      "transfer": "Claw pivot compliance accommodates cones arriving at different lateral positions.",
+      "scoring": "Shoulder/elbow arm; low backlash is central to repeatable node placement.",
+      "endgame": "Autonomous programs include balance attempts.",
+      "controls": "Limelight corrections improve paths over the cable bump; LEDs communicate requested and acquired piece."
+    },
+    "versions": [
+      "Arm gears and hex joints shimmed and secured to reduce accumulated slop. Vision integrated later; interview says teleop vision correction was not implemented at that point."
+    ],
+    "analysis": "A wide intake transfers its alignment problem downstream unless the handoff or software can accommodate piece position. The yielding claw is an explicit answer to that problem.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-2075",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/430484/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/e/5/e5a51507a6ee1ee254252dc674fc3631d576cabc_2_690x388.jpeg",
+        "post": 1,
+        "date": "2023-03-16T03:40:37.734Z",
+        "author": "Quinn_S",
+        "context_tags": [],
+        "caption": "2023 team 2075 — source image from post 1 (2023-03-16). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "348995ea1300f17488.jpg",
+        "id": "36c5966d26e94ccd80",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/348995ea1300f17488.jpg"
+      },
+      {
+        "robot_id": "2023-2075",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/430484/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/a/e/aefaf5f66c470b04d6548f26e6ae9ed7b81e812e.gif",
+        "post": 1,
+        "date": "2023-03-16T03:40:37.734Z",
+        "author": "Quinn_S",
+        "context_tags": [],
+        "caption": "2023 team 2075 — source image from post 1 (2023-03-16). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "8788dd4e098193c6db.jpg",
+        "id": "dd8ee7625a0f0b1408",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/8788dd4e098193c6db.jpg"
+      }
+    ],
+    "source_post_count": 3,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-2075",
+        "discovery_post": "2023-2075-430484-6",
+        "url": "https://cad.onshape.com/publications/9f87591b1daa6346307adacc/w/a84fbcf600947d412a4a3069/e/4b568e79862905c1494a78c3?renderMode=0&uiState=6598b6e7c9b92b58c417fb0f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "65381a8247e1195b60"
+      },
+      {
+        "robot_id": "2023-2075",
+        "discovery_post": "2023-2075-430484-6",
+        "url": "https://github.com/Enigma2075/FRC2023",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "e4cde186de544fa339"
+      }
+    ],
+    "id": "2023-2075",
+    "team_name": "Enigma Robotics",
+    "epa_rank": 18,
+    "epa": 70.56,
+    "epa_pre_champs": 63.52,
+    "epa_breakdown": {
+      "total_points": 70.56,
+      "auto_points": 16.53,
+      "teleop_points": 40.98,
+      "endgame_points": 9.67,
+      "links_rp": 0.5998,
+      "activation_rp": 0.4509,
+      "tiebreaker_points": 67.18,
+      "auto_charge_station_points": 4.19,
+      "auto_pieces": 2.3,
+      "teleop_grid_points": 28.7,
+      "bottom_pieces": 1.76,
+      "middle_pieces": 3.31,
+      "top_pieces": 4.64,
+      "cube_points": 14.5,
+      "cone_points": 24.44,
+      "links": 3.13,
+      "endgame_charge_station_points": 9.67,
+      "rp_1": 0.5998,
+      "rp_2": 0.4509
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "dc357bf07911e581"
+    ],
+    "tags": [
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-2075",
+      "year": 2023,
+      "team": 2075,
+      "epa_rank": 18,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"2075\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 9,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"2075\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-2075"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-2075",
+      "title": "Backlash and compliant handoff tolerance must be separated",
+      "start_seconds": 110,
+      "end_seconds": 330,
+      "construction": "A floor beater/roller collector hands pieces to a shoulder/elbow arm and claw. The source describes high shoulder loads and early slop problems. The wider claw accommodates variable lateral arrival and can also acquire at the shelf.",
+      "team_stated_reason": "The team ties a rigid shoulder transmission to consistent placement and the wide/compliant receiver to successful handoff from a broad collector.",
+      "engineering_analysis": "Useful compliance at the receiver is different from uncontrolled angular lost motion at the shoulder. One enlarges acquisition tolerance; the other shifts the end-effector position unpredictably at the node. A good transfer should center or otherwise define the retained piece before the arm uses precision scoring poses.",
+      "recommended_validation": "Measure piece-position spread after handoff separately from arm-position hysteresis. Test both shelf and ground acquisition, including incomplete transfers and reversals.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2023-2075",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/YCgAOm7wFq4",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 110,
+        "end_seconds": 330,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "YCgAOm7wFq4",
+          "sha256": "c03ea63f9f4111da03e41195c366e0ce67f14cf3e1e24668df5c2b6caeb0ce2d",
+          "caption_segments": 303,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-2075:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-2075",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-2075"
+      ],
+      "source_urls": [
+        "https://youtu.be/YCgAOm7wFq4"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-2075",
+      "title": "2023-2075 · Backlash and compliant handoff tolerance must be separated",
+      "year": 2023,
+      "robot_id": "2023-2075",
+      "kind": "focused_technical_study",
+      "body": "# 2023-2075: Backlash and compliant handoff tolerance must be separated\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA floor beater/roller collector hands pieces to a shoulder/elbow arm and claw. The source describes high shoulder loads and early slop problems. The wider claw accommodates variable lateral arrival and can also acquire at the shelf.\n\n## Team-stated reasoning or boundary\n\nThe team ties a rigid shoulder transmission to consistent placement and the wide/compliant receiver to successful handoff from a broad collector.\n\n## Engineering interpretation — analyst inference\n\nUseful compliance at the receiver is different from uncontrolled angular lost motion at the shoulder. One enlarges acquisition tolerance; the other shifts the end-effector position unpredictably at the node. A good transfer should center or otherwise define the retained piece before the arm uses precision scoring poses.\n\n## Proposed validation — not performed\n\nMeasure piece-position spread after handoff separately from arm-position hysteresis. Test both shelf and ground acquisition, including incomplete transfers and reversals.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/YCgAOm7wFq4](https://youtu.be/YCgAOm7wFq4)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/YCgAOm7wFq4"
+      ],
+      "path": "docs/research_continuation/2023-2075.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-2075",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/430484/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/e/5/e5a51507a6ee1ee254252dc674fc3631d576cabc_2_690x388.jpeg",
+      "post": 1,
+      "date": "2023-03-16T03:40:37.734Z",
+      "author": "Quinn_S",
+      "context_tags": [],
+      "caption": "2023 team 2075 — source image from post 1 (2023-03-16). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "348995ea1300f17488.jpg",
+      "id": "36c5966d26e94ccd80",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/348995ea1300f17488.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 388,
+      "bytes": 94693,
+      "sha256": "3663c44916a7149bff76f9033fce2ccbbd9034a75273c5c1d6c5eb035394c879",
+      "path_base": "corpus_root",
+      "reader_asset_id": "36c5966d26e94ccd80",
+      "reader_url": "index.html#image=36c5966d26e94ccd80",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-2075",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/430484/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/a/e/aefaf5f66c470b04d6548f26e6ae9ed7b81e812e.gif",
+      "post": 1,
+      "date": "2023-03-16T03:40:37.734Z",
+      "author": "Quinn_S",
+      "context_tags": [],
+      "caption": "2023 team 2075 — source image from post 1 (2023-03-16). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "8788dd4e098193c6db.jpg",
+      "id": "dd8ee7625a0f0b1408",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/8788dd4e098193c6db.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 500,
+      "height_px": 500,
+      "bytes": 47074,
+      "sha256": "ea2d0eb3606f6ccf8e8e8a9aa201b4ea220e833daaa1c2d3f5b8854c463ac23b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "dd8ee7625a0f0b1408",
+      "reader_url": "index.html#image=dd8ee7625a0f0b1408",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-2075",
+    "year": 2023,
+    "team": 2075,
+    "epa_rank": 18,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"2075\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 9,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"2075\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-2075:construction",
+    "study6-2023-2075:team_stated_reason",
+    "study6-2023-2075:engineering_analysis",
+    "study6-2023-2075:recommended_validation",
+    "study6-2023-2075:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

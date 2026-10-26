@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "browser": "Chromium 153 headless via Playwright",
+  "offline": true,
+  "images": 504,
+  "broken": [],
+  "robots": 125,
+  "notes": 227,
+  "expanded": 33,
+  "sections": 105,
+  "source_accounts_and_analyst_sections_rendered": true,
+  "quiz_prompts_rendered": true,
+  "focused_technical_study_rendered": true,
+  "original_image_viewer_works": true,
+  "mobile_overflow": false,
+  "page_errors": []
+}

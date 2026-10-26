@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-6328",
+  "year": 2024,
+  "team": 6328,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 6328,
+    "robot": "Mechanical Advantage 2024",
+    "primary": [
+      "https://youtu.be/4BlE5zDQwBE"
+    ],
+    "architecture": "Under-bumper acquisition, bidirectional indexer and pivoted shooter with amp/trap backpack.",
+    "subsystems": {
+      "drivetrain": "Swerve and low arm mass; numerical trajectory optimization includes module-force feedforward.",
+      "intake": "Full-width collector, wedges and passive centering rollers.",
+      "transfer": "Double-sided timing belt reverses roller directions compactly; indexer routes between two note paths.",
+      "scoring": "Independently controlled left/right shooter groups stabilize the note; rack-driven backpack scores amp and trap.",
+      "endgame": "Single-stage two-hook elevator; guiding fangs route the chain clear of the shooter/backpack.",
+      "controls": "Four AprilTag cameras on two Orange Pis; adaptive autonomous searches remaining midline notes."
+    },
+    "versions": [
+      "Prototype subsystems placed on a development robot before final packaging. Team reports roughly fifteen amp-path prototypes."
+    ],
+    "analysis": "A strong integrated handoff/climb reference: chain routing must work through the entire approach sequence. Adaptive auto distinguishes a planned path from a plan that survives contested notes.",
+    "limits": [
+      "Configuration description is tied to the cited interview; not a claim that every unreported shop revision is known."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2024-6328",
+    "team_name": "Mechanical Advantage",
+    "epa_rank": 4,
+    "epa": 54.26,
+    "epa_pre_champs": 48.05,
+    "epa_breakdown": {
+      "total_points": 54.26,
+      "auto_points": 16.73,
+      "teleop_points": 31.14,
+      "endgame_points": 6.38,
+      "melody_rp": 0.7104,
+      "ensemble_rp": 0.6073,
+      "tiebreaker_points": 0.19,
+      "auto_leave_points": 1.8,
+      "auto_note_points": 14.94,
+      "teleop_note_points": 31.14,
+      "speaker_points": 43.22,
+      "amplified_notes": 5.36,
+      "endgame_park_points": 0.15,
+      "endgame_on_stage_points": 3.08,
+      "endgame_harmony_points": -0.14,
+      "endgame_trap_points": 3.13,
+      "endgame_spotlight_points": 0.16,
+      "rp_1": 0.7104,
+      "rp_2": 0.6073,
+      "total_note_points": 46.08
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "fd319683b8058f68"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-6328",
+      "year": 2024,
+      "team": 6328,
+      "epa_rank": 4,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"6328\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 18,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"6328\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-6328"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-6328",
+      "title": "Routing the note and routing the chain are both architecture interfaces",
+      "start_seconds": 80,
+      "end_seconds": 305,
+      "construction": "A full-width collector uses leading rollers, wedges and slippery passive centering surfaces. The indexer selects the main shooter or rack-driven amp/trap backpack. Double-sided belts package opposite roller directions. Climb-side fangs guide the chain over areas where it could catch the shooter/backpack; four pose cameras use deliberately different views/lenses.",
+      "team_stated_reason": "The source explicitly connects the fangs to avoiding chain entrapment and the camera arrangement to useful tag visibility on approach to scoring locations. It treats camera placement as a deliberate strategy choice rather than simply adding identical cameras.",
+      "engineering_analysis": "A compact scorer and climber can each work separately but fail when a flexible chain sweeps through their shared space. Passive routing surfaces are therefore a mechanism interface, not cosmetic guards. Similarly, extra cameras help only when their sight lines and uncertainty provide information the existing views lack.",
+      "recommended_validation": "Test chain capture with lateral error and robot roll, inspect every backpack handoff, and measure pose availability along the intended routes rather than only at a parked test position.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-6328",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/4BlE5zDQwBE",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 80,
+        "end_seconds": 305,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "4BlE5zDQwBE",
+          "sha256": "46e4be82682b6bb7d1c30e95f1a8200261fe01c67cadaeb5737f4ffaec28aac8",
+          "caption_segments": 372,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-6328:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-6328",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-6328"
+      ],
+      "source_urls": [
+        "https://youtu.be/4BlE5zDQwBE"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-6328",
+      "title": "2024-6328 · Routing the note and routing the chain are both architecture interfaces",
+      "year": 2024,
+      "robot_id": "2024-6328",
+      "kind": "focused_technical_study",
+      "body": "# 2024-6328: Routing the note and routing the chain are both architecture interfaces\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA full-width collector uses leading rollers, wedges and slippery passive centering surfaces. The indexer selects the main shooter or rack-driven amp/trap backpack. Double-sided belts package opposite roller directions. Climb-side fangs guide the chain over areas where it could catch the shooter/backpack; four pose cameras use deliberately different views/lenses.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly connects the fangs to avoiding chain entrapment and the camera arrangement to useful tag visibility on approach to scoring locations. It treats camera placement as a deliberate strategy choice rather than simply adding identical cameras.\n\n## Engineering interpretation — analyst inference\n\nA compact scorer and climber can each work separately but fail when a flexible chain sweeps through their shared space. Passive routing surfaces are therefore a mechanism interface, not cosmetic guards. Similarly, extra cameras help only when their sight lines and uncertainty provide information the existing views lack.\n\n## Proposed validation — not performed\n\nTest chain capture with lateral error and robot roll, inspect every backpack handoff, and measure pose availability along the intended routes rather than only at a parked test position.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/4BlE5zDQwBE](https://youtu.be/4BlE5zDQwBE)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/4BlE5zDQwBE"
+      ],
+      "path": "docs/research_continuation/2024-6328.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2024-6328",
+    "year": 2024,
+    "team": 6328,
+    "epa_rank": 4,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"6328\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 18,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"6328\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-6328:construction",
+    "study6-2024-6328:team_stated_reason",
+    "study6-2024-6328:engineering_analysis",
+    "study6-2024-6328:recommended_validation",
+    "study6-2024-6328:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

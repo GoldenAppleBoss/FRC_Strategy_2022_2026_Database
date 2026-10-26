@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-3005",
+  "year": 2025,
+  "team": 3005,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 3005,
+    "robot": "RoboChargers 2025",
+    "primary": [
+      "https://youtu.be/oTLDniUNgBQ"
+    ],
+    "architecture": "Rear elevator/scorer with actively agitated serializer and cam-adjusted scoring geometry.",
+    "subsystems": {
+      "drivetrain": "Swerve; module variant unresolved here.",
+      "intake": "Station chute permits human-player tossing; collector/serializer geometry prioritizes a continuous path.",
+      "transfer": "Pre-Worlds rebuild replaced passive funnel/single belt with molded powered flaps that contact awkward coral in more orientations.",
+      "scoring": "Ladderator placement architecture; cam addition addressed week-1 L4 tipping and alignment delay. Roller locations revised to smooth handoff.",
+      "endgame": "Guide flap and cage locks; servo-dependent retention replaced by automatically engaging ratchet-like transmission so a partially completed climb survives disable.",
+      "controls": "Scoring and capture automation support shorter spot-to-score delay; exact full controls architecture not established here."
+    },
+    "versions": [
+      "Week-1 instability drove cam revision.",
+      "Serializer completely redesigned before Worlds.",
+      "Climb retention redesigned after lost climbs from late servo activation."
+    ],
+    "analysis": "Passive funnels fail when a rigid pipe can sit where no powered surface touches it. The serializer rebuild is a general anti-jam lesson, while the climb revision addresses a separate deadline failure: securing the load before power disappears.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 3,
+    "cad_code_links": [],
+    "id": "2025-3005",
+    "team_name": "RoboChargers",
+    "epa_rank": 19,
+    "epa": 92.38,
+    "epa_pre_champs": 92.85,
+    "epa_breakdown": {
+      "total_points": 92.38,
+      "auto_points": 19.58,
+      "teleop_points": 62.04,
+      "endgame_points": 10.76,
+      "auto_rp": 0.7537,
+      "coral_rp": 0.6245,
+      "barge_rp": 0.57518,
+      "tiebreaker_points": 0.37,
+      "auto_coral_points": 16.5,
+      "teleop_coral_points": 45.14,
+      "coral_l1": 0.88,
+      "coral_l2": 4.82,
+      "coral_l3": 4.88,
+      "coral_l4": 4.23,
+      "processor_algae": 0.64,
+      "processor_algae_points": 1.91,
+      "net_algae_points": 14.99,
+      "barge_points": 10.76,
+      "rp_1": 0.7537,
+      "rp_2": 0.6245,
+      "rp_3": 0.57518,
+      "total_coral_points": 61.64,
+      "total_algae_points": 16.9
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "partial / unresolved detail"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "ed1be7643e6ddf93"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-3005",
+      "year": 2025,
+      "team": 3005,
+      "epa_rank": 19,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"3005\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 23,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3005\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-3005"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-3005",
+      "title": "A serializer rebuild must eliminate stable wrong orientations",
+      "start_seconds": 78,
+      "end_seconds": 120,
+      "construction": "Before Worlds, passive polycarbonate funneling and one lower belt were replaced by molded powered flaps that contact awkward coral orientations. The retained ladder-style placement mechanism also received a cam after early L4 tipping/alignment difficulties. The interview separately describes a ratcheting climb that can retain partial progress after disable.",
+      "team_stated_reason": "The serializer change is explicitly tied to coral settling into specific trapped orientations. Retaining a climb after power-off is described as an important requirement, not an incidental effect of gearing.",
+      "engineering_analysis": "A funnel that succeeds in the common orientation can still create a stable mechanical equilibrium in an uncommon one. Powered flaps need to disturb that equilibrium without ejecting or crushing the piece. Likewise, an L4 scorer should be judged by placement stability and alignment delay, not only reaching the nominal height. These are distinct revisions and should not be attributed to one unchanging opening-week robot.",
+      "recommended_validation": "Deliberately place coral in every previously trapped pose, measure recovery time, and test L4 placement after abrupt chassis stops. Verify retention with the actual disabled climb configuration.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-3005",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/oTLDniUNgBQ",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 78,
+        "end_seconds": 120,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "oTLDniUNgBQ",
+          "sha256": "10c78e5b686faf342218a725988fd3487ffe57b926785e31694d76357e32e4e2",
+          "caption_segments": 383,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-3005:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-3005",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-3005"
+      ],
+      "source_urls": [
+        "https://youtu.be/oTLDniUNgBQ"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-3005",
+      "title": "2025-3005 · A serializer rebuild must eliminate stable wrong orientations",
+      "year": 2025,
+      "robot_id": "2025-3005",
+      "kind": "focused_technical_study",
+      "body": "# 2025-3005: A serializer rebuild must eliminate stable wrong orientations\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nBefore Worlds, passive polycarbonate funneling and one lower belt were replaced by molded powered flaps that contact awkward coral orientations. The retained ladder-style placement mechanism also received a cam after early L4 tipping/alignment difficulties. The interview separately describes a ratcheting climb that can retain partial progress after disable.\n\n## Team-stated reasoning or boundary\n\nThe serializer change is explicitly tied to coral settling into specific trapped orientations. Retaining a climb after power-off is described as an important requirement, not an incidental effect of gearing.\n\n## Engineering interpretation — analyst inference\n\nA funnel that succeeds in the common orientation can still create a stable mechanical equilibrium in an uncommon one. Powered flaps need to disturb that equilibrium without ejecting or crushing the piece. Likewise, an L4 scorer should be judged by placement stability and alignment delay, not only reaching the nominal height. These are distinct revisions and should not be attributed to one unchanging opening-week robot.\n\n## Proposed validation — not performed\n\nDeliberately place coral in every previously trapped pose, measure recovery time, and test L4 placement after abrupt chassis stops. Verify retention with the actual disabled climb configuration.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/oTLDniUNgBQ](https://youtu.be/oTLDniUNgBQ)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/oTLDniUNgBQ"
+      ],
+      "path": "docs/research_continuation/2025-3005.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-3005",
+    "year": 2025,
+    "team": 3005,
+    "epa_rank": 19,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"3005\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 23,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3005\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-3005:construction",
+    "study6-2025-3005:team_stated_reason",
+    "study6-2025-3005:engineering_analysis",
+    "study6-2025-3005:recommended_validation",
+    "study6-2025-3005:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

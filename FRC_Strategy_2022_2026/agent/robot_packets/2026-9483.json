@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-9483",
+  "year": 2026,
+  "team": 9483,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 9483,
+    "robot": "Enigma",
+    "primary": [
+      "https://www.chiefdelphi.com/t/515383"
+    ],
+    "architecture": "Compact turret fed by rotating floor/conical spindexer and curved-rack collection.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module specification unresolved in reviewed team replies.",
+      "intake": "Third collector version adds kicker and articulated secondary kicker; curved rack stays low in stow to preserve capacity.",
+      "transfer": "Cone and rotating floor; separate X44s power spindexer and uptake. Ratios and feeder wheels revised repeatedly; automated recovery clears intermittent jams.",
+      "scoring": "Three-X44 flywheel, no powered top roller; compact turret and hood. Team identifies light printed wheel plus supplemental inertia kit.",
+      "endgame": "Endgame installation not established in reviewed release.",
+      "controls": "Empirically tuned tables plus iterative physics solution compensate motion and spin; local floodlight helps close-range tag shadows, not distant detection."
+    },
+    "versions": [
+      "At least three intake configurations; feed-wheel changes reported seven/eight times.",
+      "Do not treat speculative third-party explanations in thread as team-confirmed geometry."
+    ],
+    "analysis": "A conical spindexer is a different singulation family from a pocketed DYE Rotor. Curved deployment preserves low internal volume; contact friction, congestion and turret interference remain the transfer-critical variables.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-9483",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515383/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/0/b/a/0ba67a27f76b79ed3924bf85f120f2ba125b8d3d_2_690x460.jpeg",
+        "post": 1,
+        "date": "2026-03-02T22:39:40.108Z",
+        "author": "oguzozgur",
+        "context_tags": [],
+        "caption": "2026 team 9483 — source image from post 1 (2026-03-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d101ee3e6cb3182241.jpg",
+        "id": "1c157d940a187b266f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d101ee3e6cb3182241.jpg"
+      },
+      {
+        "robot_id": "2026-9483",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515383/8",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/f/5/d/f5d8762a65a750f1b9f990a1fa0d782cfb0d9ffb.jpeg",
+        "post": 8,
+        "date": "2026-03-03T02:55:24.808Z",
+        "author": "ArchdukeTim",
+        "context_tags": [
+          "spindexer"
+        ],
+        "caption": "2026 team 9483 — source image from post 8 (2026-03-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "9e9c658e774e8f91f7.jpg",
+        "id": "daf487ab5927b28a13",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/9e9c658e774e8f91f7.jpg"
+      },
+      {
+        "robot_id": "2026-9483",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515383/35",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/5/c/1/5c1143c9b05d4769943a77f69e150a6ff8a85ff8.gif",
+        "post": 35,
+        "date": "2026-05-12T01:50:49.999Z",
+        "author": "oguzozgur",
+        "context_tags": [
+          "hopper",
+          "indexer",
+          "intake",
+          "shooter",
+          "spindexer"
+        ],
+        "caption": "2026 team 9483 — source image from post 35 (2026-05-12). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "15a3893f41c42a5ad0.jpg",
+        "id": "238d9655327213a37f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/15a3893f41c42a5ad0.jpg"
+      }
+    ],
+    "source_post_count": 18,
+    "cad_code_links": [],
+    "id": "2026-9483",
+    "team_name": "Overcharge",
+    "epa_rank": 21,
+    "epa": 261.31,
+    "epa_pre_champs": 346.27,
+    "epa_breakdown": {
+      "total_points": 261.31,
+      "auto_points": 57.28,
+      "teleop_points": 150.79,
+      "endgame_points": 53.24,
+      "energized_rp": 0.7514,
+      "supercharged_rp": 0.6357,
+      "traversal_rp": -0.33929,
+      "tiebreaker_points": 261.31,
+      "auto_fuel": 56.35,
+      "auto_tower": 0.93,
+      "transition_fuel": 14.95,
+      "first_shift_fuel": 75.03,
+      "second_shift_fuel": 60.81,
+      "endgame_fuel": 53.31,
+      "endgame_tower": -0.07,
+      "rp_1": 0.7514,
+      "rp_2": 0.6357,
+      "rp_3": -0.33929,
+      "teleop_fuel": 204.10000000000002,
+      "total_fuel": 260.45,
+      "total_tower": 0.8600000000000001
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "bdfa02c50cc5e208"
+    ],
+    "tags": [
+      "climb",
+      "spindexer / DYE",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-9483",
+      "year": 2026,
+      "team": 9483,
+      "epa_rank": 21,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"9483\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 30,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"9483\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-9483"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-9483",
+      "title": "Small turret throughput cannot be inferred from exterior geometry",
+      "start_seconds": 0,
+      "end_seconds": 0,
+      "construction": "First-party replies describe separate X44s for indexer and spindexer, a spinning floor/cone with no deliberate wall compression, and multiple feeder-wheel and ratio trials. The third intake version adds a kicker and movable secondary kicker. The shooter lacks an upper roller; its moving-shot solution combines tuned lookup data and a physics calculation that compensates for spin.",
+      "team_stated_reason": "The team says the movable kicker resolves earlier collector difficulty and clarifies that the feeder delivers fuel without spin. It does not provide a definitive causal explanation for all of the achieved spindexer throughput. The added flood light helps close-range tag reliability rather than substantially increasing long-range detection.",
+      "engineering_analysis": "The absence of a counter-roller makes spin an explicit aiming input rather than something to assume away. A compact turret may leave more free hopper area, but the detailed explanation of dead zones and geometry offered by another commenter is expressly an outsider’s hypothesis. Keep that hypothesis separate from the team’s replies. Successful self-unjamming also does not mean jams never occur; the source explicitly acknowledges occasional jams.",
+      "recommended_validation": "Measure entrance spin and moving-shot error across turret angles, record jam/recovery frequency and time, and inspect exact CAD before copying clearances or interpreting an image-based diameter estimate.",
+      "limitations": "Selected first-party replies 26, 30, 33, 35 and 47 in topic 515383. Reply 44 is outside analysis, not team intent or a CAD inspection.",
+      "id": "study6-2026-9483",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.chiefdelphi.com/t/515383/35",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/515383"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 0,
+        "end_seconds": 0,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-9483:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-9483",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-9483"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/515383/35"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-9483",
+      "title": "2026-9483 · Small turret throughput cannot be inferred from exterior geometry",
+      "year": 2026,
+      "robot_id": "2026-9483",
+      "kind": "focused_technical_study",
+      "body": "# 2026-9483: Small turret throughput cannot be inferred from exterior geometry\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nFirst-party replies describe separate X44s for indexer and spindexer, a spinning floor/cone with no deliberate wall compression, and multiple feeder-wheel and ratio trials. The third intake version adds a kicker and movable secondary kicker. The shooter lacks an upper roller; its moving-shot solution combines tuned lookup data and a physics calculation that compensates for spin.\n\n## Team-stated reasoning or boundary\n\nThe team says the movable kicker resolves earlier collector difficulty and clarifies that the feeder delivers fuel without spin. It does not provide a definitive causal explanation for all of the achieved spindexer throughput. The added flood light helps close-range tag reliability rather than substantially increasing long-range detection.\n\n## Engineering interpretation — analyst inference\n\nThe absence of a counter-roller makes spin an explicit aiming input rather than something to assume away. A compact turret may leave more free hopper area, but the detailed explanation of dead zones and geometry offered by another commenter is expressly an outsider’s hypothesis. Keep that hypothesis separate from the team’s replies. Successful self-unjamming also does not mean jams never occur; the source explicitly acknowledges occasional jams.\n\n## Proposed validation — not performed\n\nMeasure entrance spin and moving-shot error across turret angles, record jam/recovery frequency and time, and inspect exact CAD before copying clearances or interpreting an image-based diameter estimate.\n\n## Limits\n\nSelected first-party replies 26, 30, 33, 35 and 47 in topic 515383. Reply 44 is outside analysis, not team intent or a CAD inspection.\n\n## Sources and navigation\n\n- [https://www.chiefdelphi.com/t/515383/35](https://www.chiefdelphi.com/t/515383/35)\n- [https://www.chiefdelphi.com/t/515383](https://www.chiefdelphi.com/t/515383)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/515383/35",
+        "https://www.chiefdelphi.com/t/515383"
+      ],
+      "path": "docs/research_continuation/2026-9483.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-9483",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515383/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/0/b/a/0ba67a27f76b79ed3924bf85f120f2ba125b8d3d_2_690x460.jpeg",
+      "post": 1,
+      "date": "2026-03-02T22:39:40.108Z",
+      "author": "oguzozgur",
+      "context_tags": [],
+      "caption": "2026 team 9483 — source image from post 1 (2026-03-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d101ee3e6cb3182241.jpg",
+      "id": "1c157d940a187b266f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d101ee3e6cb3182241.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 460,
+      "bytes": 36248,
+      "sha256": "b759ec298c73ac9182d7b615a014b970a7f513351785dcd0e8c2e7d7c8afee3c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "1c157d940a187b266f",
+      "reader_url": "index.html#image=1c157d940a187b266f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-9483",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515383/8",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/f/5/d/f5d8762a65a750f1b9f990a1fa0d782cfb0d9ffb.jpeg",
+      "post": 8,
+      "date": "2026-03-03T02:55:24.808Z",
+      "author": "ArchdukeTim",
+      "context_tags": [
+        "spindexer"
+      ],
+      "caption": "2026 team 9483 — source image from post 8 (2026-03-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "9e9c658e774e8f91f7.jpg",
+      "id": "daf487ab5927b28a13",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/9e9c658e774e8f91f7.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 533,
+      "height_px": 217,
+      "bytes": 23085,
+      "sha256": "05992386dbc16417b67c950dea22aa067b259dd9c22f048c4513c1984fac870a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "daf487ab5927b28a13",
+      "reader_url": "index.html#image=daf487ab5927b28a13",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-9483",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515383/35",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/5/c/1/5c1143c9b05d4769943a77f69e150a6ff8a85ff8.gif",
+      "post": 35,
+      "date": "2026-05-12T01:50:49.999Z",
+      "author": "oguzozgur",
+      "context_tags": [
+        "hopper",
+        "indexer",
+        "intake",
+        "shooter",
+        "spindexer"
+      ],
+      "caption": "2026 team 9483 — source image from post 35 (2026-05-12). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "15a3893f41c42a5ad0.jpg",
+      "id": "238d9655327213a37f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/15a3893f41c42a5ad0.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 480,
+      "height_px": 320,
+      "bytes": 38389,
+      "sha256": "185013844da2074cefe510b56b7f57dc9d7e59f50b6eb3275a6328911a0dfdd7",
+      "path_base": "corpus_root",
+      "reader_asset_id": "238d9655327213a37f",
+      "reader_url": "index.html#image=238d9655327213a37f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-9483",
+    "year": 2026,
+    "team": 9483,
+    "epa_rank": 21,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"9483\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 30,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"9483\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-9483:construction",
+    "study6-2026-9483:team_stated_reason",
+    "study6-2026-9483:engineering_analysis",
+    "study6-2026-9483:recommended_validation",
+    "study6-2026-9483:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

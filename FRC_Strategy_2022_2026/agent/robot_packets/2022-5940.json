@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-5940",
+  "year": 2022,
+  "team": 5940,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 5940,
+    "robot": "Brioche",
+    "primary": [
+      "https://youtu.be/GbeIEkqZO9Q",
+      "https://www.chiefdelphi.com/t/412602",
+      "https://github.com/BREAD5940/2022-Onseason"
+    ],
+    "architecture": "Dual-collector cargo cycling robot; onseason high-bar and offseason traversal configurations must be distinguished.",
+    "subsystems": {
+      "drivetrain": "Swerve-family architecture; exact module specification not established in this review.",
+      "intake": "Single collector at week 1; later opposed wide mecanum collectors supported drive-by pickup.",
+      "transfer": "Single-sided belts select upward storage or wrong-color passthrough.",
+      "scoring": "Range launcher; reviewed source establishes moving-shot virtual targeting added between second regional and Worlds. Exact hood/turret geometry remains unresolved.",
+      "endgame": "Onseason high-bar: an extension-envelope oversight compromised traversal. Reorientation before Worlds did not produce a sufficiently reliable fast traversal. Offseason added belted traversal, static hooks and pneumatic pivot.",
+      "controls": "Two-button driver workflow; opponent-cargo-only mode was implemented but reportedly never used."
+    },
+    "versions": [
+      "Onseason: dual intake and moving-shot software added.",
+      "Chezy interview shows a later traversal system, not the original Worlds climb."
+    ],
+    "analysis": "The most useful lesson is the opportunity cost of endgame: a predictable high climb can outperform an unreliable traversal when alliance partners already cover the higher bars. Do not transfer the offseason climb into the Worlds performance explanation.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2022-5940",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/412602/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/6/f620967c192354e5ea55836049c2804458061179_2_375x500.jpeg",
+        "post": 1,
+        "date": "2022-06-08T02:43:20.106Z",
+        "author": "KKrish100",
+        "context_tags": [],
+        "caption": "2022 team 5940 — source image from post 1 (2022-06-08). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "67ee47be0720cfdda4.jpg",
+        "id": "512560db84c6af6558",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/67ee47be0720cfdda4.jpg"
+      }
+    ],
+    "source_post_count": 4,
+    "cad_code_links": [
+      {
+        "robot_id": "2022-5940",
+        "discovery_post": "2022-5940-412602-1",
+        "url": "https://github.com/BREAD5940/2022-Onseason",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "33767d5888ae69dece"
+      },
+      {
+        "robot_id": "2022-5940",
+        "discovery_post": "2022-5940-412602-1",
+        "url": "https://drive.google.com/drive/u/0/folders/1dfmoy9ifio9D6NkCJLpp7tA9KlsyfclU",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "075407f5643ab53996"
+      }
+    ],
+    "id": "2022-5940",
+    "team_name": "BREAD",
+    "epa_rank": 18,
+    "epa": 51.78,
+    "epa_pre_champs": 53.36,
+    "epa_breakdown": {
+      "total_points": 51.78,
+      "auto_points": 13.27,
+      "teleop_points": 30.53,
+      "endgame_points": 7.98,
+      "cargo_rp": 0.6433,
+      "hangar_rp": 0.4935,
+      "tiebreaker_points": 51.78,
+      "auto_taxi_points": 1.82,
+      "auto_cargo_lower": -0.04,
+      "auto_cargo_upper": 2.88,
+      "teleop_cargo_lower": -0.07,
+      "teleop_cargo_upper": 15.3,
+      "rp_1": 0.6433,
+      "rp_2": 0.4935
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "partial / unresolved detail",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "7c1c17dfffb5ee2c",
+      "8e7ab07e80ae2c2b",
+      "8d693070a879429c"
+    ],
+    "tags": [
+      "climb",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-5940",
+      "year": 2022,
+      "team": 5940,
+      "epa_rank": 18,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"5940\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 6,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"5940\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-5940"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-5940",
+      "title": "Dual acquisition improves route flexibility without proving every component optimal",
+      "start_seconds": 109,
+      "end_seconds": 400,
+      "construction": "A second opposed collector was added after the single-intake early robot to support drive-by autonomous pickup. The source reports wide mecanum collectors, a controlled upward/passthrough belt path and a later moving-shot solution. The onseason climb differs from an offseason traversal upgrade.",
+      "team_stated_reason": "The team explicitly ties dual pickup to easier drive-by autonomous, while cautioning that its mecanum implementation required many iterations and was not a blanket recommendation.",
+      "engineering_analysis": "A successful robot can contain a mechanism the team would not copy again. Preserve that negative experience. Additional pickup directions buy route freedom, but require two transport-entry cases and greater repair exposure.",
+      "recommended_validation": "Compare complete auto routes, feed/rejection recovery and the exact onseason climb; do not back-project the offseason improvement.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-5940",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/GbeIEkqZO9Q",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/412602",
+        "https://github.com/BREAD5940/2022-Onseason"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 109,
+        "end_seconds": 400,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "GbeIEkqZO9Q",
+          "sha256": "77e0d39999f6409aa48e5637f92707d4b8c626686cffaae73e3fbf48911f8320",
+          "caption_segments": 220,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-5940:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-5940",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-5940"
+      ],
+      "source_urls": [
+        "https://youtu.be/GbeIEkqZO9Q"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-5940",
+      "title": "2022-5940 · Dual acquisition improves route flexibility without proving every component optimal",
+      "year": 2022,
+      "robot_id": "2022-5940",
+      "kind": "focused_technical_study",
+      "body": "# 2022-5940: Dual acquisition improves route flexibility without proving every component optimal\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA second opposed collector was added after the single-intake early robot to support drive-by autonomous pickup. The source reports wide mecanum collectors, a controlled upward/passthrough belt path and a later moving-shot solution. The onseason climb differs from an offseason traversal upgrade.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly ties dual pickup to easier drive-by autonomous, while cautioning that its mecanum implementation required many iterations and was not a blanket recommendation.\n\n## Engineering interpretation — analyst inference\n\nA successful robot can contain a mechanism the team would not copy again. Preserve that negative experience. Additional pickup directions buy route freedom, but require two transport-entry cases and greater repair exposure.\n\n## Proposed validation — not performed\n\nCompare complete auto routes, feed/rejection recovery and the exact onseason climb; do not back-project the offseason improvement.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/GbeIEkqZO9Q](https://youtu.be/GbeIEkqZO9Q)\n- [https://www.chiefdelphi.com/t/412602](https://www.chiefdelphi.com/t/412602)\n- [https://github.com/BREAD5940/2022-Onseason](https://github.com/BREAD5940/2022-Onseason)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/GbeIEkqZO9Q",
+        "https://www.chiefdelphi.com/t/412602",
+        "https://github.com/BREAD5940/2022-Onseason"
+      ],
+      "path": "docs/research_continuation/2022-5940.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2022-5940",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/412602/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/6/f620967c192354e5ea55836049c2804458061179_2_375x500.jpeg",
+      "post": 1,
+      "date": "2022-06-08T02:43:20.106Z",
+      "author": "KKrish100",
+      "context_tags": [],
+      "caption": "2022 team 5940 — source image from post 1 (2022-06-08). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "67ee47be0720cfdda4.jpg",
+      "id": "512560db84c6af6558",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/67ee47be0720cfdda4.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 79179,
+      "sha256": "ed4f34cc13a891099cb2955c7562faa646c2287e27a1d83d94873ecf7753f0c4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "512560db84c6af6558",
+      "reader_url": "index.html#image=512560db84c6af6558",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-5940",
+    "year": 2022,
+    "team": 5940,
+    "epa_rank": 18,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"5940\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 6,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"5940\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-5940:construction",
+    "study6-2022-5940:team_stated_reason",
+    "study6-2022-5940:engineering_analysis",
+    "study6-2022-5940:recommended_validation",
+    "study6-2022-5940:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

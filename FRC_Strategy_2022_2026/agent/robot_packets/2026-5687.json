@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-5687",
+  "year": 2026,
+  "team": 5687,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 5687,
+    "robot": "Glenn",
+    "primary": [
+      "https://www.chiefdelphi.com/t/515683",
+      "https://www.chiefdelphi.com/t/524737"
+    ],
+    "architecture": "High-inertia drum dumper with low-compression collection and revised belt floor.",
+    "subsystems": {
+      "drivetrain": "30×24-inch swerve frame; exact module variant unresolved here.",
+      "intake": "Two upper rollers and lower kicker share rolling-floor power. Rack deploy replaced by capstan after URI tooth damage.",
+      "transfer": "Roller floor changed to belts between URI and UVM; lane formation reduced spinning-in-place and shortened shot timers.",
+      "scoring": "Urethane-coated six-inch aluminum drum with substantial stored inertia; adjustable hood. Team reports difficult coating/balancing process.",
+      "endgame": "Endgame installation not established by reviewed technical replies.",
+      "controls": "C++ release, high-rate odometry and interpolated velocity-compensated shot calculator. Team explicitly says shoot-on-move implementation was not used in matches."
+    },
+    "versions": [
+      "URI-to-UVM belt-floor and capstan changes.",
+      "Power-consumption problems required event troubleshooting. Offseason LifeBot code is not treated as this onseason robot."
+    ],
+    "analysis": "A high-inertia drum can reduce speed droop but requires energy and careful balancing. The public account is especially useful for distinguishing implemented software from actually fielded capabilities.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-5687",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515683/40",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/0/1/b01fd9a689e76814fba538ae06a85299ebad9ca7_2_690x370.jpeg",
+        "post": 40,
+        "date": "2026-10-03T20:12:42.116Z",
+        "author": "Tobyr",
+        "context_tags": [
+          "elevator",
+          "intake"
+        ],
+        "caption": "2026 team 5687 — source image from post 40 (2026-10-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "fd4ab3140cf57ce077.jpg",
+        "id": "4d4b9bbc6354007fbe",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/fd4ab3140cf57ce077.jpg"
+      },
+      {
+        "robot_id": "2026-5687",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515683/44",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/7/d/17d1830a878dbf18a0b8943a36e523ca4059893b_2_666x500.jpeg",
+        "post": 44,
+        "date": "2026-10-05T01:56:08.249Z",
+        "author": "D.Slobodzian",
+        "context_tags": [
+          "intake",
+          "pivot"
+        ],
+        "caption": "2026 team 5687 — source image from post 44 (2026-10-05). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "163e673af2719a38b0.jpg",
+        "id": "0911e7a68cfc25c099",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/163e673af2719a38b0.jpg"
+      },
+      {
+        "robot_id": "2026-5687",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/515683/46",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/f/e/dfe254e9736f9a0459396784717613b0a7007076_2_375x500.jpeg",
+        "post": 46,
+        "date": "2026-10-06T02:15:59.151Z",
+        "author": "Tobyr",
+        "context_tags": [
+          "arm",
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2026 team 5687 — source image from post 46 (2026-10-06). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "ff18f56463a2262839.jpg",
+        "id": "862cb0aec96d485cef",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/ff18f56463a2262839.jpg"
+      }
+    ],
+    "source_post_count": 16,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b4f99df2f8261548ce"
+      },
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687/2026-robot",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "28fa3405b71a565e0a"
+      },
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687/2026-robot/blob/main/src/main/include/RobotState.h",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7dc3ff65d28b5a350b"
+      },
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687/2026-robot/blob/main/src/main/cpp/subsystem/shooter/ShotCalculator.cpp",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f1d96bba2241c1f5fe"
+      },
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687/2026-robot/blob/main/src/main/cpp/subsystem/drive/OdometryThread.cpp",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "90e373619276b066a4"
+      },
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687/2026-robot/blob/main/src/main/cpp/utils/SubsystemBatteryLogger.cpp",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "67b0312bed5311f87e"
+      },
+      {
+        "robot_id": "2026-5687",
+        "discovery_post": "2026-5687-524737-1",
+        "url": "https://github.com/frc5687/2026-robot/blob/main/src/main/include/utils/Logger.h",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "1bc017c8f366538cc4"
+      }
+    ],
+    "id": "2026-5687",
+    "team_name": "The Outliers",
+    "epa_rank": 11,
+    "epa": 282.69,
+    "epa_pre_champs": 282.69,
+    "epa_breakdown": {
+      "total_points": 282.69,
+      "auto_points": 73.97,
+      "teleop_points": 155.12,
+      "endgame_points": 53.59,
+      "energized_rp": 0.8504,
+      "supercharged_rp": 0.7579,
+      "traversal_rp": -0.34192,
+      "tiebreaker_points": 282.69,
+      "auto_fuel": 73.89,
+      "auto_tower": 0.08,
+      "transition_fuel": 28.0,
+      "first_shift_fuel": 72.45,
+      "second_shift_fuel": 54.66,
+      "endgame_fuel": 53.56,
+      "endgame_tower": 0.03,
+      "rp_1": 0.8504,
+      "rp_2": 0.7579,
+      "rp_3": -0.34192,
+      "teleop_fuel": 208.67000000000002,
+      "total_fuel": 282.56,
+      "total_tower": 0.11
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "808be21b039013bd",
+      "867db55ed6d4e36c"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-5687",
+      "year": 2026,
+      "team": 5687,
+      "epa_rank": 11,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"5687\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 28,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"5687\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-5687"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-5687",
+      "title": "Capstan deployment and belt-floor lanes are dated fixes, not universal upgrades",
+      "start_seconds": 0,
+      "end_seconds": 0,
+      "construction": "First-party replies describe 2-inch upper rollers, a 1.25-inch lower roller and about half an inch of compression. The robot changed from roller floor to belt floor between URI and UVM, and from rack deployment to a rope capstan after tooth damage. A 6-inch, 1/8-inch-wall aluminum drum was urethane-coated, machined and balanced; its reported inertia is a little over 80 lb·in².",
+      "team_stated_reason": "The team says lower collector compression reduced motor bogging. It reports lower current and faster feeding after the belt-floor change; belt spacing created lanes and reduced fuel spinning in place. Rope deployment addressed rack tooth failures, with rope tension becoming the continuing adjustment.",
+      "engineering_analysis": "This is a useful counterexample to choosing a floor from appearance alone. Belt spacing can organize deformable fuel and remove an unproductive rotating contact state, but that result depends on piece size, belt spacing, load and friction. A capstan cannot skip discrete gear teeth, yet it can slip, stretch, lose tension or suffer anchor damage. The team’s prior capstan experience also changes development risk: the decision was supported by an existing implementation history rather than an untested mechanism adopted casually midseason.",
+      "recommended_validation": "Test lane stability, residual fuel, electrical demand and rope tension after repeated impacts. Preserve the report that auto shot timers shortened by over half a second without inventing exact before/after BPS.",
+      "limitations": "Selected first-party replies 14, 16, 21, 23, 38, 40 and 42 in topic 515683, plus code-release topic 524737. This is a discussion/code-release review, not a reviewed technical binder.",
+      "id": "study6-2026-5687",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.chiefdelphi.com/t/515683/40",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/515683",
+        "https://www.chiefdelphi.com/t/524737"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 0,
+        "end_seconds": 0,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-5687:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-5687",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-5687"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/515683/40"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-5687",
+      "title": "2026-5687 · Capstan deployment and belt-floor lanes are dated fixes, not universal upgrades",
+      "year": 2026,
+      "robot_id": "2026-5687",
+      "kind": "focused_technical_study",
+      "body": "# 2026-5687: Capstan deployment and belt-floor lanes are dated fixes, not universal upgrades\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nFirst-party replies describe 2-inch upper rollers, a 1.25-inch lower roller and about half an inch of compression. The robot changed from roller floor to belt floor between URI and UVM, and from rack deployment to a rope capstan after tooth damage. A 6-inch, 1/8-inch-wall aluminum drum was urethane-coated, machined and balanced; its reported inertia is a little over 80 lb·in².\n\n## Team-stated reasoning or boundary\n\nThe team says lower collector compression reduced motor bogging. It reports lower current and faster feeding after the belt-floor change; belt spacing created lanes and reduced fuel spinning in place. Rope deployment addressed rack tooth failures, with rope tension becoming the continuing adjustment.\n\n## Engineering interpretation — analyst inference\n\nThis is a useful counterexample to choosing a floor from appearance alone. Belt spacing can organize deformable fuel and remove an unproductive rotating contact state, but that result depends on piece size, belt spacing, load and friction. A capstan cannot skip discrete gear teeth, yet it can slip, stretch, lose tension or suffer anchor damage. The team’s prior capstan experience also changes development risk: the decision was supported by an existing implementation history rather than an untested mechanism adopted casually midseason.\n\n## Proposed validation — not performed\n\nTest lane stability, residual fuel, electrical demand and rope tension after repeated impacts. Preserve the report that auto shot timers shortened by over half a second without inventing exact before/after BPS.\n\n## Limits\n\nSelected first-party replies 14, 16, 21, 23, 38, 40 and 42 in topic 515683, plus code-release topic 524737. This is a discussion/code-release review, not a reviewed technical binder.\n\n## Sources and navigation\n\n- [https://www.chiefdelphi.com/t/515683/40](https://www.chiefdelphi.com/t/515683/40)\n- [https://www.chiefdelphi.com/t/515683](https://www.chiefdelphi.com/t/515683)\n- [https://www.chiefdelphi.com/t/524737](https://www.chiefdelphi.com/t/524737)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/515683/40",
+        "https://www.chiefdelphi.com/t/515683",
+        "https://www.chiefdelphi.com/t/524737"
+      ],
+      "path": "docs/research_continuation/2026-5687.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-5687",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515683/40",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/0/1/b01fd9a689e76814fba538ae06a85299ebad9ca7_2_690x370.jpeg",
+      "post": 40,
+      "date": "2026-10-03T20:12:42.116Z",
+      "author": "Tobyr",
+      "context_tags": [
+        "elevator",
+        "intake"
+      ],
+      "caption": "2026 team 5687 — source image from post 40 (2026-10-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "fd4ab3140cf57ce077.jpg",
+      "id": "4d4b9bbc6354007fbe",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/fd4ab3140cf57ce077.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 370,
+      "bytes": 27155,
+      "sha256": "937c98b0d83898172f6b53bddb1965f3e898cce74838184597d3d398a93b05ae",
+      "path_base": "corpus_root",
+      "reader_asset_id": "4d4b9bbc6354007fbe",
+      "reader_url": "index.html#image=4d4b9bbc6354007fbe",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-5687",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515683/44",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/1/7/d/17d1830a878dbf18a0b8943a36e523ca4059893b_2_666x500.jpeg",
+      "post": 44,
+      "date": "2026-10-05T01:56:08.249Z",
+      "author": "D.Slobodzian",
+      "context_tags": [
+        "intake",
+        "pivot"
+      ],
+      "caption": "2026 team 5687 — source image from post 44 (2026-10-05). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "163e673af2719a38b0.jpg",
+      "id": "0911e7a68cfc25c099",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/163e673af2719a38b0.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 110881,
+      "sha256": "5d7b113e1726a7ca2536aac7aaf6cb0997859d901fe98dfce38a6e2d13fedd4b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "0911e7a68cfc25c099",
+      "reader_url": "index.html#image=0911e7a68cfc25c099",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-5687",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/515683/46",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/f/e/dfe254e9736f9a0459396784717613b0a7007076_2_375x500.jpeg",
+      "post": 46,
+      "date": "2026-10-06T02:15:59.151Z",
+      "author": "Tobyr",
+      "context_tags": [
+        "arm",
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2026 team 5687 — source image from post 46 (2026-10-06). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "ff18f56463a2262839.jpg",
+      "id": "862cb0aec96d485cef",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/ff18f56463a2262839.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 375,
+      "height_px": 500,
+      "bytes": 47361,
+      "sha256": "9575784bc35d8dcd7618bbf8def3768c66695248429113cc8dd2a1f2071dc32a",
+      "path_base": "corpus_root",
+      "reader_asset_id": "862cb0aec96d485cef",
+      "reader_url": "index.html#image=862cb0aec96d485cef",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-5687",
+    "year": 2026,
+    "team": 5687,
+    "epa_rank": 11,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"5687\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 28,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"5687\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-5687:construction",
+    "study6-2026-5687:team_stated_reason",
+    "study6-2026-5687:engineering_analysis",
+    "study6-2026-5687:recommended_validation",
+    "study6-2026-5687:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

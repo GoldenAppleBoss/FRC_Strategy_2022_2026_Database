@@ -1,0 +1,513 @@
+{
+  "schema_version": "1.0",
+  "id": "2023-3467",
+  "year": 2023,
+  "team": 3467,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2023.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2023,
+    "team": 3467,
+    "robot": "Windham Windup 2023",
+    "primary": [
+      "https://youtu.be/zqoVcHclGuM"
+    ],
+    "architecture": "Small swerve base, two-joint arm and pneumatic wrist/claw; early prototype robot used for software.",
+    "subsystems": {
+      "drivetrain": "SDS MK4i; compact base chosen around traffic and station chokepoints.",
+      "intake": "Pneumatic opening selects cone versus cube compression; rollers remain powered to retain pieces.",
+      "transfer": "Week-zero collector prototype was not yet installed; proposed four-bar would center cubes and upright cones.",
+      "scoring": "Shoulder/elbow joints with low gearboxes and MAXSpline transmission.",
+      "endgame": "Gyro-feedback station balancing.",
+      "controls": "Profiled joint controllers, PathPlanner autos and separate practice/software robots."
+    },
+    "versions": [
+      "Day-ten functional prototype enabled early software. At week zero, the claw and proposed intake were still evolving; later Open Alliance posts must govern final configuration."
+    ],
+    "analysis": "A functional early mechanism can buy more controls and driver iteration than a late, elaborate assembly. Do not mistake week-zero plans for the eventual Championship robot.",
+    "limits": [
+      "Interview configuration and reported revisions are documented; full season chronology remains to be audited against the linked releases."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2023-3467",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/417264/4",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/7/67d24e6bbba34efb6fbfd674785448dd7931b804_2_690x338.png",
+        "post": 4,
+        "date": "2023-01-04T14:07:11.093Z",
+        "author": "Kevin_Leonard",
+        "context_tags": [
+          "climb",
+          "elevator",
+          "shooter",
+          "wrist"
+        ],
+        "caption": "2023 team 3467 — source image from post 4 (2023-01-04). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "c70a6c9266df9d12b6.jpg",
+        "id": "11955862ef13d676f3",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/c70a6c9266df9d12b6.jpg"
+      },
+      {
+        "robot_id": "2023-3467",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/417264/4",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/0/70279ae7f8a2ee0bfa97c5f998081195506da280_2_690x309.png",
+        "post": 4,
+        "date": "2023-01-04T14:07:11.093Z",
+        "author": "Kevin_Leonard",
+        "context_tags": [
+          "climb",
+          "elevator",
+          "shooter",
+          "wrist"
+        ],
+        "caption": "2023 team 3467 — source image from post 4 (2023-01-04). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e5d8abc36f9ada15d3.jpg",
+        "id": "bcf85404f0f442ef17",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e5d8abc36f9ada15d3.jpg"
+      }
+    ],
+    "source_post_count": 102,
+    "cad_code_links": [
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-1",
+        "url": "https://cad.onshape.com/documents/4eee337415947aaaf783703b/w/7f932bec215920485998fc5b/e/a9d1677304ec7fa985ef5819",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "cc1646b8ac836620b0"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-1",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.12",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "48c6dc274c12b5ea3d"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-1",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.12/blob/master/src/main/java/frc/robot/Subsystems/Drive/TrajectoryFollow.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "d2a5c7b0fce9938673"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-1",
+        "url": "https://cad.onshape.com/documents/8b9a151b0defff44f864e092/w/3e863f1cbb335ac01751aebe/e/af4daa6dc3970db321b53d24?renderMode=0&uiState=636bae9be11e720c6963acc9",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f2f2c5e8e1e16b0836"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-4",
+        "url": "https://cad.onshape.com/documents/f58d32ddd9c97262f4fa56f4/w/61b647dc4ceb77bc05a0d925/e/20a524a430b384757d2552fc?renderMode=0&uiState=63b43c1d5d6009010c812a9d",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c188f293cf78f27c1e"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-4",
+        "url": "https://docs.google.com/presentation/d/1HTJ1HibtPATRlZKpEIhwcj9m3m-ntvSjrExSh5_SXAc/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6af512b183c8efae2d"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-4",
+        "url": "https://docs.google.com/presentation/d/107LSs3-GlcP87t8JzMqiZ5DPXVEMTp5a_eD7-ixk5TM/edit?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "f5ba14de4e8212cb5d"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-4",
+        "url": "https://docs.google.com/spreadsheets/d/1uEsL4FvMiuRdjANPRvOueWT1N2yVnBQV/edit?usp=sharing&ouid=113050183117620664739&rtpof=true&sd=true",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b2c0a7a530b1f0bb18"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-10",
+        "url": "https://drive.google.com/drive/folders/1O0EpU7Ycho-1wCdmDHtG7qwqO4ZIq2M3?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "32fccd022b37b7897d"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-12",
+        "url": "https://github.com/WHS-FRC-3467/DoubleJointedArmSim",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "77e6f94eba7539962e"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-14",
+        "url": "https://github.com/Team997Coders/spartanLib2/tree/multiDOFMech",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "66ea5ed916ba0b9c67"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-108",
+        "url": "https://cad.onshape.com/documents/def28e0760269a9be32a3e45/w/d7728c8df4edd00646b1b835/e/659625b09aa6eca0aa9edc73?renderMode=0&uiState=63bde7d21884b73d668de0b6",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "95b18eb10bc3d4d165"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-48",
+        "url": "https://github.com/WHS-FRC-3467/Skip-5.13",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6fd2313781289c1432"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-48",
+        "url": "https://github.com/Team364/BaseFalconSwerve",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "7a3bd2ece0410c75c0"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-51",
+        "url": "https://github.com/WHS-FRC-3467/DoubleJointedArmSim/tree/double-with-wrist",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "3bb40ab769b5c0a972"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-54",
+        "url": "https://github.com/BraedenHunt/SimulatedDoubleJointedArm/blob/master/src/main/java/frc/robot/WPILibExtensions/ExtendedSingleJointSimulation.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "0dffddc9d90c5862e1"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-57",
+        "url": "https://github.com/TandeJ/Config-Space-Finder",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "81b004fab4c5a586c6"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-110",
+        "url": "https://github.com/Mechanical-Advantage/RobotCode2023/blob/49e7a6cb6864e68659f7380cb7cc3d485e78fa5a/src/main/java/org/littletonrobotics/frc2023/util/DoubleJointedArmFeedforward.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "38626422e91b210301"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-131",
+        "url": "https://cad.onshape.com/documents/04f02d6baa9d4341721d2d98/w/56125f3b23caf69f28305983/e/9f1293cc99db97869a582260?renderMode=0&uiState=63ec0f7c0a7eef6ca1ef5aeb",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "ffa4ce860bf2f34b5b"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-131",
+        "url": "https://cad.onshape.com/documents/6cecca5e2bb24b02f6a0d547/w/00e48070c84185ce776c92f3/e/9dc4111c29d75e9a5c07e693?renderMode=0&uiState=63ec0ee05466d94f8a4fb576",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6390748ef0e9e796ed"
+      },
+      {
+        "robot_id": "2023-3467",
+        "discovery_post": "2023-3467-417264-235",
+        "url": "https://cad.onshape.com/documents/5742c8cde4b06c68b362d748/v/1db29081376c095cf10e2a3d/e/01a666571e625f8b819fd75b?jumpToIndex=2997",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "fdcb92b5a75245be96"
+      }
+    ],
+    "id": "2023-3467",
+    "team_name": "Windham Windup",
+    "epa_rank": 20,
+    "epa": 70.11,
+    "epa_pre_champs": 66.66,
+    "epa_breakdown": {
+      "total_points": 70.11,
+      "auto_points": 16.7,
+      "teleop_points": 41.91,
+      "endgame_points": 8.21,
+      "links_rp": 0.7265,
+      "activation_rp": 0.505,
+      "tiebreaker_points": 66.82,
+      "auto_charge_station_points": 6.69,
+      "auto_pieces": 1.76,
+      "teleop_grid_points": 28.81,
+      "bottom_pieces": 1.57,
+      "middle_pieces": 3.45,
+      "top_pieces": 4.61,
+      "cube_points": 15.94,
+      "cone_points": 22.39,
+      "links": 3.28,
+      "endgame_charge_station_points": 8.21,
+      "rp_1": 0.7265,
+      "rp_2": 0.505
+    },
+    "game": "CHARGED UP",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "babb6e08b47689c7"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2023-3467",
+      "year": 2023,
+      "team": 3467,
+      "epa_rank": 20,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"3467\" \"2023\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 11,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3467\" \"2023\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2023-3467"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2023-3467",
+      "title": "A week-zero prototype must not be treated as the final competition configuration",
+      "start_seconds": 78,
+      "end_seconds": 480,
+      "construction": "The early double-jointed arm uses low gearboxes and MAXSpline transmission; the interview states roughly 100:1 at each joint. Pneumatic opening changes cone/cube grip. A proposed collector/four-bar was not yet installed in this snapshot.",
+      "team_stated_reason": "The team emphasizes getting a simple arm running early for software/setpoint work and describes profiled control for smooth repeatable movement.",
+      "engineering_analysis": "A working early mechanism is valuable development infrastructure, but a proposed collector cannot become a fielded capability merely because it appears in the interview. Piece-dependent jaw opening also requires possession-state handling.",
+      "recommended_validation": "Verify later installed versions separately and test grip retention throughout profiled motion.",
+      "limitations": "Early snapshot only. Automatic captions are not sufficient to certify detailed motor/transmission part numbers.",
+      "id": "study6-2023-3467",
+      "year": 2023,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/zqoVcHclGuM",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 78,
+        "end_seconds": 480,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "zqoVcHclGuM",
+          "sha256": "df79e2f50c974b15339cfd405e633ccd7e3fced73453003af049faee82da29d3",
+          "caption_segments": 282,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2023-3467:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2023-3467",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2023-3467"
+      ],
+      "source_urls": [
+        "https://youtu.be/zqoVcHclGuM"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2023-3467",
+      "title": "2023-3467 · A week-zero prototype must not be treated as the final competition configuration",
+      "year": 2023,
+      "robot_id": "2023-3467",
+      "kind": "focused_technical_study",
+      "body": "# 2023-3467: A week-zero prototype must not be treated as the final competition configuration\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe early double-jointed arm uses low gearboxes and MAXSpline transmission; the interview states roughly 100:1 at each joint. Pneumatic opening changes cone/cube grip. A proposed collector/four-bar was not yet installed in this snapshot.\n\n## Team-stated reasoning or boundary\n\nThe team emphasizes getting a simple arm running early for software/setpoint work and describes profiled control for smooth repeatable movement.\n\n## Engineering interpretation — analyst inference\n\nA working early mechanism is valuable development infrastructure, but a proposed collector cannot become a fielded capability merely because it appears in the interview. Piece-dependent jaw opening also requires possession-state handling.\n\n## Proposed validation — not performed\n\nVerify later installed versions separately and test grip retention throughout profiled motion.\n\n## Limits\n\nEarly snapshot only. Automatic captions are not sufficient to certify detailed motor/transmission part numbers.\n\n## Sources and navigation\n\n- [https://youtu.be/zqoVcHclGuM](https://youtu.be/zqoVcHclGuM)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/zqoVcHclGuM"
+      ],
+      "path": "docs/research_continuation/2023-3467.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2023-3467",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/417264/4",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/6/7/67d24e6bbba34efb6fbfd674785448dd7931b804_2_690x338.png",
+      "post": 4,
+      "date": "2023-01-04T14:07:11.093Z",
+      "author": "Kevin_Leonard",
+      "context_tags": [
+        "climb",
+        "elevator",
+        "shooter",
+        "wrist"
+      ],
+      "caption": "2023 team 3467 — source image from post 4 (2023-01-04). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "c70a6c9266df9d12b6.jpg",
+      "id": "11955862ef13d676f3",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/c70a6c9266df9d12b6.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 338,
+      "bytes": 50047,
+      "sha256": "c1104fd506109340e6f01dc08891ac9844d1765fb490bf5785372d2463af635c",
+      "path_base": "corpus_root",
+      "reader_asset_id": "11955862ef13d676f3",
+      "reader_url": "index.html#image=11955862ef13d676f3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2023-3467",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/417264/4",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/7/0/70279ae7f8a2ee0bfa97c5f998081195506da280_2_690x309.png",
+      "post": 4,
+      "date": "2023-01-04T14:07:11.093Z",
+      "author": "Kevin_Leonard",
+      "context_tags": [
+        "climb",
+        "elevator",
+        "shooter",
+        "wrist"
+      ],
+      "caption": "2023 team 3467 — source image from post 4 (2023-01-04). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e5d8abc36f9ada15d3.jpg",
+      "id": "bcf85404f0f442ef17",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e5d8abc36f9ada15d3.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 309,
+      "bytes": 42907,
+      "sha256": "b2d3d80cdfb1c0a060ab4c10677956c47afc58f51d9c58540e7394650fec5c87",
+      "path_base": "corpus_root",
+      "reader_asset_id": "bcf85404f0f442ef17",
+      "reader_url": "index.html#image=bcf85404f0f442ef17",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2023-3467",
+    "year": 2023,
+    "team": 3467,
+    "epa_rank": 20,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"3467\" \"2023\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 11,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3467\" \"2023\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2023-3467:construction",
+    "study6-2023-3467:team_stated_reason",
+    "study6-2023-3467:engineering_analysis",
+    "study6-2023-3467:recommended_validation",
+    "study6-2023-3467:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

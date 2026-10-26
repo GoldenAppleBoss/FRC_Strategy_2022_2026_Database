@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-7558",
+  "year": 2026,
+  "team": 7558,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 7558,
+    "robot": "ALT-F4 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=6FvCHCjxjvc"
+    ],
+    "architecture": "Expanding net hopper, actively fed drum and power-aware control.",
+    "subsystems": {
+      "drivetrain": "Swerve; exact module variant unresolved here.",
+      "intake": "Two-motor silicone roller and surgical-tubing-held kicker; steep first-event deploy geometry revised after jams.",
+      "transfer": "Roller floor with tape/zip-tie agitation; surgical tubing gave way to grippier surfaces after fuel debris caused slip.",
+      "scoring": "Two-motor feeder, four-X60 drum and powered hood rollers; additional high-speed steel flywheel stores energy in constrained space.",
+      "endgame": "Endgame installation not established by reviewed interview.",
+      "controls": "Battery/current/temperature logging drives changing motor limits; software manages power budget rather than assuming every motor can run unrestricted."
+    },
+    "versions": [
+      "No net at first event; stiff net at second; stretch net by DCMP supports reported 75 capacity.",
+      "Multiple roller-surface and intake revisions."
+    ],
+    "analysis": "Net compliance affects usable storage, while debris accumulation changes friction over a match. A successful clone needs endurance testing with worn fuel and realistic battery load, not only a short fresh-ball burst.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2026-7558",
+    "team_name": "ALT-F4",
+    "epa_rank": 15,
+    "epa": 278.87,
+    "epa_pre_champs": 235.77,
+    "epa_breakdown": {
+      "total_points": 278.87,
+      "auto_points": 54.46,
+      "teleop_points": 158.97,
+      "endgame_points": 65.43,
+      "energized_rp": 0.7571,
+      "supercharged_rp": 0.5571,
+      "traversal_rp": -0.3418,
+      "tiebreaker_points": 278.87,
+      "auto_fuel": 55.03,
+      "auto_tower": -0.57,
+      "transition_fuel": 19.04,
+      "first_shift_fuel": 74.16,
+      "second_shift_fuel": 65.77,
+      "endgame_fuel": 65.89,
+      "endgame_tower": -0.45,
+      "rp_1": 0.7571,
+      "rp_2": 0.5571,
+      "rp_3": -0.3418,
+      "teleop_fuel": 224.85999999999996,
+      "total_fuel": 279.89,
+      "total_tower": -1.02
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "partial / unresolved detail",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "e82d151a4c93a5ea"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "expanding storage",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-7558",
+      "year": 2026,
+      "team": 7558,
+      "epa_rank": 15,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"7558\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 29,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"7558\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-7558"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-7558",
+      "title": "Surface contamination, inertia and power control interact",
+      "start_seconds": 185,
+      "end_seconds": 650,
+      "construction": "The collector deploy angle was flattened after first-event jams. The retained interview account describes surgical tubing replaced by grippier floor surfaces after fuel debris caused slip. The shooter uses a four-X60 aluminum drum, powered upper rollers and a compact geared steel flywheel; transfer is sequenced after launcher speed is reached. Current, voltage and temperature logging inform operating limits.",
+      "team_stated_reason": "The team links the added flywheel to reduced speed decay and improved end-of-hopper accuracy. Floor/collector changes respond to observed jamming and contamination, while software limiting responds to the total electrical demand.",
+      "engineering_analysis": "A material choice can work with clean practice fuel yet fail when loose surface debris changes friction. A flywheel can smooth a transient without fixing an inadequate recharge rate or a hot motor. The useful design reference is therefore a tested material/contact path plus an explicit electrical budget, not a motor count. Robot logging should distinguish commanded voltage, actual bus voltage, current limit, speed error and fuel flow; otherwise starvation and electrical saturation can look like the same shooting symptom.",
+      "recommended_validation": "Repeat full-hopper tests with used fuel and low batteries. Compare surface cleanliness, slip, speed recovery and motor temperature over multiple shifts rather than a single successful volley.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-7558",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=6FvCHCjxjvc",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 185,
+        "end_seconds": 650,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "6FvCHCjxjvc",
+          "sha256": "28bb85c34e89e8fd063a49f8524f0cf85c784bea91516027a77f9f6528965471",
+          "caption_segments": 453,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-7558:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-7558",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-7558"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=6FvCHCjxjvc"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-7558",
+      "title": "2026-7558 · Surface contamination, inertia and power control interact",
+      "year": 2026,
+      "robot_id": "2026-7558",
+      "kind": "focused_technical_study",
+      "body": "# 2026-7558: Surface contamination, inertia and power control interact\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nThe collector deploy angle was flattened after first-event jams. The retained interview account describes surgical tubing replaced by grippier floor surfaces after fuel debris caused slip. The shooter uses a four-X60 aluminum drum, powered upper rollers and a compact geared steel flywheel; transfer is sequenced after launcher speed is reached. Current, voltage and temperature logging inform operating limits.\n\n## Team-stated reasoning or boundary\n\nThe team links the added flywheel to reduced speed decay and improved end-of-hopper accuracy. Floor/collector changes respond to observed jamming and contamination, while software limiting responds to the total electrical demand.\n\n## Engineering interpretation — analyst inference\n\nA material choice can work with clean practice fuel yet fail when loose surface debris changes friction. A flywheel can smooth a transient without fixing an inadequate recharge rate or a hot motor. The useful design reference is therefore a tested material/contact path plus an explicit electrical budget, not a motor count. Robot logging should distinguish commanded voltage, actual bus voltage, current limit, speed error and fuel flow; otherwise starvation and electrical saturation can look like the same shooting symptom.\n\n## Proposed validation — not performed\n\nRepeat full-hopper tests with used fuel and low batteries. Compare surface cleanliness, slip, speed recovery and motor temperature over multiple shifts rather than a single successful volley.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=6FvCHCjxjvc](https://www.youtube.com/watch?v=6FvCHCjxjvc)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=6FvCHCjxjvc"
+      ],
+      "path": "docs/research_continuation/2026-7558.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2026-7558",
+    "year": 2026,
+    "team": 7558,
+    "epa_rank": 15,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"7558\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 29,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"7558\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-7558:construction",
+    "study6-2026-7558:team_stated_reason",
+    "study6-2026-7558:engineering_analysis",
+    "study6-2026-7558:recommended_validation",
+    "study6-2026-7558:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

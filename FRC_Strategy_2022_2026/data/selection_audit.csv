@@ -1,0 +1,158 @@
+year,team,team_name,epa_rank,epa,selected,reason
+2022,1678,Citrus Circuits,1,69.09,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,1323,MadTown Robotics,2,65.29,0,High performance documented; reviewed source set did not establish full subsystem/version coverage.
+2022,1690,Orbit,3,64.95,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,254,The Cheesy Poofs,4,64.86,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,27,Team RUSH,5,62.1,0,"Technical interview located, but transcript could not be reviewed; whole mechanism coverage insufficient in retrieved material."
+2022,67,The HOT Team,6,59.21,0,"Technical interview located, but transcript could not be reviewed; whole mechanism coverage insufficient in retrieved material."
+2022,2056,OP Robotics,7,58.06,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,1577,Steampunk,8,57.41,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,1771,North Gwinnett Robotics,9,56.86,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,624,CRyptonite,10,56.83,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,2910,Jack in the Bot,11,55.59,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,176,Aces High,12,54.53,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,148,Robowranglers,13,53.98,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,973,Greybots,14,53.54,0,Available detailed interview shows an offseason drivetrain/rebuild; onseason architecture not reconstructed sufficiently.
+2022,111,WildStang,15,52.92,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,971,Spartan Robotics,16,52.73,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,4414,HighTide,17,51.81,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,5940,BREAD,18,51.78,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,4911,CyberKnights,19,51.66,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,2767,Stryke Force,20,51.32,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2022,3310,Black Hawk Robotics,21,51.28,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2022,118,Robonauts,22,50.9,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,179,Children of the Swamp,23,50.84,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,4206,Robo Vikes,24,50.58,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2022,1619,Up-A-Creek Robotics,25,50.49,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,2046,Bear Metal,26,50.28,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,7407,Wired Boars,27,50.26,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2022,125,NUTRONs,28,50.23,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,4499,The Highlanders,29,49.85,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,5895,Peddie Robotics,30,49.73,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2022,180,S.P.A.M.,31,49.67,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2022,694,StuyPulse,32,49.67,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,2481,Roboteers,33,49.21,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,987,HIGHROLLERS,34,49.1,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,5172,Gators,35,49.08,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,1323,MadTown Robotics,1,84.15,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,2056,OP Robotics,2,83.67,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,1678,Citrus Circuits,3,77.86,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,6329,The Bucks' Wrath,4,77.31,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,254,The Cheesy Poofs,5,77.18,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,3005,RoboChargers,6,75.65,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,5940,BREAD,7,75.09,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,2046,Bear Metal,8,74.78,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,2910,Jack in the Bot,9,74.55,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,6036,Peninsula Robotics,10,73.68,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,1577,Steampunk,11,72.31,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,2468,Team Appreciate,12,72.28,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,3538,RoboJackets,13,72.21,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,930,Mukwonago BEARs,14,71.79,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,1325,Inverse Paradox,15,71.53,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,4678,CyberCavs,16,71.46,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2023,111,WildStang,17,70.79,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,2075,Enigma Robotics,18,70.56,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,1731,Fresta Valley Robotics Club,19,70.15,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2023,3467,Windham Windup,20,70.11,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,4522,Team SCREAM,21,68.82,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2023,4414,HighTide,22,68.73,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,4028,The Beak Squad,23,68.69,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2023,133,B.E.R.T.,24,68.65,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2023,1756,Argos,25,68.47,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,176,Aces High,26,68.39,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2023,2767,Stryke Force,27,68.3,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,1727,REX,28,68.11,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,118,Robonauts,29,67.78,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,973,Greybots,30,67.64,1,Included as provisional reference dossier; see per-subsystem coverage.
+2023,125,NUTRONs,31,67.6,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1678,Citrus Circuits,1,58.05,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1323,MadTown Robotics,2,55.76,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,3005,RoboChargers,3,54.85,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,6328,Mechanical Advantage,4,54.26,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,2056,OP Robotics,5,53.7,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1690,Orbit,6,53.63,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1796,RoboTigers,7,52.99,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1771,North Gwinnett Robotics,8,52.57,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,254,The Cheesy Poofs,9,51.71,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1756,Argos,10,51.67,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1706,Ratchet Rockers,11,51.28,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,604,Quixilver,12,50.93,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,2910,Jack in the Bot,13,50.25,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,4414,HighTide,14,49.49,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,5940,BREAD,15,49.23,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,4613,Barker Redbacks,16,48.36,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,3478,PrepaTec - LamBot,17,48.0,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,3467,Windham Windup,18,47.63,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,9483,Overcharge,19,47.62,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,359,Hawaiian Kids,20,47.59,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,368,Team Kika Mana,21,47.22,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,3847,Spectrum   -△◅,22,46.92,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,2075,Enigma Robotics,23,46.81,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,1778,Chill Out,24,46.73,1,Included as provisional reference dossier; see per-subsystem coverage.
+2024,2974,Walton Robotics,25,46.46,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,2056,OP Robotics,1,120.05,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,2910,Jack in the Bot,2,114.07,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1323,MadTown Robotics,3,111.96,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1690,Orbit,4,107.72,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1678,Citrus Circuits,5,105.74,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,118,Robonauts,6,104.75,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,2481,Roboteers,7,99.4,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,5940,BREAD,8,98.63,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1796,RoboTigers,9,98.05,0,Technical interview covers hopper/elevator well but endgame and whole-robot coverage remained insufficient.
+2025,4678,CyberCavs,10,97.95,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,3683,Team DAVE,11,97.72,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,694,StuyPulse,12,97.18,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,7457,suPURDUEper Robotics,13,96.42,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,422,The Mech Tech Dragons,14,95.58,0,CAD and substantial team replies found; linked binder was inaccessible (410) during this review.
+2025,4414,HighTide,15,94.24,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1778,Chill Out,16,92.98,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,254,The Cheesy Poofs,17,92.77,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1706,Ratchet Rockers,18,92.51,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,3005,RoboChargers,19,92.38,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,341,Miss Daisy,20,90.62,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,604,Quixilver,21,90.34,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,4946,The Alpha Dogs,22,90.04,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,5409,Chargers,23,88.97,0,Useful team/scouting resources found; robot mechanism coverage insufficient in reviewed sources.
+2025,180,S.P.A.M.,24,88.65,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1771,North Gwinnett Robotics,25,88.4,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,1197,TorBots,26,88.38,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,6369,Mercenary Robotics,27,87.38,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,5990,TRIGON,28,87.23,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,111,WildStang,29,86.69,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,9450,Velocity Raptors,30,86.58,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,190,Gompei and the HERD,31,85.95,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,4907,Thunderstamps,32,85.82,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,3663,CPR - Cedar Park Robotics,33,85.42,1,Included as provisional reference dossier; see per-subsystem coverage.
+2025,4391,BraveBots,34,85.37,0,Skipped in this pass: accessible reviewed evidence did not establish enough whole-robot detail; publication absence is not asserted.
+2025,359,Hawaiian Kids,35,85.14,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,4414,HighTide,1,356.94,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,254,The Cheesy Poofs,2,327.82,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1323,MadTown Robotics,3,309.95,0,"Critical competitive/meta reference, but a full primary technical dossier was not obtained; not a judgment of robot quality."
+2026,7769,The CREW,4,309.29,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1690,Orbit,5,302.54,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,2056,OP Robotics,6,302.17,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,27,Team RUSH,7,295.14,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,2481,Roboteers,8,288.11,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1114,Simbotics,9,287.57,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,125,NUTRONs,10,283.42,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,5687,The Outliers,11,282.69,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,2910,Jack in the Bot,12,281.69,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1678,Citrus Circuits,13,279.66,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,9470,Ctrl-Alt-Defeat,14,278.91,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,7558,ALT-F4,15,278.87,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,6369,Mercenary Robotics,16,274.16,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,6800,Valor,17,267.49,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,3467,Windham Windup,18,266.45,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,9128,ITKAN Robotics,19,265.56,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1796,RoboTigers,20,263.46,0,Team confirms independent car-wash spindexer drives; remaining subsystem/version coverage insufficient.
+2026,9483,Overcharge,21,261.31,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,6329,The Bucks' Wrath,22,260.04,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,2046,Bear Metal,23,259.76,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1768,Nashoba Robotics,24,259.43,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,1987,Broncobots,25,257.92,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,8044,Denham Venom,26,256.51,0,Championship reveal found; comprehensive technical material not obtained. Reference to 4414 binder is not documentation of 8044.
+2026,1706,Ratchet Rockers,27,255.98,1,Included as provisional reference dossier; see per-subsystem coverage.
+2026,9496,LYNK,28,253.19,1,Included as provisional reference dossier; see per-subsystem coverage.
+2022,604,Quixilver,65,44.9,1,User-requested supplemental reference outside original 25/year cohort; original selections preserved.
+2023,604,Quixilver,71,62.89,1,User-requested supplemental reference outside original 25/year cohort; original selections preserved.
+2026,604,Quixilver,46,222.47,1,User-requested supplemental reference outside original 25/year cohort; original selections preserved.

@@ -1,0 +1,432 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-1678",
+  "year": 2026,
+  "team": 1678,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2026.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2026,
+    "team": 1678,
+    "robot": "Citrus Circuits 2026",
+    "primary": [
+      "https://www.youtube.com/watch?v=wsAJGi3yxSk",
+      "https://www.citruscircuits.org/2026-robot"
+    ],
+    "architecture": "Expanding hopper and multi-lane drum with protected collector and integrated L1 climb.",
+    "subsystems": {
+      "drivetrain": "Swerve with low hardware placement preserving a low floor; exact variant deferred to robot page.",
+      "intake": "Two-motor active carbon roller and static kicker; crash bar protects roller, bolted module permits replacement.",
+      "transfer": "Live floor/J-shaped accelerating tunnel; separate entry roller controls feed. Earlier S-path changed after velocity reversal harmed consistency.",
+      "scoring": "Steel drum, four X60s, driven hood rollers and adjustable hood on independent low-friction pivot. Slick wooden backing controls compression.",
+      "endgame": "L1 mechanism integrated into hopper; reused algae-contact material grips tower. Expanding intake/hopper yields reported 75–80 capacity.",
+      "controls": "Added two side cameras after Half Moon Bay exposed midfield localization gaps; separate feed allows launcher spin-up before loading."
+    },
+    "versions": [
+      "Early build architecture pivoted to wide drum.",
+      "Alpha/beta two-active-roller pickup simplified; S-tunnel changed to J.",
+      "Worlds-final detailed chronology remains incomplete; filmed interview is at Sacramento."
+    ],
+    "analysis": "An expanding hopper is an interface contract: deployment, feed-floor movement, trench envelope and climb must all agree. Combine it with a different intake only after checking those motions and the full-load path, rather than treating the hopper as an independent box.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2026-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521535/8",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/9/8/d98cb0383a667e132f5ccfe8fa90001d20482c6a_2_345x240.jpeg",
+        "post": 8,
+        "date": "2026-06-02T04:00:56.591Z",
+        "author": "Mstew3928",
+        "context_tags": [
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2026 team 1678 — source image from post 8 (2026-06-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "16cb4cb8c478aadfa0.jpg",
+        "id": "cc3df71287bc1040cf",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/16cb4cb8c478aadfa0.jpg"
+      },
+      {
+        "robot_id": "2026-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521535/8",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/b/5/bb500a94ba66dfa609c230ea1b0a2aff743cf4f9_2_385x375.jpeg",
+        "post": 8,
+        "date": "2026-06-02T04:00:56.591Z",
+        "author": "Mstew3928",
+        "context_tags": [
+          "intake",
+          "pivot",
+          "shooter"
+        ],
+        "caption": "2026 team 1678 — source image from post 8 (2026-06-02). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "d53330c40fdc88486e.jpg",
+        "id": "143dc28119b421dc85",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/d53330c40fdc88486e.jpg"
+      },
+      {
+        "robot_id": "2026-1678",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/521535/20",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/e/e/d/eed6ba9934eb27f4fd507c02d276859b107b618d.gif",
+        "post": 20,
+        "date": "2026-06-03T01:31:08.205Z",
+        "author": "CMBran",
+        "context_tags": [
+          "intake"
+        ],
+        "caption": "2026 team 1678 — source image from post 20 (2026-06-03). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "7be32b12c36c509026.jpg",
+        "id": "83840de1bf70b626ab",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/7be32b12c36c509026.jpg"
+      }
+    ],
+    "source_post_count": 54,
+    "cad_code_links": [
+      {
+        "robot_id": "2026-1678",
+        "discovery_post": "2026-1678-521535-19",
+        "url": "https://github.com/frc1678/C2026-Public/blob/0f403dd8f3ad1f7d0dbe0c1bd23b24c210f41677/src/main/java/frc/robot/RobotConstants.java#L25",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b78b34e1c034ee9377"
+      },
+      {
+        "robot_id": "2026-1678",
+        "discovery_post": "2026-1678-521535-20",
+        "url": "https://drive.google.com/drive/folders/1LHSx_RKxhc5yy9Nfpx77ihCB5kFTfcIu?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "893e856ab0181e8268"
+      },
+      {
+        "robot_id": "2026-1678",
+        "discovery_post": "2026-1678-521535-25",
+        "url": "https://github.com/frc1678/C2026-Public/blob/main/src/main/java/frc/robot/controlboard/ControlBoard.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "56b81b939c397dfae7"
+      },
+      {
+        "robot_id": "2026-1678",
+        "discovery_post": "2026-1678-515709-34",
+        "url": "https://cad.onshape.com/documents/a330f631f17a847fcfec8256/w/9583ba6a1623578eec9b978f/e/bd4778b7eaec3f5e9090e57f",
+        "kind": "cad",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b86fb99a91d28b38c3"
+      }
+    ],
+    "id": "2026-1678",
+    "team_name": "Citrus Circuits",
+    "epa_rank": 13,
+    "epa": 279.66,
+    "epa_pre_champs": 274.32,
+    "epa_breakdown": {
+      "total_points": 279.66,
+      "auto_points": 59.76,
+      "teleop_points": 148.29,
+      "endgame_points": 71.6,
+      "energized_rp": 0.8347,
+      "supercharged_rp": 0.7205,
+      "traversal_rp": -0.34164,
+      "tiebreaker_points": 279.66,
+      "auto_fuel": 59.78,
+      "auto_tower": -0.02,
+      "transition_fuel": 17.76,
+      "first_shift_fuel": 64.01,
+      "second_shift_fuel": 66.53,
+      "endgame_fuel": 71.06,
+      "endgame_tower": 0.55,
+      "rp_1": 0.8347,
+      "rp_2": 0.7205,
+      "rp_3": -0.34164,
+      "teleop_fuel": 219.36,
+      "total_fuel": 279.14,
+      "total_tower": 0.53
+    },
+    "game": "REBUILT",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "3e2caedb32199be7",
+      "d3f932b0d6259efa"
+    ],
+    "tags": [
+      "climb",
+      "drum / batch",
+      "expanding storage",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2026-1678",
+      "year": 2026,
+      "team": 1678,
+      "epa_rank": 13,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1678\" \"2026\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 26,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1678\" \"2026\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
+    "technical_note_ids": [
+      "study6-2026-1678"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2026-1678",
+      "title": "Protected carbon intake and continuous J-path launcher feed",
+      "start_seconds": 79,
+      "end_seconds": 875,
+      "construction": "A 2×1 aluminum crash member protects a carbon intake roller. Later wrist plates use half-inch stock with raised hard-stop contact regions and pocketing. The shooter uses a J-shaped accelerating tunnel, a separate feeder, a four-X60 steel drum and powered hood rollers; its hood pivot is supported independently of the drum. Two side cameras were added to the original front Limelight.",
+      "team_stated_reason": "The team links the crash member to allowing a light but impact-sensitive roller, larger hard-stop contact to reduced wear, low electronics/wiring to a lower floor, and additional cameras to midfield vision gaps found at Half Moon Bay. The source also describes replacing an earlier S-shaped path after direction reversal hurt consistency.",
+      "engineering_analysis": "The useful package combines structural load routing with flow continuity. The crash member must intercept contact before the carbon roller does; copying only the carbon tube removes the condition that made it practical. A lower floor reduces the climb imposed on loose fuel, while a J-path avoids reversing the velocity component that was just created upstream. Independent hood support can reduce parasitic coupling, but hood and drum still need controlled compression over their complete angle range. The camera change is evidence that good scoring performance near the hub did not guarantee adequate pose observability in midfield.",
+      "recommended_validation": "Measure path velocity and compression through hood travel, inspect crash loads with the collector extended, and compare localization availability in midfield before and after adding side views. Retain a separate shooter-ready gate before enabling the floor.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2026-1678",
+      "year": 2026,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=wsAJGi3yxSk",
+      "additional_sources": [
+        "https://www.citruscircuits.org/2026-robot"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 875,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "wsAJGi3yxSk",
+          "sha256": "864ddd1d8411aedca2b53419b28540f8b83c2575c319162312fce90e38de0b10",
+          "caption_segments": 568,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2026-1678:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2026-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2026-1678"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=wsAJGi3yxSk"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2026-1678",
+      "title": "2026-1678 · Protected carbon intake and continuous J-path launcher feed",
+      "year": 2026,
+      "robot_id": "2026-1678",
+      "kind": "focused_technical_study",
+      "body": "# 2026-1678: Protected carbon intake and continuous J-path launcher feed\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA 2×1 aluminum crash member protects a carbon intake roller. Later wrist plates use half-inch stock with raised hard-stop contact regions and pocketing. The shooter uses a J-shaped accelerating tunnel, a separate feeder, a four-X60 steel drum and powered hood rollers; its hood pivot is supported independently of the drum. Two side cameras were added to the original front Limelight.\n\n## Team-stated reasoning or boundary\n\nThe team links the crash member to allowing a light but impact-sensitive roller, larger hard-stop contact to reduced wear, low electronics/wiring to a lower floor, and additional cameras to midfield vision gaps found at Half Moon Bay. The source also describes replacing an earlier S-shaped path after direction reversal hurt consistency.\n\n## Engineering interpretation — analyst inference\n\nThe useful package combines structural load routing with flow continuity. The crash member must intercept contact before the carbon roller does; copying only the carbon tube removes the condition that made it practical. A lower floor reduces the climb imposed on loose fuel, while a J-path avoids reversing the velocity component that was just created upstream. Independent hood support can reduce parasitic coupling, but hood and drum still need controlled compression over their complete angle range. The camera change is evidence that good scoring performance near the hub did not guarantee adequate pose observability in midfield.\n\n## Proposed validation — not performed\n\nMeasure path velocity and compression through hood travel, inspect crash loads with the collector extended, and compare localization availability in midfield before and after adding side views. Retain a separate shooter-ready gate before enabling the floor.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=wsAJGi3yxSk](https://www.youtube.com/watch?v=wsAJGi3yxSk)\n- [https://www.citruscircuits.org/2026-robot](https://www.citruscircuits.org/2026-robot)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=wsAJGi3yxSk",
+        "https://www.citruscircuits.org/2026-robot"
+      ],
+      "path": "docs/research_continuation/2026-1678.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2026-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521535/8",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/d/9/8/d98cb0383a667e132f5ccfe8fa90001d20482c6a_2_345x240.jpeg",
+      "post": 8,
+      "date": "2026-06-02T04:00:56.591Z",
+      "author": "Mstew3928",
+      "context_tags": [
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2026 team 1678 — source image from post 8 (2026-06-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "16cb4cb8c478aadfa0.jpg",
+      "id": "cc3df71287bc1040cf",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/16cb4cb8c478aadfa0.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 345,
+      "height_px": 240,
+      "bytes": 19685,
+      "sha256": "e678a7dccef68b63752ac53f0946cc6be8a6b5f013a3376d10eabdcd016700db",
+      "path_base": "corpus_root",
+      "reader_asset_id": "cc3df71287bc1040cf",
+      "reader_url": "index.html#image=cc3df71287bc1040cf",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521535/8",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/b/b/5/bb500a94ba66dfa609c230ea1b0a2aff743cf4f9_2_385x375.jpeg",
+      "post": 8,
+      "date": "2026-06-02T04:00:56.591Z",
+      "author": "Mstew3928",
+      "context_tags": [
+        "intake",
+        "pivot",
+        "shooter"
+      ],
+      "caption": "2026 team 1678 — source image from post 8 (2026-06-02). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "d53330c40fdc88486e.jpg",
+      "id": "143dc28119b421dc85",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/d53330c40fdc88486e.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 385,
+      "height_px": 375,
+      "bytes": 20591,
+      "sha256": "cbc7913da59ec74d01132dcd7ad583077926450e892e0cb1386f77330ea19b21",
+      "path_base": "corpus_root",
+      "reader_asset_id": "143dc28119b421dc85",
+      "reader_url": "index.html#image=143dc28119b421dc85",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2026-1678",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/521535/20",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/e/e/d/eed6ba9934eb27f4fd507c02d276859b107b618d.gif",
+      "post": 20,
+      "date": "2026-06-03T01:31:08.205Z",
+      "author": "CMBran",
+      "context_tags": [
+        "intake"
+      ],
+      "caption": "2026 team 1678 — source image from post 20 (2026-06-03). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "7be32b12c36c509026.jpg",
+      "id": "83840de1bf70b626ab",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/7be32b12c36c509026.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 500,
+      "height_px": 500,
+      "bytes": 19036,
+      "sha256": "a2a1c0109581ca64b89eb977bd33a711b234e55e9c0b3a2386fd52a5ee078f59",
+      "path_base": "corpus_root",
+      "reader_asset_id": "83840de1bf70b626ab",
+      "reader_url": "index.html#image=83840de1bf70b626ab",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2026-1678",
+    "year": 2026,
+    "team": 1678,
+    "epa_rank": 13,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1678\" \"2026\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 26,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1678\" \"2026\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2026-1678:construction",
+    "study6-2026-1678:team_stated_reason",
+    "study6-2026-1678:engineering_analysis",
+    "study6-2026-1678:recommended_validation",
+    "study6-2026-1678:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-111",
+  "year": 2025,
+  "team": 111,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 111,
+    "robot": "WildStang 2025",
+    "primary": [
+      "https://youtu.be/LQM4GOc4akg"
+    ],
+    "architecture": "Dual-ended manipulator/elevator upgraded from station-only to floor-fed cycling.",
+    "subsystems": {
+      "drivetrain": "Swerve; module variant unresolved here. Electronics mounted beneath protected bellypan.",
+      "intake": "After Northern Lights, added roughly 16-pound floor pickup inspired by 1778/2046: floating roller, powered lower roller and passive polycarbonate centering.",
+      "transfer": "Ground and station acquisition feed shared coral/algae system; protected internal rollers retain inverted coral during hybrid cycles.",
+      "scoring": "Elevator and arm largely retained; composite carriage/effector substitutions recovered mass for new intake.",
+      "endgame": "Redesigned lighter composite climb between Northern Lights and Midwest; servo-engaged ratchet prevents disengagement after lifting.",
+      "controls": "Automatic scoring/handoff integrated with driver workflow; precise complete controls specification unresolved here."
+    },
+    "versions": [
+      "Station-only Northern Lights configuration changed to ground-capable Midwest robot.",
+      "Mass reduction and climber replacement enabled the additional intake."
+    ],
+    "analysis": "This is a measurable capability pivot: add floor acquisition to escape defended station alignment, then pay for it by removing mass elsewhere. Borrowing the intake without the weight plan would miss the architecture change.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2025-111",
+    "team_name": "WildStang",
+    "epa_rank": 29,
+    "epa": 86.69,
+    "epa_pre_champs": 78.31,
+    "epa_breakdown": {
+      "total_points": 86.69,
+      "auto_points": 19.2,
+      "teleop_points": 56.82,
+      "endgame_points": 10.67,
+      "auto_rp": 0.6424,
+      "coral_rp": 0.4393,
+      "barge_rp": 0.54146,
+      "tiebreaker_points": 0.14,
+      "auto_coral_points": 15.96,
+      "teleop_coral_points": 44.73,
+      "coral_l1": 2.5,
+      "coral_l2": 4.21,
+      "coral_l3": 4.39,
+      "coral_l4": 4.16,
+      "processor_algae": 0.48,
+      "processor_algae_points": 1.43,
+      "net_algae_points": 10.66,
+      "barge_points": 10.67,
+      "rp_1": 0.6424,
+      "rp_2": 0.4393,
+      "rp_3": 0.54146,
+      "total_coral_points": 60.69,
+      "total_algae_points": 12.09
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "partial / unresolved detail"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "cdf16287313f2b2b"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-111",
+      "year": 2025,
+      "team": 111,
+      "epa_rank": 29,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"111\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 18,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"111\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-111"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-111",
+      "title": "Floor supply changes the mechanism without replacing the scoring arm",
+      "start_seconds": 77,
+      "end_seconds": 260,
+      "construction": "A floor collector was added after Northern Lights while the elevator/arm architecture remained. The retained account identifies roughly 16 pounds of added collector mass, offset by lighter carriage/effector parts. Internal rollers retain coral while the mechanism holds it inverted during algae acquisition. Coral and algae contact regions are offset by about six inches.",
+      "team_stated_reason": "The team explicitly identifies difficult station alignment under defense and successful floor pickups on 1778/2046 as motivations. The offset is described as allowing algae removal and coral placement in one fluid transition.",
+      "engineering_analysis": "A floor collector should be evaluated as a new cycle source, not an isolated pickup demo. The existing arm must keep coral controlled through the algae motion, and mass must be recovered elsewhere without creating excessive compliance. The six-inch separation is an interface dimension for that combined motion; it is not a universal clearance between any two manipulators.",
+      "recommended_validation": "Compare defended station cycles with complete floor-to-score cycles, including failed pickups and inverted retention. Check whether the mass-saving parts preserve L4 accuracy and fatigue life.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-111",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/LQM4GOc4akg",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 260,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "LQM4GOc4akg",
+          "sha256": "c8f5cac2dedab08abc0310ad02d5a730a72ecbd97e871bbe8fc48e2e2337f4dc",
+          "caption_segments": 240,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-111:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-111",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-111"
+      ],
+      "source_urls": [
+        "https://youtu.be/LQM4GOc4akg"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-111",
+      "title": "2025-111 · Floor supply changes the mechanism without replacing the scoring arm",
+      "year": 2025,
+      "robot_id": "2025-111",
+      "kind": "focused_technical_study",
+      "body": "# 2025-111: Floor supply changes the mechanism without replacing the scoring arm\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA floor collector was added after Northern Lights while the elevator/arm architecture remained. The retained account identifies roughly 16 pounds of added collector mass, offset by lighter carriage/effector parts. Internal rollers retain coral while the mechanism holds it inverted during algae acquisition. Coral and algae contact regions are offset by about six inches.\n\n## Team-stated reasoning or boundary\n\nThe team explicitly identifies difficult station alignment under defense and successful floor pickups on 1778/2046 as motivations. The offset is described as allowing algae removal and coral placement in one fluid transition.\n\n## Engineering interpretation — analyst inference\n\nA floor collector should be evaluated as a new cycle source, not an isolated pickup demo. The existing arm must keep coral controlled through the algae motion, and mass must be recovered elsewhere without creating excessive compliance. The six-inch separation is an interface dimension for that combined motion; it is not a universal clearance between any two manipulators.\n\n## Proposed validation — not performed\n\nCompare defended station cycles with complete floor-to-score cycles, including failed pickups and inverted retention. Check whether the mass-saving parts preserve L4 accuracy and fatigue life.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/LQM4GOc4akg](https://youtu.be/LQM4GOc4akg)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/LQM4GOc4akg"
+      ],
+      "path": "docs/research_continuation/2025-111.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2025-111",
+    "year": 2025,
+    "team": 111,
+    "epa_rank": 29,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"111\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 18,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"111\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-111:construction",
+    "study6-2025-111:team_stated_reason",
+    "study6-2025-111:engineering_analysis",
+    "study6-2025-111:recommended_validation",
+    "study6-2025-111:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

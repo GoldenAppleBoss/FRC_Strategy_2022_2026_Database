@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": "Data, provenance boundaries and reproducibility; visual match audit is blocked and incomplete",
+  "checks": 711,
+  "new_transcripts_recovered": 11,
+  "new_complete_available_caption_reviews": 2,
+  "recovered_awaiting_full_review": 9,
+  "new_detailed_sections": 27,
+  "total_expanded_sections": 132,
+  "detailed_match_accounts": 6,
+  "candidate_match_recordings": 80,
+  "match_recording_pages_tested": 6,
+  "visual_audits_complete": 0,
+  "all_channel_inventory_complete": false,
+  "original_image_bytes_preserved": 504,
+  "original_125_dossiers_preserved": true,
+  "normalized_tables_equal": 24,
+  "typed_match_commentary_and_audit_search": "passed"
+}

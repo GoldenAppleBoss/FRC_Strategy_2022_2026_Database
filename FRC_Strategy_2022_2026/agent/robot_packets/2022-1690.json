@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0",
+  "id": "2022-1690",
+  "year": 2022,
+  "team": 1690,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2022.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2022,
+    "team": 1690,
+    "robot": "Parker",
+    "primary": [
+      "https://youtu.be/rnpB8KXTd7U",
+      "https://www.chiefdelphi.com/t/403533"
+    ],
+    "architecture": "Turreted shooter with physics-based moving shots and truss-reacting traversal climb.",
+    "subsystems": {
+      "drivetrain": "Custom swerve; slip detection reduces trust in wheel odometry.",
+      "intake": "Rigid collector with elastic linkage that yields inward on impact.",
+      "transfer": "Separate horizontal and vertical conveyors; infrared/color sensors track cargo.",
+      "scoring": "Low-mounted two-motor turret transmission; adjustable hood and later top roller.",
+      "endgame": "Telescopic hook plus truss-reaction structure reaches traversal with few active steps; deployable line camera improves alignment.",
+      "controls": "Shot simulation selects trajectories insensitive to error; fused pose and radial/tangential velocity compensation support moving shots."
+    },
+    "versions": [
+      "Shooter rebuilt after first Israeli event to add top roller and reduce bounce-outs. Alignment camera added after approach time became a climb bottleneck."
+    ],
+    "analysis": "Their advantage is the combined localization, shot model and mechanically repeatable feeder. A turret alone does not create accurate moving shots; alignment time can dominate an otherwise fast climber.",
+    "limits": [
+      "Reported performance and prototype history are attributed to the source; not every intermediate revision is recoverable."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2022-1690",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/403533/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/c/1ca3bda7a564f4ec62b593aadf96ba7f5b46fd0f_2_666x500.jpeg",
+        "post": 1,
+        "date": "2022-02-21T00:07:50.119Z",
+        "author": "Guy1690",
+        "context_tags": [],
+        "caption": "2022 team 1690 — source image from post 1 (2022-02-21). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "3827e8f5db0926906b.jpg",
+        "id": "f054d360f16e4a6640",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/3827e8f5db0926906b.jpg"
+      },
+      {
+        "robot_id": "2022-1690",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/403533/80",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/1/a/1a2707211397d7bfaf542e4fddec5bf86f7e12d5.jpeg",
+        "post": 80,
+        "date": "2022-03-23T10:40:46.451Z",
+        "author": "13spangs",
+        "context_tags": [
+          "shooter"
+        ],
+        "caption": "2022 team 1690 — source image from post 80 (2022-03-23). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "24c7fe686a3f27d73f.jpg",
+        "id": "458547bcf59d64fb6a",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/24c7fe686a3f27d73f.jpg"
+      }
+    ],
+    "source_post_count": 26,
+    "cad_code_links": [],
+    "id": "2022-1690",
+    "team_name": "Orbit",
+    "epa_rank": 3,
+    "epa": 64.95,
+    "epa_pre_champs": 70.02,
+    "epa_breakdown": {
+      "total_points": 64.95,
+      "auto_points": 17.25,
+      "teleop_points": 39.2,
+      "endgame_points": 8.5,
+      "cargo_rp": 0.8955,
+      "hangar_rp": 0.5082,
+      "tiebreaker_points": 64.95,
+      "auto_taxi_points": 2.08,
+      "auto_cargo_lower": 0.01,
+      "auto_cargo_upper": 3.79,
+      "teleop_cargo_lower": -1.11,
+      "teleop_cargo_upper": 20.16,
+      "rp_1": 0.8955,
+      "rp_2": 0.5082
+    },
+    "game": "RAPID REACT",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "b4d25eec1afd9641",
+      "53f4a6780b5c0712"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "telescoping arm",
+      "turret",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2022-1690",
+      "year": 2022,
+      "team": 1690,
+      "epa_rank": 3,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1690\" \"2022\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 3,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1690\" \"2022\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2022-1690"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2022-1690",
+      "title": "Moving shots require a state model beyond distance alone",
+      "start_seconds": 81,
+      "end_seconds": 625,
+      "construction": "A compliant-link collector feeds horizontal/vertical conveyors and a low-driven turret. The source describes a shot model using distance and chassis velocity components to select hood angle and wheel speed.",
+      "team_stated_reason": "The retained construction uses linkage compliance for impact survival; the interview explains compensating radial and tangential motion in the aiming solution.",
+      "engineering_analysis": "A distance-only lookup cannot describe the same shot from a stationary robot and one moving sideways. The compensation still depends on measured release behavior and pose latency. A sophisticated model does not excuse uncontrolled incoming cargo state.",
+      "recommended_validation": "Test moving-shot error by direction/speed, camera latency and worn cargo; compare predicted and measured flight time.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2022-1690",
+      "year": 2022,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/rnpB8KXTd7U",
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/403533"
+      ],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 81,
+        "end_seconds": 625,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "rnpB8KXTd7U",
+          "sha256": "7b52f4df66e8d12d961eee3f238475eece0ccdf0b1c1217ec821f33d393157d1",
+          "caption_segments": 395,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2022-1690:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2022-1690",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2022-1690"
+      ],
+      "source_urls": [
+        "https://youtu.be/rnpB8KXTd7U"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2022-1690",
+      "title": "2022-1690 · Moving shots require a state model beyond distance alone",
+      "year": 2022,
+      "robot_id": "2022-1690",
+      "kind": "focused_technical_study",
+      "body": "# 2022-1690: Moving shots require a state model beyond distance alone\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA compliant-link collector feeds horizontal/vertical conveyors and a low-driven turret. The source describes a shot model using distance and chassis velocity components to select hood angle and wheel speed.\n\n## Team-stated reasoning or boundary\n\nThe retained construction uses linkage compliance for impact survival; the interview explains compensating radial and tangential motion in the aiming solution.\n\n## Engineering interpretation — analyst inference\n\nA distance-only lookup cannot describe the same shot from a stationary robot and one moving sideways. The compensation still depends on measured release behavior and pose latency. A sophisticated model does not excuse uncontrolled incoming cargo state.\n\n## Proposed validation — not performed\n\nTest moving-shot error by direction/speed, camera latency and worn cargo; compare predicted and measured flight time.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/rnpB8KXTd7U](https://youtu.be/rnpB8KXTd7U)\n- [https://www.chiefdelphi.com/t/403533](https://www.chiefdelphi.com/t/403533)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/rnpB8KXTd7U",
+        "https://www.chiefdelphi.com/t/403533"
+      ],
+      "path": "docs/research_continuation/2022-1690.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2022-1690",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/403533/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/1/c/1ca3bda7a564f4ec62b593aadf96ba7f5b46fd0f_2_666x500.jpeg",
+      "post": 1,
+      "date": "2022-02-21T00:07:50.119Z",
+      "author": "Guy1690",
+      "context_tags": [],
+      "caption": "2022 team 1690 — source image from post 1 (2022-02-21). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "3827e8f5db0926906b.jpg",
+      "id": "f054d360f16e4a6640",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/3827e8f5db0926906b.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 666,
+      "height_px": 500,
+      "bytes": 101882,
+      "sha256": "3263cef89098670a0e9dece94650d7fbefc1ea098ecf02284f571805cfb4ae67",
+      "path_base": "corpus_root",
+      "reader_asset_id": "f054d360f16e4a6640",
+      "reader_url": "index.html#image=f054d360f16e4a6640",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2022-1690",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/403533/80",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/1/a/1a2707211397d7bfaf542e4fddec5bf86f7e12d5.jpeg",
+      "post": 80,
+      "date": "2022-03-23T10:40:46.451Z",
+      "author": "13spangs",
+      "context_tags": [
+        "shooter"
+      ],
+      "caption": "2022 team 1690 — source image from post 80 (2022-03-23). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "24c7fe686a3f27d73f.jpg",
+      "id": "458547bcf59d64fb6a",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/24c7fe686a3f27d73f.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 523,
+      "height_px": 463,
+      "bytes": 68299,
+      "sha256": "28d65b8919cb7260a8bc16649c45e6dbe5864f303a3ce6bd2a53c53306f8d616",
+      "path_base": "corpus_root",
+      "reader_asset_id": "458547bcf59d64fb6a",
+      "reader_url": "index.html#image=458547bcf59d64fb6a",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2022-1690",
+    "year": 2022,
+    "team": 1690,
+    "epa_rank": 3,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1690\" \"2022\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 3,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1690\" \"2022\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2022-1690:construction",
+    "study6-2022-1690:team_stated_reason",
+    "study6-2022-1690:engineering_analysis",
+    "study6-2022-1690:recommended_validation",
+    "study6-2022-1690:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

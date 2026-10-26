@@ -1,0 +1,1007 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-2056",
+  "year": 2024,
+  "team": 2056,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 2056,
+    "robot": "LOW-KEY",
+    "primary": [
+      "https://youtu.be/IZindhVMrX0",
+      "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf"
+    ],
+    "architecture": "Protected collector and one pivoting shooter handle speaker/amp; pneumatic zero-time chain climb.",
+    "subsystems": {
+      "drivetrain": "Swerve motor orientation widens the under-bumper intake.",
+      "intake": "Under-bumper urethane rollers and lateral rollers protect pickup hardware inside the perimeter.",
+      "transfer": "Sushi rollers feed directly into the launcher; double-sided belts simplify opposing rotations.",
+      "scoring": "Top/bottom launcher on a high-travel pivot; team reports tuned compression and high release poses against tall defenders.",
+      "endgame": "Pneumatic hooks are supported while enabled and drop as power ends; separate hook positions accommodate solo or partner climbs.",
+      "controls": "Note detection, tag-relative aiming, single-driver controls and tactile/LED readiness signals."
+    },
+    "versions": [
+      "Pre-provincials interview emphasizes autonomous refinement; later binder and Worlds interview must be consulted for final details."
+    ],
+    "analysis": "Compare endgame time cost against scoring opportunity. The climber's pneumatic capacity and disable behavior are enabling details; a generic hook is not an equivalent architecture.",
+    "limits": [
+      "Configuration description is tied to the cited interview; not a claim that every unreported shop revision is known."
+    ],
+    "deep_context": "# 2024-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OPR 2024: chassis and module geometry create the intake path\n\nVersion: 2024 pivoting shooter. [PDF p4](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=4) · [PDF p6](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=6) · [PDF p8](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=8)\n\n**Published construction:** Modified front module clearance; under-bumper conveyor; post-Newmarket aluminum side plates and added bracing.\n\n**Team-stated reason or evidence boundary:** Wide pickup, consistent centering and impact rigidity.\n\n**Engineering analysis — original inference:** An under-bumper path consumes the same volume as frame rails and module motors, so module orientation and mounting plates are part of the intake design. Increasing plate rigidity preserves compression but can transmit more collision load elsewhere. The documented event boundary should be retained: the stronger side plates and bracing were a precautionary update rather than necessarily the initial robot. Intake width is useful only if the full path can move off-center notes without trapping them at a module or frame corner.\n\n**Proposed validation — not a completed test:** Test side pickup and corner impacts, then compare roller alignment and chassis squareness before and after the update.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2024: pre-compression, differential spin and revised release angle\n\nVersion: 2024 pivoting shooter. [PDF p11](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=11) · [PDF p13](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=13) · [PDF p14](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=14)\n\n**Published construction:** Pre-compression contacts, independent left/right drives, low-backlash pivot; flywheels later tipped down 6°.\n\n**Team-stated reason or evidence boundary:** Consistent feed and greater useful shot range.\n\n**Engineering analysis — original inference:** A flexible note can enter the same nominal wheel gap in different shapes. Pre-compression aims to control that shape before final acceleration. Independent side speeds then create spin, while mechanically linked upper/lower contacts preserve another aspect of consistency. A six-degree structural change alters the reachable trajectory envelope even if the control software is unchanged. Distinguish output speed, compression and release geometry when diagnosing misses: increasing RPM cannot necessarily compensate for a deformed or inconsistently presented note.\n\n**Proposed validation — not a completed test:** Compare shot distributions before and after the geometric revision with the same notes, recording entry deformation and wheel recovery.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2024: pneumatic lift and an explicitly different disable behavior\n\nVersion: 2024 pivoting shooter. [PDF p16](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=16)\n\n**Published construction:** Dual pneumatic cylinders and revised double hook; single-acting valve retracts on loss of power.\n\n**Team-stated reason or evidence boundary:** Fast hanging and compatibility with a partner-loaded chain.\n\n**Engineering analysis — original inference:** A pneumatic climber stores energy before the lift, reducing the need for a large electric winch during the final action. Available force depends on regulated pressure, piston area and the retracting-side rod area, while repeated actions consume finite stored air. The hook geometry must accommodate a chain already displaced by a partner. The described valve behavior is specific to this plumbing and control configuration; it should not become a generic assumption about all solenoids or an instruction to rely on an untested after-buzzer action.\n\n**Proposed validation — not a completed test:** Test force and timing at the lowest expected pressure, including partner chain displacement and the actual disabled valve state.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2024: adapt autonomous to whether a note is actually present\n\nVersion: 2024 pivoting shooter. [PDF p20](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=20)\n\n**Published construction:** Game-piece camera, drive-to-point correction, missing-note diversion and velocity-compensated aiming.\n\n**Team-stated reason or evidence boundary:** Avoid wasting autonomous time on absent or displaced notes.\n\n**Engineering analysis — original inference:** An intake with a large acquisition envelope becomes more useful when the path can correct toward the observed note. The controller must decide early enough that a failed attempt does not consume the rest of autonomous. A missing-note branch is a strategy choice tied to contested supply and partner routes, not simply a vision feature. The shot system also depends on current robot velocity and a stable angle reference. Database recommendations should include these feedback assumptions alongside the mechanical pickup.\n\n**Proposed validation — not a completed test:** Displace or remove expected notes and test diversion timing, partner-route safety and the resulting end pose.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | ~1/8-in carpet compression; ~1/4-in conveyor compression | [Source p8](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=8) |\n| Pivot | ~107:1 overall | [Source p11](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=11) |\n| Shooter | 5/8-in launch compression; team lists left/right 8000/4000 RPM | [Source p14](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=14) |\n| Climb | two 1.5-in-bore, 10-in-stroke cylinders; reported ~200-lbf combined retraction | [Source p16](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=16) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.",
+    "images": [
+      {
+        "robot_id": "2024-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/465867/21",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/4/b/4b6cdf50b813aaa07f4eeec0e0e0adca442a9761_2_288x250.jpeg",
+        "post": 21,
+        "date": "2024-05-11T00:31:22.371Z",
+        "author": "Khalsa",
+        "context_tags": [
+          "arm",
+          "climb"
+        ],
+        "caption": "2024 team 2056 — source image from post 21 (2024-05-11). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "151a44de405300cf17.jpg",
+        "id": "139d1cbc2d8a9e8eb4",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/151a44de405300cf17.jpg"
+      },
+      {
+        "robot_id": "2024-2056",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/465867/21",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/d/fde2a8fc004309d00cd3027d0ea66297757a4ca8_2_272x250.jpeg",
+        "post": 21,
+        "date": "2024-05-11T00:31:22.371Z",
+        "author": "Khalsa",
+        "context_tags": [
+          "arm",
+          "climb"
+        ],
+        "caption": "2024 team 2056 — source image from post 21 (2024-05-11). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "e56e0df804442556f1.jpg",
+        "id": "23ef4839b6be36b25b",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/e56e0df804442556f1.jpg"
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p5-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 5,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p5-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=5",
+        "caption": "2024-2056 · 2024 pivoting shooter · Drivebase · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Drivebase",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          724.25
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 5
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p6-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 6,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p6-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=6",
+        "caption": "2024-2056 · 2024 pivoting shooter · Intake swerve modifications · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Intake swerve modifications",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          436.7909851074219,
+          583.5999755859375,
+          733.27099609375
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 6
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p9-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 9,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p9-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=9",
+        "caption": "2024-2056 · 2024 pivoting shooter · Intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Intake",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          611.989990234375,
+          723.75
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 9
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p10-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 10,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p10-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=10",
+        "caption": "2024-2056 · 2024 pivoting shooter · Frame and tower · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+        "publisher_label": "Frame and tower",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          116.427001953125,
+          368.00201416015625,
+          502.6000061035156,
+          749.6510009765625
+        ],
+        "whole_robot_photo": false,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 10
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p12-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 12,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p12-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=12",
+        "caption": "2024-2056 · 2024 pivoting shooter · Shoulder gearbox · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Shoulder gearbox",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          722.5999755859375
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 12
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p15-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 15,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p15-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=15",
+        "caption": "2024-2056 · 2024 pivoting shooter · Shooter · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Shooter",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          722.5499877929688
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 15
+      },
+      {
+        "id": "binder-fd6ffec203a0f28f66-p17-1",
+        "robot_id": "2024-2056",
+        "kind": "binder_figure",
+        "binder_id": "fd6ffec203a0f28f66",
+        "pdf_page": 17,
+        "figure_number": 1,
+        "figure_number_is_publisher_assigned": false,
+        "path": "images/binders/binder-fd6ffec203a0f28f66-p17-1.jpg",
+        "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=17",
+        "caption": "2024-2056 · 2024 pivoting shooter · Pneumatic climber · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+        "publisher_label": "Pneumatic climber",
+        "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+        "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+        "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+        "crop_pdf_points": [
+          0.0,
+          0.0,
+          612.0,
+          722.5999755859375
+        ],
+        "whole_robot_photo": true,
+        "depicted_team_status": "Identity checked against binder",
+        "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+        "page": 17
+      }
+    ],
+    "source_post_count": 35,
+    "cad_code_links": [
+      {
+        "robot_id": "2024-2056",
+        "discovery_post": "2024-2056-465867-81",
+        "url": "https://drive.google.com/file/d/1FaF-l3zrMh00vOsfi5SHeOzciaK8t-A8/view?usp=sharing",
+        "kind": "shared_document",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "c12762e0e85bbda463"
+      }
+    ],
+    "id": "2024-2056",
+    "team_name": "OP Robotics",
+    "epa_rank": 5,
+    "epa": 53.7,
+    "epa_pre_champs": 58.9,
+    "epa_breakdown": {
+      "total_points": 53.7,
+      "auto_points": 16.69,
+      "teleop_points": 33.19,
+      "endgame_points": 3.82,
+      "melody_rp": 0.7709,
+      "ensemble_rp": 0.5913,
+      "tiebreaker_points": 0.15,
+      "auto_leave_points": 1.48,
+      "auto_note_points": 15.21,
+      "teleop_note_points": 33.19,
+      "speaker_points": 44.98,
+      "amplified_notes": 5.94,
+      "endgame_park_points": 0.14,
+      "endgame_on_stage_points": 2.87,
+      "endgame_harmony_points": 0.59,
+      "endgame_trap_points": -0.23,
+      "endgame_spotlight_points": 0.44,
+      "rp_1": 0.7709,
+      "rp_2": 0.5913,
+      "total_note_points": 48.4
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "37543a9e2c5a82f3"
+    ],
+    "tags": [
+      "climb",
+      "defense / durability",
+      "vision / automation"
+    ],
+    "narrative_context": "",
+    "technical_note_ids": [
+      "tech-fd6ffec203a0f28f66-99",
+      "tech-fd6ffec203a0f28f66-100",
+      "tech-fd6ffec203a0f28f66-101",
+      "tech-fd6ffec203a0f28f66-102"
+    ],
+    "binder_source_ids": [
+      "fd6ffec203a0f28f66"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-2056",
+      "year": 2024,
+      "team": 2056,
+      "epa_rank": 5,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "\"2056\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 15,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "fd6ffec203a0f28f66"
+      ],
+      "technical_note_ids": [
+        "tech-fd6ffec203a0f28f66-99",
+        "tech-fd6ffec203a0f28f66-100",
+        "tech-fd6ffec203a0f28f66-101",
+        "tech-fd6ffec203a0f28f66-102"
+      ],
+      "candidate_attempts": [
+        {
+          "id": "fd6ffec203a0f28f66",
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/465867/1",
+          "status": "technical_sections_reviewed"
+        },
+        {
+          "id": "738cd77c0d45676254",
+          "url": "https://drive.google.com/file/d/1FaF-l3zrMh00vOsfi5SHeOzciaK8t-A8/view?usp=sharing",
+          "error": null,
+          "discovery": "https://www.chiefdelphi.com/t/465867/81",
+          "status": "unavailable_or_not_pdf"
+        }
+      ],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    }
+  },
+  "technical_notes": [
+    {
+      "binder_id": "fd6ffec203a0f28f66",
+      "subsystem": "intake",
+      "title": "OPR 2024: chassis and module geometry create the intake path",
+      "pdf_pages": [
+        4,
+        6,
+        8
+      ],
+      "construction": "Modified front module clearance; under-bumper conveyor; post-Newmarket aluminum side plates and added bracing.",
+      "team_stated_reason": "Wide pickup, consistent centering and impact rigidity.",
+      "engineering_analysis": "An under-bumper path consumes the same volume as frame rails and module motors, so module orientation and mounting plates are part of the intake design. Increasing plate rigidity preserves compression but can transmit more collision load elsewhere. The documented event boundary should be retained: the stronger side plates and bracing were a precautionary update rather than necessarily the initial robot. Intake width is useful only if the full path can move off-center notes without trapping them at a module or frame corner.",
+      "recommended_validation": "Test side pickup and corner impacts, then compare roller alignment and chassis squareness before and after the update.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fd6ffec203a0f28f66-99",
+      "robot_id": "2024-2056",
+      "year": 2024,
+      "version_label": "2024 pivoting shooter",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 4,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=4"
+        },
+        {
+          "pdf_page": 6,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=6"
+        },
+        {
+          "pdf_page": 8,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=8"
+        }
+      ],
+      "image_ids": [
+        "binder-fd6ffec203a0f28f66-p6-1"
+      ]
+    },
+    {
+      "binder_id": "fd6ffec203a0f28f66",
+      "subsystem": "scoring",
+      "title": "OPR 2024: pre-compression, differential spin and revised release angle",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "construction": "Pre-compression contacts, independent left/right drives, low-backlash pivot; flywheels later tipped down 6°.",
+      "team_stated_reason": "Consistent feed and greater useful shot range.",
+      "engineering_analysis": "A flexible note can enter the same nominal wheel gap in different shapes. Pre-compression aims to control that shape before final acceleration. Independent side speeds then create spin, while mechanically linked upper/lower contacts preserve another aspect of consistency. A six-degree structural change alters the reachable trajectory envelope even if the control software is unchanged. Distinguish output speed, compression and release geometry when diagnosing misses: increasing RPM cannot necessarily compensate for a deformed or inconsistently presented note.",
+      "recommended_validation": "Compare shot distributions before and after the geometric revision with the same notes, recording entry deformation and wheel recovery.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fd6ffec203a0f28f66-100",
+      "robot_id": "2024-2056",
+      "year": 2024,
+      "version_label": "2024 pivoting shooter",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 11,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=11"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=13"
+        },
+        {
+          "pdf_page": 14,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=14"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "binder_id": "fd6ffec203a0f28f66",
+      "subsystem": "endgame",
+      "title": "OPR 2024: pneumatic lift and an explicitly different disable behavior",
+      "pdf_pages": [
+        16
+      ],
+      "construction": "Dual pneumatic cylinders and revised double hook; single-acting valve retracts on loss of power.",
+      "team_stated_reason": "Fast hanging and compatibility with a partner-loaded chain.",
+      "engineering_analysis": "A pneumatic climber stores energy before the lift, reducing the need for a large electric winch during the final action. Available force depends on regulated pressure, piston area and the retracting-side rod area, while repeated actions consume finite stored air. The hook geometry must accommodate a chain already displaced by a partner. The described valve behavior is specific to this plumbing and control configuration; it should not become a generic assumption about all solenoids or an instruction to rely on an untested after-buzzer action.",
+      "recommended_validation": "Test force and timing at the lowest expected pressure, including partner chain displacement and the actual disabled valve state.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fd6ffec203a0f28f66-101",
+      "robot_id": "2024-2056",
+      "year": 2024,
+      "version_label": "2024 pivoting shooter",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 16,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=16"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "binder_id": "fd6ffec203a0f28f66",
+      "subsystem": "controls",
+      "title": "OPR 2024: adapt autonomous to whether a note is actually present",
+      "pdf_pages": [
+        20
+      ],
+      "construction": "Game-piece camera, drive-to-point correction, missing-note diversion and velocity-compensated aiming.",
+      "team_stated_reason": "Avoid wasting autonomous time on absent or displaced notes.",
+      "engineering_analysis": "An intake with a large acquisition envelope becomes more useful when the path can correct toward the observed note. The controller must decide early enough that a failed attempt does not consume the rest of autonomous. A missing-note branch is a strategy choice tied to contested supply and partner routes, not simply a vision feature. The shot system also depends on current robot velocity and a stable angle reference. Database recommendations should include these feedback assumptions alongside the mechanical pickup.",
+      "recommended_validation": "Displace or remove expected notes and test diversion timing, partner-route safety and the resulting end pose.",
+      "limitations": "The binder is a published configuration snapshot, not an independent durability or match-rate test.",
+      "id": "tech-fd6ffec203a0f28f66-102",
+      "robot_id": "2024-2056",
+      "year": 2024,
+      "version_label": "2024 pivoting shooter",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+      "evidence_type": "team_publication_with_separate_analyst_inference",
+      "performance_status": "Reported values retain source conditions; validation recommendations are proposed tests, not completed tests",
+      "page_references": [
+        {
+          "pdf_page": 20,
+          "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=20"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "param-fd6ffec203a0f28f66-1",
+      "binder_id": "fd6ffec203a0f28f66",
+      "robot_id": "2024-2056",
+      "pdf_page": 8,
+      "component": "Intake",
+      "published_parameters": "~1/8-in carpet compression; ~1/4-in conveyor compression",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=8",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-fd6ffec203a0f28f66-2",
+      "binder_id": "fd6ffec203a0f28f66",
+      "robot_id": "2024-2056",
+      "pdf_page": 11,
+      "component": "Pivot",
+      "published_parameters": "~107:1 overall",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=11",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-fd6ffec203a0f28f66-3",
+      "binder_id": "fd6ffec203a0f28f66",
+      "robot_id": "2024-2056",
+      "pdf_page": 14,
+      "component": "Shooter",
+      "published_parameters": "5/8-in launch compression; team lists left/right 8000/4000 RPM",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=14",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    },
+    {
+      "id": "param-fd6ffec203a0f28f66-4",
+      "binder_id": "fd6ffec203a0f28f66",
+      "robot_id": "2024-2056",
+      "pdf_page": 16,
+      "component": "Climb",
+      "published_parameters": "two 1.5-in-bore, 10-in-stroke cylinders; reported ~200-lbf combined retraction",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=16",
+      "status": "source_reported_selected_parameters",
+      "notation": "Tooth-pair order and source ratio notation preserved; verify direction and complete CAD before fabrication"
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "fd6ffec203a0f28f66",
+      "robot_id": "2024-2056",
+      "title": "2024-2056 2024 pivoting shooter technical publication",
+      "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+      "format": "pdf",
+      "pages": 27,
+      "sha256": "d771d87ed19fa60ac42cc575c463775b68bb779644e47f8e171baedc16f42b60",
+      "bytes": 7582908,
+      "status": "technical_sections_reviewed",
+      "reviewed_pdf_pages": [
+        4,
+        6,
+        8,
+        11,
+        13,
+        14,
+        16,
+        20
+      ],
+      "figure_pages": [
+        5,
+        6,
+        9,
+        10,
+        12,
+        15,
+        17
+      ],
+      "review_scope": "Selected technical sections, source figures and stated design decisions; not an exhaustive audit of every drawing or competition revision",
+      "discovery_url": "https://www.chiefdelphi.com/t/465867/1",
+      "identity_basis": "Title, team identifiers and technical content checked",
+      "publication_kind": "technical_binder_or_brief"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2024-2056:publication-version:1",
+      "label": "2024 pivoting shooter",
+      "robot_id": "2024-2056",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "tech-fd6ffec203a0f28f66-99",
+        "tech-fd6ffec203a0f28f66-100",
+        "tech-fd6ffec203a0f28f66-101",
+        "tech-fd6ffec203a0f28f66-102"
+      ],
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "technical-2024-2056",
+      "title": "2024-2056: technical construction and mechanism reasoning",
+      "year": 2024,
+      "robot_id": "2024-2056",
+      "kind": "robot_technical_review",
+      "body": "# 2024-2056: technical mechanisms, design reasoning and revision boundaries\n\nThese notes distinguish published construction from team-stated intent and original engineering inference. Selected numerical values are reported source data, not independently reproduced measurements. The recommended tests have not been performed. A binder snapshot does not certify every competition version.\n\n## OPR 2024: chassis and module geometry create the intake path\n\nVersion: 2024 pivoting shooter. [PDF p4](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=4) · [PDF p6](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=6) · [PDF p8](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=8)\n\n**Published construction:** Modified front module clearance; under-bumper conveyor; post-Newmarket aluminum side plates and added bracing.\n\n**Team-stated reason or evidence boundary:** Wide pickup, consistent centering and impact rigidity.\n\n**Engineering analysis — original inference:** An under-bumper path consumes the same volume as frame rails and module motors, so module orientation and mounting plates are part of the intake design. Increasing plate rigidity preserves compression but can transmit more collision load elsewhere. The documented event boundary should be retained: the stronger side plates and bracing were a precautionary update rather than necessarily the initial robot. Intake width is useful only if the full path can move off-center notes without trapping them at a module or frame corner.\n\n**Proposed validation — not a completed test:** Test side pickup and corner impacts, then compare roller alignment and chassis squareness before and after the update.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2024: pre-compression, differential spin and revised release angle\n\nVersion: 2024 pivoting shooter. [PDF p11](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=11) · [PDF p13](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=13) · [PDF p14](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=14)\n\n**Published construction:** Pre-compression contacts, independent left/right drives, low-backlash pivot; flywheels later tipped down 6°.\n\n**Team-stated reason or evidence boundary:** Consistent feed and greater useful shot range.\n\n**Engineering analysis — original inference:** A flexible note can enter the same nominal wheel gap in different shapes. Pre-compression aims to control that shape before final acceleration. Independent side speeds then create spin, while mechanically linked upper/lower contacts preserve another aspect of consistency. A six-degree structural change alters the reachable trajectory envelope even if the control software is unchanged. Distinguish output speed, compression and release geometry when diagnosing misses: increasing RPM cannot necessarily compensate for a deformed or inconsistently presented note.\n\n**Proposed validation — not a completed test:** Compare shot distributions before and after the geometric revision with the same notes, recording entry deformation and wheel recovery.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2024: pneumatic lift and an explicitly different disable behavior\n\nVersion: 2024 pivoting shooter. [PDF p16](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=16)\n\n**Published construction:** Dual pneumatic cylinders and revised double hook; single-acting valve retracts on loss of power.\n\n**Team-stated reason or evidence boundary:** Fast hanging and compatibility with a partner-loaded chain.\n\n**Engineering analysis — original inference:** A pneumatic climber stores energy before the lift, reducing the need for a large electric winch during the final action. Available force depends on regulated pressure, piston area and the retracting-side rod area, while repeated actions consume finite stored air. The hook geometry must accommodate a chain already displaced by a partner. The described valve behavior is specific to this plumbing and control configuration; it should not become a generic assumption about all solenoids or an instruction to rely on an untested after-buzzer action.\n\n**Proposed validation — not a completed test:** Test force and timing at the lowest expected pressure, including partner chain displacement and the actual disabled valve state.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## OPR 2024: adapt autonomous to whether a note is actually present\n\nVersion: 2024 pivoting shooter. [PDF p20](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=20)\n\n**Published construction:** Game-piece camera, drive-to-point correction, missing-note diversion and velocity-compensated aiming.\n\n**Team-stated reason or evidence boundary:** Avoid wasting autonomous time on absent or displaced notes.\n\n**Engineering analysis — original inference:** An intake with a large acquisition envelope becomes more useful when the path can correct toward the observed note. The controller must decide early enough that a failed attempt does not consume the rest of autonomous. A missing-note branch is a strategy choice tied to contested supply and partner routes, not simply a vision feature. The shot system also depends on current robot velocity and a stable angle reference. Database recommendations should include these feedback assumptions alongside the mechanical pickup.\n\n**Proposed validation — not a completed test:** Displace or remove expected notes and test diversion timing, partner-route safety and the resulting end pose.\n\n**Limits:** The binder is a published configuration snapshot, not an independent durability or match-rate test.\n\n## Selected published parameters\n\n| Component | Source parameter | Locator |\n|---|---|---|\n| Intake | ~1/8-in carpet compression; ~1/4-in conveyor compression | [Source p8](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=8) |\n| Pivot | ~107:1 overall | [Source p11](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=11) |\n| Shooter | 5/8-in launch compression; team lists left/right 8000/4000 RPM | [Source p14](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=14) |\n| Climb | two 1.5-in-bore, 10-in-stroke cylinders; reported ~200-lbf combined retraction | [Source p16](https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=16) |\n\nRatios preserve source notation; verify driver/driven order, complete geometry and the actual version in CAD before fabrication. Figure records retain PDF page and crop bounds in `data/mechanism_images.jsonl`. Images may include rejected prototypes or whole-robot photographs; their captions preserve that distinction.\n",
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf"
+      ],
+      "path": "docs/technical/2024-2056.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2024-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/465867/21",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/4/b/4b6cdf50b813aaa07f4eeec0e0e0adca442a9761_2_288x250.jpeg",
+      "post": 21,
+      "date": "2024-05-11T00:31:22.371Z",
+      "author": "Khalsa",
+      "context_tags": [
+        "arm",
+        "climb"
+      ],
+      "caption": "2024 team 2056 — source image from post 21 (2024-05-11). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "151a44de405300cf17.jpg",
+      "id": "139d1cbc2d8a9e8eb4",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/151a44de405300cf17.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 288,
+      "height_px": 250,
+      "bytes": 16190,
+      "sha256": "f449e55af475102b5a5d31bac572a528372d4bef9989925b45c281961982759b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "139d1cbc2d8a9e8eb4",
+      "reader_url": "index.html#image=139d1cbc2d8a9e8eb4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2024-2056",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/465867/21",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/3X/f/d/fde2a8fc004309d00cd3027d0ea66297757a4ca8_2_272x250.jpeg",
+      "post": 21,
+      "date": "2024-05-11T00:31:22.371Z",
+      "author": "Khalsa",
+      "context_tags": [
+        "arm",
+        "climb"
+      ],
+      "caption": "2024 team 2056 — source image from post 21 (2024-05-11). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "e56e0df804442556f1.jpg",
+      "id": "23ef4839b6be36b25b",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/e56e0df804442556f1.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 272,
+      "height_px": 250,
+      "bytes": 14974,
+      "sha256": "d04621f232dc76a21fe5a09c84e2b23d870cbf7e7323f84638b54256bf9be74e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "23ef4839b6be36b25b",
+      "reader_url": "index.html#image=23ef4839b6be36b25b",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p5-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 5,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p5-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=5",
+      "caption": "2024-2056 · 2024 pivoting shooter · Drivebase · PDF page 5, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Drivebase",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        724.25
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 5,
+      "media_type": "image/jpeg",
+      "width_px": 1184,
+      "height_px": 1400,
+      "bytes": 320391,
+      "sha256": "77e47971842b7561024a2a8018101c4e5ce5235447a7ac7be5d28bb4f8627f56",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p5-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p5-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p6-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 6,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p6-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=6",
+      "caption": "2024-2056 · 2024 pivoting shooter · Intake swerve modifications · PDF page 6, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Intake swerve modifications",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        436.7909851074219,
+        583.5999755859375,
+        733.27099609375
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 6,
+      "media_type": "image/jpeg",
+      "width_px": 1343,
+      "height_px": 683,
+      "bytes": 77596,
+      "sha256": "c3fdbbdea57aa146d26501789c304b603d889fac9477c82a0e57f491902c9d7e",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p6-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p6-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p9-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 9,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p9-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=9",
+      "caption": "2024-2056 · 2024 pivoting shooter · Intake · PDF page 9, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Intake",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        611.989990234375,
+        723.75
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 9,
+      "media_type": "image/jpeg",
+      "width_px": 1184,
+      "height_px": 1400,
+      "bytes": 238053,
+      "sha256": "2dc3f66e88bb03f7f63218222ef127f5b5d6248adf1da072028a50a6c93e1c55",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p9-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p9-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p10-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 10,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p10-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=10",
+      "caption": "2024-2056 · 2024 pivoting shooter · Frame and tower · PDF page 10, extracted detail 1. Cropped reference; may not show the complete assembly.",
+      "publisher_label": "Frame and tower",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        116.427001953125,
+        368.00201416015625,
+        502.6000061035156,
+        749.6510009765625
+      ],
+      "whole_robot_photo": false,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 10,
+      "media_type": "image/jpeg",
+      "width_px": 889,
+      "height_px": 879,
+      "bytes": 79400,
+      "sha256": "5a0ffb74782ac13e54988d115f92bb02d5eaa1a98b0b9a5da7d31858bb27d58b",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p10-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p10-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p12-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 12,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p12-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=12",
+      "caption": "2024-2056 · 2024 pivoting shooter · Shoulder gearbox · PDF page 12, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Shoulder gearbox",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        722.5999755859375
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 12,
+      "media_type": "image/jpeg",
+      "width_px": 1186,
+      "height_px": 1400,
+      "bytes": 246951,
+      "sha256": "730b39022eafabc1e553add5d4cb048d1f5e3a01f1ca700e836a93aedae1b6c4",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p12-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p12-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p15-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 15,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p15-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=15",
+      "caption": "2024-2056 · 2024 pivoting shooter · Shooter · PDF page 15, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Shooter",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        722.5499877929688
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 15,
+      "media_type": "image/jpeg",
+      "width_px": 1186,
+      "height_px": 1400,
+      "bytes": 195556,
+      "sha256": "146e1dab303ec5a84f2a5e69cdb85372c8582335e996577fd13c08a722f7b4bd",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p15-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p15-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "binder-fd6ffec203a0f28f66-p17-1",
+      "robot_id": "2024-2056",
+      "kind": "binder_figure",
+      "binder_id": "fd6ffec203a0f28f66",
+      "pdf_page": 17,
+      "figure_number": 1,
+      "figure_number_is_publisher_assigned": false,
+      "path": "images/binders/binder-fd6ffec203a0f28f66-p17-1.jpg",
+      "source_url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf#page=17",
+      "caption": "2024-2056 · 2024 pivoting shooter · Pneumatic climber · PDF page 17, extracted detail 1. Cropped reference; may not show the complete assembly. Whole-robot photograph accompanying this section; not an isolated component drawing.",
+      "publisher_label": "Pneumatic climber",
+      "label_basis": "Editorial component label from inspected page context; extraction index is not a printed publisher figure number",
+      "review_status": "PDF page contact-sheet inspected; source figure extracted with recorded bounds",
+      "visual_review": "Page-level visual inspection; cropped reference detail, no complete-assembly or CAD-dimensional certification",
+      "crop_pdf_points": [
+        0.0,
+        0.0,
+        612.0,
+        722.5999755859375
+      ],
+      "whole_robot_photo": true,
+      "depicted_team_status": "Identity checked against binder",
+      "rights": "Credited reference excerpt from team publication; copyright remains with its owner. No license transfer is implied.",
+      "page": 17,
+      "media_type": "image/jpeg",
+      "width_px": 1186,
+      "height_px": 1400,
+      "bytes": 298813,
+      "sha256": "a9c6598824d9efac34bb7e48b289e75666a7b93b21a5fe0b5b59f46cb997b83d",
+      "path_base": "corpus_root",
+      "reader_asset_id": "binder-fd6ffec203a0f28f66-p17-1",
+      "reader_url": "index.html#image=binder-fd6ffec203a0f28f66-p17-1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2024-2056",
+    "year": 2024,
+    "team": 2056,
+    "epa_rank": 5,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "\"2056\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 15,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "fd6ffec203a0f28f66"
+    ],
+    "technical_note_ids": [
+      "tech-fd6ffec203a0f28f66-99",
+      "tech-fd6ffec203a0f28f66-100",
+      "tech-fd6ffec203a0f28f66-101",
+      "tech-fd6ffec203a0f28f66-102"
+    ],
+    "candidate_attempts": [
+      {
+        "id": "fd6ffec203a0f28f66",
+        "url": "https://2056.ca/wp-content/uploads/2024/05/OPR24-2056-Technical-Binder.pdf",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/465867/1",
+        "status": "technical_sections_reviewed"
+      },
+      {
+        "id": "738cd77c0d45676254",
+        "url": "https://drive.google.com/file/d/1FaF-l3zrMh00vOsfi5SHeOzciaK8t-A8/view?usp=sharing",
+        "error": null,
+        "discovery": "https://www.chiefdelphi.com/t/465867/81",
+        "status": "unavailable_or_not_pdf"
+      }
+    ],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "tech-fd6ffec203a0f28f66-99:construction",
+    "tech-fd6ffec203a0f28f66-99:team_stated_reason",
+    "tech-fd6ffec203a0f28f66-99:engineering_analysis",
+    "tech-fd6ffec203a0f28f66-99:recommended_validation",
+    "tech-fd6ffec203a0f28f66-99:limitations",
+    "tech-fd6ffec203a0f28f66-100:construction",
+    "tech-fd6ffec203a0f28f66-100:team_stated_reason",
+    "tech-fd6ffec203a0f28f66-100:engineering_analysis",
+    "tech-fd6ffec203a0f28f66-100:recommended_validation",
+    "tech-fd6ffec203a0f28f66-100:limitations",
+    "tech-fd6ffec203a0f28f66-101:construction",
+    "tech-fd6ffec203a0f28f66-101:team_stated_reason",
+    "tech-fd6ffec203a0f28f66-101:engineering_analysis",
+    "tech-fd6ffec203a0f28f66-101:recommended_validation",
+    "tech-fd6ffec203a0f28f66-101:limitations",
+    "tech-fd6ffec203a0f28f66-102:construction",
+    "tech-fd6ffec203a0f28f66-102:team_stated_reason",
+    "tech-fd6ffec203a0f28f66-102:engineering_analysis",
+    "tech-fd6ffec203a0f28f66-102:recommended_validation",
+    "tech-fd6ffec203a0f28f66-102:limitations",
+    "param-fd6ffec203a0f28f66-1",
+    "param-fd6ffec203a0f28f66-2",
+    "param-fd6ffec203a0f28f66-3",
+    "param-fd6ffec203a0f28f66-4"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-1771",
+  "year": 2024,
+  "team": 1771,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 1771,
+    "robot": "North Gwinnett 2024",
+    "primary": [
+      "https://youtu.be/GWJxVlSt0uE"
+    ],
+    "architecture": "Routed wood structure, under-bumper intake and pivoted shooter/amp assembly.",
+    "subsystems": {
+      "drivetrain": "SDS MK4i, tuned in stages before adding odometry and vision correction.",
+      "intake": "Protected under-bumper pickup selected for collision resistance.",
+      "transfer": "Polycord conveyance feeds the central pivot assembly.",
+      "scoring": "Pivoting mechanism covers acquisition, speaker and amp; independently driven shooter sides add note spin.",
+      "endgame": "Modified telescopic boat-hook climber with printed spool and constant-force assist enables trap access.",
+      "controls": "Procedurally composed autonomous routines; team describes more than 74,000 possible combinations, not 74,000 separately validated routines."
+    },
+    "versions": [
+      "Climb was unreliable at Gwinnett; spool/assist and intake work between Week 3 and Albany improved climbing/trapping."
+    ],
+    "analysis": "Highly relevant PCH precedent: protect the main scorer, then use the gap between events to improve a secondary capability. Their fabrication choice supports rapid repair and iteration.",
+    "limits": [
+      "Only source-established configurations and changes are described; intermediate revisions may remain unresolved."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2024-1771",
+    "team_name": "North Gwinnett Robotics",
+    "epa_rank": 8,
+    "epa": 52.57,
+    "epa_pre_champs": 51.45,
+    "epa_breakdown": {
+      "total_points": 52.57,
+      "auto_points": 19.82,
+      "teleop_points": 27.15,
+      "endgame_points": 5.6,
+      "melody_rp": 0.6711,
+      "ensemble_rp": 0.5072,
+      "tiebreaker_points": 0.32,
+      "auto_leave_points": 1.92,
+      "auto_note_points": 17.9,
+      "teleop_note_points": 27.15,
+      "speaker_points": 42.29,
+      "amplified_notes": 4.17,
+      "endgame_park_points": 0.24,
+      "endgame_on_stage_points": 2.13,
+      "endgame_harmony_points": -0.12,
+      "endgame_trap_points": 3.33,
+      "endgame_spotlight_points": 0.02,
+      "rp_1": 0.6711,
+      "rp_2": 0.5072,
+      "total_note_points": 45.05
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "5ba52af0bee75319"
+    ],
+    "tags": [
+      "climb",
+      "telescoping arm",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-1771",
+      "year": 2024,
+      "team": 1771,
+      "epa_rank": 8,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"1771\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 14,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"1771\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-1771"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-1771",
+      "title": "Low moving mass and rapid prototyping support a multi-task pivot",
+      "start_seconds": 221,
+      "end_seconds": 405,
+      "construction": "A protected under-bumper collector and polycord conveyor feed a central pivoted scoring assembly. Motors sit near the pivot and long belt runs carry power outward. Independent shooting sides provide note spin; the same mechanism serves ground pickup, speaker and amp poses.",
+      "team_stated_reason": "The source describes selecting objectives at kickoff, prototyping multiple launcher types and using short print/test iterations to resolve problems. Its under-bumper choice emphasizes collision protection.",
+      "engineering_analysis": "Moving motors toward the pivot can reduce rotational inertia, but long belts introduce compliance, tension and replacement considerations. A shared pivot simplifies the number of mechanisms while making each pose and connecting motion more important. Rapid printed iterations are a development capability that another team must budget for, rather than assume it receives by copying the final CAD.",
+      "recommended_validation": "Measure belt-related angular lag and shot variation after fast pivot moves. Reproduce the complete pickup-to-score path, and include repair/reprint time in the architecture comparison.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-1771",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/GWJxVlSt0uE",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 221,
+        "end_seconds": 405,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "GWJxVlSt0uE",
+          "sha256": "7145eeb7e693660a6aafda12c5f967fdad8475699b4683b28ec709209e778968",
+          "caption_segments": 291,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-1771:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-1771",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-1771"
+      ],
+      "source_urls": [
+        "https://youtu.be/GWJxVlSt0uE"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-1771",
+      "title": "2024-1771 · Low moving mass and rapid prototyping support a multi-task pivot",
+      "year": 2024,
+      "robot_id": "2024-1771",
+      "kind": "focused_technical_study",
+      "body": "# 2024-1771: Low moving mass and rapid prototyping support a multi-task pivot\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA protected under-bumper collector and polycord conveyor feed a central pivoted scoring assembly. Motors sit near the pivot and long belt runs carry power outward. Independent shooting sides provide note spin; the same mechanism serves ground pickup, speaker and amp poses.\n\n## Team-stated reasoning or boundary\n\nThe source describes selecting objectives at kickoff, prototyping multiple launcher types and using short print/test iterations to resolve problems. Its under-bumper choice emphasizes collision protection.\n\n## Engineering interpretation — analyst inference\n\nMoving motors toward the pivot can reduce rotational inertia, but long belts introduce compliance, tension and replacement considerations. A shared pivot simplifies the number of mechanisms while making each pose and connecting motion more important. Rapid printed iterations are a development capability that another team must budget for, rather than assume it receives by copying the final CAD.\n\n## Proposed validation — not performed\n\nMeasure belt-related angular lag and shot variation after fast pivot moves. Reproduce the complete pickup-to-score path, and include repair/reprint time in the architecture comparison.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/GWJxVlSt0uE](https://youtu.be/GWJxVlSt0uE)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/GWJxVlSt0uE"
+      ],
+      "path": "docs/research_continuation/2024-1771.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2024-1771",
+    "year": 2024,
+    "team": 1771,
+    "epa_rank": 8,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"1771\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 14,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"1771\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-1771:construction",
+    "study6-2024-1771:team_stated_reason",
+    "study6-2024-1771:engineering_analysis",
+    "study6-2024-1771:recommended_validation",
+    "study6-2024-1771:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

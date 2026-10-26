@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0",
+  "id": "2025-180",
+  "year": 2025,
+  "team": 180,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2025.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2025,
+    "team": 180,
+    "robot": "S.P.A.M. 2025",
+    "primary": [
+      "https://www.youtube.com/watch?v=sgTeheZy33I"
+    ],
+    "architecture": "Compliant floor pickup and rotating dual-piece effector on continuous elevator.",
+    "subsystems": {
+      "drivetrain": "WCP Swerve XS; steering motor adaptation described in interview, exact model transcription unresolved.",
+      "intake": "Compliant four-bar folds rearward; reverse roller action deploys pickup.",
+      "transfer": "Funnel orients coral into rotating effector.",
+      "scoring": "Two-stage continuous elevator; shaped algae wheels retain ball during rotation and support net launch while also manipulating coral.",
+      "endgame": "Recently added RI3D/Orbit-like harness and winch; deployment follows intake stow.",
+      "controls": "Three Limelights, tag alignment and piece localization; interview distinguishes four-coral autonomous goal from reported two/three average."
+    },
+    "versions": [
+      "Climber was a recent addition at filming.",
+      "Do not record four-piece goal as established typical autonomous output."
+    ],
+    "analysis": "Set autonomous requirements as a distribution of reliable outcomes. A team reporting an average of two or three should not be indexed as an automatic four-piece robot simply because four was the target.",
+    "limits": [
+      "Only the reviewed published configurations are established; intermediate changes may be undocumented."
+    ],
+    "deep_context": "",
+    "images": [
+      {
+        "robot_id": "2025-180",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/501667/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/5/e/25e2bd38254ed65c74c624434b41cf128c539af4_2_690x270.jpeg",
+        "post": 1,
+        "date": "2025-05-13T18:33:11.299Z",
+        "author": "Ryan_S",
+        "context_tags": [],
+        "caption": "2025 team 180 — source image from post 1 (2025-05-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "620941e5db4ddaf220.jpg",
+        "id": "71b154d278b126848f",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/620941e5db4ddaf220.jpg"
+      },
+      {
+        "robot_id": "2025-180",
+        "kind": "forum_image",
+        "source_url": "https://www.chiefdelphi.com/t/501667/1",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/d/2/d/d2d0e7d499a9ae5a8d77b65f023f64dd04507748.gif",
+        "post": 1,
+        "date": "2025-05-13T18:33:11.299Z",
+        "author": "Ryan_S",
+        "context_tags": [],
+        "caption": "2025 team 180 — source image from post 1 (2025-05-13). Context tags identify the discussion, not a verified component label.",
+        "review": "Source-linked extraction; mechanism identity not individually visually audited",
+        "asset": "f106ef9dfeef9051ff.jpg",
+        "id": "9dde1960b2a0199348",
+        "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+        "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+        "source_context_not_component_label": true,
+        "path": "images/f106ef9dfeef9051ff.jpg"
+      }
+    ],
+    "source_post_count": 3,
+    "cad_code_links": [
+      {
+        "robot_id": "2025-180",
+        "discovery_post": "2025-180-501667-1",
+        "url": "https://github.com/frc180/2025-public",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "6ee8736963f2eae5e4"
+      },
+      {
+        "robot_id": "2025-180",
+        "discovery_post": "2025-180-501667-4",
+        "url": "https://github.com/frc180/2025-public/blob/main/src/main/java/frc/robot/commands/DriveToPose.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "b134d02198c1619b09"
+      },
+      {
+        "robot_id": "2025-180",
+        "discovery_post": "2025-180-501667-4",
+        "url": "https://github.com/frc180/2025-public/blob/258ad38164b5cbfba7371a3dbdca83b448f1151c/src/main/java/frc/robot/Auto.java#L196",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "4210566a528faab0ea"
+      },
+      {
+        "robot_id": "2025-180",
+        "discovery_post": "2025-180-501667-4",
+        "url": "https://github.com/frc180/2025-public/blob/main/src/main/java/com/spamrobotics/vision/SimCamera.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "a91dc3fe32d3267a6d"
+      },
+      {
+        "robot_id": "2025-180",
+        "discovery_post": "2025-180-501667-4",
+        "url": "https://github.com/frc180/2025-public/blob/main/src/main/java/frc/robot/subsystems/vision/CoralDetectorSim.java",
+        "kind": "code",
+        "validation": "Published link discovered in associated discussion; contents and exact release not independently verified",
+        "id": "32758304b270e50c6c"
+      }
+    ],
+    "id": "2025-180",
+    "team_name": "S.P.A.M.",
+    "epa_rank": 24,
+    "epa": 88.65,
+    "epa_pre_champs": 83.85,
+    "epa_breakdown": {
+      "total_points": 88.65,
+      "auto_points": 20.14,
+      "teleop_points": 58.31,
+      "endgame_points": 10.2,
+      "auto_rp": 0.4693,
+      "coral_rp": 0.4137,
+      "barge_rp": 0.55213,
+      "tiebreaker_points": -0.11,
+      "auto_coral_points": 17.23,
+      "teleop_coral_points": 53.31,
+      "coral_l1": 2.85,
+      "coral_l2": 5.0,
+      "coral_l3": 5.25,
+      "coral_l4": 4.78,
+      "processor_algae": -0.04,
+      "processor_algae_points": -0.13,
+      "net_algae_points": 5.13,
+      "barge_points": 10.2,
+      "rp_1": 0.4693,
+      "rp_2": 0.4137,
+      "rp_3": 0.55213,
+      "total_coral_points": 70.54,
+      "total_algae_points": 5.0
+    },
+    "game": "REEFSCAPE",
+    "coverage": {
+      "drivetrain": "partial / unresolved detail",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "a69d6e5433ce658a"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "four-bar",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2025-180",
+      "year": 2025,
+      "team": 180,
+      "epa_rank": 24,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"180\" \"2025\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 19,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"180\" \"2025\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "technical_note_ids": [
+      "study6-2025-180"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2025-180",
+      "title": "Self-deploying acquisition still requires indexed possession",
+      "start_seconds": 79,
+      "end_seconds": 295,
+      "construction": "A compliant four-bar floor collector feeds a funnel and rotating effector on a two-stage continuous elevator. The retained interview describes reverse roller action deploying the collector. One collector sensor and three arm sensors manage entry, indexing and retention; camera-based acquisition chooses a robot pose relative to the pickup.",
+      "team_stated_reason": "The team connects floor pickup to shorter coral cycles and describes automatic reef-facing behavior as a way to streamline the driver’s next scoring action. It sought both task-related and climb ranking points.",
+      "engineering_analysis": "Passive or roller-driven deployment reduces a dedicated actuator but makes friction, game-piece contact and the initial mechanism state part of the deployment logic. Multiple sensors provide intermediate possession states instead of equating “something entered” with “ready to score.” A combined coral/algae mechanism must also preserve the retained object through rotation, not just when stationary.",
+      "recommended_validation": "Test partial handoffs, skewed coral, deployment without a piece, and failures of each sensor. Verify motor identifiers in CAD/code because automatic captions corrupt model names.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2025-180",
+      "year": 2025,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://www.youtube.com/watch?v=sgTeheZy33I",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 79,
+        "end_seconds": 295,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "sgTeheZy33I",
+          "sha256": "e0f07b80d2a41258f2236d161bc196d68d8a1cb2a3513cc5f746390376afa79b",
+          "caption_segments": 184,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2025-180:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2025-180",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2025-180"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=sgTeheZy33I"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2025-180",
+      "title": "2025-180 · Self-deploying acquisition still requires indexed possession",
+      "year": 2025,
+      "robot_id": "2025-180",
+      "kind": "focused_technical_study",
+      "body": "# 2025-180: Self-deploying acquisition still requires indexed possession\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA compliant four-bar floor collector feeds a funnel and rotating effector on a two-stage continuous elevator. The retained interview describes reverse roller action deploying the collector. One collector sensor and three arm sensors manage entry, indexing and retention; camera-based acquisition chooses a robot pose relative to the pickup.\n\n## Team-stated reasoning or boundary\n\nThe team connects floor pickup to shorter coral cycles and describes automatic reef-facing behavior as a way to streamline the driver’s next scoring action. It sought both task-related and climb ranking points.\n\n## Engineering interpretation — analyst inference\n\nPassive or roller-driven deployment reduces a dedicated actuator but makes friction, game-piece contact and the initial mechanism state part of the deployment logic. Multiple sensors provide intermediate possession states instead of equating “something entered” with “ready to score.” A combined coral/algae mechanism must also preserve the retained object through rotation, not just when stationary.\n\n## Proposed validation — not performed\n\nTest partial handoffs, skewed coral, deployment without a piece, and failures of each sensor. Verify motor identifiers in CAD/code because automatic captions corrupt model names.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://www.youtube.com/watch?v=sgTeheZy33I](https://www.youtube.com/watch?v=sgTeheZy33I)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://www.youtube.com/watch?v=sgTeheZy33I"
+      ],
+      "path": "docs/research_continuation/2025-180.md"
+    }
+  ],
+  "images": [
+    {
+      "robot_id": "2025-180",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/501667/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/optimized/4X/2/5/e/25e2bd38254ed65c74c624434b41cf128c539af4_2_690x270.jpeg",
+      "post": 1,
+      "date": "2025-05-13T18:33:11.299Z",
+      "author": "Ryan_S",
+      "context_tags": [],
+      "caption": "2025 team 180 — source image from post 1 (2025-05-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "620941e5db4ddaf220.jpg",
+      "id": "71b154d278b126848f",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/620941e5db4ddaf220.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 690,
+      "height_px": 270,
+      "bytes": 71308,
+      "sha256": "25db5c3a38dfa2624ce61144ce056ff0ca177139a74b7e1100c356012ee75a99",
+      "path_base": "corpus_root",
+      "reader_asset_id": "71b154d278b126848f",
+      "reader_url": "index.html#image=71b154d278b126848f",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "robot_id": "2025-180",
+      "kind": "forum_image",
+      "source_url": "https://www.chiefdelphi.com/t/501667/1",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/4X/d/2/d/d2d0e7d499a9ae5a8d77b65f023f64dd04507748.gif",
+      "post": 1,
+      "date": "2025-05-13T18:33:11.299Z",
+      "author": "Ryan_S",
+      "context_tags": [],
+      "caption": "2025 team 180 — source image from post 1 (2025-05-13). Context tags identify the discussion, not a verified component label.",
+      "review": "Source-linked extraction; mechanism identity not individually visually audited",
+      "asset": "f106ef9dfeef9051ff.jpg",
+      "id": "9dde1960b2a0199348",
+      "visual_review": "Contact-sheet inspection: technical figure or robot view; dimensions and detailed identity not certified",
+      "depicted_team_status": "Source-associated; exact depicted version/component requires original context",
+      "source_context_not_component_label": true,
+      "path": "images/f106ef9dfeef9051ff.jpg",
+      "media_type": "image/jpeg",
+      "width_px": 800,
+      "height_px": 415,
+      "bytes": 54710,
+      "sha256": "13b6ede6efa3c0fb603b2e0915278ae8136ca2b01e3c05925614811d5523c323",
+      "path_base": "corpus_root",
+      "reader_asset_id": "9dde1960b2a0199348",
+      "reader_url": "index.html#image=9dde1960b2a0199348",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2025-180",
+    "year": 2025,
+    "team": 180,
+    "epa_rank": 24,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"180\" \"2025\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 19,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"180\" \"2025\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2025-180:construction",
+    "study6-2025-180:team_stated_reason",
+    "study6-2025-180:engineering_analysis",
+    "study6-2025-180:recommended_validation",
+    "study6-2025-180:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

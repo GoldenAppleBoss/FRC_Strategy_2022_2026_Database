@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "id": "2024-3478",
+  "year": 2024,
+  "team": 3478,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2024.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2024,
+    "team": 3478,
+    "robot": "LamBot 2024",
+    "primary": [
+      "https://youtu.be/cXPduxI0fCU"
+    ],
+    "architecture": "Deployed collector, multi-roller transfer and pivoting shooter on an amp/trap elevator.",
+    "subsystems": {
+      "drivetrain": "Kraken swerve platform.",
+      "intake": "Roller collector with material changes to improve grip.",
+      "transfer": "Several distance sensors stage notes consistently before launch.",
+      "scoring": "Pivoted compliant-wheel launcher; elevator raises it for amp/trap.",
+      "endgame": "Independent hooks with correction for uneven climbing; hook position chosen to tip toward the trap.",
+      "controls": "Two Limelights update odometry; magnetic limits protect climb motion."
+    },
+    "versions": [
+      "Intake contact material changed during development. Hooks moved rearward to change suspended center-of-mass behavior."
+    ],
+    "analysis": "The hanging orientation is part of the scoring geometry. Moving the hook relative to the mass distribution can solve trap access more directly than adding another scoring joint.",
+    "limits": [
+      "Intermediate undocumented changes are not inferred; specifications and plans retain their source context."
+    ],
+    "deep_context": "",
+    "images": [],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "id": "2024-3478",
+    "team_name": "PrepaTec - LamBot",
+    "epa_rank": 17,
+    "epa": 48.0,
+    "epa_pre_champs": 41.19,
+    "epa_breakdown": {
+      "total_points": 48.0,
+      "auto_points": 14.24,
+      "teleop_points": 27.68,
+      "endgame_points": 6.07,
+      "melody_rp": 0.5682,
+      "ensemble_rp": 0.5585,
+      "tiebreaker_points": 0.17,
+      "auto_leave_points": 1.89,
+      "auto_note_points": 12.35,
+      "teleop_note_points": 27.68,
+      "speaker_points": 36.4,
+      "amplified_notes": 4.95,
+      "endgame_park_points": 0.19,
+      "endgame_on_stage_points": 2.7,
+      "endgame_harmony_points": -0.06,
+      "endgame_trap_points": 3.16,
+      "endgame_spotlight_points": 0.09,
+      "rp_1": 0.5682,
+      "rp_2": 0.5585,
+      "total_note_points": 40.03
+    },
+    "game": "CRESCENDO",
+    "coverage": {
+      "drivetrain": "documented synopsis",
+      "intake": "documented synopsis",
+      "transfer": "documented synopsis",
+      "scoring": "documented synopsis",
+      "endgame": "documented synopsis",
+      "controls": "documented synopsis"
+    },
+    "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
+    "strict_acceptance": "provisional; exhaustive user acceptance gate open",
+    "source_ids": [
+      "78fb9c45040f2a34"
+    ],
+    "tags": [
+      "climb",
+      "elevator",
+      "vision / automation"
+    ],
+    "binder_audit": {
+      "robot_id": "2024-3478",
+      "year": 2024,
+      "team": 3478,
+      "epa_rank": 17,
+      "status": "no_verified_binder_located_in_search_passes",
+      "search": {
+        "query": "\"3478\" \"2024\" FRC robot technical binder",
+        "engine": "web search, initial discovery pass",
+        "batch": 17,
+        "review_date": "2026-10-25"
+      },
+      "additional_searches": [
+        {
+          "query": "\"3478\" \"2024\" \"binder\" robotics",
+          "engine": "second search engine, Chief Delphi domain",
+          "review_date": "2026-10-25"
+        }
+      ],
+      "reviewed_source_ids": [],
+      "technical_note_ids": [],
+      "candidate_attempts": [],
+      "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "study6-2024-3478"
+    ]
+  },
+  "technical_notes": [
+    {
+      "robot_id": "2024-3478",
+      "title": "Consistent staging is needed before a multi-pose launcher can be accurate",
+      "start_seconds": 77,
+      "end_seconds": 270,
+      "construction": "A roller collector feeds a compliant-wheel launcher that rises on an elevator for amp and trap. Three distance sensors establish note position; magnetic switches protect climb travel. Trap execution changes hooks, elevator height and launcher angle in a defined sequence.",
+      "team_stated_reason": "The source explicitly connects the distance sensors to placing the note consistently and the limit devices to preventing mechanism damage. More exact intake material/ratio details are not established by the selected caption passages.",
+      "engineering_analysis": "One launcher serving several targets reduces duplicate release hardware but changes gravity, retention and moving mass across poses. A correct angle table assumes a repeatable note position. The climb/trap sequence must also avoid moving the launcher through the chain or frame while partially loaded.",
+      "recommended_validation": "Test staged-note position spread, sensor disagreement and retention during elevator motion. Validate the complete trap sequence with realistic swing and lateral approach error.",
+      "limitations": "Focused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.",
+      "id": "study6-2024-3478",
+      "year": 2024,
+      "binder_id": null,
+      "subsystem": "architecture_and_interfaces",
+      "version_label": "Focused source snapshot; read original version distinctions",
+      "source_url": "https://youtu.be/cXPduxI0fCU",
+      "additional_sources": [],
+      "page_references": [],
+      "pdf_pages": [],
+      "image_ids": [],
+      "evidence_type": "retained_source_synopsis_plus_focused_technical_recheck",
+      "performance_status": "Team-reported values retain source conditions; no independent physical tests",
+      "source_navigation": {
+        "start_seconds": 77,
+        "end_seconds": 270,
+        "basis": "Approximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval"
+      },
+      "caption_evidence": [
+        {
+          "video_id": "cXPduxI0fCU",
+          "sha256": "af9a26be57780062d608914a9d2c591d967a22ea5d52c94586db564ef5709e77",
+          "caption_segments": 186,
+          "recheck_scope": "Selected technical passages; complete retained source account not re-certified as a fresh visual watch"
+        }
+      ],
+      "review_scope": "Focused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch."
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [],
+  "publication_version_groups": [
+    {
+      "id": "2024-3478:publication-version:1",
+      "label": "Focused source snapshot; read original version distinctions",
+      "robot_id": "2024-3478",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "study6-2024-3478"
+      ],
+      "source_urls": [
+        "https://youtu.be/cXPduxI0fCU"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "study6-2024-3478",
+      "title": "2024-3478 · Consistent staging is needed before a multi-pose launcher can be accurate",
+      "year": 2024,
+      "robot_id": "2024-3478",
+      "kind": "focused_technical_study",
+      "body": "# 2024-3478: Consistent staging is needed before a multi-pose launcher can be accurate\n\nFocused study supplement. Not a full binder/CAD review, exhaustive subsystem specification, every-version history or visual interview watch.\n\n## Published / retained construction account\n\nA roller collector feeds a compliant-wheel launcher that rises on an elevator for amp and trap. Three distance sensors establish note position; magnetic switches protect climb travel. Trap execution changes hooks, elevator height and launcher angle in a defined sequence.\n\n## Team-stated reasoning or boundary\n\nThe source explicitly connects the distance sensors to placing the note consistently and the limit devices to preventing mechanism damage. More exact intake material/ratio details are not established by the selected caption passages.\n\n## Engineering interpretation — analyst inference\n\nOne launcher serving several targets reduces duplicate release hardware but changes gravity, retention and moving mass across poses. A correct angle table assumes a repeatable note position. The climb/trap sequence must also avoid moving the launcher through the chain or frame while partially loaded.\n\n## Proposed validation — not performed\n\nTest staged-note position spread, sensor disagreement and retention during elevator motion. Validate the complete trap sequence with realistic swing and lateral approach error.\n\n## Limits\n\nFocused technical passages and the retained dossier are the evidence scope. Exact event installation, complete CAD tolerances and all intermediate revisions are not certified.\n\n## Sources and navigation\n\n- [https://youtu.be/cXPduxI0fCU](https://youtu.be/cXPduxI0fCU)\n\nApproximate navigation span for the authored discussion; selected passages and retained prior synopsis, not a continuous newly watched interval\n",
+      "source_urls": [
+        "https://youtu.be/cXPduxI0fCU"
+      ],
+      "path": "docs/research_continuation/2024-3478.md"
+    }
+  ],
+  "images": [],
+  "binder_audit": {
+    "robot_id": "2024-3478",
+    "year": 2024,
+    "team": 3478,
+    "epa_rank": 17,
+    "status": "no_verified_binder_located_in_search_passes",
+    "search": {
+      "query": "\"3478\" \"2024\" FRC robot technical binder",
+      "engine": "web search, initial discovery pass",
+      "batch": 17,
+      "review_date": "2026-10-25"
+    },
+    "additional_searches": [
+      {
+        "query": "\"3478\" \"2024\" \"binder\" robotics",
+        "engine": "second search engine, Chief Delphi domain",
+        "review_date": "2026-10-25"
+      }
+    ],
+    "reviewed_source_ids": [],
+    "technical_note_ids": [],
+    "candidate_attempts": [],
+    "interpretation": "A missing verified binder is an unresolved retrieval result, not evidence the team never published one. Existing interviews/CAD sources remain usable.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "study6-2024-3478:construction",
+    "study6-2024-3478:team_stated_reason",
+    "study6-2024-3478:engineering_analysis",
+    "study6-2024-3478:recommended_validation",
+    "study6-2024-3478:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}
