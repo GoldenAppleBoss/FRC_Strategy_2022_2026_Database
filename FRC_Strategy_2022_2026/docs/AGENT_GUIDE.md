@@ -1,3 +1,11 @@
+> Current edition 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
+
+> Owner constraints: no pneumatics; no turrets; no support-only architecture. Historical scope and completed curated 2018/2019 expansion: `docs/1833_ACTUATION_AND_HISTORY_SCOPE.md` from corpus root.
+
+> Owner correction: prioritize independently achievable RP and essential scoring independence. Physical iteration is extremely expensive; use proportionate analytical checks and targeted tests. Read `docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md` from corpus root.
+
+> 1833 override: elite primary-contributor architecture; no support-only robot; no turret. Apply `docs/1833_DESIGN_DOCTRINE.md` and `docs/DESIGN_REVIEW_PROTOCOL.md` from corpus root.
+
 > Start at `AGENTS.md` and `agent/manifest.json`. Use `scripts/query_agent.py` for literal search, then load the full packet under `agent/robot_packets/` and the entire game chapter. The new typed claim records separate source paraphrase, team reasoning/boundary, analyst inference and unperformed validation. Image paths in JSON are relative to the corpus root.
 
 # Using this corpus for robot architecture decisions

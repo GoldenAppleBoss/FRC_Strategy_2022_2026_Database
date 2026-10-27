@@ -1,0 +1,33 @@
+{
+  "team": 1833,
+  "manual_revision": null,
+  "manual_source": null,
+  "constraints": {
+    "primary_contributor": true,
+    "turret_allowed": false,
+    "pneumatics_allowed": false
+  },
+  "selected_architecture": {
+    "candidate_id": null,
+    "role": "primary_contributor",
+    "has_turret": false,
+    "has_pneumatics": false
+  },
+  "task_workbook": {
+    "path": null,
+    "worksheet_count": 1
+  },
+  "candidates": [],
+  "scenarios": [],
+  "capacity_trade_study": {
+    "options": []
+  },
+  "sensitivity_analysis": [],
+  "acceptance_requirements": [],
+  "decision_tests": [],
+  "corrections_and_open_questions": [],
+  "human_review_status": "Pending; template only, not a completed analysis",
+  "note": "Intentionally incomplete; validator must fail until substantive fields are populated.",
+  "solo_rp_analysis": {},
+  "validation_economics": {}
+}

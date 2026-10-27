@@ -7,7 +7,10 @@
   "required_reading": [
     "docs/game_2025.md",
     "docs/AGENT_GUIDE.md",
-    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
   ],
   "path_base": "corpus_root",
   "dossier": {
@@ -16,7 +19,8 @@
     "robot": "OP Robotics 2025",
     "primary": [
       "https://youtu.be/qcZ93ukPebg",
-      "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf"
+      "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+      "https://www.chiefdelphi.com/t/team-2056-op-robotics-2025-technical-binder-release/502550?page=2"
     ],
     "architecture": "Ground-fed elevator scorer that can retain coral while handling algae.",
     "subsystems": {
@@ -30,7 +34,7 @@
     "versions": [
       "First-piece starting angle changed after first event; continued path, handoff and alignment optimization produced the reported five-piece routine."
     ],
-    "analysis": "The architecture is a coordinated logistics system: two human players supply floor-fed coral, a wide intake removes orientation cost, and independent storage permits useful algae work during a coral route. Five-piece autonomous is the result of minimizing many delays, not just elevator speed.",
+    "analysis": "The architecture is a coordinated logistics system: two human players supply floor-fed coral, a wide intake removes orientation cost, and independent storage permits useful algae work during a coral route. Five-piece autonomous is the result of minimizing many delays, not just elevator speed. New 1833 design-transfer study: docs/context/1833-reference-2025-2056.md. Historical success does not waive the current no-support/no-turret mandate or certify causal performance.",
     "limits": [
       "Only the reviewed published configurations are established; intermediate changes may be undocumented."
     ],
@@ -320,7 +324,9 @@
     "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
     "strict_acceptance": "provisional; exhaustive user acceptance gate open",
     "source_ids": [
-      "04dfc0882aae5b2e"
+      "04dfc0882aae5b2e",
+      "cb12c402d721aad7",
+      "1833-research-9ccaed857ebd52dc"
     ],
     "tags": [
       "climb",
@@ -388,7 +394,8 @@
       "exhaustive_binder_discovery": false,
       "every_competition_version_certified": false
     },
-    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height."
+    "strategic_priority": "Optimize marginal alliance work: branch coverage, L1 placement/packing, algae, supply lanes, autonomous compatibility and reliable endgame. Do not rank robot quality by coral height.",
+    "optimization_study": "docs/context/1833-reference-2025-2056.md"
   },
   "technical_notes": [
     {
@@ -705,6 +712,20 @@
         "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf"
       ],
       "path": "docs/technical/2025-2056.md"
+    },
+    {
+      "id": "1833-reference-2025-2056",
+      "title": "2025-2056 optimization reference for elite simple architecture",
+      "kind": "robot_optimization_study",
+      "year": 2025,
+      "robot_id": "2025-2056",
+      "related_robot_id": "2025-2056",
+      "body": "## 2056, 2025 LIGHTNING: familiar functions, engineered interfaces\n\nPrimary facts: OP describes choosing architecture early and selecting the simplest concept it thought could meet competitive goals, while noting that the robot was more demanding than desired and lacked a hanger at its first event. Its 33-page binder documents a ground intake, separate coral straightening/handoff stages, elevator, gripper and climb, with explicit sensing, service and stiffness details. Software and fabrication are documented as part of the robot, not omitted from the complexity account. The existing corpus already contains five technical notes from this binder. In this pass all 33 pages' extracted text was read; that does not certify every drawing visually. The source publication requests that its original documents not be rehosted; this edition links them and retains authored research notes rather than adding the source PDF.\n\n1833 transfer analysis: a concept can be stated as an intake, elevator and wrist without being an easy robot to commission. The high-level simplicity resides in a short functional chain with clear ownership of each transformation, not in pretending that orientation, capture or controls are trivial. Decompose a coral cycle into acquisition, orientation, handoff, clearance, elevation, approach, release and retreat. Observe which stages can overlap without compromising retained state. An indexed piece that arrives consistently can save both actuator travel and repeated driver correction.\n\nThe relevant design comparison is not vacuum versus rollers in isolation. It is whether the complete capture-to-release system tolerates the expected piece poses and contacts while achieving repeatable short cycles. Evaluate a simpler effector's potential benefit against the additional upstream alignment it demands. A more constrained handoff may reduce end-effector burden but increase throat-jam sensitivity. Deliberately choose where the tolerance belongs and measure success across that interface. Similarly, service access and wiring restraint are output-preserving design functions; a nominally faster mechanism that repeatedly loses sensors or requires lengthy disassembly can have lower event contribution.\n\nSources: https://www.chiefdelphi.com/t/team-2056-op-robotics-2025-technical-binder-release/502550?page=2 (post 29 and controls discussion); https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf (physical pp 5,7,9,11,13,15,17,19,21,25,28); https://www.chiefdelphi.com/t/team-2056-op-robotics-2025-technical-binder-release/502550 (post 28). Exact construction remains in the five existing technical notes and primary publication.\n\n",
+      "source_urls": [
+        "https://2056.ca/wp-content/uploads/2025/05/OPR25-2056-Technical-Binder.pdf",
+        "https://www.chiefdelphi.com/t/team-2056-op-robotics-2025-technical-binder-release/502550?page=2"
+      ],
+      "path": "docs/context/1833-reference-2025-2056.md"
     }
   ],
   "images": [

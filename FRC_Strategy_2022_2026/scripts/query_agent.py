@@ -18,12 +18,12 @@ def main():
     r = sub.add_parser('read'); r.add_argument('id')
     r = sub.add_parser('packet'); r.add_argument('robot')
     r = sub.add_parser('images'); r.add_argument('--robot', required=True)
-    r = sub.add_parser('game'); r.add_argument('year', type=int, choices=range(2022,2027))
+    r = sub.add_parser('game'); r.add_argument('year', type=int, choices=[2018,2019,*range(2022,2027)])
     args = ap.parse_args()
     if args.command == 'packet':
-        if not re.fullmatch(r'202[2-6]-\d+', args.robot): ap.error('Use YEAR-TEAM, such as 2026-2910')
+        if not re.fullmatch(r'(?:201[89]|202[2-6])-\d+', args.robot): ap.error('Use a supported YEAR-TEAM, such as 2019-1323 or 2026-2910')
         p=ROOT/'agent/robot_packets'/(args.robot+'.json')
-        if not p.exists(): ap.error('Robot is not in the selected 125-entry corpus')
+        if not p.exists(): ap.error('Robot is not in this corpus; inspect agent/manifest.json and the coverage audit')
         emit(json.loads(p.read_text())); return
     if args.command == 'game':
         print((ROOT/f'docs/game_{args.year}.md').read_text()); return

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "edition": "1833 elite primary architecture and quality gates",
+  "normalized_tables_equal": 24,
+  "table_counts": {
+    "benchmarks": 58,
+    "binder_audit": 128,
+    "video_reviews": 44,
+    "binder_sources": 29,
+    "context_documents": 192,
+    "cad_code_links": 375,
+    "technical_mechanisms": 251,
+    "sources": 4272,
+    "team_events": 4021,
+    "mechanism_images": 508,
+    "source_posts": 3499,
+    "subsystems": 768,
+    "robot_sources": 526,
+    "versions": 219,
+    "tower_summary_2026": 8,
+    "seasons": 5,
+    "technical_parameters": 121,
+    "season_epa": 17330,
+    "matches": 7995,
+    "metadata": 65,
+    "selection_audit": 157,
+    "events": 75,
+    "einstein_reviews": 80,
+    "robot_dossiers": 128
+  },
+  "original_image_files_unchanged": 570,
+  "image_associations": 508,
+  "reader_logic_checks": 31,
+  "design_validator_structural_tests": 10,
+  "original_dunktank_workbook_audit": {
+    "task_rows": 58,
+    "repeated_dependency_cells_detected": 50
+  },
+  "rubric_checks": 50,
+  "authored_evaluation_prompts": 35,
+  "source_evidence": "Research scopes and blocked/deleted/unavailable sources recorded in data/1833_research_ledger.jsonl",
+  "limits": "No new model reasoning benchmark, physical tests, full CAD audit, fresh browser layout audit or visual match review claimed. Historical browser report remains a prior checkpoint."
+}

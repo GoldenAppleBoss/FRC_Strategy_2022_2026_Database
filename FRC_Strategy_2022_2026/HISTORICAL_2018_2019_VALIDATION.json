@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "normalized_tables": 24,
+  "historical_robot_years": 13,
+  "new_notes": 52,
+  "new_image_references": 61,
+  "game_chapters": 7,
+  "performance_claim": "No new physical tests, model reasoning evaluation, video viewing or exhaustive version audit",
+  "scope": "Normalized SQLite/export equality, source/crop metadata and declared cohort checks; image/packet/search checks in AGENT_VALIDATION.json"
+}

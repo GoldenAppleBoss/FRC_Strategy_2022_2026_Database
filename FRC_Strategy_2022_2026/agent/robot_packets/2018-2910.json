@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "id": "2018-2910",
+  "year": 2018,
+  "team": 2910,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2018.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2018,
+    "team": 2910,
+    "team_name": "Jack in the Bot",
+    "robot": "Kayla",
+    "primary": [
+      "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095"
+    ],
+    "architecture": "A swerve robot with a cube elevator is documented by its CAD release and technical team replies. The strongest reviewed details concern protected internal belt rigging, separate shift/lock functions, absolute azimuth sensing and auxiliary traversal wheels. Public render geometry is a reference; complete CAD dimensions and every intake revision are not audited here.",
+    "analysis": "Kayla illustrates the distinction between elegant packaging and service cost. A hidden belt run protects against snagging yet the team estimated a substantial replacement procedure. The source also gives a precise material/failure sequence rather than a generic claim that belts always survive climbing.",
+    "id": "2018-2910",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "FIRST POWER UP",
+    "subsystems": {
+      "drivetrain": "The team identifies water-jetted 6061-T6 auxiliary wheels intended to reduce bottoming when moving sideways across the platform. It confirms absolute azimuth encoders and discusses module bearing selection. The release does not supply a complete, independently checked obstacle-success rate.",
+      "intake": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "transfer": "Team replies describe a belt routed inside elevator tubes. A build-season fiberglass-cord belt failed at a sharp carriage attachment during a hard-stop event. The team removed the edge and changed to steel tensile cord, reporting no further such failure at the time. A replacement was estimated at about 45 minutes. Separate cylinders shift lift gearing and lock the elevator after climbing.",
+      "scoring": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "endgame": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "controls": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent."
+    },
+    "coverage": {
+      "drivetrain": "documented selected primary technical study; details/version limits apply",
+      "intake": "partial / unresolved selected-source detail",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "partial / unresolved selected-source detail",
+      "endgame": "partial / unresolved selected-source detail",
+      "controls": "partial / unresolved selected-source detail"
+    },
+    "versions": [
+      "Kayla released 2018 CAD discussion"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-cc4dc55c9c8d5ee8"
+    ],
+    "tags": [
+      "historical 2018",
+      "curated primary technical study",
+      "transfer",
+      "drivetrain"
+    ],
+    "binder_audit": {
+      "robot_id": "2018-2910",
+      "year": 2018,
+      "team": 2910,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "2910 2018 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-cc4dc55c9c8d5ee8"
+      ],
+      "technical_note_ids": [
+        "history-2018-2910-note-1",
+        "history-2018-2910-note-2"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2018-2910-note-1",
+      "history-2018-2910-note-2"
+    ],
+    "images": [
+      {
+        "id": "history-2018-2910-source",
+        "robot_id": "2018-2910",
+        "kind": "team_release_original",
+        "path": "images/history_2018-2910_source.jpg",
+        "source_url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/1/0/1097d4bd107e4a3976435a122d5dc732e27151a9.jpeg",
+        "caption": "2018-2910 · Kayla CAD release whole-robot render. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+        "publisher_label": "Kayla CAD release whole-robot render",
+        "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+        "review_status": "Original image visually inspected 2026-10-27",
+        "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+        "whole_robot_photo": true,
+        "rights": "Credited technical reference; copyright remains with original publisher.",
+        "sha256": "13c8b7bfd368cca53a7bc8e9a30043f5dd5dc9595e7b1e63b2049fe44f11c5d5",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2018-2910 — Jack in the Bot: Kayla\n\nA swerve robot with a cube elevator is documented by its CAD release and technical team replies. The strongest reviewed details concern protected internal belt rigging, separate shift/lock functions, absolute azimuth sensing and auxiliary traversal wheels. Public render geometry is a reference; complete CAD dimensions and every intake revision are not audited here.\n\n## Strategic interpretation\n\nKayla illustrates the distinction between elegant packaging and service cost. A hidden belt run protects against snagging yet the team estimated a substantial replacement procedure. The source also gives a precise material/failure sequence rather than a generic claim that belts always survive climbing.\n\n## Protected belt-in-tube elevator and failure correction\n\nVersion: Kayla released 2018 CAD discussion. Source: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 6: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6\n- Post 13: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/13\n\n### Published construction or code\n\nTeam replies describe a belt routed inside elevator tubes. A build-season fiberglass-cord belt failed at a sharp carriage attachment during a hard-stop event. The team removed the edge and changed to steel tensile cord, reporting no further such failure at the time. A replacement was estimated at about 45 minutes. Separate cylinders shift lift gearing and lock the elevator after climbing.\n\n### Team rationale or evidence boundary\n\nProtect the drive path from snagging and avoid managing cable tracking on a spool; the author also says the initial CAD arrangement seemed workable and was built.\n\n### Engineering interpretation\n\nDo not rewrite this as a fully optimized belt selection study. Two changes occurred together, so the failure account does not isolate belt material from the eliminated cut edge. Service labor is part of architecture cost even if replacement is mechanically straightforward. For 1833, the useful geometric routing does not permit copying pneumatic shift/lock actuation. Derive whether one fixed electric reduction plus a positive latch can cover both duties, or whether a separate climb drive is warranted.\n\n### Proposed validation — not performed\n\nInspect terminations, bend radii, hard-stop control and access for threading replacement. Estimate a realistic recovery time and verify the new load/actuation envelope.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Kayla CAD release whole-robot render](../../images/history_2018-2910_source.jpg)\n\n## Sideways platform traversal and absolute module position\n\nVersion: Kayla released 2018 CAD discussion. Source: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 6: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6\n- Post 8: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/8\n- Post 18: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/18\n- Post 19: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/19\n\n### Published construction or code\n\nThe team identifies water-jetted 6061-T6 auxiliary wheels intended to reduce bottoming when moving sideways across the platform. It confirms absolute azimuth encoders and discusses module bearing selection. The release does not supply a complete, independently checked obstacle-success rate.\n\n### Team rationale or evidence boundary\n\nAvoid getting stranded during sideways travel and retain known module position between matches.\n\n### Engineering interpretation\n\nSwerve enables lateral motion but does not erase chassis breakover geometry. A belly support that works in one direction may expose another edge or reduce traction when loaded. Absolute position also needs a valid physical offset and a detectable sensor fault; it is not proof calibration is unnecessary. The transferable decision is to check the motion direction against field obstacles and preserve known heading at startup.\n\n### Proposed validation — not performed\n\nUse coarse contact geometry for every traversal orientation and the expected lift state. Validate the uncertain high-centering case; verify sensor offset and failure recovery separately from the mechanical bearing design.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Kayla CAD release whole-robot render](../../images/history_2018-2910_source.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "transfer",
+      "title": "Protected belt-in-tube elevator and failure correction",
+      "version_label": "Kayla released 2018 CAD discussion",
+      "pdf_pages": [],
+      "construction": "Team replies describe a belt routed inside elevator tubes. A build-season fiberglass-cord belt failed at a sharp carriage attachment during a hard-stop event. The team removed the edge and changed to steel tensile cord, reporting no further such failure at the time. A replacement was estimated at about 45 minutes. Separate cylinders shift lift gearing and lock the elevator after climbing.",
+      "team_stated_reason": "Protect the drive path from snagging and avoid managing cable tracking on a spool; the author also says the initial CAD arrangement seemed workable and was built.",
+      "engineering_analysis": "Do not rewrite this as a fully optimized belt selection study. Two changes occurred together, so the failure account does not isolate belt material from the eliminated cut edge. Service labor is part of architecture cost even if replacement is mechanically straightforward. For 1833, the useful geometric routing does not permit copying pneumatic shift/lock actuation. Derive whether one fixed electric reduction plus a positive latch can cover both duties, or whether a separate climb drive is warranted.",
+      "recommended_validation": "Inspect terminations, bend radii, hard-stop control and access for threading replacement. Estimate a realistic recovery time and verify the new load/actuation envelope.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095",
+      "id": "history-2018-2910-note-1",
+      "robot_id": "2018-2910",
+      "year": 2018,
+      "binder_id": "history-publication-2018-2910",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6",
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/13"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-2910-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 6,
+          "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6"
+        },
+        {
+          "post_number": 13,
+          "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/13"
+        }
+      ]
+    },
+    {
+      "subsystem": "drivetrain",
+      "title": "Sideways platform traversal and absolute module position",
+      "version_label": "Kayla released 2018 CAD discussion",
+      "pdf_pages": [],
+      "construction": "The team identifies water-jetted 6061-T6 auxiliary wheels intended to reduce bottoming when moving sideways across the platform. It confirms absolute azimuth encoders and discusses module bearing selection. The release does not supply a complete, independently checked obstacle-success rate.",
+      "team_stated_reason": "Avoid getting stranded during sideways travel and retain known module position between matches.",
+      "engineering_analysis": "Swerve enables lateral motion but does not erase chassis breakover geometry. A belly support that works in one direction may expose another edge or reduce traction when loaded. Absolute position also needs a valid physical offset and a detectable sensor fault; it is not proof calibration is unnecessary. The transferable decision is to check the motion direction against field obstacles and preserve known heading at startup.",
+      "recommended_validation": "Use coarse contact geometry for every traversal orientation and the expected lift state. Validate the uncertain high-centering case; verify sensor offset and failure recovery separately from the mechanical bearing design.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095",
+      "id": "history-2018-2910-note-2",
+      "robot_id": "2018-2910",
+      "year": 2018,
+      "binder_id": "history-publication-2018-2910",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6",
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/8",
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/18",
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/19"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-2910-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 6,
+          "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6"
+        },
+        {
+          "post_number": 8,
+          "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/8"
+        },
+        {
+          "post_number": 18,
+          "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/18"
+        },
+        {
+          "post_number": 19,
+          "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/19"
+        }
+      ]
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [
+    {
+      "id": "history-publication-2018-2910",
+      "robot_id": "2018-2910",
+      "title": "2018-2910 Kayla primary technical release/discussion",
+      "url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095",
+      "format": "team_discussion",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "first_party_technical_discussion"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2018-2910:publication-version:1",
+      "label": "Kayla released 2018 CAD discussion",
+      "robot_id": "2018-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-2910-note-1",
+        "history-2018-2910-note-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2018-2910",
+      "title": "2018-2910 Jack in the Bot — technical study",
+      "year": 2018,
+      "robot_id": "2018-2910",
+      "kind": "historical_technical_study",
+      "body": "# 2018-2910 — Jack in the Bot: Kayla\n\nA swerve robot with a cube elevator is documented by its CAD release and technical team replies. The strongest reviewed details concern protected internal belt rigging, separate shift/lock functions, absolute azimuth sensing and auxiliary traversal wheels. Public render geometry is a reference; complete CAD dimensions and every intake revision are not audited here.\n\n## Strategic interpretation\n\nKayla illustrates the distinction between elegant packaging and service cost. A hidden belt run protects against snagging yet the team estimated a substantial replacement procedure. The source also gives a precise material/failure sequence rather than a generic claim that belts always survive climbing.\n\n## Protected belt-in-tube elevator and failure correction\n\nVersion: Kayla released 2018 CAD discussion. Source: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 6: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6\n- Post 13: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/13\n\n### Published construction or code\n\nTeam replies describe a belt routed inside elevator tubes. A build-season fiberglass-cord belt failed at a sharp carriage attachment during a hard-stop event. The team removed the edge and changed to steel tensile cord, reporting no further such failure at the time. A replacement was estimated at about 45 minutes. Separate cylinders shift lift gearing and lock the elevator after climbing.\n\n### Team rationale or evidence boundary\n\nProtect the drive path from snagging and avoid managing cable tracking on a spool; the author also says the initial CAD arrangement seemed workable and was built.\n\n### Engineering interpretation\n\nDo not rewrite this as a fully optimized belt selection study. Two changes occurred together, so the failure account does not isolate belt material from the eliminated cut edge. Service labor is part of architecture cost even if replacement is mechanically straightforward. For 1833, the useful geometric routing does not permit copying pneumatic shift/lock actuation. Derive whether one fixed electric reduction plus a positive latch can cover both duties, or whether a separate climb drive is warranted.\n\n### Proposed validation — not performed\n\nInspect terminations, bend radii, hard-stop control and access for threading replacement. Estimate a realistic recovery time and verify the new load/actuation envelope.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Kayla CAD release whole-robot render](../../images/history_2018-2910_source.jpg)\n\n## Sideways platform traversal and absolute module position\n\nVersion: Kayla released 2018 CAD discussion. Source: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 6: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/6\n- Post 8: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/8\n- Post 18: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/18\n- Post 19: https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095/19\n\n### Published construction or code\n\nThe team identifies water-jetted 6061-T6 auxiliary wheels intended to reduce bottoming when moving sideways across the platform. It confirms absolute azimuth encoders and discusses module bearing selection. The release does not supply a complete, independently checked obstacle-success rate.\n\n### Team rationale or evidence boundary\n\nAvoid getting stranded during sideways travel and retain known module position between matches.\n\n### Engineering interpretation\n\nSwerve enables lateral motion but does not erase chassis breakover geometry. A belly support that works in one direction may expose another edge or reduce traction when loaded. Absolute position also needs a valid physical offset and a detectable sensor fault; it is not proof calibration is unnecessary. The transferable decision is to check the motion direction against field obstacles and preserve known heading at startup.\n\n### Proposed validation — not performed\n\nUse coarse contact geometry for every traversal orientation and the expected lift state. Validate the uncertain high-centering case; verify sensor offset and failure recovery separately from the mechanical bearing design.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Kayla CAD release whole-robot render](../../images/history_2018-2910_source.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095"
+      ],
+      "path": "docs/historical/2018-2910.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2018-2910-source",
+      "robot_id": "2018-2910",
+      "kind": "team_release_original",
+      "path": "images/history_2018-2910_source.jpg",
+      "source_url": "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/1/0/1097d4bd107e4a3976435a122d5dc732e27151a9.jpeg",
+      "caption": "2018-2910 · Kayla CAD release whole-robot render. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+      "publisher_label": "Kayla CAD release whole-robot render",
+      "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+      "review_status": "Original image visually inspected 2026-10-27",
+      "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+      "whole_robot_photo": true,
+      "rights": "Credited technical reference; copyright remains with original publisher.",
+      "sha256": "13c8b7bfd368cca53a7bc8e9a30043f5dd5dc9595e7b1e63b2049fe44f11c5d5",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 4315,
+      "height_px": 4315,
+      "bytes": 860248,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2910-source",
+      "reader_url": "index.html#image=history-2018-2910-source",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2018-2910",
+    "year": 2018,
+    "team": 2910,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "2910 2018 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-cc4dc55c9c8d5ee8"
+    ],
+    "technical_note_ids": [
+      "history-2018-2910-note-1",
+      "history-2018-2910-note-2"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2018-2910-note-1:construction",
+    "history-2018-2910-note-1:team_stated_reason",
+    "history-2018-2910-note-1:engineering_analysis",
+    "history-2018-2910-note-1:recommended_validation",
+    "history-2018-2910-note-1:limitations",
+    "history-2018-2910-note-2:construction",
+    "history-2018-2910-note-2:team_stated_reason",
+    "history-2018-2910-note-2:engineering_analysis",
+    "history-2018-2910-note-2:recommended_validation",
+    "history-2018-2910-note-2:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

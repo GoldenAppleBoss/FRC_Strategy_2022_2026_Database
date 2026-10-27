@@ -1,0 +1,558 @@
+{
+  "schema_version": "1.0",
+  "id": "2019-1323",
+  "year": 2019,
+  "team": 1323,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2019.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2019,
+    "team": 1323,
+    "team_name": "MadTown Robotics",
+    "robot": "2019 competition robot (name sources conflict)",
+    "primary": [
+      "https://www.chiefdelphi.com/t/1323-elevator/358379",
+      "https://www.chiefdelphi.com/t/1323-elevator/358379?page=3",
+      "https://github.com/Team1323/2019DeepSpace",
+      "https://team1323.com/first/frc/2019-frc-season/",
+      "https://frc-events.firstinspires.org/2019/team/1323"
+    ],
+    "architecture": "The published system includes swerve drive, a three-stage internally rigged continuous elevator, wristed ball intake/transfer into a carriage, separate disk intake/scorer, and jack climbing with a shared power source. The elevator discussion supplies physical construction and tensioning rationale; a pinned public code revision supplies state sequences. Code presence is not event installation evidence. The official season page and FIRST event record disagree on the robot name, so the entry does not silently select one.",
+    "analysis": "The strongest transferable mechanism is a compact lift with explicit tension control on both up and return runs. Do not turn a preliminary holding-current estimate into a verified specification, or mislabel a 3310 picture in the same discussion as 1323. Source-name disagreement is retained rather than silently resolved. The selected code demonstrates that raw roller speed is only one part of output: acquisition, feeding, confirmed carriage possession, vision approach and ejection are explicitly sequenced. The power takeoff couples hatch-intake and jack duties; simplification by motor reuse also introduces a mutually exclusive operating state. The late public code snapshot is not certified as the exact championship binary.",
+    "id": "2019-1323",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "DESTINATION: DEEP SPACE",
+    "subsystems": {
+      "drivetrain": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "intake": "The ball acquisition state coordinates lift/wrist pose, starts the floor intake and waits for ball ownership. The feeding state runs the carriage receiver with intake feed until the carriage’s ball condition is met, then stops the intake/receiver. Disk handling separately sequences ground capture, delivery, scorer detection, lift movement and holding. Sensor-based and timed transitions are both present.",
+      "transfer": "Reply 17 describes two pull-up and two return string runs, four ratchet wrenches used for individual tension adjustment, and two bottom spools geared to turn oppositely. Initially tensioning only the pull side allowed loose return runs over time. Three stages provide travel plus adequate overlap at high rocket poses.",
+      "scoring": "The ball-tracking state first requests a lift height within named vision-visible ranges, starts swerve target tracking, then adjusts toward a scoring height and waits for tracking before issuing the final lift/ejection sequence. Disk scoring includes an eject request and a backing trajectory. These are code-level requests, not a match success count.",
+      "endgame": "Jacks obtains its motor controller from DiskIntake and uses a solenoid-controlled power takeoff. Shifting changes which subsystem may use the motor and reconfigures control/feedback. Jack position requests require available power and a connected sensor. Climb sequences coordinate wrist gearing/angle, intake climb/pull states, lift position and chassis motion.",
+      "controls": "Reply 45 reports two 775pros, continuous rigging and no constant-force springs, while explicitly treating about five amps holding current as something to confirm. Reply 52 later reports one amp per motor, two total. A picture in the first page is explicitly corrected by another participant as 3310’s 2018 robot."
+    },
+    "coverage": {
+      "drivetrain": "partial / unresolved selected-source detail",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "documented selected primary technical study; details/version limits apply",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "documented selected primary technical study; details/version limits apply"
+    },
+    "versions": [
+      "MadTown 2019 elevator primary discussion",
+      "MadTown 2019 elevator discussion and later reply",
+      "MadTown public 2019 code snapshot 13d5d4ac56c2"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-db96751b767dbf86",
+      "history-source-e26b954acf34e830",
+      "history-source-45db36a2a9521bed",
+      "history-source-0abbbd978b4bca74",
+      "history-source-85cb4943f843a086"
+    ],
+    "tags": [
+      "historical 2019",
+      "curated primary technical study",
+      "transfer",
+      "controls",
+      "intake",
+      "scoring",
+      "endgame"
+    ],
+    "binder_audit": {
+      "robot_id": "2019-1323",
+      "year": 2019,
+      "team": 1323,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "1323 2019 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-db96751b767dbf86",
+        "history-source-e26b954acf34e830",
+        "history-source-45db36a2a9521bed",
+        "history-source-0abbbd978b4bca74",
+        "history-source-85cb4943f843a086"
+      ],
+      "technical_note_ids": [
+        "history-2019-1323-note-1",
+        "history-2019-1323-note-2",
+        "history-2019-1323-note-3",
+        "history-2019-1323-note-4",
+        "history-2019-1323-note-5"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2019-1323-note-1",
+      "history-2019-1323-note-2",
+      "history-2019-1323-note-3",
+      "history-2019-1323-note-4",
+      "history-2019-1323-note-5"
+    ],
+    "images": [
+      {
+        "id": "history-2019-1323-source",
+        "robot_id": "2019-1323",
+        "kind": "team_release_original",
+        "path": "images/history_2019-1323_source.jpg",
+        "source_url": "https://team1323.com/first/frc/2019-frc-season/",
+        "image_url": "https://team1323.com/wp-content/uploads/2021/11/DSC01749-scaled.jpg",
+        "caption": "2019-1323 · 2019 season-page photograph: elevator, wrist and swerve packaging. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+        "publisher_label": "2019 season-page photograph: elevator, wrist and swerve packaging",
+        "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+        "review_status": "Original image visually inspected 2026-10-27",
+        "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+        "whole_robot_photo": true,
+        "rights": "Credited technical reference; copyright remains with original publisher.",
+        "sha256": "9f5a8cbc0db95ce50d6819a865d3d5876423e3cbf0b760691f6d0c6d30e89ab9",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2019-1323 — MadTown Robotics: 2019 competition robot (name sources conflict)\n\nThe published system includes swerve drive, a three-stage internally rigged continuous elevator, wristed ball intake/transfer into a carriage, separate disk intake/scorer, and jack climbing with a shared power source. The elevator discussion supplies physical construction and tensioning rationale; a pinned public code revision supplies state sequences. Code presence is not event installation evidence. The official season page and FIRST event record disagree on the robot name, so the entry does not silently select one.\n\n## Strategic interpretation\n\nThe strongest transferable mechanism is a compact lift with explicit tension control on both up and return runs. Do not turn a preliminary holding-current estimate into a verified specification, or mislabel a 3310 picture in the same discussion as 1323. Source-name disagreement is retained rather than silently resolved. The selected code demonstrates that raw roller speed is only one part of output: acquisition, feeding, confirmed carriage possession, vision approach and ejection are explicitly sequenced. The power takeoff couples hatch-intake and jack duties; simplification by motor reuse also introduces a mutually exclusive operating state. The late public code snapshot is not certified as the exact championship binary.\n\n## Four independently tensioned cable runs and opposed spools\n\nVersion: MadTown 2019 elevator primary discussion. Source: https://www.chiefdelphi.com/t/1323-elevator/358379. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 17: https://www.chiefdelphi.com/t/1323-elevator/358379/17\n\n### Published construction or code\n\nReply 17 describes two pull-up and two return string runs, four ratchet wrenches used for individual tension adjustment, and two bottom spools geared to turn oppositely. Initially tensioning only the pull side allowed loose return runs over time. Three stages provide travel plus adequate overlap at high rocket poses.\n\n### Team rationale or evidence boundary\n\nMaintain both directions of the cable path and preserve the overlap/travel needed for level-3 scoring; the author prefers this to the team’s earlier cascading lifts.\n\n### Engineering interpretation\n\nReturn-run slack is a different problem from ultimate rope strength. Controlled bidirectional tension affects lost motion, tracking and the ability to command a consistent carriage position. More stages can provide travel and overlap but add interfaces and termination details. Internal routing protects the mechanism while making inspection and replacement access important. This is not a complete dimensioned rigging diagram and does not establish which spool geometry fits another frame.\n\n### Proposed validation — not performed\n\nDraw the complete rope topology and derive carriage displacement for spool rotation. Check preload across travel, termination access, fleet angle, effective spool radius and slack after repeated reversals.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Holding-current correction and source identity traps\n\nVersion: MadTown 2019 elevator discussion and later reply. Source: https://www.chiefdelphi.com/t/1323-elevator/358379?page=3. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 45: https://www.chiefdelphi.com/t/1323-elevator/358379/45\n- Post 52: https://www.chiefdelphi.com/t/1323-elevator/358379/52\n\n### Published construction or code\n\nReply 45 reports two 775pros, continuous rigging and no constant-force springs, while explicitly treating about five amps holding current as something to confirm. Reply 52 later reports one amp per motor, two total. A picture in the first page is explicitly corrected by another participant as 3310’s 2018 robot.\n\n### Team rationale or evidence boundary\n\nThe team author explains a preference to avoid repeatedly engaging/disengaging a brake; the reviewed discussion does not provide a current trace, load state or thermal test.\n\n### Engineering interpretation\n\nPreserve the tentative estimate and subsequent correction instead of averaging them. Even the later two-amp statement is a reported operating condition, not a universal design value. Motor current at hold depends on geometry, mass, transmission friction and control. The misidentified picture illustrates why thread membership does not establish depicted robot identity. A retrieval system must keep author, post and year attached to images and numeric claims.\n\n### Proposed validation — not performed\n\nTreat hold current as source-reported with unprovided conditions. Size a new lift from force/torque and duty cycle; verify the chosen load case and source identity before using either a photo or parameter.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Ball acquisition, confirmed handoff and hatch recovery states\n\nVersion: MadTown public 2019 code snapshot 13d5d4ac56c2. Source: https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Code Superstructure.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code BallIntake.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code BallCarriage.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code DiskIntake.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code DiskScorer.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n\n### Published construction or code\n\nThe ball acquisition state coordinates lift/wrist pose, starts the floor intake and waits for ball ownership. The feeding state runs the carriage receiver with intake feed until the carriage’s ball condition is met, then stops the intake/receiver. Disk handling separately sequences ground capture, delivery, scorer detection, lift movement and holding. Sensor-based and timed transitions are both present.\n\n### Team rationale or evidence boundary\n\nPublished code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.\n\n### Engineering interpretation\n\nA mechanism recommendation must specify which assembly owns the piece at each transition. A fast collector that only works when a carriage is in a narrow pose can bottleneck the cycle despite excellent pickup video. The code also exposes distinct ball and disk pathways, so no single generic “intake works” claim is adequate. Some methods or constants can remain from earlier hardware; this review does not equate every declared state with a competed feature. A new electric-only layout needs its own collision and possession-safe sequencing.\n\n### Proposed validation — not performed\n\nMake a state table with ownership, permitted motions, timeout and reverse/recovery conditions. Validate only the uncertain handoff or sensor discrimination after checking the geometry and legal possession limit.\n\n### Limits\n\nSelected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Swerve approach, vision-visible lift height and gated ejection\n\nVersion: MadTown public 2019 code snapshot 13d5d4ac56c2. Source: https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Code Superstructure.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code Swerve.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code Elevator.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n\n### Published construction or code\n\nThe ball-tracking state first requests a lift height within named vision-visible ranges, starts swerve target tracking, then adjusts toward a scoring height and waits for tracking before issuing the final lift/ejection sequence. Disk scoring includes an eject request and a backing trajectory. These are code-level requests, not a match success count.\n\n### Team rationale or evidence boundary\n\nPublished code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.\n\n### Engineering interpretation\n\nMechanism pose changes camera visibility, which can change alignment time. That relationship can matter more than a slightly faster bare elevator. A no-turret robot can use chassis pose control and a fixed-plane scorer, but only if the approach geometry and target visibility remain valid. A wait-for-track condition needs failure/timeout semantics; a nicely named method does not prove the robot always reaches its target under defense. Do not interpret code trajectory constants as measured cycle time or fabrication dimensions.\n\n### Proposed validation — not performed\n\nDerive the required alignment tolerance and camera coverage over the scoring path. Check what a lost target or stalled mechanism does to the request queue before adopting an equivalent control architecture.\n\n### Limits\n\nSelected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Shared disk-intake motor and jack power takeoff\n\nVersion: MadTown public 2019 code snapshot 13d5d4ac56c2. Source: https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Jacks.java. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Code Jacks.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code DiskIntake.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code Superstructure.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n\n### Published construction or code\n\nJacks obtains its motor controller from DiskIntake and uses a solenoid-controlled power takeoff. Shifting changes which subsystem may use the motor and reconfigures control/feedback. Jack position requests require available power and a connected sensor. Climb sequences coordinate wrist gearing/angle, intake climb/pull states, lift position and chassis motion.\n\n### Team rationale or evidence boundary\n\nPublished code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.\n\n### Engineering interpretation\n\nSharing motor power can reduce installed hardware while increasing state coordination and load-path requirements. It does not eliminate the mass or complexity of the PTO, support structure, sensing and safe holding. The historical shift is pneumatic and prohibited in an 1833 recommendation; replacing it may erase the original simplicity advantage. The selected code contains multiple climb paths and commented alternatives, so it cannot establish which one competed or certify a speed.\n\n### Proposed validation — not performed\n\nCompare a dedicated electric climb drive with a permitted shared-power arrangement using total mass, controls, service and failure recovery. Check mechanical support/locking separately from whether software authorizes a motor command.\n\n### Limits\n\nSelected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "transfer",
+      "title": "Four independently tensioned cable runs and opposed spools",
+      "version_label": "MadTown 2019 elevator primary discussion",
+      "pdf_pages": [],
+      "construction": "Reply 17 describes two pull-up and two return string runs, four ratchet wrenches used for individual tension adjustment, and two bottom spools geared to turn oppositely. Initially tensioning only the pull side allowed loose return runs over time. Three stages provide travel plus adequate overlap at high rocket poses.",
+      "team_stated_reason": "Maintain both directions of the cable path and preserve the overlap/travel needed for level-3 scoring; the author prefers this to the team’s earlier cascading lifts.",
+      "engineering_analysis": "Return-run slack is a different problem from ultimate rope strength. Controlled bidirectional tension affects lost motion, tracking and the ability to command a consistent carriage position. More stages can provide travel and overlap but add interfaces and termination details. Internal routing protects the mechanism while making inspection and replacement access important. This is not a complete dimensioned rigging diagram and does not establish which spool geometry fits another frame.",
+      "recommended_validation": "Draw the complete rope topology and derive carriage displacement for spool rotation. Check preload across travel, termination access, fleet angle, effective spool radius and slack after repeated reversals.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/1323-elevator/358379",
+      "id": "history-2019-1323-note-1",
+      "robot_id": "2019-1323",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1323",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/1323-elevator/358379/17"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1323-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 17,
+          "url": "https://www.chiefdelphi.com/t/1323-elevator/358379/17"
+        }
+      ]
+    },
+    {
+      "subsystem": "controls",
+      "title": "Holding-current correction and source identity traps",
+      "version_label": "MadTown 2019 elevator discussion and later reply",
+      "pdf_pages": [],
+      "construction": "Reply 45 reports two 775pros, continuous rigging and no constant-force springs, while explicitly treating about five amps holding current as something to confirm. Reply 52 later reports one amp per motor, two total. A picture in the first page is explicitly corrected by another participant as 3310’s 2018 robot.",
+      "team_stated_reason": "The team author explains a preference to avoid repeatedly engaging/disengaging a brake; the reviewed discussion does not provide a current trace, load state or thermal test.",
+      "engineering_analysis": "Preserve the tentative estimate and subsequent correction instead of averaging them. Even the later two-amp statement is a reported operating condition, not a universal design value. Motor current at hold depends on geometry, mass, transmission friction and control. The misidentified picture illustrates why thread membership does not establish depicted robot identity. A retrieval system must keep author, post and year attached to images and numeric claims.",
+      "recommended_validation": "Treat hold current as source-reported with unprovided conditions. Size a new lift from force/torque and duty cycle; verify the chosen load case and source identity before using either a photo or parameter.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/1323-elevator/358379?page=3",
+      "id": "history-2019-1323-note-2",
+      "robot_id": "2019-1323",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1323",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/1323-elevator/358379/45",
+        "https://www.chiefdelphi.com/t/1323-elevator/358379/52"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1323-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 45,
+          "url": "https://www.chiefdelphi.com/t/1323-elevator/358379/45"
+        },
+        {
+          "post_number": 52,
+          "url": "https://www.chiefdelphi.com/t/1323-elevator/358379/52"
+        }
+      ]
+    },
+    {
+      "subsystem": "intake",
+      "title": "Ball acquisition, confirmed handoff and hatch recovery states",
+      "version_label": "MadTown public 2019 code snapshot 13d5d4ac56c2",
+      "pdf_pages": [],
+      "source_url": "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java",
+      "additional_sources": [
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/BallIntake.java",
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/BallCarriage.java",
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/DiskIntake.java",
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/DiskScorer.java"
+      ],
+      "code_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+      "code_locators": [
+        "Superstructure",
+        "BallIntake",
+        "BallCarriage",
+        "DiskIntake",
+        "DiskScorer"
+      ],
+      "construction": "The ball acquisition state coordinates lift/wrist pose, starts the floor intake and waits for ball ownership. The feeding state runs the carriage receiver with intake feed until the carriage’s ball condition is met, then stops the intake/receiver. Disk handling separately sequences ground capture, delivery, scorer detection, lift movement and holding. Sensor-based and timed transitions are both present.",
+      "team_stated_reason": "Published code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.",
+      "engineering_analysis": "A mechanism recommendation must specify which assembly owns the piece at each transition. A fast collector that only works when a carriage is in a narrow pose can bottleneck the cycle despite excellent pickup video. The code also exposes distinct ball and disk pathways, so no single generic “intake works” claim is adequate. Some methods or constants can remain from earlier hardware; this review does not equate every declared state with a competed feature. A new electric-only layout needs its own collision and possession-safe sequencing.",
+      "recommended_validation": "Make a state table with ownership, permitted motions, timeout and reverse/recovery conditions. Validate only the uncertain handoff or sensor discrimination after checking the geometry and legal possession limit.",
+      "limitations": "Selected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.",
+      "id": "history-2019-1323-note-3",
+      "robot_id": "2019-1323",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1323",
+      "page_references": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1323-source"
+      ],
+      "source_locators": [
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "Superstructure.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "BallIntake.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "BallCarriage.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "DiskIntake.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "DiskScorer.java"
+        }
+      ]
+    },
+    {
+      "subsystem": "scoring",
+      "title": "Swerve approach, vision-visible lift height and gated ejection",
+      "version_label": "MadTown public 2019 code snapshot 13d5d4ac56c2",
+      "pdf_pages": [],
+      "source_url": "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java",
+      "additional_sources": [
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Swerve.java",
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Elevator.java"
+      ],
+      "code_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+      "code_locators": [
+        "Superstructure",
+        "Swerve",
+        "Elevator"
+      ],
+      "construction": "The ball-tracking state first requests a lift height within named vision-visible ranges, starts swerve target tracking, then adjusts toward a scoring height and waits for tracking before issuing the final lift/ejection sequence. Disk scoring includes an eject request and a backing trajectory. These are code-level requests, not a match success count.",
+      "team_stated_reason": "Published code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.",
+      "engineering_analysis": "Mechanism pose changes camera visibility, which can change alignment time. That relationship can matter more than a slightly faster bare elevator. A no-turret robot can use chassis pose control and a fixed-plane scorer, but only if the approach geometry and target visibility remain valid. A wait-for-track condition needs failure/timeout semantics; a nicely named method does not prove the robot always reaches its target under defense. Do not interpret code trajectory constants as measured cycle time or fabrication dimensions.",
+      "recommended_validation": "Derive the required alignment tolerance and camera coverage over the scoring path. Check what a lost target or stalled mechanism does to the request queue before adopting an equivalent control architecture.",
+      "limitations": "Selected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.",
+      "id": "history-2019-1323-note-4",
+      "robot_id": "2019-1323",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1323",
+      "page_references": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1323-source"
+      ],
+      "source_locators": [
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "Superstructure.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "Swerve.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "Elevator.java"
+        }
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "Shared disk-intake motor and jack power takeoff",
+      "version_label": "MadTown public 2019 code snapshot 13d5d4ac56c2",
+      "pdf_pages": [],
+      "source_url": "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Jacks.java",
+      "additional_sources": [
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/DiskIntake.java",
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java"
+      ],
+      "code_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+      "code_locators": [
+        "Jacks",
+        "DiskIntake",
+        "Superstructure"
+      ],
+      "construction": "Jacks obtains its motor controller from DiskIntake and uses a solenoid-controlled power takeoff. Shifting changes which subsystem may use the motor and reconfigures control/feedback. Jack position requests require available power and a connected sensor. Climb sequences coordinate wrist gearing/angle, intake climb/pull states, lift position and chassis motion.",
+      "team_stated_reason": "Published code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.",
+      "engineering_analysis": "Sharing motor power can reduce installed hardware while increasing state coordination and load-path requirements. It does not eliminate the mass or complexity of the PTO, support structure, sensing and safe holding. The historical shift is pneumatic and prohibited in an 1833 recommendation; replacing it may erase the original simplicity advantage. The selected code contains multiple climb paths and commented alternatives, so it cannot establish which one competed or certify a speed.",
+      "recommended_validation": "Compare a dedicated electric climb drive with a permitted shared-power arrangement using total mass, controls, service and failure recovery. Check mechanical support/locking separately from whether software authorizes a motor command.",
+      "limitations": "Selected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.",
+      "id": "history-2019-1323-note-5",
+      "robot_id": "2019-1323",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1323",
+      "page_references": [],
+      "evidence_type": "published_code_review",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1323-source"
+      ],
+      "source_locators": [
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "Jacks.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "DiskIntake.java"
+        },
+        {
+          "repository_revision": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+          "file": "Superstructure.java"
+        }
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "history-param-2019-1323-reply-ba876",
+      "binder_id": "history-publication-2019-1323",
+      "robot_id": "2019-1323",
+      "pdf_page": null,
+      "component": "Elevator holding current",
+      "published_parameters": "Reply45: tentative approximately5 A to be confirmed. Reply52: later report1 A per motor,2 A total. Unprovided load/thermal conditions; do not average or certify.",
+      "source_url": "https://www.chiefdelphi.com/t/1323-elevator/358379?page=3",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "history-publication-2019-1323",
+      "robot_id": "2019-1323",
+      "title": "2019-1323 2019 competition robot (name sources conflict) primary technical release/discussion",
+      "url": "https://www.chiefdelphi.com/t/1323-elevator/358379",
+      "format": "team_discussion",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "first_party_technical_discussion"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2019-1323:publication-version:1",
+      "label": "MadTown 2019 elevator primary discussion",
+      "robot_id": "2019-1323",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-1323-note-1"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/1323-elevator/358379"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-1323:publication-version:2",
+      "label": "MadTown 2019 elevator discussion and later reply",
+      "robot_id": "2019-1323",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-1323-note-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/1323-elevator/358379?page=3"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-1323:publication-version:3",
+      "label": "MadTown public 2019 code snapshot 13d5d4ac56c2",
+      "robot_id": "2019-1323",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-1323-note-3",
+        "history-2019-1323-note-4",
+        "history-2019-1323-note-5"
+      ],
+      "source_urls": [
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java",
+        "https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Jacks.java"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2019-1323",
+      "title": "2019-1323 MadTown Robotics — technical study",
+      "year": 2019,
+      "robot_id": "2019-1323",
+      "kind": "historical_technical_study",
+      "body": "# 2019-1323 — MadTown Robotics: 2019 competition robot (name sources conflict)\n\nThe published system includes swerve drive, a three-stage internally rigged continuous elevator, wristed ball intake/transfer into a carriage, separate disk intake/scorer, and jack climbing with a shared power source. The elevator discussion supplies physical construction and tensioning rationale; a pinned public code revision supplies state sequences. Code presence is not event installation evidence. The official season page and FIRST event record disagree on the robot name, so the entry does not silently select one.\n\n## Strategic interpretation\n\nThe strongest transferable mechanism is a compact lift with explicit tension control on both up and return runs. Do not turn a preliminary holding-current estimate into a verified specification, or mislabel a 3310 picture in the same discussion as 1323. Source-name disagreement is retained rather than silently resolved. The selected code demonstrates that raw roller speed is only one part of output: acquisition, feeding, confirmed carriage possession, vision approach and ejection are explicitly sequenced. The power takeoff couples hatch-intake and jack duties; simplification by motor reuse also introduces a mutually exclusive operating state. The late public code snapshot is not certified as the exact championship binary.\n\n## Four independently tensioned cable runs and opposed spools\n\nVersion: MadTown 2019 elevator primary discussion. Source: https://www.chiefdelphi.com/t/1323-elevator/358379. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 17: https://www.chiefdelphi.com/t/1323-elevator/358379/17\n\n### Published construction or code\n\nReply 17 describes two pull-up and two return string runs, four ratchet wrenches used for individual tension adjustment, and two bottom spools geared to turn oppositely. Initially tensioning only the pull side allowed loose return runs over time. Three stages provide travel plus adequate overlap at high rocket poses.\n\n### Team rationale or evidence boundary\n\nMaintain both directions of the cable path and preserve the overlap/travel needed for level-3 scoring; the author prefers this to the team’s earlier cascading lifts.\n\n### Engineering interpretation\n\nReturn-run slack is a different problem from ultimate rope strength. Controlled bidirectional tension affects lost motion, tracking and the ability to command a consistent carriage position. More stages can provide travel and overlap but add interfaces and termination details. Internal routing protects the mechanism while making inspection and replacement access important. This is not a complete dimensioned rigging diagram and does not establish which spool geometry fits another frame.\n\n### Proposed validation — not performed\n\nDraw the complete rope topology and derive carriage displacement for spool rotation. Check preload across travel, termination access, fleet angle, effective spool radius and slack after repeated reversals.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Holding-current correction and source identity traps\n\nVersion: MadTown 2019 elevator discussion and later reply. Source: https://www.chiefdelphi.com/t/1323-elevator/358379?page=3. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 45: https://www.chiefdelphi.com/t/1323-elevator/358379/45\n- Post 52: https://www.chiefdelphi.com/t/1323-elevator/358379/52\n\n### Published construction or code\n\nReply 45 reports two 775pros, continuous rigging and no constant-force springs, while explicitly treating about five amps holding current as something to confirm. Reply 52 later reports one amp per motor, two total. A picture in the first page is explicitly corrected by another participant as 3310’s 2018 robot.\n\n### Team rationale or evidence boundary\n\nThe team author explains a preference to avoid repeatedly engaging/disengaging a brake; the reviewed discussion does not provide a current trace, load state or thermal test.\n\n### Engineering interpretation\n\nPreserve the tentative estimate and subsequent correction instead of averaging them. Even the later two-amp statement is a reported operating condition, not a universal design value. Motor current at hold depends on geometry, mass, transmission friction and control. The misidentified picture illustrates why thread membership does not establish depicted robot identity. A retrieval system must keep author, post and year attached to images and numeric claims.\n\n### Proposed validation — not performed\n\nTreat hold current as source-reported with unprovided conditions. Size a new lift from force/torque and duty cycle; verify the chosen load case and source identity before using either a photo or parameter.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Ball acquisition, confirmed handoff and hatch recovery states\n\nVersion: MadTown public 2019 code snapshot 13d5d4ac56c2. Source: https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Code Superstructure.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code BallIntake.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code BallCarriage.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code DiskIntake.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code DiskScorer.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n\n### Published construction or code\n\nThe ball acquisition state coordinates lift/wrist pose, starts the floor intake and waits for ball ownership. The feeding state runs the carriage receiver with intake feed until the carriage’s ball condition is met, then stops the intake/receiver. Disk handling separately sequences ground capture, delivery, scorer detection, lift movement and holding. Sensor-based and timed transitions are both present.\n\n### Team rationale or evidence boundary\n\nPublished code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.\n\n### Engineering interpretation\n\nA mechanism recommendation must specify which assembly owns the piece at each transition. A fast collector that only works when a carriage is in a narrow pose can bottleneck the cycle despite excellent pickup video. The code also exposes distinct ball and disk pathways, so no single generic “intake works” claim is adequate. Some methods or constants can remain from earlier hardware; this review does not equate every declared state with a competed feature. A new electric-only layout needs its own collision and possession-safe sequencing.\n\n### Proposed validation — not performed\n\nMake a state table with ownership, permitted motions, timeout and reverse/recovery conditions. Validate only the uncertain handoff or sensor discrimination after checking the geometry and legal possession limit.\n\n### Limits\n\nSelected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Swerve approach, vision-visible lift height and gated ejection\n\nVersion: MadTown public 2019 code snapshot 13d5d4ac56c2. Source: https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Superstructure.java. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Code Superstructure.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code Swerve.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code Elevator.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n\n### Published construction or code\n\nThe ball-tracking state first requests a lift height within named vision-visible ranges, starts swerve target tracking, then adjusts toward a scoring height and waits for tracking before issuing the final lift/ejection sequence. Disk scoring includes an eject request and a backing trajectory. These are code-level requests, not a match success count.\n\n### Team rationale or evidence boundary\n\nPublished code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.\n\n### Engineering interpretation\n\nMechanism pose changes camera visibility, which can change alignment time. That relationship can matter more than a slightly faster bare elevator. A no-turret robot can use chassis pose control and a fixed-plane scorer, but only if the approach geometry and target visibility remain valid. A wait-for-track condition needs failure/timeout semantics; a nicely named method does not prove the robot always reaches its target under defense. Do not interpret code trajectory constants as measured cycle time or fabrication dimensions.\n\n### Proposed validation — not performed\n\nDerive the required alignment tolerance and camera coverage over the scoring path. Check what a lost target or stalled mechanism does to the request queue before adopting an equivalent control architecture.\n\n### Limits\n\nSelected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Shared disk-intake motor and jack power takeoff\n\nVersion: MadTown public 2019 code snapshot 13d5d4ac56c2. Source: https://github.com/Team1323/2019DeepSpace/blob/13d5d4ac56c2da11d112ab9ab84241c8b6878018/src/main/java/com/team1323/frc2019/subsystems/Jacks.java. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Code Jacks.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code DiskIntake.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n- Code Superstructure.java, revision 13d5d4ac56c2da11d112ab9ab84241c8b6878018\n\n### Published construction or code\n\nJacks obtains its motor controller from DiskIntake and uses a solenoid-controlled power takeoff. Shifting changes which subsystem may use the motor and reconfigures control/feedback. Jack position requests require available power and a connected sensor. Climb sequences coordinate wrist gearing/angle, intake climb/pull states, lift position and chassis motion.\n\n### Team rationale or evidence boundary\n\nPublished code establishes requested behavior and state dependencies. It does not establish the authors’ full mechanical design rationale or prove competition execution.\n\n### Engineering interpretation\n\nSharing motor power can reduce installed hardware while increasing state coordination and load-path requirements. It does not eliminate the mass or complexity of the PTO, support structure, sensing and safe holding. The historical shift is pneumatic and prohibited in an 1833 recommendation; replacing it may erase the original simplicity advantage. The selected code contains multiple climb paths and commented alternatives, so it cannot establish which one competed or certify a speed.\n\n### Proposed validation — not performed\n\nCompare a dedicated electric climb drive with a permitted shared-power arrangement using total mass, controls, service and failure recovery. Check mechanical support/locking separately from whether software authorizes a motor command.\n\n### Limits\n\nSelected published source code reviewed, not executed. Branch snapshot may include late/offseason changes, disabled paths or hardware variants. Exact event hardware, timing reliability and performance remain unverified.\n\n![2019 season-page photograph: elevator, wrist and swerve packaging](../../images/history_2019-1323_source.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/1323-elevator/358379",
+        "https://www.chiefdelphi.com/t/1323-elevator/358379?page=3",
+        "https://github.com/Team1323/2019DeepSpace",
+        "https://team1323.com/first/frc/2019-frc-season/",
+        "https://frc-events.firstinspires.org/2019/team/1323"
+      ],
+      "path": "docs/historical/2019-1323.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2019-1323-source",
+      "robot_id": "2019-1323",
+      "kind": "team_release_original",
+      "path": "images/history_2019-1323_source.jpg",
+      "source_url": "https://team1323.com/first/frc/2019-frc-season/",
+      "image_url": "https://team1323.com/wp-content/uploads/2021/11/DSC01749-scaled.jpg",
+      "caption": "2019-1323 · 2019 season-page photograph: elevator, wrist and swerve packaging. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+      "publisher_label": "2019 season-page photograph: elevator, wrist and swerve packaging",
+      "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+      "review_status": "Original image visually inspected 2026-10-27",
+      "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+      "whole_robot_photo": true,
+      "rights": "Credited technical reference; copyright remains with original publisher.",
+      "sha256": "9f5a8cbc0db95ce50d6819a865d3d5876423e3cbf0b760691f6d0c6d30e89ab9",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 2560,
+      "height_px": 1707,
+      "bytes": 542022,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2019-1323-source",
+      "reader_url": "index.html#image=history-2019-1323-source",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2019-1323",
+    "year": 2019,
+    "team": 1323,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "1323 2019 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-db96751b767dbf86",
+      "history-source-e26b954acf34e830",
+      "history-source-45db36a2a9521bed",
+      "history-source-0abbbd978b4bca74",
+      "history-source-85cb4943f843a086"
+    ],
+    "technical_note_ids": [
+      "history-2019-1323-note-1",
+      "history-2019-1323-note-2",
+      "history-2019-1323-note-3",
+      "history-2019-1323-note-4",
+      "history-2019-1323-note-5"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2019-1323-note-1:construction",
+    "history-2019-1323-note-1:team_stated_reason",
+    "history-2019-1323-note-1:engineering_analysis",
+    "history-2019-1323-note-1:recommended_validation",
+    "history-2019-1323-note-1:limitations",
+    "history-2019-1323-note-2:construction",
+    "history-2019-1323-note-2:team_stated_reason",
+    "history-2019-1323-note-2:engineering_analysis",
+    "history-2019-1323-note-2:recommended_validation",
+    "history-2019-1323-note-2:limitations",
+    "history-2019-1323-note-3:construction",
+    "history-2019-1323-note-3:team_stated_reason",
+    "history-2019-1323-note-3:engineering_analysis",
+    "history-2019-1323-note-3:recommended_validation",
+    "history-2019-1323-note-3:limitations",
+    "history-2019-1323-note-4:construction",
+    "history-2019-1323-note-4:team_stated_reason",
+    "history-2019-1323-note-4:engineering_analysis",
+    "history-2019-1323-note-4:recommended_validation",
+    "history-2019-1323-note-4:limitations",
+    "history-2019-1323-note-5:construction",
+    "history-2019-1323-note-5:team_stated_reason",
+    "history-2019-1323-note-5:engineering_analysis",
+    "history-2019-1323-note-5:recommended_validation",
+    "history-2019-1323-note-5:limitations",
+    "history-param-2019-1323-reply-ba876"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

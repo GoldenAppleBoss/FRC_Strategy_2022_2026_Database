@@ -1,0 +1,891 @@
+{
+  "schema_version": "1.0",
+  "id": "2018-254",
+  "year": 2018,
+  "team": 254,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2018.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2018,
+    "team": 254,
+    "team_name": "The Cheesy Poofs",
+    "robot": "LOCKDOWN",
+    "primary": [
+      "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "https://blog.team254.com/2018cmp/",
+      "https://blog.team254.com/2018-technical-resources-release/",
+      "https://github.com/Team254/FRC-2018-Public"
+    ],
+    "architecture": "A compact six-wheel drivebase carries a pass-through, continuously rigged elevator and wristed compliant-wheel cube intake. The elevator changes gearing between rapid scoring travel and lifting two robots. A spring-deployed hook and partner forklift create a shared endgame load path. Motion planning coordinates intake, wrist and elevator; a driver-station camera estimates scale attitude.",
+    "analysis": "The team explicitly connects world-championship ambition to first seed, low partner dependence, all-target scoring, a multi-cube scale auto and a partner lift. The historical robot shows that broad primary capability can coexist with a matchup-specific switch assignment. For 1833, extract passive/compliant geometry and electric motion architecture; the original pneumatic shifting, hook retention and fork deployment require redesign, and historical sub-second claims are not current acceptance evidence.",
+    "id": "2018-254",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "FIRST POWER UP",
+    "subsystems": {
+      "drivetrain": "The binder specifies a six-wheel West Coast layout with center drop, two nitrile traction wheels and four omnis. A flat three-MiniCIM gearbox arrangement lowers the package beneath the intake. The middle pinion receives an additional bearing plate rather than remaining unsupported against the other motors. Two drive ratios are published, along with wheel sizes and nominal speeds.",
+      "intake": "Opposed wheel groups sit on polycarbonate jaw plates. The binder reports two 775pro intake motors with 5:1 reduction and four sets of 2-inch compliant wheels per side. The wrist has a separate motor, chain reduction, adjustable tensioner, angle encoder and zeroing switch. The stated roller surface speed is approximately 32 ft/s.",
+      "transfer": "Pull-up and pull-down Dyneema cable runs act on both sides of the elevator. Spring tensioning addresses changing fleet angle. The binder specifies a 15-inch separation between pull-up runs for cube passage. The elevator gearbox has four 775pros and two ratios; the low ratio serves climbing and the high ratio serves scoring. Bearings react on different tube faces and edges to support moments.",
+      "scoring": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "endgame": "A hook pivots from a retained spring-loaded state to a hard stop. Deployable forks support a partner while the elevator/hanger arrangement raises the pair. The binder discusses keeping the combined CG under the bar and allowing a cube through the fork spacing. Cylinders retain or deploy historical components; they are not permitted actuation for a new 1833 recommendation.",
+      "controls": "The software section describes spline path generation with pure pursuit, modeled feedforward and a motion planner for intake/wrist/elevator transitions. Gravity and acceleration terms support superstructure control. A driver-station webcam estimates scale angle from the colored arm. The team’s championship report describes selecting combined switch/scale auto when switch scoring by partners was uncertain."
+    },
+    "coverage": {
+      "drivetrain": "documented selected primary technical study; details/version limits apply",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "partial / unresolved selected-source detail",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "documented selected primary technical study; details/version limits apply"
+    },
+    "versions": [
+      "LOCKDOWN published 2018 configuration"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-92a6323b99619550",
+      "history-source-6c4253a3ed9da2ba",
+      "history-source-cef4a0204a46fe80",
+      "history-source-cd477662e96fe088"
+    ],
+    "tags": [
+      "historical 2018",
+      "curated primary technical study",
+      "drivetrain",
+      "intake",
+      "transfer",
+      "endgame",
+      "controls"
+    ],
+    "binder_audit": {
+      "robot_id": "2018-254",
+      "year": 2018,
+      "team": 254,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "254 2018 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-92a6323b99619550",
+        "history-source-6c4253a3ed9da2ba",
+        "history-source-cef4a0204a46fe80",
+        "history-source-cd477662e96fe088"
+      ],
+      "technical_note_ids": [
+        "history-2018-254-note-1",
+        "history-2018-254-note-2",
+        "history-2018-254-note-3",
+        "history-2018-254-note-4",
+        "history-2018-254-note-5"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2018-254-note-1",
+      "history-2018-254-note-2",
+      "history-2018-254-note-3",
+      "history-2018-254-note-4",
+      "history-2018-254-note-5"
+    ],
+    "images": [
+      {
+        "id": "history-2018-254-p10",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p10.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=10",
+        "pdf_page": 10,
+        "crop_bounds_normalized": [
+          0.08,
+          0.19,
+          0.9,
+          0.57
+        ],
+        "caption": "2018-254 · Sprint chassis. Selected figure region from physical PDF page 10; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Sprint chassis",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "b8aa111b98fe646a448e100cc194f1ae4b138e96f9cd376807c992c01fe49539",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p11",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p11.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=11",
+        "pdf_page": 11,
+        "crop_bounds_normalized": [
+          0.08,
+          0.19,
+          0.91,
+          0.57
+        ],
+        "caption": "2018-254 · Flat drive gearbox. Selected figure region from physical PDF page 11; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Flat drive gearbox",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "10411ab6b8f702934c264449cd96bf35001cf54fe45170ad42e86137a3b008f2",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p12",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p12.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=12",
+        "pdf_page": 12,
+        "crop_bounds_normalized": [
+          0.53,
+          0.2,
+          0.94,
+          0.88
+        ],
+        "caption": "2018-254 · Pass-through elevator. Selected figure region from physical PDF page 12; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Pass-through elevator",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "84af6c3bda4d91eb5ea64a6443d74a21fa6a9dca2aa20ebc6a5366c99278108e",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p13",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p13.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=13",
+        "pdf_page": 13,
+        "crop_bounds_normalized": [
+          0.1,
+          0.2,
+          0.9,
+          0.49
+        ],
+        "caption": "2018-254 · Elevator gearbox. Selected figure region from physical PDF page 13; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Elevator gearbox",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "8b65b83b9dec0e49c635c6bd49c93824915bbda2f7c26672818df03825ad461c",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p14",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p14.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=14",
+        "pdf_page": 14,
+        "crop_bounds_normalized": [
+          0.11,
+          0.2,
+          0.92,
+          0.49
+        ],
+        "caption": "2018-254 · Wristed cube intake. Selected figure region from physical PDF page 14; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Wristed cube intake",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "ace4f975fe6a17191090229437b889e30a3a1ddbf079a6759cc17acc33949d54",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p15",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p15.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=15",
+        "pdf_page": 15,
+        "crop_bounds_normalized": [
+          0.12,
+          0.2,
+          0.79,
+          0.67
+        ],
+        "caption": "2018-254 · Hanging hook and elevator. Selected figure region from physical PDF page 15; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Hanging hook and elevator",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "13eec5b9c3d9b7c94162deecb7e30e088f2b3c946e44ca7094e0ca2a5613597e",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p16",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p16.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=16",
+        "pdf_page": 16,
+        "crop_bounds_normalized": [
+          0.1,
+          0.2,
+          0.94,
+          0.48
+        ],
+        "caption": "2018-254 · Partner forklift. Selected figure region from physical PDF page 16; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Partner forklift",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "a2c427620eac8bf92a524975853fcfb2207a5e9c20c762f31e25f5bffa5c3453",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-254-p20",
+        "robot_id": "2018-254",
+        "kind": "binder_figure",
+        "path": "images/history_2018-254_p20.jpg",
+        "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=20",
+        "pdf_page": 20,
+        "crop_bounds_normalized": [
+          0.1,
+          0.19,
+          0.91,
+          0.55
+        ],
+        "caption": "2018-254 · Scale attitude detection view. Selected figure region from physical PDF page 20; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Scale attitude detection view",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "48c2ab7ca88abecf77243d1518e52f3d950f49760b8c52f1acba107fed75633a",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2018-254 — The Cheesy Poofs: LOCKDOWN\n\nA compact six-wheel drivebase carries a pass-through, continuously rigged elevator and wristed compliant-wheel cube intake. The elevator changes gearing between rapid scoring travel and lifting two robots. A spring-deployed hook and partner forklift create a shared endgame load path. Motion planning coordinates intake, wrist and elevator; a driver-station camera estimates scale attitude.\n\n## Strategic interpretation\n\nThe team explicitly connects world-championship ambition to first seed, low partner dependence, all-target scoring, a multi-cube scale auto and a partner lift. The historical robot shows that broad primary capability can coexist with a matchup-specific switch assignment. For 1833, extract passive/compliant geometry and electric motion architecture; the original pneumatic shifting, hook retention and fork deployment require redesign, and historical sub-second claims are not current acceptance evidence.\n\n## Low-profile sprint chassis and gearbox\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [10, 11].\n\n### Published construction or code\n\nThe binder specifies a six-wheel West Coast layout with center drop, two nitrile traction wheels and four omnis. A flat three-MiniCIM gearbox arrangement lowers the package beneath the intake. The middle pinion receives an additional bearing plate rather than remaining unsupported against the other motors. Two drive ratios are published, along with wheel sizes and nominal speeds.\n\n### Team rationale or evidence boundary\n\nThe team lists short-sprint acceleration, maneuverability, platform clearance and resisting defense as design goals, while a wide wheelbase accommodates a raised load and a partner.\n\n### Engineering interpretation\n\nThe valuable feature is integration: lowering the gearbox also lowers the intake rest position, which changes acquisition geometry. Moving the pickup upward to clear motors would impose a new lifting/rolling transition on every cube. Omnis can reduce scrub while traction placement still matters for pushing and ramp contact. A new chassis must evaluate the actual support polygon and loaded CG, not copy the wheel count as a performance recipe. Reported high-gear free speed does not establish defended acceleration or stopping distance.\n\n### Proposed validation — not performed\n\nFirst check intake rest height and field-obstacle breakover in a section view. Then calculate traction/current-limited acceleration and the raised-load tipping boundary; test only the uncertain transition if it can change the layout.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Sprint chassis](../../images/history_2018-254_p10.jpg)\n\n![Flat drive gearbox](../../images/history_2018-254_p11.jpg)\n\n## Compliant jaws and reversible wrist scoring\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [14].\n\n### Published construction or code\n\nOpposed wheel groups sit on polycarbonate jaw plates. The binder reports two 775pro intake motors with 5:1 reduction and four sets of 2-inch compliant wheels per side. The wrist has a separate motor, chain reduction, adjustable tensioner, angle encoder and zeroing switch. The stated roller surface speed is approximately 32 ft/s.\n\n### Team rationale or evidence boundary\n\nAcquire either the 13-inch or 11-inch cube presentation quickly, center it with little driver precision, clamp securely during wrist motion, and score from either side.\n\n### Engineering interpretation\n\nThe pickup combines tolerance at the contact with control of the retained pose. Wheel compliance accommodates the covered crate while the wrist removes a drivebase reversal. A new piece can have a different friction/elasticity regime: 32 ft/s is not a universal optimum. More surface speed can add bounce or surface damage without reducing approach time. Separate capture authority from holding authority and from the wrist trajectory. The retained piece, jaw opening and lift pass-through must clear at the same time.\n\n### Proposed validation — not performed\n\nCompare a swept volume of the largest allowed piece in skewed poses against the uprights and bumper. If contact uncertainty remains, use one adjustable jaw fixture and measure capture, retained pose and release rather than build competing complete robots.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Wristed cube intake](../../images/history_2018-254_p14.jpg)\n\n## Continuous lift rigging and partner-load structure\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [12, 13].\n\n### Published construction or code\n\nPull-up and pull-down Dyneema cable runs act on both sides of the elevator. Spring tensioning addresses changing fleet angle. The binder specifies a 15-inch separation between pull-up runs for cube passage. The elevator gearbox has four 775pros and two ratios; the low ratio serves climbing and the high ratio serves scoring. Bearings react on different tube faces and edges to support moments.\n\n### Team rationale or evidence boundary\n\nAllow cube passage, rapid full-height travel, and the torsional loads associated with lifting two robots, while keeping the intake low when stowed.\n\n### Engineering interpretation\n\nContinuous rigging, stage mass and counterforce determine which mass the motor lifts at each segment. The two-sided arrangement can reduce racking only if stiffness, alignment and tension remain adequate. A spring tensioner is not a generic cure for incorrect spool tracking, excessive stretch or sharp cable edges. The published travel and climb timings are design goals/source claims, not measurements reproduced here. For an electric-only adaptation, fixed gearing or electric shifting must still deliver a credible scoring/climbing torque-speed envelope.\n\n### Proposed validation — not performed\n\nDerive lift kinematics and force through every travel segment. Check overlap, tube-face contact stress, shaft moments, cable bending radius and tension access; evaluate score and climb loads separately before selecting gearing.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Pass-through elevator](../../images/history_2018-254_p12.jpg)\n\n![Elevator gearbox](../../images/history_2018-254_p13.jpg)\n\n## Hook, forklift and aligned two-robot lift\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [15, 16].\n\n### Published construction or code\n\nA hook pivots from a retained spring-loaded state to a hard stop. Deployable forks support a partner while the elevator/hanger arrangement raises the pair. The binder discusses keeping the combined CG under the bar and allowing a cube through the fork spacing. Cylinders retain or deploy historical components; they are not permitted actuation for a new 1833 recommendation.\n\n### Team rationale or evidence boundary\n\nLift a broad range of partners quickly, preserve ordinary scoring passage, and react partner loads without rotating the pair away from the support.\n\n### Engineering interpretation\n\nThe partner interface is a structural mechanism, not just two pieces of carbon tube. The load travels from partner underside/bumpers through forks, their pivots and tensile reactions into the elevator/chassis. Docking clearance and partner drive geometry determine whether the “universal” aspiration holds. A no-air redesign needs a positive retained state during violent driving and a repeatable deployed stop. Merely replacing a cylinder with a motor leaves latch release, power loss, backdrive and accidental triggering unresolved.\n\n### Proposed validation — not performed\n\nDraw the complete force diagram and docked support geometry using a worst-case partner envelope. Separate partner approach reliability from winch capacity and test a proof load only after the structural path and safety factors are justified.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Hanging hook and elevator](../../images/history_2018-254_p15.jpg)\n\n![Partner forklift](../../images/history_2018-254_p16.jpg)\n\n## Coordinated transitions, scale sensing and qualification independence\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [6, 7, 18, 19, 20].\n\n### Published construction or code\n\nThe software section describes spline path generation with pure pursuit, modeled feedforward and a motion planner for intake/wrist/elevator transitions. Gravity and acceleration terms support superstructure control. A driver-station webcam estimates scale angle from the colored arm. The team’s championship report describes selecting combined switch/scale auto when switch scoring by partners was uncertain.\n\n### Team rationale or evidence boundary\n\nScore early, reduce collision risk inside the superstructure, and position at the necessary scale height rather than always lifting blindly to a fixed maximum.\n\n### Engineering interpretation\n\nA game-state objective maps into several engineering requirements: reliable capture preserves the next path; scale attitude changes required height; an early autonomous lead changes the opponent’s teleop catch-up burden. The camera location and contemporary rules matter. The transferable principle is state-informed motion, not permission to reuse an old off-board sensing arrangement under a new manual. All three line crossings remain partner-dependent even when the robot owns switch scoring.\n\n### Proposed validation — not performed\n\nDefine legal transition states and rejection/recovery behavior before coding auto sequences. Use logged target age and mechanism readiness; validate uncertain transitions rather than assume a perfect path simulation proves acquisition.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Scale attitude detection view](../../images/history_2018-254_p20.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "drivetrain",
+      "title": "Low-profile sprint chassis and gearbox",
+      "version_label": "LOCKDOWN published 2018 configuration",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "construction": "The binder specifies a six-wheel West Coast layout with center drop, two nitrile traction wheels and four omnis. A flat three-MiniCIM gearbox arrangement lowers the package beneath the intake. The middle pinion receives an additional bearing plate rather than remaining unsupported against the other motors. Two drive ratios are published, along with wheel sizes and nominal speeds.",
+      "team_stated_reason": "The team lists short-sprint acceleration, maneuverability, platform clearance and resisting defense as design goals, while a wide wheelbase accommodates a raised load and a partner.",
+      "engineering_analysis": "The valuable feature is integration: lowering the gearbox also lowers the intake rest position, which changes acquisition geometry. Moving the pickup upward to clear motors would impose a new lifting/rolling transition on every cube. Omnis can reduce scrub while traction placement still matters for pushing and ramp contact. A new chassis must evaluate the actual support polygon and loaded CG, not copy the wheel count as a performance recipe. Reported high-gear free speed does not establish defended acceleration or stopping distance.",
+      "recommended_validation": "First check intake rest height and field-obstacle breakover in a section view. Then calculate traction/current-limited acceleration and the raised-load tipping boundary; test only the uncertain transition if it can change the layout.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "id": "history-2018-254-note-1",
+      "robot_id": "2018-254",
+      "year": 2018,
+      "binder_id": "history-publication-2018-254",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=10"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=11"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-254-p10",
+        "history-2018-254-p11"
+      ]
+    },
+    {
+      "subsystem": "intake",
+      "title": "Compliant jaws and reversible wrist scoring",
+      "version_label": "LOCKDOWN published 2018 configuration",
+      "pdf_pages": [
+        14
+      ],
+      "construction": "Opposed wheel groups sit on polycarbonate jaw plates. The binder reports two 775pro intake motors with 5:1 reduction and four sets of 2-inch compliant wheels per side. The wrist has a separate motor, chain reduction, adjustable tensioner, angle encoder and zeroing switch. The stated roller surface speed is approximately 32 ft/s.",
+      "team_stated_reason": "Acquire either the 13-inch or 11-inch cube presentation quickly, center it with little driver precision, clamp securely during wrist motion, and score from either side.",
+      "engineering_analysis": "The pickup combines tolerance at the contact with control of the retained pose. Wheel compliance accommodates the covered crate while the wrist removes a drivebase reversal. A new piece can have a different friction/elasticity regime: 32 ft/s is not a universal optimum. More surface speed can add bounce or surface damage without reducing approach time. Separate capture authority from holding authority and from the wrist trajectory. The retained piece, jaw opening and lift pass-through must clear at the same time.",
+      "recommended_validation": "Compare a swept volume of the largest allowed piece in skewed poses against the uprights and bumper. If contact uncertainty remains, use one adjustable jaw fixture and measure capture, retained pose and release rather than build competing complete robots.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "id": "history-2018-254-note-2",
+      "robot_id": "2018-254",
+      "year": 2018,
+      "binder_id": "history-publication-2018-254",
+      "page_references": [
+        {
+          "pdf_page": 14,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=14"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-254-p14"
+      ]
+    },
+    {
+      "subsystem": "transfer",
+      "title": "Continuous lift rigging and partner-load structure",
+      "version_label": "LOCKDOWN published 2018 configuration",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "construction": "Pull-up and pull-down Dyneema cable runs act on both sides of the elevator. Spring tensioning addresses changing fleet angle. The binder specifies a 15-inch separation between pull-up runs for cube passage. The elevator gearbox has four 775pros and two ratios; the low ratio serves climbing and the high ratio serves scoring. Bearings react on different tube faces and edges to support moments.",
+      "team_stated_reason": "Allow cube passage, rapid full-height travel, and the torsional loads associated with lifting two robots, while keeping the intake low when stowed.",
+      "engineering_analysis": "Continuous rigging, stage mass and counterforce determine which mass the motor lifts at each segment. The two-sided arrangement can reduce racking only if stiffness, alignment and tension remain adequate. A spring tensioner is not a generic cure for incorrect spool tracking, excessive stretch or sharp cable edges. The published travel and climb timings are design goals/source claims, not measurements reproduced here. For an electric-only adaptation, fixed gearing or electric shifting must still deliver a credible scoring/climbing torque-speed envelope.",
+      "recommended_validation": "Derive lift kinematics and force through every travel segment. Check overlap, tube-face contact stress, shaft moments, cable bending radius and tension access; evaluate score and climb loads separately before selecting gearing.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "id": "history-2018-254-note-3",
+      "robot_id": "2018-254",
+      "year": 2018,
+      "binder_id": "history-publication-2018-254",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=12"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=13"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-254-p12",
+        "history-2018-254-p13"
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "Hook, forklift and aligned two-robot lift",
+      "version_label": "LOCKDOWN published 2018 configuration",
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "construction": "A hook pivots from a retained spring-loaded state to a hard stop. Deployable forks support a partner while the elevator/hanger arrangement raises the pair. The binder discusses keeping the combined CG under the bar and allowing a cube through the fork spacing. Cylinders retain or deploy historical components; they are not permitted actuation for a new 1833 recommendation.",
+      "team_stated_reason": "Lift a broad range of partners quickly, preserve ordinary scoring passage, and react partner loads without rotating the pair away from the support.",
+      "engineering_analysis": "The partner interface is a structural mechanism, not just two pieces of carbon tube. The load travels from partner underside/bumpers through forks, their pivots and tensile reactions into the elevator/chassis. Docking clearance and partner drive geometry determine whether the “universal” aspiration holds. A no-air redesign needs a positive retained state during violent driving and a repeatable deployed stop. Merely replacing a cylinder with a motor leaves latch release, power loss, backdrive and accidental triggering unresolved.",
+      "recommended_validation": "Draw the complete force diagram and docked support geometry using a worst-case partner envelope. Separate partner approach reliability from winch capacity and test a proof load only after the structural path and safety factors are justified.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "id": "history-2018-254-note-4",
+      "robot_id": "2018-254",
+      "year": 2018,
+      "binder_id": "history-publication-2018-254",
+      "page_references": [
+        {
+          "pdf_page": 15,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=15"
+        },
+        {
+          "pdf_page": 16,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=16"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-254-p15",
+        "history-2018-254-p16"
+      ]
+    },
+    {
+      "subsystem": "controls",
+      "title": "Coordinated transitions, scale sensing and qualification independence",
+      "version_label": "LOCKDOWN published 2018 configuration",
+      "pdf_pages": [
+        6,
+        7,
+        18,
+        19,
+        20
+      ],
+      "construction": "The software section describes spline path generation with pure pursuit, modeled feedforward and a motion planner for intake/wrist/elevator transitions. Gravity and acceleration terms support superstructure control. A driver-station webcam estimates scale angle from the colored arm. The team’s championship report describes selecting combined switch/scale auto when switch scoring by partners was uncertain.",
+      "team_stated_reason": "Score early, reduce collision risk inside the superstructure, and position at the necessary scale height rather than always lifting blindly to a fixed maximum.",
+      "engineering_analysis": "A game-state objective maps into several engineering requirements: reliable capture preserves the next path; scale attitude changes required height; an early autonomous lead changes the opponent’s teleop catch-up burden. The camera location and contemporary rules matter. The transferable principle is state-informed motion, not permission to reuse an old off-board sensing arrangement under a new manual. All three line crossings remain partner-dependent even when the robot owns switch scoring.",
+      "recommended_validation": "Define legal transition states and rejection/recovery behavior before coding auto sequences. Use logged target age and mechanism readiness; validate uncertain transitions rather than assume a perfect path simulation proves acquisition.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "id": "history-2018-254-note-5",
+      "robot_id": "2018-254",
+      "year": 2018,
+      "binder_id": "history-publication-2018-254",
+      "page_references": [
+        {
+          "pdf_page": 6,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=6"
+        },
+        {
+          "pdf_page": 7,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=7"
+        },
+        {
+          "pdf_page": 18,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=18"
+        },
+        {
+          "pdf_page": 19,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=19"
+        },
+        {
+          "pdf_page": 20,
+          "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=20"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-254-p20"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "history-param-2018-254-14-b3190",
+      "binder_id": "history-publication-2018-254",
+      "robot_id": "2018-254",
+      "pdf_page": 14,
+      "component": "Wristed intake",
+      "published_parameters": "Two 775pro motors, 5:1 intake reduction; four sets of 2-inch compliant wheels per side; reported surface speed about 32 ft/s",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=14",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    },
+    {
+      "id": "history-param-2018-254-12-c84d7",
+      "binder_id": "history-publication-2018-254",
+      "robot_id": "2018-254",
+      "pdf_page": 12,
+      "component": "Elevator passage and rigging",
+      "published_parameters": "15-inch separation between pull-up runs; 1/8-inch Dyneema pull/return cables",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=12",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "history-publication-2018-254",
+      "robot_id": "2018-254",
+      "title": "2018-254 LOCKDOWN technical binder/workshop deck",
+      "url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+      "format": "pdf",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "team_technical_pdf"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2018-254:publication-version:1",
+      "label": "LOCKDOWN published 2018 configuration",
+      "robot_id": "2018-254",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-254-note-1",
+        "history-2018-254-note-2",
+        "history-2018-254-note-3",
+        "history-2018-254-note-4",
+        "history-2018-254-note-5"
+      ],
+      "source_urls": [
+        "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2018-254",
+      "title": "2018-254 The Cheesy Poofs — technical study",
+      "year": 2018,
+      "robot_id": "2018-254",
+      "kind": "historical_technical_study",
+      "body": "# 2018-254 — The Cheesy Poofs: LOCKDOWN\n\nA compact six-wheel drivebase carries a pass-through, continuously rigged elevator and wristed compliant-wheel cube intake. The elevator changes gearing between rapid scoring travel and lifting two robots. A spring-deployed hook and partner forklift create a shared endgame load path. Motion planning coordinates intake, wrist and elevator; a driver-station camera estimates scale attitude.\n\n## Strategic interpretation\n\nThe team explicitly connects world-championship ambition to first seed, low partner dependence, all-target scoring, a multi-cube scale auto and a partner lift. The historical robot shows that broad primary capability can coexist with a matchup-specific switch assignment. For 1833, extract passive/compliant geometry and electric motion architecture; the original pneumatic shifting, hook retention and fork deployment require redesign, and historical sub-second claims are not current acceptance evidence.\n\n## Low-profile sprint chassis and gearbox\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [10, 11].\n\n### Published construction or code\n\nThe binder specifies a six-wheel West Coast layout with center drop, two nitrile traction wheels and four omnis. A flat three-MiniCIM gearbox arrangement lowers the package beneath the intake. The middle pinion receives an additional bearing plate rather than remaining unsupported against the other motors. Two drive ratios are published, along with wheel sizes and nominal speeds.\n\n### Team rationale or evidence boundary\n\nThe team lists short-sprint acceleration, maneuverability, platform clearance and resisting defense as design goals, while a wide wheelbase accommodates a raised load and a partner.\n\n### Engineering interpretation\n\nThe valuable feature is integration: lowering the gearbox also lowers the intake rest position, which changes acquisition geometry. Moving the pickup upward to clear motors would impose a new lifting/rolling transition on every cube. Omnis can reduce scrub while traction placement still matters for pushing and ramp contact. A new chassis must evaluate the actual support polygon and loaded CG, not copy the wheel count as a performance recipe. Reported high-gear free speed does not establish defended acceleration or stopping distance.\n\n### Proposed validation — not performed\n\nFirst check intake rest height and field-obstacle breakover in a section view. Then calculate traction/current-limited acceleration and the raised-load tipping boundary; test only the uncertain transition if it can change the layout.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Sprint chassis](../../images/history_2018-254_p10.jpg)\n\n![Flat drive gearbox](../../images/history_2018-254_p11.jpg)\n\n## Compliant jaws and reversible wrist scoring\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [14].\n\n### Published construction or code\n\nOpposed wheel groups sit on polycarbonate jaw plates. The binder reports two 775pro intake motors with 5:1 reduction and four sets of 2-inch compliant wheels per side. The wrist has a separate motor, chain reduction, adjustable tensioner, angle encoder and zeroing switch. The stated roller surface speed is approximately 32 ft/s.\n\n### Team rationale or evidence boundary\n\nAcquire either the 13-inch or 11-inch cube presentation quickly, center it with little driver precision, clamp securely during wrist motion, and score from either side.\n\n### Engineering interpretation\n\nThe pickup combines tolerance at the contact with control of the retained pose. Wheel compliance accommodates the covered crate while the wrist removes a drivebase reversal. A new piece can have a different friction/elasticity regime: 32 ft/s is not a universal optimum. More surface speed can add bounce or surface damage without reducing approach time. Separate capture authority from holding authority and from the wrist trajectory. The retained piece, jaw opening and lift pass-through must clear at the same time.\n\n### Proposed validation — not performed\n\nCompare a swept volume of the largest allowed piece in skewed poses against the uprights and bumper. If contact uncertainty remains, use one adjustable jaw fixture and measure capture, retained pose and release rather than build competing complete robots.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Wristed cube intake](../../images/history_2018-254_p14.jpg)\n\n## Continuous lift rigging and partner-load structure\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [12, 13].\n\n### Published construction or code\n\nPull-up and pull-down Dyneema cable runs act on both sides of the elevator. Spring tensioning addresses changing fleet angle. The binder specifies a 15-inch separation between pull-up runs for cube passage. The elevator gearbox has four 775pros and two ratios; the low ratio serves climbing and the high ratio serves scoring. Bearings react on different tube faces and edges to support moments.\n\n### Team rationale or evidence boundary\n\nAllow cube passage, rapid full-height travel, and the torsional loads associated with lifting two robots, while keeping the intake low when stowed.\n\n### Engineering interpretation\n\nContinuous rigging, stage mass and counterforce determine which mass the motor lifts at each segment. The two-sided arrangement can reduce racking only if stiffness, alignment and tension remain adequate. A spring tensioner is not a generic cure for incorrect spool tracking, excessive stretch or sharp cable edges. The published travel and climb timings are design goals/source claims, not measurements reproduced here. For an electric-only adaptation, fixed gearing or electric shifting must still deliver a credible scoring/climbing torque-speed envelope.\n\n### Proposed validation — not performed\n\nDerive lift kinematics and force through every travel segment. Check overlap, tube-face contact stress, shaft moments, cable bending radius and tension access; evaluate score and climb loads separately before selecting gearing.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Pass-through elevator](../../images/history_2018-254_p12.jpg)\n\n![Elevator gearbox](../../images/history_2018-254_p13.jpg)\n\n## Hook, forklift and aligned two-robot lift\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [15, 16].\n\n### Published construction or code\n\nA hook pivots from a retained spring-loaded state to a hard stop. Deployable forks support a partner while the elevator/hanger arrangement raises the pair. The binder discusses keeping the combined CG under the bar and allowing a cube through the fork spacing. Cylinders retain or deploy historical components; they are not permitted actuation for a new 1833 recommendation.\n\n### Team rationale or evidence boundary\n\nLift a broad range of partners quickly, preserve ordinary scoring passage, and react partner loads without rotating the pair away from the support.\n\n### Engineering interpretation\n\nThe partner interface is a structural mechanism, not just two pieces of carbon tube. The load travels from partner underside/bumpers through forks, their pivots and tensile reactions into the elevator/chassis. Docking clearance and partner drive geometry determine whether the “universal” aspiration holds. A no-air redesign needs a positive retained state during violent driving and a repeatable deployed stop. Merely replacing a cylinder with a motor leaves latch release, power loss, backdrive and accidental triggering unresolved.\n\n### Proposed validation — not performed\n\nDraw the complete force diagram and docked support geometry using a worst-case partner envelope. Separate partner approach reliability from winch capacity and test a proof load only after the structural path and safety factors are justified.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Hanging hook and elevator](../../images/history_2018-254_p15.jpg)\n\n![Partner forklift](../../images/history_2018-254_p16.jpg)\n\n## Coordinated transitions, scale sensing and qualification independence\n\nVersion: LOCKDOWN published 2018 configuration. Source: https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf. Physical PDF pages: [6, 7, 18, 19, 20].\n\n### Published construction or code\n\nThe software section describes spline path generation with pure pursuit, modeled feedforward and a motion planner for intake/wrist/elevator transitions. Gravity and acceleration terms support superstructure control. A driver-station webcam estimates scale angle from the colored arm. The team’s championship report describes selecting combined switch/scale auto when switch scoring by partners was uncertain.\n\n### Team rationale or evidence boundary\n\nScore early, reduce collision risk inside the superstructure, and position at the necessary scale height rather than always lifting blindly to a fixed maximum.\n\n### Engineering interpretation\n\nA game-state objective maps into several engineering requirements: reliable capture preserves the next path; scale attitude changes required height; an early autonomous lead changes the opponent’s teleop catch-up burden. The camera location and contemporary rules matter. The transferable principle is state-informed motion, not permission to reuse an old off-board sensing arrangement under a new manual. All three line crossings remain partner-dependent even when the robot owns switch scoring.\n\n### Proposed validation — not performed\n\nDefine legal transition states and rejection/recovery behavior before coding auto sequences. Use logged target age and mechanism readiness; validate uncertain transitions rather than assume a perfect path simulation proves acquisition.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Scale attitude detection view](../../images/history_2018-254_p20.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+        "https://blog.team254.com/2018cmp/",
+        "https://blog.team254.com/2018-technical-resources-release/",
+        "https://github.com/Team254/FRC-2018-Public"
+      ],
+      "path": "docs/historical/2018-254.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2018-254-p10",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p10.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=10",
+      "pdf_page": 10,
+      "crop_bounds_normalized": [
+        0.08,
+        0.19,
+        0.9,
+        0.57
+      ],
+      "caption": "2018-254 · Sprint chassis. Selected figure region from physical PDF page 10; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Sprint chassis",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "b8aa111b98fe646a448e100cc194f1ae4b138e96f9cd376807c992c01fe49539",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1205,
+      "height_px": 723,
+      "bytes": 141043,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p10",
+      "reader_url": "index.html#image=history-2018-254-p10",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p11",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p11.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=11",
+      "pdf_page": 11,
+      "crop_bounds_normalized": [
+        0.08,
+        0.19,
+        0.91,
+        0.57
+      ],
+      "caption": "2018-254 · Flat drive gearbox. Selected figure region from physical PDF page 11; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Flat drive gearbox",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "10411ab6b8f702934c264449cd96bf35001cf54fe45170ad42e86137a3b008f2",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1220,
+      "height_px": 723,
+      "bytes": 96073,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p11",
+      "reader_url": "index.html#image=history-2018-254-p11",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p12",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p12.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=12",
+      "pdf_page": 12,
+      "crop_bounds_normalized": [
+        0.53,
+        0.2,
+        0.94,
+        0.88
+      ],
+      "caption": "2018-254 · Pass-through elevator. Selected figure region from physical PDF page 12; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Pass-through elevator",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "84af6c3bda4d91eb5ea64a6443d74a21fa6a9dca2aa20ebc6a5366c99278108e",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 603,
+      "height_px": 1293,
+      "bytes": 74596,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p12",
+      "reader_url": "index.html#image=history-2018-254-p12",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p13",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p13.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=13",
+      "pdf_page": 13,
+      "crop_bounds_normalized": [
+        0.1,
+        0.2,
+        0.9,
+        0.49
+      ],
+      "caption": "2018-254 · Elevator gearbox. Selected figure region from physical PDF page 13; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Elevator gearbox",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "8b65b83b9dec0e49c635c6bd49c93824915bbda2f7c26672818df03825ad461c",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1176,
+      "height_px": 552,
+      "bytes": 57360,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p13",
+      "reader_url": "index.html#image=history-2018-254-p13",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p14",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p14.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=14",
+      "pdf_page": 14,
+      "crop_bounds_normalized": [
+        0.11,
+        0.2,
+        0.92,
+        0.49
+      ],
+      "caption": "2018-254 · Wristed cube intake. Selected figure region from physical PDF page 14; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Wristed cube intake",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "ace4f975fe6a17191090229437b889e30a3a1ddbf079a6759cc17acc33949d54",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1191,
+      "height_px": 552,
+      "bytes": 69862,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p14",
+      "reader_url": "index.html#image=history-2018-254-p14",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p15",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p15.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=15",
+      "pdf_page": 15,
+      "crop_bounds_normalized": [
+        0.12,
+        0.2,
+        0.79,
+        0.67
+      ],
+      "caption": "2018-254 · Hanging hook and elevator. Selected figure region from physical PDF page 15; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Hanging hook and elevator",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "13eec5b9c3d9b7c94162deecb7e30e088f2b3c946e44ca7094e0ca2a5613597e",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 985,
+      "height_px": 894,
+      "bytes": 70367,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p15",
+      "reader_url": "index.html#image=history-2018-254-p15",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p16",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p16.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=16",
+      "pdf_page": 16,
+      "crop_bounds_normalized": [
+        0.1,
+        0.2,
+        0.94,
+        0.48
+      ],
+      "caption": "2018-254 · Partner forklift. Selected figure region from physical PDF page 16; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Partner forklift",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "a2c427620eac8bf92a524975853fcfb2207a5e9c20c762f31e25f5bffa5c3453",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1235,
+      "height_px": 533,
+      "bytes": 38618,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p16",
+      "reader_url": "index.html#image=history-2018-254-p16",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-254-p20",
+      "robot_id": "2018-254",
+      "kind": "binder_figure",
+      "path": "images/history_2018-254_p20.jpg",
+      "source_url": "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf#page=20",
+      "pdf_page": 20,
+      "crop_bounds_normalized": [
+        0.1,
+        0.19,
+        0.91,
+        0.55
+      ],
+      "caption": "2018-254 · Scale attitude detection view. Selected figure region from physical PDF page 20; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Scale attitude detection view",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "48c2ab7ca88abecf77243d1518e52f3d950f49760b8c52f1acba107fed75633a",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1191,
+      "height_px": 685,
+      "bytes": 149512,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-254-p20",
+      "reader_url": "index.html#image=history-2018-254-p20",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2018-254",
+    "year": 2018,
+    "team": 254,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "254 2018 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-92a6323b99619550",
+      "history-source-6c4253a3ed9da2ba",
+      "history-source-cef4a0204a46fe80",
+      "history-source-cd477662e96fe088"
+    ],
+    "technical_note_ids": [
+      "history-2018-254-note-1",
+      "history-2018-254-note-2",
+      "history-2018-254-note-3",
+      "history-2018-254-note-4",
+      "history-2018-254-note-5"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2018-254-note-1:construction",
+    "history-2018-254-note-1:team_stated_reason",
+    "history-2018-254-note-1:engineering_analysis",
+    "history-2018-254-note-1:recommended_validation",
+    "history-2018-254-note-1:limitations",
+    "history-2018-254-note-2:construction",
+    "history-2018-254-note-2:team_stated_reason",
+    "history-2018-254-note-2:engineering_analysis",
+    "history-2018-254-note-2:recommended_validation",
+    "history-2018-254-note-2:limitations",
+    "history-2018-254-note-3:construction",
+    "history-2018-254-note-3:team_stated_reason",
+    "history-2018-254-note-3:engineering_analysis",
+    "history-2018-254-note-3:recommended_validation",
+    "history-2018-254-note-3:limitations",
+    "history-2018-254-note-4:construction",
+    "history-2018-254-note-4:team_stated_reason",
+    "history-2018-254-note-4:engineering_analysis",
+    "history-2018-254-note-4:recommended_validation",
+    "history-2018-254-note-4:limitations",
+    "history-2018-254-note-5:construction",
+    "history-2018-254-note-5:team_stated_reason",
+    "history-2018-254-note-5:engineering_analysis",
+    "history-2018-254-note-5:recommended_validation",
+    "history-2018-254-note-5:limitations",
+    "history-param-2018-254-14-b3190",
+    "history-param-2018-254-12-c84d7"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

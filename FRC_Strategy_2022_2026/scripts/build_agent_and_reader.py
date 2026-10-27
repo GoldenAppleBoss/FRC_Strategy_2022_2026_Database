@@ -36,7 +36,7 @@ claims=[];units=[]
 def addunit(uid,title,text,kind,evidence,year=None,robot=None,subsystem=None,locator=None,sources=None,**extra):
  units.append({'id':uid,'title':title,'text':text,'kind':kind,'evidence':evidence,'year':year,'robot':robot,'subsystem':subsystem,
  'source_locator':locator,'source_urls':sources or [],'robot_packet':f'agent/robot_packets/{robot}.json' if robot else None,
- 'required_game_context':f'docs/game_{year}.md' if year in range(2022,2027) else None,**extra})
+ 'required_game_context':f'docs/game_{year}.md' if year in [2018,2019,*range(2022,2027)] else None,**extra})
 
 fields={'construction':'team_publication_paraphrase','team_stated_reason':'team_reason_or_boundary_paraphrase',
  'engineering_analysis':'analyst_inference','recommended_validation':'proposed_test_not_performed','limitations':'evidence_boundary'}
@@ -75,7 +75,7 @@ for r in robots:
   'boundary':'Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event.'} for i,label in enumerate(labels)]
  versionrecords+=versions
  packet={'schema_version':'1.0','id':rid,'year':r['year'],'team':r['team'],'corpus_status':'provisional_research',
-  'required_reading':[f'docs/game_{r["year"]}.md','docs/AGENT_GUIDE.md','docs/TECHNICAL_EVIDENCE_GUIDE.md'],
+  'required_reading':[f'docs/game_{r["year"]}.md','docs/AGENT_GUIDE.md','docs/TECHNICAL_EVIDENCE_GUIDE.md','docs/1833_DESIGN_DOCTRINE.md','docs/DESIGN_REVIEW_PROTOCOL.md','docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md'],
   'path_base':'corpus_root','dossier':r,'technical_notes':ns,'published_parameters':ps,'technical_publications':bs,
   'publication_version_groups':versions,'context_documents':cs,'images':ims,
   'binder_audit':next(a for a in audits if a['robot_id']==rid),
@@ -145,7 +145,7 @@ for u in units:
  con.execute('INSERT INTO search(rowid,title,text,metadata) VALUES(?,?,?,?)',(cur.lastrowid,u['title'],u['text'],' '.join(str(u.get(x) or '') for x in ['robot','year','version_label','subsystem','kind'])))
 con.commit();con.close()
 
-manifest={'schema_version':'1.0','edition':'2026-10-26-604-original-images-and-1833-task-template','path_base':'corpus_root','entry_point':'AGENTS.md',
+manifest={'schema_version':'1.0','edition':'2026-10-27-2018-2019-historical-context','path_base':'corpus_root','entry_point':'AGENTS.md',
  'reader':'index.html','reader_images':'All source image bytes embedded in index.html; no image network or sibling-folder requests needed.',
  'counts':{'robot_packets':len(robots),'retrieval_units':len(units),'claims':len(claims),'images':len(catalog),'technical_notes':len(notes),'published_parameters':len(params),'robot_years_with_technical_reviews':len(set(n['robot_id'] for n in notes))},
  'files':{'complete_robot_packets':'agent/robot_packets/{YEAR-TEAM}.json','retrieval_units':'agent/retrieval_units.jsonl','retrieval_index':'agent/retrieval.sqlite','claims':'agent/claims.jsonl','images':'agent/image_catalog.jsonl','publication_versions':'agent/publication_versions.jsonl','query_cli':'scripts/query_agent.py','games':'docs/game_{YEAR}.md','benchmarks':'data/benchmarks.jsonl','einstein_records':'data/einstein_reviews.jsonl','tower_sample_summary':'data/tower_summary_2026.jsonl','tower_component_rows':'data/tower_component_sample_2026.jsonl','binder_discovery_audit':'data/binder_audit.jsonl','full_sql_database':'frc_strategy.sqlite','methodology':'docs/METHODOLOGY.md','evaluation_cases':'agent/evaluation_cases.jsonl'},
@@ -156,6 +156,18 @@ manifest['files'].update(video_quiz_prompts='data/roboreplay_quiz_prompts.jsonl'
 manifest['files'].update(task_list_template='team1833/1833_Task_List_Template.xlsx',task_list_protocol='docs/TASK_LIST_PROTOCOL.md',task_list_schema='team1833/task_template_schema.json')
 manifest['required_workflow'].insert(2,'For each new manual analysis, material rules revision or new/revised robot design brief, follow docs/TASK_LIST_PROTOCOL.md and deliver a filled copy of the one-sheet 1833 task template before the final architecture recommendation. Preserve human decisions separately; no group tabs.')
 manifest['semantics']['scope']='128 provisional dossiers: original 125 plus supplemental 2022/2023/2026 Team 604 entries. 27 robot-years retain earlier reviewed technical-publication coverage; the other focused studies and new 604 primary-source studies have their own explicit scopes. Zero exhaustive version certifications. 35 available full-caption reviews; nine recovered transcripts await content review. No visual Einstein audit is claimed or required by the user. Full channel inventory remains unverified.'
+manifest['files'].update(conversation_bootstrap='team1833/START_NEW_CONVERSATION.md',team_design_profile='team1833/design_profile.json',design_doctrine='docs/1833_DESIGN_DOCTRINE.md',design_review_protocol='docs/DESIGN_REVIEW_PROTOCOL.md',optimization_references='docs/1833_OPTIMIZATION_REFERENCES.md',design_review_schema='team1833/design_review_schema.json',design_rubric='agent/design_rubric.json',design_review_skeleton='examples/design_review_skeleton.json',research_ledger='data/1833_research_ledger.jsonl',task_audit_cli='scripts/audit_task_workbook.py',design_validator_cli='scripts/validate_design_review.py')
+manifest['team_constraints']=json.loads((ROOT/'team1833/design_profile.json').read_text())['hard_constraints']
+manifest['required_workflow'][1]='Apply the 1833 owner mandate: elite primary contributor, no support-only architecture, no turret; establish event stage, partners and actual resources.'
+manifest['required_workflow'].insert(3,'Follow DESIGN_REVIEW_PROTOCOL.md: compare viable primary non-turret architectures with common timed scenarios, capacity/storage trade studies, physical envelope, row-specific dependencies and consistent release targets; apply the rubric and human review.')
+manifest['files']['solo_rp_and_iteration_cost']='docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md'
+manifest['required_workflow'].insert(2,'Prioritize independently achievable RP and owned scoring prerequisites. Use cheap spatial/analytical decisions first and justify physical tests by decision value and iteration cost; preserve the owner four-lane decision chronology.')
+manifest['files']['actuation_and_history_scope']='docs/1833_ACTUATION_AND_HISTORY_SCOPE.md'
+manifest['required_workflow'].insert(2,'No pneumatic actuation for 1833. Respect historical scope; 2018/2019 now have thirteen curated primary-source studies; read the scope audit and transfer guide, not an assumed top25 cohort.')
+manifest['files'].update(historical_transfer='docs/HISTORICAL_2018_2019_TRANSFER.md',historical_coverage='data/historical_2018_2019_audit.json',blind_test_prompt='team1833/BLIND_TEST_PROMPT.md')
+manifest['semantics']['scope']='141 provisional dossiers: original125, three604 supplements, thirteen curated2018/2019 primary-source studies (seven2018, six2019). Historical EPA/ranks unretrieved/null, no new top25 selection. Selected technical notes, version distinctions, parameters and credited figures; zero exhaustive version certifications. Earlier video review and Einstein scopes remain unchanged:35 available-caption studies, nine pending content reviews, no visual match audit.'
+manifest['historical_expansion']=json.loads((ROOT/'data/historical_2018_2019_audit.json').read_text())
+manifest['required_workflow'].insert(3,'For historical transfer, read HISTORICAL_2018_2019_TRANSFER.md; compare whole mechanisms and preserve current owner constraints, source/version boundaries and null historical rankings.')
 writejson('agent/manifest.json',manifest)
 
 # HTML changes: all galleries use embedded images; Markdown supports actual images and relative links.

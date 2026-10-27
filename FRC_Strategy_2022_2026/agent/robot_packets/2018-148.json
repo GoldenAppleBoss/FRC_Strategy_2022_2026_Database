@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.0",
+  "id": "2018-148",
+  "year": 2018,
+  "team": 148,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2018.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2018,
+    "team": 148,
+    "team_name": "Robowranglers",
+    "robot": "Uppercut",
+    "primary": [
+      "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+      "https://www.robowranglers148.com/resources.html",
+      "https://www.robowranglers148.com/2018-competitions.html"
+    ],
+    "architecture": "An intentionally undersized, short robot uses a single-speed drive, lightweight cascading elevator and cube-normalizing polycarbonate intake. The elevator collapses below the scale transit height. A separate winch/hook and partner-capture roller/forks support climbing. Major assemblies are removable modules.",
+    "analysis": "Uppercut’s strategic advantage is a coupled acquisition, orientation and transit package. Collapsed clearance preserves route options while a normalized cube pose helps packing. The publication’s fast lift and climb claims need their original load conditions. Its extensive prototyping resources are historical context, not a cheap-iteration prescription for 1833.",
+    "id": "2018-148",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "FIRST POWER UP",
+    "subsystems": {
+      "drivetrain": "The pamphlet describes a small frame several inches inside the permitted limits, a single-speed drive with stated 18 ft/s top speed, and enough collapsed clearance to travel under the scale regardless of tilt. Subsystems remove as modules. Electronics occupy a compact two-sided panel kept low.",
+      "intake": "The intake flips a captured cube over a boot into a preferred tall/narrow orientation. The team describes Lexan construction and a passive preload retainer nicknamed the drinking bird. It reports six intake revisions before bagging and explicitly connects orientation control to packing cubes on the scale/switch.",
+      "transfer": "The team describes a cascading elevator with two 775pros, a chain-driven bottom stage and Dyneema-coupled upper stages. Thin-wall tubes, printed rollers and constant-force springs reduce the active lifting burden. The pamphlet reports approximately 90-inch maximum height and below-42-inch collapsed height, along with a sub-half-second lift claim.",
+      "scoring": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "endgame": "The hook is carried up by the elevator, detaches from its retained mount at the bar, and remains while a three-775pro winch raises the robot. An A-frame manages the pair’s balance. A one-way roller draws in a partner-deployed strap and positions the partner on supporting forks; the source reports lifting itself plus a full-weight partner in under three seconds.",
+      "controls": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent."
+    },
+    "coverage": {
+      "drivetrain": "documented selected primary technical study; details/version limits apply",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "partial / unresolved selected-source detail",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "partial / unresolved selected-source detail"
+    },
+    "versions": [
+      "Uppercut judges pamphlet snapshot"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-313a037a88992ab3",
+      "history-source-da36f654965378d4",
+      "history-source-ffb73d08952abd64"
+    ],
+    "tags": [
+      "historical 2018",
+      "curated primary technical study",
+      "drivetrain",
+      "intake",
+      "transfer",
+      "endgame"
+    ],
+    "binder_audit": {
+      "robot_id": "2018-148",
+      "year": 2018,
+      "team": 148,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "148 2018 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-313a037a88992ab3",
+        "history-source-da36f654965378d4",
+        "history-source-ffb73d08952abd64"
+      ],
+      "technical_note_ids": [
+        "history-2018-148-note-1",
+        "history-2018-148-note-2",
+        "history-2018-148-note-3",
+        "history-2018-148-note-4"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2018-148-note-1",
+      "history-2018-148-note-2",
+      "history-2018-148-note-3",
+      "history-2018-148-note-4"
+    ],
+    "images": [
+      {
+        "id": "history-2018-148-p1",
+        "robot_id": "2018-148",
+        "kind": "binder_figure",
+        "path": "images/history_2018-148_p1.jpg",
+        "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=1",
+        "pdf_page": 1,
+        "crop_bounds_normalized": [
+          0.06,
+          0.2,
+          0.95,
+          0.45
+        ],
+        "caption": "2018-148 · Low-profile drivetrain. Selected figure region from physical PDF page 1; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Low-profile drivetrain",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "4bd84bacd5c0de75c207a6cd94dc1b07220575c8259b12f48820a8cdce65236e",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-148-p3",
+        "robot_id": "2018-148",
+        "kind": "binder_figure",
+        "path": "images/history_2018-148_p3.jpg",
+        "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=3",
+        "pdf_page": 3,
+        "crop_bounds_normalized": [
+          0.06,
+          0.25,
+          0.95,
+          0.8
+        ],
+        "caption": "2018-148 · Cascading elevator. Selected figure region from physical PDF page 3; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Cascading elevator",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "f1bb74980b5cf12535d8dbc46b65dc027b8bc6050aca3f767f318e5175a8f5a3",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-148-p4",
+        "robot_id": "2018-148",
+        "kind": "binder_figure",
+        "path": "images/history_2018-148_p4.jpg",
+        "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=4",
+        "pdf_page": 4,
+        "crop_bounds_normalized": [
+          0.04,
+          0.25,
+          0.98,
+          0.75
+        ],
+        "caption": "2018-148 · Hook and winch climb. Selected figure region from physical PDF page 4; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Hook and winch climb",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "489e59c79cb54c4095a81d74480e3ff4f1f4fae02d1ef25caa3969b98c6d6300",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-148-p5",
+        "robot_id": "2018-148",
+        "kind": "binder_figure",
+        "path": "images/history_2018-148_p5.jpg",
+        "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=5",
+        "pdf_page": 5,
+        "crop_bounds_normalized": [
+          0.04,
+          0.32,
+          0.97,
+          0.66
+        ],
+        "caption": "2018-148 · Partner capture and forks. Selected figure region from physical PDF page 5; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Partner capture and forks",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "b1944b3de049574f7f7f949f9b40617fbd48ff19a9e083c36a9ae0126cfa7f2f",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-148-p6",
+        "robot_id": "2018-148",
+        "kind": "binder_figure",
+        "path": "images/history_2018-148_p6.jpg",
+        "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=6",
+        "pdf_page": 6,
+        "crop_bounds_normalized": [
+          0.04,
+          0.29,
+          0.97,
+          0.76
+        ],
+        "caption": "2018-148 · Boot cube intake. Selected figure region from physical PDF page 6; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Boot cube intake",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "6abe7acecf82c10ca1ddcbead3e59a00f9ebe0977f7f35989cd49847921fb2ba",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2018-148 — Robowranglers: Uppercut\n\nAn intentionally undersized, short robot uses a single-speed drive, lightweight cascading elevator and cube-normalizing polycarbonate intake. The elevator collapses below the scale transit height. A separate winch/hook and partner-capture roller/forks support climbing. Major assemblies are removable modules.\n\n## Strategic interpretation\n\nUppercut’s strategic advantage is a coupled acquisition, orientation and transit package. Collapsed clearance preserves route options while a normalized cube pose helps packing. The publication’s fast lift and climb claims need their original load conditions. Its extensive prototyping resources are historical context, not a cheap-iteration prescription for 1833.\n\n## Undersized frame, scale transit and removable modules\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [1, 2].\n\n### Published construction or code\n\nThe pamphlet describes a small frame several inches inside the permitted limits, a single-speed drive with stated 18 ft/s top speed, and enough collapsed clearance to travel under the scale regardless of tilt. Subsystems remove as modules. Electronics occupy a compact two-sided panel kept low.\n\n### Team rationale or evidence boundary\n\nImprove agility and cube cycle speed, preserve field routes and permit replacement/upgrade of assemblies through the season.\n\n### Engineering interpretation\n\nSmall external dimensions can reduce swept turning area and open routes; small internal dimensions can also make service and wiring harder. The module concept succeeds only when connectors, fasteners and structural interfaces are actually accessible. The under-scale benefit is a game-specific clearance condition and should not be generalized to any new field. A single speed removes shifting hardware but must cover defended drive and transit loads with the chosen motor/wheel system.\n\n### Proposed validation — not performed\n\nCheck actual bumper envelope, all stowed protrusions and service removal directions. Compare route time with the robot in its real low state, including the time to lower before entering the route.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Low-profile drivetrain](../../images/history_2018-148_p1.jpg)\n\n## Boot-mediated cube orientation and lightweight capture\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [6, 8].\n\n### Published construction or code\n\nThe intake flips a captured cube over a boot into a preferred tall/narrow orientation. The team describes Lexan construction and a passive preload retainer nicknamed the drinking bird. It reports six intake revisions before bagging and explicitly connects orientation control to packing cubes on the scale/switch.\n\n### Team rationale or evidence boundary\n\nCapture cubes in varied orientations while delivering a consistent final pose and keeping the elevator payload light.\n\n### Engineering interpretation\n\nAn intake can do useful sorting and reorientation before the scoring mechanism ever moves. The important transformation is entry pose to stable exit pose. Boot geometry, piece inertia, roller contact and the backstop determine whether the cube rolls as intended or wedges. A different box with soft walls or different aspect ratio may not rotate predictably. The historical number of revisions describes what 148 did; for 1833, first reason through geometry and use a bounded contact experiment only if the pose transformation remains uncertain.\n\n### Proposed validation — not performed\n\nCreate an entry-pose map including open fabric face, diagonal approach and partial capture. Check whether each pose converges to the desired orientation and whether a reversal can recover a jam without hand intervention.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Boot cube intake](../../images/history_2018-148_p6.jpg)\n\n## Cascading lift with lightweight stages\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [3].\n\n### Published construction or code\n\nThe team describes a cascading elevator with two 775pros, a chain-driven bottom stage and Dyneema-coupled upper stages. Thin-wall tubes, printed rollers and constant-force springs reduce the active lifting burden. The pamphlet reports approximately 90-inch maximum height and below-42-inch collapsed height, along with a sub-half-second lift claim.\n\n### Team rationale or evidence boundary\n\nMove a cube rapidly to scoring height while retaining low travel clearance and minimizing carried structural mass.\n\n### Engineering interpretation\n\nThe collapsed-to-extended ratio, stage overlap and moving mass are interdependent. A mechanism that looks like a generic elevator may owe its performance to a light intake, careful bearing arrangement, counterbalance and restrained side loads. Cascading kinematics should be derived explicitly; do not copy a published timing into a design target without knowing travel, load and timing endpoints. Rope strength advertising is not an installed safety factor after knots, terminations, wear and small pulleys.\n\n### Proposed validation — not performed\n\nDerive each stage’s speed and cable force, compare deflection at full reach and check the retained cube clearance through every intermediate position. Inspect counterbalance behavior near both travel limits.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Cascading elevator](../../images/history_2018-148_p3.jpg)\n\n## Independent winch and active partner capture\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [4, 5].\n\n### Published construction or code\n\nThe hook is carried up by the elevator, detaches from its retained mount at the bar, and remains while a three-775pro winch raises the robot. An A-frame manages the pair’s balance. A one-way roller draws in a partner-deployed strap and positions the partner on supporting forks; the source reports lifting itself plus a full-weight partner in under three seconds.\n\n### Team rationale or evidence boundary\n\nKeep a partner secure and aligned during a fast shared climb rather than rely on the partner simply remaining balanced on a support.\n\n### Engineering interpretation\n\nPartner capture is not the same as partner lift force. The strap/roller controls relative motion while forks support vertical load. Strap availability, deployment, approach and partner compatibility remain dependencies. A separate winch changes the scoring elevator’s load duty but adds motor/gearbox mass and service interfaces. For a new game, compare that whole-system cost with the actual bonus value. Electric-only latching must preserve a safe retained state and a controlled release; no load rating is inferred from the pamphlet photograph.\n\n### Proposed validation — not performed\n\nSpecify the partner interface and load cases before detailed winch selection. Evaluate docking error, strap failure, anti-backdrive and the combined CG during the full lift, not just at the final pose.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Hook and winch climb](../../images/history_2018-148_p4.jpg)\n\n![Partner capture and forks](../../images/history_2018-148_p5.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "drivetrain",
+      "title": "Undersized frame, scale transit and removable modules",
+      "version_label": "Uppercut judges pamphlet snapshot",
+      "pdf_pages": [
+        1,
+        2
+      ],
+      "construction": "The pamphlet describes a small frame several inches inside the permitted limits, a single-speed drive with stated 18 ft/s top speed, and enough collapsed clearance to travel under the scale regardless of tilt. Subsystems remove as modules. Electronics occupy a compact two-sided panel kept low.",
+      "team_stated_reason": "Improve agility and cube cycle speed, preserve field routes and permit replacement/upgrade of assemblies through the season.",
+      "engineering_analysis": "Small external dimensions can reduce swept turning area and open routes; small internal dimensions can also make service and wiring harder. The module concept succeeds only when connectors, fasteners and structural interfaces are actually accessible. The under-scale benefit is a game-specific clearance condition and should not be generalized to any new field. A single speed removes shifting hardware but must cover defended drive and transit loads with the chosen motor/wheel system.",
+      "recommended_validation": "Check actual bumper envelope, all stowed protrusions and service removal directions. Compare route time with the robot in its real low state, including the time to lower before entering the route.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+      "id": "history-2018-148-note-1",
+      "robot_id": "2018-148",
+      "year": 2018,
+      "binder_id": "history-publication-2018-148",
+      "page_references": [
+        {
+          "pdf_page": 1,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=1"
+        },
+        {
+          "pdf_page": 2,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=2"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-148-p1"
+      ]
+    },
+    {
+      "subsystem": "intake",
+      "title": "Boot-mediated cube orientation and lightweight capture",
+      "version_label": "Uppercut judges pamphlet snapshot",
+      "pdf_pages": [
+        6,
+        8
+      ],
+      "construction": "The intake flips a captured cube over a boot into a preferred tall/narrow orientation. The team describes Lexan construction and a passive preload retainer nicknamed the drinking bird. It reports six intake revisions before bagging and explicitly connects orientation control to packing cubes on the scale/switch.",
+      "team_stated_reason": "Capture cubes in varied orientations while delivering a consistent final pose and keeping the elevator payload light.",
+      "engineering_analysis": "An intake can do useful sorting and reorientation before the scoring mechanism ever moves. The important transformation is entry pose to stable exit pose. Boot geometry, piece inertia, roller contact and the backstop determine whether the cube rolls as intended or wedges. A different box with soft walls or different aspect ratio may not rotate predictably. The historical number of revisions describes what 148 did; for 1833, first reason through geometry and use a bounded contact experiment only if the pose transformation remains uncertain.",
+      "recommended_validation": "Create an entry-pose map including open fabric face, diagonal approach and partial capture. Check whether each pose converges to the desired orientation and whether a reversal can recover a jam without hand intervention.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+      "id": "history-2018-148-note-2",
+      "robot_id": "2018-148",
+      "year": 2018,
+      "binder_id": "history-publication-2018-148",
+      "page_references": [
+        {
+          "pdf_page": 6,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=6"
+        },
+        {
+          "pdf_page": 8,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=8"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-148-p6"
+      ]
+    },
+    {
+      "subsystem": "transfer",
+      "title": "Cascading lift with lightweight stages",
+      "version_label": "Uppercut judges pamphlet snapshot",
+      "pdf_pages": [
+        3
+      ],
+      "construction": "The team describes a cascading elevator with two 775pros, a chain-driven bottom stage and Dyneema-coupled upper stages. Thin-wall tubes, printed rollers and constant-force springs reduce the active lifting burden. The pamphlet reports approximately 90-inch maximum height and below-42-inch collapsed height, along with a sub-half-second lift claim.",
+      "team_stated_reason": "Move a cube rapidly to scoring height while retaining low travel clearance and minimizing carried structural mass.",
+      "engineering_analysis": "The collapsed-to-extended ratio, stage overlap and moving mass are interdependent. A mechanism that looks like a generic elevator may owe its performance to a light intake, careful bearing arrangement, counterbalance and restrained side loads. Cascading kinematics should be derived explicitly; do not copy a published timing into a design target without knowing travel, load and timing endpoints. Rope strength advertising is not an installed safety factor after knots, terminations, wear and small pulleys.",
+      "recommended_validation": "Derive each stage’s speed and cable force, compare deflection at full reach and check the retained cube clearance through every intermediate position. Inspect counterbalance behavior near both travel limits.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+      "id": "history-2018-148-note-3",
+      "robot_id": "2018-148",
+      "year": 2018,
+      "binder_id": "history-publication-2018-148",
+      "page_references": [
+        {
+          "pdf_page": 3,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=3"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-148-p3"
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "Independent winch and active partner capture",
+      "version_label": "Uppercut judges pamphlet snapshot",
+      "pdf_pages": [
+        4,
+        5
+      ],
+      "construction": "The hook is carried up by the elevator, detaches from its retained mount at the bar, and remains while a three-775pro winch raises the robot. An A-frame manages the pair’s balance. A one-way roller draws in a partner-deployed strap and positions the partner on supporting forks; the source reports lifting itself plus a full-weight partner in under three seconds.",
+      "team_stated_reason": "Keep a partner secure and aligned during a fast shared climb rather than rely on the partner simply remaining balanced on a support.",
+      "engineering_analysis": "Partner capture is not the same as partner lift force. The strap/roller controls relative motion while forks support vertical load. Strap availability, deployment, approach and partner compatibility remain dependencies. A separate winch changes the scoring elevator’s load duty but adds motor/gearbox mass and service interfaces. For a new game, compare that whole-system cost with the actual bonus value. Electric-only latching must preserve a safe retained state and a controlled release; no load rating is inferred from the pamphlet photograph.",
+      "recommended_validation": "Specify the partner interface and load cases before detailed winch selection. Evaluate docking error, strap failure, anti-backdrive and the combined CG during the full lift, not just at the final pose.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+      "id": "history-2018-148-note-4",
+      "robot_id": "2018-148",
+      "year": 2018,
+      "binder_id": "history-publication-2018-148",
+      "page_references": [
+        {
+          "pdf_page": 4,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=4"
+        },
+        {
+          "pdf_page": 5,
+          "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=5"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-148-p4",
+        "history-2018-148-p5"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "history-param-2018-148-3-96369",
+      "binder_id": "history-publication-2018-148",
+      "robot_id": "2018-148",
+      "pdf_page": 3,
+      "component": "Elevator",
+      "published_parameters": "Reported 90-inch maximum and under-42-inch collapsed height; two 775pros; sub-half-second lift claim, not independently reproduced",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=3",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    },
+    {
+      "id": "history-param-2018-148-1-2edad",
+      "binder_id": "history-publication-2018-148",
+      "robot_id": "2018-148",
+      "pdf_page": 1,
+      "component": "Drivetrain",
+      "published_parameters": "Single speed; reported 18 ft/s nominal maximum",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=1",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "history-publication-2018-148",
+      "robot_id": "2018-148",
+      "title": "2018-148 Uppercut technical binder/workshop deck",
+      "url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+      "format": "pdf",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "team_technical_pdf"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2018-148:publication-version:1",
+      "label": "Uppercut judges pamphlet snapshot",
+      "robot_id": "2018-148",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-148-note-1",
+        "history-2018-148-note-2",
+        "history-2018-148-note-3",
+        "history-2018-148-note-4"
+      ],
+      "source_urls": [
+        "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2018-148",
+      "title": "2018-148 Robowranglers — technical study",
+      "year": 2018,
+      "robot_id": "2018-148",
+      "kind": "historical_technical_study",
+      "body": "# 2018-148 — Robowranglers: Uppercut\n\nAn intentionally undersized, short robot uses a single-speed drive, lightweight cascading elevator and cube-normalizing polycarbonate intake. The elevator collapses below the scale transit height. A separate winch/hook and partner-capture roller/forks support climbing. Major assemblies are removable modules.\n\n## Strategic interpretation\n\nUppercut’s strategic advantage is a coupled acquisition, orientation and transit package. Collapsed clearance preserves route options while a normalized cube pose helps packing. The publication’s fast lift and climb claims need their original load conditions. Its extensive prototyping resources are historical context, not a cheap-iteration prescription for 1833.\n\n## Undersized frame, scale transit and removable modules\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [1, 2].\n\n### Published construction or code\n\nThe pamphlet describes a small frame several inches inside the permitted limits, a single-speed drive with stated 18 ft/s top speed, and enough collapsed clearance to travel under the scale regardless of tilt. Subsystems remove as modules. Electronics occupy a compact two-sided panel kept low.\n\n### Team rationale or evidence boundary\n\nImprove agility and cube cycle speed, preserve field routes and permit replacement/upgrade of assemblies through the season.\n\n### Engineering interpretation\n\nSmall external dimensions can reduce swept turning area and open routes; small internal dimensions can also make service and wiring harder. The module concept succeeds only when connectors, fasteners and structural interfaces are actually accessible. The under-scale benefit is a game-specific clearance condition and should not be generalized to any new field. A single speed removes shifting hardware but must cover defended drive and transit loads with the chosen motor/wheel system.\n\n### Proposed validation — not performed\n\nCheck actual bumper envelope, all stowed protrusions and service removal directions. Compare route time with the robot in its real low state, including the time to lower before entering the route.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Low-profile drivetrain](../../images/history_2018-148_p1.jpg)\n\n## Boot-mediated cube orientation and lightweight capture\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [6, 8].\n\n### Published construction or code\n\nThe intake flips a captured cube over a boot into a preferred tall/narrow orientation. The team describes Lexan construction and a passive preload retainer nicknamed the drinking bird. It reports six intake revisions before bagging and explicitly connects orientation control to packing cubes on the scale/switch.\n\n### Team rationale or evidence boundary\n\nCapture cubes in varied orientations while delivering a consistent final pose and keeping the elevator payload light.\n\n### Engineering interpretation\n\nAn intake can do useful sorting and reorientation before the scoring mechanism ever moves. The important transformation is entry pose to stable exit pose. Boot geometry, piece inertia, roller contact and the backstop determine whether the cube rolls as intended or wedges. A different box with soft walls or different aspect ratio may not rotate predictably. The historical number of revisions describes what 148 did; for 1833, first reason through geometry and use a bounded contact experiment only if the pose transformation remains uncertain.\n\n### Proposed validation — not performed\n\nCreate an entry-pose map including open fabric face, diagonal approach and partial capture. Check whether each pose converges to the desired orientation and whether a reversal can recover a jam without hand intervention.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Boot cube intake](../../images/history_2018-148_p6.jpg)\n\n## Cascading lift with lightweight stages\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [3].\n\n### Published construction or code\n\nThe team describes a cascading elevator with two 775pros, a chain-driven bottom stage and Dyneema-coupled upper stages. Thin-wall tubes, printed rollers and constant-force springs reduce the active lifting burden. The pamphlet reports approximately 90-inch maximum height and below-42-inch collapsed height, along with a sub-half-second lift claim.\n\n### Team rationale or evidence boundary\n\nMove a cube rapidly to scoring height while retaining low travel clearance and minimizing carried structural mass.\n\n### Engineering interpretation\n\nThe collapsed-to-extended ratio, stage overlap and moving mass are interdependent. A mechanism that looks like a generic elevator may owe its performance to a light intake, careful bearing arrangement, counterbalance and restrained side loads. Cascading kinematics should be derived explicitly; do not copy a published timing into a design target without knowing travel, load and timing endpoints. Rope strength advertising is not an installed safety factor after knots, terminations, wear and small pulleys.\n\n### Proposed validation — not performed\n\nDerive each stage’s speed and cable force, compare deflection at full reach and check the retained cube clearance through every intermediate position. Inspect counterbalance behavior near both travel limits.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Cascading elevator](../../images/history_2018-148_p3.jpg)\n\n## Independent winch and active partner capture\n\nVersion: Uppercut judges pamphlet snapshot. Source: https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf. Physical PDF pages: [4, 5].\n\n### Published construction or code\n\nThe hook is carried up by the elevator, detaches from its retained mount at the bar, and remains while a three-775pro winch raises the robot. An A-frame manages the pair’s balance. A one-way roller draws in a partner-deployed strap and positions the partner on supporting forks; the source reports lifting itself plus a full-weight partner in under three seconds.\n\n### Team rationale or evidence boundary\n\nKeep a partner secure and aligned during a fast shared climb rather than rely on the partner simply remaining balanced on a support.\n\n### Engineering interpretation\n\nPartner capture is not the same as partner lift force. The strap/roller controls relative motion while forks support vertical load. Strap availability, deployment, approach and partner compatibility remain dependencies. A separate winch changes the scoring elevator’s load duty but adds motor/gearbox mass and service interfaces. For a new game, compare that whole-system cost with the actual bonus value. Electric-only latching must preserve a safe retained state and a controlled release; no load rating is inferred from the pamphlet photograph.\n\n### Proposed validation — not performed\n\nSpecify the partner interface and load cases before detailed winch selection. Evaluate docking error, strap failure, anti-backdrive and the combined CG during the full lift, not just at the final pose.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Hook and winch climb](../../images/history_2018-148_p4.jpg)\n\n![Partner capture and forks](../../images/history_2018-148_p5.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+        "https://www.robowranglers148.com/resources.html",
+        "https://www.robowranglers148.com/2018-competitions.html"
+      ],
+      "path": "docs/historical/2018-148.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2018-148-p1",
+      "robot_id": "2018-148",
+      "kind": "binder_figure",
+      "path": "images/history_2018-148_p1.jpg",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=1",
+      "pdf_page": 1,
+      "crop_bounds_normalized": [
+        0.06,
+        0.2,
+        0.95,
+        0.45
+      ],
+      "caption": "2018-148 · Low-profile drivetrain. Selected figure region from physical PDF page 1; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Low-profile drivetrain",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "4bd84bacd5c0de75c207a6cd94dc1b07220575c8259b12f48820a8cdce65236e",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 616,
+      "height_px": 438,
+      "bytes": 56306,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-148-p1",
+      "reader_url": "index.html#image=history-2018-148-p1",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-148-p3",
+      "robot_id": "2018-148",
+      "kind": "binder_figure",
+      "path": "images/history_2018-148_p3.jpg",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=3",
+      "pdf_page": 3,
+      "crop_bounds_normalized": [
+        0.06,
+        0.25,
+        0.95,
+        0.8
+      ],
+      "caption": "2018-148 · Cascading elevator. Selected figure region from physical PDF page 3; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Cascading elevator",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "f1bb74980b5cf12535d8dbc46b65dc027b8bc6050aca3f767f318e5175a8f5a3",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 616,
+      "height_px": 960,
+      "bytes": 73484,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-148-p3",
+      "reader_url": "index.html#image=history-2018-148-p3",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-148-p4",
+      "robot_id": "2018-148",
+      "kind": "binder_figure",
+      "path": "images/history_2018-148_p4.jpg",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=4",
+      "pdf_page": 4,
+      "crop_bounds_normalized": [
+        0.04,
+        0.25,
+        0.98,
+        0.75
+      ],
+      "caption": "2018-148 · Hook and winch climb. Selected figure region from physical PDF page 4; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Hook and winch climb",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "489e59c79cb54c4095a81d74480e3ff4f1f4fae02d1ef25caa3969b98c6d6300",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 650,
+      "height_px": 788,
+      "bytes": 38846,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-148-p4",
+      "reader_url": "index.html#image=history-2018-148-p4",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-148-p5",
+      "robot_id": "2018-148",
+      "kind": "binder_figure",
+      "path": "images/history_2018-148_p5.jpg",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=5",
+      "pdf_page": 5,
+      "crop_bounds_normalized": [
+        0.04,
+        0.32,
+        0.97,
+        0.66
+      ],
+      "caption": "2018-148 · Partner capture and forks. Selected figure region from physical PDF page 5; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Partner capture and forks",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "b1944b3de049574f7f7f949f9b40617fbd48ff19a9e083c36a9ae0126cfa7f2f",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 637,
+      "height_px": 480,
+      "bytes": 30370,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-148-p5",
+      "reader_url": "index.html#image=history-2018-148-p5",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-148-p6",
+      "robot_id": "2018-148",
+      "kind": "binder_figure",
+      "path": "images/history_2018-148_p6.jpg",
+      "source_url": "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf#page=6",
+      "pdf_page": 6,
+      "crop_bounds_normalized": [
+        0.04,
+        0.29,
+        0.97,
+        0.76
+      ],
+      "caption": "2018-148 · Boot cube intake. Selected figure region from physical PDF page 6; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Boot cube intake",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "6abe7acecf82c10ca1ddcbead3e59a00f9ebe0977f7f35989cd49847921fb2ba",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 643,
+      "height_px": 741,
+      "bytes": 43551,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-148-p6",
+      "reader_url": "index.html#image=history-2018-148-p6",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2018-148",
+    "year": 2018,
+    "team": 148,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "148 2018 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-313a037a88992ab3",
+      "history-source-da36f654965378d4",
+      "history-source-ffb73d08952abd64"
+    ],
+    "technical_note_ids": [
+      "history-2018-148-note-1",
+      "history-2018-148-note-2",
+      "history-2018-148-note-3",
+      "history-2018-148-note-4"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2018-148-note-1:construction",
+    "history-2018-148-note-1:team_stated_reason",
+    "history-2018-148-note-1:engineering_analysis",
+    "history-2018-148-note-1:recommended_validation",
+    "history-2018-148-note-1:limitations",
+    "history-2018-148-note-2:construction",
+    "history-2018-148-note-2:team_stated_reason",
+    "history-2018-148-note-2:engineering_analysis",
+    "history-2018-148-note-2:recommended_validation",
+    "history-2018-148-note-2:limitations",
+    "history-2018-148-note-3:construction",
+    "history-2018-148-note-3:team_stated_reason",
+    "history-2018-148-note-3:engineering_analysis",
+    "history-2018-148-note-3:recommended_validation",
+    "history-2018-148-note-3:limitations",
+    "history-2018-148-note-4:construction",
+    "history-2018-148-note-4:team_stated_reason",
+    "history-2018-148-note-4:engineering_analysis",
+    "history-2018-148-note-4:recommended_validation",
+    "history-2018-148-note-4:limitations",
+    "history-param-2018-148-3-96369",
+    "history-param-2018-148-1-2edad"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

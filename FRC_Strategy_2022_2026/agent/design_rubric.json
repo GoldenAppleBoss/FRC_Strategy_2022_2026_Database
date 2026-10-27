@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0",
+  "title": "1833 architecture output review",
+  "total_possible": 100,
+  "scoring": {
+    "0": "Missing, materially incorrect or unusable",
+    "1": "Present but incomplete, generic, weakly supported or inconsistent",
+    "2": "Explicit, supported, consistent and useful for the decision"
+  },
+  "hard_rejection_flags": [
+    "Wrong governing game or central illegal mechanism",
+    "Fabricated sources, observations or performed tests",
+    "Support-only selected architecture for 1833",
+    "Turret selected for 1833",
+    "Pneumatic actuation proposed for 1833"
+  ],
+  "score_does_not_override_rejection_flags": true,
+  "calibration": "Reviewer rubric, not measured model accuracy or certified robot performance",
+  "historical_case": "docs/evaluations/DUNKTANK_REVIEW_2026-10-26.md",
+  "historical_score": 68,
+  "historical_case_new_profile_gate": "Support-only baseline rejected by later user mandate; original score retained without retroactive adjustment",
+  "categories": [
+    {
+      "id": "C01",
+      "title": "Assignment and context",
+      "max_points": 10,
+      "checks": [
+        {
+          "id": "C01.1",
+          "criterion": "Correct game",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C01.2",
+          "criterion": "Required deliverables",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C01.3",
+          "criterion": "One clear recommendation",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C01.4",
+          "criterion": "Historical legality versus retrospective references",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C01.5",
+          "criterion": "Actionable team resources and competitive objective",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "Rules and quantitative accuracy",
+      "max_points": 12,
+      "checks": [
+        {
+          "id": "C02.1",
+          "criterion": "Scoring arithmetic",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C02.2",
+          "criterion": "Stack/prerequisite/reset state",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C02.3",
+          "criterion": "Supply and possession",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C02.4",
+          "criterion": "Major construction/gameplay restrictions",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C02.5",
+          "criterion": "Manual revision and clarification coverage",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C02.6",
+          "criterion": "Timing boundaries and exceptional states",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "Strategic understanding",
+      "max_points": 14,
+      "checks": [
+        {
+          "id": "C03.1",
+          "criterion": "Identify bottleneck",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C03.2",
+          "criterion": "Explain beneficial own resets",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C03.3",
+          "criterion": "Evaluate shared incentives",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C03.4",
+          "criterion": "Per-goal hostile reset consequences",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C03.5",
+          "criterion": "Timed match and resource model",
+          "max_points": 2,
+          "dunktank_historical_score": 0
+        },
+        {
+          "id": "C03.6",
+          "criterion": "Marginal alliance counterfactual",
+          "max_points": 2,
+          "dunktank_historical_score": 0
+        },
+        {
+          "id": "C03.7",
+          "criterion": "Endgame flow and opportunity cost",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Task decomposition",
+      "max_points": 10,
+      "checks": [
+        {
+          "id": "C04.1",
+          "criterion": "Relevant task coverage",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C04.2",
+          "criterion": "Phase/state distinctions",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C04.3",
+          "criterion": "Outcomes versus mechanisms",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C04.4",
+          "criterion": "Priorities before architecture commitment",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C04.5",
+          "criterion": "Robot task versus alliance result versus compliance hierarchy",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "Workbook quality",
+      "max_points": 10,
+      "checks": [
+        {
+          "id": "C05.1",
+          "criterion": "One-sheet structure",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C05.2",
+          "criterion": "Formulas and summary results",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C05.3",
+          "criterion": "Required fields and separate human decisions",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C05.4",
+          "criterion": "Task-specific dependencies",
+          "max_points": 2,
+          "dunktank_historical_score": 0
+        },
+        {
+          "id": "C05.5",
+          "criterion": "Consistent acceptance requirements",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title": "Historical reference quality",
+      "max_points": 10,
+      "checks": [
+        {
+          "id": "C06.1",
+          "criterion": "Year/team/version locators",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C06.2",
+          "criterion": "Accurate historical technical details",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C06.3",
+          "criterion": "Source claim versus inference",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C06.4",
+          "criterion": "Useful visual/source evidence",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C06.5",
+          "criterion": "Explicit transfer adaptations",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "title": "Architecture reasoning",
+      "max_points": 12,
+      "checks": [
+        {
+          "id": "C07.1",
+          "criterion": "Connected piece flow",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C07.2",
+          "criterion": "Failure-mode reasoning",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C07.3",
+          "criterion": "Plausible spatial envelope",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C07.4",
+          "criterion": "Justified mechanism/material choices",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C07.5",
+          "criterion": "Drive/electrical integration",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C07.6",
+          "criterion": "Controls/service/recovery integration",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "title": "Alternatives and selection",
+      "max_points": 8,
+      "checks": [
+        {
+          "id": "C08.1",
+          "criterion": "Credible complete alternative",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C08.2",
+          "criterion": "Quantitative common-assumption comparison",
+          "max_points": 2,
+          "dunktank_historical_score": 0
+        },
+        {
+          "id": "C08.3",
+          "criterion": "Capacity and deployment trade study",
+          "max_points": 2,
+          "dunktank_historical_score": 0
+        },
+        {
+          "id": "C08.4",
+          "criterion": "Switching conditions and fallback",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "title": "Validation plan",
+      "max_points": 6,
+      "checks": [
+        {
+          "id": "C09.1",
+          "criterion": "Critical system-risk tests",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C09.2",
+          "criterion": "Coherent measurement and acceptance",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C09.3",
+          "criterion": "Efficient sequence tied to decisions",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Overall usefulness",
+      "max_points": 8,
+      "checks": [
+        {
+          "id": "C10.1",
+          "criterion": "Actionable next work",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C10.2",
+          "criterion": "Honest uncertainty",
+          "max_points": 2,
+          "dunktank_historical_score": 2
+        },
+        {
+          "id": "C10.3",
+          "criterion": "Team tailoring",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        },
+        {
+          "id": "C10.4",
+          "criterion": "Complete usable handoff",
+          "max_points": 2,
+          "dunktank_historical_score": 1
+        }
+      ]
+    }
+  ],
+  "current_profile_interpretation": {
+    "independence": "Score strategic usefulness and task priorities on independently achievable RP and owned scoring prerequisites, not ideal partner dependence",
+    "validation": "Full credit rewards proportionate decision-changing evidence and explicit iteration costs; number of prototypes does not earn credit",
+    "historical_score": "Original DunkTank score remains 68; newer owner requirements are applied prospectively",
+    "historical_scope": "No mechanism inspiration before 2015 or from 2016; selective 2015, deprioritize duplicate 2017, 2018/2019 coverage planned"
+  }
+}

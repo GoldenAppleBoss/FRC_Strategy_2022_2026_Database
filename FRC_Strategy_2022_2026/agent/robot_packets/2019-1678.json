@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "id": "2019-1678",
+  "year": 2019,
+  "team": 1678,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2019.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2019,
+    "team": 1678,
+    "team_name": "Citrus Circuits",
+    "robot": "Buzz Lime-year",
+    "primary": [
+      "https://www.citruscircuits.org/2019-robot",
+      "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/"
+    ],
+    "architecture": "A six-wheel drive carries a pass-through elevator/wrist system for cargo and hatch panels at all rocket levels. A center-hole hatch device uses an arrowhead lead-in and expanding retention. The team reports a triple-robot HAB3 capability. Its CAD discussion clarifies rope tensioning, lift sensing and a brake that was modeled but never installed.",
+    "analysis": "The reference is valuable for fixed-plane front/back scoring and for distinguishing a public model from competition hardware. A partner lift may own more of a bonus’s engineering work yet still requires partner docking and geometry. The team’s uniqueness/success claim is attributed, not independently certified here.",
+    "id": "2019-1678",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "DESTINATION: DEEP SPACE",
+    "subsystems": {
+      "drivetrain": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "intake": "The robot page describes an arrowhead lead-in passing through the hatch center and two double-acting cylinders that extend retention features. Separate cargo acquisition uses possession sensing. The reviewed page describes function, not full dimensions, force settings or cycle statistics.",
+      "transfer": "The official robot summary describes a pass-through elevator for front/back scoring. In CAD replies, the team identifies Spectra cable, threaded looped-bolt tension adjustment and a hall switch/magnet zero reference. The round wrist tube uses inserted connecting nuts. The release also describes significant use of printed components.",
+      "scoring": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "endgame": "The robot page reports lifting two other robots to the highest HAB level. CAD reply 16 says the elevator brake was considered for that load but scrapped because the elevator held adequately; it never reached the competition robot. The source’s “only successful” phrasing is a team claim, not a comparative census.",
+      "controls": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent."
+    },
+    "coverage": {
+      "drivetrain": "partial / unresolved selected-source detail",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "partial / unresolved selected-source detail",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "partial / unresolved selected-source detail"
+    },
+    "versions": [
+      "Buzz Lime-year published robot description",
+      "Buzz Lime-year published CAD discussion",
+      "Buzz Lime-year competition robot versus modeled brake"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-cd2ae98270642e5b",
+      "history-source-b2b5b316e4a073bc"
+    ],
+    "tags": [
+      "historical 2019",
+      "curated primary technical study",
+      "intake",
+      "transfer",
+      "endgame"
+    ],
+    "binder_audit": {
+      "robot_id": "2019-1678",
+      "year": 2019,
+      "team": 1678,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "1678 2019 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-cd2ae98270642e5b",
+        "history-source-b2b5b316e4a073bc"
+      ],
+      "technical_note_ids": [
+        "history-2019-1678-note-1",
+        "history-2019-1678-note-2",
+        "history-2019-1678-note-3"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2019-1678-note-1",
+      "history-2019-1678-note-2",
+      "history-2019-1678-note-3"
+    ],
+    "images": [
+      {
+        "id": "history-2019-1678-source",
+        "robot_id": "2019-1678",
+        "kind": "team_release_original",
+        "path": "images/history_2019-1678_source.png",
+        "source_url": "https://www.citruscircuits.org/2019-robot",
+        "image_url": "https://static.wixstatic.com/media/146bfa_5f5728fd7b2c417b83fa408fda6f675a~mv2.png",
+        "caption": "2019-1678 · Buzz Lime-year field photograph: lifted cargo, elevator and rocket context. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+        "publisher_label": "Buzz Lime-year field photograph: lifted cargo, elevator and rocket context",
+        "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+        "review_status": "Original image visually inspected 2026-10-27",
+        "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+        "whole_robot_photo": true,
+        "rights": "Credited technical reference; copyright remains with original publisher.",
+        "sha256": "00030f823c63f4374f54ae8f4408e0f931ff7338ad597cb1c36eb2db9b52d4fb",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2019-1678 — Citrus Circuits: Buzz Lime-year\n\nA six-wheel drive carries a pass-through elevator/wrist system for cargo and hatch panels at all rocket levels. A center-hole hatch device uses an arrowhead lead-in and expanding retention. The team reports a triple-robot HAB3 capability. Its CAD discussion clarifies rope tensioning, lift sensing and a brake that was modeled but never installed.\n\n## Strategic interpretation\n\nThe reference is valuable for fixed-plane front/back scoring and for distinguishing a public model from competition hardware. A partner lift may own more of a bonus’s engineering work yet still requires partner docking and geometry. The team’s uniqueness/success claim is attributed, not independently certified here.\n\n## Arrowhead hatch retention and cargo capture\n\nVersion: Buzz Lime-year published robot description. Source: https://www.citruscircuits.org/2019-robot. Physical PDF pages: not applicable; see source locators.\n\n### Published construction or code\n\nThe robot page describes an arrowhead lead-in passing through the hatch center and two double-acting cylinders that extend retention features. Separate cargo acquisition uses possession sensing. The reviewed page describes function, not full dimensions, force settings or cycle statistics.\n\n### Team rationale or evidence boundary\n\nEngage loading-station hatches quickly, hold them in transit and release at the scoring target; detect acquired cargo for operator feedback.\n\n### Engineering interpretation\n\nA lead-in can enlarge approach tolerance before positive retention. The force path after capture is distinct from the geometry that guides initial insertion. For 1833, an electric cam or justified passive retention could preserve the function, but needs explicit compliance, latch travel, force and release analysis. The presence of two pieces does not permit simultaneous carriage under the game’s one-piece rule.\n\n### Proposed validation — not performed\n\nCheck disk-center tolerance, legal possession transitions and release onto a representative hook/loop target. Validate the worst skewed approach and recovery if only one retaining element engages.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Buzz Lime-year field photograph: lifted cargo, elevator and rocket context](../../images/history_2019-1678_source.png)\n\n## Pass-through lift with tension adjustment and position reference\n\nVersion: Buzz Lime-year published CAD discussion. Source: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 4: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/4\n- Post 7: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/7\n- Post 15: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/15\n- Post 17: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/17\n\n### Published construction or code\n\nThe official robot summary describes a pass-through elevator for front/back scoring. In CAD replies, the team identifies Spectra cable, threaded looped-bolt tension adjustment and a hall switch/magnet zero reference. The round wrist tube uses inserted connecting nuts. The release also describes significant use of printed components.\n\n### Team rationale or evidence boundary\n\nThe team identifies the functions of the tensioner and zero sensor. The selected replies do not provide a complete measured lift performance comparison.\n\n### Engineering interpretation\n\nA pass-through is a workspace requirement spanning the frame, lift, wrist and piece. Rope adjustment must preserve appropriate tension across travel rather than just at the bottom. A bottom reference addresses accumulated position error but cannot diagnose every rope slip or stage jam. Printed mounts and tube inserts need load-specific design; a vendor part number is not proof of capacity in a new high-moment joint.\n\n### Proposed validation — not performed\n\nCheck swept cargo/panel/end-effector clearance and actual cable routing. Derive stage travel and tension, inspect termination access and define recovery from an inconsistent encoder/zero sensor state.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Buzz Lime-year field photograph: lifted cargo, elevator and rocket context](../../images/history_2019-1678_source.png)\n\n## Triple-climb claim and non-installed elevator brake\n\nVersion: Buzz Lime-year competition robot versus modeled brake. Source: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 16: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/16\n\n### Published construction or code\n\nThe robot page reports lifting two other robots to the highest HAB level. CAD reply 16 says the elevator brake was considered for that load but scrapped because the elevator held adequately; it never reached the competition robot. The source’s “only successful” phrasing is a team claim, not a comparative census.\n\n### Team rationale or evidence boundary\n\nHold the combined load without unnecessary brake hardware and preserve the published multi-robot climb capability.\n\n### Engineering interpretation\n\nA CAD feature can represent an abandoned design. Treat this as explicit negative installation evidence, not an invitation to erase the historical concept. Removing a brake depends on torque, thermal load, gearing, controller behavior and the duration/state of holding. The lesson is to prove necessity and margins, not to remove every positive lock from a future climb. For 1833, any current system still needs a justified load/power-loss response under the actual rules.\n\n### Proposed validation — not performed\n\nVerify the chosen installed version, partner load and supporting geometry before adaptation. Calculate hold current and thermal duty, then establish the safe behavior for loss of power or sensor feedback.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Buzz Lime-year field photograph: lifted cargo, elevator and rocket context](../../images/history_2019-1678_source.png)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "intake",
+      "title": "Arrowhead hatch retention and cargo capture",
+      "version_label": "Buzz Lime-year published robot description",
+      "pdf_pages": [],
+      "construction": "The robot page describes an arrowhead lead-in passing through the hatch center and two double-acting cylinders that extend retention features. Separate cargo acquisition uses possession sensing. The reviewed page describes function, not full dimensions, force settings or cycle statistics.",
+      "team_stated_reason": "Engage loading-station hatches quickly, hold them in transit and release at the scoring target; detect acquired cargo for operator feedback.",
+      "engineering_analysis": "A lead-in can enlarge approach tolerance before positive retention. The force path after capture is distinct from the geometry that guides initial insertion. For 1833, an electric cam or justified passive retention could preserve the function, but needs explicit compliance, latch travel, force and release analysis. The presence of two pieces does not permit simultaneous carriage under the game’s one-piece rule.",
+      "recommended_validation": "Check disk-center tolerance, legal possession transitions and release onto a representative hook/loop target. Validate the worst skewed approach and recovery if only one retaining element engages.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.citruscircuits.org/2019-robot",
+      "id": "history-2019-1678-note-1",
+      "robot_id": "2019-1678",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1678",
+      "page_references": [],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1678-source"
+      ]
+    },
+    {
+      "subsystem": "transfer",
+      "title": "Pass-through lift with tension adjustment and position reference",
+      "version_label": "Buzz Lime-year published CAD discussion",
+      "pdf_pages": [],
+      "construction": "The official robot summary describes a pass-through elevator for front/back scoring. In CAD replies, the team identifies Spectra cable, threaded looped-bolt tension adjustment and a hall switch/magnet zero reference. The round wrist tube uses inserted connecting nuts. The release also describes significant use of printed components.",
+      "team_stated_reason": "The team identifies the functions of the tensioner and zero sensor. The selected replies do not provide a complete measured lift performance comparison.",
+      "engineering_analysis": "A pass-through is a workspace requirement spanning the frame, lift, wrist and piece. Rope adjustment must preserve appropriate tension across travel rather than just at the bottom. A bottom reference addresses accumulated position error but cannot diagnose every rope slip or stage jam. Printed mounts and tube inserts need load-specific design; a vendor part number is not proof of capacity in a new high-moment joint.",
+      "recommended_validation": "Check swept cargo/panel/end-effector clearance and actual cable routing. Derive stage travel and tension, inspect termination access and define recovery from an inconsistent encoder/zero sensor state.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/",
+      "id": "history-2019-1678-note-2",
+      "robot_id": "2019-1678",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1678",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/4",
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/7",
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/15",
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/17"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1678-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 4,
+          "url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/4"
+        },
+        {
+          "post_number": 7,
+          "url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/7"
+        },
+        {
+          "post_number": 15,
+          "url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/15"
+        },
+        {
+          "post_number": 17,
+          "url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/17"
+        }
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "Triple-climb claim and non-installed elevator brake",
+      "version_label": "Buzz Lime-year competition robot versus modeled brake",
+      "pdf_pages": [],
+      "construction": "The robot page reports lifting two other robots to the highest HAB level. CAD reply 16 says the elevator brake was considered for that load but scrapped because the elevator held adequately; it never reached the competition robot. The source’s “only successful” phrasing is a team claim, not a comparative census.",
+      "team_stated_reason": "Hold the combined load without unnecessary brake hardware and preserve the published multi-robot climb capability.",
+      "engineering_analysis": "A CAD feature can represent an abandoned design. Treat this as explicit negative installation evidence, not an invitation to erase the historical concept. Removing a brake depends on torque, thermal load, gearing, controller behavior and the duration/state of holding. The lesson is to prove necessity and margins, not to remove every positive lock from a future climb. For 1833, any current system still needs a justified load/power-loss response under the actual rules.",
+      "recommended_validation": "Verify the chosen installed version, partner load and supporting geometry before adaptation. Calculate hold current and thermal duty, then establish the safe behavior for loss of power or sensor feedback.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/",
+      "id": "history-2019-1678-note-3",
+      "robot_id": "2019-1678",
+      "year": 2019,
+      "binder_id": "history-publication-2019-1678",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/16"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-1678-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 16,
+          "url": "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/16"
+        }
+      ]
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [
+    {
+      "id": "history-publication-2019-1678",
+      "robot_id": "2019-1678",
+      "title": "2019-1678 Buzz Lime-year primary technical release/discussion",
+      "url": "https://www.citruscircuits.org/2019-robot",
+      "format": "team_discussion",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "first_party_technical_discussion"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2019-1678:publication-version:1",
+      "label": "Buzz Lime-year published robot description",
+      "robot_id": "2019-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-1678-note-1"
+      ],
+      "source_urls": [
+        "https://www.citruscircuits.org/2019-robot"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-1678:publication-version:2",
+      "label": "Buzz Lime-year published CAD discussion",
+      "robot_id": "2019-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-1678-note-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-1678:publication-version:3",
+      "label": "Buzz Lime-year competition robot versus modeled brake",
+      "robot_id": "2019-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-1678-note-3"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2019-1678",
+      "title": "2019-1678 Citrus Circuits — technical study",
+      "year": 2019,
+      "robot_id": "2019-1678",
+      "kind": "historical_technical_study",
+      "body": "# 2019-1678 — Citrus Circuits: Buzz Lime-year\n\nA six-wheel drive carries a pass-through elevator/wrist system for cargo and hatch panels at all rocket levels. A center-hole hatch device uses an arrowhead lead-in and expanding retention. The team reports a triple-robot HAB3 capability. Its CAD discussion clarifies rope tensioning, lift sensing and a brake that was modeled but never installed.\n\n## Strategic interpretation\n\nThe reference is valuable for fixed-plane front/back scoring and for distinguishing a public model from competition hardware. A partner lift may own more of a bonus’s engineering work yet still requires partner docking and geometry. The team’s uniqueness/success claim is attributed, not independently certified here.\n\n## Arrowhead hatch retention and cargo capture\n\nVersion: Buzz Lime-year published robot description. Source: https://www.citruscircuits.org/2019-robot. Physical PDF pages: not applicable; see source locators.\n\n### Published construction or code\n\nThe robot page describes an arrowhead lead-in passing through the hatch center and two double-acting cylinders that extend retention features. Separate cargo acquisition uses possession sensing. The reviewed page describes function, not full dimensions, force settings or cycle statistics.\n\n### Team rationale or evidence boundary\n\nEngage loading-station hatches quickly, hold them in transit and release at the scoring target; detect acquired cargo for operator feedback.\n\n### Engineering interpretation\n\nA lead-in can enlarge approach tolerance before positive retention. The force path after capture is distinct from the geometry that guides initial insertion. For 1833, an electric cam or justified passive retention could preserve the function, but needs explicit compliance, latch travel, force and release analysis. The presence of two pieces does not permit simultaneous carriage under the game’s one-piece rule.\n\n### Proposed validation — not performed\n\nCheck disk-center tolerance, legal possession transitions and release onto a representative hook/loop target. Validate the worst skewed approach and recovery if only one retaining element engages.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Buzz Lime-year field photograph: lifted cargo, elevator and rocket context](../../images/history_2019-1678_source.png)\n\n## Pass-through lift with tension adjustment and position reference\n\nVersion: Buzz Lime-year published CAD discussion. Source: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 4: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/4\n- Post 7: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/7\n- Post 15: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/15\n- Post 17: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/17\n\n### Published construction or code\n\nThe official robot summary describes a pass-through elevator for front/back scoring. In CAD replies, the team identifies Spectra cable, threaded looped-bolt tension adjustment and a hall switch/magnet zero reference. The round wrist tube uses inserted connecting nuts. The release also describes significant use of printed components.\n\n### Team rationale or evidence boundary\n\nThe team identifies the functions of the tensioner and zero sensor. The selected replies do not provide a complete measured lift performance comparison.\n\n### Engineering interpretation\n\nA pass-through is a workspace requirement spanning the frame, lift, wrist and piece. Rope adjustment must preserve appropriate tension across travel rather than just at the bottom. A bottom reference addresses accumulated position error but cannot diagnose every rope slip or stage jam. Printed mounts and tube inserts need load-specific design; a vendor part number is not proof of capacity in a new high-moment joint.\n\n### Proposed validation — not performed\n\nCheck swept cargo/panel/end-effector clearance and actual cable routing. Derive stage travel and tension, inspect termination access and define recovery from an inconsistent encoder/zero sensor state.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Buzz Lime-year field photograph: lifted cargo, elevator and rocket context](../../images/history_2019-1678_source.png)\n\n## Triple-climb claim and non-installed elevator brake\n\nVersion: Buzz Lime-year competition robot versus modeled brake. Source: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 16: https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/16\n\n### Published construction or code\n\nThe robot page reports lifting two other robots to the highest HAB level. CAD reply 16 says the elevator brake was considered for that load but scrapped because the elevator held adequately; it never reached the competition robot. The source’s “only successful” phrasing is a team claim, not a comparative census.\n\n### Team rationale or evidence boundary\n\nHold the combined load without unnecessary brake hardware and preserve the published multi-robot climb capability.\n\n### Engineering interpretation\n\nA CAD feature can represent an abandoned design. Treat this as explicit negative installation evidence, not an invitation to erase the historical concept. Removing a brake depends on torque, thermal load, gearing, controller behavior and the duration/state of holding. The lesson is to prove necessity and margins, not to remove every positive lock from a future climb. For 1833, any current system still needs a justified load/power-loss response under the actual rules.\n\n### Proposed validation — not performed\n\nVerify the chosen installed version, partner load and supporting geometry before adaptation. Calculate hold current and thermal duty, then establish the safe behavior for loss of power or sensor feedback.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Buzz Lime-year field photograph: lifted cargo, elevator and rocket context](../../images/history_2019-1678_source.png)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://www.citruscircuits.org/2019-robot",
+        "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/"
+      ],
+      "path": "docs/historical/2019-1678.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2019-1678-source",
+      "robot_id": "2019-1678",
+      "kind": "team_release_original",
+      "path": "images/history_2019-1678_source.png",
+      "source_url": "https://www.citruscircuits.org/2019-robot",
+      "image_url": "https://static.wixstatic.com/media/146bfa_5f5728fd7b2c417b83fa408fda6f675a~mv2.png",
+      "caption": "2019-1678 · Buzz Lime-year field photograph: lifted cargo, elevator and rocket context. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+      "publisher_label": "Buzz Lime-year field photograph: lifted cargo, elevator and rocket context",
+      "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+      "review_status": "Original image visually inspected 2026-10-27",
+      "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+      "whole_robot_photo": true,
+      "rights": "Credited technical reference; copyright remains with original publisher.",
+      "sha256": "00030f823c63f4374f54ae8f4408e0f931ff7338ad597cb1c36eb2db9b52d4fb",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/png",
+      "width_px": 1100,
+      "height_px": 733,
+      "bytes": 1226609,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2019-1678-source",
+      "reader_url": "index.html#image=history-2019-1678-source",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2019-1678",
+    "year": 2019,
+    "team": 1678,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "1678 2019 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-cd2ae98270642e5b",
+      "history-source-b2b5b316e4a073bc"
+    ],
+    "technical_note_ids": [
+      "history-2019-1678-note-1",
+      "history-2019-1678-note-2",
+      "history-2019-1678-note-3"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2019-1678-note-1:construction",
+    "history-2019-1678-note-1:team_stated_reason",
+    "history-2019-1678-note-1:engineering_analysis",
+    "history-2019-1678-note-1:recommended_validation",
+    "history-2019-1678-note-1:limitations",
+    "history-2019-1678-note-2:construction",
+    "history-2019-1678-note-2:team_stated_reason",
+    "history-2019-1678-note-2:engineering_analysis",
+    "history-2019-1678-note-2:recommended_validation",
+    "history-2019-1678-note-2:limitations",
+    "history-2019-1678-note-3:construction",
+    "history-2019-1678-note-3:team_stated_reason",
+    "history-2019-1678-note-3:engineering_analysis",
+    "history-2019-1678-note-3:recommended_validation",
+    "history-2019-1678-note-3:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

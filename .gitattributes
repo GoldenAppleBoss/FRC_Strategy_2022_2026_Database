@@ -1,0 +1,15 @@
+# Keep source text consistent across Windows and other platforms.
+* text=auto eol=lf
+
+# Preserve the imported corpus bytes and its published SHA-256 checksums.
+FRC_Strategy_2022_2026/** -text
+
+# Preserve packaged assets and databases as binary files.
+*.sqlite binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.xlsx binary

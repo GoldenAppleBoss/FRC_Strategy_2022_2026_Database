@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "no_pneumatics": true,
+  "normalized_tables_equal": 24,
+  "reader_logic_checks": 31,
+  "structural_design_tests": 13,
+  "authored_evaluation_prompts": 39,
+  "scope": "Owner constraints and roadmap only; 2018/2019 expansion not performed; no Tilt Shift analysis added to corpus"
+}

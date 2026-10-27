@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "team": 1833,
+  "team_name": "BEAN Robotics",
+  "district": "PCH",
+  "updated_on": "2026-10-27",
+  "authority": "Explicit owner instruction in conversation; not inferred from ranking",
+  "objective": "Best robot on the field; Einstein-level primary contributor with captain/elite first-round value",
+  "hard_constraints": {
+    "support_only_architecture_allowed": false,
+    "turret_allowed": false,
+    "pneumatics_allowed": false
+  },
+  "preferences": [
+    "Relatively simple mechanisms with elite effectiveness",
+    "Optimize acquisition, sustained output, autonomous, driver control, reliability and serviceability",
+    "Retain core competitive capability; avoid low-impact feature accumulation"
+  ],
+  "interpretation": {
+    "support": "A deliberately partner-dependent architecture ceiling; temporary defensive or complementary match assignments remain legitimate",
+    "turret": "Dedicated azimuth/yaw scorer aiming assembly; chassis aiming and justified elevation motion are permitted",
+    "simplicity": "Whole development/integration burden, not appearance or low ambition"
+  },
+  "required_reading": [
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_OPTIMIZATION_REFERENCES.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md",
+    "docs/1833_ACTUATION_AND_HISTORY_SCOPE.md",
+    "docs/HISTORICAL_2018_2019_TRANSFER.md"
+  ],
+  "owner_reported_history": [
+    {
+      "claim": "2026 worldwide EPA peak rank 8",
+      "status": "owner_reported_peak",
+      "peak_date": null
+    },
+    {
+      "claim": "2026 current worldwide EPA around rank 35 at instruction",
+      "status": "owner_reported_dated",
+      "as_of": "2026-10-26"
+    },
+    {
+      "claim": "Top-75 worldwide robot during 2025",
+      "status": "owner_reported_time_and_metric_scope_unresolved"
+    },
+    {
+      "claim": "Second-season 2026 division finalist",
+      "status": "official_division_finalist_confirmed; team-season wording owner context"
+    }
+  ],
+  "historical_snapshot_comparison": {
+    "source": "tables/season_epa.jsonl",
+    "2026": {
+      "epa_rank": 36,
+      "epa": 233.53
+    },
+    "2025": {
+      "epa_rank": 130,
+      "epa": 73.05
+    },
+    "boundary": "Retained snapshot differs from owner-reported peak/current history. Do not replace one with the other or assume comparable model versions/cohorts/times."
+  },
+  "reference_robots": [
+    "2026-7769",
+    "2024-1690",
+    "2025-2056",
+    "2025-1690",
+    "2025-1261"
+  ],
+  "references_boundary": "1261 research remains supplemental/partial, not a full dossier; owner comparison is attributed.",
+  "ranking_priority": {
+    "prioritize_independently_achievable_rp": true,
+    "essential_prerequisites_assigned_to_hypothetical_partners": false,
+    "goal": "Strong independent ranking power, first seed ambition and control of alliance formation, plus elite playoff output",
+    "boundary": "Independently achievable bonus conditions are distinct from guaranteed win RP, rank or draft outcomes"
+  },
+  "development_economics": {
+    "physical_iteration": "Extremely expensive per owner",
+    "default": "Front-load game, spatial and interface reasoning; test only consequential uncertainty with the cheapest adequate evidence",
+    "avoid": "Mandatory competing full CADs, hardware builds or simulation campaigns for bounded evident improvements"
+  },
+  "owner_decision_examples": [
+    {
+      "case": "2026 two lanes to four lanes",
+      "chronology": "Two-lane CAD not yet complete; four lanes fit the frame, so team adopted four",
+      "reasoning_chain": [
+        "more lanes",
+        "more BPS",
+        "more throughput",
+        "more fuel scored",
+        "more RP",
+        "less partner dependence",
+        "stronger seeding",
+        "control of playoff alliance formation"
+      ],
+      "evidence": "Owner report; no measured multiplier or before/after campaign supplied"
+    }
+  ],
+  "historical_research_scope": {
+    "planned_expansion_years": [],
+    "selective_years": [
+      2015
+    ],
+    "deprioritized_overlap_years": [
+      2017
+    ],
+    "excluded_mechanism_reference_years": [
+      2016
+    ],
+    "earliest_mechanism_reference_year": 2015,
+    "status": "Curated primary-source 2018/2019 expansion added 2026-10-27; not EPA-ranked or exhaustive",
+    "historical_source_integrity": "Preserve existing facts; current owner policy governs recommendation eligibility",
+    "added_context_years": [
+      2018,
+      2019
+    ],
+    "curated_robot_years_added": 13,
+    "coverage_audit": "data/historical_2018_2019_audit.json"
+  }
+}

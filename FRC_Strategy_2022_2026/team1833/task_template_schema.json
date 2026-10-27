@@ -79,5 +79,21 @@
     "material rules revision",
     "new or revised robot design brief"
   ],
-  "completion_gate": "Filled one-sheet workbook required before final architecture recommendation; see protocol for extension and evidence requirements."
+  "completion_gate": "Filled one-sheet workbook required before final architecture recommendation; see protocol for extension and evidence requirements.",
+  "design_profile": "team1833/design_profile.json",
+  "design_review_protocol": "docs/DESIGN_REVIEW_PROTOCOL.md",
+  "substantive_completion": [
+    "Task-specific dependencies",
+    "Difficulty drivers",
+    "Distinct unknown/test and decision consequence",
+    "Consistent screening and release targets",
+    "Neutral functional priorities before architecture choice"
+  ],
+  "hard_constraints": {
+    "support_only_architecture_allowed": false,
+    "turret_allowed": false,
+    "pneumatics_allowed": false
+  },
+  "ranking_priority": "Independently achievable RP; core scoring prerequisites owned by 1833",
+  "validation_policy": "Cheapest adequate decision-changing evidence; physical iteration is extremely expensive"
 }

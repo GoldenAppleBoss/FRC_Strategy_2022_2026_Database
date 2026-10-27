@@ -1,0 +1,639 @@
+{
+  "schema_version": "1.0",
+  "id": "2018-1610",
+  "year": 2018,
+  "team": 1610,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2018.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2018,
+    "team": 1610,
+    "team_name": "Blackwater Robotics",
+    "robot": "Cotton J",
+    "primary": [
+      "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf"
+    ],
+    "architecture": "A six-wheel West Coast drive, compact flipped gearboxes, compliant wheel cube intake and narrow two-stage elevator combine scale reach with a reused elevator climb. The binder records an intake/elevator interference-driven redesign and a weight-constrained choice of climbing mechanism.",
+    "analysis": "The most useful lesson is interface propagation: a wider intake changed the chassis, then the wrist sweep conflicted with elevator uprights, then the lift needed custom bearing blocks. This is exactly the sort of spatial coupling to expose before 1833 commits expensive CAD/manufacturing time. The team’s historical partner-dependent climb priority is context, not 1833 doctrine.",
+    "id": "2018-1610",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "FIRST POWER UP",
+    "subsystems": {
+      "drivetrain": "The chassis uses chain inside drive rails and a dropped-center six-wheel arrangement. The binder describes custom flipped gearboxes developed with 2363, positioning MiniCIM motors over the wheels to recover about eight inches of internal room. It also describes exhaust-air motor cooling on the historical pneumatic system.",
+      "intake": "The team compared claw and wheel concepts, chose green compliant wheels, and adjusted geometry for wide/narrow cube presentations. The fabric over the open face caused difficulty, so pneumatic arms maintained contact pressure. Belts/pulleys moved inside tubes for a thinner intake; later plastic tubes removed nearly a pound.",
+      "transfer": "The initial elevator was too wide for the intake’s required flip: the intake motors hit the uprights. The team narrowed the elevator to 13 inches and designed R4-bearing mounts because available linear kits did not fit the revised space.",
+      "scoring": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "endgame": "With little weight margin, the team compared an elevator lift, a carried hook with separate winch and a tape-measure deployment. It selected elevator lifting, added a motor/gearbox and placed hooks under the vertical intake. A pneumatic pin locks the elevator to avoid backdrive. Lift zeroing and encoder limits support normal operation.",
+      "controls": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent."
+    },
+    "coverage": {
+      "drivetrain": "documented selected primary technical study; details/version limits apply",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "partial / unresolved selected-source detail",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "partial / unresolved selected-source detail"
+    },
+    "versions": [
+      "Cotton J Rev 2 binder"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-3b3b241ee155d17a"
+    ],
+    "tags": [
+      "historical 2018",
+      "curated primary technical study",
+      "drivetrain",
+      "intake",
+      "transfer",
+      "endgame"
+    ],
+    "binder_audit": {
+      "robot_id": "2018-1610",
+      "year": 2018,
+      "team": 1610,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "1610 2018 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-3b3b241ee155d17a"
+      ],
+      "technical_note_ids": [
+        "history-2018-1610-note-1",
+        "history-2018-1610-note-2",
+        "history-2018-1610-note-3",
+        "history-2018-1610-note-4"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2018-1610-note-1",
+      "history-2018-1610-note-2",
+      "history-2018-1610-note-3",
+      "history-2018-1610-note-4"
+    ],
+    "images": [
+      {
+        "id": "history-2018-1610-p8",
+        "robot_id": "2018-1610",
+        "kind": "binder_figure",
+        "path": "images/history_2018-1610_p8.jpg",
+        "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=8",
+        "pdf_page": 8,
+        "crop_bounds_normalized": [
+          0.11,
+          0.24,
+          0.9,
+          0.65
+        ],
+        "caption": "2018-1610 · Drive chassis. Selected figure region from physical PDF page 8; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Drive chassis",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "2bfbb34eff35d12bd50fa0a9844feef36dbdd0f3b32f985efe0fb90575eb2da0",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-1610-p9",
+        "robot_id": "2018-1610",
+        "kind": "binder_figure",
+        "path": "images/history_2018-1610_p9.jpg",
+        "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=9",
+        "pdf_page": 9,
+        "crop_bounds_normalized": [
+          0.12,
+          0.23,
+          0.91,
+          0.77
+        ],
+        "caption": "2018-1610 · Flipped gearbox. Selected figure region from physical PDF page 9; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Flipped gearbox",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "95e6edd5f7e31fcba0782c30bb96eae3f0a5c27ea4eb58917df70fbbed31b047",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-1610-p11",
+        "robot_id": "2018-1610",
+        "kind": "binder_figure",
+        "path": "images/history_2018-1610_p11.jpg",
+        "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=11",
+        "pdf_page": 11,
+        "crop_bounds_normalized": [
+          0.13,
+          0.2,
+          0.93,
+          0.9
+        ],
+        "caption": "2018-1610 · Intake construction and installed view. Selected figure region from physical PDF page 11; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Intake construction and installed view",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "902c98a9edb33247a9f3aee193f18a37d07641131b7bf36869d791a8740b33b6",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-1610-p12",
+        "robot_id": "2018-1610",
+        "kind": "binder_figure",
+        "path": "images/history_2018-1610_p12.jpg",
+        "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=12",
+        "pdf_page": 12,
+        "crop_bounds_normalized": [
+          0.09,
+          0.16,
+          0.94,
+          0.88
+        ],
+        "caption": "2018-1610 · Elevator redesign figures. Selected figure region from physical PDF page 12; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Elevator redesign figures",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "01d6e31ca40cbaf91ececdb75764fc4a649cec4985be8c672e932cc92ba1e42e",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-1610-p13",
+        "robot_id": "2018-1610",
+        "kind": "binder_figure",
+        "path": "images/history_2018-1610_p13.jpg",
+        "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=13",
+        "pdf_page": 13,
+        "crop_bounds_normalized": [
+          0.1,
+          0.4,
+          0.95,
+          0.9
+        ],
+        "caption": "2018-1610 · Elevator climb hook and lock geometry. Selected figure region from physical PDF page 13; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "Elevator climb hook and lock geometry",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "89e25bfe8fc71e7f332363f25d834d253e09d09af3d1e5381f88ecb45dfb724f",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2018-1610 — Blackwater Robotics: Cotton J\n\nA six-wheel West Coast drive, compact flipped gearboxes, compliant wheel cube intake and narrow two-stage elevator combine scale reach with a reused elevator climb. The binder records an intake/elevator interference-driven redesign and a weight-constrained choice of climbing mechanism.\n\n## Strategic interpretation\n\nThe most useful lesson is interface propagation: a wider intake changed the chassis, then the wrist sweep conflicted with elevator uprights, then the lift needed custom bearing blocks. This is exactly the sort of spatial coupling to expose before 1833 commits expensive CAD/manufacturing time. The team’s historical partner-dependent climb priority is context, not 1833 doctrine.\n\n## Flipped gearboxes reclaim internal frame space\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [8, 9].\n\n### Published construction or code\n\nThe chassis uses chain inside drive rails and a dropped-center six-wheel arrangement. The binder describes custom flipped gearboxes developed with 2363, positioning MiniCIM motors over the wheels to recover about eight inches of internal room. It also describes exhaust-air motor cooling on the historical pneumatic system.\n\n### Team rationale or evidence boundary\n\nSave interior volume for mechanisms while using a familiar drive architecture.\n\n### Engineering interpretation\n\nThe dimension reclaimed at one interface is only useful if motor service, chain access and bumper protection remain viable. The source itself warns that chain-in-tube maintenance requires precision. Do not copy an exhaust-air cooling feature into an electric-only robot, or assume its thermal benefit exists without the original air duty cycle. Compare useful free space, not just frame dimensions, when evaluating how many scoring lanes or a lift can fit.\n\n### Proposed validation — not performed\n\nDraw section views for motor removal and chain tension/service. Account for wiring and guards in the claimed free volume before allocating it to another mechanism.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Drive chassis](../../images/history_2018-1610_p8.jpg)\n\n![Flipped gearbox](../../images/history_2018-1610_p9.jpg)\n\n## Wheel contact, active clamping and internal belt packaging\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [10, 11].\n\n### Published construction or code\n\nThe team compared claw and wheel concepts, chose green compliant wheels, and adjusted geometry for wide/narrow cube presentations. The fabric over the open face caused difficulty, so pneumatic arms maintained contact pressure. Belts/pulleys moved inside tubes for a thinner intake; later plastic tubes removed nearly a pound.\n\n### Team rationale or evidence boundary\n\nMaintain grip across different cube faces and orientations while reducing the intake’s size and lifted mass.\n\n### Engineering interpretation\n\nFriction, normal force and entry geometry work together. The trouble with the fabric face shows why a nominal cube dimension is insufficient contact data. An electric jaw would need controlled compliance or a passive spring characteristic instead of assuming cylinder force is reproduced by a rigid motor position. Internal belts protect the drive but can make replacement slower. Added lightness at the end of a wrist reduces joint torque more strongly than the same reduction near the chassis.\n\n### Proposed validation — not performed\n\nCheck contact-force and tolerance ranges for actual piece faces; compare a passive compliant jaw and electric adjustment only where the required behavior differs. Preserve belt replacement access.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Intake construction and installed view](../../images/history_2018-1610_p11.jpg)\n\n## Interference-driven narrow elevator redesign\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [12].\n\n### Published construction or code\n\nThe initial elevator was too wide for the intake’s required flip: the intake motors hit the uprights. The team narrowed the elevator to 13 inches and designed R4-bearing mounts because available linear kits did not fit the revised space.\n\n### Team rationale or evidence boundary\n\nAllow the intake’s vertical rotation while retaining the necessary scoring reach.\n\n### Engineering interpretation\n\nA statically fitting intake is not a fitting rotating intake. The critical envelope includes motors, pulleys, retained piece and compliance under load. Narrowing a lift can cure an interference while increasing torsional loading or reducing room for cables. This case should trigger an early swept-volume study; it does not justify waiting for a polished complete CAD model before noticing the conflict.\n\n### Proposed validation — not performed\n\nCreate a coarse lift/intake/piece swept envelope first. Check bearing spacing, off-axis moment and service access after narrowing; only detail the accepted architecture.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Elevator redesign figures](../../images/history_2018-1610_p12.jpg)\n\n## Elevator reuse and positive anti-backdrive lock\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [13, 14].\n\n### Published construction or code\n\nWith little weight margin, the team compared an elevator lift, a carried hook with separate winch and a tape-measure deployment. It selected elevator lifting, added a motor/gearbox and placed hooks under the vertical intake. A pneumatic pin locks the elevator to avoid backdrive. Lift zeroing and encoder limits support normal operation.\n\n### Team rationale or evidence boundary\n\nReuse existing reach and reduce additional climb hardware under a tight mass budget.\n\n### Engineering interpretation\n\nReuse can be simple at the architecture level but changes structural loads by orders of magnitude relative to a cube. The intake hooks, carriage, lift bearings, gearing and lock now participate in supporting robot weight. An electric-only adaptation needs a positive holding arrangement appropriate for power loss and release under load; motor stall is not automatically an equivalent lock. The source’s low climb priority cannot be transplanted to another bonus structure.\n\n### Proposed validation — not performed\n\nRecalculate the complete climbing load path and latch reaction, then compare added hardware with marginal match/RP value. Validate release and recovery behavior before approving the shared mechanism.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Elevator climb hook and lock geometry](../../images/history_2018-1610_p13.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "drivetrain",
+      "title": "Flipped gearboxes reclaim internal frame space",
+      "version_label": "Cotton J Rev 2 binder",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "construction": "The chassis uses chain inside drive rails and a dropped-center six-wheel arrangement. The binder describes custom flipped gearboxes developed with 2363, positioning MiniCIM motors over the wheels to recover about eight inches of internal room. It also describes exhaust-air motor cooling on the historical pneumatic system.",
+      "team_stated_reason": "Save interior volume for mechanisms while using a familiar drive architecture.",
+      "engineering_analysis": "The dimension reclaimed at one interface is only useful if motor service, chain access and bumper protection remain viable. The source itself warns that chain-in-tube maintenance requires precision. Do not copy an exhaust-air cooling feature into an electric-only robot, or assume its thermal benefit exists without the original air duty cycle. Compare useful free space, not just frame dimensions, when evaluating how many scoring lanes or a lift can fit.",
+      "recommended_validation": "Draw section views for motor removal and chain tension/service. Account for wiring and guards in the claimed free volume before allocating it to another mechanism.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf",
+      "id": "history-2018-1610-note-1",
+      "robot_id": "2018-1610",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1610",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=8"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=9"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1610-p8",
+        "history-2018-1610-p9"
+      ]
+    },
+    {
+      "subsystem": "intake",
+      "title": "Wheel contact, active clamping and internal belt packaging",
+      "version_label": "Cotton J Rev 2 binder",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "construction": "The team compared claw and wheel concepts, chose green compliant wheels, and adjusted geometry for wide/narrow cube presentations. The fabric over the open face caused difficulty, so pneumatic arms maintained contact pressure. Belts/pulleys moved inside tubes for a thinner intake; later plastic tubes removed nearly a pound.",
+      "team_stated_reason": "Maintain grip across different cube faces and orientations while reducing the intake’s size and lifted mass.",
+      "engineering_analysis": "Friction, normal force and entry geometry work together. The trouble with the fabric face shows why a nominal cube dimension is insufficient contact data. An electric jaw would need controlled compliance or a passive spring characteristic instead of assuming cylinder force is reproduced by a rigid motor position. Internal belts protect the drive but can make replacement slower. Added lightness at the end of a wrist reduces joint torque more strongly than the same reduction near the chassis.",
+      "recommended_validation": "Check contact-force and tolerance ranges for actual piece faces; compare a passive compliant jaw and electric adjustment only where the required behavior differs. Preserve belt replacement access.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf",
+      "id": "history-2018-1610-note-2",
+      "robot_id": "2018-1610",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1610",
+      "page_references": [
+        {
+          "pdf_page": 10,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=10"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=11"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1610-p11"
+      ]
+    },
+    {
+      "subsystem": "transfer",
+      "title": "Interference-driven narrow elevator redesign",
+      "version_label": "Cotton J Rev 2 binder",
+      "pdf_pages": [
+        12
+      ],
+      "construction": "The initial elevator was too wide for the intake’s required flip: the intake motors hit the uprights. The team narrowed the elevator to 13 inches and designed R4-bearing mounts because available linear kits did not fit the revised space.",
+      "team_stated_reason": "Allow the intake’s vertical rotation while retaining the necessary scoring reach.",
+      "engineering_analysis": "A statically fitting intake is not a fitting rotating intake. The critical envelope includes motors, pulleys, retained piece and compliance under load. Narrowing a lift can cure an interference while increasing torsional loading or reducing room for cables. This case should trigger an early swept-volume study; it does not justify waiting for a polished complete CAD model before noticing the conflict.",
+      "recommended_validation": "Create a coarse lift/intake/piece swept envelope first. Check bearing spacing, off-axis moment and service access after narrowing; only detail the accepted architecture.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf",
+      "id": "history-2018-1610-note-3",
+      "robot_id": "2018-1610",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1610",
+      "page_references": [
+        {
+          "pdf_page": 12,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=12"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1610-p12"
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "Elevator reuse and positive anti-backdrive lock",
+      "version_label": "Cotton J Rev 2 binder",
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "construction": "With little weight margin, the team compared an elevator lift, a carried hook with separate winch and a tape-measure deployment. It selected elevator lifting, added a motor/gearbox and placed hooks under the vertical intake. A pneumatic pin locks the elevator to avoid backdrive. Lift zeroing and encoder limits support normal operation.",
+      "team_stated_reason": "Reuse existing reach and reduce additional climb hardware under a tight mass budget.",
+      "engineering_analysis": "Reuse can be simple at the architecture level but changes structural loads by orders of magnitude relative to a cube. The intake hooks, carriage, lift bearings, gearing and lock now participate in supporting robot weight. An electric-only adaptation needs a positive holding arrangement appropriate for power loss and release under load; motor stall is not automatically an equivalent lock. The source’s low climb priority cannot be transplanted to another bonus structure.",
+      "recommended_validation": "Recalculate the complete climbing load path and latch reaction, then compare added hardware with marginal match/RP value. Validate release and recovery behavior before approving the shared mechanism.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf",
+      "id": "history-2018-1610-note-4",
+      "robot_id": "2018-1610",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1610",
+      "page_references": [
+        {
+          "pdf_page": 13,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=13"
+        },
+        {
+          "pdf_page": 14,
+          "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=14"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1610-p13"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "history-param-2018-1610-8-2ea14",
+      "binder_id": "history-publication-2018-1610",
+      "robot_id": "2018-1610",
+      "pdf_page": 8,
+      "component": "Frame and elevator interference",
+      "published_parameters": "Frame reported 28-inch long by 32-inch wide; narrowed elevator subsequently described as 13-inch wide on physical p12",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=8",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "history-publication-2018-1610",
+      "robot_id": "2018-1610",
+      "title": "2018-1610 Cotton J technical binder/workshop deck",
+      "url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf",
+      "format": "pdf",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "team_technical_pdf"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2018-1610:publication-version:1",
+      "label": "Cotton J Rev 2 binder",
+      "robot_id": "2018-1610",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-1610-note-1",
+        "history-2018-1610-note-2",
+        "history-2018-1610-note-3",
+        "history-2018-1610-note-4"
+      ],
+      "source_urls": [
+        "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2018-1610",
+      "title": "2018-1610 Blackwater Robotics — technical study",
+      "year": 2018,
+      "robot_id": "2018-1610",
+      "kind": "historical_technical_study",
+      "body": "# 2018-1610 — Blackwater Robotics: Cotton J\n\nA six-wheel West Coast drive, compact flipped gearboxes, compliant wheel cube intake and narrow two-stage elevator combine scale reach with a reused elevator climb. The binder records an intake/elevator interference-driven redesign and a weight-constrained choice of climbing mechanism.\n\n## Strategic interpretation\n\nThe most useful lesson is interface propagation: a wider intake changed the chassis, then the wrist sweep conflicted with elevator uprights, then the lift needed custom bearing blocks. This is exactly the sort of spatial coupling to expose before 1833 commits expensive CAD/manufacturing time. The team’s historical partner-dependent climb priority is context, not 1833 doctrine.\n\n## Flipped gearboxes reclaim internal frame space\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [8, 9].\n\n### Published construction or code\n\nThe chassis uses chain inside drive rails and a dropped-center six-wheel arrangement. The binder describes custom flipped gearboxes developed with 2363, positioning MiniCIM motors over the wheels to recover about eight inches of internal room. It also describes exhaust-air motor cooling on the historical pneumatic system.\n\n### Team rationale or evidence boundary\n\nSave interior volume for mechanisms while using a familiar drive architecture.\n\n### Engineering interpretation\n\nThe dimension reclaimed at one interface is only useful if motor service, chain access and bumper protection remain viable. The source itself warns that chain-in-tube maintenance requires precision. Do not copy an exhaust-air cooling feature into an electric-only robot, or assume its thermal benefit exists without the original air duty cycle. Compare useful free space, not just frame dimensions, when evaluating how many scoring lanes or a lift can fit.\n\n### Proposed validation — not performed\n\nDraw section views for motor removal and chain tension/service. Account for wiring and guards in the claimed free volume before allocating it to another mechanism.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Drive chassis](../../images/history_2018-1610_p8.jpg)\n\n![Flipped gearbox](../../images/history_2018-1610_p9.jpg)\n\n## Wheel contact, active clamping and internal belt packaging\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [10, 11].\n\n### Published construction or code\n\nThe team compared claw and wheel concepts, chose green compliant wheels, and adjusted geometry for wide/narrow cube presentations. The fabric over the open face caused difficulty, so pneumatic arms maintained contact pressure. Belts/pulleys moved inside tubes for a thinner intake; later plastic tubes removed nearly a pound.\n\n### Team rationale or evidence boundary\n\nMaintain grip across different cube faces and orientations while reducing the intake’s size and lifted mass.\n\n### Engineering interpretation\n\nFriction, normal force and entry geometry work together. The trouble with the fabric face shows why a nominal cube dimension is insufficient contact data. An electric jaw would need controlled compliance or a passive spring characteristic instead of assuming cylinder force is reproduced by a rigid motor position. Internal belts protect the drive but can make replacement slower. Added lightness at the end of a wrist reduces joint torque more strongly than the same reduction near the chassis.\n\n### Proposed validation — not performed\n\nCheck contact-force and tolerance ranges for actual piece faces; compare a passive compliant jaw and electric adjustment only where the required behavior differs. Preserve belt replacement access.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Intake construction and installed view](../../images/history_2018-1610_p11.jpg)\n\n## Interference-driven narrow elevator redesign\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [12].\n\n### Published construction or code\n\nThe initial elevator was too wide for the intake’s required flip: the intake motors hit the uprights. The team narrowed the elevator to 13 inches and designed R4-bearing mounts because available linear kits did not fit the revised space.\n\n### Team rationale or evidence boundary\n\nAllow the intake’s vertical rotation while retaining the necessary scoring reach.\n\n### Engineering interpretation\n\nA statically fitting intake is not a fitting rotating intake. The critical envelope includes motors, pulleys, retained piece and compliance under load. Narrowing a lift can cure an interference while increasing torsional loading or reducing room for cables. This case should trigger an early swept-volume study; it does not justify waiting for a polished complete CAD model before noticing the conflict.\n\n### Proposed validation — not performed\n\nCreate a coarse lift/intake/piece swept envelope first. Check bearing spacing, off-axis moment and service access after narrowing; only detail the accepted architecture.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Elevator redesign figures](../../images/history_2018-1610_p12.jpg)\n\n## Elevator reuse and positive anti-backdrive lock\n\nVersion: Cotton J Rev 2 binder. Source: https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf. Physical PDF pages: [13, 14].\n\n### Published construction or code\n\nWith little weight margin, the team compared an elevator lift, a carried hook with separate winch and a tape-measure deployment. It selected elevator lifting, added a motor/gearbox and placed hooks under the vertical intake. A pneumatic pin locks the elevator to avoid backdrive. Lift zeroing and encoder limits support normal operation.\n\n### Team rationale or evidence boundary\n\nReuse existing reach and reduce additional climb hardware under a tight mass budget.\n\n### Engineering interpretation\n\nReuse can be simple at the architecture level but changes structural loads by orders of magnitude relative to a cube. The intake hooks, carriage, lift bearings, gearing and lock now participate in supporting robot weight. An electric-only adaptation needs a positive holding arrangement appropriate for power loss and release under load; motor stall is not automatically an equivalent lock. The source’s low climb priority cannot be transplanted to another bonus structure.\n\n### Proposed validation — not performed\n\nRecalculate the complete climbing load path and latch reaction, then compare added hardware with marginal match/RP value. Validate release and recovery behavior before approving the shared mechanism.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Elevator climb hook and lock geometry](../../images/history_2018-1610_p13.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf"
+      ],
+      "path": "docs/historical/2018-1610.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2018-1610-p8",
+      "robot_id": "2018-1610",
+      "kind": "binder_figure",
+      "path": "images/history_2018-1610_p8.jpg",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=8",
+      "pdf_page": 8,
+      "crop_bounds_normalized": [
+        0.11,
+        0.24,
+        0.9,
+        0.65
+      ],
+      "caption": "2018-1610 · Drive chassis. Selected figure region from physical PDF page 8; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Drive chassis",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "2bfbb34eff35d12bd50fa0a9844feef36dbdd0f3b32f985efe0fb90575eb2da0",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1161,
+      "height_px": 780,
+      "bytes": 142394,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-1610-p8",
+      "reader_url": "index.html#image=history-2018-1610-p8",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-1610-p9",
+      "robot_id": "2018-1610",
+      "kind": "binder_figure",
+      "path": "images/history_2018-1610_p9.jpg",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=9",
+      "pdf_page": 9,
+      "crop_bounds_normalized": [
+        0.12,
+        0.23,
+        0.91,
+        0.77
+      ],
+      "caption": "2018-1610 · Flipped gearbox. Selected figure region from physical PDF page 9; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Flipped gearbox",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "95e6edd5f7e31fcba0782c30bb96eae3f0a5c27ea4eb58917df70fbbed31b047",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1161,
+      "height_px": 1027,
+      "bytes": 182466,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-1610-p9",
+      "reader_url": "index.html#image=history-2018-1610-p9",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-1610-p11",
+      "robot_id": "2018-1610",
+      "kind": "binder_figure",
+      "path": "images/history_2018-1610_p11.jpg",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=11",
+      "pdf_page": 11,
+      "crop_bounds_normalized": [
+        0.13,
+        0.2,
+        0.93,
+        0.9
+      ],
+      "caption": "2018-1610 · Intake construction and installed view. Selected figure region from physical PDF page 11; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Intake construction and installed view",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "902c98a9edb33247a9f3aee193f18a37d07641131b7bf36869d791a8740b33b6",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1176,
+      "height_px": 1331,
+      "bytes": 252336,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-1610-p11",
+      "reader_url": "index.html#image=history-2018-1610-p11",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-1610-p12",
+      "robot_id": "2018-1610",
+      "kind": "binder_figure",
+      "path": "images/history_2018-1610_p12.jpg",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=12",
+      "pdf_page": 12,
+      "crop_bounds_normalized": [
+        0.09,
+        0.16,
+        0.94,
+        0.88
+      ],
+      "caption": "2018-1610 · Elevator redesign figures. Selected figure region from physical PDF page 12; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Elevator redesign figures",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "01d6e31ca40cbaf91ececdb75764fc4a649cec4985be8c672e932cc92ba1e42e",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1249,
+      "height_px": 1369,
+      "bytes": 313054,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-1610-p12",
+      "reader_url": "index.html#image=history-2018-1610-p12",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-1610-p13",
+      "robot_id": "2018-1610",
+      "kind": "binder_figure",
+      "path": "images/history_2018-1610_p13.jpg",
+      "source_url": "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf#page=13",
+      "pdf_page": 13,
+      "crop_bounds_normalized": [
+        0.1,
+        0.4,
+        0.95,
+        0.9
+      ],
+      "caption": "2018-1610 · Elevator climb hook and lock geometry. Selected figure region from physical PDF page 13; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "Elevator climb hook and lock geometry",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "89e25bfe8fc71e7f332363f25d834d253e09d09af3d1e5381f88ecb45dfb724f",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1250,
+      "height_px": 951,
+      "bytes": 117798,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-1610-p13",
+      "reader_url": "index.html#image=history-2018-1610-p13",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2018-1610",
+    "year": 2018,
+    "team": 1610,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "1610 2018 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-3b3b241ee155d17a"
+    ],
+    "technical_note_ids": [
+      "history-2018-1610-note-1",
+      "history-2018-1610-note-2",
+      "history-2018-1610-note-3",
+      "history-2018-1610-note-4"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2018-1610-note-1:construction",
+    "history-2018-1610-note-1:team_stated_reason",
+    "history-2018-1610-note-1:engineering_analysis",
+    "history-2018-1610-note-1:recommended_validation",
+    "history-2018-1610-note-1:limitations",
+    "history-2018-1610-note-2:construction",
+    "history-2018-1610-note-2:team_stated_reason",
+    "history-2018-1610-note-2:engineering_analysis",
+    "history-2018-1610-note-2:recommended_validation",
+    "history-2018-1610-note-2:limitations",
+    "history-2018-1610-note-3:construction",
+    "history-2018-1610-note-3:team_stated_reason",
+    "history-2018-1610-note-3:engineering_analysis",
+    "history-2018-1610-note-3:recommended_validation",
+    "history-2018-1610-note-3:limitations",
+    "history-2018-1610-note-4:construction",
+    "history-2018-1610-note-4:team_stated_reason",
+    "history-2018-1610-note-4:engineering_analysis",
+    "history-2018-1610-note-4:recommended_validation",
+    "history-2018-1610-note-4:limitations",
+    "history-param-2018-1610-8-2ea14"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

@@ -7,7 +7,10 @@
   "required_reading": [
     "docs/game_2026.md",
     "docs/AGENT_GUIDE.md",
-    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
   ],
   "path_base": "corpus_root",
   "dossier": {
@@ -15,9 +18,11 @@
     "team": 7769,
     "robot": "The CREW 2026",
     "primary": [
-      "https://www.youtube.com/watch?v=6BrndIrOmgU"
+      "https://www.youtube.com/watch?v=6BrndIrOmgU",
+      "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008",
+      "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15"
     ],
-    "architecture": "Large-capacity drum robot with roller-fed expanding net hopper.",
+    "architecture": "Chassis-aimed non-turret scorer: an initially divided shooter revised to a wider 2.75-width arrangement, belt-floor feed and expanding hopper. Team distinguishes almost 70 nominal capacity from typical 50–60 in play; useful throughput, not nominal storage alone, is the optimization reference.",
     "subsystems": {
       "drivetrain": "Swerve; exact module specification unresolved here.",
       "intake": "Rack-driven collector; damaged rack teeth were repaired using sections of spares during championship-level defense.",
@@ -30,7 +35,7 @@
       "Dual shooters changed to continuous drum.",
       "Filmed at state championship before Worlds; reported 65–70 capacity belongs to this configuration."
     ],
-    "analysis": "The high-capacity route needs a maintenance plan for racks, a dependable bump crossing and explicit net/climber clearance. The presence of a climb in CAD is different from choosing to install and use it in a particular match.",
+    "analysis": "The high-capacity route needs a maintenance plan for racks, a dependable bump crossing and explicit net/climber clearance. The presence of a climb in CAD is different from choosing to install and use it in a particular match. New 1833 design-transfer study: docs/context/1833-reference-2026-7769.md. Historical success does not waive the current no-support/no-turret mandate or certify causal performance.",
     "limits": [
       "Only the reviewed published configurations are established; intermediate changes may be undocumented."
     ],
@@ -159,7 +164,9 @@
     "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
     "strict_acceptance": "provisional; exhaustive user acceptance gate open",
     "source_ids": [
-      "1252bca8ff49216b"
+      "1252bca8ff49216b",
+      "369993f005a7a0bc",
+      "1833-research-b4a7cd03d751b8af"
     ],
     "tags": [
       "climb",
@@ -197,7 +204,8 @@
     "strategic_priority": "Fuel acquisition, supply/denial, deliverable inventory, accurate output, route access and reliability. Climb is a low-priority exception requiring positive marginal justification.",
     "technical_note_ids": [
       "study6-2026-7769"
-    ]
+    ],
+    "optimization_study": "docs/context/1833-reference-2026-7769.md"
   },
   "technical_notes": [
     {
@@ -276,6 +284,20 @@
         "https://www.youtube.com/watch?v=6BrndIrOmgU"
       ],
       "path": "docs/research_continuation/2026-7769.md"
+    },
+    {
+      "id": "1833-reference-2026-7769",
+      "title": "2026-7769 optimization reference for elite simple architecture",
+      "kind": "robot_optimization_study",
+      "year": 2026,
+      "robot_id": "2026-7769",
+      "related_robot_id": "2026-7769",
+      "body": "## 7769, 2026 CHUNK: flow, durability and honest failure history\n\nPrimary facts: the release describes a two-chamber shooter revised to a 2.75-width configuration, almost 70 nominal capacity and typically 50–60 in play. Team replies describe a static hood avoiding an exposed hood belt, and a feed jam corrected by stopping the lower indexing rollers. They also report rack-tooth breakage that persisted despite current-limit mitigation, with spares and repairs needed. Their linked technical slides currently display that the file was deleted. Those slides were not read. The retained mirror snapshot ranks 7769 fourth worldwide at EPA 309.29; it is a dated snapshot, not live verification. Official event results support an elite competitive season.\n\n1833 transfer analysis: the useful principle is that usable match throughput is a system property. More capacity can add loaded inertia, acquisition dwell and feed pressure. More powered contact can make a congested path worse. Begin with a clear hypothesis about the limiting stage, instrument occupancy and delay at each transition, and change one stage before attributing a scoring gain. Test the near-empty, partly full and fully packed states separately. Under a defended shot, distinguish lost aim time, inaccessible geometry, supply starvation and a genuine mechanical jam. A simple hood can reduce interfaces and service work, but its advantages depend on the scoring aperture and collision environment of the new game.\n\nThe rack failure is an equally important lesson. Do not label every CHUNK component an optimized design merely because the robot performed exceptionally. Borrow the output discipline and diagnose its failure modes; do not recreate a known weak load path without a correction hypothesis and impact test. Preserve version labels so an early divided shooter and later wider arrangement are not combined into an imaginary single fielded version. The owner's desire to emulate 7769 means elite execution of a coherent primary scorer, not a requirement for a particular hopper size, rack intake or lane count in 2027.\n\nSources: https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008 (posts 1,5,8); https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15 ; https://www.thebluealliance.com/team/7769/2026 ; `tables/season_epa.jsonl`; existing `docs/research_continuation/2026-7769.md`. Tech slides: https://docs.google.com/presentation/d/19V4ULNr7_ooZ6yJXtI6NRUoB1uEt86Wnw5UOy8DofH0/edit?usp=sharing — browser reports deleted. Existing interview reference https://www.youtube.com/watch?v=6BrndIrOmgU remains source navigation, not a new watch in this pass.\n\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008",
+        "https://www.chiefdelphi.com/t/frc-7769-cad-tech-slides-chunk/521008/15"
+      ],
+      "path": "docs/context/1833-reference-2026-7769.md"
     }
   ],
   "images": [

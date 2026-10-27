@@ -1,0 +1,147 @@
+{
+  "edition": "2026-10-27",
+  "cohort": [
+    "2018-148",
+    "2018-1610",
+    "2018-1678",
+    "2018-254",
+    "2018-2898",
+    "2018-2910",
+    "2018-971",
+    "2019-1323",
+    "2019-1610",
+    "2019-1678",
+    "2019-254",
+    "2019-2910",
+    "2019-971"
+  ],
+  "selection_basis": "Curated primary technical evidence and contrasting architectures; not EPA-selected",
+  "robot_years": 13,
+  "new_technical_notes": 52,
+  "new_parameter_records": 15,
+  "new_images": 61,
+  "formal_pdf_studies": 8,
+  "new_game_chapters": [
+    2018,
+    2019
+  ],
+  "no_exhaustive_version_certification": true,
+  "new_PCH_benchmarks": 0,
+  "new_Einstein_tactical_reviews": 0,
+  "new_transcript_reviews": 0,
+  "source_pdfs": [
+    {
+      "local_research_name": "2542018.pdf",
+      "robot_id": "2018-254",
+      "sha256": "13992ec1cb8fdaaabc94286ebacf882727555363f6a2b4a1310623ed092f9ca4",
+      "pages": 21,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "2542019.pdf",
+      "robot_id": "2019-254",
+      "sha256": "b8c3c34564df7d7b928c14149640bc7d249d778517b383e53a531a7a87cecdaf",
+      "pages": 32,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "1482018.pdf",
+      "robot_id": "2018-148",
+      "sha256": "be8c349140c989efe03799c1281d8b5e1f78321ebdbca33f8c50caed9042d105",
+      "pages": 12,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "16102018.pdf",
+      "robot_id": "2018-1610",
+      "sha256": "1ccf76287e0ac675a370303a8ee5256d5c6d15fca1b8d0896a23e49d516448f2",
+      "pages": 16,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "16102019.pdf",
+      "robot_id": "2019-1610",
+      "sha256": "f4c44216dac69ef3410392bbfcefec8a194a547ab85911f600d6e9262ea988c3",
+      "pages": 18,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "28982018.pdf",
+      "robot_id": "2018-2898",
+      "sha256": "3e77891a2c900d64334c504da3862eedbcc28bd2327294e3cc6161cc668ed50d",
+      "pages": 28,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "9712018.pdf",
+      "robot_id": "2018-971",
+      "sha256": "2f3e526be9bbdac124084420c21983ae96a8b98d09a4cfd9e468f30e6c825240",
+      "pages": 25,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    },
+    {
+      "local_research_name": "9712019.pdf",
+      "robot_id": "2019-971",
+      "sha256": "50f716ec1a7166e2aa4ab95bcd95edd04d67ac5fa3644528554a5801b5eab4b7",
+      "pages": 21,
+      "review_scope": "Selected technical sections/figures and page locators; workshop slides are not narration transcripts"
+    }
+  ],
+  "manuals": [
+    {
+      "year": 2018,
+      "sha256": "e1dac45e5d2277f0e88222330458ebb3fdf2579700444218279e4a56235035c7",
+      "pages": 133,
+      "scope": "Game/scoring/field and relevant game rules for retrospective architecture chapters; full Q&A/event-update certification not claimed"
+    },
+    {
+      "year": 2019,
+      "sha256": "5fbf42414e55df6afe995df61c288813504c5da157a8dee379ee4f13c3442c6e",
+      "pages": 133,
+      "scope": "Game/scoring/field and relevant game rules for retrospective architecture chapters; full Q&A/event-update certification not claimed"
+    }
+  ],
+  "code_snapshot": {
+    "repository": "https://github.com/Team1323/2019DeepSpace",
+    "commit": "13d5d4ac56c2da11d112ab9ab84241c8b6878018",
+    "review_scope": "Selected subsystem and Superstructure methods only, not executed or certified exact event binary"
+  },
+  "source_redistribution": "Full source PDFs, raw OCR and complete repository are research intermediates and not redistributed in this package; selected credited figure regions and original analysis are included.",
+  "mechanism_analysis_words": 9852,
+  "game_chapter_words": 4650,
+  "transfer_guide_words": 1412,
+  "crop_review": "All61 added originals/crops visually inspected; fifteen crop margins refined. No hidden geometry measurements or event-version certification.",
+  "primary_source_urls": [
+    "https://media.team254.com/2018/07/8fda07af-2018-Techbinder.pdf",
+    "https://blog.team254.com/2018cmp/",
+    "https://blog.team254.com/2018-technical-resources-release/",
+    "https://github.com/Team254/FRC-2018-Public",
+    "https://www.robowranglers148.com/uploads/1/0/5/4/10542658/judges_pamphlet-compressed.pdf",
+    "https://www.robowranglers148.com/resources.html",
+    "https://www.robowranglers148.com/2018-competitions.html",
+    "https://www.citruscircuits.org/2018-robot",
+    "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149",
+    "https://blackwaterrobotics.org/wp-content/uploads/2018/05/1610_Technical_Binder_2018_Rev_2.pdf",
+    "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf",
+    "https://www.chiefdelphi.com/t/pic-2910-cad-release-2018/167095",
+    "https://www.spartanrobotics.org/_files/ugd/00c1f8_8ddb7c2844de4500b0e2fb88ebab7742.pdf",
+    "https://www.spartanrobotics.org/workshops",
+    "https://media.team254.com/resources/Team_254_Tech_Binder_2019.pdf",
+    "https://blog.team254.com/2019-technical-resources-release/",
+    "https://github.com/Team254/FRC-2019-Public",
+    "https://www.citruscircuits.org/2019-robot",
+    "https://www.chiefdelphi.com/t/1678-citrus-circuits-2019-cad-release/359101/",
+    "https://blackwaterrobotics.org/wp-content/uploads/2019/05/1610_Technical_Binder_2019_rev2.pdf",
+    "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+    "https://frcteam2910.org/2019/04/25/2019-world-championships/",
+    "https://www.spartanrobotics.org/_files/ugd/00c1f8_39beba9b690d48febf9f90fa267cdf93.pdf",
+    "https://www.chiefdelphi.com/t/971-spartan-robotics-2019/350389",
+    "https://www.chiefdelphi.com/t/971-cad-release-2019/374106",
+    "https://www.chiefdelphi.com/t/suction-and-vacuum/368009",
+    "https://www.chiefdelphi.com/t/1323-elevator/358379",
+    "https://www.chiefdelphi.com/t/1323-elevator/358379?page=3",
+    "https://github.com/Team1323/2019DeepSpace",
+    "https://team1323.com/first/frc/2019-frc-season/",
+    "https://frc-events.firstinspires.org/2019/team/1323"
+  ]
+}

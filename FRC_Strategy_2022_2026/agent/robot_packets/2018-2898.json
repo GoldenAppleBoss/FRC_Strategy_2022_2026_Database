@@ -1,0 +1,862 @@
+{
+  "schema_version": "1.0",
+  "id": "2018-2898",
+  "year": 2018,
+  "team": 2898,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2018.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2018,
+    "team": 2898,
+    "team_name": "Flying Hedgehogs",
+    "robot": "V1 scale robot / V2 switch rebuild",
+    "primary": [
+      "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf"
+    ],
+    "architecture": "The binder separates an initial elevator/tilting-bucket scale robot from a later switch/exchange arm robot. V2 retained the original drivebase and intake while changing reach and controls. Published sections document mechanical faults, manufacturing constraints, sensor assistance and a mapped-arm operator control.",
+    "analysis": "This is an explicit failure/recovery case, not an elite-primary architecture to copy wholesale. V1’s conceptual coverage failed to become reliable reach; V2 improved the achievable role under severe time constraints. 1833 should borrow evidence about tolerances, interface validation and recoverability while maintaining its primary-contributor objective.",
+    "id": "2018-2898",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "FIRST POWER UP",
+    "subsystems": {
+      "drivetrain": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "intake": "The binder describes an offset-pivot compliant-wheel intake, approximately half-inch compression and a 775pro in a flipped 10:1 gearbox. V2 reused the intake with a different wheel durometer to ease alignment.",
+      "transfer": "V1 combined a continuous first stage with a cascading second stage, two 775pros, custom slides and constant-force springs. Its light tilting bucket had a separate pivot. The results page lists elevator problems, inadequate height from the cascading design, manipulator/intake misalignment and sensor failure.",
+      "scoring": "The team compared repairing V1 with redesigning for switch only on a practice chassis. V2 used four 775 motors, a geared/belted pivot, absolute and relative sensing and an approximately 120-degree arm range. The team reports precision-manufacturing changes and fitting replacement work into the historical withholding/unbag allowances.",
+      "endgame": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "controls": "Four range sensors feed a Jetson model fit that estimates cube orientation and modulates intake speeds. A miniature arm controller with an absolute encoder sends an operator pose command. The binder also describes feedforward/trajectory control and reactive subsystem diagnostics."
+    },
+    "coverage": {
+      "drivetrain": "partial / unresolved selected-source detail",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "documented selected primary technical study; details/version limits apply",
+      "scoring": "documented selected primary technical study; details/version limits apply",
+      "endgame": "partial / unresolved selected-source detail",
+      "controls": "documented selected primary technical study; details/version limits apply"
+    },
+    "versions": [
+      "2898 V1 intake retained on V2",
+      "2898 V1 scale robot",
+      "2898 V2 switch/exchange rebuild",
+      "2898 V2 published controls"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-6750159c9d4a0e13"
+    ],
+    "tags": [
+      "historical 2018",
+      "curated primary technical study",
+      "intake",
+      "transfer",
+      "scoring",
+      "controls"
+    ],
+    "binder_audit": {
+      "robot_id": "2018-2898",
+      "year": 2018,
+      "team": 2898,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "2898 2018 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-6750159c9d4a0e13"
+      ],
+      "technical_note_ids": [
+        "history-2018-2898-note-1",
+        "history-2018-2898-note-2",
+        "history-2018-2898-note-3",
+        "history-2018-2898-note-4"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2018-2898-note-1",
+      "history-2018-2898-note-2",
+      "history-2018-2898-note-3",
+      "history-2018-2898-note-4"
+    ],
+    "images": [
+      {
+        "id": "history-2018-2898-p6",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p6.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=6",
+        "pdf_page": 6,
+        "crop_bounds_normalized": [
+          0.1,
+          0.27,
+          0.91,
+          0.63
+        ],
+        "caption": "2018-2898 · V1 drivebase. Selected figure region from physical PDF page 6; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "V1 drivebase",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "5b13cc01e4f6dcdc238e8dc1db19034bd0dbc231137c23d0b3420d39ac854fb9",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-2898-p7",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p7.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=7",
+        "pdf_page": 7,
+        "crop_bounds_normalized": [
+          0.11,
+          0.25,
+          0.9,
+          0.61
+        ],
+        "caption": "2018-2898 · V1 intake retained on V2. Selected figure region from physical PDF page 7; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "V1 intake retained on V2",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "c63b382daebbe4f4c027190d876e7858249a76cd28603338223c1586b415bf0f",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-2898-p8",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p8.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=8",
+        "pdf_page": 8,
+        "crop_bounds_normalized": [
+          0.55,
+          0.17,
+          0.97,
+          0.91
+        ],
+        "caption": "2018-2898 · V1 combination lift. Selected figure region from physical PDF page 8; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "V1 combination lift",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "1a5622646a1c1e39a65eafb70484092791271f984859dea085a207e7795babb2",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-2898-p9",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p9.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=9",
+        "pdf_page": 9,
+        "crop_bounds_normalized": [
+          0.05,
+          0.22,
+          0.96,
+          0.66
+        ],
+        "caption": "2018-2898 · V1 tilting bucket. Selected figure region from physical PDF page 9; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "V1 tilting bucket",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "ed78b4059d9a5063deb0cc5b5ee94d7aa7f079f38f7908b3146cd4ecd6ac08a3",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-2898-p14",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p14.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=14",
+        "pdf_page": 14,
+        "crop_bounds_normalized": [
+          0.11,
+          0.26,
+          0.94,
+          0.64
+        ],
+        "caption": "2018-2898 · V2 arm pivot. Selected figure region from physical PDF page 14; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "V2 arm pivot",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "539bb63faee79d0878d0d71e4b577728d47755f7760ba67b91501ec8bbed6584",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-2898-p15",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p15.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=15",
+        "pdf_page": 15,
+        "crop_bounds_normalized": [
+          0.01,
+          0.23,
+          0.99,
+          0.65
+        ],
+        "caption": "2018-2898 · V2 arm with reused intake. Selected figure region from physical PDF page 15; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "V2 arm with reused intake",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "af39401d552592a2377708d2f15db2ce95a53893673342b81bf36b1e2aca227c",
+        "downloaded_on": "2026-10-27"
+      },
+      {
+        "id": "history-2018-2898-p22",
+        "robot_id": "2018-2898",
+        "kind": "binder_figure",
+        "path": "images/history_2018-2898_p22.jpg",
+        "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=22",
+        "pdf_page": 22,
+        "crop_bounds_normalized": [
+          0.1,
+          0.24,
+          0.96,
+          0.62
+        ],
+        "caption": "2018-2898 · LIDAR intake-assist diagram. Selected figure region from physical PDF page 22; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+        "publisher_label": "LIDAR intake-assist diagram",
+        "label_basis": "Editorial mechanism label after source-page visual inspection",
+        "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+        "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+        "whole_robot_photo": false,
+        "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+        "sha256": "5eb72bc5c3857c074c5120d799fd9da4fb6918d16394ec8279fee92ebb51158a",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2018-2898 — Flying Hedgehogs: V1 scale robot / V2 switch rebuild\n\nThe binder separates an initial elevator/tilting-bucket scale robot from a later switch/exchange arm robot. V2 retained the original drivebase and intake while changing reach and controls. Published sections document mechanical faults, manufacturing constraints, sensor assistance and a mapped-arm operator control.\n\n## Strategic interpretation\n\nThis is an explicit failure/recovery case, not an elite-primary architecture to copy wholesale. V1’s conceptual coverage failed to become reliable reach; V2 improved the achievable role under severe time constraints. 1833 should borrow evidence about tolerances, interface validation and recoverability while maintaining its primary-contributor objective.\n\n## Offset-pivot capture retained through the rebuild\n\nVersion: 2898 V1 intake retained on V2. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [7, 15].\n\n### Published construction or code\n\nThe binder describes an offset-pivot compliant-wheel intake, approximately half-inch compression and a 775pro in a flipped 10:1 gearbox. V2 reused the intake with a different wheel durometer to ease alignment.\n\n### Team rationale or evidence boundary\n\nCapture varied 13-inch and diagonal cube poses; retain existing useful hardware during the reconstruction.\n\n### Engineering interpretation\n\nAn intake can remain worth using even when the surrounding architecture fails. The pivot offset changes the way the cube opens and closes the contact geometry; wheel stiffness changes both grip and centering. The published surface speed is a historical setting, not evidence that the replacement durometer alone improved match cycles. Treat retained hardware as a candidate with known interfaces, not a reason to force an otherwise poor layout.\n\n### Proposed validation — not performed\n\nCheck capture and retained-pose consistency on the real piece surfaces. Confirm whether any changed roller stiffness affects compression, motor current and release.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![V1 intake retained on V2](../../images/history_2018-2898_p7.jpg)\n\n![V2 arm with reused intake](../../images/history_2018-2898_p15.jpg)\n\n## Combination elevator and documented V1 failures\n\nVersion: 2898 V1 scale robot. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [8, 9, 10, 11].\n\n### Published construction or code\n\nV1 combined a continuous first stage with a cascading second stage, two 775pros, custom slides and constant-force springs. Its light tilting bucket had a separate pivot. The results page lists elevator problems, inadequate height from the cascading design, manipulator/intake misalignment and sensor failure.\n\n### Team rationale or evidence boundary\n\nInitial intent was scale capability without losing switch/exchange usefulness; the combination lift was intended to provide fast motion and potential future climbing.\n\n### Engineering interpretation\n\nThe desired capability set was broader than the delivered mechanism. This is negative evidence against accepting nominal height and an ideal timing calculation without rigging/overlap and tolerance review. The binder lists several coexisting faults, so no single failure should be declared the exclusive cause. A new agent should carry these failure modes into its uncertainty register, not tell a story that every elevator is inherently unreliable.\n\n### Proposed validation — not performed\n\nBefore manufacture, verify rigging displacement, available overlap and achievable scoring pose with tolerances. Define sensor fault behavior and mechanical alignment datums; test the uncertainty most likely to invalidate reach.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![V1 combination lift](../../images/history_2018-2898_p8.jpg)\n\n![V1 tilting bucket](../../images/history_2018-2898_p9.jpg)\n\n## Rebuild into a fixed-plane arm with retained intake\n\nVersion: 2898 V2 switch/exchange rebuild. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [11, 13, 14, 15, 19].\n\n### Published construction or code\n\nThe team compared repairing V1 with redesigning for switch only on a practice chassis. V2 used four 775 motors, a geared/belted pivot, absolute and relative sensing and an approximately 120-degree arm range. The team reports precision-manufacturing changes and fitting replacement work into the historical withholding/unbag allowances.\n\n### Team rationale or evidence boundary\n\nRecover a fast, robust playable robot under the available time and retain existing drive/intake assets.\n\n### Engineering interpretation\n\nA smaller reachable workspace can lower integration burden, but here it also removed scale capability. That emergency strategic compromise is not authorization for 1833 to start with a support ceiling. The detailed rebuilding cost illustrates why iteration economics must be taken seriously: practice hardware, precision manufacturing and legal work-time constraints were part of the outcome. The arm’s published reduction and motors are not sized for a new high-target game by analogy.\n\n### Proposed validation — not performed\n\nUse the case to identify early warning signs and fallback interfaces. For a new arm derive full workspace, gravity torque, inertia and output backlash before making any high-reach claim.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![V2 arm pivot](../../images/history_2018-2898_p14.jpg)\n\n![V2 arm with reused intake](../../images/history_2018-2898_p15.jpg)\n\n## LIDAR-assisted capture and operator arm mirroring\n\nVersion: 2898 V2 published controls. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [22, 23, 24, 25, 26, 27].\n\n### Published construction or code\n\nFour range sensors feed a Jetson model fit that estimates cube orientation and modulates intake speeds. A miniature arm controller with an absolute encoder sends an operator pose command. The binder also describes feedforward/trajectory control and reactive subsystem diagnostics.\n\n### Team rationale or evidence boundary\n\nReduce acquisition alignment burden and make arm placement intuitive for the operator.\n\n### Engineering interpretation\n\nThese are source descriptions of implemented methods, not independent evidence that every added computer or state-space controller was necessary. More sensing adds calibration and fault states. The high-value function is an unambiguous retained-piece state and smooth control that the driver can use. For 1833, prefer the simplest sensing sufficient to resolve consequential uncertainty; a four-sensor model is not required merely because it appears in a technical binder.\n\n### Proposed validation — not performed\n\nDefine what each sensor disambiguates and what happens on disagreement, timeout or blockage. Compare recovery and operator workload with a simple baseline before adopting the richer scheme.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![LIDAR intake-assist diagram](../../images/history_2018-2898_p22.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "intake",
+      "title": "Offset-pivot capture retained through the rebuild",
+      "version_label": "2898 V1 intake retained on V2",
+      "pdf_pages": [
+        7,
+        15
+      ],
+      "construction": "The binder describes an offset-pivot compliant-wheel intake, approximately half-inch compression and a 775pro in a flipped 10:1 gearbox. V2 reused the intake with a different wheel durometer to ease alignment.",
+      "team_stated_reason": "Capture varied 13-inch and diagonal cube poses; retain existing useful hardware during the reconstruction.",
+      "engineering_analysis": "An intake can remain worth using even when the surrounding architecture fails. The pivot offset changes the way the cube opens and closes the contact geometry; wheel stiffness changes both grip and centering. The published surface speed is a historical setting, not evidence that the replacement durometer alone improved match cycles. Treat retained hardware as a candidate with known interfaces, not a reason to force an otherwise poor layout.",
+      "recommended_validation": "Check capture and retained-pose consistency on the real piece surfaces. Confirm whether any changed roller stiffness affects compression, motor current and release.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf",
+      "id": "history-2018-2898-note-1",
+      "robot_id": "2018-2898",
+      "year": 2018,
+      "binder_id": "history-publication-2018-2898",
+      "page_references": [
+        {
+          "pdf_page": 7,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=7"
+        },
+        {
+          "pdf_page": 15,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=15"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-2898-p7",
+        "history-2018-2898-p15"
+      ]
+    },
+    {
+      "subsystem": "transfer",
+      "title": "Combination elevator and documented V1 failures",
+      "version_label": "2898 V1 scale robot",
+      "pdf_pages": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "construction": "V1 combined a continuous first stage with a cascading second stage, two 775pros, custom slides and constant-force springs. Its light tilting bucket had a separate pivot. The results page lists elevator problems, inadequate height from the cascading design, manipulator/intake misalignment and sensor failure.",
+      "team_stated_reason": "Initial intent was scale capability without losing switch/exchange usefulness; the combination lift was intended to provide fast motion and potential future climbing.",
+      "engineering_analysis": "The desired capability set was broader than the delivered mechanism. This is negative evidence against accepting nominal height and an ideal timing calculation without rigging/overlap and tolerance review. The binder lists several coexisting faults, so no single failure should be declared the exclusive cause. A new agent should carry these failure modes into its uncertainty register, not tell a story that every elevator is inherently unreliable.",
+      "recommended_validation": "Before manufacture, verify rigging displacement, available overlap and achievable scoring pose with tolerances. Define sensor fault behavior and mechanical alignment datums; test the uncertainty most likely to invalidate reach.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf",
+      "id": "history-2018-2898-note-2",
+      "robot_id": "2018-2898",
+      "year": 2018,
+      "binder_id": "history-publication-2018-2898",
+      "page_references": [
+        {
+          "pdf_page": 8,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=8"
+        },
+        {
+          "pdf_page": 9,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=9"
+        },
+        {
+          "pdf_page": 10,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=10"
+        },
+        {
+          "pdf_page": 11,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=11"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-2898-p8",
+        "history-2018-2898-p9"
+      ]
+    },
+    {
+      "subsystem": "scoring",
+      "title": "Rebuild into a fixed-plane arm with retained intake",
+      "version_label": "2898 V2 switch/exchange rebuild",
+      "pdf_pages": [
+        11,
+        13,
+        14,
+        15,
+        19
+      ],
+      "construction": "The team compared repairing V1 with redesigning for switch only on a practice chassis. V2 used four 775 motors, a geared/belted pivot, absolute and relative sensing and an approximately 120-degree arm range. The team reports precision-manufacturing changes and fitting replacement work into the historical withholding/unbag allowances.",
+      "team_stated_reason": "Recover a fast, robust playable robot under the available time and retain existing drive/intake assets.",
+      "engineering_analysis": "A smaller reachable workspace can lower integration burden, but here it also removed scale capability. That emergency strategic compromise is not authorization for 1833 to start with a support ceiling. The detailed rebuilding cost illustrates why iteration economics must be taken seriously: practice hardware, precision manufacturing and legal work-time constraints were part of the outcome. The arm’s published reduction and motors are not sized for a new high-target game by analogy.",
+      "recommended_validation": "Use the case to identify early warning signs and fallback interfaces. For a new arm derive full workspace, gravity torque, inertia and output backlash before making any high-reach claim.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf",
+      "id": "history-2018-2898-note-3",
+      "robot_id": "2018-2898",
+      "year": 2018,
+      "binder_id": "history-publication-2018-2898",
+      "page_references": [
+        {
+          "pdf_page": 11,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=11"
+        },
+        {
+          "pdf_page": 13,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=13"
+        },
+        {
+          "pdf_page": 14,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=14"
+        },
+        {
+          "pdf_page": 15,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=15"
+        },
+        {
+          "pdf_page": 19,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=19"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-2898-p14",
+        "history-2018-2898-p15"
+      ]
+    },
+    {
+      "subsystem": "controls",
+      "title": "LIDAR-assisted capture and operator arm mirroring",
+      "version_label": "2898 V2 published controls",
+      "pdf_pages": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "construction": "Four range sensors feed a Jetson model fit that estimates cube orientation and modulates intake speeds. A miniature arm controller with an absolute encoder sends an operator pose command. The binder also describes feedforward/trajectory control and reactive subsystem diagnostics.",
+      "team_stated_reason": "Reduce acquisition alignment burden and make arm placement intuitive for the operator.",
+      "engineering_analysis": "These are source descriptions of implemented methods, not independent evidence that every added computer or state-space controller was necessary. More sensing adds calibration and fault states. The high-value function is an unambiguous retained-piece state and smooth control that the driver can use. For 1833, prefer the simplest sensing sufficient to resolve consequential uncertainty; a four-sensor model is not required merely because it appears in a technical binder.",
+      "recommended_validation": "Define what each sensor disambiguates and what happens on disagreement, timeout or blockage. Compare recovery and operator workload with a simple baseline before adopting the richer scheme.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf",
+      "id": "history-2018-2898-note-4",
+      "robot_id": "2018-2898",
+      "year": 2018,
+      "binder_id": "history-publication-2018-2898",
+      "page_references": [
+        {
+          "pdf_page": 22,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=22"
+        },
+        {
+          "pdf_page": 23,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=23"
+        },
+        {
+          "pdf_page": 24,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=24"
+        },
+        {
+          "pdf_page": 25,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=25"
+        },
+        {
+          "pdf_page": 26,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=26"
+        },
+        {
+          "pdf_page": 27,
+          "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=27"
+        }
+      ],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-2898-p22"
+      ]
+    }
+  ],
+  "published_parameters": [
+    {
+      "id": "history-param-2018-2898-7-f0d46",
+      "binder_id": "history-publication-2018-2898",
+      "robot_id": "2018-2898",
+      "pdf_page": 7,
+      "component": "V1 intake",
+      "published_parameters": "0.5-inch compression; 775pro with 10:1 reduction; source-reported 32.3 ft/s surface speed",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=7",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    },
+    {
+      "id": "history-param-2018-2898-14-a62a1",
+      "binder_id": "history-publication-2018-2898",
+      "robot_id": "2018-2898",
+      "pdf_page": 14,
+      "component": "V2 arm",
+      "published_parameters": "Four 775 motors; approximately 96:1 reduction in source notation; absolute plus relative encoder",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=14",
+      "status": "source_reported_selected_parameter_not_independently_tested",
+      "notation": "Original units and reported/tentative status preserved. Verify full geometry, load, timing and ratio direction before adaptation."
+    }
+  ],
+  "technical_publications": [
+    {
+      "id": "history-publication-2018-2898",
+      "robot_id": "2018-2898",
+      "title": "2018-2898 V1 scale robot / V2 switch rebuild technical binder/workshop deck",
+      "url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf",
+      "format": "pdf",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "team_technical_pdf"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2018-2898:publication-version:1",
+      "label": "2898 V1 intake retained on V2",
+      "robot_id": "2018-2898",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-2898-note-1"
+      ],
+      "source_urls": [
+        "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2018-2898:publication-version:2",
+      "label": "2898 V1 scale robot",
+      "robot_id": "2018-2898",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-2898-note-2"
+      ],
+      "source_urls": [
+        "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2018-2898:publication-version:3",
+      "label": "2898 V2 switch/exchange rebuild",
+      "robot_id": "2018-2898",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-2898-note-3"
+      ],
+      "source_urls": [
+        "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2018-2898:publication-version:4",
+      "label": "2898 V2 published controls",
+      "robot_id": "2018-2898",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-2898-note-4"
+      ],
+      "source_urls": [
+        "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2018-2898",
+      "title": "2018-2898 Flying Hedgehogs — technical study",
+      "year": 2018,
+      "robot_id": "2018-2898",
+      "kind": "historical_technical_study",
+      "body": "# 2018-2898 — Flying Hedgehogs: V1 scale robot / V2 switch rebuild\n\nThe binder separates an initial elevator/tilting-bucket scale robot from a later switch/exchange arm robot. V2 retained the original drivebase and intake while changing reach and controls. Published sections document mechanical faults, manufacturing constraints, sensor assistance and a mapped-arm operator control.\n\n## Strategic interpretation\n\nThis is an explicit failure/recovery case, not an elite-primary architecture to copy wholesale. V1’s conceptual coverage failed to become reliable reach; V2 improved the achievable role under severe time constraints. 1833 should borrow evidence about tolerances, interface validation and recoverability while maintaining its primary-contributor objective.\n\n## Offset-pivot capture retained through the rebuild\n\nVersion: 2898 V1 intake retained on V2. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [7, 15].\n\n### Published construction or code\n\nThe binder describes an offset-pivot compliant-wheel intake, approximately half-inch compression and a 775pro in a flipped 10:1 gearbox. V2 reused the intake with a different wheel durometer to ease alignment.\n\n### Team rationale or evidence boundary\n\nCapture varied 13-inch and diagonal cube poses; retain existing useful hardware during the reconstruction.\n\n### Engineering interpretation\n\nAn intake can remain worth using even when the surrounding architecture fails. The pivot offset changes the way the cube opens and closes the contact geometry; wheel stiffness changes both grip and centering. The published surface speed is a historical setting, not evidence that the replacement durometer alone improved match cycles. Treat retained hardware as a candidate with known interfaces, not a reason to force an otherwise poor layout.\n\n### Proposed validation — not performed\n\nCheck capture and retained-pose consistency on the real piece surfaces. Confirm whether any changed roller stiffness affects compression, motor current and release.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![V1 intake retained on V2](../../images/history_2018-2898_p7.jpg)\n\n![V2 arm with reused intake](../../images/history_2018-2898_p15.jpg)\n\n## Combination elevator and documented V1 failures\n\nVersion: 2898 V1 scale robot. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [8, 9, 10, 11].\n\n### Published construction or code\n\nV1 combined a continuous first stage with a cascading second stage, two 775pros, custom slides and constant-force springs. Its light tilting bucket had a separate pivot. The results page lists elevator problems, inadequate height from the cascading design, manipulator/intake misalignment and sensor failure.\n\n### Team rationale or evidence boundary\n\nInitial intent was scale capability without losing switch/exchange usefulness; the combination lift was intended to provide fast motion and potential future climbing.\n\n### Engineering interpretation\n\nThe desired capability set was broader than the delivered mechanism. This is negative evidence against accepting nominal height and an ideal timing calculation without rigging/overlap and tolerance review. The binder lists several coexisting faults, so no single failure should be declared the exclusive cause. A new agent should carry these failure modes into its uncertainty register, not tell a story that every elevator is inherently unreliable.\n\n### Proposed validation — not performed\n\nBefore manufacture, verify rigging displacement, available overlap and achievable scoring pose with tolerances. Define sensor fault behavior and mechanical alignment datums; test the uncertainty most likely to invalidate reach.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![V1 combination lift](../../images/history_2018-2898_p8.jpg)\n\n![V1 tilting bucket](../../images/history_2018-2898_p9.jpg)\n\n## Rebuild into a fixed-plane arm with retained intake\n\nVersion: 2898 V2 switch/exchange rebuild. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [11, 13, 14, 15, 19].\n\n### Published construction or code\n\nThe team compared repairing V1 with redesigning for switch only on a practice chassis. V2 used four 775 motors, a geared/belted pivot, absolute and relative sensing and an approximately 120-degree arm range. The team reports precision-manufacturing changes and fitting replacement work into the historical withholding/unbag allowances.\n\n### Team rationale or evidence boundary\n\nRecover a fast, robust playable robot under the available time and retain existing drive/intake assets.\n\n### Engineering interpretation\n\nA smaller reachable workspace can lower integration burden, but here it also removed scale capability. That emergency strategic compromise is not authorization for 1833 to start with a support ceiling. The detailed rebuilding cost illustrates why iteration economics must be taken seriously: practice hardware, precision manufacturing and legal work-time constraints were part of the outcome. The arm’s published reduction and motors are not sized for a new high-target game by analogy.\n\n### Proposed validation — not performed\n\nUse the case to identify early warning signs and fallback interfaces. For a new arm derive full workspace, gravity torque, inertia and output backlash before making any high-reach claim.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![V2 arm pivot](../../images/history_2018-2898_p14.jpg)\n\n![V2 arm with reused intake](../../images/history_2018-2898_p15.jpg)\n\n## LIDAR-assisted capture and operator arm mirroring\n\nVersion: 2898 V2 published controls. Source: https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf. Physical PDF pages: [22, 23, 24, 25, 26, 27].\n\n### Published construction or code\n\nFour range sensors feed a Jetson model fit that estimates cube orientation and modulates intake speeds. A miniature arm controller with an absolute encoder sends an operator pose command. The binder also describes feedforward/trajectory control and reactive subsystem diagnostics.\n\n### Team rationale or evidence boundary\n\nReduce acquisition alignment burden and make arm placement intuitive for the operator.\n\n### Engineering interpretation\n\nThese are source descriptions of implemented methods, not independent evidence that every added computer or state-space controller was necessary. More sensing adds calibration and fault states. The high-value function is an unambiguous retained-piece state and smooth control that the driver can use. For 1833, prefer the simplest sensing sufficient to resolve consequential uncertainty; a four-sensor model is not required merely because it appears in a technical binder.\n\n### Proposed validation — not performed\n\nDefine what each sensor disambiguates and what happens on disagreement, timeout or blockage. Compare recovery and operator workload with a simple baseline before adopting the richer scheme.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![LIDAR intake-assist diagram](../../images/history_2018-2898_p22.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf"
+      ],
+      "path": "docs/historical/2018-2898.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2018-2898-p6",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p6.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=6",
+      "pdf_page": 6,
+      "crop_bounds_normalized": [
+        0.1,
+        0.27,
+        0.91,
+        0.63
+      ],
+      "caption": "2018-2898 · V1 drivebase. Selected figure region from physical PDF page 6; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "V1 drivebase",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "5b13cc01e4f6dcdc238e8dc1db19034bd0dbc231137c23d0b3420d39ac854fb9",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1191,
+      "height_px": 685,
+      "bytes": 77615,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p6",
+      "reader_url": "index.html#image=history-2018-2898-p6",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-2898-p7",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p7.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=7",
+      "pdf_page": 7,
+      "crop_bounds_normalized": [
+        0.11,
+        0.25,
+        0.9,
+        0.61
+      ],
+      "caption": "2018-2898 · V1 intake retained on V2. Selected figure region from physical PDF page 7; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "V1 intake retained on V2",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "c63b382daebbe4f4c027190d876e7858249a76cd28603338223c1586b415bf0f",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1161,
+      "height_px": 685,
+      "bytes": 73613,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p7",
+      "reader_url": "index.html#image=history-2018-2898-p7",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-2898-p8",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p8.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=8",
+      "pdf_page": 8,
+      "crop_bounds_normalized": [
+        0.55,
+        0.17,
+        0.97,
+        0.91
+      ],
+      "caption": "2018-2898 · V1 combination lift. Selected figure region from physical PDF page 8; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "V1 combination lift",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "1a5622646a1c1e39a65eafb70484092791271f984859dea085a207e7795babb2",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 618,
+      "height_px": 1407,
+      "bytes": 51744,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p8",
+      "reader_url": "index.html#image=history-2018-2898-p8",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-2898-p9",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p9.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=9",
+      "pdf_page": 9,
+      "crop_bounds_normalized": [
+        0.05,
+        0.22,
+        0.96,
+        0.66
+      ],
+      "caption": "2018-2898 · V1 tilting bucket. Selected figure region from physical PDF page 9; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "V1 tilting bucket",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "ed78b4059d9a5063deb0cc5b5ee94d7aa7f079f38f7908b3146cd4ecd6ac08a3",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1338,
+      "height_px": 837,
+      "bytes": 70399,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p9",
+      "reader_url": "index.html#image=history-2018-2898-p9",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-2898-p14",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p14.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=14",
+      "pdf_page": 14,
+      "crop_bounds_normalized": [
+        0.11,
+        0.26,
+        0.94,
+        0.64
+      ],
+      "caption": "2018-2898 · V2 arm pivot. Selected figure region from physical PDF page 14; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "V2 arm pivot",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "539bb63faee79d0878d0d71e4b577728d47755f7760ba67b91501ec8bbed6584",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1220,
+      "height_px": 723,
+      "bytes": 73603,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p14",
+      "reader_url": "index.html#image=history-2018-2898-p14",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-2898-p15",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p15.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=15",
+      "pdf_page": 15,
+      "crop_bounds_normalized": [
+        0.01,
+        0.23,
+        0.99,
+        0.65
+      ],
+      "caption": "2018-2898 · V2 arm with reused intake. Selected figure region from physical PDF page 15; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "V2 arm with reused intake",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "af39401d552592a2377708d2f15db2ce95a53893673342b81bf36b1e2aca227c",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1441,
+      "height_px": 799,
+      "bytes": 100931,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p15",
+      "reader_url": "index.html#image=history-2018-2898-p15",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    },
+    {
+      "id": "history-2018-2898-p22",
+      "robot_id": "2018-2898",
+      "kind": "binder_figure",
+      "path": "images/history_2018-2898_p22.jpg",
+      "source_url": "https://bpsrobotics.github.io/2898/files/2018-Technical-Binder.pdf#page=22",
+      "pdf_page": 22,
+      "crop_bounds_normalized": [
+        0.1,
+        0.24,
+        0.96,
+        0.62
+      ],
+      "caption": "2018-2898 · LIDAR intake-assist diagram. Selected figure region from physical PDF page 22; read the version and mechanism note. Visible packaging is not an exact dimensional or installed-event certification.",
+      "publisher_label": "LIDAR intake-assist diagram",
+      "label_basis": "Editorial mechanism label after source-page visual inspection",
+      "review_status": "Source figure region inspected 2026-10-27; selected crop retained",
+      "visual_review": "Selected source page/figure visually inspected; no hidden-geometry measurement or load-test claim",
+      "whole_robot_photo": false,
+      "rights": "Credited technical reference excerpt; copyright remains with original publisher.",
+      "sha256": "5eb72bc5c3857c074c5120d799fd9da4fb6918d16394ec8279fee92ebb51158a",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 1265,
+      "height_px": 723,
+      "bytes": 90269,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-2898-p22",
+      "reader_url": "index.html#image=history-2018-2898-p22",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2018-2898",
+    "year": 2018,
+    "team": 2898,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "2898 2018 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-6750159c9d4a0e13"
+    ],
+    "technical_note_ids": [
+      "history-2018-2898-note-1",
+      "history-2018-2898-note-2",
+      "history-2018-2898-note-3",
+      "history-2018-2898-note-4"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2018-2898-note-1:construction",
+    "history-2018-2898-note-1:team_stated_reason",
+    "history-2018-2898-note-1:engineering_analysis",
+    "history-2018-2898-note-1:recommended_validation",
+    "history-2018-2898-note-1:limitations",
+    "history-2018-2898-note-2:construction",
+    "history-2018-2898-note-2:team_stated_reason",
+    "history-2018-2898-note-2:engineering_analysis",
+    "history-2018-2898-note-2:recommended_validation",
+    "history-2018-2898-note-2:limitations",
+    "history-2018-2898-note-3:construction",
+    "history-2018-2898-note-3:team_stated_reason",
+    "history-2018-2898-note-3:engineering_analysis",
+    "history-2018-2898-note-3:recommended_validation",
+    "history-2018-2898-note-3:limitations",
+    "history-2018-2898-note-4:construction",
+    "history-2018-2898-note-4:team_stated_reason",
+    "history-2018-2898-note-4:engineering_analysis",
+    "history-2018-2898-note-4:recommended_validation",
+    "history-2018-2898-note-4:limitations",
+    "history-param-2018-2898-7-f0d46",
+    "history-param-2018-2898-14-a62a1"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

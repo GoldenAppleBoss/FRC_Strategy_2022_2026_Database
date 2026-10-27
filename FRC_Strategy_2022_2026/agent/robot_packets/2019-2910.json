@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.0",
+  "id": "2019-2910",
+  "year": 2019,
+  "team": 2910,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2019.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2019,
+    "team": 2910,
+    "team_name": "Jack in the Bot",
+    "robot": "Jordan",
+    "primary": [
+      "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "https://frcteam2910.org/2019/04/25/2019-world-championships/"
+    ],
+    "architecture": "Jordan’s CAD release documents a swerve robot with cargo arm/roller handling and a HAB climb arrangement. Team replies supply unusually useful details about collision damage, output-stage backlash, low-power cargo holding and platform supports added for sharing HAB3. Complete CAD geometry and every seasonal version are not certified by the discussion review.",
+    "analysis": "The case is useful because performance depends on survivable packaging and controlled interfaces as much as nominal mechanism speed. A climb developed to share space with 1323 in practice does not make them a 2019 championship alliance; 2910’s own report records a different division/alliance and quarterfinal exit.",
+    "id": "2019-2910",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "DESTINATION: DEEP SPACE",
+    "subsystems": {
+      "drivetrain": "A team reply reports approximately seven NEO motors damaged by clipping at the first event, followed by no further clipping failures after protective structure was added. The publication identifies these as motor-protection features rather than decorative frame members.",
+      "intake": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "transfer": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "scoring": "The author describes an inline chain tensioner and a chain run deliberately long enough to accommodate it. A bolted/keyed sprocket-hub connection carries a high-torque interface. The explanation distinguishes backlash near gearbox output from equal angular play near the input.",
+      "endgame": "Team replies explain support cylinders under the robot that keep bumpers above HAB3 when rear wheels hang off. Additional support points allow another robot to rest on the front region, developed for a shared climb with 1323 in practice at championship. The author distinguishes the four-wheel chassis contact issue from generic platform capacity.",
+      "controls": "The team says the upper roller runs for intake/release commands or when beam breaks indicate cargo should be retained. While stalled holding a ball it uses low power to limit current. A narrow compliant wheel fills a location where the pulley prevents another full-width wheel."
+    },
+    "coverage": {
+      "drivetrain": "documented selected primary technical study; details/version limits apply",
+      "intake": "partial / unresolved selected-source detail",
+      "transfer": "partial / unresolved selected-source detail",
+      "scoring": "documented selected primary technical study; details/version limits apply",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "documented selected primary technical study; details/version limits apply"
+    },
+    "versions": [
+      "Jordan early damage / added guards",
+      "Jordan published cargo control discussion",
+      "Jordan released cargo arm discussion",
+      "Jordan original support / championship sharing revision"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-4765ab2b114973e2",
+      "history-source-dd7e7c712c4ca5b2"
+    ],
+    "tags": [
+      "historical 2019",
+      "curated primary technical study",
+      "drivetrain",
+      "controls",
+      "scoring",
+      "endgame"
+    ],
+    "binder_audit": {
+      "robot_id": "2019-2910",
+      "year": 2019,
+      "team": 2910,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "2910 2019 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-4765ab2b114973e2",
+        "history-source-dd7e7c712c4ca5b2"
+      ],
+      "technical_note_ids": [
+        "history-2019-2910-note-1",
+        "history-2019-2910-note-2",
+        "history-2019-2910-note-3",
+        "history-2019-2910-note-4"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2019-2910-note-1",
+      "history-2019-2910-note-2",
+      "history-2019-2910-note-3",
+      "history-2019-2910-note-4"
+    ],
+    "images": [
+      {
+        "id": "history-2019-2910-source",
+        "robot_id": "2019-2910",
+        "kind": "team_release_original",
+        "path": "images/history_2019-2910_source.jpg",
+        "source_url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+        "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/6/3/6331a7bbea486ca3553833f010f5c21bca39b159.jpeg",
+        "caption": "2019-2910 · Jordan CAD release whole-robot render. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+        "publisher_label": "Jordan CAD release whole-robot render",
+        "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+        "review_status": "Original image visually inspected 2026-10-27",
+        "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+        "whole_robot_photo": true,
+        "rights": "Credited technical reference; copyright remains with original publisher.",
+        "sha256": "cabf3a80b9897ca4b75f5ead1964f4e6f4ada6082a4054fb9fea6dc156f597ad",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2019-2910 — Jack in the Bot: Jordan\n\nJordan’s CAD release documents a swerve robot with cargo arm/roller handling and a HAB climb arrangement. Team replies supply unusually useful details about collision damage, output-stage backlash, low-power cargo holding and platform supports added for sharing HAB3. Complete CAD geometry and every seasonal version are not certified by the discussion review.\n\n## Strategic interpretation\n\nThe case is useful because performance depends on survivable packaging and controlled interfaces as much as nominal mechanism speed. A climb developed to share space with 1323 in practice does not make them a 2019 championship alliance; 2910’s own report records a different division/alliance and quarterfinal exit.\n\n## Module protection after early motor damage\n\nVersion: Jordan early damage / added guards. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 5: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5\n\n### Published construction or code\n\nA team reply reports approximately seven NEO motors damaged by clipping at the first event, followed by no further clipping failures after protective structure was added. The publication identifies these as motor-protection features rather than decorative frame members.\n\n### Team rationale or evidence boundary\n\nProtect exposed drive components from the contact paths opened by bumper cutouts.\n\n### Engineering interpretation\n\nThe source report is an important before/after account but is not a universal failure-rate estimate or a measured causal isolation. A cutout creates a collision envelope beyond the normal bumper face. Protection needs a reaction path into structure and clearance from moving components; a thin guard that simply transfers impact into the motor does not solve the problem. Small guard mass can preserve far more match output than a nominal speed improvement.\n\n### Proposed validation — not performed\n\nTrace likely opponent/field contact through bumper openings. Check guard deflection and attachment loads with all module orientations, then verify access to replace the protected component.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## Cargo holding is a distinct low-power state\n\nVersion: Jordan published cargo control discussion. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 5: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5\n- Post 9: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/9\n\n### Published construction or code\n\nThe team says the upper roller runs for intake/release commands or when beam breaks indicate cargo should be retained. While stalled holding a ball it uses low power to limit current. A narrow compliant wheel fills a location where the pulley prevents another full-width wheel.\n\n### Team rationale or evidence boundary\n\nRetain cargo without unnecessary electrical load and fit useful contact into constrained roller packaging.\n\n### Engineering interpretation\n\nCapture speed and retained force are different control objectives. A continuously high roller command can waste current or deform a ball without improving possession. Conversely, too little holding force allows defense to eject it. The packaging detail is not evidence that an arbitrary missing wheel is harmless: the contact distribution still must resist off-axis loads. A sensor-confirmed state requires timeout and fault behavior when the beam is blocked without a ball.\n\n### Proposed validation — not performed\n\nSpecify intake, hold, eject and recovery commands separately. Check ball compression, sensor ambiguity and current/thermal load with the actual contact arrangement.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## Output-stage backlash and chain-tension access\n\nVersion: Jordan released cargo arm discussion. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 18: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/18\n\n### Published construction or code\n\nThe author describes an inline chain tensioner and a chain run deliberately long enough to accommodate it. A bolted/keyed sprocket-hub connection carries a high-torque interface. The explanation distinguishes backlash near gearbox output from equal angular play near the input.\n\n### Team rationale or evidence boundary\n\nReduce effective arm play where it most affects endpoint position and avoid transmitting that interface’s torque only through a clearance hex fit.\n\n### Engineering interpretation\n\nAn output angular error creates endpoint displacement proportional to reach; it cannot be tuned away by a controller that does not observe load-side motion. Tensioning can reduce slack but excessive tension loads bearings and shafts. The correct transfer is to allocate backlash and stiffness through the full chain of joints, with a maintainable tensioner, rather than copy a hub part number or claim zero play.\n\n### Proposed validation — not performed\n\nCalculate endpoint error from each output clearance and elastic element, inspect load-side sensing and preserve tension-adjustment access in the envelope.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## HAB edge support and partner coexistence\n\nVersion: Jordan original support / championship sharing revision. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 7: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/7\n- Post 12: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/12\n\n### Published construction or code\n\nTeam replies explain support cylinders under the robot that keep bumpers above HAB3 when rear wheels hang off. Additional support points allow another robot to rest on the front region, developed for a shared climb with 1323 in practice at championship. The author distinguishes the four-wheel chassis contact issue from generic platform capacity.\n\n### Team rationale or evidence boundary\n\nOccupy less HAB top area while satisfying bumper/support conditions and avoiding rearward tipping.\n\n### Engineering interpretation\n\nFootprint on the platform is not identical to frame footprint. A valid support polygon can use overhang if the complete loading condition remains stable and legal. Partner contact adds a changing vertical force and moment. This is a historical pneumatic arrangement, prohibited as recommended actuation for 1833; a replacement must retain positive support under the full load and address deployment timing/recovery. A practice demonstration is not evidence the pair played Einstein together.\n\n### Proposed validation — not performed\n\nDraw the support polygon with and without the partner load, check contact pressures and load transfer during entry, and verify a permitted deployed/retained state before borrowing the geometry.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "drivetrain",
+      "title": "Module protection after early motor damage",
+      "version_label": "Jordan early damage / added guards",
+      "pdf_pages": [],
+      "construction": "A team reply reports approximately seven NEO motors damaged by clipping at the first event, followed by no further clipping failures after protective structure was added. The publication identifies these as motor-protection features rather than decorative frame members.",
+      "team_stated_reason": "Protect exposed drive components from the contact paths opened by bumper cutouts.",
+      "engineering_analysis": "The source report is an important before/after account but is not a universal failure-rate estimate or a measured causal isolation. A cutout creates a collision envelope beyond the normal bumper face. Protection needs a reaction path into structure and clearance from moving components; a thin guard that simply transfers impact into the motor does not solve the problem. Small guard mass can preserve far more match output than a nominal speed improvement.",
+      "recommended_validation": "Trace likely opponent/field contact through bumper openings. Check guard deflection and attachment loads with all module orientations, then verify access to replace the protected component.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "id": "history-2019-2910-note-1",
+      "robot_id": "2019-2910",
+      "year": 2019,
+      "binder_id": "history-publication-2019-2910",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-2910-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 5,
+          "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5"
+        }
+      ]
+    },
+    {
+      "subsystem": "controls",
+      "title": "Cargo holding is a distinct low-power state",
+      "version_label": "Jordan published cargo control discussion",
+      "pdf_pages": [],
+      "construction": "The team says the upper roller runs for intake/release commands or when beam breaks indicate cargo should be retained. While stalled holding a ball it uses low power to limit current. A narrow compliant wheel fills a location where the pulley prevents another full-width wheel.",
+      "team_stated_reason": "Retain cargo without unnecessary electrical load and fit useful contact into constrained roller packaging.",
+      "engineering_analysis": "Capture speed and retained force are different control objectives. A continuously high roller command can waste current or deform a ball without improving possession. Conversely, too little holding force allows defense to eject it. The packaging detail is not evidence that an arbitrary missing wheel is harmless: the contact distribution still must resist off-axis loads. A sensor-confirmed state requires timeout and fault behavior when the beam is blocked without a ball.",
+      "recommended_validation": "Specify intake, hold, eject and recovery commands separately. Check ball compression, sensor ambiguity and current/thermal load with the actual contact arrangement.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "id": "history-2019-2910-note-2",
+      "robot_id": "2019-2910",
+      "year": 2019,
+      "binder_id": "history-publication-2019-2910",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5",
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/9"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-2910-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 5,
+          "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5"
+        },
+        {
+          "post_number": 9,
+          "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/9"
+        }
+      ]
+    },
+    {
+      "subsystem": "scoring",
+      "title": "Output-stage backlash and chain-tension access",
+      "version_label": "Jordan released cargo arm discussion",
+      "pdf_pages": [],
+      "construction": "The author describes an inline chain tensioner and a chain run deliberately long enough to accommodate it. A bolted/keyed sprocket-hub connection carries a high-torque interface. The explanation distinguishes backlash near gearbox output from equal angular play near the input.",
+      "team_stated_reason": "Reduce effective arm play where it most affects endpoint position and avoid transmitting that interface’s torque only through a clearance hex fit.",
+      "engineering_analysis": "An output angular error creates endpoint displacement proportional to reach; it cannot be tuned away by a controller that does not observe load-side motion. Tensioning can reduce slack but excessive tension loads bearings and shafts. The correct transfer is to allocate backlash and stiffness through the full chain of joints, with a maintainable tensioner, rather than copy a hub part number or claim zero play.",
+      "recommended_validation": "Calculate endpoint error from each output clearance and elastic element, inspect load-side sensing and preserve tension-adjustment access in the envelope.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "id": "history-2019-2910-note-3",
+      "robot_id": "2019-2910",
+      "year": 2019,
+      "binder_id": "history-publication-2019-2910",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/18"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-2910-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 18,
+          "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/18"
+        }
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "HAB edge support and partner coexistence",
+      "version_label": "Jordan original support / championship sharing revision",
+      "pdf_pages": [],
+      "construction": "Team replies explain support cylinders under the robot that keep bumpers above HAB3 when rear wheels hang off. Additional support points allow another robot to rest on the front region, developed for a shared climb with 1323 in practice at championship. The author distinguishes the four-wheel chassis contact issue from generic platform capacity.",
+      "team_stated_reason": "Occupy less HAB top area while satisfying bumper/support conditions and avoiding rearward tipping.",
+      "engineering_analysis": "Footprint on the platform is not identical to frame footprint. A valid support polygon can use overhang if the complete loading condition remains stable and legal. Partner contact adds a changing vertical force and moment. This is a historical pneumatic arrangement, prohibited as recommended actuation for 1833; a replacement must retain positive support under the full load and address deployment timing/recovery. A practice demonstration is not evidence the pair played Einstein together.",
+      "recommended_validation": "Draw the support polygon with and without the partner load, check contact pressures and load transfer during entry, and verify a permitted deployed/retained state before borrowing the geometry.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "id": "history-2019-2910-note-4",
+      "robot_id": "2019-2910",
+      "year": 2019,
+      "binder_id": "history-publication-2019-2910",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/7",
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/12"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2019-2910-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 7,
+          "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/7"
+        },
+        {
+          "post_number": 12,
+          "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/12"
+        }
+      ]
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [
+    {
+      "id": "history-publication-2019-2910",
+      "robot_id": "2019-2910",
+      "title": "2019-2910 Jordan primary technical release/discussion",
+      "url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "format": "team_discussion",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "first_party_technical_discussion"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2019-2910:publication-version:1",
+      "label": "Jordan early damage / added guards",
+      "robot_id": "2019-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-2910-note-1"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-2910:publication-version:2",
+      "label": "Jordan published cargo control discussion",
+      "robot_id": "2019-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-2910-note-2"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-2910:publication-version:3",
+      "label": "Jordan released cargo arm discussion",
+      "robot_id": "2019-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-2910-note-3"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2019-2910:publication-version:4",
+      "label": "Jordan original support / championship sharing revision",
+      "robot_id": "2019-2910",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2019-2910-note-4"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2019-2910",
+      "title": "2019-2910 Jack in the Bot — technical study",
+      "year": 2019,
+      "robot_id": "2019-2910",
+      "kind": "historical_technical_study",
+      "body": "# 2019-2910 — Jack in the Bot: Jordan\n\nJordan’s CAD release documents a swerve robot with cargo arm/roller handling and a HAB climb arrangement. Team replies supply unusually useful details about collision damage, output-stage backlash, low-power cargo holding and platform supports added for sharing HAB3. Complete CAD geometry and every seasonal version are not certified by the discussion review.\n\n## Strategic interpretation\n\nThe case is useful because performance depends on survivable packaging and controlled interfaces as much as nominal mechanism speed. A climb developed to share space with 1323 in practice does not make them a 2019 championship alliance; 2910’s own report records a different division/alliance and quarterfinal exit.\n\n## Module protection after early motor damage\n\nVersion: Jordan early damage / added guards. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 5: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5\n\n### Published construction or code\n\nA team reply reports approximately seven NEO motors damaged by clipping at the first event, followed by no further clipping failures after protective structure was added. The publication identifies these as motor-protection features rather than decorative frame members.\n\n### Team rationale or evidence boundary\n\nProtect exposed drive components from the contact paths opened by bumper cutouts.\n\n### Engineering interpretation\n\nThe source report is an important before/after account but is not a universal failure-rate estimate or a measured causal isolation. A cutout creates a collision envelope beyond the normal bumper face. Protection needs a reaction path into structure and clearance from moving components; a thin guard that simply transfers impact into the motor does not solve the problem. Small guard mass can preserve far more match output than a nominal speed improvement.\n\n### Proposed validation — not performed\n\nTrace likely opponent/field contact through bumper openings. Check guard deflection and attachment loads with all module orientations, then verify access to replace the protected component.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## Cargo holding is a distinct low-power state\n\nVersion: Jordan published cargo control discussion. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 5: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/5\n- Post 9: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/9\n\n### Published construction or code\n\nThe team says the upper roller runs for intake/release commands or when beam breaks indicate cargo should be retained. While stalled holding a ball it uses low power to limit current. A narrow compliant wheel fills a location where the pulley prevents another full-width wheel.\n\n### Team rationale or evidence boundary\n\nRetain cargo without unnecessary electrical load and fit useful contact into constrained roller packaging.\n\n### Engineering interpretation\n\nCapture speed and retained force are different control objectives. A continuously high roller command can waste current or deform a ball without improving possession. Conversely, too little holding force allows defense to eject it. The packaging detail is not evidence that an arbitrary missing wheel is harmless: the contact distribution still must resist off-axis loads. A sensor-confirmed state requires timeout and fault behavior when the beam is blocked without a ball.\n\n### Proposed validation — not performed\n\nSpecify intake, hold, eject and recovery commands separately. Check ball compression, sensor ambiguity and current/thermal load with the actual contact arrangement.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## Output-stage backlash and chain-tension access\n\nVersion: Jordan released cargo arm discussion. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 18: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/18\n\n### Published construction or code\n\nThe author describes an inline chain tensioner and a chain run deliberately long enough to accommodate it. A bolted/keyed sprocket-hub connection carries a high-torque interface. The explanation distinguishes backlash near gearbox output from equal angular play near the input.\n\n### Team rationale or evidence boundary\n\nReduce effective arm play where it most affects endpoint position and avoid transmitting that interface’s torque only through a clearance hex fit.\n\n### Engineering interpretation\n\nAn output angular error creates endpoint displacement proportional to reach; it cannot be tuned away by a controller that does not observe load-side motion. Tensioning can reduce slack but excessive tension loads bearings and shafts. The correct transfer is to allocate backlash and stiffness through the full chain of joints, with a maintainable tensioner, rather than copy a hub part number or claim zero play.\n\n### Proposed validation — not performed\n\nCalculate endpoint error from each output clearance and elastic element, inspect load-side sensing and preserve tension-adjustment access in the envelope.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## HAB edge support and partner coexistence\n\nVersion: Jordan original support / championship sharing revision. Source: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 7: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/7\n- Post 12: https://www.chiefdelphi.com/t/2910-cad-release-2019/357461/12\n\n### Published construction or code\n\nTeam replies explain support cylinders under the robot that keep bumpers above HAB3 when rear wheels hang off. Additional support points allow another robot to rest on the front region, developed for a shared climb with 1323 in practice at championship. The author distinguishes the four-wheel chassis contact issue from generic platform capacity.\n\n### Team rationale or evidence boundary\n\nOccupy less HAB top area while satisfying bumper/support conditions and avoiding rearward tipping.\n\n### Engineering interpretation\n\nFootprint on the platform is not identical to frame footprint. A valid support polygon can use overhang if the complete loading condition remains stable and legal. Partner contact adds a changing vertical force and moment. This is a historical pneumatic arrangement, prohibited as recommended actuation for 1833; a replacement must retain positive support under the full load and address deployment timing/recovery. A practice demonstration is not evidence the pair played Einstein together.\n\n### Proposed validation — not performed\n\nDraw the support polygon with and without the partner load, check contact pressures and load transfer during entry, and verify a permitted deployed/retained state before borrowing the geometry.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Jordan CAD release whole-robot render](../../images/history_2019-2910_source.jpg)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+        "https://frcteam2910.org/2019/04/25/2019-world-championships/"
+      ],
+      "path": "docs/historical/2019-2910.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2019-2910-source",
+      "robot_id": "2019-2910",
+      "kind": "team_release_original",
+      "path": "images/history_2019-2910_source.jpg",
+      "source_url": "https://www.chiefdelphi.com/t/2910-cad-release-2019/357461",
+      "image_url": "https://www.chiefdelphi.com/uploads/default/original/3X/6/3/6331a7bbea486ca3553833f010f5c21bca39b159.jpeg",
+      "caption": "2019-2910 · Jordan CAD release whole-robot render. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+      "publisher_label": "Jordan CAD release whole-robot render",
+      "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+      "review_status": "Original image visually inspected 2026-10-27",
+      "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+      "whole_robot_photo": true,
+      "rights": "Credited technical reference; copyright remains with original publisher.",
+      "sha256": "cabf3a80b9897ca4b75f5ead1964f4e6f4ada6082a4054fb9fea6dc156f597ad",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/jpeg",
+      "width_px": 4848,
+      "height_px": 4232,
+      "bytes": 1885468,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2019-2910-source",
+      "reader_url": "index.html#image=history-2019-2910-source",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2019-2910",
+    "year": 2019,
+    "team": 2910,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "2910 2019 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-4765ab2b114973e2",
+      "history-source-dd7e7c712c4ca5b2"
+    ],
+    "technical_note_ids": [
+      "history-2019-2910-note-1",
+      "history-2019-2910-note-2",
+      "history-2019-2910-note-3",
+      "history-2019-2910-note-4"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2019-2910-note-1:construction",
+    "history-2019-2910-note-1:team_stated_reason",
+    "history-2019-2910-note-1:engineering_analysis",
+    "history-2019-2910-note-1:recommended_validation",
+    "history-2019-2910-note-1:limitations",
+    "history-2019-2910-note-2:construction",
+    "history-2019-2910-note-2:team_stated_reason",
+    "history-2019-2910-note-2:engineering_analysis",
+    "history-2019-2910-note-2:recommended_validation",
+    "history-2019-2910-note-2:limitations",
+    "history-2019-2910-note-3:construction",
+    "history-2019-2910-note-3:team_stated_reason",
+    "history-2019-2910-note-3:engineering_analysis",
+    "history-2019-2910-note-3:recommended_validation",
+    "history-2019-2910-note-3:limitations",
+    "history-2019-2910-note-4:construction",
+    "history-2019-2910-note-4:team_stated_reason",
+    "history-2019-2910-note-4:engineering_analysis",
+    "history-2019-2910-note-4:recommended_validation",
+    "history-2019-2910-note-4:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}

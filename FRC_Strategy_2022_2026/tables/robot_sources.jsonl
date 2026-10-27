@@ -1,517 +1,557 @@
-{"robot_id": "2022-111", "source_id": "604103eb934b21c5", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-118", "source_id": "8a9ee20c64b4842c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-118", "source_id": "f9480aaf59eb2462", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-125", "source_id": "f71d8f670f4f8468", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-125", "source_id": "e24506458aef2d2e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-125", "source_id": "93b7c404944deb91", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-148", "source_id": "9aa93a614460ea13", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-148", "source_id": "00c59c680cbd7611", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-176", "source_id": "487d2f5e825bd0b9", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-179", "source_id": "9a91b53e05b75970", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-254", "source_id": "f93f8ab32955ff80", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-254", "source_id": "00d6d04fee8b715f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-624", "source_id": "b62eb738688535ff", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-624", "source_id": "42becb9ba6cd0a83", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-694", "source_id": "1f4623f3d5f578f5", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-694", "source_id": "138a4a3b39b9bea4", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-971", "source_id": "00caedc29f992d8f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-971", "source_id": "ef6ef8ecb8fbebc0", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-987", "source_id": "54f031fc83c6e8c2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1577", "source_id": "32958d3a8bce5912", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1619", "source_id": "f4f29b5b72ef131c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1678", "source_id": "dff9caffa33a513b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1678", "source_id": "7f0253e700b82438", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1678", "source_id": "46b7677161a9ac97", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1690", "source_id": "b4d25eec1afd9641", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1690", "source_id": "53f4a6780b5c0712", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-1771", "source_id": "8299a5ea60eb1f00", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2046", "source_id": "de976a1adb5aaa27", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2046", "source_id": "98bb370b5b6c6d86", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2056", "source_id": "853b7dcc00c1f77b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2481", "source_id": "954882d1dedc9e51", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2481", "source_id": "982de3dc69f25fa9", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2910", "source_id": "a57a7a7151015cea", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-2910", "source_id": "c4ae7fc486d77d88", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-4414", "source_id": "8b1cc17ea17f999f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-4414", "source_id": "612db32316532ba6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-4414", "source_id": "db34d9ce985b77e6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-4499", "source_id": "fa166eee478dec5a", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-4911", "source_id": "c34612953e6c728e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-4911", "source_id": "6aac06e42a1fbd68", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-5172", "source_id": "134525527dc496a5", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-5940", "source_id": "7c1c17dfffb5ee2c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-5940", "source_id": "8e7ab07e80ae2c2b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2022-5940", "source_id": "8d693070a879429c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-111", "source_id": "3ad2657da8342716", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-111", "source_id": "6e883649ab33cf08", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-111", "source_id": "d1205ac454caa49e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-111", "source_id": "b553178220b89578", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-111", "source_id": "80a192d715c12bac", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-111", "source_id": "d9c9318b6af9edc6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-118", "source_id": "75f2bdd0d81762cb", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-118", "source_id": "9d09e18222917788", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-118", "source_id": "b93d7def57b14b38", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-125", "source_id": "ed11db0a77d5ea20", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-125", "source_id": "39836443efbd9579", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-254", "source_id": "9a05a5ce9f5a3b7e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-254", "source_id": "1b0b189d42a42119", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-254", "source_id": "d063eb0eb4167170", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-254", "source_id": "331c79cec3b6bc73", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-254", "source_id": "9e0077b8a9daa8e6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-254", "source_id": "1b7c74acc754a78d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-930", "source_id": "24a725ae3e6cb85f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-930", "source_id": "112b15fc27c9ea07", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-930", "source_id": "857a69c29a452f9a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-930", "source_id": "d8edb00867503625", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-930", "source_id": "1716a1aab6793bc6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-930", "source_id": "f06d681d286b63d0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-973", "source_id": "6cb66ba23a22c6fa", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-973", "source_id": "3e08b9d2e5cedfc9", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1323", "source_id": "bf19589b7811bbde", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1323", "source_id": "e27d060aaeaa8a0f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1323", "source_id": "b59742a888383c30", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1323", "source_id": "e1bfac0e501de9cc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1325", "source_id": "b5de60c9583b5346", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1325", "source_id": "dccd0e9b5274891c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1577", "source_id": "a63370a768e2ce5f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1577", "source_id": "a6160e22fe2054e1", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1577", "source_id": "be06fb1ff3954f15", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1577", "source_id": "6006fe5cc6c5a7c1", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1577", "source_id": "c76cdb13bb465848", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1577", "source_id": "269be896bc6c2ce8", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1678", "source_id": "2f7c4902a8b2f848", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1678", "source_id": "521c649967cd9547", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1678", "source_id": "3084944e6773dc63", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1678", "source_id": "94b62e3f611faba8", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1678", "source_id": "07d149f7995c0aec", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1678", "source_id": "09030786b3cc6886", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1727", "source_id": "72025b4b03bc30a6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1727", "source_id": "162c318ccf3da1ba", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1756", "source_id": "10ec7b81625fe18c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-1756", "source_id": "6a865ea5dbf3198a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-1756", "source_id": "a7dc1e58f6d11768", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2046", "source_id": "0f0176ddcdbea682", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2046", "source_id": "0c5ea729080f882e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2046", "source_id": "a41dd0a0cea14d89", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2046", "source_id": "371bdf6fd80fa7e2", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2046", "source_id": "176b9c34edac9723", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2056", "source_id": "c7d275d3150ae1ee", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2056", "source_id": "6aaa544e036a9d52", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2056", "source_id": "31b43edeff500794", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2056", "source_id": "02da5926a4815e8e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2056", "source_id": "512c1cc34c05f0f4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2075", "source_id": "dc357bf07911e581", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2075", "source_id": "5fd9d96b7e123739", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2075", "source_id": "a15ca9d09f0bb86c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2075", "source_id": "5991091564d317eb", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2075", "source_id": "5d8536159ee0d5cc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2075", "source_id": "1109a8577a59765d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2468", "source_id": "35cc781ad48bfccf", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2468", "source_id": "e745095934c7deb2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2468", "source_id": "07da4f6c5480e00a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2468", "source_id": "cd320b82510a2508", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2767", "source_id": "1337406596c66720", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2767", "source_id": "e685d40dfe96488a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2767", "source_id": "527275ce0ef12346", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2767", "source_id": "ab659f8e62f67281", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2767", "source_id": "8a5590d2b533b2ac", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2910", "source_id": "f16e385febc53665", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2910", "source_id": "4529677b26755e5c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-2910", "source_id": "62ef3e0ad02084e3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2910", "source_id": "bc246ef2b0b5603a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2910", "source_id": "dcc780caeeb80be8", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2910", "source_id": "55a491d6d894c0bc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2910", "source_id": "451404586690da9b", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-2910", "source_id": "1afdf44b3260c259", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3005", "source_id": "56f87a5d66a4ba10", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-3005", "source_id": "4df6eaf74d66ce2a", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-3005", "source_id": "d84827ec0f688b3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3005", "source_id": "9250f05ff10d01ef", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3467", "source_id": "babb6e08b47689c7", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-3467", "source_id": "e5acbfd8d1a6b967", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3467", "source_id": "3a5a3498f6217a4d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3467", "source_id": "cb35f2990c0a2990", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3467", "source_id": "8053c0947c67ffd1", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3467", "source_id": "09cdff70902db5b9", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3538", "source_id": "c9d4dd4c1d973891", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-3538", "source_id": "e8a56344b3d83593", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3538", "source_id": "54b932c0fb5ff8fd", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3538", "source_id": "40a514a66b9a04fe", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-3538", "source_id": "6be9103996558a12", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-4414", "source_id": "072fbe60e1ac7c97", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-4414", "source_id": "fd7bfc7c8b041c5a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-4414", "source_id": "4b8cb2aa74b28787", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-4414", "source_id": "8dee6c9b7de15abc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-5940", "source_id": "025f473cbf5df4b9", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-5940", "source_id": "95c89c0508f8b2a8", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-5940", "source_id": "61923ef44c323be5", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-5940", "source_id": "5547fb6c02efaaea", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-5940", "source_id": "ba52785d92c41fff", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-6036", "source_id": "a4584e38c2152edc", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-6036", "source_id": "2a2942fa2481427b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-6036", "source_id": "f9e6464ff8508109", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-6036", "source_id": "5caf98f15104a293", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-6036", "source_id": "35a417b8e6c6fb1e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-6329", "source_id": "52ca0f8cbac086d0", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-6329", "source_id": "22fb8214429553b8", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2023-6329", "source_id": "a0a72c2ea18c44c3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-6329", "source_id": "6bb84d05e674e76c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2023-6329", "source_id": "381c16721763bdfb", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-254", "source_id": "d91e04b2ebb90c5b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-359", "source_id": "7708c6b4cba7041e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-368", "source_id": "53aa4619f3f5cdb6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-368", "source_id": "aaecb669c2045ef2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-368", "source_id": "d557ab6c7da86b42", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-604", "source_id": "01d8c0676d36ab52", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-604", "source_id": "242d5877834c1a87", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-604", "source_id": "390ab1b1ee6e3cea", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-604", "source_id": "596c467f571efb0c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-604", "source_id": "b9e37a7e119589b7", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1323", "source_id": "2101e388ba8583a5", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1678", "source_id": "cb5b58a6d6fe068b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1678", "source_id": "d2cd36a240f93315", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1678", "source_id": "6e63c1ace1b314de", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1678", "source_id": "e0d248f7e238e465", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1678", "source_id": "eeea3daa25810232", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1678", "source_id": "0706bd927d2531e6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1690", "source_id": "37e3b8f32be3c012", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1690", "source_id": "60a7cf6df916f153", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1690", "source_id": "f6c3e59e040f78bb", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1690", "source_id": "aa091074fb7b02cc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1690", "source_id": "f34d2f61ee2f6040", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1690", "source_id": "eaedf4c1209a2084", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1690", "source_id": "8e4a3d8b88633802", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1706", "source_id": "765df2b5bca8465e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1706", "source_id": "b2ef429df06f5e3b", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1706", "source_id": "4b70f7003b711d41", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1706", "source_id": "d2b03851e7543dc3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1706", "source_id": "7dffb7d83c322f00", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1706", "source_id": "615d61ef432cef64", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1756", "source_id": "f73df536c6506321", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1756", "source_id": "e47a6c970e487436", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1756", "source_id": "daf7d8ee69bf6beb", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1756", "source_id": "ba87a3ebf7da4741", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1771", "source_id": "5ba52af0bee75319", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1778", "source_id": "8bca3f8a8dcc3fc4", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1778", "source_id": "6b747b003ccb04eb", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1778", "source_id": "9185052b4bd4a0b1", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1778", "source_id": "14267bb147552a38", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-1796", "source_id": "398bb00e1b6edbd0", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-1796", "source_id": "c625b8ee378f868b", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2056", "source_id": "37543a9e2c5a82f3", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-2056", "source_id": "fd6ffec203a0f28f", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2056", "source_id": "39c6f9c66f9a90ae", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2056", "source_id": "baf9220867f8f2a4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2056", "source_id": "213708002e7f00b9", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2075", "source_id": "922f0549a64a7097", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-2075", "source_id": "a32760c542aa294f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-2075", "source_id": "eda7a3693a26e55c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2075", "source_id": "f283b2ca89d8dc66", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2910", "source_id": "afaf22e6a9a1b7be", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-2910", "source_id": "9742d6a4970d8da2", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2910", "source_id": "7b90d1992a90d9be", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2910", "source_id": "2ad96f4b7ada4c4d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2910", "source_id": "6e791c889d30828d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2910", "source_id": "6cc995ebeaa303da", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2910", "source_id": "4e713fdbfed0c1c6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-2974", "source_id": "71cbad9548f63b69", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-2974", "source_id": "4e78a14bf61afb71", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3005", "source_id": "f478054014cdbf83", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3005", "source_id": "4eeafb580790e7af", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "73dd51070bc47145", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "a25d0f3fb1205a5a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "d2b5d2f8317c0bb4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "5edc983b7b58fda6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "4b61ddc485163b32", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "da6100d6c013605c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3005", "source_id": "ea25642c36927b05", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3467", "source_id": "c6a974a35d994136", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3467", "source_id": "92c17b7642f61748", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3467", "source_id": "6206b40507f64db3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3467", "source_id": "3a5a3498f6217a4d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3467", "source_id": "6b3923c19620b422", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3478", "source_id": "78fb9c45040f2a34", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3847", "source_id": "c57cc21f4ab0f6b6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3847", "source_id": "773154b031283c1c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-3847", "source_id": "ca81a73e6a9b727f", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3847", "source_id": "1044d625ee195f7d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-3847", "source_id": "f3d8caeb1f093ac3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-4414", "source_id": "7c2cbab2776a025e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-4414", "source_id": "38f1f7c82a42c710", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-4414", "source_id": "ec8e9cfd5ecc9095", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-4414", "source_id": "e71bcdfe05414456", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-4613", "source_id": "ba708550ab3598f1", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-4613", "source_id": "298d92f4acbecd0d", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-4613", "source_id": "eabd79891acfbbed", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-5940", "source_id": "685e463c396cf167", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-5940", "source_id": "1a554c51ed37c260", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-5940", "source_id": "b3f7804b5c27218b", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-5940", "source_id": "093d56c8d17b5bc4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-5940", "source_id": "24f9e1c555064e6c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-5940", "source_id": "1442f24bc95915c2", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-6328", "source_id": "fd319683b8058f68", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-6328", "source_id": "688abab032c49d11", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-9483", "source_id": "031a3d75233c067a", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2024-9483", "source_id": "d67a18353446d720", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2024-9483", "source_id": "8959ea86d8c93b1e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-111", "source_id": "cdf16287313f2b2b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-111", "source_id": "755e525d556ebcac", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-118", "source_id": "569e888e9c4944b2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-118", "source_id": "ba544907bd4a2a5e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-118", "source_id": "7c9b9b9c0c409d8e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-118", "source_id": "49bc36921cde612c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-118", "source_id": "64f4e906696d9867", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-118", "source_id": "3d2d3c92911aeefa", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-180", "source_id": "a69d6e5433ce658a", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-180", "source_id": "d73a24703b85d249", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-180", "source_id": "f402b0d07d244fb6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-180", "source_id": "b45a33aa2a07c912", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-180", "source_id": "47264099e59f1140", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-190", "source_id": "42b2c5b436ba23f6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-190", "source_id": "8be20e7879791fcc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-190", "source_id": "bbad5ede66a72358", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-190", "source_id": "86b8b6728f472e5a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-254", "source_id": "ffe1c28c7bdb167b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-254", "source_id": "1dce917d32eae8a7", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-254", "source_id": "eed5a58e8d0a925c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-254", "source_id": "e74b1d4e7cdac616", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-254", "source_id": "db1575f0fc11f9c9", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-341", "source_id": "4194f90b69cb30c7", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-341", "source_id": "a9b817e1cd3d9e8d", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-341", "source_id": "aa9e337f5c2a8254", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-341", "source_id": "347801801c61c4e0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-341", "source_id": "707d30fd694c9273", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-341", "source_id": "96ebebd5328d19ff", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-359", "source_id": "329d92ef2fa4b0de", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-604", "source_id": "4a2b3de2aabeedab", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-604", "source_id": "62d9adbcdc058ecf", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-604", "source_id": "1eb0cd785c95d8a3", "relationship": "primary technical study"}
-{"robot_id": "2025-604", "source_id": "13a00c1d616ac9dc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-604", "source_id": "00cd0c79c9bc3a0c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-604", "source_id": "2402a86343fa1d12", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-694", "source_id": "2a9be955c131a728", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-694", "source_id": "9b0d1722d91032df", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-694", "source_id": "37d746727c7c2f09", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-694", "source_id": "aa5f8e04970d0074", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-694", "source_id": "a8208e98a13d8f8c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-694", "source_id": "dcc7b0824b07d94f", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1323", "source_id": "ce3889cf22699931", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1323", "source_id": "87f89375e9778b74", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1323", "source_id": "c3ab15506c41becc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1323", "source_id": "371772177aefbd6a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1323", "source_id": "8cad7d219c91d1ab", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1678", "source_id": "ee8462a7d15a2933", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1678", "source_id": "4d9397a9cd906d51", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1678", "source_id": "755ce7b0edd4b4e9", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1678", "source_id": "c636c8cac5333c41", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1678", "source_id": "fb3e3d87901a3d16", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1678", "source_id": "09030786b3cc6886", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1678", "source_id": "9951456845469e6f", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1690", "source_id": "4469bff73b030cb6", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1690", "source_id": "31be303300222c92", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1690", "source_id": "2c76436b919cc830", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1690", "source_id": "5d2df8524d174915", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1690", "source_id": "b795164ea140fea3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1690", "source_id": "9b47fa15582320fb", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1690", "source_id": "e734c25a8d475c09", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1690", "source_id": "8b1641bc01d9da31", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1706", "source_id": "fcb3ba28ac00042e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1706", "source_id": "7bb011b459c566f3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1706", "source_id": "9e6e41620f9df6e6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1706", "source_id": "d6f8763246427805", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1706", "source_id": "f025f4d547e1ea53", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1706", "source_id": "61293d1f8578d347", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1771", "source_id": "5e18e5541b4a8c67", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1771", "source_id": "b2cc7a2167486c23", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1778", "source_id": "6d0da3ba423ae812", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1778", "source_id": "d5f4533d1ef99266", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1778", "source_id": "de85b401110ae863", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-1778", "source_id": "17930f9018245338", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1778", "source_id": "204f2247dc9eae34", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1778", "source_id": "44047fd64f2ba0e3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-1778", "source_id": "0912e56424b2e363", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2056", "source_id": "04dfc0882aae5b2e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-2056", "source_id": "cb12c402d721aad7", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2056", "source_id": "9ac0d6e69a1b96cf", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2056", "source_id": "18ad60cdf37b21f1", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2056", "source_id": "cfa929d61eccace1", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2056", "source_id": "743b4f1e08653ccd", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2056", "source_id": "1a3908ae4260db8e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2481", "source_id": "abb77780d8c18d98", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-2481", "source_id": "08369eba61d81c42", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "0369e4fdcaac8ed4", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-2910", "source_id": "231e4f6dd1f45ec8", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "509d15ec64adb337", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "fa06683e5afdd971", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "bcf10d4611834b50", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "4ce6407766425bb6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "eb82aefb4c780c5c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-2910", "source_id": "0834dc0abe4fe0c2", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-3005", "source_id": "ed1be7643e6ddf93", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-3005", "source_id": "e550d8d8ad4f008e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-3005", "source_id": "63f1fc55609f8a3e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-3005", "source_id": "6f706bded5331048", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-3005", "source_id": "0739f386190473cf", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-3663", "source_id": "48a65d0ae2090173", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-3683", "source_id": "f6e44e8a390eff84", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-3683", "source_id": "2ac7677db4c92ebe", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-3683", "source_id": "b4314dbaf024df12", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-3683", "source_id": "f54c4b3c03c6db17", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-3683", "source_id": "0ef28ad6c74bce84", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-4414", "source_id": "002dfeba454d61da", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-4414", "source_id": "ab022dd05c4dc13d", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-4414", "source_id": "f41012557f9a0966", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-4414", "source_id": "edfae0e934dd9e5c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-4946", "source_id": "3dfd18a3f5f1ef77", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-4946", "source_id": "1509e0753ad3358a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-4946", "source_id": "74c5e337ef79d241", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5940", "source_id": "c10f5e353b2b5282", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-5940", "source_id": "19f3ef68d1efa295", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5940", "source_id": "30cc0a1e0f2a0656", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5940", "source_id": "7b6e15dd94522d3e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5990", "source_id": "3906e926dcbd3ffb", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-5990", "source_id": "53b14e4b124e83ef", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2025-5990", "source_id": "8374247dcecf5111", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5990", "source_id": "773015809e08c7be", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5990", "source_id": "218ff96a86172369", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5990", "source_id": "385f2a8a25fc9d6e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-5990", "source_id": "723c0ff2648be5ac", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-27", "source_id": "574721eac33478cc", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-27", "source_id": "8f46c5374d5af886", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-27", "source_id": "04996f3ff18417b4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-125", "source_id": "45ac05ccf10b4660", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-125", "source_id": "3a86d4ebd0348ebf", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-125", "source_id": "3d44c1446a3511f3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-254", "source_id": "e263954b50a8fc2f", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-254", "source_id": "118c8d4f9364caf8", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-254", "source_id": "18743275b41218ff", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-254", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-254", "source_id": "12915780b9b6eaec", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1114", "source_id": "a1b19fa0e9bd3be2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1114", "source_id": "95f55a26d5c4a850", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1114", "source_id": "9aca0a0435442782", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1114", "source_id": "aba5fcded1b69067", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1114", "source_id": "9ae1c986c8556851", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1114", "source_id": "04116a531c8f8ce7", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1114", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1678", "source_id": "3e2caedb32199be7", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1678", "source_id": "d3f932b0d6259efa", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1678", "source_id": "e8ca0b85e16de470", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1678", "source_id": "f0357b3800ce1fd0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1678", "source_id": "a4d46b0ee727a4e7", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1678", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1690", "source_id": "35c873ce8049aac2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1690", "source_id": "8cbb89d168ce1534", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1690", "source_id": "f7bb9d24e0073014", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1690", "source_id": "b128716f3c76cf7a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1690", "source_id": "56d11d3a21b149a4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1690", "source_id": "3d637bfb48b9ba6e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1690", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1706", "source_id": "2323a9a17f7dd93e", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1706", "source_id": "a46ec413d5273b3b", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1706", "source_id": "7f805b9730910962", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1768", "source_id": "0c8bec89a438dc09", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1768", "source_id": "78825ccc052fdae0", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1768", "source_id": "cab9ad699fea1cb0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1768", "source_id": "8d0282ccf62bd783", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1768", "source_id": "cf60bde21ce7bf59", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1768", "source_id": "6374c5cfbe464aa7", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1768", "source_id": "91d0a38ead1886de", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1987", "source_id": "5c4dbae90eb1f740", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-1987", "source_id": "d2f4f372712dd992", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1987", "source_id": "b15e7c0da2c63a97", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1987", "source_id": "566acc1d95751847", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1987", "source_id": "971fdb66ea093eaf", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-1987", "source_id": "df1392177a72d1aa", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2046", "source_id": "f48d0c33da2a3823", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-2046", "source_id": "86b759d8b6318471", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-2046", "source_id": "7f238ec8c9eaa50a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2046", "source_id": "2ccee90c7aa7ac80", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2046", "source_id": "f14dfd7641cf86a0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2046", "source_id": "b377931340627b2c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2056", "source_id": "44268a05590e5a6c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-2056", "source_id": "229fa144a7db9d85", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2056", "source_id": "6f2730ddf0b986b0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2056", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2056", "source_id": "86ae539d8a57982e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2056", "source_id": "8c7f511ce4c3b8dc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2056", "source_id": "e308f4ba98a73d5c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2481", "source_id": "0e2924bf06eb8ec2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-2481", "source_id": "b4ebdea58bc1c5b5", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2910", "source_id": "80f9e379d0cc043b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-2910", "source_id": "a577b3a23e105c73", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2910", "source_id": "c4f9d403126a784a", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2910", "source_id": "64883f01b372f650", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2910", "source_id": "d31e86ba24cccf28", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-2910", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-3467", "source_id": "43ee3e175dbe15af", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-3467", "source_id": "6a0b2fc73e8ebbd0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-3467", "source_id": "22722c8449255a88", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-4414", "source_id": "28ab970c7558717d", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-4414", "source_id": "8a08975a37ec7a39", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-4414", "source_id": "13521f61f03a71ec", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-4414", "source_id": "31ac9acfb0e91257", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-4414", "source_id": "b765cf6f5af21890", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-4414", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-5687", "source_id": "808be21b039013bd", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-5687", "source_id": "867db55ed6d4e36c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-5687", "source_id": "726d365918f58ab3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-5687", "source_id": "2c544f5f276c5485", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-5687", "source_id": "719e4410d5d4c81c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-5687", "source_id": "d4ac9c99989092f6", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6329", "source_id": "595efd6c09d90879", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-6329", "source_id": "b51d4fcfa98b9e5c", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-6329", "source_id": "f0f443563a726cba", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6329", "source_id": "630ee7914e10dbf4", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6329", "source_id": "0b134c8964531ab3", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6369", "source_id": "2054273b482d449a", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-6369", "source_id": "883907088b073062", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6800", "source_id": "e2550cceb67f78af", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-6800", "source_id": "ce80cb21c536f269", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6800", "source_id": "4c52ca43e6bce0ae", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6800", "source_id": "3e7253f5cbc88e48", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-6800", "source_id": "04c7875f6b5aeb22", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-7558", "source_id": "e82d151a4c93a5ea", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-7558", "source_id": "7c2a51b071ad499e", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-7558", "source_id": "61f23ea39bf72c39", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-7769", "source_id": "1252bca8ff49216b", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-7769", "source_id": "369993f005a7a0bc", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-7769", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9128", "source_id": "ef1654856df65c75", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-9128", "source_id": "8dbbf2753d119db0", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9470", "source_id": "067dce816056e9fe", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-9470", "source_id": "d432f9032e791fd2", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-9470", "source_id": "14b9f2df60782019", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9470", "source_id": "cdde400f911e1a46", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9470", "source_id": "87939bc4731dfe3c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9483", "source_id": "bdfa02c50cc5e208", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-9483", "source_id": "a49e4ca76f0a3410", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9483", "source_id": "aa1b4d8adebdf908", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9496", "source_id": "d58df30709015049", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-9496", "source_id": "6db55f3e593b8c0d", "relationship": "reviewed primary source bundle; field-level mapping not fully audited"}
-{"robot_id": "2026-9496", "source_id": "051df98bba3dfb4c", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2026-9496", "source_id": "619a1160558621ba", "relationship": "additional bibliography; discovery only"}
-{"robot_id": "2025-118", "source_id": "binder-fea3938f462d86d32d", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2024-3467", "source_id": "binder-c3e9d55e9042421508", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2022-971", "source_id": "binder-786e3d5aabeae7d675", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2023-118", "source_id": "binder-ba2298a5d1686ccd7a", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2024-254", "source_id": "binder-a2221ee1dc5a83c0f2", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2026-2910", "source_id": "binder-75601cba410631181a", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2026-2910", "source_id": "binder-6d8168bcbb62d71a38", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2026-3467", "source_id": "binder-1e35160c2e3b44126d", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2026-6800", "source_id": "binder-7a7e0a4611c12ba4f1", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2026-6800", "source_id": "binder-bae3039bd0aeeccdcb", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2026-254", "source_id": "binder-discussion-2542026", "relationship": "technical publication reviewed with page-level notes"}
-{"robot_id": "2025-1323", "source_id": "42c56c0c8c3261f6", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2026-4414", "source_id": "c7e89cf05dbd63da", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2025-118", "source_id": "reply-57329f7f1c289bbc5f", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2025-118", "source_id": "reply-bf82acd1ab8a56c3d2", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2024-3467", "source_id": "f1b4e84e573ce575", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2024-3467", "source_id": "535f235d76f255a0", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2026-254", "source_id": "ead34a395400d932", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2026-254", "source_id": "71e6005249d79890", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2026-254", "source_id": "e664484877aa0a7a", "relationship": "team explanation cited in technical mechanism note"}
-{"robot_id": "2022-604", "source_id": "604-source-2022", "relationship": "primary technical study"}
-{"robot_id": "2023-604", "source_id": "604-source-2023", "relationship": "primary technical study"}
-{"robot_id": "2024-604", "source_id": "604-source-2024", "relationship": "primary technical study"}
-{"robot_id": "2026-604", "source_id": "604-source-2026", "relationship": "primary technical study"}
+{"robot_id":"2022-111","source_id":"604103eb934b21c5","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-118","source_id":"8a9ee20c64b4842c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-118","source_id":"f9480aaf59eb2462","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-125","source_id":"f71d8f670f4f8468","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-125","source_id":"e24506458aef2d2e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-125","source_id":"93b7c404944deb91","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-148","source_id":"9aa93a614460ea13","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-148","source_id":"00c59c680cbd7611","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-176","source_id":"487d2f5e825bd0b9","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-179","source_id":"9a91b53e05b75970","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-254","source_id":"f93f8ab32955ff80","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-254","source_id":"00d6d04fee8b715f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-624","source_id":"b62eb738688535ff","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-624","source_id":"42becb9ba6cd0a83","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-694","source_id":"1f4623f3d5f578f5","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-694","source_id":"138a4a3b39b9bea4","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-971","source_id":"00caedc29f992d8f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-971","source_id":"ef6ef8ecb8fbebc0","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-987","source_id":"54f031fc83c6e8c2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1577","source_id":"32958d3a8bce5912","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1619","source_id":"f4f29b5b72ef131c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1678","source_id":"dff9caffa33a513b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1678","source_id":"7f0253e700b82438","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1678","source_id":"46b7677161a9ac97","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1690","source_id":"b4d25eec1afd9641","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1690","source_id":"53f4a6780b5c0712","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-1771","source_id":"8299a5ea60eb1f00","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2046","source_id":"de976a1adb5aaa27","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2046","source_id":"98bb370b5b6c6d86","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2056","source_id":"853b7dcc00c1f77b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2481","source_id":"954882d1dedc9e51","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2481","source_id":"982de3dc69f25fa9","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2910","source_id":"a57a7a7151015cea","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-2910","source_id":"c4ae7fc486d77d88","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-4414","source_id":"8b1cc17ea17f999f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-4414","source_id":"612db32316532ba6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-4414","source_id":"db34d9ce985b77e6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-4499","source_id":"fa166eee478dec5a","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-4911","source_id":"c34612953e6c728e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-4911","source_id":"6aac06e42a1fbd68","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-5172","source_id":"134525527dc496a5","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-5940","source_id":"7c1c17dfffb5ee2c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-5940","source_id":"8e7ab07e80ae2c2b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2022-5940","source_id":"8d693070a879429c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-111","source_id":"3ad2657da8342716","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-111","source_id":"6e883649ab33cf08","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-111","source_id":"d1205ac454caa49e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-111","source_id":"b553178220b89578","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-111","source_id":"80a192d715c12bac","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-111","source_id":"d9c9318b6af9edc6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-118","source_id":"75f2bdd0d81762cb","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-118","source_id":"9d09e18222917788","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-118","source_id":"b93d7def57b14b38","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-125","source_id":"ed11db0a77d5ea20","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-125","source_id":"39836443efbd9579","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-254","source_id":"9a05a5ce9f5a3b7e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-254","source_id":"1b0b189d42a42119","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-254","source_id":"d063eb0eb4167170","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-254","source_id":"331c79cec3b6bc73","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-254","source_id":"9e0077b8a9daa8e6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-254","source_id":"1b7c74acc754a78d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-930","source_id":"24a725ae3e6cb85f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-930","source_id":"112b15fc27c9ea07","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-930","source_id":"857a69c29a452f9a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-930","source_id":"d8edb00867503625","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-930","source_id":"1716a1aab6793bc6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-930","source_id":"f06d681d286b63d0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-973","source_id":"6cb66ba23a22c6fa","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-973","source_id":"3e08b9d2e5cedfc9","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1323","source_id":"bf19589b7811bbde","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1323","source_id":"e27d060aaeaa8a0f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1323","source_id":"b59742a888383c30","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1323","source_id":"e1bfac0e501de9cc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1325","source_id":"b5de60c9583b5346","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1325","source_id":"dccd0e9b5274891c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1577","source_id":"a63370a768e2ce5f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1577","source_id":"a6160e22fe2054e1","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1577","source_id":"be06fb1ff3954f15","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1577","source_id":"6006fe5cc6c5a7c1","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1577","source_id":"c76cdb13bb465848","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1577","source_id":"269be896bc6c2ce8","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1678","source_id":"2f7c4902a8b2f848","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1678","source_id":"521c649967cd9547","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1678","source_id":"3084944e6773dc63","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1678","source_id":"94b62e3f611faba8","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1678","source_id":"07d149f7995c0aec","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1678","source_id":"09030786b3cc6886","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1727","source_id":"72025b4b03bc30a6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1727","source_id":"162c318ccf3da1ba","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1756","source_id":"10ec7b81625fe18c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-1756","source_id":"6a865ea5dbf3198a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-1756","source_id":"a7dc1e58f6d11768","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2046","source_id":"0f0176ddcdbea682","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2046","source_id":"0c5ea729080f882e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2046","source_id":"a41dd0a0cea14d89","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2046","source_id":"371bdf6fd80fa7e2","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2046","source_id":"176b9c34edac9723","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2056","source_id":"c7d275d3150ae1ee","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2056","source_id":"6aaa544e036a9d52","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2056","source_id":"31b43edeff500794","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2056","source_id":"02da5926a4815e8e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2056","source_id":"512c1cc34c05f0f4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2075","source_id":"dc357bf07911e581","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2075","source_id":"5fd9d96b7e123739","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2075","source_id":"a15ca9d09f0bb86c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2075","source_id":"5991091564d317eb","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2075","source_id":"5d8536159ee0d5cc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2075","source_id":"1109a8577a59765d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2468","source_id":"35cc781ad48bfccf","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2468","source_id":"e745095934c7deb2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2468","source_id":"07da4f6c5480e00a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2468","source_id":"cd320b82510a2508","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2767","source_id":"1337406596c66720","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2767","source_id":"e685d40dfe96488a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2767","source_id":"527275ce0ef12346","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2767","source_id":"ab659f8e62f67281","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2767","source_id":"8a5590d2b533b2ac","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2910","source_id":"f16e385febc53665","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2910","source_id":"4529677b26755e5c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-2910","source_id":"62ef3e0ad02084e3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2910","source_id":"bc246ef2b0b5603a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2910","source_id":"dcc780caeeb80be8","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2910","source_id":"55a491d6d894c0bc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2910","source_id":"451404586690da9b","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-2910","source_id":"1afdf44b3260c259","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3005","source_id":"56f87a5d66a4ba10","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-3005","source_id":"4df6eaf74d66ce2a","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-3005","source_id":"d84827ec0f688b3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3005","source_id":"9250f05ff10d01ef","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3467","source_id":"babb6e08b47689c7","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-3467","source_id":"e5acbfd8d1a6b967","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3467","source_id":"3a5a3498f6217a4d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3467","source_id":"cb35f2990c0a2990","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3467","source_id":"8053c0947c67ffd1","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3467","source_id":"09cdff70902db5b9","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3538","source_id":"c9d4dd4c1d973891","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-3538","source_id":"e8a56344b3d83593","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3538","source_id":"54b932c0fb5ff8fd","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3538","source_id":"40a514a66b9a04fe","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-3538","source_id":"6be9103996558a12","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-4414","source_id":"072fbe60e1ac7c97","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-4414","source_id":"fd7bfc7c8b041c5a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-4414","source_id":"4b8cb2aa74b28787","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-4414","source_id":"8dee6c9b7de15abc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-5940","source_id":"025f473cbf5df4b9","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-5940","source_id":"95c89c0508f8b2a8","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-5940","source_id":"61923ef44c323be5","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-5940","source_id":"5547fb6c02efaaea","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-5940","source_id":"ba52785d92c41fff","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-6036","source_id":"a4584e38c2152edc","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-6036","source_id":"2a2942fa2481427b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-6036","source_id":"f9e6464ff8508109","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-6036","source_id":"5caf98f15104a293","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-6036","source_id":"35a417b8e6c6fb1e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-6329","source_id":"52ca0f8cbac086d0","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-6329","source_id":"22fb8214429553b8","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2023-6329","source_id":"a0a72c2ea18c44c3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-6329","source_id":"6bb84d05e674e76c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2023-6329","source_id":"381c16721763bdfb","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-254","source_id":"d91e04b2ebb90c5b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-359","source_id":"7708c6b4cba7041e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-368","source_id":"53aa4619f3f5cdb6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-368","source_id":"aaecb669c2045ef2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-368","source_id":"d557ab6c7da86b42","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-604","source_id":"01d8c0676d36ab52","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-604","source_id":"242d5877834c1a87","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-604","source_id":"390ab1b1ee6e3cea","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-604","source_id":"596c467f571efb0c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-604","source_id":"b9e37a7e119589b7","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1323","source_id":"2101e388ba8583a5","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1678","source_id":"cb5b58a6d6fe068b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1678","source_id":"d2cd36a240f93315","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1678","source_id":"6e63c1ace1b314de","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1678","source_id":"e0d248f7e238e465","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1678","source_id":"eeea3daa25810232","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1678","source_id":"0706bd927d2531e6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1690","source_id":"37e3b8f32be3c012","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1690","source_id":"60a7cf6df916f153","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1690","source_id":"f6c3e59e040f78bb","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1690","source_id":"aa091074fb7b02cc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1690","source_id":"f34d2f61ee2f6040","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1690","source_id":"eaedf4c1209a2084","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1690","source_id":"8e4a3d8b88633802","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1706","source_id":"765df2b5bca8465e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1706","source_id":"b2ef429df06f5e3b","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1706","source_id":"4b70f7003b711d41","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1706","source_id":"d2b03851e7543dc3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1706","source_id":"7dffb7d83c322f00","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1706","source_id":"615d61ef432cef64","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1756","source_id":"f73df536c6506321","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1756","source_id":"e47a6c970e487436","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1756","source_id":"daf7d8ee69bf6beb","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1756","source_id":"ba87a3ebf7da4741","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1771","source_id":"5ba52af0bee75319","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1778","source_id":"8bca3f8a8dcc3fc4","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1778","source_id":"6b747b003ccb04eb","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1778","source_id":"9185052b4bd4a0b1","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1778","source_id":"14267bb147552a38","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-1796","source_id":"398bb00e1b6edbd0","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-1796","source_id":"c625b8ee378f868b","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2056","source_id":"37543a9e2c5a82f3","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-2056","source_id":"fd6ffec203a0f28f","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2056","source_id":"39c6f9c66f9a90ae","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2056","source_id":"baf9220867f8f2a4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2056","source_id":"213708002e7f00b9","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2075","source_id":"922f0549a64a7097","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-2075","source_id":"a32760c542aa294f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-2075","source_id":"eda7a3693a26e55c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2075","source_id":"f283b2ca89d8dc66","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2910","source_id":"afaf22e6a9a1b7be","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-2910","source_id":"9742d6a4970d8da2","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2910","source_id":"7b90d1992a90d9be","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2910","source_id":"2ad96f4b7ada4c4d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2910","source_id":"6e791c889d30828d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2910","source_id":"6cc995ebeaa303da","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2910","source_id":"4e713fdbfed0c1c6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-2974","source_id":"71cbad9548f63b69","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-2974","source_id":"4e78a14bf61afb71","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3005","source_id":"f478054014cdbf83","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3005","source_id":"4eeafb580790e7af","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"73dd51070bc47145","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"a25d0f3fb1205a5a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"d2b5d2f8317c0bb4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"5edc983b7b58fda6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"4b61ddc485163b32","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"da6100d6c013605c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3005","source_id":"ea25642c36927b05","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3467","source_id":"c6a974a35d994136","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3467","source_id":"92c17b7642f61748","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3467","source_id":"6206b40507f64db3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3467","source_id":"3a5a3498f6217a4d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3467","source_id":"6b3923c19620b422","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3478","source_id":"78fb9c45040f2a34","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3847","source_id":"c57cc21f4ab0f6b6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3847","source_id":"773154b031283c1c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-3847","source_id":"ca81a73e6a9b727f","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3847","source_id":"1044d625ee195f7d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-3847","source_id":"f3d8caeb1f093ac3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-4414","source_id":"7c2cbab2776a025e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-4414","source_id":"38f1f7c82a42c710","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-4414","source_id":"ec8e9cfd5ecc9095","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-4414","source_id":"e71bcdfe05414456","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-4613","source_id":"ba708550ab3598f1","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-4613","source_id":"298d92f4acbecd0d","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-4613","source_id":"eabd79891acfbbed","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-5940","source_id":"685e463c396cf167","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-5940","source_id":"1a554c51ed37c260","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-5940","source_id":"b3f7804b5c27218b","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-5940","source_id":"093d56c8d17b5bc4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-5940","source_id":"24f9e1c555064e6c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-5940","source_id":"1442f24bc95915c2","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-6328","source_id":"fd319683b8058f68","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-6328","source_id":"688abab032c49d11","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-9483","source_id":"031a3d75233c067a","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2024-9483","source_id":"d67a18353446d720","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2024-9483","source_id":"8959ea86d8c93b1e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-111","source_id":"cdf16287313f2b2b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-111","source_id":"755e525d556ebcac","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-118","source_id":"569e888e9c4944b2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-118","source_id":"ba544907bd4a2a5e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-118","source_id":"7c9b9b9c0c409d8e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-118","source_id":"49bc36921cde612c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-118","source_id":"64f4e906696d9867","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-118","source_id":"3d2d3c92911aeefa","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-180","source_id":"a69d6e5433ce658a","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-180","source_id":"d73a24703b85d249","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-180","source_id":"f402b0d07d244fb6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-180","source_id":"b45a33aa2a07c912","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-180","source_id":"47264099e59f1140","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-190","source_id":"42b2c5b436ba23f6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-190","source_id":"8be20e7879791fcc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-190","source_id":"bbad5ede66a72358","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-190","source_id":"86b8b6728f472e5a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-254","source_id":"ffe1c28c7bdb167b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-254","source_id":"1dce917d32eae8a7","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-254","source_id":"eed5a58e8d0a925c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-254","source_id":"e74b1d4e7cdac616","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-254","source_id":"db1575f0fc11f9c9","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-341","source_id":"4194f90b69cb30c7","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-341","source_id":"a9b817e1cd3d9e8d","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-341","source_id":"aa9e337f5c2a8254","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-341","source_id":"347801801c61c4e0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-341","source_id":"707d30fd694c9273","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-341","source_id":"96ebebd5328d19ff","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-359","source_id":"329d92ef2fa4b0de","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-604","source_id":"4a2b3de2aabeedab","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-604","source_id":"62d9adbcdc058ecf","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-604","source_id":"1eb0cd785c95d8a3","relationship":"primary technical study"}
+{"robot_id":"2025-604","source_id":"13a00c1d616ac9dc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-604","source_id":"00cd0c79c9bc3a0c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-604","source_id":"2402a86343fa1d12","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-694","source_id":"2a9be955c131a728","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-694","source_id":"9b0d1722d91032df","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-694","source_id":"37d746727c7c2f09","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-694","source_id":"aa5f8e04970d0074","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-694","source_id":"a8208e98a13d8f8c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-694","source_id":"dcc7b0824b07d94f","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1323","source_id":"ce3889cf22699931","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1323","source_id":"87f89375e9778b74","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1323","source_id":"c3ab15506c41becc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1323","source_id":"371772177aefbd6a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1323","source_id":"8cad7d219c91d1ab","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1678","source_id":"ee8462a7d15a2933","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1678","source_id":"4d9397a9cd906d51","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1678","source_id":"755ce7b0edd4b4e9","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1678","source_id":"c636c8cac5333c41","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1678","source_id":"fb3e3d87901a3d16","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1678","source_id":"09030786b3cc6886","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1678","source_id":"9951456845469e6f","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1690","source_id":"4469bff73b030cb6","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1690","source_id":"31be303300222c92","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1690","source_id":"2c76436b919cc830","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1690","source_id":"5d2df8524d174915","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1690","source_id":"b795164ea140fea3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1690","source_id":"9b47fa15582320fb","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1690","source_id":"e734c25a8d475c09","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1690","source_id":"8b1641bc01d9da31","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1706","source_id":"fcb3ba28ac00042e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1706","source_id":"7bb011b459c566f3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1706","source_id":"9e6e41620f9df6e6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1706","source_id":"d6f8763246427805","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1706","source_id":"f025f4d547e1ea53","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1706","source_id":"61293d1f8578d347","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1771","source_id":"5e18e5541b4a8c67","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1771","source_id":"b2cc7a2167486c23","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1778","source_id":"6d0da3ba423ae812","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1778","source_id":"d5f4533d1ef99266","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1778","source_id":"de85b401110ae863","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-1778","source_id":"17930f9018245338","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1778","source_id":"204f2247dc9eae34","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1778","source_id":"44047fd64f2ba0e3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-1778","source_id":"0912e56424b2e363","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2056","source_id":"04dfc0882aae5b2e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-2056","source_id":"cb12c402d721aad7","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2056","source_id":"9ac0d6e69a1b96cf","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2056","source_id":"18ad60cdf37b21f1","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2056","source_id":"cfa929d61eccace1","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2056","source_id":"743b4f1e08653ccd","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2056","source_id":"1a3908ae4260db8e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2481","source_id":"abb77780d8c18d98","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-2481","source_id":"08369eba61d81c42","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"0369e4fdcaac8ed4","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-2910","source_id":"231e4f6dd1f45ec8","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"509d15ec64adb337","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"fa06683e5afdd971","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"bcf10d4611834b50","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"4ce6407766425bb6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"eb82aefb4c780c5c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-2910","source_id":"0834dc0abe4fe0c2","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-3005","source_id":"ed1be7643e6ddf93","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-3005","source_id":"e550d8d8ad4f008e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-3005","source_id":"63f1fc55609f8a3e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-3005","source_id":"6f706bded5331048","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-3005","source_id":"0739f386190473cf","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-3663","source_id":"48a65d0ae2090173","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-3683","source_id":"f6e44e8a390eff84","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-3683","source_id":"2ac7677db4c92ebe","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-3683","source_id":"b4314dbaf024df12","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-3683","source_id":"f54c4b3c03c6db17","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-3683","source_id":"0ef28ad6c74bce84","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-4414","source_id":"002dfeba454d61da","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-4414","source_id":"ab022dd05c4dc13d","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-4414","source_id":"f41012557f9a0966","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-4414","source_id":"edfae0e934dd9e5c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-4946","source_id":"3dfd18a3f5f1ef77","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-4946","source_id":"1509e0753ad3358a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-4946","source_id":"74c5e337ef79d241","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5940","source_id":"c10f5e353b2b5282","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-5940","source_id":"19f3ef68d1efa295","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5940","source_id":"30cc0a1e0f2a0656","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5940","source_id":"7b6e15dd94522d3e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5990","source_id":"3906e926dcbd3ffb","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-5990","source_id":"53b14e4b124e83ef","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2025-5990","source_id":"8374247dcecf5111","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5990","source_id":"773015809e08c7be","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5990","source_id":"218ff96a86172369","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5990","source_id":"385f2a8a25fc9d6e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-5990","source_id":"723c0ff2648be5ac","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-27","source_id":"574721eac33478cc","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-27","source_id":"8f46c5374d5af886","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-27","source_id":"04996f3ff18417b4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-125","source_id":"45ac05ccf10b4660","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-125","source_id":"3a86d4ebd0348ebf","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-125","source_id":"3d44c1446a3511f3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-254","source_id":"e263954b50a8fc2f","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-254","source_id":"118c8d4f9364caf8","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-254","source_id":"18743275b41218ff","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-254","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-254","source_id":"12915780b9b6eaec","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1114","source_id":"a1b19fa0e9bd3be2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1114","source_id":"95f55a26d5c4a850","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1114","source_id":"9aca0a0435442782","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1114","source_id":"aba5fcded1b69067","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1114","source_id":"9ae1c986c8556851","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1114","source_id":"04116a531c8f8ce7","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1114","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1678","source_id":"3e2caedb32199be7","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1678","source_id":"d3f932b0d6259efa","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1678","source_id":"e8ca0b85e16de470","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1678","source_id":"f0357b3800ce1fd0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1678","source_id":"a4d46b0ee727a4e7","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1678","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1690","source_id":"35c873ce8049aac2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1690","source_id":"8cbb89d168ce1534","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1690","source_id":"f7bb9d24e0073014","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1690","source_id":"b128716f3c76cf7a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1690","source_id":"56d11d3a21b149a4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1690","source_id":"3d637bfb48b9ba6e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1690","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1706","source_id":"2323a9a17f7dd93e","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1706","source_id":"a46ec413d5273b3b","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1706","source_id":"7f805b9730910962","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1768","source_id":"0c8bec89a438dc09","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1768","source_id":"78825ccc052fdae0","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1768","source_id":"cab9ad699fea1cb0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1768","source_id":"8d0282ccf62bd783","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1768","source_id":"cf60bde21ce7bf59","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1768","source_id":"6374c5cfbe464aa7","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1768","source_id":"91d0a38ead1886de","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1987","source_id":"5c4dbae90eb1f740","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-1987","source_id":"d2f4f372712dd992","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1987","source_id":"b15e7c0da2c63a97","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1987","source_id":"566acc1d95751847","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1987","source_id":"971fdb66ea093eaf","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-1987","source_id":"df1392177a72d1aa","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2046","source_id":"f48d0c33da2a3823","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-2046","source_id":"86b759d8b6318471","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-2046","source_id":"7f238ec8c9eaa50a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2046","source_id":"2ccee90c7aa7ac80","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2046","source_id":"f14dfd7641cf86a0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2046","source_id":"b377931340627b2c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2056","source_id":"44268a05590e5a6c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-2056","source_id":"229fa144a7db9d85","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2056","source_id":"6f2730ddf0b986b0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2056","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2056","source_id":"86ae539d8a57982e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2056","source_id":"8c7f511ce4c3b8dc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2056","source_id":"e308f4ba98a73d5c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2481","source_id":"0e2924bf06eb8ec2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-2481","source_id":"b4ebdea58bc1c5b5","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2910","source_id":"80f9e379d0cc043b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-2910","source_id":"a577b3a23e105c73","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2910","source_id":"c4f9d403126a784a","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2910","source_id":"64883f01b372f650","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2910","source_id":"d31e86ba24cccf28","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-2910","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-3467","source_id":"43ee3e175dbe15af","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-3467","source_id":"6a0b2fc73e8ebbd0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-3467","source_id":"22722c8449255a88","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-4414","source_id":"28ab970c7558717d","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-4414","source_id":"8a08975a37ec7a39","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-4414","source_id":"13521f61f03a71ec","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-4414","source_id":"31ac9acfb0e91257","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-4414","source_id":"b765cf6f5af21890","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-4414","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-5687","source_id":"808be21b039013bd","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-5687","source_id":"867db55ed6d4e36c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-5687","source_id":"726d365918f58ab3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-5687","source_id":"2c544f5f276c5485","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-5687","source_id":"719e4410d5d4c81c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-5687","source_id":"d4ac9c99989092f6","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6329","source_id":"595efd6c09d90879","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-6329","source_id":"b51d4fcfa98b9e5c","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-6329","source_id":"f0f443563a726cba","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6329","source_id":"630ee7914e10dbf4","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6329","source_id":"0b134c8964531ab3","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6369","source_id":"2054273b482d449a","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-6369","source_id":"883907088b073062","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6800","source_id":"e2550cceb67f78af","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-6800","source_id":"ce80cb21c536f269","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6800","source_id":"4c52ca43e6bce0ae","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6800","source_id":"3e7253f5cbc88e48","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-6800","source_id":"04c7875f6b5aeb22","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-7558","source_id":"e82d151a4c93a5ea","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-7558","source_id":"7c2a51b071ad499e","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-7558","source_id":"61f23ea39bf72c39","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-7769","source_id":"1252bca8ff49216b","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-7769","source_id":"369993f005a7a0bc","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-7769","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9128","source_id":"ef1654856df65c75","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-9128","source_id":"8dbbf2753d119db0","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9470","source_id":"067dce816056e9fe","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-9470","source_id":"d432f9032e791fd2","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-9470","source_id":"14b9f2df60782019","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9470","source_id":"cdde400f911e1a46","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9470","source_id":"87939bc4731dfe3c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9483","source_id":"bdfa02c50cc5e208","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-9483","source_id":"a49e4ca76f0a3410","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9483","source_id":"aa1b4d8adebdf908","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9496","source_id":"d58df30709015049","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-9496","source_id":"6db55f3e593b8c0d","relationship":"reviewed primary source bundle; field-level mapping not fully audited"}
+{"robot_id":"2026-9496","source_id":"051df98bba3dfb4c","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2026-9496","source_id":"619a1160558621ba","relationship":"additional bibliography; discovery only"}
+{"robot_id":"2025-118","source_id":"binder-fea3938f462d86d32d","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2024-3467","source_id":"binder-c3e9d55e9042421508","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2022-971","source_id":"binder-786e3d5aabeae7d675","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2023-118","source_id":"binder-ba2298a5d1686ccd7a","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2024-254","source_id":"binder-a2221ee1dc5a83c0f2","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2026-2910","source_id":"binder-75601cba410631181a","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2026-2910","source_id":"binder-6d8168bcbb62d71a38","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2026-3467","source_id":"binder-1e35160c2e3b44126d","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2026-6800","source_id":"binder-7a7e0a4611c12ba4f1","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2026-6800","source_id":"binder-bae3039bd0aeeccdcb","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2026-254","source_id":"binder-discussion-2542026","relationship":"technical publication reviewed with page-level notes"}
+{"robot_id":"2025-1323","source_id":"42c56c0c8c3261f6","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2026-4414","source_id":"c7e89cf05dbd63da","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2025-118","source_id":"reply-57329f7f1c289bbc5f","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2025-118","source_id":"reply-bf82acd1ab8a56c3d2","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2024-3467","source_id":"f1b4e84e573ce575","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2024-3467","source_id":"535f235d76f255a0","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2026-254","source_id":"ead34a395400d932","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2026-254","source_id":"71e6005249d79890","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2026-254","source_id":"e664484877aa0a7a","relationship":"team explanation cited in technical mechanism note"}
+{"robot_id":"2022-604","source_id":"604-source-2022","relationship":"primary technical study"}
+{"robot_id":"2023-604","source_id":"604-source-2023","relationship":"primary technical study"}
+{"robot_id":"2024-604","source_id":"604-source-2024","relationship":"primary technical study"}
+{"robot_id":"2026-604","source_id":"604-source-2026","relationship":"primary technical study"}
+{"robot_id":"2024-1690","source_id":"1833-research-ab91404a20fa9eff","relationship":"1833 optimization study reference"}
+{"robot_id":"2024-1690","source_id":"1833-research-00616eae0aeeeb17","relationship":"1833 optimization study reference"}
+{"robot_id":"2024-1690","source_id":"1833-research-be98985502bbeb44","relationship":"1833 optimization study reference"}
+{"robot_id":"2025-2056","source_id":"1833-research-9ccaed857ebd52dc","relationship":"1833 optimization study reference"}
+{"robot_id":"2025-1690","source_id":"1833-research-11516a52e8187154","relationship":"1833 optimization study reference"}
+{"robot_id":"2025-1690","source_id":"1833-research-eff79816d2ab7706","relationship":"1833 optimization study reference"}
+{"robot_id":"2025-1690","source_id":"1833-research-09461f5e3820a2c8","relationship":"1833 optimization study reference"}
+{"robot_id":"2025-1690","source_id":"1833-research-9c550cd80023e046","relationship":"1833 optimization study reference"}
+{"robot_id":"2026-7769","source_id":"1833-research-b4a7cd03d751b8af","relationship":"1833 optimization study reference"}
+{"robot_id":"2018-254","source_id":"history-source-92a6323b99619550","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-254","source_id":"history-source-6c4253a3ed9da2ba","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-254","source_id":"history-source-cef4a0204a46fe80","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-254","source_id":"history-source-cd477662e96fe088","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-148","source_id":"history-source-313a037a88992ab3","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-148","source_id":"history-source-da36f654965378d4","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-148","source_id":"history-source-ffb73d08952abd64","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-1678","source_id":"history-source-568bbbee81e20565","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-1678","source_id":"history-source-e3b4b654b4186eb2","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-1610","source_id":"history-source-3b3b241ee155d17a","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-2898","source_id":"history-source-6750159c9d4a0e13","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-2910","source_id":"history-source-cc4dc55c9c8d5ee8","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-971","source_id":"history-source-bae1439acb2d1bfc","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2018-971","source_id":"history-source-9c5a3d3226907d95","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-254","source_id":"history-source-c765ca17f150ad3c","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-254","source_id":"history-source-d094f78dea16d351","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-254","source_id":"history-source-a9edcf834d634674","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1678","source_id":"history-source-cd2ae98270642e5b","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1678","source_id":"history-source-b2b5b316e4a073bc","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1610","source_id":"history-source-4eaa87c81c16bd5c","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-2910","source_id":"history-source-4765ab2b114973e2","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-2910","source_id":"history-source-dd7e7c712c4ca5b2","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-971","source_id":"history-source-44f70e0f0f384a19","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-971","source_id":"history-source-d56de2ba3bf4b4d0","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-971","source_id":"history-source-af58e6cc8870e4c9","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-971","source_id":"history-source-3fe8bd9226d78ac9","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1323","source_id":"history-source-db96751b767dbf86","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1323","source_id":"history-source-e26b954acf34e830","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1323","source_id":"history-source-45db36a2a9521bed","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1323","source_id":"history-source-0abbbd978b4bca74","relationship":"reviewed historical primary source with selected technical scope"}
+{"robot_id":"2019-1323","source_id":"history-source-85cb4943f843a086","relationship":"Official name/event metadata; retained conflict"}

@@ -7,7 +7,10 @@
   "required_reading": [
     "docs/game_2023.md",
     "docs/AGENT_GUIDE.md",
-    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
   ],
   "path_base": "corpus_root",
   "dossier": {

@@ -1,3 +1,9 @@
+> Owner constraints: no pneumatics; no turrets; no support-only architecture. Historical scope and future 2018/2019 roadmap: `docs/1833_ACTUATION_AND_HISTORY_SCOPE.md` from corpus root.
+
+> Owner correction: prioritize independently achievable RP and essential scoring independence. Physical iteration is extremely expensive; use proportionate analytical checks and targeted tests. Read `docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md` from corpus root.
+
+> 1833 override: elite primary-contributor architecture; no support-only robot; no turret. Apply `docs/1833_DESIGN_DOCTRINE.md` and `docs/DESIGN_REVIEW_PROTOCOL.md` from corpus root.
+
 # 1833 required task-list protocol
 
 ## Required deliverable and trigger
@@ -16,7 +22,7 @@ Columns A–N are defined in `team1833/task_template_schema.json` and in the wor
 
 ## Give priorities a defensible meaning
 
-Priority 1 means essential to the proposed role; 2 means valuable; 3 means optional. Difficulty uses the team's relative Fibonacci scale: 1, 2, 3, 5, 8, 13, 21. Explain the basis of both judgments in Why / tradeoff. Do not treat the product P×D as an objective ranking, a points-per-effort model or a decision rule. The supplied original workbook used priority times difficulty; this template retains that discussion aid without claiming it captures strategic value. A difficult must-do can remain a must-do. A high-point action can be unnecessary for this robot when an alliance partner covers it. Enabling tasks and denial can be valuable without directly scoring points.
+Priority 1 means essential to the rule-derived elite primary-contributor objective, before architecture selection; 2 means valuable; 3 means optional. Difficulty uses the team's relative Fibonacci scale: 1, 2, 3, 5, 8, 13, 21. Explain the basis of both judgments in Why / tradeoff. Do not treat the product P×D as an objective ranking, a points-per-effort model or a decision rule. The supplied original workbook used priority times difficulty; this template retains that discussion aid without claiming it captures strategic value. A difficult must-do can remain a must-do. A high-point action can be unnecessary for this robot when an alliance partner covers it. Enabling tasks and denial can be valuable without directly scoring points.
 
 Use the Agent recommendation dropdown: Must do, Might do, Won’t do, or Needs discussion. State the opportunity cost, partner dependency, game-state conditions and reliability assumptions that could change it. Column D should distinguish rule points from inferred enabling value; include timing, capacity, accuracy or probability conditions when quantified. Do not invent numeric precision when the data supports only a qualitative judgment.
 
@@ -35,3 +41,8 @@ Before delivering, check exactly one sheet, correct manual revision, all task ca
 ## Provenance
 
 This template adapts the user's supplied `team1833/task_list_2026.xlsx`, particularly its cleaned task list and the group sheets' priority/difficulty fields, without reproducing the group tabs or inheriting the original season's priorities. `team1833/mechanical_research_2026.pdf` remains a separate input to mechanism brainstorming. Historical kickoff choices and later strategic corrections retain their original context; the template does not rewrite them as current universal priorities.
+
+
+## Substantive completion gate added after the DunkTank review
+
+Task-specific dependencies, justified difficulty, distinct unknown/test/decision consequences, and consistent screening versus release requirements are mandatory. Repeated generic filler does not satisfy a field. A field threshold is not an onboard capacity mandate. Compare capacities and fixed/expanding storage, perform common-assumption match modeling, and apply the owner constraints before final recommendation. Run `scripts/audit_task_workbook.py` and the design-review validator; human review remains necessary. Follow `docs/DESIGN_REVIEW_PROTOCOL.md` for detailed requirements.

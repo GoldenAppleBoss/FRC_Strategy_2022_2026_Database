@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Machine-readable decision summary, accompanied by detailed model and workbook",
+  "profile": "team1833/design_profile.json",
+  "rubric": "agent/design_rubric.json",
+  "validator": "scripts/validate_design_review.py",
+  "required_fields": [
+    "team",
+    "manual_revision",
+    "manual_source",
+    "constraints",
+    "selected_architecture",
+    "task_workbook",
+    "candidates",
+    "scenarios",
+    "capacity_trade_study",
+    "sensitivity_analysis",
+    "acceptance_requirements",
+    "decision_tests",
+    "corrections_and_open_questions",
+    "human_review_status",
+    "solo_rp_analysis",
+    "validation_economics"
+  ],
+  "constraints": {
+    "primary_contributor": true,
+    "turret_allowed": false,
+    "pneumatics_allowed": false
+  },
+  "candidate_minimum": 2,
+  "scenario_kinds": [
+    "ordinary_partners",
+    "strong_partners",
+    "elite_defended"
+  ],
+  "capacity_option_minimum": 3,
+  "input_record_fields": [
+    "name",
+    "value or range",
+    "units",
+    "provenance"
+  ],
+  "result_record_fields": [
+    "candidate_id",
+    "timeline",
+    "score_accounting",
+    "calculation_locator"
+  ],
+  "requirement_record_fields": [
+    "id",
+    "task_rows",
+    "screening_or_release",
+    "metric",
+    "units",
+    "conditions",
+    "threshold",
+    "evidence_or_provisional_reason"
+  ],
+  "limits": "Validator checks structure and explicit constraints, not truthfulness, numeric correctness or simulation fidelity. Human review and workbook audit remain mandatory.",
+  "solo_rp_analysis_fields": [
+    "governing_rp_rules",
+    "objective_classification",
+    "owned_prerequisites",
+    "required_individual_output",
+    "margin_and_uncertainty",
+    "passive_partner_case",
+    "seeding_and_playoff_implications"
+  ],
+  "validation_economics_fields": [
+    "decision_uncertainty",
+    "cheapest_adequate_evidence",
+    "estimated_cost_and_schedule",
+    "result_that_changes_choice",
+    "stopping_rule"
+  ]
+}

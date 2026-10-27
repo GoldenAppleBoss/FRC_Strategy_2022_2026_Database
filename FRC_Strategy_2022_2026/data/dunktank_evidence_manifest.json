@@ -1,0 +1,17 @@
+[
+  {
+    "path": "evaluations/evidence/dunktank-2026-10-26/original_agent_task_list.xlsx",
+    "sha256": "7c73be1b67b06e08e8cc12c7c371c5ded90b0069f010ce0349d5b7ea12e04aa7",
+    "status": "Original user-supplied evidence, preserved unchanged; superseded recommendation is not approved for 1833"
+  },
+  {
+    "path": "evaluations/evidence/dunktank-2026-10-26/original_agent_recommendation.md",
+    "sha256": "f6cfc802d4886970c1199375d56f7802c00f712f01dabde56c7d678e92419864",
+    "status": "Original user-supplied evidence, preserved unchanged; superseded recommendation is not approved for 1833"
+  },
+  {
+    "path": "evaluations/evidence/dunktank-2026-10-26/supplied_game_update_01.pdf",
+    "sha256": "1408014d55c8461c36145307c4dcfe63474706009842678975aebb089e3a619f",
+    "status": "Original user-supplied evidence, preserved unchanged; superseded recommendation is not approved for 1833"
+  }
+]

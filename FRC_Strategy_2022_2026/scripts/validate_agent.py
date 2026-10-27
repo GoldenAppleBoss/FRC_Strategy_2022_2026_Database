@@ -13,12 +13,12 @@ def query(*args):
 
 manifest=json.loads((root/'agent/manifest.json').read_text())
 robots=jl('data/robot_dossiers.jsonl');notes=jl('data/technical_mechanisms.jsonl');parameters=jl('data/technical_parameters.jsonl');units=jl('agent/retrieval_units.jsonl');claims=jl('agent/claims.jsonl');images=jl('agent/image_catalog.jsonl')
-check(len(robots)==128,'128 dossiers')
+check(len(robots)==141,'141 dossiers')
 check(len({x['id'] for x in units})==len(units),'unique unit IDs')
 check(len(claims)==len(notes)*5+len(parameters),'all typed claim fields retained')
-check(len(images)==508,'508 image associations')
+check(len(images)==569,'569 image associations')
 html=(root/'index.html').read_text();assets=json.loads(re.search(r'<script id="image-assets" type="application/json">(.*?)</script>',html,re.S)[1]);db=json.loads(re.search(r'<script id="database" type="application/json">(.*?)</script>',html,re.S)[1])
-check(len(assets)==508,'508 embedded assets')
+check(len(assets)==569,'569 embedded assets')
 check('src="${esc(im.path)}"' not in html,'no folder-dependent gallery image rendering')
 for im in images:
  path=root/im['path'];check(path.is_file(),'original image path exists: '+im['id'])
@@ -59,7 +59,16 @@ r=query('search','tower','--kind','tower_sample');check(r['matches']>0,'tower-on
 r=query('search','2022cmptx_sf1m1','--kind','einstein_record');check(r['matches']==1 and r['results'][0]['visual_review'] is False,'exact Einstein key and no-visual-review boundary')
 check(db['robots']==robots and db['technicalNotes']==notes,'reader current data parity')
 check(db['agentManifest']==manifest,'reader machine manifest parity')
-check(len(jl('agent/evaluation_cases.jsonl'))==20,'evaluation cases present')
+check(len(jl('agent/evaluation_cases.jsonl'))==55,'evaluation cases present')
+
+check(len([r for r in robots if r['year']==2018])==7 and len([r for r in robots if r['year']==2019])==6,'curated historical cohort counts')
+check(all(r['epa'] is None and r['epa_rank'] is None for r in robots if r['year'] in [2018,2019]),'no fabricated historical EPA')
+r=query('search','handoff','--year','2019','--kind','technical_claim','--limit','100');check(r['matches']>0,'historical handoff retrievable')
+r=query('packet','2019-1323');check(any(n.get('code_revision') for n in r['technical_notes']),'pinned code evidence retained')
+check(len(db['games'])==7 and all((root/f'docs/game_{y}.md').is_file() for y in [2018,2019]),'historical game chapters integrated')
+check('2018' in subprocess.check_output([sys.executable,str(root/'scripts/query_agent.py'),'game','2018'],text=True),'historical game CLI')
+check(all(u['required_game_context'] for u in units if u.get('robot') and u.get('year') in [2018,2019]),'historical retrieval attaches game context')
+
 broken=[];refs=0
 for f in root.rglob('*.md'):
  for m in re.finditer(r'!?\[[^\]]*\]\(([^)]+)\)',f.read_text()):

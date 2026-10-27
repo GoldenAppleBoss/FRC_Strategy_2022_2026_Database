@@ -7,7 +7,10 @@
   "required_reading": [
     "docs/game_2024.md",
     "docs/AGENT_GUIDE.md",
-    "docs/TECHNICAL_EVIDENCE_GUIDE.md"
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
   ],
   "path_base": "corpus_root",
   "dossier": {
@@ -15,7 +18,10 @@
     "team": 1690,
     "robot": "Doppler",
     "primary": [
-      "https://youtu.be/jB7OqueRYf0"
+      "https://youtu.be/jB7OqueRYf0",
+      "https://www.chiefdelphi.com/t/frc-orbit-1690-2024-robot-cad-release/464838",
+      "https://www.chiefdelphi.com/t/orbit-1690-presents-2024-robot-reveal-doppler/455350/142",
+      "https://frc-events.firstinspires.org/2024/CMPTX/awards"
     ],
     "architecture": "Very low stow, full-width protected intake and four-roller cannon; endgame added around the core scorer.",
     "subsystems": {
@@ -29,7 +35,7 @@
     "versions": [
       "Rubber coating ballooned at speed; switched to vulcanized rollers. Trapped notes caused two losses; added a servo-raised deflector. Centering wheels added before Champs."
     ],
-    "analysis": "This is an explicit hierarchy: protect speaker/amp cycle performance first and fit climbing/trap around it. The compact package succeeds because the controls handle narrowed-note flight and changing robot pose.",
+    "analysis": "This is an explicit hierarchy: protect speaker/amp cycle performance first and fit climbing/trap around it. The compact package succeeds because the controls handle narrowed-note flight and changing robot pose. New 1833 design-transfer study: docs/context/1833-reference-2024-1690.md. Historical success does not waive the current no-support/no-turret mandate or certify causal performance.",
     "limits": [
       "Configuration description is tied to the cited interview; not a claim that every unreported shop revision is known."
     ],
@@ -306,7 +312,10 @@
     "version_audit": "Bounded source review; exhaustive intermediate-version history not certified",
     "strict_acceptance": "provisional; exhaustive user acceptance gate open",
     "source_ids": [
-      "37e3b8f32be3c012"
+      "37e3b8f32be3c012",
+      "1833-research-ab91404a20fa9eff",
+      "1833-research-00616eae0aeeeb17",
+      "1833-research-be98985502bbeb44"
     ],
     "tags": [
       "climb",
@@ -341,7 +350,8 @@
     },
     "technical_note_ids": [
       "study6-2024-1690"
-    ]
+    ],
+    "optimization_study": "docs/context/1833-reference-2024-1690.md"
   },
   "technical_notes": [
     {
@@ -415,6 +425,21 @@
         "https://youtu.be/jB7OqueRYf0"
       ],
       "path": "docs/research_continuation/2024-1690.md"
+    },
+    {
+      "id": "1833-reference-2024-1690",
+      "title": "2024-1690 optimization reference for elite simple architecture",
+      "kind": "robot_optimization_study",
+      "year": 2024,
+      "robot_id": "2024-1690",
+      "related_robot_id": "2024-1690",
+      "body": "## 1690, 2024 Doppler: compact primary scorer, substantial control development\n\nPrimary facts: the reveal gives an approximately 11-inch highest stowed point. Official results identify Orbit as a 2024 world champion. The mechanism is chassis-yaw aimed; its elevation/pivot motion is not a turret. In the CAD release, a team member warns that low packaging did not make every individual mechanism superior and that substantial work was needed. The team's controls explanation describes physically limited motion commands, skid/collision handling, driver assistance and automated shot readiness. Treat this as a team account rather than an independent performance decomposition.\n\n1833 transfer analysis: low CG can increase usable acceleration and reduce settling, but free speed or stowed height alone cannot predict cycles. Compare time to accelerate, brake, reacquire heading, capture a piece and release a valid shot under contact. The cost of chassis aiming must be included in a non-turret architecture's state model. It may be small when acquisition exits with a useful heading and the driver can approach efficiently; it may be large when position and heading are constrained together. Geometry and software must be co-designed so that the driver requests remain physically feasible.\n\nThis example validates ambition with a compact architecture. It does not justify eliminating a necessary game function, assuming development is easy, or concluding that the lowest robot always wins. A low package that creates rare disabling piece poses may lose more match contribution than it gains in an ideal cycle. Preserve the existing note-deflector study as a reliability problem alongside the positive architecture example. The future design should carry an explicit optimization budget: time for loaded tuning, autonomous coordination, repeated defended acquisition, operator feedback and service drills. Hardware simplicity buys development capacity only if the saved effort is actually invested in those areas.\n\nSources: https://www.chiefdelphi.com/t/orbit-1690-presents-2024-robot-reveal-doppler/455350 (post 8); https://www.chiefdelphi.com/t/frc-orbit-1690-2024-robot-cad-release/464838 (post 7); https://www.chiefdelphi.com/t/orbit-1690-presents-2024-robot-reveal-doppler/455350/142 ; https://frc-events.firstinspires.org/2024/CMPTX/awards ; existing `docs/research_continuation/2024-1690.md`. No new CAD-dimensional certification.\n\n",
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/frc-orbit-1690-2024-robot-cad-release/464838",
+        "https://www.chiefdelphi.com/t/orbit-1690-presents-2024-robot-reveal-doppler/455350/142",
+        "https://frc-events.firstinspires.org/2024/CMPTX/awards"
+      ],
+      "path": "docs/context/1833-reference-2024-1690.md"
     }
   ],
   "images": [

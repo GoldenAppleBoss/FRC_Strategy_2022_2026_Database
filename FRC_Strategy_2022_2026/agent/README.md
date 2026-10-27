@@ -1,3 +1,5 @@
+> Current edition 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
+
 > Current 604 expansion: 128 dossiers = original 125 plus supplemental 2022/2023/2026 604 entries; existing 2024/2025 entries expanded. Original 25/year selections are preserved. Read docs/context/1833-design-workflow.md and data/604_research_audit.jsonl. Visual match audits are no longer required by the user; commentary attribution remains mandatory.
 
 # Agent access and interpretation
@@ -76,3 +78,13 @@ Read `docs/roboreplay/README.md`, `data/roboreplay_review_ledger.jsonl`, `data/v
 ## Required 1833 task sheet
 
 For each new game/manual analysis, material rules revision or new/revised robot design brief, fill a fresh copy of [the one-sheet template](../team1833/1833_Task_List_Template.xlsx). Follow `docs/TASK_LIST_PROTOCOL.md` and `team1833/task_template_schema.json`, with all paths resolved from the corpus root. The template includes task outcome, phase, points/enabling value, priority, difficulty, recommendation, rationale, alliance dependencies, acceptance target, exact rule/source, uncertainty/test and separate human decision. No group tabs; no inherited season-specific decisions. Four previously blocked 604 image originals are now recovered and embedded (2023 robot; 2026 serializer, intake and hopper).
+
+
+## 1833 elite architecture and decision-quality edition
+
+The owner requires an Einstein-level primary contributor, never a support-only design, and no turret. Relatively simple mechanisms should be optimized for elite output. Historical research remains available, including turret robots and complementary match assignments; those are not permission to violate this design brief. Read `docs/1833_DESIGN_DOCTRINE.md`, `docs/DESIGN_REVIEW_PROTOCOL.md`, `docs/1833_OPTIMIZATION_REFERENCES.md` and `docs/evaluations/DUNKTANK_REVIEW_2026-10-26.md`. Use `team1833/design_profile.json`, `team1833/design_review_schema.json`, `agent/design_rubric.json` and `examples/design_review_skeleton.json`. Structural validators audit the one-sheet workbook and review package; they do not establish engineering correctness or improved model performance. All paths in this paragraph are relative to the corpus root.
+
+
+## Solo RP and decision economics correction
+
+Owner priorities now explicitly require independently achievable ranking bonuses, scoring independence and ambitious seeding. Physical iteration is extremely expensive. Read `docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md` from corpus root; inexpensive spatial and analytical decisions may precede hardware validation, and tests must justify their decision value and cost. The actual four-lane switch occurred before two-lane CAD was complete.

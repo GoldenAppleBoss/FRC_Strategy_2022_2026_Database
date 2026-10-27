@@ -12,3 +12,8 @@ For the agent: reproduce the task-to-requirement-to-concept chain, preserve alte
 ## Required 1833 task sheet
 
 For each new game/manual analysis, material rules revision or new/revised robot design brief, fill a fresh copy of [the one-sheet template](../../team1833/1833_Task_List_Template.xlsx). Follow `docs/TASK_LIST_PROTOCOL.md` and `team1833/task_template_schema.json`, with all paths resolved from the corpus root. The template includes task outcome, phase, points/enabling value, priority, difficulty, recommendation, rationale, alliance dependencies, acceptance target, exact rule/source, uncertainty/test and separate human decision. No group tabs; no inherited season-specific decisions. Four previously blocked 604 image originals are now recovered and embedded (2023 robot; 2026 serializer, intake and hopper).
+
+
+## 1833 elite architecture and decision-quality edition
+
+The owner requires an Einstein-level primary contributor, never a support-only design, and no turret. Relatively simple mechanisms should be optimized for elite output. Historical research remains available, including turret robots and complementary match assignments; those are not permission to violate this design brief. Read `docs/1833_DESIGN_DOCTRINE.md`, `docs/DESIGN_REVIEW_PROTOCOL.md`, `docs/1833_OPTIMIZATION_REFERENCES.md` and `docs/evaluations/DUNKTANK_REVIEW_2026-10-26.md`. Use `team1833/design_profile.json`, `team1833/design_review_schema.json`, `agent/design_rubric.json` and `examples/design_review_skeleton.json`. Structural validators audit the one-sheet workbook and review package; they do not establish engineering correctness or improved model performance. All paths in this paragraph are relative to the corpus root.

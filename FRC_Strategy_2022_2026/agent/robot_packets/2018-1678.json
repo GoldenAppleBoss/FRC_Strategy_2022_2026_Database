@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0",
+  "id": "2018-1678",
+  "year": 2018,
+  "team": 1678,
+  "corpus_status": "provisional_research",
+  "required_reading": [
+    "docs/game_2018.md",
+    "docs/AGENT_GUIDE.md",
+    "docs/TECHNICAL_EVIDENCE_GUIDE.md",
+    "docs/1833_DESIGN_DOCTRINE.md",
+    "docs/DESIGN_REVIEW_PROTOCOL.md",
+    "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md"
+  ],
+  "path_base": "corpus_root",
+  "dossier": {
+    "year": 2018,
+    "team": 1678,
+    "team_name": "Citrus Circuits",
+    "robot": "Lemon Zest",
+    "primary": [
+      "https://www.citruscircuits.org/2018-robot",
+      "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149"
+    ],
+    "architecture": "A six-wheel drive with front omnis carries a two-stage cascading elevator, rotating wrist and cube intake for front/back scoring. A detachable hook, ramp and cable winch create a buddy climb. The published CAD discussion explicitly separates an earlier horizontal roller intake from a later 1323-derived side-to-side design omitted from the public assembly.",
+    "analysis": "This is a reference for front/back workspace and for distinguishing published CAD from the installed mechanism. Do not infer missing intake dimensions from its CAD absence. The historical pneumatic jaws, hook and ramp require non-pneumatic adaptation for 1833; front/back motion is still a permitted alternative to a yaw turret.",
+    "id": "2018-1678",
+    "limits": [
+      "Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.",
+      "Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.",
+      "Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.",
+      "No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit."
+    ],
+    "epa_rank": null,
+    "epa": null,
+    "epa_pre_champs": null,
+    "epa_breakdown": {},
+    "game": "FIRST POWER UP",
+    "subsystems": {
+      "drivetrain": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "intake": "In release replies 8 and 12, the team says it switched from its own horizontal roller intake to a modified design based on actual 1323 CAD. It intentionally omitted the later assembly from its public release and added the earlier assembly instead.",
+      "transfer": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent.",
+      "scoring": "The team’s robot page describes a two-stage cascading elevator and a rotating wrist that permit front and rear cube scoring. A camera above the intake improves visibility, and a possession sensor plus lift-related sensors supply feedback. Wiring and air lines run through protected conduit.",
+      "endgame": "Release reply 12 describes a detachable hook, ramp and cable winch developed together. The team used a rough frame/elevator mockup to locate pulleys, then a ribbed 0.025-inch 2024-aluminum ramp. It later pocketed and formed flanges around cutouts. The author says the stamped dimples are absent from CAD/renderings.",
+      "controls": "Partial / unresolved in selected technical notes. Read the architecture and full publication; absence of a dedicated note is not evidence this subsystem was absent."
+    },
+    "coverage": {
+      "drivetrain": "partial / unresolved selected-source detail",
+      "intake": "documented selected primary technical study; details/version limits apply",
+      "transfer": "partial / unresolved selected-source detail",
+      "scoring": "documented selected primary technical study; details/version limits apply",
+      "endgame": "documented selected primary technical study; details/version limits apply",
+      "controls": "partial / unresolved selected-source detail"
+    },
+    "versions": [
+      "Lemon Zest earlier/later intake distinction",
+      "Lemon Zest published robot summary",
+      "Lemon Zest published CAD discussion"
+    ],
+    "version_audit": "Publication/version labels preserved. Some documented transitions exist; exact per-event installation of all intermediate revisions is not certified.",
+    "strict_acceptance": "Provisional curated historical study; every mechanism/version acceptance gate remains open.",
+    "source_ids": [
+      "history-source-568bbbee81e20565",
+      "history-source-e3b4b654b4186eb2"
+    ],
+    "tags": [
+      "historical 2018",
+      "curated primary technical study",
+      "intake",
+      "scoring",
+      "endgame"
+    ],
+    "binder_audit": {
+      "robot_id": "2018-1678",
+      "year": 2018,
+      "team": 1678,
+      "epa_rank": null,
+      "status": "accessible_technical_publication_reviewed",
+      "search": {
+        "query": "1678 2018 primary technical binder CAD code release",
+        "review_date": "2026-10-27"
+      },
+      "additional_searches": [],
+      "reviewed_source_ids": [
+        "history-source-568bbbee81e20565",
+        "history-source-e3b4b654b4186eb2"
+      ],
+      "technical_note_ids": [
+        "history-2018-1678-note-1",
+        "history-2018-1678-note-2",
+        "history-2018-1678-note-3"
+      ],
+      "candidate_attempts": [],
+      "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+      "exhaustive_binder_discovery": false,
+      "every_competition_version_certified": false
+    },
+    "technical_note_ids": [
+      "history-2018-1678-note-1",
+      "history-2018-1678-note-2",
+      "history-2018-1678-note-3"
+    ],
+    "images": [
+      {
+        "id": "history-2018-1678-source",
+        "robot_id": "2018-1678",
+        "kind": "team_release_original",
+        "path": "images/history_2018-1678_source.png",
+        "source_url": "https://www.citruscircuits.org/2018-robot",
+        "image_url": "https://static.wixstatic.com/media/146bfa_3be296faa45f4e47abf58af79d286f6c~mv2.png",
+        "caption": "2018-1678 · Lemon Zest field photograph: elevator, intake and scale context. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+        "publisher_label": "Lemon Zest field photograph: elevator, intake and scale context",
+        "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+        "review_status": "Original image visually inspected 2026-10-27",
+        "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+        "whole_robot_photo": true,
+        "rights": "Credited technical reference; copyright remains with original publisher.",
+        "sha256": "bede7bbb92e24c236d93f316c3a943565e654f487654011b9f5996884a955f75",
+        "downloaded_on": "2026-10-27"
+      }
+    ],
+    "source_post_count": 0,
+    "cad_code_links": [],
+    "selection_scope": "curated_historical_primary_source_cohort_not_EPA_ranked",
+    "deep_context": "# 2018-1678 — Citrus Circuits: Lemon Zest\n\nA six-wheel drive with front omnis carries a two-stage cascading elevator, rotating wrist and cube intake for front/back scoring. A detachable hook, ramp and cable winch create a buddy climb. The published CAD discussion explicitly separates an earlier horizontal roller intake from a later 1323-derived side-to-side design omitted from the public assembly.\n\n## Strategic interpretation\n\nThis is a reference for front/back workspace and for distinguishing published CAD from the installed mechanism. Do not infer missing intake dimensions from its CAD absence. The historical pneumatic jaws, hook and ramp require non-pneumatic adaptation for 1833; front/back motion is still a permitted alternative to a yaw turret.\n\n## Earlier horizontal roller versus shared side-to-side intake\n\nVersion: Lemon Zest earlier/later intake distinction. Source: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 8: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/8\n- Post 12: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12\n\n### Published construction or code\n\nIn release replies 8 and 12, the team says it switched from its own horizontal roller intake to a modified design based on actual 1323 CAD. It intentionally omitted the later assembly from its public release and added the earlier assembly instead.\n\n### Team rationale or evidence boundary\n\nThe author explains the omission as respect for the originating team’s sharing policy. The reviewed replies do not establish a measured performance gain from the swap.\n\n### Engineering interpretation\n\nA CAD download can be authentic yet incomplete, and an included component can be the old version. Retrieval must preserve this distinction before recommending geometry. The intake’s provenance is useful context, but is not permission to reconstruct private details or label an earlier roller as the championship intake. For transfer, identify which visible/published contact arrangement is actually supported, and explicitly leave unavailable dimensions unknown.\n\n### Proposed validation — not performed\n\nVerify the selected assembly against dated source imagery and source text before using any dimensions. Limit a new recommendation to the supported capture function until the intended version’s geometry is available.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Lemon Zest field photograph: elevator, intake and scale context](../../images/history_2018-1678_source.png)\n\n## Pass-through wrist and elevator workspace\n\nVersion: Lemon Zest published robot summary. Source: https://www.citruscircuits.org/2018-robot. Physical PDF pages: not applicable; see source locators.\n\n### Published construction or code\n\nThe team’s robot page describes a two-stage cascading elevator and a rotating wrist that permit front and rear cube scoring. A camera above the intake improves visibility, and a possession sensor plus lift-related sensors supply feedback. Wiring and air lines run through protected conduit.\n\n### Team rationale or evidence boundary\n\nReduce driver effort during acquisition and scoring and reach goals from either side of the chassis.\n\n### Engineering interpretation\n\nThe wrist/lift combination should be evaluated as a continuous transition path. A rear-scoring pose only helps if the piece can pass the uprights, wires and deployed intake without collision and if it remains retained during reversal. The rear view may also be obscured; the camera is part of the operating system. For 1833 this fixed-plane motion is distinct from a prohibited yaw turret, but its complexity must still repay the removed drive turn.\n\n### Proposed validation — not performed\n\nCheck swept piece volume, cable bend radius and the loaded CG along the path. Compare total scoring time including heading, lift travel and escape, rather than wrist speed alone.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Lemon Zest field photograph: elevator, intake and scale context](../../images/history_2018-1678_source.png)\n\n## Sheet-metal ramp and detachable-hook buddy climb\n\nVersion: Lemon Zest published CAD discussion. Source: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 12: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12\n\n### Published construction or code\n\nRelease reply 12 describes a detachable hook, ramp and cable winch developed together. The team used a rough frame/elevator mockup to locate pulleys, then a ribbed 0.025-inch 2024-aluminum ramp. It later pocketed and formed flanges around cutouts. The author says the stamped dimples are absent from CAD/renderings.\n\n### Team rationale or evidence boundary\n\nReduce ramp mass while preserving strength and establish workable cable/pulley geometry before final construction.\n\n### Engineering interpretation\n\nThin sheet can gain bending stiffness from section shape, ribs and formed edges instead of thickness alone. The exact alloy, load path and local buckling still matter; the cited thickness is a historical parameter, not a recommendation. A flat CAD pocket is not equivalent to the formed part. The winch path, partner approach and ramp tip support determine forces through deployment and lift.\n\n### Proposed validation — not performed\n\nModel the formed cross section and reaction points, including a partner entering off-center. Use a targeted load/deflection check after the envelope and force diagram, and adapt pneumatic deployments explicitly if borrowing the concept.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Lemon Zest field photograph: elevator, intake and scale context](../../images/history_2018-1678_source.png)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n"
+  },
+  "technical_notes": [
+    {
+      "subsystem": "intake",
+      "title": "Earlier horizontal roller versus shared side-to-side intake",
+      "version_label": "Lemon Zest earlier/later intake distinction",
+      "pdf_pages": [],
+      "construction": "In release replies 8 and 12, the team says it switched from its own horizontal roller intake to a modified design based on actual 1323 CAD. It intentionally omitted the later assembly from its public release and added the earlier assembly instead.",
+      "team_stated_reason": "The author explains the omission as respect for the originating team’s sharing policy. The reviewed replies do not establish a measured performance gain from the swap.",
+      "engineering_analysis": "A CAD download can be authentic yet incomplete, and an included component can be the old version. Retrieval must preserve this distinction before recommending geometry. The intake’s provenance is useful context, but is not permission to reconstruct private details or label an earlier roller as the championship intake. For transfer, identify which visible/published contact arrangement is actually supported, and explicitly leave unavailable dimensions unknown.",
+      "recommended_validation": "Verify the selected assembly against dated source imagery and source text before using any dimensions. Limit a new recommendation to the supported capture function until the intended version’s geometry is available.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149",
+      "id": "history-2018-1678-note-1",
+      "robot_id": "2018-1678",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1678",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/8",
+        "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1678-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 8,
+          "url": "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/8"
+        },
+        {
+          "post_number": 12,
+          "url": "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12"
+        }
+      ]
+    },
+    {
+      "subsystem": "scoring",
+      "title": "Pass-through wrist and elevator workspace",
+      "version_label": "Lemon Zest published robot summary",
+      "pdf_pages": [],
+      "construction": "The team’s robot page describes a two-stage cascading elevator and a rotating wrist that permit front and rear cube scoring. A camera above the intake improves visibility, and a possession sensor plus lift-related sensors supply feedback. Wiring and air lines run through protected conduit.",
+      "team_stated_reason": "Reduce driver effort during acquisition and scoring and reach goals from either side of the chassis.",
+      "engineering_analysis": "The wrist/lift combination should be evaluated as a continuous transition path. A rear-scoring pose only helps if the piece can pass the uprights, wires and deployed intake without collision and if it remains retained during reversal. The rear view may also be obscured; the camera is part of the operating system. For 1833 this fixed-plane motion is distinct from a prohibited yaw turret, but its complexity must still repay the removed drive turn.",
+      "recommended_validation": "Check swept piece volume, cable bend radius and the loaded CG along the path. Compare total scoring time including heading, lift travel and escape, rather than wrist speed alone.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.citruscircuits.org/2018-robot",
+      "id": "history-2018-1678-note-2",
+      "robot_id": "2018-1678",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1678",
+      "page_references": [],
+      "additional_sources": [],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1678-source"
+      ]
+    },
+    {
+      "subsystem": "endgame",
+      "title": "Sheet-metal ramp and detachable-hook buddy climb",
+      "version_label": "Lemon Zest published CAD discussion",
+      "pdf_pages": [],
+      "construction": "Release reply 12 describes a detachable hook, ramp and cable winch developed together. The team used a rough frame/elevator mockup to locate pulleys, then a ribbed 0.025-inch 2024-aluminum ramp. It later pocketed and formed flanges around cutouts. The author says the stamped dimples are absent from CAD/renderings.",
+      "team_stated_reason": "Reduce ramp mass while preserving strength and establish workable cable/pulley geometry before final construction.",
+      "engineering_analysis": "Thin sheet can gain bending stiffness from section shape, ribs and formed edges instead of thickness alone. The exact alloy, load path and local buckling still matter; the cited thickness is a historical parameter, not a recommendation. A flat CAD pocket is not equivalent to the formed part. The winch path, partner approach and ramp tip support determine forces through deployment and lift.",
+      "recommended_validation": "Model the formed cross section and reaction points, including a partner entering off-center. Use a targeted load/deflection check after the envelope and force diagram, and adapt pneumatic deployments explicitly if borrowing the concept.",
+      "limitations": "Team publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.",
+      "source_url": "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149",
+      "id": "history-2018-1678-note-3",
+      "robot_id": "2018-1678",
+      "year": 2018,
+      "binder_id": "history-publication-2018-1678",
+      "page_references": [],
+      "additional_sources": [
+        "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12"
+      ],
+      "evidence_type": "team_publication_paraphrase",
+      "performance_status": "source_reported_not_independently_tested",
+      "review_scope": "Selected primary technical source; complete note includes inference and limitations. No narrated-video watching or every-version claim.",
+      "image_ids": [
+        "history-2018-1678-source"
+      ],
+      "source_locators": [
+        {
+          "post_number": 12,
+          "url": "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12"
+        }
+      ]
+    }
+  ],
+  "published_parameters": [],
+  "technical_publications": [
+    {
+      "id": "history-publication-2018-1678",
+      "robot_id": "2018-1678",
+      "title": "2018-1678 Lemon Zest primary technical release/discussion",
+      "url": "https://www.citruscircuits.org/2018-robot",
+      "format": "team_discussion",
+      "status": "accessible_technical_publication_reviewed",
+      "review_scope": "Selected technical sections and source figures reviewed; formal PDF pages or post/method locators retained. Code and discussion scopes are separate. No complete event-version or CAD dimensional audit.",
+      "publication_kind": "first_party_technical_discussion"
+    }
+  ],
+  "publication_version_groups": [
+    {
+      "id": "2018-1678:publication-version:1",
+      "label": "Lemon Zest earlier/later intake distinction",
+      "robot_id": "2018-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-1678-note-1"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2018-1678:publication-version:2",
+      "label": "Lemon Zest published robot summary",
+      "robot_id": "2018-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-1678-note-2"
+      ],
+      "source_urls": [
+        "https://www.citruscircuits.org/2018-robot"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    },
+    {
+      "id": "2018-1678:publication-version:3",
+      "label": "Lemon Zest published CAD discussion",
+      "robot_id": "2018-1678",
+      "label_type": "existing_technical_note_publication_label",
+      "event_start": null,
+      "event_end": null,
+      "date_start": null,
+      "date_end": null,
+      "technical_note_ids": [
+        "history-2018-1678-note-3"
+      ],
+      "source_urls": [
+        "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149"
+      ],
+      "boundary": "Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event."
+    }
+  ],
+  "context_documents": [
+    {
+      "id": "history18-19-2018-1678",
+      "title": "2018-1678 Citrus Circuits — technical study",
+      "year": 2018,
+      "robot_id": "2018-1678",
+      "kind": "historical_technical_study",
+      "body": "# 2018-1678 — Citrus Circuits: Lemon Zest\n\nA six-wheel drive with front omnis carries a two-stage cascading elevator, rotating wrist and cube intake for front/back scoring. A detachable hook, ramp and cable winch create a buddy climb. The published CAD discussion explicitly separates an earlier horizontal roller intake from a later 1323-derived side-to-side design omitted from the public assembly.\n\n## Strategic interpretation\n\nThis is a reference for front/back workspace and for distinguishing published CAD from the installed mechanism. Do not infer missing intake dimensions from its CAD absence. The historical pneumatic jaws, hook and ramp require non-pneumatic adaptation for 1833; front/back motion is still a permitted alternative to a yaw turret.\n\n## Earlier horizontal roller versus shared side-to-side intake\n\nVersion: Lemon Zest earlier/later intake distinction. Source: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 8: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/8\n- Post 12: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12\n\n### Published construction or code\n\nIn release replies 8 and 12, the team says it switched from its own horizontal roller intake to a modified design based on actual 1323 CAD. It intentionally omitted the later assembly from its public release and added the earlier assembly instead.\n\n### Team rationale or evidence boundary\n\nThe author explains the omission as respect for the originating team’s sharing policy. The reviewed replies do not establish a measured performance gain from the swap.\n\n### Engineering interpretation\n\nA CAD download can be authentic yet incomplete, and an included component can be the old version. Retrieval must preserve this distinction before recommending geometry. The intake’s provenance is useful context, but is not permission to reconstruct private details or label an earlier roller as the championship intake. For transfer, identify which visible/published contact arrangement is actually supported, and explicitly leave unavailable dimensions unknown.\n\n### Proposed validation — not performed\n\nVerify the selected assembly against dated source imagery and source text before using any dimensions. Limit a new recommendation to the supported capture function until the intended version’s geometry is available.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Lemon Zest field photograph: elevator, intake and scale context](../../images/history_2018-1678_source.png)\n\n## Pass-through wrist and elevator workspace\n\nVersion: Lemon Zest published robot summary. Source: https://www.citruscircuits.org/2018-robot. Physical PDF pages: not applicable; see source locators.\n\n### Published construction or code\n\nThe team’s robot page describes a two-stage cascading elevator and a rotating wrist that permit front and rear cube scoring. A camera above the intake improves visibility, and a possession sensor plus lift-related sensors supply feedback. Wiring and air lines run through protected conduit.\n\n### Team rationale or evidence boundary\n\nReduce driver effort during acquisition and scoring and reach goals from either side of the chassis.\n\n### Engineering interpretation\n\nThe wrist/lift combination should be evaluated as a continuous transition path. A rear-scoring pose only helps if the piece can pass the uprights, wires and deployed intake without collision and if it remains retained during reversal. The rear view may also be obscured; the camera is part of the operating system. For 1833 this fixed-plane motion is distinct from a prohibited yaw turret, but its complexity must still repay the removed drive turn.\n\n### Proposed validation — not performed\n\nCheck swept piece volume, cable bend radius and the loaded CG along the path. Compare total scoring time including heading, lift travel and escape, rather than wrist speed alone.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Lemon Zest field photograph: elevator, intake and scale context](../../images/history_2018-1678_source.png)\n\n## Sheet-metal ramp and detachable-hook buddy climb\n\nVersion: Lemon Zest published CAD discussion. Source: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149. Physical PDF pages: not applicable; see source locators.\n\nSource locators:\n\n- Post 12: https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149/12\n\n### Published construction or code\n\nRelease reply 12 describes a detachable hook, ramp and cable winch developed together. The team used a rough frame/elevator mockup to locate pulleys, then a ribbed 0.025-inch 2024-aluminum ramp. It later pocketed and formed flanges around cutouts. The author says the stamped dimples are absent from CAD/renderings.\n\n### Team rationale or evidence boundary\n\nReduce ramp mass while preserving strength and establish workable cable/pulley geometry before final construction.\n\n### Engineering interpretation\n\nThin sheet can gain bending stiffness from section shape, ribs and formed edges instead of thickness alone. The exact alloy, load path and local buckling still matter; the cited thickness is a historical parameter, not a recommendation. A flat CAD pocket is not equivalent to the formed part. The winch path, partner approach and ramp tip support determine forces through deployment and lift.\n\n### Proposed validation — not performed\n\nModel the formed cross section and reaction points, including a partner entering off-center. Use a targeted load/deflection check after the envelope and force diagram, and adapt pneumatic deployments explicitly if borrowing the concept.\n\n### Limits\n\nTeam publication and selected figures, not an independent performance test or exhaustive competition chronology. Source dimensions and reported speeds require validation for a new design.\n\n![Lemon Zest field photograph: elevator, intake and scale context](../../images/history_2018-1678_source.png)\n\n## Remaining evidence gaps\n\n- Curated historical mechanism cohort, not a top-25 EPA selection; no EPA/rank fabricated.\n- Selected primary publications and figures reviewed; no narrated-video review or exact CAD verification is claimed.\n- Historical pneumatic/turret hardware is retained as fact but disallowed in new 1833 recommendations. Adaptation requires new interface/load/holding/recovery analysis.\n- No exhaustive every-version certification, new PCH performance benchmark or match-by-match Einstein tactical audit.\n",
+      "source_urls": [
+        "https://www.citruscircuits.org/2018-robot",
+        "https://www.chiefdelphi.com/t/team-1678-citrus-circuits-2018-cad-release/166149"
+      ],
+      "path": "docs/historical/2018-1678.md"
+    }
+  ],
+  "images": [
+    {
+      "id": "history-2018-1678-source",
+      "robot_id": "2018-1678",
+      "kind": "team_release_original",
+      "path": "images/history_2018-1678_source.png",
+      "source_url": "https://www.citruscircuits.org/2018-robot",
+      "image_url": "https://static.wixstatic.com/media/146bfa_3be296faa45f4e47abf58af79d286f6c~mv2.png",
+      "caption": "2018-1678 · Lemon Zest field photograph: elevator, intake and scale context. Original downloaded and inspected; no exact dimensions, event date or complete internal geometry inferred.",
+      "publisher_label": "Lemon Zest field photograph: elevator, intake and scale context",
+      "label_basis": "Editorial retrieval label from inspected source-associated photograph/render",
+      "review_status": "Original image visually inspected 2026-10-27",
+      "visual_review": "Visible robot identity/packaging inspected; no event-version or dimensional certification",
+      "whole_robot_photo": true,
+      "rights": "Credited technical reference; copyright remains with original publisher.",
+      "sha256": "bede7bbb92e24c236d93f316c3a943565e654f487654011b9f5996884a955f75",
+      "downloaded_on": "2026-10-27",
+      "media_type": "image/png",
+      "width_px": 1100,
+      "height_px": 734,
+      "bytes": 1382974,
+      "path_base": "corpus_root",
+      "reader_asset_id": "history-2018-1678-source",
+      "reader_url": "index.html#image=history-2018-1678-source",
+      "interpretation_boundary": "Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance."
+    }
+  ],
+  "binder_audit": {
+    "robot_id": "2018-1678",
+    "year": 2018,
+    "team": 1678,
+    "epa_rank": null,
+    "status": "accessible_technical_publication_reviewed",
+    "search": {
+      "query": "1678 2018 primary technical binder CAD code release",
+      "review_date": "2026-10-27"
+    },
+    "additional_searches": [],
+    "reviewed_source_ids": [
+      "history-source-568bbbee81e20565",
+      "history-source-e3b4b654b4186eb2"
+    ],
+    "technical_note_ids": [
+      "history-2018-1678-note-1",
+      "history-2018-1678-note-2",
+      "history-2018-1678-note-3"
+    ],
+    "candidate_attempts": [],
+    "interpretation": "Curated historical technical study; EPA not retrieved; selected pages/posts/code reviewed. No exhaustive binder-discovery or competition-version certification.",
+    "exhaustive_binder_discovery": false,
+    "every_competition_version_certified": false
+  },
+  "claim_ids": [
+    "history-2018-1678-note-1:construction",
+    "history-2018-1678-note-1:team_stated_reason",
+    "history-2018-1678-note-1:engineering_analysis",
+    "history-2018-1678-note-1:recommended_validation",
+    "history-2018-1678-note-1:limitations",
+    "history-2018-1678-note-2:construction",
+    "history-2018-1678-note-2:team_stated_reason",
+    "history-2018-1678-note-2:engineering_analysis",
+    "history-2018-1678-note-2:recommended_validation",
+    "history-2018-1678-note-2:limitations",
+    "history-2018-1678-note-3:construction",
+    "history-2018-1678-note-3:team_stated_reason",
+    "history-2018-1678-note-3:engineering_analysis",
+    "history-2018-1678-note-3:recommended_validation",
+    "history-2018-1678-note-3:limitations"
+  ],
+  "retrieval_contract": {
+    "read_game_first": true,
+    "read_entire_note_before_using_one_claim": true,
+    "unknown_is_not_absent": true,
+    "source_reports_are_not_independent_tests": true,
+    "whole_robot_context_required": true,
+    "cross_team_compatibility_verified": false
+  }
+}
