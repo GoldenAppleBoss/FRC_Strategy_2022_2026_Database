@@ -1,3 +1,5 @@
+> Owner correction 2026-10-27: explain the actual robot in plain language, with concrete mechanism construction, historical feature transfer, physical packaging and decision-relevant engineering support. Read `docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md` before drafting or grading a recommendation. Jargon, citations and equations do not substitute for these explanations.
+
 > Owner constraints: no pneumatics; no turrets; no support-only architecture. Historical scope and future 2018/2019 roadmap: `docs/1833_ACTUATION_AND_HISTORY_SCOPE.md` from corpus root.
 
 > Owner correction: prioritize independently achievable RP and essential scoring independence. Physical iteration is extremely expensive; use proportionate analytical checks and targeted tests. Read `docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md` from corpus root.

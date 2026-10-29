@@ -1,7 +1,7 @@
 {
   "counts": {
     "robot_packets": 141,
-    "retrieval_units": 5871,
+    "retrieval_units": 5878,
     "claims": 1651,
     "images": 569,
     "technical_notes": 303,
@@ -9,5 +9,5 @@
     "robot_years_with_technical_reviews": 141
   },
   "embedded_image_bytes": 58547495,
-  "html_bytes": 86056898
+  "html_bytes": 86070868
 }

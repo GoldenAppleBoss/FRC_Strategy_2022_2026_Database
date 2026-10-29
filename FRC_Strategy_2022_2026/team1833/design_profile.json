@@ -27,7 +27,8 @@
     "docs/1833_OPTIMIZATION_REFERENCES.md",
     "docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md",
     "docs/1833_ACTUATION_AND_HISTORY_SCOPE.md",
-    "docs/HISTORICAL_2018_2019_TRANSFER.md"
+    "docs/HISTORICAL_2018_2019_TRANSFER.md",
+    "docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md"
   ],
   "owner_reported_history": [
     {
@@ -117,5 +118,13 @@
     ],
     "curated_robot_years_added": 13,
     "coverage_audit": "data/historical_2018_2019_audit.json"
+  },
+  "recommendation_explanation": {
+    "authority": "Explicit owner correction 2026-10-27",
+    "protocol": "docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md",
+    "plain_language": true,
+    "full_mechanism_and_packaging_explanation": true,
+    "no_concision_requirement": true,
+    "calculations_must_support_choices": true
   }
 }

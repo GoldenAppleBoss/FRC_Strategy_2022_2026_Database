@@ -75,7 +75,7 @@ for r in robots:
   'boundary':'Grouping preserves published labels. It is not a new certification of chronology, every revision, or installation at an event.'} for i,label in enumerate(labels)]
  versionrecords+=versions
  packet={'schema_version':'1.0','id':rid,'year':r['year'],'team':r['team'],'corpus_status':'provisional_research',
-  'required_reading':[f'docs/game_{r["year"]}.md','docs/AGENT_GUIDE.md','docs/TECHNICAL_EVIDENCE_GUIDE.md','docs/1833_DESIGN_DOCTRINE.md','docs/DESIGN_REVIEW_PROTOCOL.md','docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md'],
+  'required_reading':[f'docs/game_{r["year"]}.md','docs/AGENT_GUIDE.md','docs/TECHNICAL_EVIDENCE_GUIDE.md','docs/1833_DESIGN_DOCTRINE.md','docs/DESIGN_REVIEW_PROTOCOL.md','docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md','docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md'],
   'path_base':'corpus_root','dossier':r,'technical_notes':ns,'published_parameters':ps,'technical_publications':bs,
   'publication_version_groups':versions,'context_documents':cs,'images':ims,
   'binder_audit':next(a for a in audits if a['robot_id']==rid),
@@ -168,6 +168,9 @@ manifest['files'].update(historical_transfer='docs/HISTORICAL_2018_2019_TRANSFER
 manifest['semantics']['scope']='141 provisional dossiers: original125, three604 supplements, thirteen curated2018/2019 primary-source studies (seven2018, six2019). Historical EPA/ranks unretrieved/null, no new top25 selection. Selected technical notes, version distinctions, parameters and credited figures; zero exhaustive version certifications. Earlier video review and Einstein scopes remain unchanged:35 available-caption studies, nine pending content reviews, no visual match audit.'
 manifest['historical_expansion']=json.loads((ROOT/'data/historical_2018_2019_audit.json').read_text())
 manifest['required_workflow'].insert(3,'For historical transfer, read HISTORICAL_2018_2019_TRANSFER.md; compare whole mechanisms and preserve current owner constraints, source/version boundaries and null historical rankings.')
+manifest['edition']='2026-10-27-plain-physical-design'
+manifest['files']['plain_physical_design']='docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md'
+manifest['required_workflow'].insert(1,'Read docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md. Explain actual construction, borrowed features, packaging and full piece cycles in plain language; calculations must constrain choices. Apply the revised rubric anchors.')
 writejson('agent/manifest.json',manifest)
 
 # HTML changes: all galleries use embedded images; Markdown supports actual images and relative links.

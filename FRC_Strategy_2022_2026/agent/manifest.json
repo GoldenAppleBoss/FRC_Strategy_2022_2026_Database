@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "edition": "2026-10-27-2018-2019-historical-context",
+  "edition": "2026-10-27-plain-physical-design",
   "path_base": "corpus_root",
   "entry_point": "AGENTS.md",
   "reader": "index.html",
   "reader_images": "All source image bytes embedded in index.html; no image network or sibling-folder requests needed.",
   "counts": {
     "robot_packets": 141,
-    "retrieval_units": 5871,
+    "retrieval_units": 5878,
     "claims": 1651,
     "images": 569,
     "technical_notes": 303,
@@ -55,7 +55,8 @@
     "actuation_and_history_scope": "docs/1833_ACTUATION_AND_HISTORY_SCOPE.md",
     "historical_transfer": "docs/HISTORICAL_2018_2019_TRANSFER.md",
     "historical_coverage": "data/historical_2018_2019_audit.json",
-    "blind_test_prompt": "team1833/BLIND_TEST_PROMPT.md"
+    "blind_test_prompt": "team1833/BLIND_TEST_PROMPT.md",
+    "plain_physical_design": "docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md"
   },
   "semantics": {
     "robot_id": "YEAR-TEAM; team number alone is ambiguous",
@@ -70,6 +71,7 @@
   },
   "required_workflow": [
     "Read AGENTS.md and the full game chapter for the target year.",
+    "Read docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md. Explain actual construction, borrowed features, packaging and full piece cycles in plain language; calculations must constrain choices. Apply the revised rubric anchors.",
     "Apply the 1833 owner mandate: elite primary contributor, no support-only architecture, no turret; establish event stage, partners and actual resources.",
     "No pneumatic actuation for 1833. Respect historical scope; 2018/2019 now have thirteen curated primary-source studies; read the scope audit and transfer guide, not an assumed top25 cohort.",
     "For historical transfer, read HISTORICAL_2018_2019_TRANSFER.md; compare whole mechanisms and preserve current owner constraints, source/version boundaries and null historical rankings.",

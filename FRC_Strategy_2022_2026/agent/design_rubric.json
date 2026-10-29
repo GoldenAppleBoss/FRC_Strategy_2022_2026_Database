@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "title": "1833 architecture output review",
   "total_possible": 100,
   "scoring": {
@@ -109,7 +109,8 @@
           "id": "C03.1",
           "criterion": "Identify bottleneck",
           "max_points": 2,
-          "dunktank_historical_score": 2
+          "dunktank_historical_score": 2,
+          "full_credit_anchor": "Full credit requires explaining which bottleneck determines the strategic investment, including the strongest competing scoring route; not just naming bottlenecks within a selected mechanism."
         },
         {
           "id": "C03.2",
@@ -133,13 +134,15 @@
           "id": "C03.5",
           "criterion": "Timed match and resource model",
           "max_points": 2,
-          "dunktank_historical_score": 0
+          "dunktank_historical_score": 0,
+          "full_credit_anchor": "Full credit requires explicit input provenance, complete-cycle timing and decision-changing sensitivity; correct arithmetic on chosen constants alone is partial."
         },
         {
           "id": "C03.6",
           "criterion": "Marginal alliance counterfactual",
           "max_points": 2,
-          "dunktank_historical_score": 0
+          "dunktank_historical_score": 0,
+          "full_credit_anchor": "Compare a materially different strategic investment under shared partners/opponents, or cite an already justified strategic decision when reviewing only a bounded implementation change."
         },
         {
           "id": "C03.7",
@@ -238,7 +241,8 @@
           "id": "C06.2",
           "criterion": "Accurate historical technical details",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Explain the historical construction accurately in plain language, not only mechanism labels."
         },
         {
           "id": "C06.3",
@@ -250,13 +254,15 @@
           "id": "C06.4",
           "criterion": "Useful visual/source evidence",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Identify the feature visible in an actually inspected figure, provide a working locator/image, and explain its relevance; image inspection claims alone are not independently verified."
         },
         {
           "id": "C06.5",
           "criterion": "Explicit transfer adaptations",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Name the exact retained feature, changes and original work, and justify compatibility. A mostly redesigned mechanism gets no elite-performance validation by association."
         }
       ]
     },
@@ -269,7 +275,8 @@
           "id": "C07.1",
           "criterion": "Connected piece flow",
           "max_points": 2,
-          "dunktank_historical_score": 2
+          "dunktank_historical_score": 2,
+          "full_credit_anchor": "A teammate can follow the actual contacts, actuator actions, retained pose and every transition through a complete piece cycle."
         },
         {
           "id": "C07.2",
@@ -281,25 +288,29 @@
           "id": "C07.3",
           "criterion": "Plausible spatial envelope",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Locate mechanisms and attachment points on a bounded chassis layout; explain moving and held-piece envelopes, adjacent equipment, interference and critical unknown clearances. A chassis dimension and component labels alone are partial."
         },
         {
           "id": "C07.4",
           "criterion": "Justified mechanism/material choices",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Describe proposed physical components and support/load paths; show how relevant evidence or calculations constrain the choice. Jargon and isolated formulas alone are partial."
         },
         {
           "id": "C07.5",
           "criterion": "Drive/electrical integration",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Explain placement of drive/electrical hardware, moving cables and load assumptions; distinguish channel/current bookkeeping from supported actuator sizing and sag estimates."
         },
         {
           "id": "C07.6",
           "criterion": "Controls/service/recovery integration",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Explain actual sensing and recovery actions and access for the selected arrangement, not a generic maintenance checklist."
         }
       ]
     },
@@ -318,7 +329,8 @@
           "id": "C08.2",
           "criterion": "Quantitative common-assumption comparison",
           "max_points": 2,
-          "dunktank_historical_score": 0
+          "dunktank_historical_score": 0,
+          "full_credit_anchor": "Use common-assumption results plus ranges or break-even analysis for uncertain inputs that can reverse the selection."
         },
         {
           "id": "C08.3",
@@ -380,13 +392,15 @@
           "id": "C10.3",
           "criterion": "Team tailoring",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "Respect owner constraints, elite independent contribution, costly iteration and the need for understandable physical explanations."
         },
         {
           "id": "C10.4",
           "criterion": "Complete usable handoff",
           "max_points": 2,
-          "dunktank_historical_score": 1
+          "dunktank_historical_score": 1,
+          "full_credit_anchor": "The recommendation itself explains a coherent robot a teammate could sketch, with working visual locators and consequential unknowns; absent sidecars cannot carry its central justification."
         }
       ]
     }
@@ -396,5 +410,12 @@
     "validation": "Full credit rewards proportionate decision-changing evidence and explicit iteration costs; number of prototypes does not earn credit",
     "historical_score": "Original DunkTank score remains 68; newer owner requirements are applied prospectively",
     "historical_scope": "No mechanism inspiration before 2015 or from 2016; selective 2015, deprioritize duplicate 2017, 2018/2019 coverage planned"
+  },
+  "explanation_protocol": "docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md",
+  "review_method": {
+    "anchors": "Use 0/1/2 per check. Presence, vocabulary, citations, equations and field counts alone do not earn full credit. Cite concrete evidence for each deduction and avoid duplicate deductions for the same failure.",
+    "waivers": "Remove explicitly waived deliverable checks from numerator and denominator; retain substantive reasoning checks available in the recommendation. Report raw points and normalized percentage.",
+    "updated_anchors": "Apply prospectively; preserve original historical reviews.",
+    "readiness": "A numeric score does not certify a coherent, feasible or optimal design. Identify unresolved architecture-changing geometry and conditional commitment."
   }
 }

@@ -59,7 +59,7 @@ r=query('search','tower','--kind','tower_sample');check(r['matches']>0,'tower-on
 r=query('search','2022cmptx_sf1m1','--kind','einstein_record');check(r['matches']==1 and r['results'][0]['visual_review'] is False,'exact Einstein key and no-visual-review boundary')
 check(db['robots']==robots and db['technicalNotes']==notes,'reader current data parity')
 check(db['agentManifest']==manifest,'reader machine manifest parity')
-check(len(jl('agent/evaluation_cases.jsonl'))==55,'evaluation cases present')
+check(len(jl('agent/evaluation_cases.jsonl'))==60,'evaluation cases present')
 
 check(len([r for r in robots if r['year']==2018])==7 and len([r for r in robots if r['year']==2019])==6,'curated historical cohort counts')
 check(all(r['epa'] is None and r['epa_rank'] is None for r in robots if r['year'] in [2018,2019]),'no fabricated historical EPA')
