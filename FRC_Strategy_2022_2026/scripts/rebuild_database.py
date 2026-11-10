@@ -4,7 +4,7 @@ root=pathlib.Path(__file__).resolve().parents[1]
 target=pathlib.Path(sys.argv[1]) if len(sys.argv)>1 else root/'frc_strategy.sqlite'
 if target.exists():target.unlink()
 con=sqlite3.connect(target);con.executescript((root/'schema.sql').read_text())
-order=['metadata','seasons','robot_dossiers','sources','robot_sources','subsystems','versions','selection_audit','season_epa','events','matches','team_events','benchmarks','einstein_reviews','context_documents','mechanism_images','source_posts','cad_code_links','video_reviews','binder_sources','binder_audit','technical_mechanisms','technical_parameters','tower_summary_2026']
+order=['metadata','seasons','robot_dossiers','sources','robot_sources','subsystems','versions','selection_audit','season_epa','events','matches','team_events','benchmarks','einstein_reviews','context_documents','mechanism_images','source_posts','cad_code_links','video_reviews','binder_sources','binder_audit','technical_mechanisms','technical_parameters','tower_summary_2026','physical_studies','mechanism_interfaces','physical_figure_links','mechanism_revisions','architecture_cases','dossier_source_reviews','event_benchmark_distributions','design_comparisons','image_visual_audit']
 for table in order:
  with (root/'tables'/(table+'.jsonl')).open() as f:
   for line in f:

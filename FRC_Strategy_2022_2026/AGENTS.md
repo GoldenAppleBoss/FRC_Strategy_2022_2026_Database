@@ -1,6 +1,10 @@
+> Architecture upgrade (2026-11-07): 143 provisional dossiers; five architecture cases and two targeted 2023 supplements. Read `docs/ARCHITECTURE_RESEARCH_PROTOCOL.md`. Research agents own source discovery, full-path reconstruction and engineering inference; owner input is for priorities and consequential corrections. Current counts are in the manifest. Previous dated checkpoints remain history.
+
+> Current evidence upgrade (2026-11-07): 141 provisional dossiers, 348 technical notes, 159 parameters, 575 source-image associations and 21 editorial drawings. Seven physical studies / 24 mechanism assessments / 20 interface ports. Read docs/PHYSICAL_UPGRADE_REPORT.md. Earlier dated counts below are historical checkpoints. Canonical current counts: `agent/manifest.json` and `data/physical_upgrade_metrics.json`. Maintenance is not a game-design task and requires no task workbook.
+
 > Owner correction 2026-10-27: explain the actual robot in plain language, with concrete mechanism construction, historical feature transfer, physical packaging and decision-relevant engineering support. Read `docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md` before drafting or grading a recommendation. Jargon, citations and equations do not substitute for these explanations.
 
-> Current edition 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
+> Historical checkpoint 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
 
 > Owner constraints: no pneumatics; no turrets; no support-only architecture. Historical scope and completed curated 2018/2019 expansion: `docs/1833_ACTUATION_AND_HISTORY_SCOPE.md` from corpus root.
 
@@ -52,7 +56,7 @@ State what remains unknown and propose the smallest test that could change the c
 `scripts/build_agent_and_reader.py` rebuilds the embedded-image reader and agent exports from the included JSONL, Markdown and original images. `scripts/query_agent.py` runs locally with the Python standard library. `scripts/rebuild_database.py` independently rebuilds the original normalized research database from `schema.sql` and `tables/`. The agent search database is a derived lexical index, not an additional scientific source. The current edition adds focused technical studies and selected-passage video enrichment; exact scope is below.
 
 
-## Integrated research pass and video studies
+## Historical integrated research checkpoint and video studies
 
 The prior 64-study checkpoint is now merged with 34 additional studies: all 98 previously uncovered robot-years have focused technical studies integrated into the reader, SQL exports and agent packets. The corpus has 227 technical notes across all 125 robot-years. Keep the distinction: only 27 robot-years have the earlier reviewed technical-publication coverage; the other 98 are focused interview/source-bundle studies, not newly discovered binders, CAD certifications or exhaustive version histories.
 

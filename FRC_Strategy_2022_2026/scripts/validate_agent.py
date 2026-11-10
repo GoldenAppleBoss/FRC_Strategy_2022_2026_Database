@@ -13,12 +13,12 @@ def query(*args):
 
 manifest=json.loads((root/'agent/manifest.json').read_text())
 robots=jl('data/robot_dossiers.jsonl');notes=jl('data/technical_mechanisms.jsonl');parameters=jl('data/technical_parameters.jsonl');units=jl('agent/retrieval_units.jsonl');claims=jl('agent/claims.jsonl');images=jl('agent/image_catalog.jsonl')
-check(len(robots)==141,'141 dossiers')
+check(len(robots)==143,'143 dossiers including two targeted architecture supplements')
 check(len({x['id'] for x in units})==len(units),'unique unit IDs')
 check(len(claims)==len(notes)*5+len(parameters),'all typed claim fields retained')
-check(len(images)==569,'569 image associations')
+check(len(images)==len(jl('data/mechanism_images.jsonl'))==manifest['counts']['images'],'image associations match canonical input and manifest')
 html=(root/'index.html').read_text();assets=json.loads(re.search(r'<script id="image-assets" type="application/json">(.*?)</script>',html,re.S)[1]);db=json.loads(re.search(r'<script id="database" type="application/json">(.*?)</script>',html,re.S)[1])
-check(len(assets)==569,'569 embedded assets')
+check(len(assets)==len(images),'all catalogued assets embedded')
 check('src="${esc(im.path)}"' not in html,'no folder-dependent gallery image rendering')
 for im in images:
  path=root/im['path'];check(path.is_file(),'original image path exists: '+im['id'])

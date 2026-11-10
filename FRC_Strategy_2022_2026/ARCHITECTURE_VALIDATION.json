@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "architecture_cases": 5,
+  "new_targeted_dossiers": 2,
+  "reasoning_evaluation_prompts": 8,
+  "scope": "Export parity, attribution, chronology boundaries, retrieval and preserved revision count; mechanical hypotheses and model performance not validated."
+}

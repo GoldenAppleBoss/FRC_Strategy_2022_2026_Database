@@ -1,0 +1,10 @@
+{
+  "kind": "standalone_reader_research_workspace",
+  "image_delivery": "577 active images preserved from the checkout at original resolution. Other active images are the exact display copies from the final HTML. The 20 visual exclusions remain documented in the audit ledger.",
+  "raw_git_history_included": false,
+  "task_workbook_required": false,
+  "image_count": 625,
+  "reader_sha256": "56310910300f6a03a6929f53349817dc20b00ea86c2e65188b5967d62247644e",
+  "base_git_commit": "7c23d7853bbf2925b280e26890641ae3c701dd6f",
+  "active_image_count": 625
+}

@@ -1,0 +1,19 @@
+.entry-switch{display:flex;gap:4px;padding:4px;background:#edf4f5;border-radius:10px;margin:12px 6px 16px}
+.entry-switch button{flex:1!important;display:block!important;text-align:center!important;padding:9px 4px!important;border-radius:7px!important;font-size:11px!important}
+.entry-switch .active{background:white!important;color:var(--green)!important}
+.entry-cards,.lesson-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:24px 0}
+.entry-cards p,.lesson-grid li{font-size:13px;line-height:1.7;color:var(--muted)}
+.library-nav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.dossier-title{border-bottom:1px solid var(--line);padding-bottom:18px}
+.dossier-title h2{font-size:30px;color:var(--green)}
+.dossier-jumps{display:flex;gap:14px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--line)}
+.dossier-jumps a{font-size:11px;font-weight:700;color:var(--green);text-decoration:none}
+#detail section{scroll-margin-top:22px;padding-top:10px}
+#detail p,#detail li{font-size:13px;line-height:1.8}
+#detail h3{font-size:20px;margin-top:22px}
+#detail h4{font-size:16px}
+.mechanism-chapter{border-bottom:1px solid var(--line);padding:12px 0 22px}
+.row .subtitle{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#detail .gallery img{max-height:360px;object-fit:contain}
+#benchmark-detail{margin-top:20px}
+@media(max-width:900px){.entry-cards,.lesson-grid{grid-template-columns:1fr}.dossier-title h2{font-size:25px}}

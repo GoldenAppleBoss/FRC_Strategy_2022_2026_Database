@@ -1,0 +1,16 @@
+{
+  "robot_dossiers": 143,
+  "technical_notes": 353,
+  "technical_parameters": 159,
+  "parameter_robot_years": 37,
+  "images": 597,
+  "source_images": 576,
+  "editorial_drawings": 21,
+  "dossiers_without_images": 50,
+  "dossiers_with_one_note": 94,
+  "architecture_and_interfaces_notes": 103,
+  "notes_without_image_ids": 127,
+  "physical_studies": 7,
+  "interface_ports": 20,
+  "reviewed_mechanism_assessments": 24
+}

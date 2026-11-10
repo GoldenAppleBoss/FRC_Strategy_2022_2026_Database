@@ -13,6 +13,14 @@ html=(ROOT/'scripts/reader_template_v3.html').read_text().replace('__DATABASE_JS
 db=json.loads((ROOT/'data/reader_payload.json').read_text())
 robots=readj('data/robot_dossiers.jsonl'); notes=readj('data/technical_mechanisms.jsonl');params=readj('data/technical_parameters.jsonl')
 images=readj('data/mechanism_images.jsonl');contexts=readj('data/context_documents.jsonl');binders=readj('data/binder_sources.jsonl');audits=readj('data/binder_audit.jsonl')
+physical=readj('data/physical_studies.jsonl');interfaces=readj('data/mechanism_interfaces.jsonl');coverage=readj('data/evidence_coverage.jsonl')
+architecture_cases=readj('data/architecture_cases.jsonl')
+revisions=readj('data/mechanism_revisions.jsonl')
+db['architectureCases']=architecture_cases
+db['architectureOwnerAccounts']=readj('data/architecture_owner_accounts.jsonl')
+db['architectureResearchLedger']=readj('data/architecture_research_ledger.jsonl')
+db['mechanismRevisions']=revisions
+db.update(physicalStudies=physical,mechanismInterfaces=interfaces,evidenceCoverage=coverage)
 db.update(robots=robots,technicalNotes=notes,technicalParameters=params,contextDocs=contexts,binderSources=binders,binderAudit=audits)
 db['audit']=json.loads((ROOT/'data/audit.json').read_text())
 db['videoReviews']=readj('data/roboreplay_review_ledger.jsonl')
@@ -29,7 +37,7 @@ for im in images:
  assets[im['id']]={'mime':mime,'base64':base64.b64encode(raw).decode('ascii')}
  catalog.append({**im,'media_type':mime,'width_px':width,'height_px':height,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),
  'path_base':'corpus_root','reader_asset_id':im['id'],'reader_url':'index.html#image='+im['id'],
- 'interpretation_boundary':'Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance.'})
+ 'interpretation_boundary':im.get('limitations') or 'Caption and editorial label aid retrieval. A source-associated crop does not establish dimensions, hidden geometry, material, event installation, or causal performance.'})
 writej('agent/image_catalog.jsonl',catalog)
 
 claims=[];units=[]
@@ -42,10 +50,11 @@ fields={'construction':'team_publication_paraphrase','team_stated_reason':'team_
  'engineering_analysis':'analyst_inference','recommended_validation':'proposed_test_not_performed','limitations':'evidence_boundary'}
 for n in notes:
  for field,evidence in fields.items():
+  if field=='construction':evidence=n.get('construction_evidence',evidence)
   claim={'id':n['id']+':'+field,'robot_id':n['robot_id'],'year':n['year'],'technical_note_id':n['id'],'binder_id':n['binder_id'],
    'version_label':n['version_label'],'subsystem':n['subsystem'],'field':field,'evidence':evidence,'text':n[field],
    'source_url':n['source_url'],'page_references':n['page_references'],'additional_sources':n.get('additional_sources',[]),
-   'source_attribution_scope':'Published source and selected page locators apply to this note. A reason/boundary may explicitly say that the team did not state its intent. These are paraphrases, not quotations or independent reproductions.',
+   'source_attribution_scope':('Read the architecture case typed premises. Owner testimony, primary publications and editorial reconstruction have distinct scopes; a linked public source does not independently establish an owner recollection.' if n.get('architecture_case_id') else 'Published source and selected page locators apply to this note. A reason/boundary may explicitly say that the team did not state its intent. These are paraphrases, not quotations or independent reproductions.'),
    'image_ids':n['image_ids'],'review_scope':n.get('review_scope','Selected technical-publication review'),'source_evidence_type':n.get('evidence_type'),'limitations':n['limitations'],'version_scope':'Publication/source snapshot label only; no unverified event/date interval inferred'}
   claims.append(claim)
   addunit(claim['id'],n['title']+' · '+field,n[field],'technical_claim',evidence,n['year'],n['robot_id'],n['subsystem'],
@@ -56,9 +65,9 @@ for p in params:
  rid=p['robot_id'];year=int(rid.split('-')[0])
  claims.append({'id':p['id'],'robot_id':rid,'year':year,'binder_id':p['binder_id'],'evidence':'team_reported_parameter',
   'text':p['published_parameters'],'component':p['component'],'source_url':p['source_url'],'pdf_page':p.get('pdf_page'),
-  'notation':p['notation'],'limitations':'Selected source notation; no automated unit/ratio normalization, fabrication approval or independent performance test.'})
+  'notation':p['notation'],'version_label':p.get('version_label'),'units':p.get('units'),'source_record_id':p.get('source_record_id'),'operating_conditions':p.get('operating_conditions'),'source_location':p.get('source_location'),'evidence_status':p.get('evidence_status'),'limitations':'Selected source notation; no automated unit/ratio normalization, fabrication approval or independent performance test.'})
  addunit(p['id'],p['component']+' published parameters',p['published_parameters'],'published_parameter','team_reported_parameter',year,rid,None,
-  {'file':'data/technical_parameters.jsonl','id':p['id']},[p['source_url']],notation=p['notation'],pdf_page=p.get('pdf_page'))
+  {'file':'data/technical_parameters.jsonl','id':p['id']},[p['source_url']],notation=p['notation'],pdf_page=p.get('pdf_page'),version_label=p.get('version_label'),units=p.get('units'),source_record_id=p.get('source_record_id'),operating_conditions=p.get('operating_conditions'),source_location=p.get('source_location'))
 writej('agent/claims.jsonl',claims)
 
 versionrecords=[]
@@ -78,6 +87,12 @@ for r in robots:
   'required_reading':[f'docs/game_{r["year"]}.md','docs/AGENT_GUIDE.md','docs/TECHNICAL_EVIDENCE_GUIDE.md','docs/1833_DESIGN_DOCTRINE.md','docs/DESIGN_REVIEW_PROTOCOL.md','docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md','docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md'],
   'path_base':'corpus_root','dossier':r,'technical_notes':ns,'published_parameters':ps,'technical_publications':bs,
   'publication_version_groups':versions,'context_documents':cs,'images':ims,
+  'physical_studies':[s for s in physical if s['robot_id']==rid],
+  'interface_ports':[p for p in interfaces if p['robot_id']==rid],
+  'mechanism_revisions':[v for v in revisions if v['robot_id']==rid],
+  'architecture_cases':[c for c in architecture_cases if c['robot_id']==rid],
+  'architecture_research_ledger':[c for c in db['architectureResearchLedger'] if c['robot_id']==rid],
+  'evidence_coverage':[c for c in coverage if c['robot_id']==rid],
   'binder_audit':next(a for a in audits if a['robot_id']==rid),
   'claim_ids':[c['id'] for c in claims if c['robot_id']==rid],
   'retrieval_contract':{'read_game_first':True,'read_entire_note_before_using_one_claim':True,'unknown_is_not_absent':True,
@@ -88,6 +103,28 @@ for r in robots:
    {'file':'data/robot_dossiers.jsonl','id':rid,'field':('subsystems.' if field in r['subsystems'] else '')+field},r['primary'],
    coverage=r['coverage'],version_audit=r['version_audit'],limits=r['limits'])
 writej('agent/publication_versions.jsonl',versionrecords)
+
+# An integrated evidence hit carries construction, sequence, packaging, figures and
+# limitations together. It supplements fine-grained claims, rather than replacing them.
+for s in physical:
+ for m in s['mechanisms']:
+  text=json.dumps(dict(mechanism=m,packaging=s['packaging'],piece_flow=s['piece_flow'],whole_robot_unknowns=s['unknowns']),ensure_ascii=False,indent=2)
+  addunit(m['id']+':physical',m['title']+' construction packaging piece flow transfer',text,'physical_mechanism','source_bounded_editorial_reconstruction',int(s['robot_id'][:4]),s['robot_id'],m['subsystem'],{'file':'data/physical_studies.jsonl','id':s['id'],'mechanism_id':m['id']},s['source_urls'],version_label=s['version_label'],image_ids=m['image_ids'],coverage=m['coverage'],limits=m['unknowns'],interface_ids=[p['id'] for p in interfaces if p['mechanism_id']==m['id']],drawing_ids=[s['id']+'-'+v for v in ['top','side','transition']])
+for p in interfaces:
+ addunit(p['id'],p['mechanism_id']+' '+p['role']+' compatibility interface',json.dumps(p,ensure_ascii=False,indent=2),'mechanism_interface','partial_contract_not_compatibility_certification',int(p['robot_id'][:4]),p['robot_id'],locator={'file':'data/mechanism_interfaces.jsonl','id':p['id']},sources=p['source_urls'],version_label=p['version_label'],image_ids=p['image_ids'])
+for c in coverage:
+ uid='coverage:'+c.get('mechanism_id',c['robot_id']+':'+c.get('subsystem',''))
+ addunit(uid,c['robot_id']+' evidence-specific coverage',json.dumps(c,ensure_ascii=False),'evidence_coverage','editorial_assessment',int(c['robot_id'][:4]),c['robot_id'],locator={'file':'data/evidence_coverage.jsonl','id':c.get('mechanism_id',c['robot_id'])})
+for c in readj('data/cohort_coverage.jsonl'):
+ addunit('cohort:'+c['robot_id'],c['robot_id']+' '+c['cohort'],json.dumps(c,ensure_ascii=False),'cohort_coverage','targeted_supplement_no_rank' if c['cohort']=='targeted_architecture_supplement' else 'retained_rank_snapshot',c['year'],c['robot_id'] if c['dossier_present'] else None,locator={'file':'data/cohort_coverage.jsonl','id':c['robot_id']})
+for v in revisions:
+ addunit(v['id']+':revision',v['publisher_label']+' '+v['family']+' prototype change history',json.dumps(v,ensure_ascii=False,indent=2),'mechanism_revision','visually_inspected_CAD_with_editorial_comparison',int(v['robot_id'][:4]),v['robot_id'],'transfer' if v['family']=='rotor' else 'scoring',{'file':'data/mechanism_revisions.jsonl','id':v['id']},[v['source_url'],v['source_image_url']],version_label=v['publisher_label'],image_ids=v['image_ids'],previous_revision_id=v['previous_revision_id'],event_installation=v['event_installation'],paired_other_mechanism_revision=None,limits=v['unknowns'])
+for c in architecture_cases:
+ addunit(c['id'],c['robot_id']+' '+c['title']+' simplicity architecture handoff',json.dumps(c,ensure_ascii=False,indent=2),'architecture_case','typed_premises_with_editorial_hypothesis',c['year'],c['robot_id'],'architecture_and_interfaces',{'file':'data/architecture_cases.jsonl','id':c['id']},c['source_urls'],version_label=c['version_label'],image_ids=c['image_ids'],read_whole_case=True)
+for c in readj('data/revision_coverage.jsonl'):
+ addunit('revision-coverage:'+c['robot_id'],c['robot_id']+' known revision figure coverage',json.dumps(c,ensure_ascii=False),'revision_coverage','label_audit_not_exhaustive_history',int(c['robot_id'][:4]),c['robot_id'],locator={'file':'data/revision_coverage.jsonl','id':c['robot_id']})
+for c in readj('data/cohort_research_attempts.jsonl'):
+ addunit('research-attempt:'+c['robot_id'],c['robot_id']+' unresolved primary construction research',json.dumps(c,ensure_ascii=False),'research_attempt','retrieval_scope_not_absence',int(c['robot_id'][:4]),locator={'file':'data/cohort_research_attempts.jsonl','id':c['robot_id']})
 
 def chunks(text):
  # Respect headings and paragraph boundaries. Long paragraphs are retained intact.
@@ -108,7 +145,7 @@ for d in contexts:
  for i,(title,text) in enumerate(chunks(d['body'])):
   if text.strip():addunit(f'context:{d["id"]}:{i+1}',title,text,'context','mixed_context_read_attribution',d.get('year'),d.get('robot_id'),locator={'file':path or 'data/context_documents.jsonl','id':d['id'],'section':title,'part':i+1},sources=d.get('source_urls',[]))
 for im in catalog:
- addunit('image:'+im['id'],im.get('publisher_label') or im['caption'],im['caption'],'image_metadata','source_associated_visual_reference',int(im['robot_id'].split('-')[0]),im['robot_id'],locator={'file':'agent/image_catalog.jsonl','id':im['id']},sources=[im['source_url']],image_ids=[im['id']],inspection_scope=im.get('visual_review') or im.get('review_status'))
+ addunit('image:'+im['id'],im.get('publisher_label') or im['caption'],im['caption'],'image_metadata','editorial_reconstruction_not_source_evidence' if im.get('kind')=='editorial_physical_reconstruction' else 'source_associated_visual_reference',int(im['robot_id'].split('-')[0]),im['robot_id'],locator={'file':'agent/image_catalog.jsonl','id':im['id']},sources=[im['source_url']],image_ids=[im['id']],inspection_scope=im.get('visual_review') or im.get('review_status'))
 for v in db['videoReviews']:
  addunit('video:'+v['video_id'],v['title'],(v.get('source_summary') or 'Pending transcript review.')+'\n\n'+(v.get('transfer_analysis') or ''),'video_review',v['review_status'],v.get('season'),locator={'file':'data/roboreplay_review_ledger.jsonl','video_id':v['video_id']},sources=[v['url']],visual_review=False)
  for i,s in enumerate(v.get('expanded_review',{}).get('sections',[]),1):
@@ -171,6 +208,23 @@ manifest['required_workflow'].insert(3,'For historical transfer, read HISTORICAL
 manifest['edition']='2026-10-27-plain-physical-design'
 manifest['files']['plain_physical_design']='docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md'
 manifest['required_workflow'].insert(1,'Read docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md. Explain actual construction, borrowed features, packaging and full piece cycles in plain language; calculations must constrain choices. Apply the revised rubric anchors.')
+manifest['edition']='2026-11-07-physical-evidence-and-revision-history'
+manifest['schema_version']='1.2'
+manifest['counts']['mechanism_revisions']=len(revisions)
+manifest['files'].update(mechanism_revisions='data/mechanism_revisions.jsonl',revision_coverage='data/revision_coverage.jsonl')
+manifest['semantics']['revision_history']='Publisher prototype ordinals are independent per mechanism. Do not assign final feature-list specifications backward to every prototype, or pair rotor and shooter ordinals without an explicit source. A changed render pose is not proof of a hardware revision.'
+manifest['counts'].update(physical_studies=len(physical),physical_mechanisms=sum(len(s['mechanisms']) for s in physical),interface_ports=len(interfaces),editorial_drawings=sum(i.get('kind')=='editorial_physical_reconstruction' for i in images))
+manifest['files'].update(physical_studies='data/physical_studies.jsonl',mechanism_interfaces='data/mechanism_interfaces.jsonl',evidence_coverage='data/evidence_coverage.jsonl',cohort_coverage='data/cohort_coverage.jsonl',physical_upgrade_report='docs/PHYSICAL_UPGRADE_REPORT.md')
+manifest['generation']['prebuild_script']='scripts/build_physical_studies.py'
+manifest['semantics']['physical_evidence']='Source-bounded editorial reconstruction; explicit unknowns and inspected figure scope travel with every integrated mechanism hit. Editorial drawings are not inspected source images or measured CAD.'
+manifest['semantics']['coverage']='Legacy description fields do not establish completeness. Read explicit supported/partial/unknown/not_applicable evidence assessments, including unassessed legacy rows.'
+manifest['required_workflow'].append('For physical studies, retrieve kind physical_mechanism and interface ports; never infer drop-in compatibility from shared piece type or a schematic. Use compare-interfaces to expose unresolved checks.')
+manifest['required_workflow'].append('For sources with revision galleries, query mechanism_revision and inspect each relevant revision before transferring final feature-list parameters. Prototype labels do not establish a competition configuration or a rotor/shooter pairing.')
+manifest['edition']='2026-11-07-complete-architecture-research'
+manifest['counts']['architecture_cases']=len(architecture_cases)
+manifest['files'].update(architecture_cases='data/architecture_cases.jsonl',architecture_protocol='docs/ARCHITECTURE_RESEARCH_PROTOCOL.md',owner_accounts='data/architecture_owner_accounts.jsonl',architecture_research_ledger='data/architecture_research_ledger.jsonl',architecture_evaluations='agent/architecture_evaluation_cases.jsonl')
+manifest['semantics']['scope']='143 provisional dossiers: original125, three604 supplements, thirteen2018/2019 curated studies and two targeted2023 architecture supplements (1746,6328). Ranked cohorts and prior source/video scopes preserved. Five architecture cases are source-bounded engineering analyses, not controlled performance comparisons. Zero exhaustive version certifications.'
+manifest['required_workflow'].insert(2,'Read ARCHITECTURE_RESEARCH_PROTOCOL.md; agent owns discovery and causal engineering explanation. Compare full architectures and cost vectors, preserve owner testimony, counterevidence and reversal conditions. Ask only consequential unresolved questions.')
 writejson('agent/manifest.json',manifest)
 
 # HTML changes: all galleries use embedded images; Markdown supports actual images and relative links.
@@ -201,10 +255,14 @@ for i,line in enumerate(lines):
 html='\n'.join(lines)+'\n'
 html=html.replace('markdown(a.body);','markdown(a.body,a.path||\'\');').replace('markdown(c.analysis)','markdown(c.analysis,\'docs/game_\'+c.year+\'.md\')')
 # Search construction and parameter text as well as synopsis/tag text.
-html=html.replace('const sourceMap=',"const robotSearchText=a=>JSON.stringify([a,...DB.technicalNotes.filter(n=>n.robot_id===a.id),...DB.technicalParameters.filter(p=>p.robot_id===a.id)]).toLowerCase();\nconst sourceMap=",1)
+html=html.replace('const sourceMap=',"const robotSearchText=a=>JSON.stringify([a,...DB.technicalNotes.filter(n=>n.robot_id===a.id),...DB.technicalParameters.filter(p=>p.robot_id===a.id),...(DB.physicalStudies||[]).filter(s=>s.robot_id===a.id),...(DB.mechanismInterfaces||[]).filter(p=>p.robot_id===a.id)]).toLowerCase();\nconst sourceMap=",1)
 html=html.replace('words.every(w=>JSON.stringify(a).toLowerCase().includes(w))','words.every(w=>robotSearchText(a).includes(w))')
 html='\n'.join(line.replace('JSON.stringify(a).toLowerCase().includes(w)','robotSearchText(a).includes(w)') if 'DB.robots.filter(a=>' in line else line for line in html.splitlines())+'\n'
 html=html.replace('${num(a.context_words)}</b>new contextual words','${num(a.context_words)}</b>indexed contextual words')
+html=html.replace("agent:'Agent entry point'","architectures:'Architecture decisions',agent:'Agent entry point'")
+html=html.replace('binders,agent,sources','binders,architectures,agent,sources')
+from enhance_workbench import enhance
+html=enhance(html)
 (ROOT/'index.html').write_text(html)
 writejson('agent/build_summary.json',{'counts':manifest['counts'],'embedded_image_bytes':sum(len(base64.b64decode(a['base64'])) for a in assets.values()),'html_bytes':(ROOT/'index.html').stat().st_size})
 print(json.dumps(manifest['counts'],indent=2))

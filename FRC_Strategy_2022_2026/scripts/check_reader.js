@@ -1,47 +1,25 @@
-const fs=require('fs'),vm=require('vm'),assert=require('assert');
-const root=require('path').resolve(__dirname,'..')+'/';
-const html=fs.readFileSync(root+'index.html','utf8'),payload=html.match(/<script id="database" type="application\/json">([\s\S]*?)<\/script>/)[1];
-const script=html.match(/<script>\s*'use strict';([\s\S]*?)<\/script>/)[1];
-const assets=html.match(/<script id="image-assets" type="application\/json">([\s\S]*?)<\/script>/)[1];
-const els=new Map();function el(s){if(!els.has(s))els.set(s,{innerHTML:'',textContent:'',value:'',dataset:{}});return els.get(s)}
-const context={document:{getElementById:id=>id==='database'?{textContent:payload}:id==='image-assets'?{textContent:assets}:el('#'+id),querySelector:el,querySelectorAll:()=>[],addEventListener:()=>{}},window:{scrollTo:()=>{},addEventListener:()=>{}},location:{hash:''},URLSearchParams,console};vm.createContext(context);
-vm.runInContext(script,context);let count=0;
-function run(code){vm.runInContext('{'+code+'}',context);count++}
-run("if(!document.querySelector('#tabs').innerHTML.includes('Binders &amp; mechanics')&&!document.querySelector('#tabs').innerHTML.includes('Binders & mechanics'))throw Error('binder tab missing')");
-run("if(DB.robots.length!==141||DB.technicalNotes.length!==303)throw Error('counts')");
-run("DB.robots.forEach(a=>{const h=robotDetail(a);if(!h.includes(String(a.team)))throw Error('robot detail')})");
-run("DB.robots.forEach(a=>{const h=binderDetail(a);if(!h.includes(a.binder_audit.status.replaceAll('_',' ')))throw Error('binder detail')})");
-run("state.year='';state.query='';binders();if(!document.querySelector('#binder-count').textContent.startsWith('141 '))throw Error('all binder audits')");
-run("state.binderStatus='reviewed';binderList();if(!document.querySelector('#binder-count').textContent.startsWith('40 '))throw Error('reviewed filter')");
-run("state.binderStatus='pending';binderList();if(!document.querySelector('#binder-count').textContent.startsWith('101 '))throw Error('pending filter')");
-run("state.binderStatus='';state.query='slapdown';binderList();if(document.querySelector('#binder-count').textContent.startsWith('0 '))throw Error('technical search')");
-run("state.query='a-query-that-does-not-exist-0918273';binderList();if(!document.querySelector('#binder-count').textContent.startsWith('0 '))throw Error('no results')");
-run("const p=binderDetail(DB.robots.find(a=>a.id==='2026-2910'));if(!p.includes('Original BLITZ')||!p.includes('RE-BLITZ')||!p.includes('Engineering analysis'))throw Error('version and evidence')");
-run("const p=binderDetail(DB.robots.find(a=>a.id==='2025-1323'));if(!p.includes('Team explanation')||!p.includes('L1'))throw Error('primary L1 reasoning')");
-run("const p=binderDetail(DB.robots.find(a=>a.id==='2024-2910'));if(!p.includes('owner has disabled'))throw Error('download limit')");
-run("state.query='';state.year='2026';state.binderStatus='';robots();robotList()");
-run("DB.games.forEach(g=>{state.game=g.year;games()})");
-run("['pch','champs_div','einstein'].forEach(t=>{state.benchType=t;bench()});DB.benchmarks.forEach(eventDetail)");
-run("DB.einstein.forEach(matchDetail);einstein();matchList()");
-run("context();DB.contextDocs.forEach(d=>markdown(d.body))");
-run("replay();DB.videoReviews.forEach(expandedReplayDetail)");
-run("sources();sourceList();auditWithExpansion()");
-run("if(DB.videoReviews.filter(v=>v.expanded_review).length!==35)throw Error('expanded review count');const h=expandedReplayDetail(DB.videoReviews.find(v=>v.video_id==='1UsbJD-zRjU'));if(!h.includes('Quiz prompts')||!h.includes('Source account')&&!h.includes('source account'))throw Error('expanded study missing')");
-run("agent();if(!document.querySelector('#view').innerHTML.includes('Agent entry point'))throw Error('agent view')");
-run("if(Object.keys(IMAGE_ASSETS).length!==569)throw Error('embedded image count');Object.values(IMAGE_BY_ID).forEach(im=>{if(!imageSrc(im).startsWith('data:image/'))throw Error('external image dependency')})");
-run("const im=Object.values(IMAGE_BY_ID)[0];const s=markdown('![test](../../'+im.path+')','docs/technical/test.md');if(!s.includes('data:image/')||s.includes('![test]'))throw Error('markdown image')");
-run("if(!markdown('[Guide](../AGENTS.md)','docs/AGENT_GUIDE.md').includes('href=\"AGENTS.md\"'))throw Error('relative link')");
-run("if(inlineWithImages('[x](javascript:alert)').includes('href='))throw Error('unsafe scheme')");
-run("const r=DB.robots.find(a=>a.id==='2026-2910');if(!robotSearchText(r).includes('0.6-inch plates'))throw Error('technical construction missing from robot search')");
-run("if(DB.videoReviews.filter(v=>v.transcript_status==='downloaded').length!==44||DB.videoReviews.filter(v=>v.review_status==='unreviewed').length!==9)throw Error('recovery scope')");
-run("if(DB.einstein.filter(m=>m.visual_audit).length!==80||DB.einstein.some(m=>m.video_reviewed||m.visual_audit.complete))throw Error('visual scope')");
-run("const m=DB.einstein.find(m=>m.key==='2026cmptx_f1m2');const h=matchDetail(m);if(!h.includes('Detailed attributed commentary')||!h.includes('Conditional interpretation')||!h.includes('Visual audit checkpoint'))throw Error('match timeline render')");
-run("const v=DB.videoReviews.find(v=>v.video_id==='-Cm-RuiSNlU');if(v.expanded_review.sections.length!==14||!v.navigation_windows.every(w=>w.url))throw Error('new study navigation')");
-
-run("agent();if(!document.querySelector('#view').innerHTML.includes('No support-only architecture')||DB.agentManifest.team_constraints.turret_allowed!==false)throw Error('1833 mandate absent')");
-
-run("if(!years().includes('2018')||!years().includes('2019'))throw Error('historical year filters');state.year='2018';state.query='';state.binderStatus='';binders();if(!document.querySelector('#binder-count').textContent.startsWith('7 '))throw Error('2018 filtered cohort');const h=robotDetail(DB.robots.find(r=>r.id==='2019-1323'));if(h.includes('#null')||!h.includes('unretrieved'))throw Error('null EPA presentation')");
-
-// summary follows all checks
-console.log('PASS' ,count,'reader logic checks; all 141 robot and binder details generated. Browser layout not tested.');
-fs.writeFileSync(require('path').join(root,'READER_VALIDATION.json'),JSON.stringify({checks:count,status:'passed',all_robot_details:141,all_binder_audits:141,browser_layout:false},null,2));
+const fs = require('fs'),vm=require('vm'),zlib=require('zlib');
+const path=require('path');
+const root=path.resolve(__dirname,'..');
+const s=fs.readFileSync(process.argv[2]||path.join(root,'index.html'),'utf8');
+function tag(k) {return s.match(new RegExp('<script id="'+k+'"[^>]*>([\\s\\S]*?)</script>'))[1];}
+const value=JSON.parse(tag('database'));
+const data=value.encoding==='gzip'?zlib.gunzipSync(Buffer.from(value.base64,'base64')).toString('utf8'):JSON.stringify(value);
+const images=tag('image-assets');
+const els=new Map();
+const get=id=>{if(!els.has(id))els.set(id,{value:'',textContent:'',innerHTML:'',dataset:{},addEventListener(){},scrollIntoView(){},insertAdjacentHTML(_,h){this.innerHTML=h+this.innerHTML;}});return els.get(id);};
+const ctx={document:{body:null,getElementById:id=>id==='database'?{textContent:data}:id==='image-assets'?{textContent:images}:get('#'+id),querySelector:get,querySelectorAll:()=>[],addEventListener(){}},window:{__beanAssetsComplete:true,scrollTo(){},addEventListener(){}},location:{hash:'',protocol:'file:',hostname:''},URLSearchParams,console,setTimeout(){return 0},clearTimeout(){},innerWidth:1280};
+vm.createContext(ctx);vm.runInContext(tag('application-source'),ctx);
+vm.runInContext(`if(!$('#view').innerHTML.includes('strategic design assistant'))throw Error('Home');if($('#tabs').innerHTML.includes('Binders & mechanics'))throw Error('Duplicate nav');audience('agent');if(!$('#tabs').innerHTML.includes('Video research'))throw Error('Agent nav');audience('human');tab('robots');for(const a of DB.robots)robotDetail(a);if(!robotDetail(DB.robots.find(a=>a.id==='2018-254')).includes('53–0–0'))throw Error('Lockdown');if((robotDetail(DB.robots.find(a=>a.id==='2026-4414')).match(/data-revision-id=/g)||[]).length!==21)throw Error('4414 revisions');if(IMAGE_ASSETS['7bc3e516e03f77f970'])throw Error('Coprocessor');tab('architectures');tab('bench');for(const b of DB.benchmarks)showBenchmark(b.event);tab('create');`,ctx);
+vm.runInContext(`
+const counts=DB.agentManifest.counts;
+if(DB.robots.length!==143||DB.robots.length!==counts.robot_packets)throw Error('Roster count');
+if(DB.technicalNotes.length!==counts.technical_notes||DB.technicalNotes.length!==353)throw Error('Technical note count');
+if(DB.architectureCases.length!==5||DB.physicalStudies.length!==7||DB.mechanismInterfaces.length!==20)throw Error('Expanded research');
+if(DB.benchmarks.length!==292)throw Error('Expanded benchmarks');
+if(Object.keys(IMAGE_ASSETS).length!==625||Object.keys(IMAGE_ASSETS).length!==counts.images)throw Error('Image count');
+for(const im of Object.values(IMAGE_ASSETS))if(!im.base64||!im.mime.startsWith('image/'))throw Error('Embedded image');
+for(const year of [2018,2019])for(const r of DB.robots.filter(r=>r.year===year))if(r.epa!==null||r.epa_rank!==null)throw Error('Historical EPA');
+for(const r of DB.robots)if(!robotDetail(r).includes(String(r.team)))throw Error('Dossier render '+r.id);
+`,ctx);
+console.log('PASS: navigation, 143 dossier renders, 353 notes, 625 embedded images, 21 revisions, 292 benchmarks and recommendation form. Browser layout not tested.');

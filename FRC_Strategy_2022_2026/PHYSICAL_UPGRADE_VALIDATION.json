@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": 1788,
+  "source_images": 576,
+  "editorial_drawings": 21,
+  "connected_retrieval_examples": 6,
+  "limitations": [
+    "No mechanical experiments or model-quality benchmark performed.",
+    "No complete CAD measurement or all-event version certification.",
+    "Team 27 internal figure recovery and several anchor interfaces remain open.",
+    "External URLs not newly tested are explicitly untested."
+  ]
+}

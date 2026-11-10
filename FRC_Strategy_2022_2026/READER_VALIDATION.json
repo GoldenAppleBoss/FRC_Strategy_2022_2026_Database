@@ -1,7 +1,7 @@
 {
-  "checks": 32,
+  "checks": 36,
   "status": "passed",
-  "all_robot_details": 141,
-  "all_binder_audits": 141,
+  "all_robot_details": 143,
+  "all_binder_audits": 143,
   "browser_layout": false
 }

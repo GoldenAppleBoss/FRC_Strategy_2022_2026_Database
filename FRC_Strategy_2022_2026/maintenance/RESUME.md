@@ -1,0 +1,4 @@
+# Continue the roster review
+Materialize the latest saved index.html at current/index.html. Extract maintenance/merge.py and this note from its workbench-package ZIP into the sibling resume folder. Read data/dossier_review_coverage.json from the same package for the current pending team-years. Existing reviews, visual exclusions, individual 4414 revisions, event distributions, navigation and the runner are retained in the latest baseline.
+
+Place completed new source studies in resume/<year>.jsonl (historical.jsonl and extra.jsonl are also accepted). Run python3 resume/merge.py. The script writes delivery/index.html after combining the saved and new reviews by robot ID. It also refreshes the robot packets, source review index, coverage ledger and package checksums. Run the reader and restore checks before replacing the saved artifact.

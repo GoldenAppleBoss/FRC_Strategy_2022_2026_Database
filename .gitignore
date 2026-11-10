@@ -21,3 +21,9 @@ Thumbs.db
 
 # Downloaded project archives
 /*.zip
+
+# Extracted update source (already merged into the repository root)
+/FRC_Strategy_2022_2026_Database/
+
+# Local workbench runs, uploaded manuals, and generated recommendations
+.bean-workbench/

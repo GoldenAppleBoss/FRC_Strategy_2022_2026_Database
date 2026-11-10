@@ -85,3 +85,8 @@ Read `docs/roboreplay/README.md`, `data/roboreplay_review_ledger.jsonl`, `data/v
 ## Required 1833 task sheet
 
 For each new game/manual analysis, material rules revision or new/revised robot design brief, fill a fresh copy of [the one-sheet template](../team1833/1833_Task_List_Template.xlsx). Follow `docs/TASK_LIST_PROTOCOL.md` and `team1833/task_template_schema.json`, with all paths resolved from the corpus root. The template includes task outcome, phase, points/enabling value, priority, difficulty, recommendation, rationale, alliance dependencies, acceptance target, exact rule/source, uncertainty/test and separate human decision. No group tabs; no inherited season-specific decisions. Four previously blocked 604 image originals are now recovered and embedded (2023 robot; 2026 serializer, intake and hopper).
+
+
+## Complete-architecture research correction (2026-11-07)
+
+Read [Architecture research protocol](ARCHITECTURE_RESEARCH_PROTOCOL.md). Prefer the fewest unnecessary independent motions and possession handoffs that meet elite primary-contributor requirements. Evaluate fabrication, control, acquisition alignment, service and electrical/dynamic costs separately. The research agent must supply grounded engineering inference and challenge it; do not require the owner to explain every example. Added capability must justify its complete-cycle and development cost. Preserve no-turret, no-pneumatics and no-support-only constraints.

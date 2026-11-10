@@ -1,6 +1,8 @@
+> Current evidence upgrade (2026-11-07): 141 provisional dossiers, 348 technical notes, 159 parameters, 575 source-image associations and 21 editorial drawings. Seven physical studies / 24 mechanism assessments / 20 interface ports. Read docs/PHYSICAL_UPGRADE_REPORT.md. Earlier dated counts below are historical checkpoints. Canonical current counts: `agent/manifest.json` and `data/physical_upgrade_metrics.json`. Maintenance is not a game-design task and requires no task workbook.
+
 > Owner correction 2026-10-27: explain the actual robot in plain language, with concrete mechanism construction, historical feature transfer, physical packaging and decision-relevant engineering support. Read `docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md` before drafting or grading a recommendation. Jargon, citations and equations do not substitute for these explanations.
 
-> Current edition 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
+> Historical checkpoint 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
 
 > Current 604 expansion: 128 dossiers = original 125 plus supplemental 2022/2023/2026 604 entries; existing 2024/2025 entries expanded. Original 25/year selections are preserved. Read docs/context/1833-design-workflow.md and data/604_research_audit.jsonl. Visual match audits are no longer required by the user; commentary attribution remains mandatory.
 
@@ -63,7 +65,7 @@ Start an agent at `AGENTS.md`, then `agent/manifest.json`. This edition adds 125
 Rebuild the reader and agent layer with `python scripts/build_agent_and_reader.py` (Pillow required to verify/read image formats; the query CLI itself uses only Python's standard library). The canonical agent inputs are the included JSONL and Markdown files. `data/reader_payload.json` retains the prior reader snapshot for reproducible template assembly; it is not a second, independently sourced dataset. Update that snapshot if changing the underlying human-reader content.
 
 
-## Integrated research pass and video studies
+## Historical integrated research checkpoint and video studies
 
 The prior 64-study checkpoint is now merged with 34 additional studies: all 98 previously uncovered robot-years have focused technical studies integrated into the reader, SQL exports and agent packets. The corpus has 227 technical notes across all 125 robot-years. Keep the distinction: only 27 robot-years have the earlier reviewed technical-publication coverage; the other 98 are focused interview/source-bundle studies, not newly discovered binders, CAD certifications or exhaustive version histories.
 

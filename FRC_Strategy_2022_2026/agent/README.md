@@ -1,6 +1,8 @@
+> Current evidence upgrade (2026-11-07): 141 provisional dossiers, 348 technical notes, 159 parameters, 575 source-image associations and 21 editorial drawings. Seven physical studies / 24 mechanism assessments / 20 interface ports. Read ../docs/PHYSICAL_UPGRADE_REPORT.md. Earlier dated counts below are historical checkpoints. Canonical current counts: `agent/manifest.json` and `data/physical_upgrade_metrics.json`. Maintenance is not a game-design task and requires no task workbook.
+
 > Owner correction 2026-10-27: explain the actual robot in plain language, with concrete mechanism construction, historical feature transfer, physical packaging and decision-relevant engineering support. Read `docs/1833_PLAIN_LANGUAGE_AND_PHYSICAL_DESIGN.md` before drafting or grading a recommendation. Jargon, citations and equations do not substitute for these explanations.
 
-> Current edition 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
+> Historical checkpoint 2026-10-27: 141 provisional robot-year studies. Original125 (25/year2022–2026) plus three604 supplements and thirteen curated2018/2019 primary-source studies. Historical expansion adds 52 technical notes, 15 parameter records and 61 credited image references. It is not an EPA-ranked top25-per-year expansion, exhaustive mechanism/version history, new PCH benchmark study or additional video/match audit.
 
 > Current 604 expansion: 128 dossiers = original 125 plus supplemental 2022/2023/2026 604 entries; existing 2024/2025 entries expanded. Original 25/year selections are preserved. Read docs/context/1833-design-workflow.md and data/604_research_audit.jsonl. Visual match audits are no longer required by the user; commentary attribution remains mandatory.
 
@@ -68,7 +70,7 @@ A text-only model must delegate visual inspection to an available image-capable 
 Use `evaluation_cases.jsonl` as held-out prompts when possible. Score year/version correctness, evidence attribution, parameter conditions, unknown handling, source navigation, visual-grounding honesty and interface reasoning separately. Reject an answer that invents team intent or installed geometry even if its recommendation sounds plausible. Successful local index tests establish that navigation works; they do not measure the quality of an arbitrary model's FRC reasoning.
 
 
-## Integrated research pass and video studies
+## Historical integrated research checkpoint and video studies
 
 The prior 64-study checkpoint is now merged with 34 additional studies: all 98 previously uncovered robot-years have focused technical studies integrated into the reader, SQL exports and agent packets. The corpus has 227 technical notes across all 125 robot-years. Keep the distinction: only 27 robot-years have the earlier reviewed technical-publication coverage; the other 98 are focused interview/source-bundle studies, not newly discovered binders, CAD certifications or exhaustive version histories.
 
@@ -90,3 +92,33 @@ The owner requires an Einstein-level primary contributor, never a support-only d
 ## Solo RP and decision economics correction
 
 Owner priorities now explicitly require independently achievable ranking bonuses, scoring independence and ambitious seeding. Physical iteration is extremely expensive. Read `docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md` from corpus root; inexpensive spatial and analytical decisions may precede hardware validation, and tests must justify their decision value and cost. The actual four-lane switch occurred before two-lane CAD was complete.
+
+## Physical evidence maintenance
+
+Canonical physical research lives in `data/physical_studies.jsonl`; port contracts live in `data/mechanism_interfaces.jsonl`. Edit these before rebuilding. Generated study Markdown, context documents, tables and drawings must not be edited separately. Mechanism construction/limitations must agree with linked ordinary notes in `data/technical_mechanisms.jsonl`; the relationship validator checks this. Existing legacy scripts under edition directories are historical import steps and are not the current rebuild entry point.
+
+With Python 3 and Pillow installed, run from the corpus root:
+
+```sh
+python scripts/build_physical_studies.py
+python scripts/rebuild_database.py
+python scripts/build_agent_and_reader.py
+python scripts/validate_revisions.py
+python scripts/validate_agent.py
+python scripts/validate_physical_studies.py
+node scripts/check_reader.js
+```
+
+Search `--kind physical_mechanism` for complete connected evidence and `--kind mechanism_interface` for port IDs. For example:
+
+```sh
+python scripts/query_agent.py compare-interfaces physical-2026-1678-floor-output physical-2026-2910-rebuild-launch-input
+```
+
+Matching piece names do not establish compatible geometry. This command reports unresolved conditions, or explicit conflicts, and never grants mechanical certification. Historical yaw turrets remain described; the current team restriction is applied unless `--historical` is requested.
+
+## Individual mechanism revisions
+
+`data/mechanism_revisions.jsonl` holds source-specific CAD revision observations, visible changes, rationale/measurement limits and independent family ordinals. `scripts/build_revision_exports.py` is called automatically by the physical prebuild. The reader, ordinary technical notes, SQL and packets retain all revision figures; no first-four gallery truncation is permitted. `scripts/validate_revisions.py` checks exact retrieval and preserves the pre-correction robot, note, parameter and image inventory.
+
+For 4414, query `RotorV10` or `ShooterV11` using `--robot 2026-4414 --kind mechanism_revision`. Do not apply the final feature overview to every historical render or infer a matched rotor/shooter configuration from ordinal numbers.

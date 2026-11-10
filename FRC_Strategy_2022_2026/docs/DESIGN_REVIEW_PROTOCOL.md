@@ -56,3 +56,8 @@ Deliver the populated single-sheet workbook; one selected architecture and the c
 ## Solo ranking capability and proportional evidence
 
 For a new architecture, explicitly map each ranking objective to independent capability or external prerequisites and quantify the individually achievable route with margin. Include a passive-partner stress case in addition to ordinary/elite alliance comparisons. Complete the solo RP record and validation economics; the latter must identify decision consequences, expected costs, cheapest evidence and stopping rules. A bounded improvement can use a short comparison and update only affected task rows, rather than repeating full CAD or model development. See `docs/1833_SOLO_RP_AND_DECISION_ECONOMICS.md` for the owner's actual four-lane decision and the proportionate process.
+
+
+## Complete-architecture research correction (2026-11-07)
+
+Read [Architecture research protocol](ARCHITECTURE_RESEARCH_PROTOCOL.md). Prefer the fewest unnecessary independent motions and possession handoffs that meet elite primary-contributor requirements. Evaluate fabrication, control, acquisition alignment, service and electrical/dynamic costs separately. The research agent must supply grounded engineering inference and challenge it; do not require the owner to explain every example. Added capability must justify its complete-cycle and development cost. Preserve no-turret, no-pneumatics and no-support-only constraints.

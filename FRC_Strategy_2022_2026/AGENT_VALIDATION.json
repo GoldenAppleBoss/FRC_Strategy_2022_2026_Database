@@ -1,16 +1,22 @@
 {
   "status": "passed",
-  "checks": 19583,
+  "checks": 25576,
   "counts": {
-    "robot_packets": 141,
-    "retrieval_units": 5878,
-    "claims": 1651,
-    "images": 569,
-    "technical_notes": 303,
-    "published_parameters": 136,
-    "robot_years_with_technical_reviews": 141
+    "robot_packets": 143,
+    "retrieval_units": 7837,
+    "claims": 1924,
+    "images": 597,
+    "technical_notes": 353,
+    "published_parameters": 159,
+    "robot_years_with_technical_reviews": 143,
+    "mechanism_revisions": 21,
+    "physical_studies": 7,
+    "physical_mechanisms": 24,
+    "interface_ports": 20,
+    "editorial_drawings": 21,
+    "architecture_cases": 5
   },
-  "local_markdown_references": 704,
+  "local_markdown_references": 817,
   "broken_local_references": [],
   "scope": "Navigation, byte identity, metadata/packet preservation, CLI filtering and SQLite integrity; not new source review or model reasoning evaluation."
 }

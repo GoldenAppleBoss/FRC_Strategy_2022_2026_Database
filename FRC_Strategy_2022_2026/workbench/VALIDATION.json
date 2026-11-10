@@ -1,0 +1,40 @@
+{
+  "runner_contract_tests": {
+    "status": "passed",
+    "tests": 8,
+    "runner": "deterministic CLI double; no model result substituted in production"
+  },
+  "pdf_integration": {
+    "status": "passed",
+    "pages_extracted": 2,
+    "page_rendered": 2
+  },
+  "standalone_restore": {
+    "status": "passed",
+    "robot_packets": 143,
+    "retrieval_units": 7837,
+    "image_associations": 597,
+    "all_image_paths_present": true
+  },
+  "browser_review": {
+    "status": "passed",
+    "views": [
+      "overview",
+      "brief builder"
+    ],
+    "interactions": [
+      "navigation",
+      "brief input",
+      "missing-manual validation",
+      "setup instructions and dialog"
+    ],
+    "desktop_layout": true,
+    "mobile_layout": "responsive CSS supplied; not visually checked"
+  },
+  "live_model_smoke": {
+    "status": "blocked",
+    "authentication_detection": "succeeded",
+    "reason": "Authoring environment prevents Codex from writing its runtime state directory; CLI returned read-only file-system error. No live six-pass model recommendation was completed."
+  },
+  "scope": "Operational contract and evidence navigation checks do not measure model understanding or mechanical design quality."
+}

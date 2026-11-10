@@ -1,0 +1,10 @@
+{
+  "status": "blocked",
+  "date": "2026-11-07",
+  "attempts": [
+    "Playwright bundled Chromium unavailable",
+    "System Chromium launch blocked by socket Operation not permitted"
+  ],
+  "fallback": "34 offline reader logic checks passed; all image bytes verified; generated diagrams visually inspected",
+  "browser_layout_verified": false
+}

@@ -41,3 +41,8 @@ Read `docs/DESIGN_REVIEW_PROTOCOL.md`, complete the one-sheet task workbook, and
 - https://frc-events.firstinspires.org/2026/team/1833 — division finalist record.
 - https://www.thebluealliance.com/event/2026new — alliance membership.
 - `tables/season_epa.jsonl` — retained historical mirror snapshot; not a newly verified live rank.
+
+
+## Complete-architecture research correction (2026-11-07)
+
+Read [Architecture research protocol](ARCHITECTURE_RESEARCH_PROTOCOL.md). Prefer the fewest unnecessary independent motions and possession handoffs that meet elite primary-contributor requirements. Evaluate fabrication, control, acquisition alignment, service and electrical/dynamic costs separately. The research agent must supply grounded engineering inference and challenge it; do not require the owner to explain every example. Added capability must justify its complete-cycle and development cost. Preserve no-turret, no-pneumatics and no-support-only constraints.

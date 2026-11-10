@@ -28,3 +28,17 @@ CREATE TABLE binder_audit(robot_id TEXT PRIMARY KEY REFERENCES robot_dossiers(id
 CREATE TABLE technical_mechanisms(id TEXT PRIMARY KEY,robot_id TEXT REFERENCES robot_dossiers(id),binder_id TEXT REFERENCES binder_sources(id),subsystem TEXT,title TEXT,construction TEXT,team_stated_reason TEXT,engineering_analysis TEXT,recommended_validation TEXT,limitations TEXT,metadata_json TEXT);
 CREATE TABLE technical_parameters(id TEXT PRIMARY KEY,robot_id TEXT REFERENCES robot_dossiers(id),binder_id TEXT REFERENCES binder_sources(id),component TEXT,pdf_page INTEGER,published_parameters TEXT,source_url TEXT,metadata_json TEXT);
 CREATE TABLE tower_summary_2026(group_name TEXT PRIMARY KEY,metadata_json TEXT);
+CREATE TABLE physical_studies(id TEXT PRIMARY KEY,robot_id TEXT NOT NULL REFERENCES robot_dossiers(id),version_label TEXT NOT NULL,data_json TEXT NOT NULL);
+CREATE TABLE mechanism_interfaces(id TEXT PRIMARY KEY,study_id TEXT NOT NULL REFERENCES physical_studies(id),mechanism_id TEXT NOT NULL REFERENCES technical_mechanisms(id),role TEXT NOT NULL CHECK(role IN ('input','output')),data_json TEXT NOT NULL);
+CREATE TABLE physical_figure_links(mechanism_id TEXT NOT NULL REFERENCES technical_mechanisms(id),image_id TEXT NOT NULL REFERENCES mechanism_images(id),PRIMARY KEY(mechanism_id,image_id));
+CREATE TABLE mechanism_revisions(id TEXT PRIMARY KEY REFERENCES technical_mechanisms(id),robot_id TEXT NOT NULL REFERENCES robot_dossiers(id),family TEXT NOT NULL,ordinal INTEGER NOT NULL CHECK(ordinal>0),previous_revision_id TEXT REFERENCES mechanism_revisions(id),data_json TEXT NOT NULL,UNIQUE(robot_id,family,ordinal));
+
+CREATE TABLE architecture_cases(id TEXT PRIMARY KEY,robot_id TEXT NOT NULL REFERENCES robot_dossiers(id),version_label TEXT NOT NULL,data_json TEXT NOT NULL);
+
+CREATE TABLE IF NOT EXISTS dossier_source_reviews(robot_id TEXT PRIMARY KEY REFERENCES robot_dossiers(id), data_json TEXT NOT NULL);
+
+CREATE TABLE IF NOT EXISTS event_benchmark_distributions(event TEXT PRIMARY KEY, data_json TEXT NOT NULL);
+
+CREATE TABLE IF NOT EXISTS design_comparisons(id TEXT PRIMARY KEY, data_json TEXT NOT NULL);
+
+CREATE TABLE IF NOT EXISTS image_visual_audit(image_id TEXT PRIMARY KEY, data_json TEXT NOT NULL);

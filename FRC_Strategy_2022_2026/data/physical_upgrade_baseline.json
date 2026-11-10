@@ -1,0 +1,20 @@
+{
+  "starting_commit": "9accf749eb876706e114101e3ce47d04f841fc19",
+  "robot_dossiers": 141,
+  "technical_notes": 303,
+  "technical_parameters": 136,
+  "parameter_robot_years": 34,
+  "images": 569,
+  "dossiers_without_images": 50,
+  "dossiers_with_one_note": 97,
+  "architecture_and_interfaces_notes": 98,
+  "notes_without_image_ids": 128,
+  "curated_historical_robot_years": 13,
+  "team604_years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ]
+}

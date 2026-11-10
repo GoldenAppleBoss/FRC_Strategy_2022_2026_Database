@@ -19,7 +19,15 @@ def main():
     r = sub.add_parser('packet'); r.add_argument('robot')
     r = sub.add_parser('images'); r.add_argument('--robot', required=True)
     r = sub.add_parser('game'); r.add_argument('year', type=int, choices=[2018,2019,*range(2022,2027)])
+    r = sub.add_parser('compare-interfaces', help='Screen output/input contracts; report incompatible or unresolved evidence')
+    r.add_argument('producer');r.add_argument('consumer')
+    r.add_argument('--historical', action='store_true', help='Skip current 1833 actuation policy, retain physical checks')
     args = ap.parse_args()
+    if args.command == 'compare-interfaces':
+        from interface_compatibility import compare
+        ports={p['id']:p for p in map(json.loads,(ROOT/'data/mechanism_interfaces.jsonl').read_text().splitlines())}
+        if args.producer not in ports or args.consumer not in ports:ap.error('Unknown interface ID; search --kind mechanism_interface first')
+        emit(compare(ports[args.producer],ports[args.consumer],not args.historical));return
     if args.command == 'packet':
         if not re.fullmatch(r'(?:201[89]|202[2-6])-\d+', args.robot): ap.error('Use a supported YEAR-TEAM, such as 2019-1323 or 2026-2910')
         p=ROOT/'agent/robot_packets'/(args.robot+'.json')
